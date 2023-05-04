@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[6278],{1472:e=>{e.exports=JSON.parse('{"label":"hello","permalink":"/upsidedownlabs.github.io/blog/tags/hello","allTagsPath":"/upsidedownlabs.github.io/blog/tags","count":2}')}}]);
