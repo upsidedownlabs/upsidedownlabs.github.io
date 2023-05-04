@@ -7,12 +7,13 @@ const config = {
   tagline: 'DIY Neuroscience for all!',
   favicon: 'img/favicon.ico',
 
-  url: 'https://docs.upsidedownlabs.tech',
+  url: 'https://github.com',
   baseUrl: '/',
 
-  organizationName: 'UpsideDownLabs',
-  projectName: 'docs',
-
+  organizationName: 'upsidedownlabs',
+  projectName: 'upsidedownlabs.github.io',
+  deploymentBranch: 'gh-pages',
+  trailingSlash: 'false',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -89,7 +90,7 @@ const config = {
             items: [
               {
                 label: 'YouTube',
-                href: 'youtube.com/upsidedownlabs',
+                href: 'https://youtube.com/upsidedownlabs',
               },
               {
                 label: 'Twitter',
