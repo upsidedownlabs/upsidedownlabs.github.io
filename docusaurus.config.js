@@ -3,10 +3,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Upside Down Labs docs site',
+  title: 'Upside Down Labs Docs',
   tagline: 'DIY Neuroscience for all!',
   favicon: 'img/favicon.ico',
-
+ 
   url: 'https://github.com',
   baseUrl: '/',
 
@@ -56,7 +56,7 @@ const config = {
         title: 'Upside Down Labs',
         logo: {
           alt: 'Upside Down Labs',
-          src: 'img/logo.svg',
+          src: 'img/udl_logo.svg',
         },
         items: [
           {
@@ -96,6 +96,10 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/myupsidedownlab',
               },
+              {
+                label: 'Telegram',
+                href: 'https://t.me/upsidedownlabs',
+              },
             ],
           },
           {
@@ -108,6 +112,10 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/upsidedownlabs/upsidedownlabs.github.io',
+              },
+              {
+                label: 'Website',
+                href: 'https://upsidedownlabs.tech/',
               },
             ],
           },
