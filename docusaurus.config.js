@@ -57,15 +57,26 @@ const config = {
         logo: {
           alt: 'Upside Down Labs',
           src: 'img/udl_logo.svg',
+          srcDark: 'img/udl_logo_white.svg',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://upsidedownlabs.tech/',
+            label: 'Main site',
+            position: 'right',
+          },
+          {
+            href: 'https://store.upsidedownlabs.tech/',
+            label: 'Store',
+            position: 'right',
+          },
           {
             href: 'https://github.com/upsidedownlabs/upsidedownlabs.github.io',
             label: 'GitHub',
@@ -80,8 +91,15 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'BioAmp Hardware',
+                to: '/docs/category/BioAmp-Hardware',
+              },
+              {
+                label: 'BioAmp Software',
+                to: '/docs/category/BioAmp-Software',
+              },{
+                label: 'Experiments',
+                to: '/docs/category/Experiments',
               },
             ],
           },
