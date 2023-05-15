@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 # BioAmp EXG Pill
+Professional-grade analog front-end amplification for ECG, EMG, EOG, and EEG biosensing on one tiny board
 
 ## Overview
 BioAmp EXG Pill is a small, powerful analog-front-end (AFE) biopotential signal-acquisition board that can be paired with any microcontroller unit (MCU) or single-board computer (SBC) with an analog-to-digital converter (ADC) such as Arduino UNO & Nano, Espressif ESP32, Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, and Raspberry Pi Pico, to name just a few. It also works with any dedicated ADC, like the Texas Instruments ADS1115 and ADS131M0x, among others.

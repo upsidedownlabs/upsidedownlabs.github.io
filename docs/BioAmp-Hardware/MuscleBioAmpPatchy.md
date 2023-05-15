@@ -3,6 +3,7 @@ sidebar_position: 3
 ---
 
 # Muscle BioAmp Patchy
+Wearable ElectroMyoGraphy (EMG) sensor
 
 ## Overview
 

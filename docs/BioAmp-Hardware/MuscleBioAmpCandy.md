@@ -3,6 +3,7 @@ sidebar_position: 4
 ---
 
 # Muscle BioAmp Candy
+Candy-size affordable muscle sensor for precise EMG sensing
 
 ## Overview
 A candy-size single-channel ElectroMyography (EMG) sensor for precise recording of muscle signals at an affordable cost. It is an SMD version of Muscle BioAmp BisCute that can be used to make amazing Human-Computer Interface (HCI) projects. To record the EMG signals you can use any standalone ADC like ADS1115 or any microcontroller development board with an ADC of your choice like Arduino UNO/Nano.

@@ -3,6 +3,7 @@ sidebar_position: 5
 ---
 
 # Muscle BioAmp BisCute
+Most affordable DIY Electromyography (EMG) sensor
 
 ## Overview
 Muscle BioAmp BisCute is an ultra-affordable DIY ElectroMyography (EMG) sensor that allows you to create a Human-Computer Interface (HCI) with ease and in the process of building your own BisCute, you learn what goes into making a functional biopotential amplifier that can be used for amplifying sub mV signals created by muscles inside your body to a level a microcontroller unit (MCU) can understand. To record the EMG signals you can use any standalone ADC like ADS1115 or any microcontroller development board with an ADC of your choice like Arduino UNO/Nano.
