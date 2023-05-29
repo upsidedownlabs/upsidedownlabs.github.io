@@ -3,10 +3,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Upside Down Labs',
+  title: 'Upside Down Labs Docs',
   tagline: 'DIY Neuroscience for all!',
   favicon: 'img/favicon.ico',
-
+ 
   url: 'https://github.com',
   baseUrl: '/',
 
@@ -56,16 +56,27 @@ const config = {
         title: 'Upside Down Labs',
         logo: {
           alt: 'Upside Down Labs',
-          src: 'img/logo.svg',
+          src: 'img/udl_logo.svg',
+          srcDark: 'img/udl_logo_white.svg',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://upsidedownlabs.tech/',
+            label: 'Main site',
+            position: 'right',
+          },
+          {
+            href: 'https://store.upsidedownlabs.tech/',
+            label: 'Store',
+            position: 'right',
+          },
           {
             href: 'https://github.com/upsidedownlabs/upsidedownlabs.github.io',
             label: 'GitHub',
@@ -80,8 +91,15 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'BioAmp Hardware',
+                to: '/docs/category/BioAmp-Hardware',
+              },
+              {
+                label: 'BioAmp Software',
+                to: '/docs/category/BioAmp-Software',
+              },{
+                label: 'Experiments',
+                to: '/docs/category/Experiments',
               },
             ],
           },
@@ -96,6 +114,10 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/myupsidedownlab',
               },
+              {
+                label: 'Telegram',
+                href: 'https://t.me/upsidedownlabs',
+              },
             ],
           },
           {
@@ -108,6 +130,10 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/upsidedownlabs/upsidedownlabs.github.io',
+              },
+              {
+                label: 'Website',
+                href: 'https://upsidedownlabs.tech/',
               },
             ],
           },
