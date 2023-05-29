@@ -3,7 +3,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Upside Down Labs docs site',
+  title: 'Upside Down Labs',
   tagline: 'DIY Neuroscience for all!',
   favicon: 'img/favicon.ico',
 
