@@ -39,7 +39,7 @@ Images below shows a quick overview of the hardware design.
 ![Schematic](img/Muscle%20BioAmp%20Shield/Schematic.png)
 
 ## Assemblying he Kit
-You can get your own Muscle BioAmp Shield bag of parts from [our store](https://store.upsidedownlabs.tech/product/muscle-bioamp-shield-v0-3/) or [Tindie](www.tindie.com/products/upsidedownlabs/muscle-bioamp-shield-v03-arduino-shield-for-emg/) and for assembling your shield you can take a look at [this interactive BOM](https://upsidedownlabs.github.io/DIY-Muscle-BioAmp-Shield/) or the step by step guide below. 
+You can get your own Muscle BioAmp Shield bag of parts from [our store](https://store.upsidedownlabs.tech/product/muscle-bioamp-shield-v0-3/) or [Tindie](https://www.tindie.com/products/upsidedownlabs/muscle-bioamp-shield-v03-arduino-shield-for-emg/) and for assembling your shield you can take a look at [this interactive BOM](https://upsidedownlabs.github.io/DIY-Muscle-BioAmp-Shield/) or the step by step guide below. 
 
 | Step 1 - Bare board | Step 2 - 1M Resistors | Step 3 - 330R Resistors| 
 | :----: | :----: | :----: |
