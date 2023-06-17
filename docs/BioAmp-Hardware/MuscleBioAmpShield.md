@@ -16,7 +16,7 @@ Muscle BioAmp Shield comes with various plug-and-play options so you can connect
 ![Muscle BioAmp Shield](img/Muscle%20BioAmp%20Shield/Shield%20v0.3%20Pamphlet.jpg)
 
 |||
-| :------- | :-------- |
+| :-------- | :---------- |
 |Input Voltage|5V|
 |Input Impedance|10^11 Ω|
 |Fixed Gain|x2420|
@@ -87,7 +87,8 @@ The possibilities are endless as you can:
 ![Servo motor](img/Muscle%20BioAmp%20Shield/Servo%20control.gif)
 
 - Give audio/mic input signals from your mobile phone, laptop, or speakers via BioAmp AUX Cable connected to a 4-pin JST PH 2mm connector.
-![Listening signals](img/Muscle%20BioAmp%20Shield/listening%20muscle%20signals.gif)
+
+  ![Listening signals](img/Muscle%20BioAmp%20Shield/listening%20muscle%20signals.gif)
 
 - Connect a 7V to 9V battery via snap cable.
 ![9V snap](img/Muscle%20BioAmp%20Shield/9V%20battery.gif)
@@ -105,6 +106,7 @@ These features make it the ultimate plug-and-play kit for students, researchers,
 1. Controlling a Dino Game using your muscle signals (EMG)
 
 <iframe width="100%" height="444" src="https://www.youtube.com/embed/66VOVqrFLoQ" title="Controlling Dino Game using Muscle Signals (EMG) | Muscle BioAmp Shield v0.3 | DIY Neuroscience" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 2. Scrolling Instagram Reels/YouTube Shorts by using your muscle signals (EMG)
 
