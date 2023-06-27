@@ -11,30 +11,28 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Open-Source',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/opensource1.svg').default,
     description: (
       <>
-        Open hardware and software solutions for all
+        We work on awesome OpenSource hardware and software solutions
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Documentation',
+    Svg: require('@site/static/img/documentation.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Each project comes with detailed and easy-to-follow documentation
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Software',
+    Svg: require('@site/static/img/software.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Free software tools and example codes with the hardware are cherry on the top
       </>
     ),
   },
@@ -67,3 +65,4 @@ export default function HomepageFeatures(): JSX.Element {
     </section>
   );
 }
+
