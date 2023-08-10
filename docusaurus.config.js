@@ -50,7 +50,19 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      
+      
+      announcementBar: {
+        id: 'support_ukraine',
+        content:
+          // 'Support Ukraine 🇺🇦 <a target="_blank" rel="noopener noreferrer" href="https://opensource.facebook.com/support-ukraine"> Help Provide Humanitarian Aid to Ukraine</a>. ',
+
+          'Work in progress @ Upside Down Labs',
+        backgroundColor: '#20232a',
+        textColor: '#fff',
+        isCloseable: false,
+      },
+    
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Upside Down Labs',
@@ -60,6 +72,11 @@ const config = {
           srcDark: 'img/udl_logo_white.svg',
         },
         items: [
+          {
+            type: 'docsVersionDropdown',
+            position: 'left',
+          },
+          
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -79,8 +96,9 @@ const config = {
           },
           {
             href: 'https://github.com/upsidedownlabs/upsidedownlabs.github.io',
-            label: 'GitHub',
             position: 'right',
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
           },
         ],
       },
