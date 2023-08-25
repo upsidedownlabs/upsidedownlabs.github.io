@@ -50,17 +50,23 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      
-      
-      announcementBar: {
+      algolia:
+    
+      {
+            apiKey:'40700e56f0f62114beb2e9ebcc0d8580',
+           indexName:'upsidedownlabs',
+           appId: '7TBITCF6FQ',
+       },
+        announcementBar: {
         id: 'support_ukraine',
         content:
           // 'Support Ukraine 🇺🇦 <a target="_blank" rel="noopener noreferrer" href="https://opensource.facebook.com/support-ukraine"> Help Provide Humanitarian Aid to Ukraine</a>. ',
 
           'Work in progress @ Upside Down Labs',
-        backgroundColor: '#20232a',
+        backgroundColor: '#097969',
         textColor: '#fff',
-        isCloseable: false,
+        isCloseable: true,
+
       },
     
       image: 'img/docusaurus-social-card.jpg',
@@ -84,6 +90,9 @@ const config = {
             label: 'Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+
+          {to:'/Contributors', label: 'Contribute', position:'left'},
+
           {
             href: 'https://upsidedownlabs.tech/',
             label: 'Main site',
