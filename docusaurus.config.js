@@ -51,7 +51,6 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       algolia:
-    
       {
             apiKey:'40700e56f0f62114beb2e9ebcc0d8580',
            indexName:'upsidedownlabs',
@@ -124,7 +123,8 @@ const config = {
               {
                 label: 'BioAmp Software',
                 to: '/docs/category/BioAmp-Software',
-              },{
+              },
+              {
                 label: 'Experiments',
                 to: '/docs/category/Experiments',
               },
