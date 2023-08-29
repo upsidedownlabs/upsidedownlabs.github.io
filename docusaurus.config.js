@@ -52,7 +52,7 @@ const config = {
     ({
       algolia:
       {
-            apiKey:'40700e56f0f62114beb2e9ebcc0d8580',
+           apiKey:'40700e56f0f62114beb2e9ebcc0d8580',
            indexName:'upsidedownlabs',
            appId: '7TBITCF6FQ',
        },
@@ -88,7 +88,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to:'/blog', label: 'Blog', position: 'left'},
 
           {to:'/Contributors', label: 'Contribute', position:'left'},
 

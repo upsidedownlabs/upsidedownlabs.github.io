@@ -1,5 +1,6 @@
 # Record, Visualize & Listen to Muscle Signals Using Muscle BioAmp Shield
 
+
 ![dodge gif](./EMGimg4/Thumbnail.gif)
 
 

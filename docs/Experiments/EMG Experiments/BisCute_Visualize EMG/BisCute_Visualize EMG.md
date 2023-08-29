@@ -1,4 +1,4 @@
-# Visualizing Muscle Signals (EMG) Using Most Affordable DIY Muscle Sensor
+# Visualizing Muscle Signals (EMG) 
 
 
 ![](EMGimg2/Thumbnail2.jpg)
