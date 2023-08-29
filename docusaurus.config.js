@@ -47,15 +47,10 @@ const config = {
     ],
   ],
 
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      algolia:
-      {
-           apiKey:'40700e56f0f62114beb2e9ebcc0d8580',
-           indexName:'upsidedownlabs',
-           appId: '7TBITCF6FQ',
-       },
         announcementBar: {
         id: 'support_ukraine',
         content:
