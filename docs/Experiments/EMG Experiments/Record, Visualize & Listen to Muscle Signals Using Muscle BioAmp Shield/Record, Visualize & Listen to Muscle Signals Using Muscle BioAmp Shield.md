@@ -144,7 +144,7 @@ Similarly you can try to record EMG from other parts of your body like biceps, t
 
 ## Step 9: Listen to Your Muscles
 
-![dodge gif](./EMGimg4/Listening%20Music.gif)
+![dodge gif](./EMGimg4/Listening%20music.gif)
 
 Here comes the most interesting part of the project which is listening to your muscles.
 
