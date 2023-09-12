@@ -54,10 +54,11 @@ const config = {
 
        
         announcementBar: {
-        //Example Content For Annoucement Bar-->
-        //id: 'support_ukraine',
-        id:'wip_udl',
+        
+         id: 'wip_udl',
+
         content:
+          // Example Content for Announcement bar-->
           //'Support Ukraine 🇺🇦 <a target="_blank" rel="noopener noreferrer" href="https://opensource.facebook.com/support-ukraine"> Help Provide Humanitarian Aid to Ukraine</a>. ',
           //<ADD YOUR TEXT HERE>
           'Work in progress @ Upside Down Labs',
