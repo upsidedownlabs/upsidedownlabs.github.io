@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+
+
 # BioAmp EXG Pill
 Professional-grade analog front-end amplification for ECG, EMG, EOG, and EEG biosensing on one tiny board
 

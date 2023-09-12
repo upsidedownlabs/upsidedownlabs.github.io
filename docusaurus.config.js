@@ -47,10 +47,27 @@ const config = {
     ],
   ],
 
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+
+       
+        announcementBar: {
+        
+         id: 'wip_udl',
+
+        content:
+          // Example Content for Announcement bar-->
+          //'Support Ukraine 🇺🇦 <a target="_blank" rel="noopener noreferrer" href="https://opensource.facebook.com/support-ukraine"> Help Provide Humanitarian Aid to Ukraine</a>. ',
+          //<ADD YOUR TEXT HERE>
+          'Work in progress @ Upside Down Labs',
+        backgroundColor: '#097969',
+        textColor: '#fff',
+        isCloseable: true,
+
+      },
+    
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Upside Down Labs',
@@ -61,12 +78,20 @@ const config = {
         },
         items: [
           {
+            type: 'docsVersionDropdown',
+            position: 'left',
+          },
+          
+          {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to:'/blog', label: 'Blog', position: 'left'},
+
+          {to:'/Contributors', label: 'Contribute', position:'left'},
+
           {
             href: 'https://upsidedownlabs.tech/',
             label: 'Main site',
@@ -79,8 +104,9 @@ const config = {
           },
           {
             href: 'https://github.com/upsidedownlabs/upsidedownlabs.github.io',
-            label: 'GitHub',
             position: 'right',
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
           },
         ],
       },
@@ -97,7 +123,8 @@ const config = {
               {
                 label: 'BioAmp Software',
                 to: '/docs/category/BioAmp-Software',
-              },{
+              },
+              {
                 label: 'Experiments',
                 to: '/docs/category/Experiments',
               },

@@ -1,13 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
-
 type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: JSX.Element;
 };
-
 const FeatureList: FeatureItem[] = [
   {
     title: 'Open-Source',
@@ -37,7 +35,6 @@ const FeatureList: FeatureItem[] = [
     ),
   },
 ];
-
 function Feature({title, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
@@ -51,7 +48,6 @@ function Feature({title, Svg, description}: FeatureItem) {
     </div>
   );
 }
-
 export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
