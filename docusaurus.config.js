@@ -51,10 +51,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+
+       
         announcementBar: {
-        id: 'support_ukraine',
+        //Example Content For Annoucement Bar-->
+        //id: 'support_ukraine',
+        id:'wip_udl',
         content:
-          //Example Content For Annoucement Bar--> 'Support Ukraine 🇺🇦 <a target="_blank" rel="noopener noreferrer" href="https://opensource.facebook.com/support-ukraine"> Help Provide Humanitarian Aid to Ukraine</a>. ',
+          //'Support Ukraine 🇺🇦 <a target="_blank" rel="noopener noreferrer" href="https://opensource.facebook.com/support-ukraine"> Help Provide Humanitarian Aid to Ukraine</a>. ',
           //<ADD YOUR TEXT HERE>
           'Work in progress @ Upside Down Labs',
         backgroundColor: '#097969',
