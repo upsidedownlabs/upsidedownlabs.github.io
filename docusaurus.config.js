@@ -54,8 +54,8 @@ const config = {
         announcementBar: {
         id: 'support_ukraine',
         content:
-          // 'Support Ukraine 🇺🇦 <a target="_blank" rel="noopener noreferrer" href="https://opensource.facebook.com/support-ukraine"> Help Provide Humanitarian Aid to Ukraine</a>. ',
-
+          //Example Content For Annoucement Bar--> 'Support Ukraine 🇺🇦 <a target="_blank" rel="noopener noreferrer" href="https://opensource.facebook.com/support-ukraine"> Help Provide Humanitarian Aid to Ukraine</a>. ',
+          //<ADD YOUR TEXT HERE>
           'Work in progress @ Upside Down Labs',
         backgroundColor: '#097969',
         textColor: '#fff',
