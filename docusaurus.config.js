@@ -51,6 +51,8 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+
+       
         announcementBar: {
         id: 'wip_udl',
         content:
