@@ -52,15 +52,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
         announcementBar: {
-        id: 'support_ukraine',
+        id: 'wip_udl',
         content:
-          // 'Support Ukraine 🇺🇦 <a target="_blank" rel="noopener noreferrer" href="https://opensource.facebook.com/support-ukraine"> Help Provide Humanitarian Aid to Ukraine</a>. ',
-
           'Work in progress @ Upside Down Labs',
         backgroundColor: '#097969',
         textColor: '#fff',
         isCloseable: true,
-
       },
     
       image: 'img/docusaurus-social-card.jpg',
