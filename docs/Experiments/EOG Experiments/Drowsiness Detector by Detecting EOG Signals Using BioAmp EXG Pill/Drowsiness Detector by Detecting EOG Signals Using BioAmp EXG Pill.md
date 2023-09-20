@@ -1,3 +1,9 @@
+---
+sidebar_position: 3
+---
+
+
+
 # Drowsiness Detector by Detecting EOG Signals Using BioAmp EXG Pill
 
 ![](EOGimg3/Thumbnail1.jpg)

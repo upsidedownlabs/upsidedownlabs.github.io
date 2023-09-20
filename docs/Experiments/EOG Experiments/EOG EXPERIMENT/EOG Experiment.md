@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+---
+
+
 # Visualizing Electrical Impulses of Eyes (EOG) Using BioAmp EXG Pill
 
 
