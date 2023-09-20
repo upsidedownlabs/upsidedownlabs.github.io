@@ -116,7 +116,7 @@ and many more examples.
 
 <iframe width="100%" height="444" src="https://www.youtube.com/embed/PvWtCFNK3_s?si=Q9RoDCHXmS4lJy4F&autoplay='0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-4. [Recording EEG From Pre Frontal Cortex of Brain Using BioAmp EXG Pill](/docs/Experiments/EEG%20Experiments/EEGExperiments.md)
+4. [Recording EEG From Pre Frontal Cortex of Brain Using BioAmp EXG Pill](/docs/Experiments/EEG%20Experiments/Recording%20EEG%20From%20Pre%20Frontal%20Cortex%20of%20Brain%20Using%20BioAmp%20EXG%20Pill/EEGExperiments.md)
 
 <iframe width="100%" height="444" src="https://www.youtube.com/embed/QzZh243-Ac8?feature=oembed&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 
