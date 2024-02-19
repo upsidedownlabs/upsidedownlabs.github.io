@@ -1,3 +1,9 @@
+---
+sidebar_position: 2
+---
+
+
+
 # Eye Blink Detection by Recording EOG Using BioAmp EXG Pill
 
 ![dodge gif](./EOGimg2/Thumbnail1.gif)

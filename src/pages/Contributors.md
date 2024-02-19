@@ -8,6 +8,8 @@ You can’t simply download the project, make some modifications and upload the 
 console.log('Every repo must come with a mascot.');
 ``` -->
 
+
+
 ## Step 1: Fork the main repository
 
 Forking will create a copy of the project in your own GitHub account. It allows the users to make any changes to the code while ensuring that these changes do not affect the original repository. Simply click the Fork button on the project repository.
@@ -31,9 +33,20 @@ Run the clone command in your local environment:
 git clone  https://github.com/upsidedownlabs/upsidedownlabs.github.io.git;
 ```
 
+## Step 3 - Download Node.js
+
+Download Node to get started with npx tools
+
+[Node.js](https://nodejs.org/en/download)
+
+## Step 4 - Getting Started with npx
+
+```js
+npm install npx
+```
 
 
-## Step 3 - Create A New Branch
+## Step 5 - Create A New Branch
 While making any change to the code, a best practice is to create a new feature branch for the changes we need to make. This ensures that we keep the master branch clean, and are able to simply revert our code or make updates when necessary.
 
 Switch to the directory that was created after you cloned the forked repository:
@@ -53,7 +66,15 @@ git checkout -b new-user-contribution
 
 
 
-## Step 4 - Develop, Stage, and Commit
+## Step 6- 
+Run the following command in the terminal 
+```js
+npm start
+```
+
+
+
+## Step 7 - Develop, Stage, and Commit
 If you have created any new files as part of your change, you will need to add it to the branch you just created.
 ```js
 git add <filename>
@@ -65,7 +86,7 @@ git commit -m "Add XYZ to filename"
 ```
 Image description
 
-## Step 5 - Push the Changes
+## Step 8 - Push the Changes
 The committed changes still reside only in your local environment. Therefore, you need to push these changes to the forked GitHub repository in your account. It can be achieved by using the git push command.
 
 ```js
@@ -76,7 +97,7 @@ git push origin fix-npe-issue
 
 The workflow from git add, git commit to git push will be similar across all development environments. It is the standard way to deliver changes to any git repository regardless of the provider.
 
-## Step 6 - Create a Pull Request
+## Step 9 - Create a Pull Request
 If pushing is successful, you should see a message indicating the new push with the "Compare and pull request" button when visiting the GitHub repository. Click on that button to make a pull request.
 
 <!-- Image description -->

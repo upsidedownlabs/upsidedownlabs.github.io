@@ -54,3 +54,11 @@ For the connections and electrode placements, you can follow the diagram given b
 After snapping the Patchy onto gel electrodes(placed on our targeted muscle), you can connect your patchy to the arduino via jumper cables, arduino to your battery operated laptop, and start recording your EMG easily. Follow the steps shown in the video below for the demonstration.
 
 [![Muscle BioAmp Patchy](img/Muscle%20BioAmp%20Patchy/patchy_demo_thumbnail.jpg)](https://www.youtube.com/watch?v=4dnCX3U7LS8&)
+
+
+## Some project ideas
+
+1. [Recording and Visualizing Muscle Signals (EMG) Using Muscle BioAmp Patchy (wearable Muscle Sensor)](/docs/Experiments/EMG%20Experiments/BisCute%20Visualize%20EMG/EMGExperiment1.md)
+
+
+<iframe width="100%" height="444" src="https://www.youtube.com/embed/4dnCX3U7LS8?feature=oembed&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 

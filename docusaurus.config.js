@@ -54,18 +54,12 @@ const config = {
 
        
         announcementBar: {
-        
-         id: 'wip_udl',
-
+        id: 'wip_udl',
         content:
-          // Example Content for Announcement bar-->
-          //'Support Ukraine 🇺🇦 <a target="_blank" rel="noopener noreferrer" href="https://opensource.facebook.com/support-ukraine"> Help Provide Humanitarian Aid to Ukraine</a>. ',
-          //<ADD YOUR TEXT HERE>
           'Work in progress @ Upside Down Labs',
         backgroundColor: '#097969',
         textColor: '#fff',
         isCloseable: true,
-
       },
     
       image: 'img/docusaurus-social-card.jpg',

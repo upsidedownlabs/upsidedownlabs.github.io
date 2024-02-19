@@ -56,5 +56,11 @@ CAUTION: Make sure to follow the above diagram while making the connections betw
 
 ## Some project ideas
 
-We have curated a playlist for you which consists some awesome project ideas for you to get started with your next HCI project.
+1. We have curated a playlist for you which consists some awesome project ideas for you to get started with your next HCI project.
 <iframe width="100%" height="444" src="https://www.youtube.com/embed/videoseries?list=PLtkEloJ7UnkQIoz1HK4IXWujCB8hKdiKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+2. [Measuring Muscle Signals Using Candy Size Muscle Sensor (EMG)](/docs/Experiments/EMG%20Experiments/BisCute%20Visualize%20EMG/Candy_Visualize%20EMG.md)
+
+
+<iframe width="100%" height="444" src="https://www.youtube.com/embed/lPX2TGBcHOA?feature=oembed&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+

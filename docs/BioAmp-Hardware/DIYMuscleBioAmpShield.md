@@ -111,3 +111,20 @@ These features make it the ultimate plug-and-play kit for students, researchers,
 2. Scrolling Instagram Reels/YouTube Shorts by using your muscle signals (EMG)
 
 <iframe width="100%" height="444" src="https://www.youtube.com/embed/ZzhrNyndky4" title="Scrolling Instagram Reels or YouTube Shorts using muscle signals (EMG) | BioAmp Hardware | @Arduino" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+3. [Making a Muscle Strength Game Using Muscle BioAmp Shield & Arduino Uno](/docs/Experiments/EMG%20Experiments/Making%20a%20Muscle%20Strength%20Game%20Using%20Muscle%20BioAmp%20Shield%20&%20Arduino%20Uno/Making%20a%20Muscle%20Strength%20Game%20Using%20Muscle%20BioAmp%20Shield%20&%20Arduino%20Uno.md)
+
+
+<iframe width="100%" height="444" src="https://www.youtube.com/embed/bSfTnFcCHYM?feature=oembed&enablejsapi=1&origin=https://www.instructables.com" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+
+
+4. [Record, Visualize & Listen to Muscle Signals Using Muscle BioAmp Shield](/docs/Experiments/EMG%20Experiments/BisCute%20Visualize%20EMG/Record,%20Visualize%20&%20Listen%20to%20Muscle%20Signals%20Using%20Muscle%20BioAmp%20Shield.md)
+
+
+<iframe width="100%" height="444" src="https://www.youtube.com/embed/kgvK51UIXdo?feature=oembed&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+
+5. [Controlling Servo Claw With Muscle Signals Using Muscle BioAmp Shield](/docs/Experiments/EMG%20Experiments/Controlling%20Servo%20Claw%20With%20Muscle%20Signals%20Using%20Muscle%20BioAmp%20Shield/Controlling%20Servo%20Claw%20With%20Muscle%20Signals%20Using%20Muscle%20BioAmp%20Shield.md)
+
+
+<iframe width="100%" height="444" src="https://www.youtube.com/embed/kgvK51UIXdo?feature=oembed&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -96,3 +96,41 @@ BioAmp EXG Pill is perfect for researchers, makers, and hobbyists looking for no
 - Controlling LEDs via brain waves (EEG)
 - Patient monitoring
 and many more examples.
+
+## Some project ideas
+
+1. [Record Publication Grade ECG at Your Home Using BioAmp EXG Pill](/docs/Experiments/ECG%20Experiments/Record%20Publication%20Grade%20ECG%20at%20Your%20Home%20Using%20BioAmp%20EXG%20Pill/Record%20Publication%20Grade%20ECG%20at%20Your%20Home%20Using%20BioAmp%20EXG%20Pill.md)
+
+
+<iframe width="100%" height="444" src="https://www.youtube.com/embed/l1Z8S0pUAvY?feature=oembed&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+
+
+2. [Detecting Heart Beats Using BioAmp EXG Pill](/docs/Experiments/ECG%20Experiments/Detecting%20Heart%20Beats%20Using%20BioAmp%20EXG%20Pill/Detecting%20Heart%20Beats%20Using%20BioAmp%20EXG%20Pill.md)
+
+
+<iframe width="100%" height="444" src="https://www.youtube.com/embed/uB5R-vGJjJo?feature=oembed&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+
+
+3. [Measuring Heart Rate Using BioAmp EXG Pill](/docs/Experiments/ECG%20Experiments/Measuring%20Heart%20Rate%20Using%20BioAmp%20EXG%20Pill/Measuring%20Heart%20Rate%20Using%20BioAmp%20EXG%20Pill.md)
+
+
+<iframe width="100%" height="444" src="https://www.youtube.com/embed/PvWtCFNK3_s?si=Q9RoDCHXmS4lJy4F&autoplay='0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+4. [Recording EEG From Pre Frontal Cortex of Brain Using BioAmp EXG Pill](/docs/Experiments/EEG%20Experiments/Recording%20EEG%20From%20Pre%20Frontal%20Cortex%20of%20Brain%20Using%20BioAmp%20EXG%20Pill/EEGExperiments.md)
+
+<iframe width="100%" height="444" src="https://www.youtube.com/embed/QzZh243-Ac8?feature=oembed&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+
+5. [Visualizing Electrical Impulses of Eyes (EOG) Using BioAmp EXG Pill](/docs/Experiments/EOG%20Experiments/EOG%20EXPERIMENT/EOG%20Experiment.md)
+
+
+<iframe width="100%" height="444" src="https://www.youtube.com/embed/Txo7DjUr5Tk?feature=oembed&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+
+6. [Eye Blink Detection by Recording EOG Using BioAmp EXG Pill](/docs/Experiments/EOG%20Experiments/BioAmp%20EXG%20Pill_Eye%20Blink%20Detection/BioAmp%20EXG%20Pill_Eye%20Blink%20Detection.md)
+
+
+<iframe width="100%" height="444" src="https://www.youtube.com/embed/4dnCX3U7LS8?feature=oembed&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+
+7. [Drowsiness Detector by Detecting EOG Signals Using BioAmp EXG Pill](/docs/Experiments/EOG%20Experiments/Drowsiness%20Detector%20by%20Detecting%20EOG%20Signals%20Using%20BioAmp%20EXG%20Pill/Drowsiness%20Detector%20by%20Detecting%20EOG%20Signals%20Using%20BioAmp%20EXG%20Pill.md)
+
+
+<iframe width="100%" height="444" src="https://www.youtube.com/embed/h4F41mp4mWk?feature=oembed&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
