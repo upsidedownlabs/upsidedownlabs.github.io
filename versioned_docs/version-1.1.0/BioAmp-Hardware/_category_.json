@@ -1,9 +1,0 @@
-{
-    "label": "BioAmp Hardware",
-    "position": 1,
-    "link": {
-      "type": "generated-index",
-      "description": "The entire BioAmp series of sensors from Upside Down Labs is designed in a way to teach you the basics of the instrumentation amplifier, active bandpass filtering, soldering, programming, neuroscience, HCI, and BCI just to name a few concepts involved to create solutions for some crazy real-world problems."
-    }
-  }
-  

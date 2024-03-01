@@ -1,0 +1,5 @@
+docutils==0.20.1
+pydata-sphinx-theme==0.14.4
+sphinx_design==0.5.0
+sphinxcontrib-youtube==1.4.1
+sphinx-copybutton==0.5.2
