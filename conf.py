@@ -6,11 +6,9 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-import os
 import sys
 from pathlib import Path
 from typing import Any, Dict
-from os import walk
 import pydata_sphinx_theme
 from sphinx.application import Sphinx
 
@@ -37,8 +35,8 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'env', ".venv"]
 
 html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
-html_logo = ""
-html_favicon = ""
+html_logo = "_static/logo/logo_black_hr_nbg.svg"
+html_favicon = "_static/logo/logo_sqr_bgw.svg"
 html_sourcelink_suffix = ""
 html_last_updated_fmt = ""
 html_theme_path = [pydata_sphinx_theme.Path()]
@@ -78,11 +76,14 @@ html_theme_options = {
         {
             "name": "Upside Down Labs",
             "url": "https://upsidedownlabs.tech/",
-            "icon": "",
+            "icon": "_static/logo/logo_sqr_bgw.svg",
             "type": "local",
             "attributes": {"target": "_blank"},
         },
     ],
+    "logo": {
+        "image_dark": "_static/logo/logo_white_hr_nbg.svg",
+    },
     "use_edit_page_button": True,
     "show_toc_level": 1,
     "navbar_align": "right",
