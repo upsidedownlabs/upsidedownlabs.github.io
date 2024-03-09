@@ -12,7 +12,7 @@ Welcome to Upside Down Labs docs's documentation!
 
 .. toctree::
    :hidden:
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: BioAmp
 
    bioamp/index
