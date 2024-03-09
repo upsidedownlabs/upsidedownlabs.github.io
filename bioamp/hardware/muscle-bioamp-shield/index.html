@@ -1,0 +1,1022 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Muscle BioAmp Shield &#8212; upsidedownlabs.github.io  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js?v=2b91c5f0"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'bioamp/hardware/muscle-bioamp-shield/index';</script>
+    <link rel="canonical" href="docs.upsidedownlabs.tech/bioamp/hardware/muscle-bioamp-shield/index.html" />
+    <link rel="icon" href="../../../_static/logo_sqr_bgw.svg"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Muscle BioAmp Patchy" href="../muscle-bioamp-patchy/index.html" />
+    <link rel="prev" title="BioAmp EXG Pill" href="../bioamp-exg-pill/index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+    <meta name="docbuild:last-update" content="Mar 09, 2024"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">Welcome to Upside Down Labs docs site!</div>
+  </div>
+
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo_black_hr_nbg.svg" class="logo__image only-light" alt="upsidedownlabs.github.io  documentation - Home"/>
+    <script>document.write(`<img src="../../../_static/logo_white_hr_nbg.svg" class="logo__image only-dark" alt="upsidedownlabs.github.io  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="ms-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../../index.html">
+                        BioAmp
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../../index.html">
+                        BioAmp
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">BioAmp Hardware</a><input checked class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../bioamp-exg-pill/index.html">BioAmp EXG Pill</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Muscle BioAmp Shield</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../muscle-bioamp-patchy/index.html">Muscle BioAmp Patchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../muscle-bioamp-blip/index.html">Muscle BioAmp Blip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bioamp-v1.5/index.html">BioAmp v1.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../muscle-bioamp-candy/index.html">Muscle BioAmp Candy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../muscle-bioamp-biscute/index.html">Muscle BioAmp Biscute</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../experiments/index.html">BioAmp Experiments</a><input checked class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../software/index.html">BioAmp Software</a><input checked class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../software/muscle-bioamp-arduino-firmware/index.html">Muscle (EMG) BioAmp Firmware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software/eye-bioamp-arduino-firmware/index.html">Eye (EOG) BioAmp Arduino Firmware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software/heart-bioamp-arduino-firmware/index.html">Heart (ECG) BioAmp Arduino Firmware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../software/brain-bioamp-arduino-firmware/index.html">Brain (EEG) BioAmp Arduino Firmware</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">BioAmp</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">BioAmp Hardware</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Muscle BioAmp Shield</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="muscle-bioamp-shield">
+<span id="id1"></span><h1>Muscle BioAmp Shield<a class="headerlink" href="#muscle-bioamp-shield" title="Permalink to this heading">#</a></h1>
+<p>All-in-one Arduino Uno Shield for EMG (Electromyography).</p>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
+<p>Muscle BioAmp Shield is an all-in-one Arduino Uno ElectroMyography (EMG) shield for learning neuroscience with ease. It is a
+DIY Electrophysiology/NeuroScience shield inspired from Back Yard Brains (BYB) Muscle Spiker shield and provides similar features
+like hobby servo output, user buttons, LED Bar, Audio output, and battery input. It is perfect for beginners as they can easily
+stack it on top of Arduino Uno to record, visualize and listen to their muscle signals to make amazing projects in the domain of
+Human-Computer Interface (HCI).</p>
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/w8yw12SUe6Q" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></section>
+<section id="features-specifications">
+<h2>Features &amp; Specifications<a class="headerlink" href="#features-specifications" title="Permalink to this heading">#</a></h2>
+<p>Muscle BioAmp Shield comes with various plug-and-play options so you can connect hundreds of extension boards like OLED screens,
+character displays, accelerometers, and servo controllers to name just a few using the STEMMA I2C interface. You also get STEMMA
+digital and STEMMA analog ports. On STEMMA analog port you can connect additional BioAmp EXG Pill or any other sensor with analog
+output. On STEMMA digital port you can connect any digital sensor or actuator of your choice.</p>
+<figure class="align-center">
+<img alt="../../../_images/shield-pamphlet.jpg" src="../../../_images/shield-pamphlet.jpg" />
+</figure>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>Input Voltage</p></td>
+<td><p>5V</p></td>
+</tr>
+<tr class="row-even"><td><p>Input Impedance</p></td>
+<td><p>10^11 Ω</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fixed Gain</p></td>
+<td><p>x2420</p></td>
+</tr>
+<tr class="row-even"><td><p>Bandpass filter</p></td>
+<td><p>72 – 720 Hz</p></td>
+</tr>
+<tr class="row-odd"><td><p>Compatible Hardware</p></td>
+<td><p>Arduino UNO</p></td>
+</tr>
+<tr class="row-even"><td><p>BioPotentials</p></td>
+<td><p>EMG (Electromyography)</p></td>
+</tr>
+<tr class="row-odd"><td><p>No. of channels</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Electrodes</p></td>
+<td><p>3 (Positive, Negative, and Reference)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dimensions</p></td>
+<td><p>6.0 x 5.3 cm</p></td>
+</tr>
+<tr class="row-even"><td><p>Open Source</p></td>
+<td><p>Hardware + Software</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="hardware">
+<h2>Hardware<a class="headerlink" href="#hardware" title="Permalink to this heading">#</a></h2>
+<p>Images below shows a quick overview of the hardware design.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-4 sd-mb-4 sd-ml-0 sd-mr-0 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>PCB Front</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<figure class="align-default">
+<img alt="../../../_images/Muscle-BioAmp-Shield-Front.png" src="../../../_images/Muscle-BioAmp-Shield-Front.png" />
+</figure>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>PCB Back</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<figure class="align-default">
+<img alt="../../../_images/Muscle-BioAmp-Shield-Back.png" src="../../../_images/Muscle-BioAmp-Shield-Back.png" />
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figure class="align-center">
+<img alt="../../../_images/Muscle-BioAmp-Shield-With-Wires.png" src="../../../_images/Muscle-BioAmp-Shield-With-Wires.png" />
+</figure>
+<figure class="align-center">
+<img alt="../../../_images/dimensions2.png" src="../../../_images/dimensions2.png" />
+</figure>
+<figure class="align-center">
+<img alt="../../../_images/Schematic.png" src="../../../_images/Schematic.png" />
+</figure>
+</section>
+<section id="assemblying-the-kit">
+<h2>Assemblying the Kit<a class="headerlink" href="#assemblying-the-kit" title="Permalink to this heading">#</a></h2>
+<p>You can get your own Muscle BioAmp Shield bag of parts from our <a class="reference external" href="https://store.upsidedownlabs.tech/product/muscle-bioamp-shield-v0-3/">store</a> or <a class="reference external" href="https://www.tindie.com/products/upsidedownlabs/muscle-bioamp-shield-v03-arduino-shield-for-emg/">Tindie</a>
+and for assembling your shield you can take a look at <a class="reference external" href="https://upsidedownlabs.github.io/DIY-Muscle-BioAmp-Shield/">this interactive BOM</a> or the step by step guide below.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-2 sd-mb-2 sd-ml-0 sd-mr-0 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id2">
+<img alt="../../../_images/01_Bare_Board.jpg" src="../../../_images/01_Bare_Board.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 1 - Bare Board</strong></span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id3">
+<img alt="../../../_images/02_1M_Resistors.jpg" src="../../../_images/02_1M_Resistors.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 2 - 1M Resistors</strong></span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id4">
+<img alt="../../../_images/03_330R_Resistors.jpg" src="../../../_images/03_330R_Resistors.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 3 - 330R Resistors</strong></span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id5">
+<img alt="../../../_images/04_10K_Resistors.jpg" src="../../../_images/04_10K_Resistors.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 4 - 10K Resistors</strong></span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id6">
+<img alt="../../../_images/05_22K_Resistors.jpg" src="../../../_images/05_22K_Resistors.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 5 - 22K Resistors</strong></span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id7">
+<img alt="../../../_images/06_1K_Resistors.jpg" src="../../../_images/06_1K_Resistors.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 6 - 1K Resistors</strong></span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id8">
+<img alt="../../../_images/07_220K_Resistors.jpg" src="../../../_images/07_220K_Resistors.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 7 - 220K Resistors</strong></span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id9">
+<img alt="../../../_images/08_1nF_Capacitors.jpg" src="../../../_images/08_1nF_Capacitors.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 8 - 1nF Capacitors</strong></span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id10">
+<img alt="../../../_images/09_100nF_Capacitors.jpg" src="../../../_images/09_100nF_Capacitors.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 9 - 100nF Capacitors</strong></span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id11">
+<img alt="../../../_images/10_100pF_Capacitors.jpg" src="../../../_images/10_100pF_Capacitors.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 10 - 100pF Capacitors</strong></span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id12">
+<img alt="../../../_images/11_Angled_Header_Pins.jpg" src="../../../_images/11_Angled_Header_Pins.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 11 - Angled Header Pins</strong></span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id13">
+<img alt="../../../_images/12_5x5mm_Buttons.jpg" src="../../../_images/12_5x5mm_Buttons.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 12 - 5x5mm Buttons</strong></span><a class="headerlink" href="#id13" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id14">
+<img alt="../../../_images/13_OptoIsolator.jpg" src="../../../_images/13_OptoIsolator.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 13 - OptoIsolator</strong></span><a class="headerlink" href="#id14" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id15">
+<img alt="../../../_images/14_JST_PH_Angled_Connectors.jpg" src="../../../_images/14_JST_PH_Angled_Connectors.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 14 - JST PH Angled Connectors</strong></span><a class="headerlink" href="#id15" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id16">
+<img alt="../../../_images/15_JST_PH_Straight_Connectors.jpg" src="../../../_images/15_JST_PH_Straight_Connectors.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 15 - JST PH Straight Connectors</strong></span><a class="headerlink" href="#id16" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id17">
+<img alt="../../../_images/16_IC_Socket.jpg" src="../../../_images/16_IC_Socket.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 16 - IC Socket</strong></span><a class="headerlink" href="#id17" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id18">
+<img alt="../../../_images/17_IC.jpg" src="../../../_images/17_IC.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 17 - IC</strong></span><a class="headerlink" href="#id18" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id19">
+<img alt="../../../_images/18_LEDs.jpg" src="../../../_images/18_LEDs.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 18 - LEDs</strong></span><a class="headerlink" href="#id19" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id20">
+<img alt="../../../_images/19_3.5mm_Headphone_Jack.jpg" src="../../../_images/19_3.5mm_Headphone_Jack.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 19 - 3.5mm Headphone Jack</strong></span><a class="headerlink" href="#id20" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id21">
+<img alt="../../../_images/20_2.2uF_Capacitor.jpg" src="../../../_images/20_2.2uF_Capacitor.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 20 - 2.2uF Capacitor</strong></span><a class="headerlink" href="#id21" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id22">
+<img alt="../../../_images/21_1uF_Capacitor.jpg" src="../../../_images/21_1uF_Capacitor.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 21 - 1uF Capacitor</strong></span><a class="headerlink" href="#id22" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id23">
+<img alt="../../../_images/22_470uF_Capacitor.jpg" src="../../../_images/22_470uF_Capacitor.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 22 - 470uF Capacitor</strong></span><a class="headerlink" href="#id23" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id24">
+<img alt="../../../_images/23_Header_Pins.jpg" src="../../../_images/23_Header_Pins.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 23 - Header Pins</strong></span><a class="headerlink" href="#id24" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id25">
+<img alt="../../../_images/24_Assembled.jpg" src="../../../_images/24_Assembled.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 24 - Assembled Shield</strong></span><a class="headerlink" href="#id25" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Still can’t figure out the assembly? You can follow the video provided below to assemble your Shield.</p>
+<div class="video_wrapper" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/dcuCihh3yn4" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></section>
+<section id="using-the-sensor">
+<h2>Using the Sensor<a class="headerlink" href="#using-the-sensor" title="Permalink to this heading">#</a></h2>
+<p>The possibilities are endless as you can:</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-2 sd-mb-2 sd-ml-0 sd-mr-0 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<figure class="align-default">
+<img alt="../../../_images/LEDGraph.gif" src="../../../_images/LEDGraph.gif" />
+</figure>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Visualize the EMG signals using the 6-onboard LEDs. The more you flex, the more LEDs will glow up.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<figure class="align-default">
+<img alt="../../../_images/servo-control.gif" src="../../../_images/servo-control.gif" />
+</figure>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Directly connect the servo motor via 3-pin angled header pins and control it using muscle signals (EMG).</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<figure class="align-default">
+<img alt="../../../_images/listening-muscle-signals.gif" src="../../../_images/listening-muscle-signals.gif" />
+</figure>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Give audio/mic input signals from your mobile phone, laptop, or speakers via BioAmp AUX Cable connected to a 4-pin JST PH 2mm connector.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<figure class="align-default">
+<img alt="../../../_images/9v-battery.gif" src="../../../_images/9v-battery.gif" />
+</figure>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Connect a 7V to 9V battery via snap cable.</p>
+</div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Record the muscle signals (EMG) either using Gel Electrodes or BioAmp Bands (dry electrode based) via BioAmp Cable connected to a 3-pin JST PH 2mm connector.</p></li>
+<li><p>Listen to your muscle signals using wired headphones/earphones connected to a 3.5mm headphone jack.</p></li>
+<li><p>Connect hundreds of devices like OLED screens, character displays, temperature sensors, accelerometers, BioAmp Hardware, and much more using the two I2C interfaces.</p></li>
+<li><p>Connect Arduino Uno’s D6 digital I/O pins and A2 analog input pins using STEMMA digital and STEMMA analog connectors respectively.</p></li>
+<li><p>Program the 2 user buttons according to your project requirements.</p></li>
+</ul>
+</section>
+<section id="some-project-ideas">
+<h2>Some project ideas<a class="headerlink" href="#some-project-ideas" title="Permalink to this heading">#</a></h2>
+<p>These features make it the ultimate plug-and-play kit for students, researchers, and hobbyists alike who want to use muscle signals (EMG) to make amazing human-computer interface (HCI) projects like:</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-2 sd-mb-2 sd-ml-0 sd-mr-0 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>1. Controlling a Dino Game using your muscle signals (EMG)</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/66VOVqrFLoQ" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>2. Scrolling Instagram Reels/YouTube Shorts by using your muscle signals (EMG)</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/ZzhrNyndky4" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>3. Making a Muscle Strength Game Using Muscle BioAmp Shield &amp; Arduino UNO</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/bSfTnFcCHYM" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>4. Record, Visualize &amp; Listen to Muscle Signals Using Muscle BioAmp Shield</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/kgvK51UIXdo" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>5. Controlling Servo Claw With Muscle Signals Using Muscle BioAmp Shield</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/kgvK51UIXdo" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../bioamp-exg-pill/index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">BioAmp EXG Pill</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../muscle-bioamp-patchy/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Muscle BioAmp Patchy</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features-specifications">Features &amp; Specifications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hardware">Hardware</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assemblying-the-kit">Assemblying the Kit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-sensor">Using the Sensor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-project-ideas">Some project ideas</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/upsidedownlabs/upsidedownlabs.github.io/edit/mainbioamp/hardware/muscle-bioamp-shield/index.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../../_sources/bioamp/hardware/muscle-bioamp-shield/index.rst">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, Upside Down Labs.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="last-updated">
+  Last updated on Mar 09, 2024.
+  <br/>
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
