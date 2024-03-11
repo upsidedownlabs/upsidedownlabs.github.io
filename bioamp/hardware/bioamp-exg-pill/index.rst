@@ -32,7 +32,7 @@ Features & Specifications
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Minimum Input Voltage               | 4.5-40 V                                                                                                                                                         |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Input Impedance                     | 10^12 Ω                                                                                                                                                          |
+| Input Impedance                     | 10^12 ohm                                                                                                                                                        |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Compatible Hardware                 | Any development board with an ADC (Arduino UNO & Nano, Espressif ESP32, Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name just a few) |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -170,8 +170,7 @@ be used for a wide variety of interesting biosensing projects, including:
 - Blink detection (EOG)
 - Capturing photos with a blink of an eye (EOG)
 - Controlling LEDs via brain waves (EEG)
-- Patient monitoring
-and many more examples. 
+- Patient monitoring and many more examples. 
 
 Some project ideas
 *******************
