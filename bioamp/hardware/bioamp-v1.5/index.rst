@@ -18,6 +18,7 @@ muscles (EMG) using audacity or Backyard Brain’s spike recorder app.
     :align: center
 
 
+
 Features & Specifications
 ***************************
 

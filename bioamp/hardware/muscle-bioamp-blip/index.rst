@@ -93,8 +93,8 @@ To measure the EMG signals, connect BioAmp Cable v3 with your muscle sensor as s
 Some project ideas
 ********************
 
-We have curated a playlist for you which consists some awesome project ideas for you to get started with your next HCI project.
+.. We have curated a playlist for you which consists some awesome project ideas for you to get started with your next HCI project.
 
-.. youtube:: https://youtube.com/playlist?list=PLtkEloJ7UnkQIoz1HK4IXWujCB8hKdiKU&si=osloTX71TE7AJ3CF
-    :width: 100%
-    :align: center
+.. .. youtube:: https://youtube.com/playlist?list=PLtkEloJ7UnkQIoz1HK4IXWujCB8hKdiKU&si=osloTX71TE7AJ3CF
+..     :width: 100%
+..     :align: center
