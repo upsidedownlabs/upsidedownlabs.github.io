@@ -14,7 +14,7 @@ jobs:
       with:
         docs-folder: "."
         pre-build-command: "sudo apt-get update -y && sudo apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
-        build-command: "make clean ; sphinx-build -b html . _build/html ; make latexpdf"
+        build-command: "sphinx-build -b html . _build/html && make latexpdf"
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
