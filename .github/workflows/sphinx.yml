@@ -43,7 +43,7 @@ jobs:
     - name: Upload PDF artifacts
       uses: actions/upload-artifact@v4
       with:
-          name: html-docs
+          name: pdf-docs
           path: _build/latex/*.pdf
     - name: Deploy PDF
       uses: peaceiris/actions-gh-pages@v3
