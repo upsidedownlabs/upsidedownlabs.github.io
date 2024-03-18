@@ -12,9 +12,9 @@ jobs:
     - uses: actions/checkout@master
     - uses: ammaraskar/sphinx-action@master
       with:
-        docs-folder: "."
+        docs-folder: ""
     - uses: ammaraskar/sphinx-action@master
       with:
-        pre-build-command: "apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
+        docs-folder: ""
+        pre-build-command: "sudo apt update -y && sudo apt install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
         build-command: "make latexpdf"
-        docs-folder: "."
