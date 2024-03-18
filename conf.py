@@ -118,3 +118,6 @@ html_context = {
     "my_vcs_site": "https://github.com/upsidedownlabs/upsidedownlabs.github.io/edit/main",
 }
 
+latex_documents = [
+    ("bioamp-exg-pill", "bioamp-exg-pill.tex", "BioAmp EXG Pill", author, "manual"),
+]

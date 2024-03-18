@@ -24,7 +24,7 @@ Features & Specifications
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Minimum Input Voltage | 3.3-30 V                                                                                                                                                         |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Input Impedance       | 10^11 Ω                                                                                                                                                          |
+| Input Impedance       | 10^11 ohm                                                                                                                                                        |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Fixed Gain            | x2420                                                                                                                                                            |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -53,17 +53,21 @@ Images below shows a quick overview of the hardware design.
     :margin: 4 4 0 0 
     :gutter: 2
 
-    .. card::
+    .. grid-item::    
+        
+        .. card::
 
-        **PCB Front**
-        ^^^^^
-        .. figure:: media/front.*
+            **PCB Front**
+            ^^^^^
+            .. figure:: media/front.*
 
-    .. card::
+    .. grid-item::
+        
+        .. card::
 
-        **PCB Back**
-        ^^^^^
-        .. figure:: media/back.*            
+            **PCB Back**
+            ^^^^^
+            .. figure:: media/back.*            
 
 .. figure:: media/assembled.*
     :align: center
@@ -198,6 +202,6 @@ Some project ideas
 
 We have curated a playlist for you which consists some awesome project ideas for you to get started with your next HCI project.
 
-.. youtube:: https://youtube.com/playlist?list=PLtkEloJ7UnkQIoz1HK4IXWujCB8hKdiKU&si=osloTX71TE7AJ3CF
-    :width: 100%
-    :align: center
+.. .. youtube:: https://youtube.com/playlist?list=PLtkEloJ7UnkQIoz1HK4IXWujCB8hKdiKU&si=osloTX71TE7AJ3CF
+..     :width: 100%
+..     :align: center

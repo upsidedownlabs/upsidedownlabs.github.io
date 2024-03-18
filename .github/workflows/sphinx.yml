@@ -1,25 +1,42 @@
 name: "Sphinx: Render docs"
 
-on: push
+on: 
+  push:
+    branches:
+      main
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-    - uses: actions/checkout@v4
-    - name: Build HTML
-      uses: ammaraskar/sphinx-action@master
+    - run: lsb_release -a
+    - run: uname -a
+    - name: Checkout repository
+      uses: actions/checkout@master
+    - name: Setup Python
+      uses: actions/setup-python@master
       with:
-        docs-folder: "."
-        build-command: "sphinx-build -b html . _build/html"
+        python-version: '3.10'
+    - name: Install build dependencies 
+      run: |
+        sudo apt-get update -y
+        sudo apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+    - name: Upgrade pip
+      run: python3 -m pip install --upgrade pip
+    - name: Install python dependencies
+      run: pip install -r requirements.txt
+    - name: Build HTML
+      run: make html
+    - name: Build PDF
+      run: |
+        make latexpdf
+        mv _build/latex/*.pdf _build/html
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: html-docs
+        name: docs
         path: _build/html/
-    - name: Deploy
+    - name: Deploy HTML
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'
       with:
