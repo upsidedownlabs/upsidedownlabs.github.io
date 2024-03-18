@@ -20,7 +20,7 @@ jobs:
     - name: Install build dependencies 
       run: |
         sudo apt-get update -y
-        sudo apt-get install -y latexmk texlive-latex-base texlive-latex-extra latexmk texlive-fonts-recommended texlive-full texlive-latex-extra texlive-fonts-extra
+        sudo apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
     - name: Upgrade pip
       run: python3 -m pip install --upgrade pip
     - name: Install python dependencies
