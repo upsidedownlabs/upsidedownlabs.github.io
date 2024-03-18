@@ -27,3 +27,5 @@ jobs:
       run: pip install -r requirements.txt
     - name: Build HTML
       run: make html
+    - name: Build PDF
+      run: make latexpdf
