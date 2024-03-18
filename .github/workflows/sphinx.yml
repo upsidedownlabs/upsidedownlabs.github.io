@@ -24,6 +24,7 @@ jobs:
       with:
         config_file_path: 'conf.py'
         documentation_path: ''
+        requirements_path: ''
         target_branch: 'gh-pages'
     - name: Push changes
       uses: ad-m/github-push-action@master
