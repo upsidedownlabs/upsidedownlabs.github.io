@@ -12,10 +12,6 @@ jobs:
     - uses: actions/checkout@master
     - uses: ammaraskar/sphinx-action@master
       with:
-        docs-folder: "docs/"
-    - uses: ammaraskar/sphinx-action@master
-      with:
-        build-command: "sphinx-build -b html . _build"
         docs-folder: ""
     - uses: ammaraskar/sphinx-action@master
       with:
