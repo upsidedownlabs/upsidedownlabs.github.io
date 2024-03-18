@@ -32,7 +32,7 @@ output. On STEMMA digital port you can connect any digital sensor or actuator of
 +---------------------+---------------------------------------+
 | Input Voltage       | 5V                                    |
 +---------------------+---------------------------------------+
-| Input Impedance     | 10^11 Ω                               |
+| Input Impedance     | 10^11 ohm                             |
 +---------------------+---------------------------------------+
 | Fixed Gain          | x2420                                 |
 +---------------------+---------------------------------------+
@@ -60,17 +60,21 @@ Images below shows a quick overview of the hardware design.
     :margin: 4 4 0 0 
     :gutter: 2
 
-    .. card::
+    .. grid-item::
 
-        **PCB Front**
-        ^^^^^
-        .. figure:: media/Muscle-BioAmp-Shield-Front.*
+        .. card::
 
-    .. card::
+            **PCB Front**
+            ^^^^^
+            .. figure:: media/Muscle-BioAmp-Shield-Front.*
 
-        **PCB Back**
-        ^^^^^
-        .. figure:: media/Muscle-BioAmp-Shield-Back.*
+    .. grid-item::
+        
+        .. card::
+
+            **PCB Back**
+            ^^^^^
+            .. figure:: media/Muscle-BioAmp-Shield-Back.*
 
 .. figure:: media/Muscle-BioAmp-Shield-With-Wires.*
     :align: center
@@ -246,37 +250,45 @@ Using the Sensor
 
 The possibilities are endless as you can:
 
-.. grid:: 1 1 2 2
-    :margin: 2 2 0 0 
-    :gutter: 2
+.. .. grid:: 1 1 2 2
+..     :margin: 2 2 0 0 
+..     :gutter: 2
 
-    .. card::
-        
-        .. figure:: media/LEDGraph.*
+..     .. grid-item::
+
+..         .. card::
             
-        ^^^^^  
-        Visualize the EMG signals using the 6-onboard LEDs. The more you flex, the more LEDs will glow up.
+..             .. figure:: media/LEDGraph.*
+                
+..             ^^^^^  
+..             Visualize the EMG signals using the 6-onboard LEDs. The more you flex, the more LEDs will glow up.
 
-    .. card::
+..     .. grid-item::
 
-        .. figure:: media/servo-control.*
+..         .. card::
 
-        ^^^^^    
-        Directly connect the servo motor via 3-pin angled header pins and control it using muscle signals (EMG).
+..             .. figure:: media/servo-control.*
 
-    .. card::
+..             ^^^^^    
+..             Directly connect the servo motor via 3-pin angled header pins and control it using muscle signals (EMG).
 
-        .. figure:: media/listening-muscle-signals.*
-        
-        ^^^^^    
-        Give audio/mic input signals from your mobile phone, laptop, or speakers via BioAmp AUX Cable connected to a 4-pin JST PH 2mm connector. 
+..     .. grid-item::
+
+..         .. card::
+
+..             .. figure:: media/listening-muscle-signals.*
             
-    .. card::
+..             ^^^^^    
+..             Give audio/mic input signals from your mobile phone, laptop, or speakers via BioAmp AUX Cable connected to a 4-pin JST PH 2mm connector. 
+            
+..     .. grid-item::
 
-        .. figure:: media/9v-battery.*
-        
-        ^^^^^    
-        Connect a 7V to 9V battery via snap cable.
+..         .. card::
+
+..             .. figure:: media/9v-battery.*
+            
+..             ^^^^^    
+..             Connect a 7V to 9V battery via snap cable.
 
 
 - Record the muscle signals (EMG) either using Gel Electrodes or BioAmp Bands (dry electrode based) via BioAmp Cable connected to a 3-pin JST PH 2mm connector.

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
@@ -38,9 +38,9 @@
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
   <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js?v=2b91c5f0"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../../_static/doctools.js?v=888ff710"></script>
-    <script src="../../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/design-tabs.js?v=36754332"></script>
@@ -53,7 +53,7 @@
     <link rel="prev" title="BioAmp EXG Pill" href="../bioamp-exg-pill/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Mar 09, 2024"/>
+    <meta name="docbuild:last-update" content="Mar 18, 2024"/>
   </head>
   
   
@@ -484,10 +484,10 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="muscle-bioamp-shield">
-<span id="id1"></span><h1>Muscle BioAmp Shield<a class="headerlink" href="#muscle-bioamp-shield" title="Permalink to this heading">#</a></h1>
+<span id="id1"></span><h1>Muscle BioAmp Shield<a class="headerlink" href="#muscle-bioamp-shield" title="Link to this heading">#</a></h1>
 <p>All-in-one Arduino Uno Shield for EMG (Electromyography).</p>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
 <p>Muscle BioAmp Shield is an all-in-one Arduino Uno ElectroMyography (EMG) shield for learning neuroscience with ease. It is a
 DIY Electrophysiology/NeuroScience shield inspired from Back Yard Brains (BYB) Muscle Spiker shield and provides similar features
 like hobby servo output, user buttons, LED Bar, Audio output, and battery input. It is perfect for beginners as they can easily
@@ -497,7 +497,7 @@ Human-Computer Interface (HCI).</p>
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/w8yw12SUe6Q" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
 </iframe></div></section>
 <section id="features-specifications">
-<h2>Features &amp; Specifications<a class="headerlink" href="#features-specifications" title="Permalink to this heading">#</a></h2>
+<h2>Features &amp; Specifications<a class="headerlink" href="#features-specifications" title="Link to this heading">#</a></h2>
 <p>Muscle BioAmp Shield comes with various plug-and-play options so you can connect hundreds of extension boards like OLED screens,
 character displays, accelerometers, and servo controllers to name just a few using the STEMMA I2C interface. You also get STEMMA
 digital and STEMMA analog ports. On STEMMA analog port you can connect additional BioAmp EXG Pill or any other sensor with analog
@@ -511,7 +511,7 @@ output. On STEMMA digital port you can connect any digital sensor or actuator of
 <td><p>5V</p></td>
 </tr>
 <tr class="row-even"><td><p>Input Impedance</p></td>
-<td><p>10^11 Ω</p></td>
+<td><p>10^11 ohm</p></td>
 </tr>
 <tr class="row-odd"><td><p>Fixed Gain</p></td>
 <td><p>x2420</p></td>
@@ -541,10 +541,11 @@ output. On STEMMA digital port you can connect any digital sensor or actuator of
 </table>
 </section>
 <section id="hardware">
-<h2>Hardware<a class="headerlink" href="#hardware" title="Permalink to this heading">#</a></h2>
+<h2>Hardware<a class="headerlink" href="#hardware" title="Link to this heading">#</a></h2>
 <p>Images below shows a quick overview of the hardware design.</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-4 sd-mb-4 sd-ml-0 sd-mr-0 docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
 <p class="sd-card-text"><strong>PCB Front</strong></p>
@@ -555,6 +556,8 @@ output. On STEMMA digital port you can connect any digital sensor or actuator of
 </figure>
 </div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
 <p class="sd-card-text"><strong>PCB Back</strong></p>
@@ -563,6 +566,7 @@ output. On STEMMA digital port you can connect any digital sensor or actuator of
 <figure class="align-default">
 <img alt="../../../_images/Muscle-BioAmp-Shield-Back.png" src="../../../_images/Muscle-BioAmp-Shield-Back.png" />
 </figure>
+</div>
 </div>
 </div>
 </div>
@@ -578,7 +582,7 @@ output. On STEMMA digital port you can connect any digital sensor or actuator of
 </figure>
 </section>
 <section id="assemblying-the-kit">
-<h2>Assemblying the Kit<a class="headerlink" href="#assemblying-the-kit" title="Permalink to this heading">#</a></h2>
+<h2>Assemblying the Kit<a class="headerlink" href="#assemblying-the-kit" title="Link to this heading">#</a></h2>
 <p>You can get your own Muscle BioAmp Shield bag of parts from our <a class="reference external" href="https://store.upsidedownlabs.tech/product/muscle-bioamp-shield-v0-3/">store</a> or <a class="reference external" href="https://www.tindie.com/products/upsidedownlabs/muscle-bioamp-shield-v03-arduino-shield-for-emg/">Tindie</a>
 and for assembling your shield you can take a look at <a class="reference external" href="https://upsidedownlabs.github.io/DIY-Muscle-BioAmp-Shield/">this interactive BOM</a> or the step by step guide below.</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-2 sd-mb-2 sd-ml-0 sd-mr-0 docutils">
@@ -587,7 +591,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id2">
 <img alt="../../../_images/01_Bare_Board.jpg" src="../../../_images/01_Bare_Board.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 1 - Bare Board</strong></span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 1 - Bare Board</strong></span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -595,7 +599,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id3">
 <img alt="../../../_images/02_1M_Resistors.jpg" src="../../../_images/02_1M_Resistors.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 2 - 1M Resistors</strong></span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 2 - 1M Resistors</strong></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -603,7 +607,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id4">
 <img alt="../../../_images/03_330R_Resistors.jpg" src="../../../_images/03_330R_Resistors.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 3 - 330R Resistors</strong></span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 3 - 330R Resistors</strong></span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -611,7 +615,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id5">
 <img alt="../../../_images/04_10K_Resistors.jpg" src="../../../_images/04_10K_Resistors.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 4 - 10K Resistors</strong></span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 4 - 10K Resistors</strong></span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -619,7 +623,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id6">
 <img alt="../../../_images/05_22K_Resistors.jpg" src="../../../_images/05_22K_Resistors.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 5 - 22K Resistors</strong></span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 5 - 22K Resistors</strong></span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -627,7 +631,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id7">
 <img alt="../../../_images/06_1K_Resistors.jpg" src="../../../_images/06_1K_Resistors.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 6 - 1K Resistors</strong></span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 6 - 1K Resistors</strong></span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -635,7 +639,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id8">
 <img alt="../../../_images/07_220K_Resistors.jpg" src="../../../_images/07_220K_Resistors.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 7 - 220K Resistors</strong></span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 7 - 220K Resistors</strong></span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -643,7 +647,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id9">
 <img alt="../../../_images/08_1nF_Capacitors.jpg" src="../../../_images/08_1nF_Capacitors.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 8 - 1nF Capacitors</strong></span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 8 - 1nF Capacitors</strong></span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -651,7 +655,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id10">
 <img alt="../../../_images/09_100nF_Capacitors.jpg" src="../../../_images/09_100nF_Capacitors.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 9 - 100nF Capacitors</strong></span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 9 - 100nF Capacitors</strong></span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -659,7 +663,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id11">
 <img alt="../../../_images/10_100pF_Capacitors.jpg" src="../../../_images/10_100pF_Capacitors.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 10 - 100pF Capacitors</strong></span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 10 - 100pF Capacitors</strong></span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -667,7 +671,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id12">
 <img alt="../../../_images/11_Angled_Header_Pins.jpg" src="../../../_images/11_Angled_Header_Pins.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 11 - Angled Header Pins</strong></span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 11 - Angled Header Pins</strong></span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -675,7 +679,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id13">
 <img alt="../../../_images/12_5x5mm_Buttons.jpg" src="../../../_images/12_5x5mm_Buttons.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 12 - 5x5mm Buttons</strong></span><a class="headerlink" href="#id13" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 12 - 5x5mm Buttons</strong></span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -683,7 +687,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id14">
 <img alt="../../../_images/13_OptoIsolator.jpg" src="../../../_images/13_OptoIsolator.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 13 - OptoIsolator</strong></span><a class="headerlink" href="#id14" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 13 - OptoIsolator</strong></span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -691,7 +695,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id15">
 <img alt="../../../_images/14_JST_PH_Angled_Connectors.jpg" src="../../../_images/14_JST_PH_Angled_Connectors.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 14 - JST PH Angled Connectors</strong></span><a class="headerlink" href="#id15" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 14 - JST PH Angled Connectors</strong></span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -699,7 +703,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id16">
 <img alt="../../../_images/15_JST_PH_Straight_Connectors.jpg" src="../../../_images/15_JST_PH_Straight_Connectors.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 15 - JST PH Straight Connectors</strong></span><a class="headerlink" href="#id16" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 15 - JST PH Straight Connectors</strong></span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -707,7 +711,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id17">
 <img alt="../../../_images/16_IC_Socket.jpg" src="../../../_images/16_IC_Socket.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 16 - IC Socket</strong></span><a class="headerlink" href="#id17" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 16 - IC Socket</strong></span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -715,7 +719,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id18">
 <img alt="../../../_images/17_IC.jpg" src="../../../_images/17_IC.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 17 - IC</strong></span><a class="headerlink" href="#id18" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 17 - IC</strong></span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -723,7 +727,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id19">
 <img alt="../../../_images/18_LEDs.jpg" src="../../../_images/18_LEDs.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 18 - LEDs</strong></span><a class="headerlink" href="#id19" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 18 - LEDs</strong></span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -731,7 +735,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id20">
 <img alt="../../../_images/19_3.5mm_Headphone_Jack.jpg" src="../../../_images/19_3.5mm_Headphone_Jack.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 19 - 3.5mm Headphone Jack</strong></span><a class="headerlink" href="#id20" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 19 - 3.5mm Headphone Jack</strong></span><a class="headerlink" href="#id20" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -739,7 +743,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id21">
 <img alt="../../../_images/20_2.2uF_Capacitor.jpg" src="../../../_images/20_2.2uF_Capacitor.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 20 - 2.2uF Capacitor</strong></span><a class="headerlink" href="#id21" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 20 - 2.2uF Capacitor</strong></span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -747,7 +751,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id22">
 <img alt="../../../_images/21_1uF_Capacitor.jpg" src="../../../_images/21_1uF_Capacitor.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 21 - 1uF Capacitor</strong></span><a class="headerlink" href="#id22" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 21 - 1uF Capacitor</strong></span><a class="headerlink" href="#id22" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -755,7 +759,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id23">
 <img alt="../../../_images/22_470uF_Capacitor.jpg" src="../../../_images/22_470uF_Capacitor.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 22 - 470uF Capacitor</strong></span><a class="headerlink" href="#id23" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 22 - 470uF Capacitor</strong></span><a class="headerlink" href="#id23" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -763,7 +767,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id24">
 <img alt="../../../_images/23_Header_Pins.jpg" src="../../../_images/23_Header_Pins.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 23 - Header Pins</strong></span><a class="headerlink" href="#id24" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 23 - Header Pins</strong></span><a class="headerlink" href="#id24" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -771,7 +775,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 <figure class="align-default" id="id25">
 <img alt="../../../_images/24_Assembled.jpg" src="../../../_images/24_Assembled.jpg" />
 <figcaption>
-<p><span class="caption-text"><strong>Step 24 - Assembled Shield</strong></span><a class="headerlink" href="#id25" title="Permalink to this image">#</a></p>
+<p><span class="caption-text"><strong>Step 24 - Assembled Shield</strong></span><a class="headerlink" href="#id25" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -782,52 +786,8 @@ and for assembling your shield you can take a look at <a class="reference extern
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/dcuCihh3yn4" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
 </iframe></div></section>
 <section id="using-the-sensor">
-<h2>Using the Sensor<a class="headerlink" href="#using-the-sensor" title="Permalink to this heading">#</a></h2>
+<h2>Using the Sensor<a class="headerlink" href="#using-the-sensor" title="Link to this heading">#</a></h2>
 <p>The possibilities are endless as you can:</p>
-<div class="sd-container-fluid sd-sphinx-override sd-mt-2 sd-mb-2 sd-ml-0 sd-mr-0 docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<figure class="align-default">
-<img alt="../../../_images/LEDGraph.gif" src="../../../_images/LEDGraph.gif" />
-</figure>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">Visualize the EMG signals using the 6-onboard LEDs. The more you flex, the more LEDs will glow up.</p>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<figure class="align-default">
-<img alt="../../../_images/servo-control.gif" src="../../../_images/servo-control.gif" />
-</figure>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">Directly connect the servo motor via 3-pin angled header pins and control it using muscle signals (EMG).</p>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<figure class="align-default">
-<img alt="../../../_images/listening-muscle-signals.gif" src="../../../_images/listening-muscle-signals.gif" />
-</figure>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">Give audio/mic input signals from your mobile phone, laptop, or speakers via BioAmp AUX Cable connected to a 4-pin JST PH 2mm connector.</p>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<figure class="align-default">
-<img alt="../../../_images/9v-battery.gif" src="../../../_images/9v-battery.gif" />
-</figure>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">Connect a 7V to 9V battery via snap cable.</p>
-</div>
-</div>
-</div>
-</div>
 <ul class="simple">
 <li><p>Record the muscle signals (EMG) either using Gel Electrodes or BioAmp Bands (dry electrode based) via BioAmp Cable connected to a 3-pin JST PH 2mm connector.</p></li>
 <li><p>Listen to your muscle signals using wired headphones/earphones connected to a 3.5mm headphone jack.</p></li>
@@ -837,7 +797,7 @@ and for assembling your shield you can take a look at <a class="reference extern
 </ul>
 </section>
 <section id="some-project-ideas">
-<h2>Some project ideas<a class="headerlink" href="#some-project-ideas" title="Permalink to this heading">#</a></h2>
+<h2>Some project ideas<a class="headerlink" href="#some-project-ideas" title="Link to this heading">#</a></h2>
 <p>These features make it the ultimate plug-and-play kit for students, researchers, and hobbyists alike who want to use muscle signals (EMG) to make amazing human-computer interface (HCI) projects like:</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-2 sd-mb-2 sd-ml-0 sd-mr-0 docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
@@ -1009,7 +969,7 @@ and for assembling your shield you can take a look at <a class="reference extern
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Mar 09, 2024.
+  Last updated on Mar 18, 2024.
   <br/>
 </p></div>
       

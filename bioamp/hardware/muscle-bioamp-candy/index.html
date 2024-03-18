@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
@@ -38,9 +38,9 @@
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
   <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js?v=2b91c5f0"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../../_static/doctools.js?v=888ff710"></script>
-    <script src="../../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/design-tabs.js?v=36754332"></script>
@@ -53,7 +53,7 @@
     <link rel="prev" title="BioAmp v1.5" href="../bioamp-v1.5/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Mar 09, 2024"/>
+    <meta name="docbuild:last-update" content="Mar 18, 2024"/>
   </head>
   
   
@@ -484,10 +484,10 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="muscle-bioamp-candy">
-<span id="id1"></span><h1>Muscle BioAmp Candy<a class="headerlink" href="#muscle-bioamp-candy" title="Permalink to this heading">#</a></h1>
+<span id="id1"></span><h1>Muscle BioAmp Candy<a class="headerlink" href="#muscle-bioamp-candy" title="Link to this heading">#</a></h1>
 <p>Candy-size affordable muscle sensor for precise EMG sensing.</p>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
 <p>A candy-size single-channel ElectroMyography (EMG) sensor for precise recording of muscle signals
 at an affordable cost. It is an SMD version of Muscle BioAmp BisCute that can be used to make
 amazing Human-Computer Interface (HCI) projects. To record the EMG signals you can use any standalone
@@ -498,14 +498,14 @@ UNO/Nano.</p>
 </figure>
 </section>
 <section id="features-specifications">
-<h2>Features &amp; Specifications<a class="headerlink" href="#features-specifications" title="Permalink to this heading">#</a></h2>
+<h2>Features &amp; Specifications<a class="headerlink" href="#features-specifications" title="Link to this heading">#</a></h2>
 <table class="table">
 <tbody>
 <tr class="row-odd"><td><p>Minimum Input Voltage</p></td>
 <td><p>3.3-30 V</p></td>
 </tr>
 <tr class="row-even"><td><p>Input Impedance</p></td>
-<td><p>10^11 Ω</p></td>
+<td><p>10^11 ohm</p></td>
 </tr>
 <tr class="row-odd"><td><p>Fixed Gain</p></td>
 <td><p>x2420</p></td>
@@ -535,10 +535,11 @@ UNO/Nano.</p>
 </table>
 </section>
 <section id="hardware">
-<h2>Hardware<a class="headerlink" href="#hardware" title="Permalink to this heading">#</a></h2>
+<h2>Hardware<a class="headerlink" href="#hardware" title="Link to this heading">#</a></h2>
 <p>Images below shows a quick overview of the hardware design.</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-4 sd-mb-4 sd-ml-0 sd-mr-0 docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
 <p class="sd-card-text"><strong>PCB Front</strong></p>
@@ -549,6 +550,8 @@ UNO/Nano.</p>
 </figure>
 </div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
 <p class="sd-card-text"><strong>PCB Back</strong></p>
@@ -557,6 +560,7 @@ UNO/Nano.</p>
 <figure class="align-default">
 <img alt="../../../_images/PCBback.png" src="../../../_images/PCBback.png" />
 </figure>
+</div>
 </div>
 </div>
 </div>
@@ -575,7 +579,7 @@ UNO/Nano.</p>
 </figure>
 </section>
 <section id="connecting-with-arduino">
-<h2>Connecting with Arduino<a class="headerlink" href="#connecting-with-arduino" title="Permalink to this heading">#</a></h2>
+<h2>Connecting with Arduino<a class="headerlink" href="#connecting-with-arduino" title="Link to this heading">#</a></h2>
 <p>To get started, you can pair Muscle BioAmp Candy with any development board with an ADC (Arduino UNO &amp; Nano, Espressif ESP32,
 Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name just a few) or any standalone ADC of your choice.</p>
 <p>To measure the EMG signals, connect BioAmp Cable v3 with your muscle sensor as shown in the image below:</p>
@@ -585,16 +589,14 @@ Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name jus
 <p><strong>CAUTION:</strong> Make sure to follow the above diagram while making the connections between your Muscle BioAmp Candy &amp; Arduino (or any other ADC of your choice), especially the GND and VCC else it may damage the muscle sensor.</p>
 </section>
 <section id="using-the-sensor">
-<h2>Using the sensor<a class="headerlink" href="#using-the-sensor" title="Permalink to this heading">#</a></h2>
+<h2>Using the sensor<a class="headerlink" href="#using-the-sensor" title="Link to this heading">#</a></h2>
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/lPX2TGBcHOA" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
 </iframe></div></section>
 <section id="some-project-ideas">
-<h2>Some project ideas<a class="headerlink" href="#some-project-ideas" title="Permalink to this heading">#</a></h2>
+<h2>Some project ideas<a class="headerlink" href="#some-project-ideas" title="Link to this heading">#</a></h2>
 <p>We have curated a playlist for you which consists some awesome project ideas for you to get started with your next HCI project.</p>
-<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
-<iframe allowfullscreen="true" src="https://www.youtube.com/embed/https://youtube.com/playlist?list=PLtkEloJ7UnkQIoz1HK4IXWujCB8hKdiKU&amp;si=osloTX71TE7AJ3CF" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
-</iframe></div></section>
+</section>
 </section>
 
 
@@ -713,7 +715,7 @@ Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name jus
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Mar 09, 2024.
+  Last updated on Mar 18, 2024.
   <br/>
 </p></div>
       

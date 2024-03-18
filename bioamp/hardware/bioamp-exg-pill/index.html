@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
@@ -38,9 +38,9 @@
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
   <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js?v=2b91c5f0"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../../_static/doctools.js?v=888ff710"></script>
-    <script src="../../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/design-tabs.js?v=36754332"></script>
@@ -53,7 +53,7 @@
     <link rel="prev" title="BioAmp Hardware" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Mar 09, 2024"/>
+    <meta name="docbuild:last-update" content="Mar 18, 2024"/>
   </head>
   
   
@@ -484,10 +484,10 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="bioamp-exg-pill">
-<span id="id1"></span><h1>BioAmp EXG Pill<a class="headerlink" href="#bioamp-exg-pill" title="Permalink to this heading">#</a></h1>
+<span id="id1"></span><h1>BioAmp EXG Pill<a class="headerlink" href="#bioamp-exg-pill" title="Link to this heading">#</a></h1>
 <p>Professional-grade analog front-end amplification for ECG, EMG, EOG, and EEG biosensing on one tiny board.</p>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
 <p>BioAmp EXG Pill is a small, powerful analog-front-end (AFE) biopotential signal-acquisition board that can be paired
 with any microcontroller unit (MCU) or single-board computer (SBC) with an analog-to-digital converter (ADC) such as
 Arduino UNO &amp; Nano, Espressif ESP32, Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, and Raspberry Pi Pico, to name
@@ -508,14 +508,14 @@ in comparison to the other available.</p>
 </figure>
 </section>
 <section id="features-specifications">
-<h2>Features &amp; Specifications<a class="headerlink" href="#features-specifications" title="Permalink to this heading">#</a></h2>
+<h2>Features &amp; Specifications<a class="headerlink" href="#features-specifications" title="Link to this heading">#</a></h2>
 <table class="table">
 <tbody>
 <tr class="row-odd"><td><p>Minimum Input Voltage</p></td>
 <td><p>4.5-40 V</p></td>
 </tr>
 <tr class="row-even"><td><p>Input Impedance</p></td>
-<td><p>10^12 Ω</p></td>
+<td><p>10^12 ohm</p></td>
 </tr>
 <tr class="row-odd"><td><p>Compatible Hardware</p></td>
 <td><p>Any development board with an ADC (Arduino UNO &amp; Nano, Espressif ESP32, Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name just a few)</p></td>
@@ -542,7 +542,7 @@ in comparison to the other available.</p>
 </table>
 </section>
 <section id="board-layout">
-<h2>Board layout<a class="headerlink" href="#board-layout" title="Permalink to this heading">#</a></h2>
+<h2>Board layout<a class="headerlink" href="#board-layout" title="Link to this heading">#</a></h2>
 <p>Images below shows a quick overview of the BioAmp EXG Pill hardware design.</p>
 <figure class="align-left">
 <a class="reference internal image-reference" href="../../../_images/PCB_Front.png"><img alt="PCB Front" src="../../../_images/PCB_Front.png" style="width: 300px;" /></a>
@@ -558,7 +558,7 @@ in comparison to the other available.</p>
 </figure>
 </section>
 <section id="electromyography-emg">
-<h2>ElectroMyoGraphy (EMG)<a class="headerlink" href="#electromyography-emg" title="Permalink to this heading">#</a></h2>
+<h2>ElectroMyoGraphy (EMG)<a class="headerlink" href="#electromyography-emg" title="Link to this heading">#</a></h2>
 <p>Electromyography (EMG) is a technique for evaluating and recording the electrical activity produced by skeletal muscles.
 EMG is also used as a diagnostic procedure to assess the health of muscles and the nerve cells that control them (motor
 neurons). EMG results can reveal nerve dysfunction, muscle dysfunction, or problems with nerve-to-muscle signal transmission.
@@ -571,7 +571,7 @@ The images below show an EMG wave recorded with BioAmp EXG Pill and the electrod
 </figure>
 </section>
 <section id="electrocardiography-ecg">
-<h2>ElectroCardioGraphy (ECG)<a class="headerlink" href="#electrocardiography-ecg" title="Permalink to this heading">#</a></h2>
+<h2>ElectroCardioGraphy (ECG)<a class="headerlink" href="#electrocardiography-ecg" title="Link to this heading">#</a></h2>
 <p>Electrocardiography (ECG) is the process of producing an electrocardiogram (ECG or EKG). It is a graph of voltage versus time
 of the electrical activity of the heart using electrodes placed on the skin. These electrodes detect the small electrical changes
 that are a consequence of cardiac muscle depolarization followed by repolarization during each cardiac cycle (heartbeat). The
@@ -588,7 +588,7 @@ for hand ECG/EKG recording respectively.</p>
 </figure>
 </section>
 <section id="electrooculography-eog">
-<h2>Electrooculography (EOG)<a class="headerlink" href="#electrooculography-eog" title="Permalink to this heading">#</a></h2>
+<h2>Electrooculography (EOG)<a class="headerlink" href="#electrooculography-eog" title="Link to this heading">#</a></h2>
 <p>Electrooculography (EOG) is a technique for measuring the corneo-retinal standing potential that exists between the front and
 the back of the human eye. The resulting signal is called EOG. Common electrode placement for vertical &amp; horizontal EOG recording
 is shown in the image below.</p>
@@ -612,7 +612,7 @@ vertical EOG respectively.</p>
 </figure>
 </section>
 <section id="electroencephalography-eeg">
-<h2>Electroencephalography (EEG)<a class="headerlink" href="#electroencephalography-eeg" title="Permalink to this heading">#</a></h2>
+<h2>Electroencephalography (EEG)<a class="headerlink" href="#electroencephalography-eeg" title="Link to this heading">#</a></h2>
 <p>Electroencephalography (EEG) is an electrophysiological monitoring method to record electrical activity on the scalp. During
 the procedure, electrodes consisting of small metal discs with thin wires are pasted onto your scalp. The electrodes detect tiny
 electrical charges that result from the activity of your brain cells which are then amplified to appear on the computer screen.
@@ -626,7 +626,7 @@ EXG Pill and the electrode placement for the frontal cortex EEG recording respec
 </figure>
 </section>
 <section id="glimpses-of-previous-versions">
-<h2>Glimpses of previous versions<a class="headerlink" href="#glimpses-of-previous-versions" title="Permalink to this heading">#</a></h2>
+<h2>Glimpses of previous versions<a class="headerlink" href="#glimpses-of-previous-versions" title="Link to this heading">#</a></h2>
 <p>The BioAmp EXG Pill can be used in a variety of ways, the YouTube video below shows a potential way of using v0.7 of
 BioAmp EXG Pill.</p>
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
@@ -637,7 +637,7 @@ below shows the ECG, EMG, EOG, and EEG recording using v1.0b of device.</p>
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/z9-B9bHWuhg" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
 </iframe></div></section>
 <section id="real-world-applications">
-<h2>Real-world Applications<a class="headerlink" href="#real-world-applications" title="Permalink to this heading">#</a></h2>
+<h2>Real-world Applications<a class="headerlink" href="#real-world-applications" title="Link to this heading">#</a></h2>
 <p>BioAmp EXG Pill is perfect for researchers, makers, and hobbyists looking for novel ways to sample biopotential data. It can
 be used for a wide variety of interesting biosensing projects, including:</p>
 <ul class="simple">
@@ -650,12 +650,11 @@ be used for a wide variety of interesting biosensing projects, including:</p>
 <li><p>Blink detection (EOG)</p></li>
 <li><p>Capturing photos with a blink of an eye (EOG)</p></li>
 <li><p>Controlling LEDs via brain waves (EEG)</p></li>
-<li><p>Patient monitoring</p></li>
+<li><p>Patient monitoring and many more examples.</p></li>
 </ul>
-<p>and many more examples.</p>
 </section>
 <section id="some-project-ideas">
-<h2>Some project ideas<a class="headerlink" href="#some-project-ideas" title="Permalink to this heading">#</a></h2>
+<h2>Some project ideas<a class="headerlink" href="#some-project-ideas" title="Link to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-4 sd-mb-4 sd-ml-0 sd-mr-0 docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
 <div class="sd-col sd-d-flex-column docutils">
@@ -848,7 +847,7 @@ be used for a wide variety of interesting biosensing projects, including:</p>
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Mar 09, 2024.
+  Last updated on Mar 18, 2024.
   <br/>
 </p></div>
       
