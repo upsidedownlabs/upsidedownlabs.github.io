@@ -5,29 +5,20 @@ on:
     branches:
       main
 
-permissions:
-  contents: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Set Up Python 3.11
-      uses: actions/setup-python@master
-      with:
-        python-version: 3.11
     - uses: actions/checkout@master
+    - uses: ammaraskar/sphinx-action@master
       with:
-        fetch-depth: 0
-    - name: Build and Commit
-      uses: lorforlinux/sphinx-pdf-generate-action@main
+        docs-folder: "docs/"
+    - uses: ammaraskar/sphinx-action@master
       with:
-        config_file_path: 'conf.py'
-        documentation_path: ''
-        requirements_path: ''
-        target_branch: 'gh-pages'
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+        build-command: "sphinx-build -b html . _build"
+        docs-folder: ""
+    - uses: ammaraskar/sphinx-action@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: site
+        pre-build-command: "apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
+        build-command: "make latexpdf"
+        docs-folder: ""
