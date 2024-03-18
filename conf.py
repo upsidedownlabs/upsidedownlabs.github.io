@@ -24,8 +24,7 @@ author = 'Upside Down Labs'
 extensions = [
     "sphinx_design",
     "sphinxcontrib.youtube",
-    "sphinx_copybutton",
-    "sphinx_pdf_generate"
+    "sphinx_copybutton"
 ]
 
 templates_path = ['_templates']
