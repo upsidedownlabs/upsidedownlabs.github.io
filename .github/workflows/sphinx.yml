@@ -5,11 +5,15 @@ on:
     branches:
       main
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/setup-python@v3
+    - name: Set Up Python 3.11
+      uses: actions/setup-python@v3
       with:
         python-version: 3.11
     - uses: actions/checkout@master
@@ -18,8 +22,8 @@ jobs:
     - name: Build and Commit
       uses: iSOLveIT/sphinx-pdf-generate-action@main
       with:
-        config_file_path: ./conf.py
-        documentation_path: ./
+        config_file_path: './conf.py'
+        documentation_path: './'
         target_branch: 'gh-pages'
     - name: Push changes
       uses: ad-m/github-push-action@master
