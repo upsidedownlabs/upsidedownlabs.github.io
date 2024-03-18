@@ -34,14 +34,20 @@ jobs:
       with:
         name: html-docs
         path: _build/html/
-    - name: Upload PDF artifacts
-      uses: actions/upload-artifact@v4
-      with:
-          name: html-docs
-          path: _build/html/
     - name: Deploy HTML
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: _build/html
+    - name: Upload PDF artifacts
+      uses: actions/upload-artifact@v4
+      with:
+          name: html-docs
+          path: _build/latex/*.pdf
+    - name: Deploy PDF
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: _build/latex/*.pdf
