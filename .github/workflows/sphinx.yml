@@ -11,7 +11,10 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Install latexmk
-      run: sudo apt-get install latexmk
+      run: |
+        sudo apt-get update -y
+        sudo apt-get install latexmk -y
+        latexmk
     - uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "."
