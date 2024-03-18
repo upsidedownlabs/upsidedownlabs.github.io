@@ -14,12 +14,11 @@ jobs:
       run: |
         sudo apt-get update -y
         sudo apt-get install latexmk -y
-        latexmk
-    - uses: ammaraskar/sphinx-action@master
-      with:
-        docs-folder: "."
-    - uses: ammaraskar/sphinx-action@master
-      with:
-        docs-folder: "."
-        pre-build-command: "apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
-        build-command: "make latexpdf"
+    # - uses: ammaraskar/sphinx-action@master
+    #   with:
+    #     docs-folder: "."
+    # - uses: ammaraskar/sphinx-action@master
+    #   with:
+    #     docs-folder: "."
+    #     pre-build-command: "apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
+    #     build-command: "make latexpdf"
