@@ -1,32 +1,27 @@
 name: "Sphinx: Render docs"
 
-on: push
+on: 
+  push:
+    branches:
+      main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - name: Build HTML
-      uses: ammaraskar/sphinx-action@master
+    - uses: actions/setup-python@v3
       with:
-        docs-folder: "."
-        build-command: "sphinx-build -b html . _build/html"
-    - name: Build PDF
-      uses: ammaraskar/sphinx-action@master
+        python-version: 3.11
+    - uses: actions/checkout@master
       with:
-        pre-build-command: "apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
-        docs-folder: "."
-        build-command: "make latexpdf"
-
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v4
+        fetch-depth: 0
+    - name: Build and Commit
+      uses: iSOLveIT/sphinx-pdf-generate-action@main
       with:
-        name: html-docs
-        path: _build/html/
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/main'
+        config_file_path: ./conf.py
+        target_branch: 'gh-pages'
+    - name: Push changes
+      uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: _build/html
+        branch: site
