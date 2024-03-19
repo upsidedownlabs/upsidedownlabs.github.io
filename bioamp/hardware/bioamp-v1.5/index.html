@@ -53,7 +53,7 @@
     <link rel="prev" title="Muscle BioAmp Blip" href="../muscle-bioamp-blip/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Mar 18, 2024"/>
+    <meta name="docbuild:last-update" content="Mar 19, 2024"/>
   </head>
   
   
@@ -485,6 +485,199 @@ document.write(`
                   
   <section id="bioamp-v1-5">
 <span id="id1"></span><h1>BioAmp v1.5<a class="headerlink" href="#bioamp-v1-5" title="Link to this heading">#</a></h1>
+<p>Small-size portable biopotential amplifier with a no code setup for non-invasive EMG recording!</p>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
+<p>It is a small size portable biopotential amplifier with a no code setup to record and listen to your muscle signals (EMG) non
+invasively. The best part is that it doesn’t require any microcontroller (like Arduino) to sample the signal. You just plug a 9V
+battery into the board, electrodes to the body, and an audio jack to a mobile/laptop, and you are ready to record signals from
+muscles (EMG) using audacity or Backyard Brain’s spike recorder app.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/bioamp-v1.5.png"><img alt="../../../_images/bioamp-v1.5.png" src="../../../_images/bioamp-v1.5.png" style="width: 800px;" /></a>
+</figure>
+</section>
+<section id="features-specifications">
+<h2>Features &amp; Specifications<a class="headerlink" href="#features-specifications" title="Link to this heading">#</a></h2>
+</section>
+<section id="hardware">
+<h2>Hardware<a class="headerlink" href="#hardware" title="Link to this heading">#</a></h2>
+<p>Images below shows a quick overview of the hardware design.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-4 sd-mb-4 sd-ml-0 sd-mr-0 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>PCB Front</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<figure class="align-default">
+<img alt="../../../_images/front-pcb.png" src="../../../_images/front-pcb.png" />
+</figure>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>PCB Back</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<figure class="align-default">
+<img alt="../../../_images/back-pcb.png" src="../../../_images/back-pcb.png" />
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<figure class="align-center">
+<img alt="../../../_images/front-assembled-with-wires-1.png" src="../../../_images/front-assembled-with-wires-1.png" />
+</figure>
+<figure class="align-center">
+<img alt="bioamp/hardware/bioamp-v1.5/media/schematic.*" src="bioamp/hardware/bioamp-v1.5/media/schematic.*" />
+</figure>
+</section>
+<section id="assemblying-the-kit">
+<h2>Assemblying the kit<a class="headerlink" href="#assemblying-the-kit" title="Link to this heading">#</a></h2>
+<p>You can get your own Bioamp v1.5 bag of parts from <a class="reference external" href="https://store.upsidedownlabs.tech/product/bioamp-v1-5-2023-edition/">our store</a> or <a class="reference external" href="https://www.tindie.com/products/upsidedownlabs/bioamp-v15-2023-edition-biopotential-amplifier/">Tindie</a> or the step by step guide below.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-2 sd-mb-2 sd-ml-0 sd-mr-0 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id2">
+<img alt="../../../_images/1.png" src="../../../_images/1.png" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 1 - Bare Board</strong></span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id3">
+<img alt="../../../_images/2_100K.png" src="../../../_images/2_100K.png" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 2 - 100K Resistors</strong></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id4">
+<img alt="../../../_images/3_2.2K.png" src="../../../_images/3_2.2K.png" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 3 - 2.2K Resistor</strong></span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id5">
+<img alt="../../../_images/4_1K.png" src="../../../_images/4_1K.png" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 4 - 1K Resistors</strong></span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id6">
+<img alt="../../../_images/5_220K.png" src="../../../_images/5_220K.png" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 5 - 220K Resistors</strong></span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id7">
+<img alt="../../../_images/6_10K.png" src="../../../_images/6_10K.png" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 6 - 10K Resistors</strong></span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id8">
+<img alt="../../../_images/7_100nF.png" src="../../../_images/7_100nF.png" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 7 - 100nF Capacitors</strong></span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id9">
+<img alt="../../../_images/8_1nF.png" src="../../../_images/8_1nF.png" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 8 - 1nF Capacitors</strong></span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id10">
+<img alt="../../../_images/9_connectors.png" src="../../../_images/9_connectors.png" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 9 - JST PH Connectors</strong></span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id11">
+<img alt="../../../_images/10_Socket.png" src="../../../_images/10_Socket.png" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 10 - IC Socket</strong></span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id12">
+<img alt="../../../_images/11_IC.png" src="../../../_images/11_IC.png" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 11 - IC</strong></span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id13">
+<img alt="../../../_images/12_LED.png" src="../../../_images/12_LED.png" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 12 - Power LED</strong></span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id14">
+<img alt="../../../_images/13_47uF.png" src="../../../_images/13_47uF.png" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 13 - 47uF Capacitors</strong></span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id15">
+<img alt="../../../_images/14_Switch.png" src="../../../_images/14_Switch.png" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 14 - Switch</strong></span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id16">
+<img alt="bioamp/hardware/bioamp-v1.5/media/Assembly/15_Headphonejack.*" src="bioamp/hardware/bioamp-v1.5/media/Assembly/15_Headphonejack.*" />
+<figcaption>
+<p><span class="caption-text"><strong>Step 15 - Headphone jack</strong></span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="connections">
+<h2>Connections<a class="headerlink" href="#connections" title="Link to this heading">#</a></h2>
+<p>To measure the EMG signals, just connect BioAmp Cable v3 with the hardware as shown in the image below, and get started.</p>
+<figure class="align-default">
+<img alt="../../../_images/connections.png" src="../../../_images/connections.png" />
+</figure>
+</section>
+<section id="using-the-sensor">
+<h2>Using the Sensor<a class="headerlink" href="#using-the-sensor" title="Link to this heading">#</a></h2>
+</section>
+<section id="some-project-ideas">
+<h2>Some project ideas<a class="headerlink" href="#some-project-ideas" title="Link to this heading">#</a></h2>
+</section>
 </section>
 
 
@@ -523,6 +716,23 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features-specifications">Features &amp; Specifications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hardware">Hardware</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assemblying-the-kit">Assemblying the kit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connections">Connections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-sensor">Using the Sensor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-project-ideas">Some project ideas</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 
@@ -587,7 +797,7 @@ document.write(`
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Mar 18, 2024.
+  Last updated on Mar 19, 2024.
   <br/>
 </p></div>
       
