@@ -9,7 +9,35 @@
 Welcome to Upside Down Labs docs's documentation!
 =================================================
 
-Try text
+.. grid:: 1 1 3 3
+    :margin: 4 4 0 0 
+    :gutter: 2
+
+    .. grid-item::
+        
+        .. card::
+
+            
+            :fas:`person-circle-question` **WHY**
+            ^^^^^
+            We believe in making DIY Neuroscience affordable and accessible to all. 
+
+    .. grid-item::
+        
+        .. card::
+            
+            :fas:`person-digging` **HOW**
+            ^^^^^
+            By providing DIY Neuroscience Kits to students and researchers to make innovative HCI and BCI. 
+
+    .. grid-item::
+        
+        .. card::
+
+            :fas:`person-circle-check` **WHAT**
+            ^^^^^
+            We build novel, open source hardware & software with detailed documentation.  
+
 
 .. toctree::
    :hidden:
