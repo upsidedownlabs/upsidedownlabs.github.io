@@ -28,12 +28,11 @@ jobs:
     - name: Build HTML
       run: |
         make html
+        mv _build/html/_static/CNAME _build/html
     - name: Build PDF
       run: |
         make latexpdf
         mv _build/latex/*.pdf _build/html
-        ls _build/_static
-        mv _build/_static/CNAME _build/html
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
