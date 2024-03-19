@@ -18,14 +18,13 @@ muscles (EMG) using audacity or Backyard Brain’s spike recorder app.
     :align: center
 
 
-
 Features & Specifications
 ***************************
 
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Minimum Input Voltage | 7-9 V                                                                                                                                                         |
+| Minimum Input Voltage | 7-9 V                                                                                                                                                            |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Input Impedance       | ≥10^7 Ω                                                                                                                                                          |
+| Input Impedance       | ≥10^7 ohm                                                                                                                                                        |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Fixed Gain            | ~200x                                                                                                                                                            |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -70,9 +69,6 @@ Images below shows a quick overview of the hardware design.
 .. figure:: media/front-assembled-with-wires-1.*
     :align: center
 
-.. figure:: media/schematic.*
-    :align: center   
-
 Assemblying the kit
 ********************
 
@@ -90,85 +86,85 @@ You can get your own Bioamp v1.5 bag of parts from `our store <https://store.ups
 
     .. grid-item::
 
-        .. figure:: media/Assembly/2_100K.*
+        .. figure:: media/Assembly/2-100K-resistor.*
             
             **Step 2 - 100K Resistors** 
 
     .. grid-item::
 
-        .. figure:: media/Assembly/3_2.2K.*
+        .. figure:: media/Assembly/3-2.2K-resistor.*
 
             **Step 3 - 2.2K Resistor** 
 
     .. grid-item::
 
-        .. figure:: media/Assembly/4_1K.*
+        .. figure:: media/Assembly/4-1K-resistor.*
 
             **Step 4 - 1K Resistors** 
 
     .. grid-item::
 
-        .. figure:: media/Assembly/5_220K.*
+        .. figure:: media/Assembly/5-220K-resistor.*
 
             **Step 5 - 220K Resistors** 
 
     .. grid-item::
 
-        .. figure:: media/Assembly/6_10K.*
+        .. figure:: media/Assembly/6-10K-resistor.*
 
             **Step 6 - 10K Resistors** 
 
     .. grid-item::
 
-        .. figure:: media/Assembly/7_100nF.*
+        .. figure:: media/Assembly/7-100nF-capacitor.*
 
             **Step 7 - 100nF Capacitors** 
 
     .. grid-item::
 
-        .. figure:: media/Assembly/8_1nF.*
+        .. figure:: media/Assembly/8-1nF-capacitor.*
 
             **Step 8 - 1nF Capacitors** 
 
     .. grid-item::
 
-        .. figure:: media/Assembly/9_connectors.*
+        .. figure:: media/Assembly/9-connectors.*
 
             **Step 9 - JST PH Connectors** 
 
     .. grid-item::
 
-        .. figure:: media/Assembly/10_Socket.*
+        .. figure:: media/Assembly/10-socket.*
 
             **Step 10 - IC Socket** 
 
     .. grid-item::
 
-        .. figure:: media/Assembly/11_IC.*
+        .. figure:: media/Assembly/11-IC.*
 
             **Step 11 - IC** 
 
     .. grid-item::
 
-        .. figure:: media/Assembly/12_LED.*
+        .. figure:: media/Assembly/12-LED.*
 
             **Step 12 - Power LED** 
 
     .. grid-item::
 
-        .. figure:: media/Assembly/13_47uF.*
+        .. figure:: media/Assembly/13-47uF-capacitor.*
 
             **Step 13 - 47uF Capacitors** 
 
     .. grid-item::
 
-        .. figure:: media/Assembly/14_Switch.*
+        .. figure:: media/Assembly/14-switch.*
 
             **Step 14 - Switch** 
 
     .. grid-item::
 
-        .. figure:: media/Assembly/15_Headphone jack.*
+        .. figure:: media/Assembly/15-headphone-jack.*
 
             **Step 15 - Headphone jack** 
 
