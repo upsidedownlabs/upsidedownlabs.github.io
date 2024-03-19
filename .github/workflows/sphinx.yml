@@ -28,7 +28,7 @@ jobs:
     - name: Build HTML
       run: |
         make html
-        mv _build/_static/CNAME _build/html
+        mv _build/html/_static/CNAME _build/html
     - name: Build PDF
       run: |
         make latexpdf
