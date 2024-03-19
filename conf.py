@@ -52,7 +52,29 @@ html_sidebars = {
 }
 
 html_theme_options = {
-    "header_links_before_dropdown": 4,
+    "external_links": [
+        {
+            "url": "https://www.digikey.com/en/supplier-centers/myupsidedownlab",
+            "name": "DigiKey",
+        },
+        {
+            "url": "https://www.mouser.com/manufacturer/upside-down-labs/",
+            "name": "Mouser",
+        },
+        {
+            "url": "https://www.tindie.com/stores/upsidedownlabs/",
+            "name": "Tindie",
+        },
+        {
+            "url": "https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355",
+            "name": "Amazon India",
+        },
+        {
+            "url": "https://store.upsidedownlabs.tech/",
+            "name": "Store India",
+        }
+    ],
+    "header_links_before_dropdown": 1,
     "show_prev_next": True,
     "icon_links": [
         {
