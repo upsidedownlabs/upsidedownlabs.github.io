@@ -28,21 +28,13 @@ jobs:
     - name: Build HTML
       run: |
         make html
-        mv _build/html/_static/CNAME _build/html
+    - if: github.repository_owner == 'upsidedownlabs'
+      name: Upload CNAME
+      run: mv _build/html/_static/CNAME _build/html
     - name: Build PDF
       run: |
         make latexpdf
         mv _build/latex/*.pdf _build/html
-  cname:
-    if: github.repository_owner == 'upsidedownlabs'
-    runs-on: ubuntu-latest
-    steps:
-    - name: Upload CNAME
-      run: mv _build/html/_static/CNAME _build/html
-  publish:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
