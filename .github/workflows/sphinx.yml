@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    if: github.repository_owner == 'upsidedownlabs'
     runs-on: ubuntu-latest
     steps:
     - run: lsb_release -a
@@ -28,7 +29,6 @@ jobs:
     - name: Build HTML
       run: |
         make html
-        if: github.repository_owner == 'upsidedownlabs'
         mv _build/html/_static/CNAME _build/html
     - name: Build PDF
       run: |
