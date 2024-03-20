@@ -28,7 +28,9 @@ jobs:
     - name: Build HTML
       run: |
         make html
-        mv _build/html/_static/CNAME _build/html
+    - if: github.repository_owner == 'upsidedownlabs'
+      name: Upload CNAME
+      run: mv _build/html/_static/CNAME _build/html
     - name: Build PDF
       run: |
         make latexpdf
@@ -44,3 +46,6 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: _build/html
+
+
+    
