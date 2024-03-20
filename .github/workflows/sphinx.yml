@@ -7,7 +7,6 @@ on:
 
 jobs:
   build:
-    if: github.repository_owner == 'upsidedownlabs'
     runs-on: ubuntu-latest
     steps:
     - run: lsb_release -a
@@ -34,6 +33,16 @@ jobs:
       run: |
         make latexpdf
         mv _build/latex/*.pdf _build/html
+
+  cname:
+    if: github.repository_owner == 'upsidedownlabs'
+    runs-on: ubuntu-latest
+    steps:
+    - name: Upload CNAME
+      run: mv _build/html/_static/CNAME _build/html
+  publish:
+    runs-on: ubuntu-latest
+    steps:
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
@@ -45,3 +54,6 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: _build/html
+
+
+    
