@@ -33,7 +33,6 @@ jobs:
       run: |
         make latexpdf
         mv _build/latex/*.pdf _build/html
-
   cname:
     if: github.repository_owner == 'upsidedownlabs'
     runs-on: ubuntu-latest
@@ -42,6 +41,7 @@ jobs:
       run: mv _build/html/_static/CNAME _build/html
   publish:
     runs-on: ubuntu-latest
+    needs: build
     steps:
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
