@@ -24,7 +24,12 @@ mains supply. Any 1.5 mm diameter wire can be used as a strain-relieving electro
 in comparison to the other available.
 
 .. figure:: media/Basic-Circuit.*
+    :width: 500
+    :align: center
+
 .. figure:: media/EXG_Recording.*
+    :width: 500
+    :align: center
 
 Features & Specifications
 **************************
@@ -55,19 +60,21 @@ Board layout
 Images below shows a quick overview of the BioAmp EXG Pill hardware design.
 
 .. figure:: media/PCB_Front.*
-    :width: 300
-    :align: left
+    :width: 500
+    :align: center
     :alt: PCB Front
 
 .. figure:: media/PCB_Back.*
-    :width: 300
-    :align: right
+    :width: 500
+    :align: center
     :alt: PCB Back
 
 .. figure:: media/Front_Specifications.*
+    :width: 500
     :align: center
 
 .. figure:: media/Back_Specifications.*
+    :width: 500
     :align: center
 
 ElectroMyoGraphy (EMG)
