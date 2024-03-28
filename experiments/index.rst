@@ -1,7 +1,7 @@
-.. _bioamp-experiments:
+.. _upsidedownlabs-experiments:
 
-BioAmp Experiments
-###################
+Experiments
+#############
 
 .. toctree::
    :hidden:

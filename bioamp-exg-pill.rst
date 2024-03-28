@@ -7,7 +7,7 @@ BioAmp EXG Pill
 
 .. toctree::
    :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: BioAmp
 
-   bioamp/hardware/bioamp-exg-pill/index
+   hardware/bioamp/bioamp-exg-pill/index

@@ -72,9 +72,13 @@ html_theme_options = {
         {
             "url": "https://store.upsidedownlabs.tech/",
             "name": "Store India",
+        },
+{
+            "url": "https://t.ly/ExlaF",
+            "name": "GeM India",
         }
     ],
-    "header_links_before_dropdown": 1,
+    "header_links_before_dropdown": 3,
     "show_prev_next": True,
     "icon_links": [
         {
