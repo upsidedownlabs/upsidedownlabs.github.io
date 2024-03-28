@@ -6,6 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+import os
 import sys
 from pathlib import Path
 from typing import Any, Dict
@@ -17,6 +18,16 @@ sys.path.append(str(Path(".").resolve()))
 project = 'upsidedownlabs.github.io'
 copyright = '2024, Upside Down Labs'
 author = 'Upside Down Labs'
+
+# Hardware structure names
+hardware_part_paths = []
+for (hardware_dirpath, hardware_dirnames, hardware_filenames) in os.walk("hardware"):
+    for hardware_dirname in hardware_dirnames:
+        for (part_dirpath, part_dirnames, part_filenames) in os.walk(hardware_dirpath+'/'+hardware_dirname):
+            for part_dirname in part_dirnames:
+                hardware_part_paths.append(part_dirpath+'/'+part_dirname)
+            break
+    break
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -123,9 +134,9 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_end": ["last-updated"],
     # "content_footer_items": ["last-updated"],
-    # "secondary_sidebar_items": {
-    #     "**": ["page-toc", "edit-this-page", "sourcelink","pdf"]
-    # }
+    "secondary_sidebar_items": {
+        "**": ["page-toc", "edit-this-page", "sourcelink","pdf"]
+    }
 }
 
 html_context = {
@@ -142,8 +153,12 @@ html_context = {
     "edit_page_url_template": "{{ my_vcs_site }}{{ file_name }}",
     "edit_page_provider_name": "GitHub",
     "my_vcs_site": "https://github.com/upsidedownlabs/upsidedownlabs.github.io/edit/main",
+    "hardware_part_paths": hardware_part_paths
 }
 
-latex_documents = [
-    ("bioamp-exg-pill", "bioamp-exg-pill.tex", "BioAmp EXG Pill", author, "manual"),
-]
+# -- Options for LaTeX output --
+latex_documents = []
+
+for hardware_part_path in hardware_part_paths:
+    board_tex_name = hardware_part_path.split('/')[-1]
+    latex_documents.append((hardware_part_path+"/index", board_tex_name+".tex", "", author, "manual"))
