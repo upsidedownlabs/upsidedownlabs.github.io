@@ -141,7 +141,7 @@ html_theme_options = {
     "footer_end": ["last-updated"],
     # "content_footer_items": ["last-updated"],
     "secondary_sidebar_items": {
-        "**": ["page-toc", "edit-this-page", "sourcelink","pdf"]
+        "**": ["page-toc", "edit-this-page", "sourcelink"]
     }
 }
 
