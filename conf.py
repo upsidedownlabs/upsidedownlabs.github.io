@@ -124,7 +124,7 @@ html_theme_options = {
     "use_edit_page_button": True,
     "show_toc_level": 1,
     "navbar_align": "right",
-    "show_nav_level": 2,
+    "show_nav_level": 1,
     "announcement": "Welcome to Upside Down Labs docs site!",
     # "show_version_warning_banner": True,
     "navbar_center": ["navbar-nav"],
@@ -134,9 +134,9 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_end": ["last-updated"],
     # "content_footer_items": ["last-updated"],
-    # "secondary_sidebar_items": {
-    #     "**": ["page-toc", "edit-this-page", "sourcelink"]
-    # }
+    "secondary_sidebar_items": {
+        "**": ["page-toc", "edit-this-page", "sourcelink","pdf"]
+    },
 }
 
 html_context = {
