@@ -58,9 +58,9 @@ html_css_files = [
 
 # Pages entry without primary (left) sidebar
 
-html_sidebars = {
-  "ideas/index": [],
-}
+# html_sidebars = {
+
+# }
 
 html_theme_options = {
     "external_links": [
