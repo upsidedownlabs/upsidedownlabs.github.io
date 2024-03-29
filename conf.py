@@ -24,16 +24,10 @@ author = 'Upside Down Labs'
 MAX_DEPTH = 1
 walk_dirpaths = ['hardware/bioamp']
 pdf_paths = []
-
 for walk_dirpath in walk_dirpaths:
-
-    walk_dirnames = []
     for (dirpath, dirnames, filenames) in os.walk(walk_dirpath, topdown=True):
-        walk_dirnames = dirnames
-        break
-    
-    for walk_dirname in walk_dirnames:
-        pdf_paths.append(walk_dirpath+'/'+walk_dirname)
+        if dirpath.count('/') == 2:
+            pdf_paths.append(dirpath)
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
