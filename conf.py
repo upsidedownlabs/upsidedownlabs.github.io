@@ -15,10 +15,6 @@ from sphinx.application import Sphinx
 
 sys.path.append(str(Path(".").resolve()))
 
-project = 'upsidedownlabs.github.io'
-copyright = '2024, Upside Down Labs'
-author = 'Upside Down Labs'
-
 # PDF path exploration
 
 MAX_DEPTH = 1
@@ -30,6 +26,10 @@ for walk_path in walk_paths:
             pdf_paths.append(dirpath+'/'+dirname)
         if dirpath.count(os.sep) - walk_path.count(os.sep) == MAX_DEPTH - 1:
             del dirnames[:]
+
+project = 'upsidedownlabs.github.io'
+copyright = '2024, Upside Down Labs'
+author = 'Upside Down Labs'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
