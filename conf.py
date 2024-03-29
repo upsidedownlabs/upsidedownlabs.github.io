@@ -11,7 +11,6 @@ import sys
 from pathlib import Path
 from typing import Any, Dict
 import pydata_sphinx_theme
-from sphinx.application import Sphinx
 
 sys.path.append(str(Path(".").resolve()))
 
@@ -19,15 +18,16 @@ project = 'upsidedownlabs.github.io'
 copyright = '2024, Upside Down Labs'
 author = 'Upside Down Labs'
 
-# Hardware structure names
-hardware_part_paths = []
-for (hardware_dirpath, hardware_dirnames, hardware_filenames) in os.walk("hardware"):
-    for hardware_dirname in hardware_dirnames:
-        for (part_dirpath, part_dirnames, part_filenames) in os.walk(hardware_dirpath+'/'+hardware_dirname):
-            for part_dirname in part_dirnames:
-                hardware_part_paths.append(part_dirpath+'/'+part_dirname)
-            break
-    break
+# PDF path exploration
+MAX_DEPTH = 2
+walk_dirpaths = ['hardware/bioamp']
+pdf_paths = []
+for walk_dirpath in walk_dirpaths:
+    for (dirpath, dirnames, filenames) in os.walk(walk_dirpath, topdown=True):
+        if dirpath.count('/') == MAX_DEPTH:
+            pdf_paths.append(dirpath[:])
+
+print(pdf_paths)
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -58,9 +58,9 @@ html_css_files = [
 
 # Pages entry without primary (left) sidebar
 
-html_sidebars = {
-  "ideas/index": [],
-}
+# html_sidebars = {
+
+# }
 
 html_theme_options = {
     "external_links": [
@@ -84,7 +84,7 @@ html_theme_options = {
             "url": "https://store.upsidedownlabs.tech/",
             "name": "Store India",
         },
-{
+        {
             "url": "https://t.ly/ExlaF",
             "name": "GeM India",
         }
@@ -124,7 +124,7 @@ html_theme_options = {
     "use_edit_page_button": True,
     "show_toc_level": 1,
     "navbar_align": "right",
-    "show_nav_level": 2,
+    "show_nav_level": 1,
     "announcement": "Welcome to Upside Down Labs docs site!",
     # "show_version_warning_banner": True,
     "navbar_center": ["navbar-nav"],
@@ -136,7 +136,7 @@ html_theme_options = {
     # "content_footer_items": ["last-updated"],
     "secondary_sidebar_items": {
         "**": ["page-toc", "edit-this-page", "sourcelink","pdf"]
-    }
+    },
 }
 
 html_context = {
@@ -153,12 +153,12 @@ html_context = {
     "edit_page_url_template": "{{ my_vcs_site }}{{ file_name }}",
     "edit_page_provider_name": "GitHub",
     "my_vcs_site": "https://github.com/upsidedownlabs/upsidedownlabs.github.io/edit/main",
-    "hardware_part_paths": hardware_part_paths
+    "pdf_paths": pdf_paths
 }
 
 # -- Options for LaTeX output --
 latex_documents = []
 
-for hardware_part_path in hardware_part_paths:
-    board_tex_name = hardware_part_path.split('/')[-1]
-    latex_documents.append((hardware_part_path+"/index", board_tex_name+".tex", "", author, "manual"))
+for pdf_path in pdf_paths:
+    board_tex_name = pdf_path.split('/')[-1]
+    latex_documents.append((pdf_path+"/index", board_tex_name+".tex", "", author, "manual"))
