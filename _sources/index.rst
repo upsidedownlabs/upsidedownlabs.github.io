@@ -6,8 +6,10 @@
 :html_theme.sidebar_secondary.remove: true
 :sd_hide_title: true
 
+.. _upsidedownlabs_docs_home:
+
 Welcome to Upside Down Labs docs's documentation!
-=================================================
+##################################################
 
 .. figure:: media/banner.*
    :align: center
@@ -97,61 +99,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
             BioAmp EXG Pill 
 
-.. .. admonition:: BeagleBoard.org background
-   
-..    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Hardware
 
-.. Research Papers using our hardware
-.. ************************************
-
-.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-.. Be a part of our community
-.. ******************************
-
-.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-.. Contribute
-.. ****************************************
-
-.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-.. Know more about us!
-.. ********************
-
-.. .. grid:: 1 1 3 3
-..     :margin: 4 4 0 0 
-..     :gutter: 2
-
-..     .. grid-item::
-        
-..         .. card::
-
-            
-..             :fas:`person-circle-question` **WHY**
-..             ^^^^^
-..             We believe in making DIY Neuroscience affordable and accessible to all. 
-
-..     .. grid-item::
-        
-..         .. card::
-            
-..             :fas:`person-digging` **HOW**
-..             ^^^^^
-..             By providing DIY Neuroscience Kits to students and researchers to make innovative HCI and BCI. 
-
-..     .. grid-item::
-        
-..         .. card::
-
-..             :fas:`person-circle-check` **WHAT**
-..             ^^^^^
-..             We build novel, open source hardware & software with detailed documentation.  
-
+   hardware/index
 
 .. toctree::
    :hidden:
-   :maxdepth: 2
-   :caption: BioAmp
+   :maxdepth: 1
+   :caption: Software
 
-   bioamp/index
+   software/index
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Experiments
+
+   experiments/index

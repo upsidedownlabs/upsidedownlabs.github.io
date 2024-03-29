@@ -18,15 +18,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -34,9 +34,9 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=888ff710"></script>
@@ -49,10 +49,10 @@
     <link rel="icon" href="_static/logo_sqr_bgw.svg"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="BioAmp" href="bioamp/index.html" />
+    <link rel="next" title="Hardware" href="hardware/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Mar 28, 2024"/>
+    <meta name="docbuild:last-update" content="Mar 29, 2024"/>
   </head>
   
   
@@ -60,10 +60,9 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -110,7 +109,7 @@
   </div>
 
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
 <div class="bd-header__inner bd-page-width">
   <label class="sidebar-toggle primary-toggle" for="__primary">
     <span class="fa-solid fa-bars"></span>
@@ -148,17 +147,25 @@
       
         <div class="navbar-item">
 <nav class="navbar-nav">
-  <p class="sidebar-header-items__title"
-     role="heading"
-     aria-level="1"
-     aria-label="Site Navigation">
-    Site Navigation
-  </p>
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="bioamp/index.html">
-                        BioAmp
+                      <a class="nav-link nav-internal" href="hardware/index.html">
+                        Hardware
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="software/index.html">
+                        Software
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="experiments/index.html">
+                        Experiments
                       </a>
                     </li>
                 
@@ -199,6 +206,13 @@
                 <li class="nav-item">
                   <a class="nav-link dropdown-item nav-external" href="https://store.upsidedownlabs.tech/">
                     Store India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://t.ly/ExlaF">
+                    GeM India
                   </a>
                 </li>
                 
@@ -321,10 +335,15 @@ document.write(`
   
 </div>
 
-    </nav>
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
       
       <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
@@ -337,17 +356,25 @@ document.write(`
         
           <div class="navbar-item">
 <nav class="navbar-nav">
-  <p class="sidebar-header-items__title"
-     role="heading"
-     aria-level="1"
-     aria-label="Site Navigation">
-    Site Navigation
-  </p>
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="bioamp/index.html">
-                        BioAmp
+                      <a class="nav-link nav-internal" href="hardware/index.html">
+                        Hardware
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="software/index.html">
+                        Software
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="experiments/index.html">
+                        Experiments
                       </a>
                     </li>
                 
@@ -388,6 +415,13 @@ document.write(`
                 <li class="nav-item">
                   <a class="nav-link dropdown-item nav-external" href="https://store.upsidedownlabs.tech/">
                     Store India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://t.ly/ExlaF">
+                    GeM India
                   </a>
                 </li>
                 
@@ -499,10 +533,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="welcome-to-upside-down-labs-docs-s-documentation">
-<h1 class="sd-d-none">Welcome to Upside Down Labs docs’s documentation!<a class="headerlink" href="#welcome-to-upside-down-labs-docs-s-documentation" title="Link to this heading">#</a></h1>
+<span id="upsidedownlabs-docs-home"></span><h1 class="sd-d-none">Welcome to Upside Down Labs docs’s documentation!<a class="headerlink" href="#welcome-to-upside-down-labs-docs-s-documentation" title="Link to this heading">#</a></h1>
 <figure class="align-center">
 <img alt="_images/banner.jpg" src="_images/banner.jpg" />
 </figure>
@@ -583,6 +617,10 @@ or Brain-Computer Interface (BCI) projects with ease.</p>
 </div>
 <div class="toctree-wrapper compound">
 </div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 </section>
 
@@ -597,11 +635,11 @@ or Brain-Computer Interface (BCI) projects with ease.</p>
                   
 <div class="prev-next-area">
     <a class="right-next"
-       href="bioamp/index.html"
+       href="hardware/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">BioAmp</p>
+        <p class="prev-next-title">Hardware</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -623,8 +661,8 @@ or Brain-Computer Interface (BCI) projects with ease.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -648,7 +686,7 @@ or Brain-Computer Interface (BCI) projects with ease.</p>
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Mar 28, 2024.
+  Last updated on Mar 29, 2024.
   <br/>
 </p></div>
       
