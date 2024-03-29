@@ -19,15 +19,15 @@ copyright = '2024, Upside Down Labs'
 author = 'Upside Down Labs'
 
 # PDF path exploration
-# MAX_DEPTH = 2
-# walk_dirpaths = ['hardware/bioamp']
-# pdf_paths = []
-# for walk_dirpath in walk_dirpaths:
-#     for (dirpath, dirnames, filenames) in os.walk(walk_dirpath, topdown=True):
-#         if dirpath.count('/') == MAX_DEPTH:
-#             pdf_paths.append(dirpath[:])
+MAX_DEPTH = 2
+walk_dirpaths = ['hardware/bioamp']
+pdf_paths = []
+for walk_dirpath in walk_dirpaths:
+    for (dirpath, dirnames, filenames) in os.walk(walk_dirpath, topdown=True):
+        if dirpath.count('/') == MAX_DEPTH:
+            pdf_paths.append(dirpath[:])
 
-# print(pdf_paths)
+print(pdf_paths)
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -153,12 +153,12 @@ html_context = {
     "edit_page_url_template": "{{ my_vcs_site }}{{ file_name }}",
     "edit_page_provider_name": "GitHub",
     "my_vcs_site": "https://github.com/upsidedownlabs/upsidedownlabs.github.io/edit/main",
-    # "pdf_paths": pdf_paths
+    "pdf_paths": pdf_paths
 }
 
 # -- Options for LaTeX output --
 latex_documents = []
 
-# for pdf_path in pdf_paths:
-#     board_tex_name = pdf_path.split('/')[-1]
-#     latex_documents.append((pdf_path+"/index", board_tex_name+".tex", "", author, "manual"))
+for pdf_path in pdf_paths:
+    board_tex_name = pdf_path.split('/')[-1]
+    latex_documents.append((pdf_path+"/index", board_tex_name+".tex", "", author, "manual"))
