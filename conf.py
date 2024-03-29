@@ -154,12 +154,12 @@ html_context = {
     "edit_page_url_template": "{{ my_vcs_site }}{{ file_name }}",
     "edit_page_provider_name": "GitHub",
     "my_vcs_site": "https://github.com/upsidedownlabs/upsidedownlabs.github.io/edit/main",
-    "pdf_paths": pdf_paths
+    # "pdf_paths": pdf_paths
 }
 
 # -- Options for LaTeX output --
 latex_documents = []
 
-for pdf_path in pdf_paths:
-    board_tex_name = pdf_path.split('/')[-1]
-    latex_documents.append((pdf_path+"/index", board_tex_name+".tex", "", author, "manual"))
+# for pdf_path in pdf_paths:
+#     board_tex_name = pdf_path.split('/')[-1]
+#     latex_documents.append((pdf_path+"/index", board_tex_name+".tex", "", author, "manual"))
