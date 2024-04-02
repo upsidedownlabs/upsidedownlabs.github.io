@@ -3,7 +3,7 @@
 BioAmp EXG Pill
 ##################
 
-Professional-grade analog front-end amplification for ECG, EMG, EOG, and EEG biosensing on one tiny board.
+Publication-grade analog front-end amplification for recording ECG, EMG, EOG, or EEG on a pill-size board.
 
 Overview
 *********
@@ -17,19 +17,15 @@ just a few. It also works with any dedicated ADC, like the Texas Instruments ADS
     :width: 500
     :align: center
 
-BioAmp EXG Pill is capable of recording publication-quality biopotential signals like ECG, EMG, EOG, and EEG, without 
-the inclusion of any dedicated hardware or software filters. Its small size allows easy integration into mobile and 
-space-constrained projects, and its powerful noise rejection makes it usable even when the device is close to the AC 
-mains supply. Any 1.5 mm diameter wire can be used as a strain-relieving electrode cable, making it very cost-effective 
-in comparison to the other available.
+What makes it different?
+**************************
 
-.. figure:: media/Basic-Circuit.*
-    :width: 500
-    :align: center
-
-.. figure:: media/EXG_Recording.*
-    :width: 500
-    :align: center
+1. Record publication-quality biopotential signals like ECG, EMG, EOG, or EEG.
+2. Small size (25.4 x 10.0mm) allows easy integration into mobile and space-constrained projects.
+3. Powerful noise rejection makes it usable even when the device is close to the AC mains supply.
+4. Any 1.5 mm diameter wire can be used as a strain-relieving electrode cable, making it very cost-effective.
+5. Pair it with any MCU with an ADC. It is by default compatible with 5V but you can make it compatible with 3.3V as well using a voltage divider.
+6. Configure the gain, band pass filter and electrode count according to your requirements.
 
 Features & Specifications
 **************************
@@ -45,11 +41,9 @@ Features & Specifications
 +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | No. of channels                     | 1                                                                                                                                                                                                     |
 +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Electrodes                          | 2 or 3 (Default: 3 electrodes)                                                                                                                                                                        |
+| Electrodes                          | 2 or 3 (By default configured for 3 electrodes)                                                                                                                                                       |
 +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Dimensions                          | 25.4 x 10 mm                                                                                                                                                                                          |
-+-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Designed for use with carrier board | Yes                                                                                                                                                                                                   |
 +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Open Source                         | Hardware + Software                                                                                                                                                                                   |
 +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -57,17 +51,23 @@ Features & Specifications
 Board layout
 *************
 
-Images below shows a quick overview of the BioAmp EXG Pill hardware design.
+.. Images below shows a quick overview of the BioAmp EXG Pill hardware design.
 
-.. figure:: media/PCB_Front.*
-    :width: 500
-    :align: center
-    :alt: PCB Front
+.. .. figure:: media/PCB_Front.*
+..     :width: 300
+..     :align: center
+..     :alt: PCB Front
 
-.. figure:: media/PCB_Back.*
-    :width: 500
-    :align: center
-    :alt: PCB Back
+.. .. figure:: media/PCB_Back.*
+..     :width: 300
+..     :align: center
+..     :alt: PCB Back
+
+BioAmp EXG Pill’s elegant design allows it to be used in 3 ways:
+
+ 1. Pin-header holes allow you to solder (berg strip) pin headers for easy use with a breadboard.
+ 2. Castellated holes allow you to solder BioAmp EXG Pill directly onto a custom PCB that requires biopotential-amplification capabilities.
+ 3. Electrode holes allow you to use any 1.5 mm diameter wire as an electrode cable with minimal strain.
 
 .. figure:: media/Front_Specifications.*
     :width: 500
@@ -77,10 +77,17 @@ Images below shows a quick overview of the BioAmp EXG Pill hardware design.
     :width: 500
     :align: center
 
+**BioAmp EXG Pill is fully configurable as you can:**
+
+1. Increase the gain of the instrumentation amplifier by using a 0603 resistor at R6. Decrease gain and configure the bandpass filter by using 0603 parts at R12 and C5. Band limiting is very useful for EOG and EEG recording. Also, the signal sometimes clips while recording ECG with electrodes very close to the heart. Creating a solder jumper for a band-pass filter helps with that. By default, BioAmp EXG Pill is configured to record EEG and EOG but you can bridge the pads (below bandpass) with solder to make it configurable for EMG and ECG.
+2. The normal method of operation for best-quality signal amplification is to use 3 electrodes by default but you can bridge the pads (below electrodes) to make it configurable for 2 electrodes. The 2-electrode mode is specifically included for projects like heart (ECG) patches for HRV. It’s only supposed to be used with a battery-operated setup and is quite prone to high interference noise due to a lack of proper reference on the body (This option is not recommended for most operations)
+
+
+
 Assembly & getting started
 ****************************
 
-If you have received the assembled BioAmp EXG Pill then you can skip the steps below. But, if you got the unassembled one, follow the steps below to assemble your Pill:
+If you have received the assembled BioAmp EXG Pill then you can skip the step 1 below. But, if you got the unassembled one, follow step 1 to assemble your Pill:
 
 .. grid:: 1 1 1 1
     :margin: 2 2 0 0 
@@ -94,34 +101,54 @@ If you have received the assembled BioAmp EXG Pill then you can skip the steps b
             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
             
             .. figure:: media/assembly-step1.*
+                :width: 300
 
-            Insert the provided BioAmp cable's JST connector and header pins from top as shown in the image and solder them from below.
+            Insert the provided BioAmp cable's JST PH connector and header pins from top as shown in the image and solder them from below.
 
         .. card::
-            :img-bottom: media/assembly-step2.*
 
             **Step 2 (optional): Configure for ECG/EMG**
             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-            Optionally you can configure BioAmp EXG Pill to record EMG or ECG by making a solder joint as shown in the image on the right.
+            .. figure:: media/assembly-step2.*
+                :width: 300
+
+            BioAmp EXG Pill is by default configured for recording EEG or EOG but if you want to record good quality ECG or EMG, then it is recommended to configure it by making a solder joint as shown in the image above.
+
+            .. note:: Even without making the solder joint the BioAmp EXG Pill is capable of recording ECG or EMG as well but the signals would be more accurate if you configure it.
 
         .. card::
-            :img-bottom: media/assembly-step3.*
 
-            **Step 3: Connect MCU/ADC**
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            **Step 3 (optional): Configure to operate at 3.3V**
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-            Connect VCC to 5V, GND to GND, and OUT to ADC IN of your favorite MCU/ADC board via jumper cables provided by us.
+            .. figure:: media/EXG_Recording.*
+                :width: 300
+                :align: center
 
-            .. warning:: Take precautions while connecting to power, if power pins are to be swapped, your BioAmp EXG Pill will be fried and it’ll become unusable(DIE).
+            It is by default compatible with 5V but you can make it compatible with 3.3V as well using a voltage divider.
 
         .. card::
-            :img-bottom: media/Basic-Circuit.*
 
-            **Step 3: Make the connections**
+            **Step 4: Connect MCU/ADC**
             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-            Connect the BioAmp Cable to the EXG Pill and then to the electrodes. Place the electrodes according to your recording biopotential signal.
+            .. figure:: media/assembly-step3.*
+                :width: 300
+
+            Connect VCC to 5V, GND to GND, and OUT to Analog (ADC) IN of your favorite MCU/ADC board via jumper cables provided by us.
+
+            .. warning:: Take precautions while connecting to power, if power pins are to be swapped, your BioAmp EXG Pill will be fried and it’ll become unusable (DIE).
+
+        .. card::
+
+            **Step 5: Make the connections**
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+            .. figure:: media/Basic-Circuit.*
+                :width: 300
+
+            Connect the BioAmp Cable to the BioAmp EXG Pill and then to the electrodes. Place the electrodes according to your recording biopotential signal.
 
 ElectroMyoGraphy (EMG)
 ***********************
@@ -197,7 +224,7 @@ Glimpses of previous versions
 The BioAmp EXG Pill can be used in a variety of ways, the YouTube video below shows a potential way of using v0.7 of 
 BioAmp EXG Pill.
 
-.. youtube:: G3z9fvQnuw
+.. youtube:: -G3z9fvQnuw
     :align: center
     :width: 100%
 
@@ -218,15 +245,14 @@ be used for a wide variety of interesting biosensing projects, including:
 - Heart-rate variability calculation to detect heart ailments (ECG)
 - Prosthetic arm (servo) control (EMG)
 - Controlling a 3DOF robotic arm (EMG)
-- Quantitative analysis of physical therapy for palsy (EMG)
 - Real-time game controllers (EOG)
 - Blink detection (EOG)
-- Capturing photos with a blink of an eye (EOG)
-- Controlling LEDs via brain waves (EEG)
-- Patient monitoring and many more examples. 
+- Capturing photos with a blink of an eye (EOG) and many more examples. 
 
-Some project ideas
-*******************
+Some project ideas & tutorials
+********************************
+
+You can find step-by-step tutorials for various HCI/BCI projects on our `Instructables <https://www.instructables.com/member/Upside+Down+Labs/>`_.
 
 .. grid:: 1 1 1 1
     :margin: 4 4 0 0 
@@ -236,7 +262,7 @@ Some project ideas
 
         .. card::
             
-            **1. Record Publication Grade ECG at Your Home Using BioAmp EXG Pill**
+            **1. Record publication-grade ECG at your home**
             ^^^^
 
             .. youtube:: l1Z8S0pUAvY
@@ -245,7 +271,7 @@ Some project ideas
 
         .. card::
             
-            **2. Detecting Heart Beats Using BioAmp EXG Pill**
+            **2. Detecting heart beats**
             ^^^^
 
             .. youtube:: uB5R-vGJjJo
@@ -254,7 +280,7 @@ Some project ideas
 
         .. card::
             
-            **3. Measuring Heart Rate Using BioAmp EXG Pill**
+            **3. Measuring heart rate**
             ^^^^
 
             .. youtube:: PvWtCFNK3_s
@@ -263,16 +289,16 @@ Some project ideas
 
         .. card::
             
-            **4. Recording EEG From Pre Frontal Cortex of Brain Using BioAmp EXG Pill**
+            **4. Recording EEG from visual cortex part of brain**
             ^^^^
 
-            .. youtube:: QzZh243-Ac8
+            .. youtube:: XENPUkfxLec
                 :align: center
                 :width: 100%
 
         .. card::
             
-            **5. Visualizing Electrical Impulses of Eyes (EOG) Using BioAmp EXG Pill**
+            **5. Visualizing electrical impulses of eyes (EOG)**
             ^^^^
 
             .. youtube:: Txo7DjUr5Tk
@@ -281,18 +307,57 @@ Some project ideas
 
         .. card::
             
-            **6. Eye Blink Detection by Recording EOG Using BioAmp EXG Pill**
+            **6. Eye blink detection by recording EOG**
             ^^^^
 
-            .. youtube:: 4dnCX3U7LS8
+            .. youtube:: PfEJVa3gv6E
                 :align: center
                 :width: 100%
 
         .. card::
             
-            **7. Drowsiness Detector by Detecting EOG Signals Using BioAmp EXG Pill**
+            **7. Drowsiness detector by detecting EOG signals**
             ^^^^
 
             .. youtube:: h4F41mp4mWk
                 :align: center
                 :width: 100%
+
+        .. card::
+            
+            **8. Recording publication-grade muscle signals (EMG)**
+            ^^^^
+
+            .. youtube:: yx5EQTKNbvs
+                :align: center
+                :width: 100%
+
+Software tutorials
+********************
+
+.. grid:: 1 1 1 1
+    :margin: 4 4 0 0 
+    :gutter: 2
+
+    .. grid-item::
+
+        .. card::
+            
+            **1. Getting started with Backyard Brains' Spike Recorder**
+            ^^^^
+
+            .. youtube:: QzZh243-Ac8
+                :align: center
+                :width: 100%
+
+        .. card::
+            
+            **2. Getting started with Brainbay**
+            ^^^^
+
+            .. youtube:: 8vKYAg9C8Jg
+                :align: center
+                :width: 100%
+
+
+
