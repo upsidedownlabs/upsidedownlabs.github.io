@@ -27,8 +27,6 @@ for walk_dirpath in walk_dirpaths:
         if dirpath.count('/') == MAX_DEPTH:
             pdf_paths.append(dirpath[:])
 
-print(pdf_paths)
-
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
@@ -158,6 +156,12 @@ html_context = {
 
 # -- Options for LaTeX output --
 latex_documents = []
+latex_engine = "xelatex"
+
+latex_elements = {
+    "papersize": "a4paper",
+    "preamble": open("_static/latex/preamble.tex").read(),
+}
 
 for pdf_path in pdf_paths:
     board_tex_name = pdf_path.split('/')[-1]
