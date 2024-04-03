@@ -35,7 +35,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     .. grid-item::
         
         .. card:: 
-            :link: https://docs.upsidedownlabs.tech/bioamp/hardware/muscle-bioamp-biscute/index.html
+            :link: muscle_bioamp-biscute
+            :link-type: ref
             :img-top: media/muscle-bioamp-biscute.*
             :img-alt:
 
@@ -44,7 +45,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     .. grid-item::
         
         .. card:: 
-            :link: https://docs.upsidedownlabs.tech/bioamp/hardware/muscle-bioamp-candy/index.html
+            :link: muscle-bioamp-candy
+            :link-type: ref
             :img-top: media/muscle-bioamp-candy.*
             :img-alt:
 
@@ -53,7 +55,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     .. grid-item::
         
         .. card:: 
-            :link: https://docs.upsidedownlabs.tech/bioamp/hardware/bioamp-v1.5/index.html
+            :link: bioamp-v1.5
+            :link-type: ref
             :img-top: media/bioamp-v1.5.*
             :img-alt:
 
@@ -62,7 +65,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     .. grid-item::
         
         .. card:: 
-            :link: https://docs.upsidedownlabs.tech/bioamp/hardware/muscle-bioamp-blip/index.html
+            :link: muscle-bioamp-blip
+            :link-type: ref
             :img-top: media/muscle-bioamp-blip.*
             :img-alt:
 
@@ -75,7 +79,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     .. grid-item::
         
         .. card:: 
-            :link: https://docs.upsidedownlabs.tech/bioamp/hardware/muscle-bioamp-patchy/index.html
+            :link: muscle-bioamp-patchy
+            :link-type: ref
             :img-top: media/muscle-bioamp-patchy.*
             :img-alt:
 
@@ -84,7 +89,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     .. grid-item::
         
         .. card:: 
-            :link: https://docs.upsidedownlabs.tech/bioamp/hardware/muscle-bioamp-shield/index.html
+            :link: muscle-bioamp-shield
+            :link-type: ref
             :img-top: media/muscle-bioamp-shield.*
             :img-alt:
 
@@ -93,7 +99,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     .. grid-item::
         
         .. card:: 
-            :link: https://docs.upsidedownlabs.tech/bioamp/hardware/bioamp-exg-pill/index.html
+            :link: bioamp-exg-pill
+            :link-type: ref
             :img-top: media/bioamp-exg-pill.*
             :img-alt:
 
