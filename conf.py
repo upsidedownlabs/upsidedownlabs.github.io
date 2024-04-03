@@ -156,7 +156,6 @@ html_context = {
 
 # -- Options for LaTeX output --
 latex_documents = []
-latex_engine = "xelatex"
 
 latex_elements = {
     "papersize": "a4paper",
