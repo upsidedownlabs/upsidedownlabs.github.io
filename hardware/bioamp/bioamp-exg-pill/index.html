@@ -53,7 +53,7 @@
     <link rel="prev" title="Hardware" href="../../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Apr 03, 2024"/>
+    <meta name="docbuild:last-update" content="Apr 04, 2024"/>
   </head>
   
   
@@ -597,17 +597,17 @@ just a few. It also works with any dedicated ADC, like the Texas Instruments ADS
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../../_images/BioAmp-EXG-Pill-Front.png"><img alt="../../../_images/BioAmp-EXG-Pill-Front.png" src="../../../_images/BioAmp-EXG-Pill-Front.png" style="width: 500px;" /></a>
 </figure>
-<p>BioAmp EXG Pill is capable of recording publication-quality biopotential signals like ECG, EMG, EOG, and EEG, without
-the inclusion of any dedicated hardware or software filters. Its small size allows easy integration into mobile and
-space-constrained projects, and its powerful noise rejection makes it usable even when the device is close to the AC
-mains supply. Any 1.5 mm diameter wire can be used as a strain-relieving electrode cable, making it very cost-effective
-in comparison to the other available.</p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../_images/Basic-Circuit.jpg"><img alt="../../../_images/Basic-Circuit.jpg" src="../../../_images/Basic-Circuit.jpg" style="width: 500px;" /></a>
-</figure>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../_images/EXG_Recording.jpg"><img alt="../../../_images/EXG_Recording.jpg" src="../../../_images/EXG_Recording.jpg" style="width: 500px;" /></a>
-</figure>
+</section>
+<section id="what-makes-it-different">
+<h2>What makes it different?<a class="headerlink" href="#what-makes-it-different" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Record publication-quality biopotential signals like ECG, EMG, EOG, or EEG.</p></li>
+<li><p>Small size (25.4 x 10.0mm) allows easy integration into mobile and space-constrained projects.</p></li>
+<li><p>Powerful noise rejection makes it usable even when the device is close to the AC mains supply.</p></li>
+<li><p>Any 1.5 mm diameter wire can be used as a strain-relieving electrode cable, making it very cost-effective.</p></li>
+<li><p>Pair it with any MCU with an ADC. It is by default compatible with 5V but you can make it compatible with 3.3V as well using a voltage divider.</p></li>
+<li><p>Configure the gain, band pass filter and electrode count according to your requirements.</p></li>
+</ol>
 </section>
 <section id="features-specifications">
 <h2>Features &amp; Specifications<a class="headerlink" href="#features-specifications" title="Link to this heading">#</a></h2>
@@ -629,15 +629,12 @@ in comparison to the other available.</p>
 <td><p>1</p></td>
 </tr>
 <tr class="row-even"><td><p>Electrodes</p></td>
-<td><p>2 or 3 (Default: 3 electrodes)</p></td>
+<td><p>2 or 3 (By default configured for 3 electrodes)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Dimensions</p></td>
 <td><p>25.4 x 10 mm</p></td>
 </tr>
-<tr class="row-even"><td><p>Designed for use with carrier board</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="row-odd"><td><p>Open Source</p></td>
+<tr class="row-even"><td><p>Open Source</p></td>
 <td><p>Hardware + Software</p></td>
 </tr>
 </tbody>
@@ -645,23 +642,29 @@ in comparison to the other available.</p>
 </section>
 <section id="board-layout">
 <h2>Board layout<a class="headerlink" href="#board-layout" title="Link to this heading">#</a></h2>
-<p>Images below shows a quick overview of the BioAmp EXG Pill hardware design.</p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../_images/PCB_Front.png"><img alt="PCB Front" src="../../../_images/PCB_Front.png" style="width: 500px;" /></a>
-</figure>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../_images/PCB_Back.png"><img alt="PCB Back" src="../../../_images/PCB_Back.png" style="width: 500px;" /></a>
-</figure>
+<p>BioAmp EXG Pill’s elegant design allows it to be used in 3 ways:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Pin-header holes allow you to solder (berg strip) pin headers for easy use with a breadboard.</p></li>
+<li><p>Castellated holes allow you to solder BioAmp EXG Pill directly onto a custom PCB that requires biopotential-amplification capabilities.</p></li>
+<li><p>Electrode holes allow you to use any 1.5 mm diameter wire as an electrode cable with minimal strain.</p></li>
+</ol>
+</div></blockquote>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../../_images/Front_Specifications.jpg"><img alt="../../../_images/Front_Specifications.jpg" src="../../../_images/Front_Specifications.jpg" style="width: 500px;" /></a>
 </figure>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../../_images/Back_Specifications.jpg"><img alt="../../../_images/Back_Specifications.jpg" src="../../../_images/Back_Specifications.jpg" style="width: 500px;" /></a>
 </figure>
+<p><strong>BioAmp EXG Pill is fully configurable as you can:</strong></p>
+<ol class="arabic simple">
+<li><p>Increase the gain of the instrumentation amplifier by using a 0603 resistor at R6. Decrease gain and configure the bandpass filter by using 0603 parts at R12 and C5. Band limiting is very useful for EOG and EEG recording. Also, the signal sometimes clips while recording ECG with electrodes very close to the heart. Creating a solder jumper for a band-pass filter helps with that. By default, BioAmp EXG Pill is configured to record EEG and EOG but you can bridge the pads (below bandpass) with solder to make it configurable for EMG and ECG.</p></li>
+<li><p>The normal method of operation for best-quality signal amplification is to use 3 electrodes by default but you can bridge the pads (below electrodes) to make it configurable for 2 electrodes. The 2-electrode mode is specifically included for projects like heart (ECG) patches for HRV. It’s only supposed to be used with a battery-operated setup and is quite prone to high interference noise due to a lack of proper reference on the body (This option is not recommended for most operations)</p></li>
+</ol>
 </section>
 <section id="assembly-getting-started">
 <h2>Assembly &amp; getting started<a class="headerlink" href="#assembly-getting-started" title="Link to this heading">#</a></h2>
-<p>If you have received the assembled BioAmp EXG Pill then you can skip the steps below. But, if you got the unassembled one, follow the steps below to assemble your Pill:</p>
+<p>If you have received the assembled BioAmp EXG Pill then you can skip the step 1 below. But, if you got the unassembled one, follow step 1 to assemble your Pill:</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-2 sd-mb-2 sd-ml-0 sd-mr-0 docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
 <div class="sd-col sd-d-flex-column docutils">
@@ -671,9 +674,9 @@ in comparison to the other available.</p>
 </div>
 <div class="sd-card-body docutils">
 <figure class="align-default">
-<img alt="../../../_images/assembly-step1.png" src="../../../_images/assembly-step1.png" />
+<a class="reference internal image-reference" href="../../../_images/assembly-step1.png"><img alt="../../../_images/assembly-step1.png" src="../../../_images/assembly-step1.png" style="width: 300px;" /></a>
 </figure>
-<p class="sd-card-text">Insert the provided BioAmp cable’s JST connector and header pins from top as shown in the image and solder them from below.</p>
+<p class="sd-card-text">Insert the provided BioAmp cable’s JST PH connector and header pins from top as shown in the image and solder them from below.</p>
 </div>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
@@ -681,31 +684,52 @@ in comparison to the other available.</p>
 <p class="sd-card-text"><strong>Step 2 (optional): Configure for ECG/EMG</strong></p>
 </div>
 <div class="sd-card-body docutils">
-<p class="sd-card-text">Optionally you can configure BioAmp EXG Pill to record EMG or ECG by making a solder joint as shown in the image on the right.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../../_images/assembly-step2.png"><img alt="../../../_images/assembly-step2.png" src="../../../_images/assembly-step2.png" style="width: 300px;" /></a>
+</figure>
+<p class="sd-card-text">BioAmp EXG Pill is by default configured for recording EEG or EOG but if you want to record good quality ECG or EMG, then it is recommended to configure it by making a solder joint as shown in the image above.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">Even without making the solder joint the BioAmp EXG Pill is capable of recording ECG or EMG as well but the signals would be more accurate if you configure it.</p>
 </div>
-<img alt="" class="sd-card-img-bottom" src="../../../_images/assembly-step2.png" />
+</div>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>Step 3: Connect MCU/ADC</strong></p>
+<p class="sd-card-text"><strong>Step 3 (optional): Configure to operate at 3.3V</strong></p>
 </div>
 <div class="sd-card-body docutils">
-<p class="sd-card-text">Connect VCC to 5V, GND to GND, and OUT to ADC IN of your favorite MCU/ADC board via jumper cables provided by us.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/EXG_Recording.jpg"><img alt="../../../_images/EXG_Recording.jpg" src="../../../_images/EXG_Recording.jpg" style="width: 300px;" /></a>
+</figure>
+<p class="sd-card-text">It is by default compatible with 5V but you can make it compatible with 3.3V as well using a voltage divider.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Step 4: Connect MCU/ADC</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../../_images/assembly-step3.png"><img alt="../../../_images/assembly-step3.png" src="../../../_images/assembly-step3.png" style="width: 300px;" /></a>
+</figure>
+<p class="sd-card-text">Connect VCC to 5V, GND to GND, and OUT to Analog (ADC) IN of your favorite MCU/ADC board via jumper cables provided by us.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p class="sd-card-text">Take precautions while connecting to power, if power pins are to be swapped, your BioAmp EXG Pill will be fried and it’ll become unusable(DIE).</p>
+<p class="sd-card-text">Take precautions while connecting to power, if power pins are to be swapped, your BioAmp EXG Pill will be fried and it’ll become unusable (DIE).</p>
 </div>
 </div>
-<img alt="" class="sd-card-img-bottom" src="../../../_images/assembly-step3.png" />
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>Step 3: Make the connections</strong></p>
+<p class="sd-card-text"><strong>Step 5: Make the connections</strong></p>
 </div>
 <div class="sd-card-body docutils">
-<p class="sd-card-text">Connect the BioAmp Cable to the EXG Pill and then to the electrodes. Place the electrodes according to your recording biopotential signal.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../../_images/Basic-Circuit.jpg"><img alt="../../../_images/Basic-Circuit.jpg" src="../../../_images/Basic-Circuit.jpg" style="width: 300px;" /></a>
+</figure>
+<p class="sd-card-text">Connect the BioAmp Cable to the BioAmp EXG Pill and then to the electrodes. Place the electrodes according to your recording biopotential signal.</p>
 </div>
-<img alt="" class="sd-card-img-bottom" src="../../../_images/Basic-Circuit.jpg" />
 </div>
 </div>
 </div>
@@ -784,7 +808,7 @@ EXG Pill and the electrode placement for the frontal cortex EEG recording respec
 <p>The BioAmp EXG Pill can be used in a variety of ways, the YouTube video below shows a potential way of using v0.7 of
 BioAmp EXG Pill.</p>
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
-<iframe allowfullscreen="true" src="https://www.youtube.com/embed/G3z9fvQnuw" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/-G3z9fvQnuw" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
 </iframe></div><p>A lot has improved in terms of interference rejection and flexibility from v0.7 to v1.0 of the BioAmp EXG Pill. The YouTube video
 below shows the ECG, EMG, EOG, and EEG recording using v1.0b of device.</p>
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
@@ -799,22 +823,20 @@ be used for a wide variety of interesting biosensing projects, including:</p>
 <li><p>Heart-rate variability calculation to detect heart ailments (ECG)</p></li>
 <li><p>Prosthetic arm (servo) control (EMG)</p></li>
 <li><p>Controlling a 3DOF robotic arm (EMG)</p></li>
-<li><p>Quantitative analysis of physical therapy for palsy (EMG)</p></li>
 <li><p>Real-time game controllers (EOG)</p></li>
 <li><p>Blink detection (EOG)</p></li>
-<li><p>Capturing photos with a blink of an eye (EOG)</p></li>
-<li><p>Controlling LEDs via brain waves (EEG)</p></li>
-<li><p>Patient monitoring and many more examples.</p></li>
+<li><p>Capturing photos with a blink of an eye (EOG) and many more examples.</p></li>
 </ul>
 </section>
-<section id="some-project-ideas">
-<h2>Some project ideas<a class="headerlink" href="#some-project-ideas" title="Link to this heading">#</a></h2>
+<section id="some-project-ideas-tutorials">
+<h2>Some project ideas &amp; tutorials<a class="headerlink" href="#some-project-ideas-tutorials" title="Link to this heading">#</a></h2>
+<p>You can find step-by-step tutorials for various HCI/BCI projects on our <a class="reference external" href="https://www.instructables.com/member/Upside+Down+Labs/">Instructables</a>.</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-4 sd-mb-4 sd-ml-0 sd-mr-0 docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
 <div class="sd-col sd-d-flex-column docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>1. Record Publication Grade ECG at Your Home Using BioAmp EXG Pill</strong></p>
+<p class="sd-card-text"><strong>1. Record publication-grade ECG at your home</strong></p>
 </div>
 <div class="sd-card-body docutils">
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
@@ -823,7 +845,7 @@ be used for a wide variety of interesting biosensing projects, including:</p>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>2. Detecting Heart Beats Using BioAmp EXG Pill</strong></p>
+<p class="sd-card-text"><strong>2. Detecting heart beats</strong></p>
 </div>
 <div class="sd-card-body docutils">
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
@@ -832,7 +854,7 @@ be used for a wide variety of interesting biosensing projects, including:</p>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>3. Measuring Heart Rate Using BioAmp EXG Pill</strong></p>
+<p class="sd-card-text"><strong>3. Measuring heart rate</strong></p>
 </div>
 <div class="sd-card-body docutils">
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
@@ -841,16 +863,16 @@ be used for a wide variety of interesting biosensing projects, including:</p>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>4. Recording EEG From Pre Frontal Cortex of Brain Using BioAmp EXG Pill</strong></p>
+<p class="sd-card-text"><strong>4. Recording EEG from visual cortex part of brain</strong></p>
 </div>
 <div class="sd-card-body docutils">
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
-<iframe allowfullscreen="true" src="https://www.youtube.com/embed/QzZh243-Ac8" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/XENPUkfxLec" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
 </iframe></div></div>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>5. Visualizing Electrical Impulses of Eyes (EOG) Using BioAmp EXG Pill</strong></p>
+<p class="sd-card-text"><strong>5. Visualizing electrical impulses of eyes (EOG)</strong></p>
 </div>
 <div class="sd-card-body docutils">
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
@@ -859,20 +881,56 @@ be used for a wide variety of interesting biosensing projects, including:</p>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>6. Eye Blink Detection by Recording EOG Using BioAmp EXG Pill</strong></p>
+<p class="sd-card-text"><strong>6. Eye blink detection by recording EOG</strong></p>
 </div>
 <div class="sd-card-body docutils">
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
-<iframe allowfullscreen="true" src="https://www.youtube.com/embed/4dnCX3U7LS8" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/PfEJVa3gv6E" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
 </iframe></div></div>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>7. Drowsiness Detector by Detecting EOG Signals Using BioAmp EXG Pill</strong></p>
+<p class="sd-card-text"><strong>7. Drowsiness detector by detecting EOG signals</strong></p>
 </div>
 <div class="sd-card-body docutils">
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/h4F41mp4mWk" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>8. Recording publication-grade muscle signals (EMG)</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/yx5EQTKNbvs" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="software-tutorials">
+<h2>Software tutorials<a class="headerlink" href="#software-tutorials" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-4 sd-mb-4 sd-ml-0 sd-mr-0 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>1. Getting started with Backyard Brains’ Spike Recorder</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/QzZh243-Ac8" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>2. Getting started with Brainbay</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/8vKYAg9C8Jg" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
 </iframe></div></div>
 </div>
 </div>
@@ -928,6 +986,7 @@ be used for a wide variety of interesting biosensing projects, including:</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-makes-it-different">What makes it different?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features-specifications">Features &amp; Specifications</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#board-layout">Board layout</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assembly-getting-started">Assembly &amp; getting started</a></li>
@@ -937,7 +996,8 @@ be used for a wide variety of interesting biosensing projects, including:</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electroencephalography-eeg">Electroencephalography (EEG)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glimpses-of-previous-versions">Glimpses of previous versions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#real-world-applications">Real-world Applications</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-project-ideas">Some project ideas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-project-ideas-tutorials">Some project ideas &amp; tutorials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-tutorials">Software tutorials</a></li>
 </ul>
   </nav></div>
 
@@ -976,14 +1036,14 @@ be used for a wide variety of interesting biosensing projects, including:</p>
     
 
     
+
+    
+
+    
         
         <a role="button" href="../../../bioamp-exg-pill.pdf" target="_blank">
             <i class="fa-solid fa-download"></i> Download PDF
         </a>
-    
-
-    
-
     
 </div>
 
@@ -1025,7 +1085,7 @@ be used for a wide variety of interesting biosensing projects, including:</p>
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Apr 03, 2024.
+  Last updated on Apr 04, 2024.
   <br/>
 </p></div>
       
