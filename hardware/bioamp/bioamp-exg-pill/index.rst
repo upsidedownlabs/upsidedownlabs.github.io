@@ -3,8 +3,6 @@
 BioAmp EXG Pill
 ##################
 
-Publication-grade analog front-end amplification for recording ECG, EMG, EOG, or EEG on a pill-size board.
-
 Overview
 *********
 
