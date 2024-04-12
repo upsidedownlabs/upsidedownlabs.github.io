@@ -126,3 +126,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
    :caption: Experiments
 
    experiments/index
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Kits
+
+   kits/index
