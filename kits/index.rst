@@ -7,5 +7,5 @@ Kits
    :hidden:
    :maxdepth: 1
 
-   diy-neuroscience/basic-v1/index
-   diy-neuroscience/pro-v1/index
+   diy-neuroscience/basic/index
+   diy-neuroscience/pro/index
