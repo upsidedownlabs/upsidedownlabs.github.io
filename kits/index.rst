@@ -6,7 +6,6 @@ Kits
 .. toctree::
    :hidden:
    :maxdepth: 1
-   :caption: Kits
 
-   bioamp/diy-neuroscience-kit-basic/index
-   bioamp/diy-neuroscience-kit-pro/index
+   diy-neuroscience/basic-v1/index
+   diy-neuroscience/pro-v1/index
