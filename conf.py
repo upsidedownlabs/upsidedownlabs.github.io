@@ -20,7 +20,7 @@ author = 'Upside Down Labs'
 
 # PDF path exploration
 MAX_DEPTH = 2
-walk_dirpaths = ['hardware','kits']
+walk_dirpaths = ['hardware', 'kits']
 pdf_paths = []
 for walk_dirpath in walk_dirpaths:
     for (dirpath, dirnames, filenames) in os.walk(walk_dirpath, topdown=True):
