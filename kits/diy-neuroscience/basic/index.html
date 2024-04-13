@@ -1,0 +1,1010 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>DIY Neuroscience Kit Basic &#8212; upsidedownlabs.github.io  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'kits/diy-neuroscience/basic/index';</script>
+    <link rel="canonical" href="docs.upsidedownlabs.tech/kits/diy-neuroscience/basic/index.html" />
+    <link rel="icon" href="../../../_static/logo_sqr_bgw.svg"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="DIY Neuroscience Kit Pro" href="../pro/index.html" />
+    <link rel="prev" title="Kits" href="../../index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+    <meta name="docbuild:last-update" content="Apr 13, 2024"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">Welcome to Upside Down Labs docs site!</div>
+  </div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo_black_hr_nbg.svg" class="logo__image only-light" alt="upsidedownlabs.github.io  documentation - Home"/>
+    <script>document.write(`<img src="../../../_static/logo_white_hr_nbg.svg" class="logo__image only-dark" alt="upsidedownlabs.github.io  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="ms-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../hardware/index.html">
+                        Hardware
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../software/index.html">
+                        Software
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../experiments/index.html">
+                        Experiments
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../../index.html">
+                        Kits
+                      </a>
+                    </li>
+                
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+                    DigiKey
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
+                    Mouser
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.tindie.com/stores/upsidedownlabs/">
+                    Tindie
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355">
+                    Amazon India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://store.upsidedownlabs.tech/">
+                    Store India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://t.ly/ExlaF">
+                    GeM India
+                  </a>
+                </li>
+                
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../hardware/index.html">
+                        Hardware
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../software/index.html">
+                        Software
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../experiments/index.html">
+                        Experiments
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../../index.html">
+                        Kits
+                      </a>
+                    </li>
+                
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
+                    More
+                </button>
+                <ul id="pst-nav-more-links-2" class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+                    DigiKey
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
+                    Mouser
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.tindie.com/stores/upsidedownlabs/">
+                    Tindie
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355">
+                    Amazon India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://store.upsidedownlabs.tech/">
+                    Store India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://t.ly/ExlaF">
+                    GeM India
+                  </a>
+                </li>
+                
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">DIY Neuroscience Kit Basic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pro/index.html">DIY Neuroscience Kit Pro</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Kits</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">DIY...</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="diy-neuroscience-kit-basic">
+<span id="id1"></span><h1>DIY Neuroscience Kit Basic<a class="headerlink" href="#diy-neuroscience-kit-basic" title="Link to this heading">#</a></h1>
+<p>This kit is perfect for <code class="docutils literal notranslate"><span class="pre">students</span></code>, <code class="docutils literal notranslate"><span class="pre">researchers</span></code> and <code class="docutils literal notranslate"><span class="pre">hobbyists</span></code> alike who want to start exploring neuroscience.
+Whether it’s studying brain waves, monitoring heart rhythms, analyzing muscle movements, or tracking eye movements,
+this DIY kit provides an accessible and educational platform for understanding the complexities of human physiology and
+developing practical applications in the fields of human-computer interaction, and beyond.</p>
+<figure class="align-center">
+<img alt="../../../_images/diy-neuroscience-kit-basic.png" src="../../../_images/diy-neuroscience-kit-basic.png" />
+</figure>
+<section id="contents-of-the-kit">
+<h2>Contents of the kit<a class="headerlink" href="#contents-of-the-kit" title="Link to this heading">#</a></h2>
+<p>From development board (Maker UNO), BioAmp EXG Pill, BioAmp cable, jumper cables, gel electrodes,
+dry electrode-based BioAmp bands to skin preparation kit, this includes everything that you need to get started with your awesome HCI/BCI project.</p>
+<figure class="align-center">
+<img alt="../../../_images/kit-contents.png" src="../../../_images/kit-contents.png" />
+</figure>
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/7O9Bw8y5fQs" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before you start using the kit, please download <a class="reference external" href="https://www.arduino.cc/en/software">Arduino IDE v1.8.19 (legacy IDE)</a>. Using this you’ll be able to upload the arduino sketches in Maker UNO and visualise the data on your laptop.</p>
+<figure class="align-default">
+<img alt="../../../_images/arduino-ide.png" src="../../../_images/arduino-ide.png" />
+</figure>
+</div>
+</section>
+<section id="using-the-kit">
+<h2>Using the kit<a class="headerlink" href="#using-the-kit" title="Link to this heading">#</a></h2>
+<p>This kit is made in a way so that even beginners can use it and get strated with recording biootential signals from their body to explore the field of neuroscience by making HCI/BCI projects.</p>
+<section id="step-1-optional-configure-for-emg-ecg">
+<h3>Step 1 (optional): Configure for EMG/ECG<a class="headerlink" href="#step-1-optional-configure-for-emg-ecg" title="Link to this heading">#</a></h3>
+<img alt="../../../_images/configuration-emg-ecg.png" src="../../../_images/configuration-emg-ecg.png" />
+<p>BioAmp EXG Pill is by default configured for recording EEG or EOG, so if you are recording any of the two signals
+you can skip this step. But if you want to record good quality ECG or EMG, then it is recommended to configure it
+by making a solder joint as shown in the image above.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Even without making the solder joint the BioAmp EXG Pill is capable of recording ECG or EMG as well but the signals would be more accurate if you configure it.</p>
+</div>
+</section>
+<section id="step-2-optional-configure-to-operate-at-3-3v">
+<h3>Step 2 (optional): Configure to operate at 3.3V<a class="headerlink" href="#step-2-optional-configure-to-operate-at-3-3v" title="Link to this heading">#</a></h3>
+<img alt="../../../_images/configuration-3v.jpg" class="align-center" src="../../../_images/configuration-3v.jpg" />
+<p>BioAmp EXG Pill is by default compatible with 5V but you can make it compatible with 3.3V as well using a voltage divider as shown above.</p>
+</section>
+<section id="step-3-connect-maker-uno">
+<h3>Step 3: Connect Maker UNO<a class="headerlink" href="#step-3-connect-maker-uno" title="Link to this heading">#</a></h3>
+<img alt="../../../_images/connection-with-maker-uno.png" src="../../../_images/connection-with-maker-uno.png" />
+<p>Connect VCC to 5V, GND to GND, and OUT to Analog pin A0 of your Maker UNO via jumper cables provided by us. If you are connecting OUT to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Take precautions while connecting to power, if power pins (GND &amp; VCC) are to be swapped, your BioAmp EXG Pill will be fried and it’ll become unusable (DIE).</p>
+</div>
+</section>
+<section id="step-4-connecting-electrode-cable">
+<h3>Step 4: Connecting electrode cable<a class="headerlink" href="#step-4-connecting-electrode-cable" title="Link to this heading">#</a></h3>
+<img alt="../../../_images/bioamp-cable.png" src="../../../_images/bioamp-cable.png" />
+<p>Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JST PH connector as shown above.</p>
+</section>
+<section id="step-5-skin-preparation">
+<h3>Step 5: Skin Preparation<a class="headerlink" href="#step-5-skin-preparation" title="Link to this heading">#</a></h3>
+</section>
+<section id="step-6-measuring-emg-electromyography">
+<h3>Step 6: Measuring EMG (ElectroMyoGraphy)<a class="headerlink" href="#step-6-measuring-emg-electromyography" title="Link to this heading">#</a></h3>
+<p>We have 2 options to measure the EMG signals, either using the gel electrodes or using dry electrode based Muscle BioAmp band. You can try both of them one by one.</p>
+<ul class="simple">
+<li><p><strong>Using gel electrodes:</strong></p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Connect the BioAmp cable to gel electrodes,</p></li>
+<li><p>Peel the plastic backing from electrodes</p></li>
+<li><p>Place the IN+ and IN- cables on the arm near the ulnar nerve &amp; REF (reference) at the back of your hand as shown in the connection diagram.</p></li>
+</ol>
+<img alt="../../../_images/emg.png" src="../../../_images/emg.png" />
+<ul class="simple">
+<li><p><strong>Using Muscle BioAmp Band:</strong></p></li>
+</ul>
+<ol class="arabic">
+<li><p>Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve &amp; REF (reference) on the far side of the band.</p></li>
+<li><p>Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.</p>
+<p><strong>Tutorial on how to use the band:</strong></p>
+</li>
+</ol>
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/xYZdw0aesa0" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.</p>
+</div>
+<p><strong>Uploading the code:</strong></p>
+<p>Connect the Maker Uno to your laptop using the USB cable (Type A to Type B). Copy paste any one of the Arduino Sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
+<p>EMG Filter: <a class="github reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino">upsidedownlabs/Muscle-BioAmp-Arduino-Firmware</a></p>
+<p>EMG Envelope: <a class="github reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino">upsidedownlabs/Muscle-BioAmp-Arduino-Firmware</a></p>
+<p>Go to tools from the menu bar, select “board” option then select Arduino UNO. In the same menu,
+select the COM port on which your Maker Uno is connected. To find out the right COM port,
+disconnect your Maker UNO board and reopen the menu. The entry that disappears should be the
+right COM port. Now upload the code, &amp; open the serial plotter from the tools menu to visualize
+the EMG signals.</p>
+<p>After opening the serial plotter make sure to select the baud rate to 115200.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.</p>
+</div>
+<p><strong>Visualizing the EMG signals</strong></p>
+<p>Now flex your arm to visualize the muscle signals in real time on your laptop.</p>
+<img alt="../../../_images/EMGEnvelop1.jpg" src="../../../_images/EMGEnvelop1.jpg" />
+</section>
+<section id="step-7-measuring-ecg-electrocardiography">
+<h3>Step 7: Measuring ECG (ElectroCardioGraphy)<a class="headerlink" href="#step-7-measuring-ecg-electrocardiography" title="Link to this heading">#</a></h3>
+<p>We have 2 options to measure the ECG signals, either using the gel electrodes or using dry electrode based Heart BioAmp band. You can try both of them one by one.</p>
+<ul class="simple">
+<li><p><strong>Using gel electrodes:</strong></p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Connect the BioAmp cable to gel electrodes</p></li>
+<li><p>Peel the plastic backing from electrodes</p></li>
+<li><p>Place the IN- cable on the left side, IN+ in the middle and REF (reference) on the far right side as shown above.</p></li>
+</ol>
+<img alt="../../../_images/ecg-lead1.png" src="../../../_images/ecg-lead1.png" />
+<ul class="simple">
+<li><p><strong>Using Heart BioAmp Band:</strong></p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Wear the band as depicted in the video tutorial given below</p></li>
+<li><p>Place the IN- cable on the left side, IN+ in the middle and REF (reference) on the far right side.</p></li>
+<li><p>Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.</p></li>
+</ol>
+<p><strong>Tutorial on how to use the band:</strong></p>
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/fr5iORsVyUM" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div><p><strong>Uploading the code:</strong></p>
+<p>Connect the Maker Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
+<p>ECG Filter: <a class="github reference external" href="https://github.com/upsidedownlabs/Heart-BioAmp-Arduino-Firmware/blob/main/2_ECGFilter/2_ECGFilter.ino">upsidedownlabs/Heart-BioAmp-Arduino-Firmware</a></p>
+<p>Go to tools from the menu bar, select “board” option then select Arduino UNO. In the same menu,
+select the COM port on which your Maker Uno is connected. To find out the right COM port,
+disconnect your Maker UNO board and reopen the menu. The entry that disappears should be the
+right COM port. Now upload the code, &amp; open the serial plotter from the tools menu to visualize
+the signals.</p>
+<p>After opening the serial plotter make sure to select the baud rate to 115200.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.</p>
+</div>
+<p><strong>Visualizing the ECG signals</strong></p>
+<img alt="../../../_images/bioamp-Exg-Pill-ECG1.jpg" src="../../../_images/bioamp-Exg-Pill-ECG1.jpg" />
+</section>
+<section id="step-8-measuring-eog-electrooculography">
+<h3>Step 8: Measuring EOG (ElectroOculoGraphy)<a class="headerlink" href="#step-8-measuring-eog-electrooculography" title="Link to this heading">#</a></h3>
+<p>We have 2 ways to measure the EOG signals, either record the horizontal eye movement or the vertical eye movement.</p>
+<ul class="simple">
+<li><p><strong>Horizontal EOG recording:</strong></p></li>
+</ul>
+<img alt="../../../_images/eog-horizontal.png" src="../../../_images/eog-horizontal.png" />
+<ol class="arabic simple">
+<li><p>Connect the BioAmp cable to gel electrodes.</p></li>
+<li><p>Peel the plastic backing from electrodes.</p></li>
+<li><p>Place the IN- cable on the right side of the eye, IN+ on the left side of the eye and REF (reference) at the bony part, on the back side of your earlobe as shown in the diagram above.</p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>Vertical EOG recording:</strong></p></li>
+</ul>
+<img alt="../../../_images/eog-vertical.png" src="../../../_images/eog-vertical.png" />
+<ol class="arabic simple">
+<li><p>Connect the BioAmp cable to gel electrodes.</p></li>
+<li><p>Peel the plastic backing from electrodes.</p></li>
+<li><p>Place the IN- &amp; IN+ cables above and below the eye respectively and REF (reference) at the bony part, on the back side of your earlobe as shown in the diagram above.</p></li>
+</ol>
+<p><strong>Uploading the code</strong></p>
+<p>Connect the Maker Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
+<p>EOG Filter: <a class="github reference external" href="https://github.com/upsidedownlabs/Eye-BioAmp-Arduino-Firmware/blob/main/2_EOGFilter/2_EOGFilter.ino">upsidedownlabs/Eye-BioAmp-Arduino-Firmware</a></p>
+<p>Go to tools from the menu bar, select “board” option then select Arduino UNO. In the same menu,
+select the COM port on which your Maker Uno is connected. To find out the right COM port,
+disconnect your Maker UNO board and reopen the menu. The entry that disappears should be the
+right COM port. Now upload the code, &amp; open the serial plotter from the tools menu to visualize
+the signals.</p>
+<p>After opening the serial plotter make sure to select the baud rate to 115200.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.</p>
+</div>
+<p><strong>Visualizing the EOG signals</strong></p>
+<img alt="../../../_images/bioamp-exg-pill-eog1.jpg" src="../../../_images/bioamp-exg-pill-eog1.jpg" />
+</section>
+<section id="step-9-measuring-eeg-electroencephalography">
+<h3>Step 9: Measuring EEG (ElectroEncephaloGraphy)<a class="headerlink" href="#step-9-measuring-eeg-electroencephalography" title="Link to this heading">#</a></h3>
+<p>Let’s understand the electrode placements before moving forward in this project. For recording EEG from
+different parts of the brain, you have to place the electrodes according to the <a class="reference external" href="https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)">International 10-20 system for recording EEG</a>.</p>
+<img alt="../../../_images/10-20-system.png" src="../../../_images/10-20-system.png" />
+<p>We have 2 options to measure the EEG signals, either using the gel electrodes or using dry electrode based Brain BioAmp band. You can try both of them one by one.</p>
+<ul class="simple">
+<li><p><strong>Using gel electrodes to record from prefrontal cortex part of brain:</strong></p></li>
+</ul>
+<img alt="../../../_images/eeg.png" src="../../../_images/eeg.png" />
+<ol class="arabic simple">
+<li><p>Connect the BioAmp cable to gel electrodes.</p></li>
+<li><p>Peel the plastic backing from electrodes.</p></li>
+<li><p>Place the IN+ and IN- cables on Fp1 and Fp2 as per the International 10-20 system &amp; REF (reference) at the bony part, on the back side of your earlobe as shown above.</p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>Using Brain BioAmp Band to record from prefrontal cortex part of brain:</strong></p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Connect the BioAmp cable to Brain BioAmp Band in a way such that IN+ and IN- are placed on Fp1 and Fp2 as per the International 10-20 system.</p></li>
+<li><p>In this case, the REF (reference) should be connected using gel electrode. So connect the reference of BioAmp cable to the gel electrode, peel the plastic backing and place it at the bony part, on the back side of your earlobe.</p></li>
+<li><p>Now put a small drop of electrode gel on the dry electrodes (IN+ and IN-) between the skin and metallic part of BioAmp cable to get the best results.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Similarly you can use the band to record EEG signals from the visual cortex part of brain by placing the dry electrodes on O1 and O2 instead of Fp1 and Fp2. Everything else will remain the same.</p>
+</div>
+<p><strong>Tutorial on how to use the band:</strong></p>
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/O6qp7teT-sM" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div><p><strong>Uploading the code</strong></p>
+<p>Connect the Maker Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
+<p><a class="reference external" href="https://raw.githubusercontent.com/BackyardBrains/SpikerShield/master/Muscle/Arduino%20Code/SpikeRecorder/SpikeRecorderSpikerShield_V1_1.ino">Spike recorder arduino code</a></p>
+<p>Go to tools from the menu bar, select “board” option then select Arduino UNO. In the same menu,
+select the COM port on which your Maker Uno is connected. To find out the right COM port,
+disconnect your Maker UNO board and reopen the menu. The entry that disappears should be the
+right COM port. Now upload the code.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.</p>
+</div>
+<p><strong>Visualizing the EEG signals</strong></p>
+<p>Download Backyard Brains’ Spike Recorder according to the operating system you are using (Windows, OSX, Linux) from this <a class="reference external" href="https://backyardbrains.com/products/spikerecorder">link</a>.</p>
+<p>When the Spike Recorder starts, it will start recording from your microphone. To change that, go to the settings by clicking
+the first icon on the top left corner of the screen, select the COM port on which the Maker UNO is connected and click on connect.</p>
+<figure class="align-default">
+<img alt="../../../_images/spike-recorder-configurations.jpg" src="../../../_images/spike-recorder-configurations.jpg" />
+</figure>
+<p>Mute the speakers and apply the 50Hz notch filter by clicking on the checkbox as shown in the screenshot above. You should
+set the low band pass filter to 1Hz and high bandpass filter to 40Hz as we are only recording the EEG singnals which range between
+these frequencies.</p>
+<p>Now everything is configured and connected. So close the settings window and start recording EEG signals.</p>
+<figure class="align-default">
+<img alt="../../../_images/bioamp-exg-pill-eeg.png" src="../../../_images/bioamp-exg-pill-eeg.png" />
+</figure>
+<p>The signals that you can see on the screen right now are originating from prefrontal cortex part of your brain and propagating through all the layers to the surface of your skin.</p>
+<p>To record these EEG signals, you have placed the electrodes on the forehead (Fp1 &amp; Fp2), then BioAmp EXG Pill is amplifying those signals so that we can detect it and finally sending it to the ADC (Analog to Digital Convertor) of your Arduino Uno. Ultimately the signals are being visualized in Spike Recorder software.</p>
+<p>We hope everything is clear now and you understand how the signals are propagating from your brain to the screen of the laptop.</p>
+<p>Features of Spike Recorder that you can explore:</p>
+<ul class="simple">
+<li><p>Increase or decrease the scale of the Y axis by clicking on the + and - icons respecitively that is present on the left side of the graph.</p></li>
+<li><p>Increase or decrease the X axis timescale by sliding up and down on the scroll wheel of the mouse.</p></li>
+<li><p>Visualize the FFT graph by clicking on the FFT icon on top left size of the screen.</p></li>
+<li><p>Record the data in .wav format by clicking the record icon on the top right corner. You can convert this data in any other format according to your project requirements.</p></li>
+<li><p>Listen to the signals by clicking the volume icon on the top right corner. No don’t smile right now, that’s how your brain sounds like :P</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../../index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Kits</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../pro/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">DIY Neuroscience Kit Pro</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents-of-the-kit">Contents of the kit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-kit">Using the kit</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-optional-configure-for-emg-ecg">Step 1 (optional): Configure for EMG/ECG</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-optional-configure-to-operate-at-3-3v">Step 2 (optional): Configure to operate at 3.3V</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-connect-maker-uno">Step 3: Connect Maker UNO</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-connecting-electrode-cable">Step 4: Connecting electrode cable</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-skin-preparation">Step 5: Skin Preparation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-measuring-emg-electromyography">Step 6: Measuring EMG (ElectroMyoGraphy)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-measuring-ecg-electrocardiography">Step 7: Measuring ECG (ElectroCardioGraphy)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-measuring-eog-electrooculography">Step 8: Measuring EOG (ElectroOculoGraphy)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-9-measuring-eeg-electroencephalography">Step 9: Measuring EEG (ElectroEncephaloGraphy)</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/upsidedownlabs/upsidedownlabs.github.io/edit/mainkits/diy-neuroscience/basic/index.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../../_sources/kits/diy-neuroscience/basic/index.rst">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+        <a role="button" href="../../../basic.pdf" target="_blank">
+            <i class="fa-solid fa-download"></i> Download PDF
+        </a>
+    
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, Upside Down Labs.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="last-updated">
+  Last updated on Apr 13, 2024.
+  <br/>
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
