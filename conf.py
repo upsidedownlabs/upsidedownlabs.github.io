@@ -109,6 +109,13 @@ html_theme_options = {
             "attributes": {"target": "_blank"},
         },
         {
+            "name": "Instructables",
+            "url": "https://www.instructables.com/member/Upside%20Down%20Labs/instructables/",
+            "icon": "_static/logo/instructables.svg",
+            "type": "local",
+            "attributes": {"target": "_blank"},
+        },
+        {
             "name": "Upside Down Labs",
             "url": "https://upsidedownlabs.tech/",
             "icon": "_static/logo/logo_sqr_bgw.svg",
