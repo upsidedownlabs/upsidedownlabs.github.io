@@ -20,7 +20,7 @@ author = 'Upside Down Labs'
 
 # PDF path exploration
 MAX_DEPTH = 2
-walk_dirpaths = ['hardware','kits']
+walk_dirpaths = ['hardware', 'kits']
 pdf_paths = []
 for walk_dirpath in walk_dirpaths:
     for (dirpath, dirnames, filenames) in os.walk(walk_dirpath, topdown=True):
@@ -106,6 +106,13 @@ html_theme_options = {
             "name": "Discord",
             "url": "https://discord.gg/SzYRVz8xRw",
             "icon": "fa-brands fa-discord",
+            "attributes": {"target": "_blank"},
+        },
+        {
+            "name": "Instructables",
+            "url": "https://www.instructables.com/member/Upside%20Down%20Labs/instructables/",
+            "icon": "_static/logo/instructables.svg",
+            "type": "local",
             "attributes": {"target": "_blank"},
         },
         {
