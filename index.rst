@@ -133,3 +133,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
    :caption: Kits
 
    kits/index
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Guides
+
+   guides/index

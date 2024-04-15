@@ -87,7 +87,7 @@ html_theme_options = {
             "name": "GeM India",
         }
     ],
-    "header_links_before_dropdown": 4,
+    "header_links_before_dropdown": 5,
     "show_prev_next": True,
     "icon_links": [
         {
