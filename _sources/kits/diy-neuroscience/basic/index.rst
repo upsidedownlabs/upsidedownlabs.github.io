@@ -3,6 +3,9 @@
 DIY Neuroscience Kit Basic
 ###########################
 
+Overview
+**********
+
 This kit is perfect for ``students``, ``researchers`` and ``hobbyists`` alike who want to start exploring neuroscience. 
 Whether it's studying brain waves, monitoring heart rhythms, analyzing muscle movements, or tracking eye movements, 
 this DIY kit provides an accessible and educational platform for understanding the complexities of human physiology and 
@@ -14,24 +17,33 @@ developing practical applications in the fields of human-computer interaction, a
 Contents of the kit
 ********************
 
-From development board (Maker UNO), BioAmp EXG Pill, BioAmp cable, jumper cables, gel electrodes,
+From development board (Maker UNO), BioAmp EXG Pill, BioAmp cable v3, jumper cables, gel electrodes,
 dry electrode-based BioAmp bands to skin preparation kit, this includes everything that you need to get started with your awesome HCI/BCI project. 
 
 .. figure:: media/kit-contents.*
     :align: center
 
+**Unboxing the kit:**
+
 .. youtube:: 7O9Bw8y5fQs
     :width: 100%
     :align: center
 
-.. note:: Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the arduino sketches in Maker UNO and visualise the data on your laptop.
+Software requirements
+**********************
+
+- Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the arduino sketches in Maker UNO and visualise the data on your laptop.
     
-    .. figure:: media/arduino-ide.*
+.. image:: media/arduino-ide.*
+
+- Download Backyard Brains' Spike Recorder according to the operating system you are using (Windows, OSX, Linux) from this `link <https://backyardbrains.com/products/spikerecorder>`_.
+
+.. image:: media/byb.*
 
 Using the kit
 **************
 
-This kit is made in a way so that even beginners can use it and get strated with recording biootential signals from their body to explore the field of neuroscience by making HCI/BCI projects.
+This kit is made in a way so that even beginners can use it and get started with recording biopotential signals from their body to explore the field of neuroscience by making HCI/BCI projects.
 
 Step 1 (optional): Configure for EMG/ECG
 =========================================
@@ -44,15 +56,7 @@ by making a solder joint as shown in the image above.
 
 .. note:: Even without making the solder joint the BioAmp EXG Pill is capable of recording ECG or EMG as well but the signals would be more accurate if you configure it.
 
-Step 2 (optional): Configure to operate at 3.3V
-================================================
-
-.. image:: media/configuration-3v.*
-    :align: center
-
-BioAmp EXG Pill is by default compatible with 5V but you can make it compatible with 3.3V as well using a voltage divider as shown above.
-
-Step 3: Connect Maker UNO
+Step 2: Connect Maker UNO
 ==========================
 
 .. image:: media/connection-with-maker-uno.*
@@ -61,21 +65,21 @@ Connect VCC to 5V, GND to GND, and OUT to Analog pin A0 of your Maker UNO via ju
 
 .. warning:: Take precautions while connecting to power, if power pins (GND & VCC) are to be swapped, your BioAmp EXG Pill will be fried and it’ll become unusable (DIE).
 
-Step 4: Connecting electrode cable
+Step 3: Connecting electrode cable
 ===============================================
 
 .. image:: media/bioamp-cable.*
 
 Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JST PH connector as shown above.
 
-Step 5: Skin Preparation
+Step 4: Skin Preparation
 ===============================================
 
 
-Step 6: Measuring EMG (ElectroMyoGraphy)
+Step 5: Measuring EMG (ElectroMyoGraphy)
 ===============================================
 
-We have 2 options to measure the EMG signals, either using the gel electrodes or using dry electrode based Muscle BioAmp band. You can try both of them one by one.
+We have 2 options to measure the EMG signals, either using the gel electrodes or using dry electrode based Muscle BioAmp Band. You can try both of them one by one.
 
 - **Using gel electrodes:**
 
@@ -122,18 +126,18 @@ Now flex your arm to visualize the muscle signals in real time on your laptop.
 
 .. image:: media/EMGEnvelop.*
 
-Step 7: Measuring ECG (ElectroCardioGraphy)
+Step 6: Measuring ECG (ElectroCardioGraphy)
 ===============================================
 
-We have 2 options to measure the ECG signals, either using the gel electrodes or using dry electrode based Heart BioAmp band. You can try both of them one by one.
+We have 2 options to measure the ECG signals, either using the gel electrodes or using dry electrode based Heart BioAmp Band. You can try both of them one by one.
 
 - **Using gel electrodes:**
 
 1. Connect the BioAmp cable to gel electrodes
 2. Peel the plastic backing from electrodes
-3. Place the IN- cable on the left side, IN+ in the middle and REF (reference) on the far right side as shown above.
+3. Place the IN- cable on the left side, IN+ in the middle and REF (reference) on the far right side as shown in the diagram.
 
-.. image:: media/ecg-lead1.*
+.. image:: media/ecg.*
 
 - **Using Heart BioAmp Band:**
 
@@ -167,10 +171,10 @@ After opening the serial plotter make sure to select the baud rate to 115200.
 
 .. image:: media/bioamp-Exg-Pill-ECG.*
 
-Step 8: Measuring EOG (ElectroOculoGraphy)
+Step 7: Measuring EOG (ElectroOculoGraphy)
 ===============================================
 
-We have 2 ways to measure the EOG signals, either record the horizontal eye movement or the vertical eye movement.
+We have 2 ways to measure the EOG signals, either record the horizontal eye movement or the vertical eye movement. You can one by one record both the signals.
 
 - **Horizontal EOG recording:**
 
@@ -208,15 +212,16 @@ After opening the serial plotter make sure to select the baud rate to 115200.
 
 .. image:: media/bioamp-exg-pill-eog.*
 
-Step 9: Measuring EEG (ElectroEncephaloGraphy)
+Step 8: Measuring EEG (ElectroEncephaloGraphy)
 ===============================================
 
 Let's understand the electrode placements before moving forward in this project. For recording EEG from 
 different parts of the brain, you have to place the electrodes according to the `International 10-20 system for recording EEG <https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)>`_.
 
 .. image:: media/10-20-system.*
+    :width: 80%
 
-We have 2 options to measure the EEG signals, either using the gel electrodes or using dry electrode based Brain BioAmp band. You can try both of them one by one.
+We have 2 options to measure the EEG signals, either using the gel electrodes or using dry electrode based Brain BioAmp Band. You can try both of them one by one.
 
 - **Using gel electrodes to record from prefrontal cortex part of brain:**
 
@@ -255,15 +260,13 @@ right COM port. Now upload the code.
 
 **Visualizing the EEG signals**
 
-Download Backyard Brains' Spike Recorder according to the operating system you are using (Windows, OSX, Linux) from this `link <https://backyardbrains.com/products/spikerecorder>`_.
-
-When the Spike Recorder starts, it will start recording from your microphone. To change that, go to the settings by clicking 
+Open the Spike Recorder software. When the Spike Recorder starts, it will start recording from your microphone. To change that, go to the settings by clicking 
 the first icon on the top left corner of the screen, select the COM port on which the Maker UNO is connected and click on connect. 
 
 .. figure:: media/spike-recorder-configurations.*
 
 Mute the speakers and apply the 50Hz notch filter by clicking on the checkbox as shown in the screenshot above. You should 
-set the low band pass filter to 1Hz and high bandpass filter to 40Hz as we are only recording the EEG singnals which range between 
+set the low band pass filter to 1Hz and high bandpass filter to 40Hz as we are only recording the EEG signals which range between 
 these frequencies.
 
 Now everything is configured and connected. So close the settings window and start recording EEG signals.
@@ -276,10 +279,63 @@ To record these EEG signals, you have placed the electrodes on the forehead (Fp1
 
 We hope everything is clear now and you understand how the signals are propagating from your brain to the screen of the laptop.
 
-Features of Spike Recorder that you can explore:
+**Features of Spike Recorder that you can explore:**
 
 - Increase or decrease the scale of the Y axis by clicking on the + and - icons respecitively that is present on the left side of the graph.
 - Increase or decrease the X axis timescale by sliding up and down on the scroll wheel of the mouse.
 - Visualize the FFT graph by clicking on the FFT icon on top left size of the screen.
 - Record the data in .wav format by clicking the record icon on the top right corner. You can convert this data in any other format according to your project requirements.
 - Listen to the signals by clicking the volume icon on the top right corner. No don't smile right now, that's how your brain sounds like :P
+
+Some Project Ideas
+*********************
+
+.. only:: html
+
+    .. article-info::
+      :avatar: media/instructables.svg
+      :avatar-link: https://www.instructables.com/member/Upside+Down+Labs/
+      :avatar-outline: muted
+      :author: Upside Down Labs on Instructables:
+      :class-container: sd-p-2 sd-rounded-1
+
+    .. grid:: 2 2 2 2
+        :margin: 4 4 0 0 
+        :gutter: 2
+
+        .. grid-item-card:: Recording EEG from visual cortex
+            :text-align: center
+            :link: https://www.instructables.com/Recording-EEG-From-Visual-Cortex-of-Brain-Using-Bi/
+
+        .. grid-item-card:: Measuring heart rate
+            :text-align: center
+            :link: https://www.instructables.com/Measuring-Heart-Rate-Using-BioAmp-EXG-Pill/
+
+        .. grid-item-card:: Detecting heart beats
+            :text-align: center
+            :link: https://www.instructables.com/Detecting-Heart-Beats-Using-BioAmp-EXG-Pill/
+
+        .. grid-item-card:: Creating a drowsiness detector
+            :text-align: center
+            :link: https://www.instructables.com/Drowsiness-Detector-by-Detecting-EOG-Signals-Using/
+
+        .. grid-item-card:: Detecting eye blinks
+            :text-align: center
+            :link: https://www.instructables.com/Eye-Blink-Detection-by-Recording-EOG-Using-BioAmp-/
+
+    These are some of the project ideas but the possibilities are endless. So create your own Human Computer Interface (HCI) and 
+    Brain Computer Interface (BCI) projects and share them with us at contact@upsidedownlabs.tech.
+
+
+.. only:: latex
+
+    Here are some project ideas that you can try making at your home. Click on the links below to get the step by step guides to build the projects.
+
+    1. `Recording EEG from visual cortex <https://www.instructables.com/Recording-EEG-From-Visual-Cortex-of-Brain-Using-Bi/>`_
+    2. `Measuring heart rate <https://www.instructables.com/Measuring-Heart-Rate-Using-BioAmp-EXG-Pill/>`_
+    3. `Detecting heart beats <https://www.instructables.com/Detecting-Heart-Beats-Using-BioAmp-EXG-Pill/>`_
+    4. `Creating a drowsiness detector <https://www.instructables.com/Drowsiness-Detector-by-Detecting-EOG-Signals-Using/>`_
+    5. `Detecting eye blinks <https://www.instructables.com/Eye-Blink-Detection-by-Recording-EOG-Using-BioAmp-/>`_
+
+    These are some of the project ideas but the possibilities are endless. So create your own Human Computer Interface (HCI) and 
+    Brain Computer Interface (BCI) projects and share them with us at contact@upsidedownlabs.tech
