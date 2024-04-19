@@ -231,7 +231,7 @@ We have 2 options to measure the EMG signals, either using the gel electrodes or
 
 .. note:: These BioAmp Cable connections to gel electrodes/band are specifically for this version of BioAmp v1.5 only. The connections for other BioAmp hardware can be different.
 
-.. note:: In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.
+.. tip:: In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.
 
 Step 4: Connecting 9V battery
 ===============================
