@@ -6,7 +6,7 @@ Skin Preparation Guide
 Why skin preparation is important?
 ***********************************
 
-Proper skin preparation is crucial before recording any biopotential signal be it electrocardiography (ECG), electromyography (EMG), electroencephalography (EEG), or electrooculography (EOG).
+Proper skin preparation is crucial before recording any biopotential signal be it Electrocardiography (ECG), Electromyography (EMG), Electroencephalography (EEG), or Electrooculography (EOG).
 
 - ``Reduction of artifacts`` Removes dead skin cells, oils, & other substances that may introduce noise or artifacts into the recorded signals.
 - ``Electrode-skin contact`` Ensures optimal contact between the electrodes and the skin surface. Improves the conduction of electrical signals from the body to the recording equipment and minimizes impedance.
