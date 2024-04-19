@@ -153,7 +153,7 @@ EMG Filter: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blo
 
 EMG Envelope: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino
 
-Go to **"tools"** from the menu bar, select **"board"** option then select Arduino UNO. In the same menu, 
+Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
 select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
 disconnect your board and reopen the menu. The entry that disappears should be the 
 right COM port. Now upload the code, & open the serial plotter from the tools menu to visualize 
