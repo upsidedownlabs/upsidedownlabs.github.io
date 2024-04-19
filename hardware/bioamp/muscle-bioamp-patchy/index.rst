@@ -77,7 +77,7 @@ Images below shows a quick overview of the hardware design.
 Contents of the kit
 ********************
 
-.. image:: media/kit-contents.*
+.. todo:: Add image here
 
 Software requirements
 **********************
@@ -94,14 +94,14 @@ likhdenge
 Step 1: Connect reference cable
 =================================
 
-.. image:: 
+.. todo:: Add image here
 
 Connect the reference cable to the Muscle BioAmp Patchy as shown in the diagram.
 
 Step 2: Connecting Muscle BioAmp Patchy to Gel Electrodes
 ============================================================
 
-.. image::
+.. todo:: Add image here
 
 Connect the Muscle BioAmp Patchy to gel electrodes (Don't peel the plastic backing from the electrodes at this moment).
 
@@ -115,7 +115,7 @@ For more information, please check out detailed step by step :ref:`skin-preparat
 Step 4: Electrode Placements
 ==============================
 
-.. image::
+.. todo:: Add image here
 
 Now peel off the plastic backing from the gel electrodes and place the Muscle BioAmp Patchy on the targeted muscle and the reference on the bony part of your elbow as shown in the diagram.
 
@@ -124,7 +124,7 @@ Now peel off the plastic backing from the gel electrodes and place the Muscle Bi
 Step 5: Connect Arduino UNO R3
 =================================
 
-.. image:: 
+.. todo:: Add image here
 
 Connect VCC to 5V, GND to GND, and OUT to Analog pin A0 of your Arduino UNO via jumper cables provided by us. If you are connecting OUT to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.
 
@@ -133,7 +133,7 @@ Connect VCC to 5V, GND to GND, and OUT to Analog pin A0 of your Arduino UNO via 
 Step 6: Upload the code
 ===============================================
 
-.. image::
+.. todo:: Add image here
 
 Connect your Arduino UNO to your laptop using the USB cable (Type A to Type B). Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:
     
@@ -156,7 +156,7 @@ Step 7: Visualizing the EMG signals
 
 Now flex your arm to visualize the muscle signals in real time on your laptop.
 
-.. image:: 
+.. todo:: Add image here
 
 **Video tutorial:**
 
