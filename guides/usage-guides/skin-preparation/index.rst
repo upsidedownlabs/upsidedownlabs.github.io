@@ -8,10 +8,11 @@ Why skin preparation is important?
 
 Proper skin preparation is crucial before recording any biopotential signal be it Electrocardiography (ECG), Electromyography (EMG), Electroencephalography (EEG), or Electrooculography (EOG).
 
-- ``Reduction of artifacts`` Removes dead skin cells, oils, & other substances that may introduce noise or artifacts into the recorded signals.
-- ``Electrode-skin contact`` Ensures optimal contact between the electrodes and the skin surface. Improves the conduction of electrical signals from the body to the recording equipment and minimizes impedance.
+- ``Clear recording surface`` Removes dead skin cells, oils, & other substances that increases skin impedance.
+- ``Improve impedance`` Improves the conduction of electrical signals from the body to the recording equipment and minimizes impedance.
+- ``Electrode-skin contact`` Ensures optimal contact between the electrodes and the skin surface.
 - ``Signal quality`` Enhances the overall quality of recorded signals, providing clear & reliable data for analysis & improves the ability to capture subtle variations in biopotential signals.
-- ``Consistency in recordings`` Reduces variability in signal quality, making it easier to make any Human-Computer Interface(HCI), Brain-Computer Interface(BCI) project or a real-world application.
+- ``Consistency in recordings`` Reduces variability in signal quality, making it easier to make any Human-Computer Interface (HCI), Brain-Computer Interface (BCI) project or a real-world application.
 - ``Long term adhesion`` Facilitates long-term adhesion & stable placement of electrodes to the skin during extended signal monitoring.
 
 Requirements
