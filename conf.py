@@ -33,9 +33,11 @@ for walk_dirpath in walk_dirpaths:
 extensions = [
     "sphinx_design",
     "sphinxcontrib.youtube",
-    "sphinx_copybutton"
+    "sphinx_copybutton",
+    "sphinx.ext.todo",
 ]
 
+todo_include_todos = False
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'env', ".venv"]
 
@@ -87,7 +89,7 @@ html_theme_options = {
             "name": "GeM India",
         }
     ],
-    "header_links_before_dropdown": 4,
+    "header_links_before_dropdown": 5,
     "show_prev_next": True,
     "icon_links": [
         {
