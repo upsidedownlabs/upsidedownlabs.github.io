@@ -283,7 +283,7 @@ Using Backyard Brains' Spike Recorder
 --------------------------------------
 
 1. Download the `Spike Recorder App <https://play.google.com/store/apps/details?id=com.backyardbrains&pli=1>`_ from playstore.
-2. Open the app, click the setting icon on the top right corner and set the low band pass filter to 72Hz and high band pass filter to 720Hz.
+2. Open the app, click the setting icon on the top right corner and set the recording type to EMG.
 3. Apply the 50Hz or 60Hz notch filter depending on the country you are living in. For example if you are in India then the AC current oscillates at a frequency of 50Hz but it oscillates at 60Hz frequency in USA. This AC current acts as a noise in the signals so we have to remove it by applying this notch filter.
 4. Again click on the setting icon to close it and you are ready.
 5. Flex your muscles to be able to visualize the muscle signals (EMG).
