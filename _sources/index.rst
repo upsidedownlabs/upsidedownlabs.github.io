@@ -26,7 +26,11 @@ or Brain-Computer Interface (BCI) projects with ease.
 Overview of BioAmp Hardware
 ******************************
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Discover our open-source bioamp hardware, designed to help you easily record biopotential signals 
+from the body making it accessible to explore the field of neuroscience & electrophysiology. 
+We offer easy to follow guides that walk you through the setup process step by step, making it 
+simple for beginners to get started. You can also find software examples on our github profile 
+that you can use with our hardware.
 
 .. grid:: 1 1 4 4
     :margin: 4 4 0 0 
@@ -133,3 +137,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
    :caption: Kits
 
    kits/index
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Guides
+
+   guides/index

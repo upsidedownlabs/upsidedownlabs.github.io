@@ -39,7 +39,7 @@
   <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
@@ -53,7 +53,7 @@
     <link rel="prev" title="Muscle BioAmp Shield" href="../muscle-bioamp-shield/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Apr 15, 2024"/>
+    <meta name="docbuild:last-update" content="Apr 19, 2024"/>
   </head>
   
   
@@ -174,6 +174,13 @@
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../../../kits/index.html">
                         Kits
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../guides/index.html">
+                        Guides
                       </a>
                     </li>
                 
@@ -408,6 +415,13 @@ document.write(`
                       </a>
                     </li>
                 
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../guides/index.html">
+                        Guides
+                      </a>
+                    </li>
+                
             <li class="nav-item dropdown">
                 <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
                     More
@@ -628,7 +642,6 @@ document.write(`
                   
   <section id="muscle-bioamp-patchy">
 <span id="id1"></span><h1>Muscle BioAmp Patchy<a class="headerlink" href="#muscle-bioamp-patchy" title="Link to this heading">#</a></h1>
-<p>Wearable ElectroMyoGraphy (EMG) sensor</p>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
 <p>Muscle BioAmp Patchy is a wearable ElectroMyoGraphy or EMG sensor that snaps directly to gel electrodes and connects to your
@@ -643,8 +656,8 @@ based Human-Computer Interface (HCI).</p>
 <h2>Features &amp; Specifications<a class="headerlink" href="#features-specifications" title="Link to this heading">#</a></h2>
 <table class="table">
 <tbody>
-<tr class="row-odd"><td><p>Minimum Input Voltage</p></td>
-<td><p>4.5 V</p></td>
+<tr class="row-odd"><td><p>Operating Voltage</p></td>
+<td><p>5 V</p></td>
 </tr>
 <tr class="row-even"><td><p>Input Impedance</p></td>
 <td><p>10^12 ohm</p></td>
@@ -659,7 +672,7 @@ based Human-Computer Interface (HCI).</p>
 <td><p>Yes</p></td>
 </tr>
 <tr class="row-even"><td><p>Compatible Hardware</p></td>
-<td><p>Any development board with an ADC (Arduino UNO &amp; Nano, Espressif ESP32, Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name just a few)</p></td>
+<td><p>Any development board with an ADC (Arduino UNO &amp; Nano, Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name just a few) or a standalone ADC of your choice</p></td>
 </tr>
 <tr class="row-odd"><td><p>BioPotentials</p></td>
 <td><p>EMG (Electromyography)</p></td>
@@ -671,7 +684,7 @@ based Human-Computer Interface (HCI).</p>
 <td><p>3 (Positive, Negative, and Reference)</p></td>
 </tr>
 <tr class="row-even"><td><p>Dimensions</p></td>
-<td><p>47 x 14 mm</p></td>
+<td><p>4.7 x 1.4 cm</p></td>
 </tr>
 <tr class="row-odd"><td><p>Open Source</p></td>
 <td><p>Hardware + Software</p></td>
@@ -719,40 +732,66 @@ based Human-Computer Interface (HCI).</p>
 <img alt="../../../_images/Muscle-BioAmp-Patchy-Assembled-Back.png" src="../../../_images/Muscle-BioAmp-Patchy-Assembled-Back.png" />
 </figure>
 </section>
-<section id="connecting-with-arduino">
-<h2>Connecting with Arduino<a class="headerlink" href="#connecting-with-arduino" title="Link to this heading">#</a></h2>
-<p>To get started, you can pair Muscle BioAmp Patchy with any development board with an ADC (Arduino UNO &amp; Nano, Espressif ESP32,
-Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name just a few) or any standalone ADC of your choice.</p>
-<p>For the connections and electrode placements, you can follow the diagram given below:</p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../_images/Patchy-Arduino-Connections.jpg"><img alt="../../../_images/Patchy-Arduino-Connections.jpg" src="../../../_images/Patchy-Arduino-Connections.jpg" style="width: 100%;" /></a>
-</figure>
+<section id="contents-of-the-kit">
+<h2>Contents of the kit<a class="headerlink" href="#contents-of-the-kit" title="Link to this heading">#</a></h2>
 </section>
-<section id="demonstration">
-<h2>Demonstration<a class="headerlink" href="#demonstration" title="Link to this heading">#</a></h2>
-<p>After snapping the Patchy onto gel electrodes(placed on our targeted muscle), you can connect your patchy to the arduino via
-jumper cables, arduino to your battery operated laptop, and start recording your EMG easily. Follow the steps shown in the video
-below for the demonstration.</p>
+<section id="software-requirements">
+<h2>Software requirements<a class="headerlink" href="#software-requirements" title="Link to this heading">#</a></h2>
+<p>Before you start using the kit, please download <a class="reference external" href="https://www.arduino.cc/en/software">Arduino IDE v1.8.19 (legacy IDE)</a>. Using this you’ll be able to upload the arduino sketches on your development board and visualise the data on your laptop.</p>
+<img alt="../../../_images/arduino-ide.png" src="../../../_images/arduino-ide.png" />
+</section>
+<section id="using-the-kit">
+<h2>Using the kit<a class="headerlink" href="#using-the-kit" title="Link to this heading">#</a></h2>
+<p>likhdenge</p>
+<section id="step-1-connect-reference-cable">
+<h3>Step 1: Connect reference cable<a class="headerlink" href="#step-1-connect-reference-cable" title="Link to this heading">#</a></h3>
+<p>Connect the reference cable to the Muscle BioAmp Patchy as shown in the diagram.</p>
+</section>
+<section id="step-2-connecting-muscle-bioamp-patchy-to-gel-electrodes">
+<h3>Step 2: Connecting Muscle BioAmp Patchy to Gel Electrodes<a class="headerlink" href="#step-2-connecting-muscle-bioamp-patchy-to-gel-electrodes" title="Link to this heading">#</a></h3>
+<p>Connect the Muscle BioAmp Patchy to gel electrodes (Don’t peel the plastic backing from the electrodes at this moment).</p>
+</section>
+<section id="step-3-skin-preparation">
+<h3>Step 3: Skin Preparation<a class="headerlink" href="#step-3-skin-preparation" title="Link to this heading">#</a></h3>
+<p>Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with a wet wipe.</p>
+<p>For more information, please check out detailed step by step <a class="reference internal" href="../../../guides/usage-guides/skin-preparation/index.html#skin-preparation"><span class="std std-ref">Skin Preparation Guide</span></a>.</p>
+</section>
+<section id="step-4-electrode-placements">
+<h3>Step 4: Electrode Placements<a class="headerlink" href="#step-4-electrode-placements" title="Link to this heading">#</a></h3>
+<p>Now peel off the plastic backing from the gel electrodes and place the Muscle BioAmp Patchy on the targeted muscle and the reference on the bony part of your elbow as shown in the diagram.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.</p>
+</div>
+</section>
+<section id="step-5-connect-arduino-uno-r3">
+<h3>Step 5: Connect Arduino UNO R3<a class="headerlink" href="#step-5-connect-arduino-uno-r3" title="Link to this heading">#</a></h3>
+<p>Connect VCC to 5V, GND to GND, and OUT to Analog pin A0 of your Arduino UNO via jumper cables provided by us. If you are connecting OUT to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.</p>
+<p><strong>Note:</strong> For demonstration purposes we are showing connections of the sensor with Arduino UNO R3 but you can use any other development board or a standalone ADC of your choice.</p>
+</section>
+<section id="step-6-upload-the-code">
+<h3>Step 6: Upload the code<a class="headerlink" href="#step-6-upload-the-code" title="Link to this heading">#</a></h3>
+<p>Connect your Arduino UNO to your laptop using the USB cable (Type A to Type B). Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
+<p>EMG Filter: <a class="github reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino">upsidedownlabs/Muscle-BioAmp-Arduino-Firmware</a></p>
+<p>EMG Envelope: <a class="github reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino">upsidedownlabs/Muscle-BioAmp-Arduino-Firmware</a></p>
+<p>Go to <strong>“tools”</strong> from the menu bar, select <strong>“board”</strong> option then select Arduino UNO. In the same menu,
+select the COM port on which your Arduino Uno is connected. To find out the right COM port,
+disconnect your board and reopen the menu. The entry that disappears should be the
+right COM port. Now upload the code, &amp; open the serial plotter from the tools menu to visualize
+the EMG signals.</p>
+<p>After opening the serial plotter make sure to select the baud rate to 115200.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.</p>
+</div>
+</section>
+<section id="step-7-visualizing-the-emg-signals">
+<h3>Step 7: Visualizing the EMG signals<a class="headerlink" href="#step-7-visualizing-the-emg-signals" title="Link to this heading">#</a></h3>
+<p>Now flex your arm to visualize the muscle signals in real time on your laptop.</p>
+<p><strong>Video tutorial:</strong></p>
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/4dnCX3U7LS8" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
 </iframe></div></section>
-<section id="some-project-ideas">
-<h2>Some project ideas<a class="headerlink" href="#some-project-ideas" title="Link to this heading">#</a></h2>
-<div class="sd-container-fluid sd-sphinx-override sd-mt-2 sd-mb-2 sd-ml-0 sd-mr-0 docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
-<div class="sd-col sd-d-flex-column docutils">
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text">Recording and Visualizing Muscle Signals (EMG) Using Muscle BioAmp Patchy (wearable Muscle Sensor)</p>
-</div>
-<div class="sd-card-body docutils">
-<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
-<iframe allowfullscreen="true" src="https://www.youtube.com/embed/4dnCX3U7LS8" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
-</iframe></div></div>
-</div>
-</div>
-</div>
-</div>
 </section>
 </section>
 
@@ -805,9 +844,18 @@ below for the demonstration.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features-specifications">Features &amp; Specifications</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hardware">Hardware</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-with-arduino">Connecting with Arduino</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demonstration">Demonstration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-project-ideas">Some project ideas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents-of-the-kit">Contents of the kit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-requirements">Software requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-kit">Using the kit</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-connect-reference-cable">Step 1: Connect reference cable</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-connecting-muscle-bioamp-patchy-to-gel-electrodes">Step 2: Connecting Muscle BioAmp Patchy to Gel Electrodes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-skin-preparation">Step 3: Skin Preparation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-electrode-placements">Step 4: Electrode Placements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-connect-arduino-uno-r3">Step 5: Connect Arduino UNO R3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-upload-the-code">Step 6: Upload the code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-visualizing-the-emg-signals">Step 7: Visualizing the EMG signals</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
@@ -899,7 +947,7 @@ below for the demonstration.</p>
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Apr 15, 2024.
+  Last updated on Apr 19, 2024.
   <br/>
 </p></div>
       
