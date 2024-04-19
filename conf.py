@@ -33,9 +33,11 @@ for walk_dirpath in walk_dirpaths:
 extensions = [
     "sphinx_design",
     "sphinxcontrib.youtube",
-    "sphinx_copybutton"
+    "sphinx_copybutton",
+    "sphinx.ext.todo",
 ]
 
+todo_include_todos = False
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'env', ".venv"]
 
