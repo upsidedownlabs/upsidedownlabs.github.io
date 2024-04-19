@@ -115,7 +115,7 @@ Connect the BioAmp cable to Muscle BioAmp Candy by inserting the cable end in th
 Step 4: Skin Preparation
 ===============================================
 
-Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with a wet wipe.
+Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with an alcohol wipe or a wet wipe.
 
 For more information, please check out detailed step by step :ref:`skin-preparation`
 
