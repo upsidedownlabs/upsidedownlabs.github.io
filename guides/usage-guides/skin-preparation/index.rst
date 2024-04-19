@@ -71,11 +71,13 @@ Step 5
 
 Now you can either use gel electrodes or the BioAmp bands for the signal recording.
 
-- **Using gel electrodes:**
+Using gel electrodes
+----------------------
 
   Connect the BioAmp cable to gel electrodes, peel the plastic backing from electrodes and place the IN+, IN-, REF cables according to your specific biopotential recording.
 
-- **Using BioAmp bands:**
+Using BioAmp bands
+----------------------
 
   Connect the BioAmp cable to your BioAmp band. Now apply a small amount of electrode gel or Ten20 conductive paste on the dry electrodes between the skin and metallic part of BioAmp cable. This improves the signal conductivity, enhancing overall signal quality.
 

@@ -206,6 +206,7 @@ Connect the BioAmp cable, 9V snap cable and BioAmp AUX cable to BioAmp v1.5 by i
 
 Step 2: Skin Preparation
 ==========================
+
 Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with a wet wipe.
 
 For more information, please check out detailed step by step :ref:`skin-preparation`.
