@@ -99,9 +99,9 @@ Step 1: Connect Arduino UNO R3
 
 .. image:: media/arduino-candy-connection.*
 
-Connect VCC to either 5V or 3.3V, GND to GND, and OUT to Analog pin A0 of your Arduino UNO via jumper cables provided by us. If you are connecting OUT to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.
+Connect `VCC` to either `5V` or `3.3V`, `GND` to `GND`, and `OUT` to `Analog pin A0` of your Arduino UNO via jumper cables provided by us. If you are connecting OUT to any other analog pin, then you will have to change the `INPUT PIN` macro in the example arduino sketch accordingly.
 
-**Note:** For demonstration purposes we are showing connections of the sensor with Arduino UNO R3 but you can use any other development board or a standalone ADC of your choice.
+.. note:: For demonstration purposes we are showing connections of the sensor with Arduino UNO R3 but you can use any other development board or a standalone ADC of your choice.
 
 .. warning:: Take precautions while connecting to power, if power pins (GND & VCC) are to be swapped, your sensor will be fried and it’ll become unusable (DIE).
 
@@ -115,7 +115,7 @@ Connect the BioAmp cable to Muscle BioAmp Candy by inserting the cable end in th
 Step 4: Skin Preparation
 ===============================================
 
-Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with a wet wipe.
+Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with an alcohol wipe or a wet wipe.
 
 For more information, please check out detailed step by step :ref:`skin-preparation`
 
@@ -147,7 +147,7 @@ We have 2 options to measure the EMG signals, either using the gel electrodes or
 
 **Uploading the code:**
 
-Connect your Arduino UNO to your laptop using the USB cable (Type A to Type B). Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:
+Connect your Arduino UNO R3 to your laptop using the USB cable (Type A to Type B). Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:
     
 EMG Filter: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino
 
