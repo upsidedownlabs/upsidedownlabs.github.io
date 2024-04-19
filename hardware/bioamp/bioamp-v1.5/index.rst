@@ -200,14 +200,14 @@ The image above shows the possibilities of using BioAmp v1.5. Seems complicated?
 Step 1: Connecting the cables
 ==================================
 
-.. image:: media/board-with-cables.*
-
 Connect the BioAmp cable, 9V snap cable and BioAmp AUX cable to BioAmp v1.5 by inserting the cable ends in the respective JST PH connectors as shown above.
+
+.. image:: media/board-with-cables.*
 
 Step 2: Skin Preparation
 ==========================
 
-Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with a wet wipe.
+Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with an alcohol wipe or a wet wipe.
 
 For more information, please check out detailed step by step :ref:`skin-preparation`.
 
@@ -216,7 +216,8 @@ Step 3: Electrode placements
 
 We have 2 options to measure the EMG signals, either using the gel electrodes or using dry electrode based Muscle BioAmp Band. You can try both of them one by one.
 
-- **Using gel electrodes:**
+Using gel Electrodes
+-----------------------
 
 1. Connect the BioAmp cable to gel electrodes.
 2. Peel the plastic backing from the electrodes.
@@ -224,7 +225,8 @@ We have 2 options to measure the EMG signals, either using the gel electrodes or
 
 .. image:: media/bioamp-v1-5-emg.*
 
-- **Using Muscle BioAmp Band:**
+Using Muscle BioAmp Band
+----------------------------
 
 1. Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve & REF (reference) on the far side of the band.
 2. Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.
@@ -285,6 +287,11 @@ Using Backyard Brains' Spike Recorder
 1. Download the `Spike Recorder App <https://play.google.com/store/apps/details?id=com.backyardbrains&pli=1>`_ from playstore.
 2. Open the app, click the setting icon on the top right corner and set the recording type to EMG.
 3. Apply the 50Hz or 60Hz notch filter depending on the country you are living in. For example if you are in India then the AC current oscillates at a frequency of 50Hz but it oscillates at 60Hz frequency in USA. This AC current acts as a noise in the signals so we have to remove it by applying this notch filter.
+
+.. image:: media/spike-recorder-mobile.*
+    :width: 80%
+    :align: center
+
 4. Again click on the setting icon to close it and you are ready.
 5. Flex your muscles to be able to visualize the muscle signals (EMG).
 6. You can record the EMG data as a .wav file by pressing the record button on the top right corner of the app and then convert it in any other format as per your project requirements.
@@ -304,6 +311,9 @@ Using Backyard Brains' Spike Recorder
 1. Install the spike recorder software that you downloaded earlier.
 2. Open the software, click the setting icon on the top right corner and set the low band pass filter to 72Hz and high band pass filter to 720Hz.
 3. Apply the 50Hz or 60Hz notch filter depending on the country you are living in. For example if you are in India then the AC current oscillates at a frequency of 50Hz but it oscillates at 60Hz frequency in USA. This AC current acts as a noise in the signals so we have to remove it by applying this notch filter.
+
+.. image:: media/spike-recorder-laptop.*
+
 4. Again click on the setting icon to close it and you are ready.
 5. Flex your muscles to be able to visualize the muscle signals (EMG)
 6. You can record the EMG data as a .wav file by pressing the record button on the top right corner of the app and then convert it in any other format as per your project requirements.
