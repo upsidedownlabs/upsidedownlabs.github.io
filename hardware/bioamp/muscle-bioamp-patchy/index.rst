@@ -77,7 +77,7 @@ Images below shows a quick overview of the hardware design.
 Contents of the kit
 ********************
 
-.. todo:: Add image here
+.. image:: media/kit-contents.*
 
 Software requirements
 **********************
@@ -88,8 +88,6 @@ Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE
 
 Using the kit
 ****************
-
-likhdenge
 
 Step 1: Connect reference cable
 =================================
@@ -103,7 +101,7 @@ Step 2: Connecting Muscle BioAmp Patchy to Gel Electrodes
 
 .. todo:: Add image here
 
-Connect the Muscle BioAmp Patchy to gel electrodes (Don't peel the plastic backing from the electrodes at this moment).
+Snap the Muscle BioAmp Patchy on the gel electrodes (Don't peel the plastic backing from the electrodes at this moment).
 
 Step 3: Skin Preparation
 =============================

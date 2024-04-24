@@ -99,32 +99,33 @@ Step 1: Connect Arduino UNO R3
 
 .. image:: media/arduino-candy-connection.*
 
-Connect `VCC` to either `5V` or `3.3V`, `GND` to `GND`, and `OUT` to `Analog pin A0` of your Arduino UNO via jumper cables provided by us. If you are connecting OUT to any other analog pin, then you will have to change the `INPUT PIN` macro in the example arduino sketch accordingly.
+Connect `VCC` to either `5V` or `3.3V`, `GND` to `GND`, and `OUT` to `Analog pin A0` of your Arduino UNO via jumper cables provided by us. If you are connecting OUT to any other analog pin, then you will have to change the `INPUT PIN` in the example arduino sketch accordingly.
 
 .. note:: For demonstration purposes we are showing connections of the sensor with Arduino UNO R3 but you can use any other development board or a standalone ADC of your choice.
 
 .. warning:: Take precautions while connecting to power, if power pins (GND & VCC) are to be swapped, your sensor will be fried and it’ll become unusable (DIE).
 
-Step 3: Connecting electrode cable
+Step 2: Connecting electrode cable
 ========================================
 
 .. image:: media/candy-cable-connection.*
 
 Connect the BioAmp cable to Muscle BioAmp Candy by inserting the cable end in the JST PH connector as shown above.
 
-Step 4: Skin Preparation
+Step 3: Skin Preparation
 ===============================================
 
 Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with an alcohol wipe or a wet wipe.
 
 For more information, please check out detailed step by step :ref:`skin-preparation`
 
-Step 5: Measuring EMG (ElectroMyoGraphy)
+Step 4: Measuring EMG (ElectroMyoGraphy)
 ===============================================
 
 We have 2 options to measure the EMG signals, either using the gel electrodes or using dry electrode based Muscle BioAmp Band. You can try both of them one by one.
 
-- **Using gel electrodes:**
+Using gel electrodes
+-----------------------
 
 1. Connect the BioAmp cable to gel electrodes,
 2. Peel the plastic backing from electrodes
@@ -132,7 +133,8 @@ We have 2 options to measure the EMG signals, either using the gel electrodes or
 
 .. image:: media/candy-emg.*
 
-- **Using Muscle BioAmp Band:**
+Using Muscle BioAmp Band
+--------------------------
 
 1. Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve & REF (reference) on the far side of the band.
 2. Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.
