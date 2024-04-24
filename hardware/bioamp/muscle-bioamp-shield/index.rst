@@ -3,20 +3,15 @@
 Muscle BioAmp Shield
 ######################
 
-All-in-one Arduino Uno Shield for EMG (Electromyography).
-
 Overview
 **********
 
-Muscle BioAmp Shield is an all-in-one Arduino Uno ElectroMyography (EMG) shield for learning neuroscience with ease. It is a 
-DIY Electrophysiology/NeuroScience shield inspired from Back Yard Brains (BYB) Muscle Spiker shield and provides similar features 
-like hobby servo output, user buttons, LED Bar, Audio output, and battery input. It is perfect for beginners as they can easily 
-stack it on top of Arduino Uno to record, visualize and listen to their muscle signals to make amazing projects in the domain of 
-Human-Computer Interface (HCI).
+Muscle BioAmp Shield is an all-in-one Arduino Uno ElectroMyography (EMG) shield for learning neuroscience with ease which is inspired from 
+BackYard Brains (BYB) `Muscle Spiker shield <https://backyardbrains.com/products/muscleSpikerShield>`_ and provides similar features like hobby servo output, user buttons, LED Bar, Audio output, and 
+battery input. It is perfect for beginners as they can easily stack it on top of Arduino Uno to record, visualize and listen to their muscle 
+signals to make amazing projects in the domain of Human-Computer Interface (HCI).
 
-.. youtube:: w8yw12SUe6Q
-  :width: 100%
-  :align: center
+.. image:: media/muscle-bioamp-shield.*
 
 Features & Specifications
 ****************************
@@ -76,20 +71,44 @@ Images below shows a quick overview of the hardware design.
             ^^^^^
             .. figure:: media/Muscle-BioAmp-Shield-Back.*
 
-.. figure:: media/Muscle-BioAmp-Shield-With-Wires.*
+.. figure:: media/Assembly/24_Assembled.*
     :align: center
+    :width: 80%
+
+    Assembled PCB
+
 .. figure:: media/dimensions.*
     :align: center
+
+    PCB Layout
+
 .. figure:: media/Schematic.*
     :align: center
+
+    Schematic Diagram
+
+Contents of the kit
+********************
+
+.. todo:: contents photo
+
+.. youtube:: w8yw12SUe6Q
+  :width: 100%
+  :align: center
+
+Software requirements
+**********************
+
+Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the arduino sketches on your development board and visualise the data on your laptop.
+    
+.. image:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.png
 
 Assemblying the Kit
 ********************
 
-You can get your own Muscle BioAmp Shield bag of parts from our `store <https://store.upsidedownlabs.tech/product/muscle-
-bioamp-shield-v0-3/>`_ or `Tindie <https://www.tindie.com/products/upsidedownlabs/muscle-bioamp-shield-v03-arduino-shield-for-emg/>`_
+You can get your own Muscle BioAmp Shield bag of parts from our `online stores <https://linktr.ee/Upside_Down_Labs_stores>`_ (shipping worldwide) 
 and for assembling your shield you can take a look at `this interactive BOM <https://upsidedownlabs.github.io/DIY-Muscle-BioAmp-
-Shield/>`_ or the step by step guide below. 
+Shield/ibom.html>`_ or the step by step guide below. 
 
 .. grid:: 1 1 2 2
     :margin: 2 2 0 0 
@@ -248,107 +267,158 @@ Still can't figure out the assembly? You can follow the video provided below to 
 Using the Sensor
 ******************
 
-The possibilities are endless as you can:
+Step 1: Stacking on Arduino Uno
+=================================
 
-.. .. grid:: 1 1 2 2
-..     :margin: 2 2 0 0 
-..     :gutter: 2
+Stack the Muscle BioAmp Shield on top of Arduino Uno properly.
 
-..     .. grid-item::
+Step 2: Connecting Electrode Cable
+=======================================
 
-..         .. card::
-            
-..             .. figure:: media/LEDGraph.*
-                
-..             ^^^^^  
-..             Visualize the EMG signals using the 6-onboard LEDs. The more you flex, the more LEDs will glow up.
+Connect the BioAmp Cable to Muscle BioAmp Shield as shown.
 
-..     .. grid-item::
+Step 3: Skin Preparation
+=============================
 
-..         .. card::
+Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with an alcohol wipe or a wet wipe.
 
-..             .. figure:: media/servo-control.*
+For more information, please check out detailed step by step :ref:`skin-preparation`.
 
-..             ^^^^^    
-..             Directly connect the servo motor via 3-pin angled header pins and control it using muscle signals (EMG).
+Step 4: Electrode Placements
+=================================
 
-..     .. grid-item::
+We have 2 options to measure the EMG signals, either using the gel electrodes or using dry electrode based Muscle BioAmp Band. You can try both of them one by one.
 
-..         .. card::
+Using gel electrodes
+-----------------------
 
-..             .. figure:: media/listening-muscle-signals.*
-            
-..             ^^^^^    
-..             Give audio/mic input signals from your mobile phone, laptop, or speakers via BioAmp AUX Cable connected to a 4-pin JST PH 2mm connector. 
-            
-..     .. grid-item::
+1. Connect the BioAmp cable to gel electrodes,
+2. Peel the plastic backing from electrodes
+3. Place the IN+ and IN- cables on the arm near the ulnar nerve & REF (reference) at the back of your hand as shown in the connection diagram.
 
-..         .. card::
+Using Muscle BioAmp Band
+---------------------------
 
-..             .. figure:: media/9v-battery.*
-            
-..             ^^^^^    
-..             Connect a 7V to 9V battery via snap cable.
+1. Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve & REF (reference) on the far side of the band.
+2. Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.
+
+   **Tutorial on how to use the band:**
+
+.. youtube:: xYZdw0aesa0
+    :align: center
+    :width: 100%
+
+.. note:: In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.
+
+Step 5: Connect Arduino UNO to your laptop
+=============================================
+
+Connect your Arduino UNO R3 to your laptop using the USB cable (Type A to Type B).
+ 
+.. warning:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
+
+Step 6: Visualise EMG signals on laptop
+==========================================
+
+Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:
+    
+EMG Filter: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino
+
+EMG Envelope: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino
+
+Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
+select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
+disconnect your board and reopen the menu. The entry that disappears should be the 
+right COM port. Now upload the code, & open the serial plotter from the tools menu to visualize 
+the EMG signals. 
+
+After opening the serial plotter make sure to select the baud rate to 115200.
+
+Now flex your arm to visualize the muscle signals in real time on your laptop.
+
+Step 7: Visualise EMG signals on LEDs
+==========================================
+
+Copy paste the Arduino Sketch given below in Arduino IDE:
+
+    LED Bar Graph: https://github.com/upsidedownlabs/BioAmp-EXG-Pill/blob/main/software/LEDBarGraph/LEDBarGraph.ino
+
+Make sure you have selected the right board and COM port. Now upload the code, and flex your arm. You'll see the LED bar going up. More strength you apply, more the LED bar goes up.
+
+.. figure:: media/LEDGraph.*
+
+Step 8: Listen to your EMG signals
+====================================
+
+You can either listen to the muscle signals (EMG) on a speaker or wired earphones/headphones. Let's try both of them.
+
+Listening EMG on speakers
+-----------------------------
+
+1. Connect the BioAmp AUX cable on a bluetooth speaker that have 3.5mm jack support.
+2. Switch on the speaker and turn the volume to maximum.
+3. Flex and listen to your muscles.
 
 
-- Record the muscle signals (EMG) either using Gel Electrodes or BioAmp Bands (dry electrode based) via BioAmp Cable connected to a 3-pin JST PH 2mm connector.
-- Listen to your muscle signals using wired headphones/earphones connected to a 3.5mm headphone jack.
-- Connect hundreds of devices like OLED screens, character displays, temperature sensors, accelerometers, BioAmp Hardware, and much more using the two I2C interfaces.
-- Connect Arduino Uno's D6 digital I/O pins and A2 analog input pins using STEMMA digital and STEMMA analog connectors respectively.
-- Program the 2 user buttons according to your project requirements.
 
-Some project ideas
-********************
+Listening EMG on a wired earphones/headphones
+----------------------------------------------
 
-These features make it the ultimate plug-and-play kit for students, researchers, and hobbyists alike who want to use muscle signals (EMG) to make amazing human-computer interface (HCI) projects like:
+1. Plug your wired earphones or headphones on the 3.5mm jack of BioAmp v1.5.
+2. Plug it in your ears.
+3. Flex and listen to your muscles.
 
-.. grid:: 1 1 1 1 
-    :margin: 2 2 0 0
-    :gutter: 2
+.. figure:: media/listening-muscle-signals.*
 
-    .. grid-item::
+Step 9: Controlling a servo claw
+====================================
 
-        .. card::
-            
-            **1. Controlling a Dino Game using your muscle signals (EMG)**
-            ^^^^
+Connect the servo claw to Muscle BioAmp Shield.
 
-            .. youtube:: 66VOVqrFLoQ
-                :align: center
-                :width: 100%
+Copy paste the Arduino Sketch given below in Arduino IDE:
 
-        .. card::
-            
-            **2. Scrolling Instagram Reels/YouTube Shorts by using your muscle signals (EMG)**
-            ^^^^
+   Claw Controller: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/tree/main/4_ClawController
 
-            .. youtube:: ZzhrNyndky4
-                :align: center
-                :width: 100%
+Make sure you have selected the right board and COM port. Now upload the code, and flex your arm to control the servo claw in real time.
 
-        .. card::
-            
-            **3. Making a Muscle Strength Game Using Muscle BioAmp Shield & Arduino UNO**
-            ^^^^
+.. figure:: media/servo-control.*
 
-            .. youtube:: bSfTnFcCHYM
-                :align: center
-                :width: 100%                
-   
-        .. card::
-            
-            **4. Record, Visualize & Listen to Muscle Signals Using Muscle BioAmp Shield**
-            ^^^^
+Step 10: Connecting 9V battery
+====================================
 
-            .. youtube:: kgvK51UIXdo
-                :align: center
-                :width: 100%  
+Till now, the power for the EMG system was coming from the laptop via USB cable of Arduino Uno but there can be 2 ways in which you can make the system portable:
 
-        .. card::
-            
-            **5. Controlling Servo Claw With Muscle Signals Using Muscle BioAmp Shield**
-            ^^^^
+- **Using 9V battery:** Directly connect a 9V battery to Muscle BioAmp Shield using a 9V snap cable.
+- **Using Power Bank:** Instead of connecting the USB cable of Arduino Uno to laptop, you can directly connect it to power bank.
 
-            .. youtube:: kgvK51UIXdo
-                :align: center
-                :width: 100% 
+.. figure:: media/9v-battery.*
+
+.. note:: Do not use 9V battery while controlling a servo claw using Muscle BioAmp Shield. Instead connect the Arduino UNO to a power bank or directly to your laptop.
+
+Step 10: Other functionalities you can explore
+====================================================
+
+Using I2C ports
+-----------------
+
+There are 2 I2C ports available on Muscle BioAmp Shield and you can connect hundreds of devices having I2C compatibility using the 4-pin JST PH 2.0 mm STEMMA cables provided.
+
+Some of the examples are: ``OLED screens``, ``character displays``, ``temperature sensors``, ``accelerometers``, ``gyroscopes``, ``light sensors``, ``BioAmp Hardware``
+
+Using STEMMA Digital port
+---------------------------
+
+Connect Arduino Uno's D6 digital I/O pins using STEMMA digital connectors.
+
+Using STEMMA Analog port
+--------------------------
+
+Connect Arduino Uno's A2 analog input pins using STEMMA analog connectors.
+
+Using user buttons
+---------------------
+
+Program the 2 user buttons according to your project requirements.
+
+Using Isolated output
+-----------------------
