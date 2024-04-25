@@ -8,6 +8,7 @@
 
 import os
 import sys
+import yaml
 from pathlib import Path
 from typing import Any, Dict
 import pydata_sphinx_theme
@@ -18,14 +19,33 @@ project = 'upsidedownlabs.github.io'
 copyright = '2024, Upside Down Labs'
 author = 'Upside Down Labs'
 
-# PDF path exploration
-MAX_DEPTH = 2
-walk_dirpaths = ['hardware', 'kits']
+# Configure PDF build and sidebar links
+latex_documents = []
 pdf_paths = []
-for walk_dirpath in walk_dirpaths:
-    for (dirpath, dirnames, filenames) in os.walk(walk_dirpath, topdown=True):
-        if dirpath.count('/') == MAX_DEPTH:
-            pdf_paths.append(dirpath[:])
+
+with open('conf.yml', 'r') as conf_file:
+    conf_data = yaml.safe_load(conf_file)
+
+    pdf_build_all = True
+    pdf_build = []
+    if(conf_data["pdf_build"] != "all"):
+        for name in conf_data["pdf_build"].split(","):
+            pdf_build.append(name.lstrip())
+        pdf_build_all = False
+
+    for type, data in conf_data.items():
+        # Hardware
+        if(type == "hardware"):
+            for board, data in conf_data["hardware"].items():
+                name = board
+                path = data['path']
+                pdf = data.get('pdf', False)
+                
+                # PDF build details
+                if(pdf and (name in pdf_build or pdf_build_all)):
+                    pdf_paths.append(path)
+                    tex_name = '-'.join(path.split('/')[1:])
+                    latex_documents.append((path+"/index", tex_name+".tex", "", author, "manual"))
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -164,13 +184,8 @@ html_context = {
 }
 
 # -- Options for LaTeX output --
-latex_documents = []
-
+latex_engine = "xelatex"
 latex_elements = {
     "papersize": "a4paper",
     "preamble": open("_static/latex/preamble.tex").read(),
 }
-
-for pdf_path in pdf_paths:
-    board_tex_name = pdf_path.split('/')[-1]
-    latex_documents.append((pdf_path+"/index", board_tex_name+".tex", "", author, "manual"))
