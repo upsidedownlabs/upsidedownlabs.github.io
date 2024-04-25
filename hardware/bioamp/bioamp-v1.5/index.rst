@@ -193,14 +193,14 @@ You can get your own BioAmp v1.5 bag of parts from our `online stores <https://l
 Using the kit
 *****************
 
-.. image:: media/bioamp-v1-5-connections.*
+The image below shows the possibilities of using BioAmp v1.5. Seems complicated? Don't worry, we'll explain each and every step in detail. So follow along to create your own setup.
 
-The image above shows the possibilities of using BioAmp v1.5. Seems complicated? Don't worry, we'll explain each and every step in detail. So follow along to create your own setup.
+.. image:: media/bioamp-v1-5-connections.*
 
 Step 1: Connecting the cables
 ==================================
 
-Connect the BioAmp cable, 9V snap cable and BioAmp AUX cable to BioAmp v1.5 by inserting the cable ends in the respective JST PH connectors as shown above.
+Connect the BioAmp cable, 9V snap cable and BioAmp AUX cable to BioAmp v1.5 by inserting the cable ends in the respective JST PH connectors as shown below.
 
 .. image:: media/board-with-cables.*
 
@@ -242,12 +242,12 @@ Connect any 9V battery to BioAmp v1.5 using the 9V snap cable. Now activate the 
 
 .. image:: media/9v-battery.*
 
-Step 5: Listen to Your Muscle Signals
+Step 5: Listen to your muscle signals
 ======================================
 
 You can either listen to the muscle signals (EMG) on a speaker or wired earphones/headphones. Let's try both of them.
 
-Listening EMG on speakers
+Using speakers
 -----------------------------
 
 1. Connect the BioAmp AUX cable on a bluetooth speaker that have 3.5mm jack support.
@@ -256,7 +256,7 @@ Listening EMG on speakers
 
 .. image:: media/listening-emg-2.*
 
-Listening EMG on a wired earphones/headphones
+Using wired earphones/headphones
 ----------------------------------------------
 
 1. Plug your wired earphones or headphones on the 3.5mm jack of BioAmp v1.5.
@@ -265,14 +265,12 @@ Listening EMG on a wired earphones/headphones
 
 .. image:: media/listening-emg-3.*
 
-Step 6: Visualize the EMG signals on mobile phone
+Step 6: Visualize EMG signals on mobile phone
 ===================================================
 
-Connect the BioAmp AUX cable to your mobile phone/tablet that has 3.5mm jack support.
+Connect the BioAmp AUX cable to your mobile phone/tablet that has 3.5mm jack support. Now you can use various apps to visualise the signals.
 
-Now there are various options to visualize the EMG signals:
-
-Using Phone Recorder
+Using Phone Recorder app
 --------------------------
 
 1. Open any audio recorder app on your mobile tablet.
@@ -281,8 +279,8 @@ Using Phone Recorder
 
 .. image:: media/emg-in-mobile-2.*
 
-Using Backyard Brains' Spike Recorder
---------------------------------------
+Using Backyard Brains' Spike Recorder app
+------------------------------------------
 
 1. Download the `Spike Recorder App <https://play.google.com/store/apps/details?id=com.backyardbrains&pli=1>`_ from playstore.
 2. Open the app, click the setting icon on the top right corner and set the recording type to EMG.
@@ -301,9 +299,7 @@ Using Backyard Brains' Spike Recorder
 Step 7: Visualize the EMG signals on laptop
 ============================================
 
-Connect the BioAmp AUX cable to your laptop that has 3.5mm jack support.
-
-Now there are various options to visualize the EMG signals:
+Connect the BioAmp AUX cable to your laptop that has 3.5mm jack support. Now you can install various softwares on your laptop to visualise the signals.
 
 Using Backyard Brains' Spike Recorder
 --------------------------------------------
