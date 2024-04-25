@@ -109,7 +109,7 @@ You can directly connect the male to female jumper cables on the header pins of 
 Connecting on breadboard
 ---------------------------
 
-If you are thinking to connect more components/sensors and want to integrate Muscle BioAmp Blip in the complete circuit then it will be better to use a breadboard. Snap the Muscle BioAmp Blip on the breadboard and connect the jumpers (male to male) at ``5V``, ``GND``, ``AN``.
+If you are thinking to connect more components/sensors and want to integrate Muscle BioAmp Blip in the complete circuit then it will be better to use a breadboard. Snap the Muscle BioAmp Blip on the breadboard and connect the jumper cables (male to male) at ``5V``, ``GND``, ``AN``.
 
 .. image:: media/blip-with-breadboard.*
 
@@ -189,7 +189,7 @@ EMG Envelope: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/b
 Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
 select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
 disconnect your board and reopen the menu. The entry that disappears should be the 
-right COM port. Now upload the code, & open the serial plotter from the tools menu to visualize 
+right COM port. Now upload the code, & open the serial plotter from the ``tools`` menu to visualize 
 the EMG signals. 
 
 After opening the serial plotter make sure to select the baud rate to 115200.
@@ -205,5 +205,5 @@ Now flex your arm to visualize the muscle signals in real time on your laptop.
 
 .. rubric:: Footnotes
 
-.. [#] Please not that click board is a registered trademark of MIKROE thus you might see a white mark on the Muscle BioAmp Blip v0.1 pcbs (it was named as Muscle BioAmp Click earlier).
+.. [#] Please not that click board is a registered trademark of MIKROE thus you might see a white mark on the Muscle BioAmp Blip v0.1 pcbs (since the sensor was named as Muscle BioAmp Click earlier).
 .. [#] mikroBUS™ is a socket standard developed by MIKROE which enables hundreds of Click boards™ to be connected to the microcontroller or microprocessor.
