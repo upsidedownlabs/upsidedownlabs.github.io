@@ -67,17 +67,23 @@ Images below shows a quick overview of the hardware design.
 
 .. figure:: media/muscle-bioamp-candy-front.*
     :align: center
+
+    Assembled PCB - Front
+
 .. figure:: media/muscle-bioamp-candy-back.*
     :align: center
+
+    Assembled PCB - Back
+    
 .. figure:: media/dimensions.*
     :align: center
 
-    **PCB Layout**
+    PCB Layout
 
 .. figure:: media/schematic.*
     :align: center
 
-    **Schematic Diagram**
+    Schematic Diagram
 
 Contents of the kit
 ********************
@@ -99,7 +105,7 @@ Step 1: Connect Arduino UNO R3
 
 .. image:: media/arduino-candy-connection.*
 
-Connect `VCC` to either `5V` or `3.3V`, `GND` to `GND`, and `OUT` to `Analog pin A0` of your Arduino UNO via jumper cables provided by us. If you are connecting OUT to any other analog pin, then you will have to change the `INPUT PIN` in the example arduino sketch accordingly.
+Connect ``VCC`` to either ``5V`` or ``3.3V``, ``GND`` to ``GND``, and ``OUT`` to ``Analog pin A0`` of your Arduino UNO via jumper cables provided by us. If you are connecting ``OUT`` to any other analog pin, then you will have to change the `INPUT PIN` in the example arduino sketch accordingly.
 
 .. note:: For demonstration purposes we are showing connections of the sensor with Arduino UNO R3 but you can use any other development board or a standalone ADC of your choice.
 
@@ -117,15 +123,17 @@ Step 3: Skin Preparation
 
 Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with an alcohol wipe or a wet wipe.
 
-For more information, please check out detailed step by step :ref:`skin-preparation`
+For more information, please check out detailed step by step :ref:`skin-preparation`.
 
 Step 4: Measuring EMG (ElectroMyoGraphy)
 ===============================================
 
+Electrodes placement
+-----------------------
+
 We have 2 options to measure the EMG signals, either using the gel electrodes or using dry electrode based Muscle BioAmp Band. You can try both of them one by one.
 
-Using gel electrodes
------------------------
+- **Using gel electrodes:**
 
 1. Connect the BioAmp cable to gel electrodes,
 2. Peel the plastic backing from electrodes
@@ -133,8 +141,7 @@ Using gel electrodes
 
 .. image:: media/candy-emg.*
 
-Using Muscle BioAmp Band
---------------------------
+- **Using Muscle BioAmp Band:**
 
 1. Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve & REF (reference) on the far side of the band.
 2. Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.
@@ -147,7 +154,8 @@ Using Muscle BioAmp Band
 
 .. note:: In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.
 
-**Uploading the code:**
+Uploading the code
+----------------------
 
 Connect your Arduino UNO R3 to your laptop using the USB cable (Type A to Type B). Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:
     
@@ -158,14 +166,15 @@ EMG Envelope: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/b
 Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
 select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
 disconnect your board and reopen the menu. The entry that disappears should be the 
-right COM port. Now upload the code, & open the serial plotter from the tools menu to visualize 
+right COM port. Now upload the code, & open the serial plotter from the ``tools`` menu to visualize 
 the EMG signals. 
 
 After opening the serial plotter make sure to select the baud rate to 115200.
 
 .. warning:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
 
-**Visualizing the EMG signals**
+Visualizing the EMG signals
+------------------------------
 
 Now flex your arm to visualize the muscle signals in real time on your laptop.
 
@@ -176,5 +185,3 @@ Now flex your arm to visualize the muscle signals in real time on your laptop.
 .. youtube:: lPX2TGBcHOA
     :align: center
     :width: 100%
-
-
