@@ -184,7 +184,6 @@ html_context = {
 }
 
 # -- Options for LaTeX output --
-latex_engine = "xelatex"
 latex_elements = {
     "papersize": "a4paper",
     "preamble": open("_static/latex/preamble.tex").read(),
