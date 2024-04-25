@@ -1,0 +1,41 @@
+# YAML file to configure PDF builds and sidebar links
+
+# PDF builds configuration
+# 
+# all: If you want to build PDFs of all the listed hardware, guides, experiments, etc.
+# 
+# name1, name2, name3: If you want to build PDF for specific hardware, guides, experiments, etc.
+# Example: pdf_build: BioAmp EXG Pill, BioAmp v1.5
+
+pdf_build: all
+
+# Hardware 
+# 
+# Example:
+# hardware:
+#     name:
+#         path: First level hardware documentation path for hardware 'index.rst'
+#         pdf: True/False (optional, False if this 'pdf:' option is not added)
+
+hardware:
+   BioAmp EXG Pill:
+      path: hardware/bioamp/bioamp-exg-pill
+      pdf: True
+   BioAmp v1.5:
+      path: hardware/bioamp/bioamp-v1.5
+      pdf: True
+   Muscle BioAmp BisCute:
+      path: hardware/bioamp/muscle-bioamp-biscute
+      pdf: True
+   Muscle BioAmp Blip:
+      path: hardware/bioamp/muscle-bioamp-blip
+      pdf: True
+   Muscle BioAmp Candy:
+      path: hardware/bioamp/muscle-bioamp-candy
+      pdf: True
+   Muscle BioAmp Patchy:
+      path: hardware/bioamp/muscle-bioamp-patchy
+      pdf: True
+   Muscle BioAmp Shield:
+      path: hardware/bioamp/muscle-bioamp-shield
+      pdf: True
