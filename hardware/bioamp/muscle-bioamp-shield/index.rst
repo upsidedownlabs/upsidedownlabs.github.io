@@ -110,6 +110,8 @@ You can get your own Muscle BioAmp Shield bag of parts from our `online stores <
 and for assembling your shield you can take a look at `this interactive BOM <https://upsidedownlabs.github.io/DIY-Muscle-BioAmp-
 Shield/ibom.html>`_ or the step by step guide below. 
 
+.. note:: Follow the highlighted yellow shapes to assemble your shield!
+
 .. grid:: 1 1 2 2
     :margin: 2 2 0 0 
     :gutter: 2
@@ -267,7 +269,7 @@ Still can't figure out the assembly? You can follow the video provided below to 
 Using the Sensor
 ******************
 
-Step 1: Stacking on Arduino Uno
+Step 1: Stack on Arduino Uno
 =================================
 
 Stack the Muscle BioAmp Shield on top of Arduino Uno properly.
@@ -322,14 +324,14 @@ Step 6: Visualise EMG signals on laptop
 
 Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:
     
-EMG Filter: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino
+   EMG Filter: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino
 
-EMG Envelope: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino
+   EMG Envelope: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino
 
 Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
 select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
 disconnect your board and reopen the menu. The entry that disappears should be the 
-right COM port. Now upload the code, & open the serial plotter from the tools menu to visualize 
+right COM port. Now upload the code, & open the serial plotter from the ``tools`` menu to visualize 
 the EMG signals. 
 
 After opening the serial plotter make sure to select the baud rate to 115200.
@@ -345,7 +347,11 @@ Copy paste the Arduino Sketch given below in Arduino IDE:
 
 Make sure you have selected the right board and COM port. Now upload the code, and flex your arm. You'll see the LED bar going up. More strength you apply, more the LED bar goes up.
 
-.. figure:: media/LEDGraph.*
+.. only:: html
+
+   .. figure:: media/LEDGraph.gif
+
+.. todo:: Add PNG/JPEG image for latex build
 
 Step 8: Listen to your EMG signals
 ====================================
@@ -368,7 +374,11 @@ Listening EMG on a wired earphones/headphones
 2. Plug it in your ears.
 3. Flex and listen to your muscles.
 
-.. figure:: media/listening-muscle-signals.*
+.. only:: html
+
+   .. figure:: media/listening-muscle-signals.gif
+
+.. todo:: Add PNG/JPEG image for latex build
 
 Step 9: Controlling a servo claw
 ====================================
@@ -381,7 +391,11 @@ Copy paste the Arduino Sketch given below in Arduino IDE:
 
 Make sure you have selected the right board and COM port. Now upload the code, and flex your arm to control the servo claw in real time.
 
-.. figure:: media/servo-control.*
+.. only:: html
+
+   .. figure:: media/servo-control.gif
+
+.. todo:: Add PNG/JPEG image for latex build
 
 Step 10: Connecting 9V battery
 ====================================
@@ -391,7 +405,11 @@ Till now, the power for the EMG system was coming from the laptop via USB cable 
 - **Using 9V battery:** Directly connect a 9V battery to Muscle BioAmp Shield using a 9V snap cable.
 - **Using Power Bank:** Instead of connecting the USB cable of Arduino Uno to laptop, you can directly connect it to power bank.
 
-.. figure:: media/9v-battery.*
+.. only:: html
+
+   .. figure:: media/9v-battery.gif
+
+.. todo:: Add PNG/JPEG image for latex build
 
 .. note:: Do not use 9V battery while controlling a servo claw using Muscle BioAmp Shield. Instead connect the Arduino UNO to a power bank or directly to your laptop.
 
