@@ -62,9 +62,10 @@ BioAmp EXG Pill’s elegant design allows it to be used in 3 ways:
 .. figure:: media/Back_Specifications.*
     :align: center
 
-**BioAmp EXG Pill is fully configurable as you can:**
+BioAmp EXG Pill is fully configurable
+===============================
 
-1. Increase the gain of the instrumentation amplifier by using a 0603 resistor at R6. Decrease gain and configure the bandpass filter by using 0603 parts at R12 and C5. Band limiting is very useful for EOG and EEG recording. Also, the signal sometimes clips while recording ECG with electrodes very close to the heart. Creating a solder jumper for a band-pass filter helps with that. By default, BioAmp EXG Pill is configured to record EEG and EOG but you can bridge the pads (below bandpass) with solder to make it configurable for EMG and ECG.
+1. Increase the gain of the instrumentation amplifier by using a 0603 resistor at ``R6``. Decrease gain and configure the bandpass filter by using 0603 parts at ``R12`` and ``C5``. Band limiting is very useful for EOG and EEG recording. Also, the signal sometimes clips while recording an ECG with electrodes very close to the heart. Creating a solder jumper for a band-pass filter helps with that. By default, BioAmp EXG Pill is configured to record EEG and EOG but you can bridge the pads (below bandpass) with solder to make it configurable for EMG and ECG.
 2. The normal method of operation for best-quality signal amplification is to use 3 electrodes by default but you can bridge the pads (below electrodes) to make it configurable for 2 electrodes. The 2-electrode mode is specifically included for projects like heart (ECG) patches for HRV. It’s only supposed to be used with a battery-operated setup and is quite prone to high interference noise due to a lack of proper reference on the body (This option is not recommended for most operations)
 
 Software requirements
@@ -81,7 +82,7 @@ Software requirements
 Using the Hardware
 *********************
 
-If you have received the assembled BioAmp EXG Pill then you can skip the step 1 and move on to step 2. But, if you got the unassembled one, follow step 1 to assemble your BioAmp EXG Pill.
+If you have received the assembled BioAmp EXG Pill then you can skip the step 1 and move on to step 2.
 
 Step 1: Solder Connectors
 ===========================
@@ -107,7 +108,21 @@ BioAmp EXG Pill is by default configured for recording EEG or EOG but if you wan
 Step 3: Connect MCU/ADC
 =========================
 
-Connect ``VCC`` to ``5V``, ``GND`` to ``GND``, and ``OUT`` to ``Analog pin A0`` of your favorite MCU/ADC board (we'll be using Arduino UNO R3) via jumper cables provided by us. If you are connecting ``OUT`` to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.
+Connect your BioAmp EXG Pill to your MCU/ADC as per the connection table shown below:
+
+.. table:: BioAmp to MCU/ADC connection
+
+    +--------+-----------+
+    | BioAmp | MCU/ADC   |
+    +========+===========+
+    | VCC    | 5V        |
+    +--------+-----------+
+    | GND    | GND       |
+    +--------+-----------+
+    | OUT    | ADC Input |
+    +--------+-----------+
+
+For all the examples provided, we are using the A0 pin of Arduino UNO R3. Connect your BioAmp to your MCU/ADC via jumper cables provided in the kit. If you are connecting ``OUT`` pin of BioAmp to any other analog pin (A0-A5) of Arduino UNO board, then you will have to change the INPUT PIN in the Arduino sketch accordingly.
 
 .. figure:: media/connections-with-arduino.*
     :align: center
