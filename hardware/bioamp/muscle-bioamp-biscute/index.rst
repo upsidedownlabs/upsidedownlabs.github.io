@@ -207,7 +207,7 @@ Step 1: Connect Arduino UNO R3
 
 .. image:: media/arduino-biscute-connection.*
 
-Connect VCC to either 5V or 3.3V, GND to GND, and OUT to Analog pin A0 of your Arduino UNO via jumper cables provided by us. If you are connecting OUT to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.
+Connect ``VCC`` to either ``5V`` or ``3.3V``, ``GND`` to ``GND``, and ``OUT`` to ``Analog pin A0`` of your Arduino UNO via jumper cables provided by us. If you are connecting ``OUT`` to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.
 
 **Note:** For demonstration purposes we are showing connections of the sensor with Arduino UNO R3 but you can use any other development board or a standalone ADC of your choice.
 
@@ -223,12 +223,15 @@ Connect the BioAmp cable to Muscle BioAmp Biscute by inserting the cable end in 
 Step 4: Skin Preparation
 ===============================================
 
-Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with a wet wipe.
+Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with an alcohol wipe or a wet wipe.
 
-For more information, please check out detailed step by step :ref:`skin-preparation`
+For more information, please check out detailed step by step :ref:`skin-preparation`.
 
 Step 5: Measuring EMG (ElectroMyoGraphy)
 ===============================================
+
+Electrodes placement
+---------------------
 
 We have 2 options to measure the EMG signals, either using the gel electrodes or using dry electrode based Muscle BioAmp Band. You can try both of them one by one.
 
@@ -253,7 +256,8 @@ We have 2 options to measure the EMG signals, either using the gel electrodes or
 
 .. note:: In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.
 
-**Uploading the code:**
+Uploading the code
+---------------------
 
 Connect your Arduino UNO to your laptop using the USB cable (Type A to Type B). Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:
     
@@ -261,17 +265,18 @@ EMG Filter: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blo
 
 EMG Envelope: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino
 
-Go to **"tools"** from the menu bar, select **"board"** option then select Arduino UNO. In the same menu, 
+Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
 select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
 disconnect your board and reopen the menu. The entry that disappears should be the 
-right COM port. Now upload the code, & open the serial plotter from the tools menu to visualize 
+right COM port. Now upload the code, & open the serial plotter from the ``tools`` menu to visualize 
 the EMG signals. 
 
 After opening the serial plotter make sure to select the baud rate to 115200.
 
 .. warning:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
 
-**Visualizing the EMG signals**
+Visualizing the EMG signals
+----------------------------
 
 Now flex your arm to visualize the muscle signals in real time on your laptop.
 

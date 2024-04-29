@@ -3,18 +3,17 @@
 Muscle BioAmp Blip
 ###################
 
-A mikroBUS™ compatible ElectroMyography (EMG) sensor for precise recording of muscle signals.
-
 Overview
 *********
 
-Muscle BioAmp Blip is single channel mikroBUS™ compatible ElectroMyography (EMG) sensor for precise  muscle signal recording. 
-It allows you to add the EMG functionality to your projects at ease. You can either connect it to any mikroBUS port or even 
+Muscle BioAmp Blip [#]_ is single channel mikroBUS™ [#]_ compatible ElectroMyography (EMG) sensor for precise  muscle signal recording. 
+It allows you to add the EMG functionality to your projects at ease. You can either connect it to any mikroBUS™ port or even 
 a breadboard to get started.
 
 .. figure:: media/muscle-bioamp-blip.*
     :width: 800
     :align: center
+
 
 
 Features & Specifications
@@ -29,7 +28,7 @@ Features & Specifications
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Bandpass filter       | 72 – 720 Hz                                                                                                                                                      |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Compatible Hardware   | Any development board with an ADC (Arduino UNO & Nano, Espressif ESP32, Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name just a few) |
+| Compatible Hardware   | Any development board with an ADC (Arduino UNO & Nano, Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name just a few)                  |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | BioPotentials         | EMG (Electromyography)                                                                                                                                           |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -71,28 +70,140 @@ Images below shows a quick overview of the hardware design.
     :align: center
     :width: 400
 
-Connecting with Arduino
-****************************
+    Assembled PCB
 
-To get started, you can pair Muscle BioAmp Blip with any development board with an ADC (Arduino UNO & Nano, Espressif ESP32, 
-Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name just a few) or any standalone ADC of your choice.
-
-To measure the EMG signals, connect BioAmp Cable v3 with your muscle sensor as shown in the image below:
-
-.. figure:: media/arduino-connections.*
-
-.. Using the sensor
-.. ******************
-
-.. .. youtube:: lPX2TGBcHOA
-..     :width: 100%
-..     :align: center
-
-Some project ideas
+Contents of the kit
 ********************
 
-.. We have curated a playlist for you which consists some awesome project ideas for you to get started with your next HCI project.
+.. image:: media/blip-kit-contents.*
 
-.. .. youtube:: https://youtube.com/playlist?list=PLtkEloJ7UnkQIoz1HK4IXWujCB8hKdiKU&si=osloTX71TE7AJ3CF
-..     :width: 100%
-..     :align: center
+Software requirements
+**********************
+
+- Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the arduino sketches on your development board and visualise the data on your laptop.
+    
+.. image:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.png
+
+Using the kit
+****************
+
+Step 1: Soldering connector & header pins
+============================================
+
+Solder the header pins and JST Ph 2.0mm connector on the Muscle BioAmp Blip as shown below. If you ordered assembled kit then you can skip this step and directly move to step 2.
+
+.. image:: media/soldering-blip.*
+
+Step 2: Connections with the sensor
+========================================
+
+There can be various ways of connecting the Muscle BioAmp Blip. Some of the options are given below:
+
+Directly connecting jumper cables
+-----------------------------------
+
+You can directly connect the male to female jumper cables on the header pins of Muscle BioAmp Blip at ``5V``, ``GND``, ``AN``.
+
+.. image:: media/blip-with-jumper-cables.*
+
+Connecting on breadboard
+---------------------------
+
+If you are thinking to connect more components/sensors and want to integrate Muscle BioAmp Blip in the complete circuit then it will be better to use a breadboard. Snap the Muscle BioAmp Blip on the breadboard and connect the jumper cables (male to male) at ``5V``, ``GND``, ``AN``.
+
+.. image:: media/blip-with-breadboard.*
+
+Connecting via mikroBUS port
+-----------------------------
+
+You can also connect the Muscle BioAmp Blip to any hardware that has mikroBUS™ port like mikroBUS™ shuttle, mikroBUS™ Arduino UNO Click Shield to name a few.
+
+.. image:: media/blip-with-shuttle.*
+
+Step 3: Connecting with Arduino UNO R3
+=======================================
+
+Connect ``5V`` of the sensor to ``5V`` of your Arduino UNO, ``GND`` to ``GND``, and ``AN`` to ``Analog pin A0`` via other end of the jumper cables. If you are connecting ``AN`` to any other analog pin, then you will have to change the `INPUT PIN` in the example arduino sketch accordingly.
+
+.. image:: media/blip-arduino-connections.*
+
+.. note:: For demonstration purposes we are showing connections of the sensor with Arduino UNO R3 but you can use any other development board or a standalone ADC of your choice.
+
+Step 4: Connecting electrode cable
+========================================
+
+Connect the BioAmp cable to Muscle BioAmp Blip by inserting the cable end in the JST PH connector as shown.
+
+.. image:: media/blip-bioamp-cable.*
+
+Step 5: Skin Preparation
+===============================================
+
+Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with an alcohol wipe or a wet wipe.
+
+For more information, please check out detailed step by step :ref:`skin-preparation`.
+
+Step 6: Electrodes placement
+===============================================
+
+We have 2 options to measure the EMG signals, either using the gel electrodes or using dry electrode based Muscle BioAmp Band. You can try both of them one by one.
+
+Using gel electrodes
+----------------------
+
+1. Connect the BioAmp cable to gel electrodes,
+2. Peel the plastic backing from electrodes
+3. Place the IN+ and IN- cables on the arm near the ulnar nerve & REF (reference) at the back of your hand as shown in the connection diagram.
+
+.. figure:: media/emg-connections-1.*
+
+    Muscle BioAmp Blip with breadboard
+
+.. figure:: media/emg-connections-2.*
+
+    Muscle BioAmp Blip directly connected via jumper cables
+
+Using Muscle BioAmp Band
+---------------------------
+
+1. Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve & REF (reference) on the far side of the band.
+2. Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.
+
+   **Tutorial on how to use the band:**
+
+.. youtube:: xYZdw0aesa0
+    :align: center
+    :width: 100%
+
+.. note:: In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.
+
+Step 7: Uploading the code
+=============================
+
+Connect your Arduino UNO R3 to your laptop using the USB cable (Type A to Type B). Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:
+    
+EMG Filter: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino
+
+EMG Envelope: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino
+
+Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
+select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
+disconnect your board and reopen the menu. The entry that disappears should be the 
+right COM port. Now upload the code, & open the serial plotter from the ``tools`` menu to visualize 
+the EMG signals. 
+
+After opening the serial plotter make sure to select the baud rate to 115200.
+
+.. warning:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
+
+Step 8: Visualizing the EMG signals
+=====================================
+
+Now flex your arm to visualize the muscle signals in real time on your laptop.
+
+.. image:: media/emg-recording.*
+
+.. rubric:: Footnotes
+
+.. [#] Please not that click board is a registered trademark of MIKROE thus you might see a white mark on the Muscle BioAmp Blip v0.1 pcbs (since the sensor was named as Muscle BioAmp Click earlier).
+.. [#] mikroBUS™ is a socket standard developed by MIKROE which enables hundreds of Click boards™ to be connected to the microcontroller or microprocessor.
