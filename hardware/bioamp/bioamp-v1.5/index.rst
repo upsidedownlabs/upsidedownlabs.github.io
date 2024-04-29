@@ -279,8 +279,8 @@ Using Phone Recorder app
 
 .. image:: media/emg-in-mobile-2.*
 
-Using Backyard Brains' Spike Recorder app
-------------------------------------------
+Using Backyard Brains' Spike Recorder mobile app
+------------------------------------------------
 
 1. Download the `Spike Recorder App <https://play.google.com/store/apps/details?id=com.backyardbrains&pli=1>`_ from playstore.
 2. Open the app, click the setting icon on the top right corner and set the recording type to EMG.
