@@ -283,7 +283,7 @@ right COM port. Now upload the code.
 Visualizing the EEG signals
 -------------------------------
 
-Open the Spike Recorder software. When the Spike Recorder starts, it will start recording from your microphone. To change that, go to the settings by clicking 
+Open up your BackyardBrains Spike Recorder software. At first, it will monitor signals from your microphone. To change that, go to the settings by clicking 
 the first icon on the top left corner of the screen, select the COM port on which the Maker UNO is connected and click on connect. 
 
 .. figure:: media/spike-recorder-configurations.*
