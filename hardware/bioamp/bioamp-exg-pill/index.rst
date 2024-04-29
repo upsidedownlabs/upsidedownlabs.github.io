@@ -82,7 +82,7 @@ Software requirements
 Using the Hardware
 *********************
 
-If you have received the assembled BioAmp EXG Pill then you can skip the step 1 and move on to step 2. But, if you got the unassembled one, follow step 1 to assemble your BioAmp EXG Pill.
+If you have received the assembled BioAmp EXG Pill then you can skip the step 1 and move on to step 2.
 
 Step 1: Solder Connectors
 ===========================
