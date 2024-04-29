@@ -53,7 +53,7 @@
     <link rel="prev" title="Muscle BioAmp Shield" href="../muscle-bioamp-shield/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Apr 25, 2024"/>
+    <meta name="docbuild:last-update" content="Apr 29, 2024"/>
   </head>
   
   
@@ -645,9 +645,9 @@ document.write(`
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
 <p>Muscle BioAmp Patchy is a wearable ElectroMyoGraphy or EMG sensor that snaps directly to gel electrodes and connects to your
-muscle like a patch. It comes with reverse polarity projection, power indicator, onboard snap connectors, and Upside Down Labs’power
-ful BioAmp sensing technology for precise muscle signal recording. This enables you to easily integrate this sensor in your EMG-
-based Human-Computer Interface (HCI).</p>
+muscle like a patch. It comes with reverse polarity projection, power indicator, onboard snap connectors, and Upside Down Labs’
+powerful BioAmp sensing technology for precise muscle signal recording. This enables you to easily integrate this sensor in your EMG-
+based Human-Computer Interface (HCI) easily.</p>
 <figure class="align-default">
 <img alt="../../../_images/Patchy-All-Colors.jpg" src="../../../_images/Patchy-All-Colors.jpg" />
 </figure>
@@ -734,6 +734,7 @@ based Human-Computer Interface (HCI).</p>
 </section>
 <section id="contents-of-the-kit">
 <h2>Contents of the kit<a class="headerlink" href="#contents-of-the-kit" title="Link to this heading">#</a></h2>
+<img alt="../../../_images/kit-contents3.png" src="../../../_images/kit-contents3.png" />
 </section>
 <section id="software-requirements">
 <h2>Software requirements<a class="headerlink" href="#software-requirements" title="Link to this heading">#</a></h2>
@@ -742,23 +743,25 @@ based Human-Computer Interface (HCI).</p>
 </section>
 <section id="using-the-kit">
 <h2>Using the kit<a class="headerlink" href="#using-the-kit" title="Link to this heading">#</a></h2>
-<p>likhdenge</p>
 <section id="step-1-connect-reference-cable">
 <h3>Step 1: Connect reference cable<a class="headerlink" href="#step-1-connect-reference-cable" title="Link to this heading">#</a></h3>
 <p>Connect the reference cable to the Muscle BioAmp Patchy as shown in the diagram.</p>
+<img alt="../../../_images/ref-cable-connection.png" src="../../../_images/ref-cable-connection.png" />
 </section>
-<section id="step-2-connecting-muscle-bioamp-patchy-to-gel-electrodes">
-<h3>Step 2: Connecting Muscle BioAmp Patchy to Gel Electrodes<a class="headerlink" href="#step-2-connecting-muscle-bioamp-patchy-to-gel-electrodes" title="Link to this heading">#</a></h3>
-<p>Connect the Muscle BioAmp Patchy to gel electrodes (Don’t peel the plastic backing from the electrodes at this moment).</p>
+<section id="step-2-connecting-sensor-to-gel-electrodes">
+<h3>Step 2: Connecting sensor to gel electrodes<a class="headerlink" href="#step-2-connecting-sensor-to-gel-electrodes" title="Link to this heading">#</a></h3>
+<p>Snap the Muscle BioAmp Patchy on the gel electrodes (Don’t peel the plastic backing from the electrodes at this moment).</p>
+<img alt="../../../_images/patchy-electrode-connection.png" src="../../../_images/patchy-electrode-connection.png" />
 </section>
 <section id="step-3-skin-preparation">
 <h3>Step 3: Skin Preparation<a class="headerlink" href="#step-3-skin-preparation" title="Link to this heading">#</a></h3>
-<p>Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with a wet wipe.</p>
+<p>Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with an alcohol wipe or a wet wipe.</p>
 <p>For more information, please check out detailed step by step <a class="reference internal" href="../../../guides/usage-guides/skin-preparation/index.html#skin-preparation"><span class="std std-ref">Skin Preparation Guide</span></a>.</p>
 </section>
 <section id="step-4-electrode-placements">
 <h3>Step 4: Electrode Placements<a class="headerlink" href="#step-4-electrode-placements" title="Link to this heading">#</a></h3>
 <p>Now peel off the plastic backing from the gel electrodes and place the Muscle BioAmp Patchy on the targeted muscle and the reference on the bony part of your elbow as shown in the diagram.</p>
+<img alt="../../../_images/patchy-on-hand.png" src="../../../_images/patchy-on-hand.png" />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.</p>
@@ -766,18 +769,23 @@ based Human-Computer Interface (HCI).</p>
 </section>
 <section id="step-5-connect-arduino-uno-r3">
 <h3>Step 5: Connect Arduino UNO R3<a class="headerlink" href="#step-5-connect-arduino-uno-r3" title="Link to this heading">#</a></h3>
-<p>Connect VCC to 5V, GND to GND, and OUT to Analog pin A0 of your Arduino UNO via jumper cables provided by us. If you are connecting OUT to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.</p>
-<p><strong>Note:</strong> For demonstration purposes we are showing connections of the sensor with Arduino UNO R3 but you can use any other development board or a standalone ADC of your choice.</p>
+<p>Connect <code class="docutils literal notranslate"><span class="pre">VCC</span></code> to <code class="docutils literal notranslate"><span class="pre">5V</span></code>, <code class="docutils literal notranslate"><span class="pre">GND</span></code> to <code class="docutils literal notranslate"><span class="pre">GND</span></code>, and <code class="docutils literal notranslate"><span class="pre">OUT</span></code> to <code class="docutils literal notranslate"><span class="pre">Analog</span> <span class="pre">pin</span> <span class="pre">A0</span></code> of your Arduino UNO via jumper cables provided by us. If you are connecting <code class="docutils literal notranslate"><span class="pre">OUT</span></code> to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.</p>
+<img alt="../../../_images/pathcy-arduino-connections.png" src="../../../_images/pathcy-arduino-connections.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For demonstration purposes we are showing connections of the sensor with Arduino UNO R3 but you can use any other development board or a standalone ADC of your choice.</p>
+</div>
 </section>
 <section id="step-6-upload-the-code">
 <h3>Step 6: Upload the code<a class="headerlink" href="#step-6-upload-the-code" title="Link to this heading">#</a></h3>
 <p>Connect your Arduino UNO to your laptop using the USB cable (Type A to Type B). Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
 <p>EMG Filter: <a class="github reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino">upsidedownlabs/Muscle-BioAmp-Arduino-Firmware</a></p>
 <p>EMG Envelope: <a class="github reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino">upsidedownlabs/Muscle-BioAmp-Arduino-Firmware</a></p>
-<p>Go to <strong>“tools”</strong> from the menu bar, select <strong>“board”</strong> option then select Arduino UNO. In the same menu,
+<img alt="../../../_images/setup.png" src="../../../_images/setup.png" />
+<p>Go to <code class="docutils literal notranslate"><span class="pre">tools</span></code> from the menu bar, select <code class="docutils literal notranslate"><span class="pre">board</span></code> option then select Arduino UNO. In the same menu,
 select the COM port on which your Arduino Uno is connected. To find out the right COM port,
 disconnect your board and reopen the menu. The entry that disappears should be the
-right COM port. Now upload the code, &amp; open the serial plotter from the tools menu to visualize
+right COM port. Now upload the code, &amp; open the serial plotter from the <code class="docutils literal notranslate"><span class="pre">tools</span></code> menu to visualize
 the EMG signals.</p>
 <p>After opening the serial plotter make sure to select the baud rate to 115200.</p>
 <div class="admonition warning">
@@ -788,6 +796,7 @@ the EMG signals.</p>
 <section id="step-7-visualizing-the-emg-signals">
 <h3>Step 7: Visualizing the EMG signals<a class="headerlink" href="#step-7-visualizing-the-emg-signals" title="Link to this heading">#</a></h3>
 <p>Now flex your arm to visualize the muscle signals in real time on your laptop.</p>
+<img alt="../../../_images/patchy-emg.png" src="../../../_images/patchy-emg.png" />
 <p><strong>Video tutorial:</strong></p>
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/4dnCX3U7LS8" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
@@ -848,7 +857,7 @@ the EMG signals.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-requirements">Software requirements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-kit">Using the kit</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-connect-reference-cable">Step 1: Connect reference cable</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-connecting-muscle-bioamp-patchy-to-gel-electrodes">Step 2: Connecting Muscle BioAmp Patchy to Gel Electrodes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-connecting-sensor-to-gel-electrodes">Step 2: Connecting sensor to gel electrodes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-skin-preparation">Step 3: Skin Preparation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-electrode-placements">Step 4: Electrode Placements</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-connect-arduino-uno-r3">Step 5: Connect Arduino UNO R3</a></li>
@@ -943,7 +952,7 @@ the EMG signals.</p>
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Apr 25, 2024.
+  Last updated on Apr 29, 2024.
   <br/>
 </p></div>
       

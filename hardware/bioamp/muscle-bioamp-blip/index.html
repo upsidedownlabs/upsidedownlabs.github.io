@@ -53,7 +53,7 @@
     <link rel="prev" title="Muscle BioAmp Patchy" href="../muscle-bioamp-patchy/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Apr 25, 2024"/>
+    <meta name="docbuild:last-update" content="Apr 29, 2024"/>
   </head>
   
   
@@ -642,11 +642,10 @@ document.write(`
                   
   <section id="muscle-bioamp-blip">
 <span id="id1"></span><h1>Muscle BioAmp Blip<a class="headerlink" href="#muscle-bioamp-blip" title="Link to this heading">#</a></h1>
-<p>A mikroBUS™ compatible ElectroMyography (EMG) sensor for precise recording of muscle signals.</p>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
-<p>Muscle BioAmp Blip is single channel mikroBUS™ compatible ElectroMyography (EMG) sensor for precise  muscle signal recording.
-It allows you to add the EMG functionality to your projects at ease. You can either connect it to any mikroBUS port or even
+<p>Muscle BioAmp Blip <a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> is single channel mikroBUS™ <a class="footnote-reference brackets" href="#id5" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> compatible ElectroMyography (EMG) sensor for precise  muscle signal recording.
+It allows you to add the EMG functionality to your projects at ease. You can either connect it to any mikroBUS™ port or even
 a breadboard to get started.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../../../_images/muscle-bioamp-blip.jpg"><img alt="../../../_images/muscle-bioamp-blip.jpg" src="../../../_images/muscle-bioamp-blip.jpg" style="width: 800px;" /></a>
@@ -669,7 +668,7 @@ a breadboard to get started.</p>
 <td><p>72 – 720 Hz</p></td>
 </tr>
 <tr class="row-odd"><td><p>Compatible Hardware</p></td>
-<td><p>Any development board with an ADC (Arduino UNO &amp; Nano, Espressif ESP32, Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name just a few)</p></td>
+<td><p>Any development board with an ADC (Arduino UNO &amp; Nano, Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name just a few)</p></td>
 </tr>
 <tr class="row-even"><td><p>BioPotentials</p></td>
 <td><p>EMG (Electromyography)</p></td>
@@ -720,21 +719,140 @@ a breadboard to get started.</p>
 </div>
 </div>
 </div>
-<figure class="align-center">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../../_images/muscle-bioamp-blip-assembled.png"><img alt="../../../_images/muscle-bioamp-blip-assembled.png" src="../../../_images/muscle-bioamp-blip-assembled.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">Assembled PCB</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
 </section>
-<section id="connecting-with-arduino">
-<h2>Connecting with Arduino<a class="headerlink" href="#connecting-with-arduino" title="Link to this heading">#</a></h2>
-<p>To get started, you can pair Muscle BioAmp Blip with any development board with an ADC (Arduino UNO &amp; Nano, Espressif ESP32,
-Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name just a few) or any standalone ADC of your choice.</p>
-<p>To measure the EMG signals, connect BioAmp Cable v3 with your muscle sensor as shown in the image below:</p>
-<figure class="align-default">
-<img alt="../../../_images/arduino-connections.png" src="../../../_images/arduino-connections.png" />
+<section id="contents-of-the-kit">
+<h2>Contents of the kit<a class="headerlink" href="#contents-of-the-kit" title="Link to this heading">#</a></h2>
+<img alt="../../../_images/blip-kit-contents.png" src="../../../_images/blip-kit-contents.png" />
+</section>
+<section id="software-requirements">
+<h2>Software requirements<a class="headerlink" href="#software-requirements" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Before you start using the kit, please download <a class="reference external" href="https://www.arduino.cc/en/software">Arduino IDE v1.8.19 (legacy IDE)</a>. Using this you’ll be able to upload the arduino sketches on your development board and visualise the data on your laptop.</p></li>
+</ul>
+<img alt="../../../_images/arduino-ide.png" src="../../../_images/arduino-ide.png" />
+</section>
+<section id="using-the-kit">
+<h2>Using the kit<a class="headerlink" href="#using-the-kit" title="Link to this heading">#</a></h2>
+<section id="step-1-soldering-connector-header-pins">
+<h3>Step 1: Soldering connector &amp; header pins<a class="headerlink" href="#step-1-soldering-connector-header-pins" title="Link to this heading">#</a></h3>
+<p>Solder the header pins and JST Ph 2.0mm connector on the Muscle BioAmp Blip as shown below. If you ordered assembled kit then you can skip this step and directly move to step 2.</p>
+<img alt="../../../_images/soldering-blip.png" src="../../../_images/soldering-blip.png" />
+</section>
+<section id="step-2-connections-with-the-sensor">
+<h3>Step 2: Connections with the sensor<a class="headerlink" href="#step-2-connections-with-the-sensor" title="Link to this heading">#</a></h3>
+<p>There can be various ways of connecting the Muscle BioAmp Blip. Some of the options are given below:</p>
+<section id="directly-connecting-jumper-cables">
+<h4>Directly connecting jumper cables<a class="headerlink" href="#directly-connecting-jumper-cables" title="Link to this heading">#</a></h4>
+<p>You can directly connect the male to female jumper cables on the header pins of Muscle BioAmp Blip at <code class="docutils literal notranslate"><span class="pre">5V</span></code>, <code class="docutils literal notranslate"><span class="pre">GND</span></code>, <code class="docutils literal notranslate"><span class="pre">AN</span></code>.</p>
+<img alt="../../../_images/blip-with-jumper-cables.png" src="../../../_images/blip-with-jumper-cables.png" />
+</section>
+<section id="connecting-on-breadboard">
+<h4>Connecting on breadboard<a class="headerlink" href="#connecting-on-breadboard" title="Link to this heading">#</a></h4>
+<p>If you are thinking to connect more components/sensors and want to integrate Muscle BioAmp Blip in the complete circuit then it will be better to use a breadboard. Snap the Muscle BioAmp Blip on the breadboard and connect the jumper cables (male to male) at <code class="docutils literal notranslate"><span class="pre">5V</span></code>, <code class="docutils literal notranslate"><span class="pre">GND</span></code>, <code class="docutils literal notranslate"><span class="pre">AN</span></code>.</p>
+<img alt="../../../_images/blip-with-breadboard.png" src="../../../_images/blip-with-breadboard.png" />
+</section>
+<section id="connecting-via-mikrobus-port">
+<h4>Connecting via mikroBUS port<a class="headerlink" href="#connecting-via-mikrobus-port" title="Link to this heading">#</a></h4>
+<p>You can also connect the Muscle BioAmp Blip to any hardware that has mikroBUS™ port like mikroBUS™ shuttle, mikroBUS™ Arduino UNO Click Shield to name a few.</p>
+<img alt="../../../_images/blip-with-shuttle.png" src="../../../_images/blip-with-shuttle.png" />
+</section>
+</section>
+<section id="step-3-connecting-with-arduino-uno-r3">
+<h3>Step 3: Connecting with Arduino UNO R3<a class="headerlink" href="#step-3-connecting-with-arduino-uno-r3" title="Link to this heading">#</a></h3>
+<p>Connect <code class="docutils literal notranslate"><span class="pre">5V</span></code> of the sensor to <code class="docutils literal notranslate"><span class="pre">5V</span></code> of your Arduino UNO, <code class="docutils literal notranslate"><span class="pre">GND</span></code> to <code class="docutils literal notranslate"><span class="pre">GND</span></code>, and <code class="docutils literal notranslate"><span class="pre">AN</span></code> to <code class="docutils literal notranslate"><span class="pre">Analog</span> <span class="pre">pin</span> <span class="pre">A0</span></code> via other end of the jumper cables. If you are connecting <code class="docutils literal notranslate"><span class="pre">AN</span></code> to any other analog pin, then you will have to change the <cite>INPUT PIN</cite> in the example arduino sketch accordingly.</p>
+<img alt="../../../_images/blip-arduino-connections.png" src="../../../_images/blip-arduino-connections.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For demonstration purposes we are showing connections of the sensor with Arduino UNO R3 but you can use any other development board or a standalone ADC of your choice.</p>
+</div>
+</section>
+<section id="step-4-connecting-electrode-cable">
+<h3>Step 4: Connecting electrode cable<a class="headerlink" href="#step-4-connecting-electrode-cable" title="Link to this heading">#</a></h3>
+<p>Connect the BioAmp cable to Muscle BioAmp Blip by inserting the cable end in the JST PH connector as shown.</p>
+<img alt="../../../_images/blip-bioamp-cable.png" src="../../../_images/blip-bioamp-cable.png" />
+</section>
+<section id="step-5-skin-preparation">
+<h3>Step 5: Skin Preparation<a class="headerlink" href="#step-5-skin-preparation" title="Link to this heading">#</a></h3>
+<p>Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with an alcohol wipe or a wet wipe.</p>
+<p>For more information, please check out detailed step by step <a class="reference internal" href="../../../guides/usage-guides/skin-preparation/index.html#skin-preparation"><span class="std std-ref">Skin Preparation Guide</span></a>.</p>
+</section>
+<section id="step-6-electrodes-placement">
+<h3>Step 6: Electrodes placement<a class="headerlink" href="#step-6-electrodes-placement" title="Link to this heading">#</a></h3>
+<p>We have 2 options to measure the EMG signals, either using the gel electrodes or using dry electrode based Muscle BioAmp Band. You can try both of them one by one.</p>
+<section id="using-gel-electrodes">
+<h4>Using gel electrodes<a class="headerlink" href="#using-gel-electrodes" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Connect the BioAmp cable to gel electrodes,</p></li>
+<li><p>Peel the plastic backing from electrodes</p></li>
+<li><p>Place the IN+ and IN- cables on the arm near the ulnar nerve &amp; REF (reference) at the back of your hand as shown in the connection diagram.</p></li>
+</ol>
+<figure class="align-default" id="id7">
+<img alt="../../../_images/emg-connections-1.png" src="../../../_images/emg-connections-1.png" />
+<figcaption>
+<p><span class="caption-text">Muscle BioAmp Blip with breadboard</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id8">
+<img alt="../../../_images/emg-connections-2.png" src="../../../_images/emg-connections-2.png" />
+<figcaption>
+<p><span class="caption-text">Muscle BioAmp Blip directly connected via jumper cables</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
 </section>
-<section id="some-project-ideas">
-<h2>Some project ideas<a class="headerlink" href="#some-project-ideas" title="Link to this heading">#</a></h2>
+<section id="using-muscle-bioamp-band">
+<h4>Using Muscle BioAmp Band<a class="headerlink" href="#using-muscle-bioamp-band" title="Link to this heading">#</a></h4>
+<ol class="arabic">
+<li><p>Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve &amp; REF (reference) on the far side of the band.</p></li>
+<li><p>Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.</p>
+<p><strong>Tutorial on how to use the band:</strong></p>
+</li>
+</ol>
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/xYZdw0aesa0" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.</p>
+</div>
+</section>
+</section>
+<section id="step-7-uploading-the-code">
+<h3>Step 7: Uploading the code<a class="headerlink" href="#step-7-uploading-the-code" title="Link to this heading">#</a></h3>
+<p>Connect your Arduino UNO R3 to your laptop using the USB cable (Type A to Type B). Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
+<p>EMG Filter: <a class="github reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino">upsidedownlabs/Muscle-BioAmp-Arduino-Firmware</a></p>
+<p>EMG Envelope: <a class="github reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino">upsidedownlabs/Muscle-BioAmp-Arduino-Firmware</a></p>
+<p>Go to <code class="docutils literal notranslate"><span class="pre">tools</span></code> from the menu bar, select <code class="docutils literal notranslate"><span class="pre">board</span></code> option then select Arduino UNO. In the same menu,
+select the COM port on which your Arduino Uno is connected. To find out the right COM port,
+disconnect your board and reopen the menu. The entry that disappears should be the
+right COM port. Now upload the code, &amp; open the serial plotter from the <code class="docutils literal notranslate"><span class="pre">tools</span></code> menu to visualize
+the EMG signals.</p>
+<p>After opening the serial plotter make sure to select the baud rate to 115200.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.</p>
+</div>
+</section>
+<section id="step-8-visualizing-the-emg-signals">
+<h3>Step 8: Visualizing the EMG signals<a class="headerlink" href="#step-8-visualizing-the-emg-signals" title="Link to this heading">#</a></h3>
+<p>Now flex your arm to visualize the muscle signals in real time on your laptop.</p>
+<img alt="../../../_images/emg-recording.png" src="../../../_images/emg-recording.png" />
+<p class="rubric">Footnotes</p>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id4" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
+<p>Please not that click board is a registered trademark of MIKROE thus you might see a white mark on the Muscle BioAmp Blip v0.1 pcbs (since the sensor was named as Muscle BioAmp Click earlier).</p>
+</aside>
+<aside class="footnote brackets" id="id5" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p>mikroBUS™ is a socket standard developed by MIKROE which enables hundreds of Click boards™ to be connected to the microcontroller or microprocessor.</p>
+</aside>
+</aside>
+</section>
 </section>
 </section>
 
@@ -787,8 +905,28 @@ Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name jus
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features-specifications">Features &amp; Specifications</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hardware">Hardware</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-with-arduino">Connecting with Arduino</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-project-ideas">Some project ideas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents-of-the-kit">Contents of the kit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-requirements">Software requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-kit">Using the kit</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-soldering-connector-header-pins">Step 1: Soldering connector &amp; header pins</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-connections-with-the-sensor">Step 2: Connections with the sensor</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#directly-connecting-jumper-cables">Directly connecting jumper cables</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-on-breadboard">Connecting on breadboard</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-via-mikrobus-port">Connecting via mikroBUS port</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-connecting-with-arduino-uno-r3">Step 3: Connecting with Arduino UNO R3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-connecting-electrode-cable">Step 4: Connecting electrode cable</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-skin-preparation">Step 5: Skin Preparation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-electrodes-placement">Step 6: Electrodes placement</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-gel-electrodes">Using gel electrodes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-muscle-bioamp-band">Using Muscle BioAmp Band</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-uploading-the-code">Step 7: Uploading the code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-visualizing-the-emg-signals">Step 8: Visualizing the EMG signals</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
@@ -876,7 +1014,7 @@ Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name jus
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Apr 25, 2024.
+  Last updated on Apr 29, 2024.
   <br/>
 </p></div>
       

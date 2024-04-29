@@ -53,7 +53,7 @@
     <link rel="prev" title="Kits" href="../../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Apr 25, 2024"/>
+    <meta name="docbuild:last-update" content="Apr 29, 2024"/>
   </head>
   
   
@@ -651,7 +651,7 @@ developing practical applications in the fields of human-computer interaction, a
 <p>From development board (Maker UNO), BioAmp EXG Pill, BioAmp cable v3, jumper cables, gel electrodes,
 dry electrode-based BioAmp bands to skin preparation kit, this includes everything that you need to get started with your awesome HCI/BCI project.</p>
 <figure class="align-center">
-<img alt="../../../_images/kit-contents3.png" src="../../../_images/kit-contents3.png" />
+<img alt="../../../_images/kit-contents4.png" src="../../../_images/kit-contents4.png" />
 </figure>
 <p><strong>Unboxing the kit:</strong></p>
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
@@ -664,7 +664,7 @@ dry electrode-based BioAmp bands to skin preparation kit, this includes everythi
 </ul>
 <img alt="../../../_images/arduino-ide.png" src="../../../_images/arduino-ide.png" />
 <ul class="simple">
-<li><p>Download Backyard Brains’ Spike Recorder according to the operating system you are using (Windows, OSX, Linux) from this <a class="reference external" href="https://backyardbrains.com/products/spikerecorder">link</a>.</p></li>
+<li><p>Download Backyard Brains’ <a class="reference external" href="https://backyardbrains.com/products/spikerecorder">Spike Recorder</a> according to the operating system you are using (Windows, OSX, Linux).</p></li>
 </ul>
 <img alt="../../../_images/byb.png" src="../../../_images/byb.png" />
 </section>
@@ -685,7 +685,7 @@ by making a solder joint as shown in the image above.</p>
 <section id="step-2-connect-maker-uno">
 <h3>Step 2: Connect Maker UNO<a class="headerlink" href="#step-2-connect-maker-uno" title="Link to this heading">#</a></h3>
 <img alt="../../../_images/connection-with-maker-uno.png" src="../../../_images/connection-with-maker-uno.png" />
-<p>Connect VCC to 5V, GND to GND, and OUT to Analog pin A0 of your Maker UNO via jumper cables provided by us. If you are connecting OUT to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.</p>
+<p>Connect <code class="docutils literal notranslate"><span class="pre">VCC</span></code> to <code class="docutils literal notranslate"><span class="pre">5V</span></code>, <code class="docutils literal notranslate"><span class="pre">GND</span></code> to <code class="docutils literal notranslate"><span class="pre">GND</span></code>, and <code class="docutils literal notranslate"><span class="pre">OUT</span></code> to <code class="docutils literal notranslate"><span class="pre">Analog</span> <span class="pre">pin</span> <span class="pre">A0</span></code> of your Maker UNO via jumper cables provided by us. If you are connecting OUT to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Take precautions while connecting to power, if power pins (GND &amp; VCC) are to be swapped, your BioAmp EXG Pill will be fried and it’ll become unusable (DIE).</p>
@@ -698,9 +698,13 @@ by making a solder joint as shown in the image above.</p>
 </section>
 <section id="step-4-skin-preparation">
 <h3>Step 4: Skin Preparation<a class="headerlink" href="#step-4-skin-preparation" title="Link to this heading">#</a></h3>
+<p>Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with an alcohol wipe or a wet wipe.</p>
+<p>For more information, please check out detailed step by step <a class="reference internal" href="../../../guides/usage-guides/skin-preparation/index.html#skin-preparation"><span class="std std-ref">Skin Preparation Guide</span></a>.</p>
 </section>
 <section id="step-5-measuring-emg-electromyography">
 <h3>Step 5: Measuring EMG (ElectroMyoGraphy)<a class="headerlink" href="#step-5-measuring-emg-electromyography" title="Link to this heading">#</a></h3>
+<section id="electrodes-placement">
+<h4>Electrodes placement<a class="headerlink" href="#electrodes-placement" title="Link to this heading">#</a></h4>
 <p>We have 2 options to measure the EMG signals, either using the gel electrodes or using dry electrode based Muscle BioAmp Band. You can try both of them one by one.</p>
 <ul class="simple">
 <li><p><strong>Using gel electrodes:</strong></p></li>
@@ -710,7 +714,7 @@ by making a solder joint as shown in the image above.</p>
 <li><p>Peel the plastic backing from electrodes</p></li>
 <li><p>Place the IN+ and IN- cables on the arm near the ulnar nerve &amp; REF (reference) at the back of your hand as shown in the connection diagram.</p></li>
 </ol>
-<img alt="../../../_images/emg.png" src="../../../_images/emg.png" />
+<img alt="../../../_images/emg1.png" src="../../../_images/emg1.png" />
 <ul class="simple">
 <li><p><strong>Using Muscle BioAmp Band:</strong></p></li>
 </ul>
@@ -726,26 +730,33 @@ by making a solder joint as shown in the image above.</p>
 <p class="admonition-title">Note</p>
 <p>In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.</p>
 </div>
-<p><strong>Uploading the code:</strong></p>
+</section>
+<section id="uploading-the-code">
+<h4>Uploading the code<a class="headerlink" href="#uploading-the-code" title="Link to this heading">#</a></h4>
 <p>Connect the Maker Uno to your laptop using the USB cable (Type A to Type B). Copy paste any one of the Arduino Sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
 <p>EMG Filter: <a class="github reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino">upsidedownlabs/Muscle-BioAmp-Arduino-Firmware</a></p>
 <p>EMG Envelope: <a class="github reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino">upsidedownlabs/Muscle-BioAmp-Arduino-Firmware</a></p>
-<p>Go to tools from the menu bar, select “board” option then select Arduino UNO. In the same menu,
+<p>Go to <code class="docutils literal notranslate"><span class="pre">tools</span></code> from the menu bar, select <code class="docutils literal notranslate"><span class="pre">board</span></code> option then select Arduino UNO. In the same menu,
 select the COM port on which your Maker Uno is connected. To find out the right COM port,
 disconnect your Maker UNO board and reopen the menu. The entry that disappears should be the
-right COM port. Now upload the code, &amp; open the serial plotter from the tools menu to visualize
+right COM port. Now upload the code, &amp; open the serial plotter from the <code class="docutils literal notranslate"><span class="pre">tools</span></code> menu to visualize
 the EMG signals.</p>
 <p>After opening the serial plotter make sure to select the baud rate to 115200.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.</p>
 </div>
-<p><strong>Visualizing the EMG signals</strong></p>
+</section>
+<section id="visualizing-the-emg-signals">
+<h4>Visualizing the EMG signals<a class="headerlink" href="#visualizing-the-emg-signals" title="Link to this heading">#</a></h4>
 <p>Now flex your arm to visualize the muscle signals in real time on your laptop.</p>
 <img alt="../../../_images/EMGEnvelop1.jpg" src="../../../_images/EMGEnvelop1.jpg" />
 </section>
+</section>
 <section id="step-6-measuring-ecg-electrocardiography">
 <h3>Step 6: Measuring ECG (ElectroCardioGraphy)<a class="headerlink" href="#step-6-measuring-ecg-electrocardiography" title="Link to this heading">#</a></h3>
+<section id="id2">
+<h4>Electrodes placement<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
 <p>We have 2 options to measure the ECG signals, either using the gel electrodes or using dry electrode based Heart BioAmp Band. You can try both of them one by one.</p>
 <ul class="simple">
 <li><p><strong>Using gel electrodes:</strong></p></li>
@@ -755,7 +766,7 @@ the EMG signals.</p>
 <li><p>Peel the plastic backing from electrodes</p></li>
 <li><p>Place the IN- cable on the left side, IN+ in the middle and REF (reference) on the far right side as shown in the diagram.</p></li>
 </ol>
-<img alt="../../../_images/ecg.png" src="../../../_images/ecg.png" />
+<img alt="../../../_images/ecg1.png" src="../../../_images/ecg1.png" />
 <ul class="simple">
 <li><p><strong>Using Heart BioAmp Band:</strong></p></li>
 </ul>
@@ -767,29 +778,36 @@ the EMG signals.</p>
 <p><strong>Tutorial on how to use the band:</strong></p>
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/fr5iORsVyUM" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
-</iframe></div><p><strong>Uploading the code:</strong></p>
+</iframe></div></section>
+<section id="id3">
+<h4>Uploading the code<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
 <p>Connect the Maker Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
 <p>ECG Filter: <a class="github reference external" href="https://github.com/upsidedownlabs/Heart-BioAmp-Arduino-Firmware/blob/main/2_ECGFilter/2_ECGFilter.ino">upsidedownlabs/Heart-BioAmp-Arduino-Firmware</a></p>
-<p>Go to tools from the menu bar, select “board” option then select Arduino UNO. In the same menu,
+<p>Go to <code class="docutils literal notranslate"><span class="pre">tools</span></code> from the menu bar, select <code class="docutils literal notranslate"><span class="pre">board</span></code> option then select Arduino UNO. In the same menu,
 select the COM port on which your Maker Uno is connected. To find out the right COM port,
 disconnect your Maker UNO board and reopen the menu. The entry that disappears should be the
-right COM port. Now upload the code, &amp; open the serial plotter from the tools menu to visualize
-the signals.</p>
+right COM port. Now upload the code, &amp; open the serial plotter from the <code class="docutils literal notranslate"><span class="pre">tools</span></code> menu to visualize
+the EMG signals.</p>
 <p>After opening the serial plotter make sure to select the baud rate to 115200.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.</p>
 </div>
-<p><strong>Visualizing the ECG signals</strong></p>
+</section>
+<section id="visualizing-the-ecg-signals">
+<h4>Visualizing the ECG signals<a class="headerlink" href="#visualizing-the-ecg-signals" title="Link to this heading">#</a></h4>
 <img alt="../../../_images/bioamp-Exg-Pill-ECG1.jpg" src="../../../_images/bioamp-Exg-Pill-ECG1.jpg" />
+</section>
 </section>
 <section id="step-7-measuring-eog-electrooculography">
 <h3>Step 7: Measuring EOG (ElectroOculoGraphy)<a class="headerlink" href="#step-7-measuring-eog-electrooculography" title="Link to this heading">#</a></h3>
+<section id="id4">
+<h4>Electrodes placement<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
 <p>We have 2 ways to measure the EOG signals, either record the horizontal eye movement or the vertical eye movement. You can one by one record both the signals.</p>
 <ul class="simple">
 <li><p><strong>Horizontal EOG recording:</strong></p></li>
 </ul>
-<img alt="../../../_images/eog-horizontal.png" src="../../../_images/eog-horizontal.png" />
+<img alt="../../../_images/eog-horizontal1.png" src="../../../_images/eog-horizontal1.png" />
 <ol class="arabic simple">
 <li><p>Connect the BioAmp cable to gel electrodes.</p></li>
 <li><p>Peel the plastic backing from electrodes.</p></li>
@@ -798,38 +816,45 @@ the signals.</p>
 <ul class="simple">
 <li><p><strong>Vertical EOG recording:</strong></p></li>
 </ul>
-<img alt="../../../_images/eog-vertical.png" src="../../../_images/eog-vertical.png" />
+<img alt="../../../_images/eog-vertical1.png" src="../../../_images/eog-vertical1.png" />
 <ol class="arabic simple">
 <li><p>Connect the BioAmp cable to gel electrodes.</p></li>
 <li><p>Peel the plastic backing from electrodes.</p></li>
 <li><p>Place the IN- &amp; IN+ cables above and below the eye respectively and REF (reference) at the bony part, on the back side of your earlobe as shown in the diagram above.</p></li>
 </ol>
-<p><strong>Uploading the code</strong></p>
+</section>
+<section id="id5">
+<h4>Uploading the code<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
 <p>Connect the Maker Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
 <p>EOG Filter: <a class="github reference external" href="https://github.com/upsidedownlabs/Eye-BioAmp-Arduino-Firmware/blob/main/2_EOGFilter/2_EOGFilter.ino">upsidedownlabs/Eye-BioAmp-Arduino-Firmware</a></p>
-<p>Go to tools from the menu bar, select “board” option then select Arduino UNO. In the same menu,
+<p>Go to <code class="docutils literal notranslate"><span class="pre">tools</span></code> from the menu bar, select <code class="docutils literal notranslate"><span class="pre">board</span></code> option then select Arduino UNO. In the same menu,
 select the COM port on which your Maker Uno is connected. To find out the right COM port,
 disconnect your Maker UNO board and reopen the menu. The entry that disappears should be the
-right COM port. Now upload the code, &amp; open the serial plotter from the tools menu to visualize
-the signals.</p>
+right COM port. Now upload the code, &amp; open the serial plotter from the <code class="docutils literal notranslate"><span class="pre">tools</span></code> menu to visualize
+the EMG signals.</p>
 <p>After opening the serial plotter make sure to select the baud rate to 115200.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.</p>
 </div>
-<p><strong>Visualizing the EOG signals</strong></p>
+</section>
+<section id="visualizing-the-eog-signals">
+<h4>Visualizing the EOG signals<a class="headerlink" href="#visualizing-the-eog-signals" title="Link to this heading">#</a></h4>
 <img alt="../../../_images/bioamp-exg-pill-eog1.jpg" src="../../../_images/bioamp-exg-pill-eog1.jpg" />
+</section>
 </section>
 <section id="step-8-measuring-eeg-electroencephalography">
 <h3>Step 8: Measuring EEG (ElectroEncephaloGraphy)<a class="headerlink" href="#step-8-measuring-eeg-electroencephalography" title="Link to this heading">#</a></h3>
 <p>Let’s understand the electrode placements before moving forward in this project. For recording EEG from
 different parts of the brain, you have to place the electrodes according to the <a class="reference external" href="https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)">International 10-20 system for recording EEG</a>.</p>
 <a class="reference internal image-reference" href="../../../_images/10-20-system.png"><img alt="../../../_images/10-20-system.png" src="../../../_images/10-20-system.png" style="width: 80%;" /></a>
+<section id="id6">
+<h4>Electrodes placement<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
 <p>We have 2 options to measure the EEG signals, either using the gel electrodes or using dry electrode based Brain BioAmp Band. You can try both of them one by one.</p>
 <ul class="simple">
 <li><p><strong>Using gel electrodes to record from prefrontal cortex part of brain:</strong></p></li>
 </ul>
-<img alt="../../../_images/eeg.png" src="../../../_images/eeg.png" />
+<img alt="../../../_images/eeg1.png" src="../../../_images/eeg1.png" />
 <ol class="arabic simple">
 <li><p>Connect the BioAmp cable to gel electrodes.</p></li>
 <li><p>Peel the plastic backing from electrodes.</p></li>
@@ -850,10 +875,12 @@ different parts of the brain, you have to place the electrodes according to the 
 <p><strong>Tutorial on how to use the band:</strong></p>
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/O6qp7teT-sM" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
-</iframe></div><p><strong>Uploading the code</strong></p>
+</iframe></div></section>
+<section id="id7">
+<h4>Uploading the code<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
 <p>Connect the Maker Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
 <p><a class="reference external" href="https://raw.githubusercontent.com/BackyardBrains/SpikerShield/master/Muscle/Arduino%20Code/SpikeRecorder/SpikeRecorderSpikerShield_V1_1.ino">Spike recorder arduino code</a></p>
-<p>Go to tools from the menu bar, select “board” option then select Arduino UNO. In the same menu,
+<p>Go to <code class="docutils literal notranslate"><span class="pre">tools</span></code> from the menu bar, select <code class="docutils literal notranslate"><span class="pre">board</span></code> option then select Arduino UNO. In the same menu,
 select the COM port on which your Maker Uno is connected. To find out the right COM port,
 disconnect your Maker UNO board and reopen the menu. The entry that disappears should be the
 right COM port. Now upload the code.</p>
@@ -861,9 +888,11 @@ right COM port. Now upload the code.</p>
 <p class="admonition-title">Warning</p>
 <p>Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.</p>
 </div>
-<p><strong>Visualizing the EEG signals</strong></p>
-<p>Open the Spike Recorder software. When the Spike Recorder starts, it will start recording from your microphone. To change that, go to the settings by clicking
-the first icon on the top left corner of the screen, select the COM port on which the Maker UNO is connected and click on connect.</p>
+</section>
+<section id="visualizing-the-eeg-signals">
+<h4>Visualizing the EEG signals<a class="headerlink" href="#visualizing-the-eeg-signals" title="Link to this heading">#</a></h4>
+<p>Open up your BackyardBrains Spike Recorder software. At first, it will monitor signals from your microphone. To change that, go to the settings by clicking
+the <span class="fas fa-gear"></span> icon on the top left corner of the screen, select the COM port on which the Maker UNO is connected and click on connect.</p>
 <figure class="align-default">
 <img alt="../../../_images/spike-recorder-configurations.jpg" src="../../../_images/spike-recorder-configurations.jpg" />
 </figure>
@@ -875,7 +904,7 @@ these frequencies.</p>
 <img alt="../../../_images/bioamp-exg-pill-eeg.png" src="../../../_images/bioamp-exg-pill-eeg.png" />
 </figure>
 <p>The signals that you can see on the screen right now are originating from prefrontal cortex part of your brain and propagating through all the layers to the surface of your skin.</p>
-<p>To record these EEG signals, you have placed the electrodes on the forehead (Fp1 &amp; Fp2), then BioAmp EXG Pill is amplifying those signals so that we can detect it and finally sending it to the ADC (Analog to Digital Convertor) of your Arduino Uno. Ultimately the signals are being visualized in Spike Recorder software.</p>
+<p>To record these EEG signals, you have placed the electrodes on the forehead (Fp1 &amp; Fp2), then BioAmp EXG Pill is amplifying those signals so that we can detect it and finally sending it to the ADC (Analog to Digital Convertor) of your Maker Uno. Ultimately the signals are being visualized in Spike Recorder software.</p>
 <p>We hope everything is clear now and you understand how the signals are propagating from your brain to the screen of the laptop.</p>
 <p><strong>Features of Spike Recorder that you can explore:</strong></p>
 <ul class="simple">
@@ -885,6 +914,7 @@ these frequencies.</p>
 <li><p>Record the data in .wav format by clicking the record icon on the top right corner. You can convert this data in any other format according to your project requirements.</p></li>
 <li><p>Listen to the signals by clicking the volume icon on the top right corner. No don’t smile right now, that’s how your brain sounds like :P</p></li>
 </ul>
+</section>
 </section>
 </section>
 <section id="some-project-ideas">
@@ -1008,10 +1038,30 @@ Brain Computer Interface (BCI) projects and share them with us at <a class="refe
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-connect-maker-uno">Step 2: Connect Maker UNO</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-connecting-electrode-cable">Step 3: Connecting electrode cable</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-skin-preparation">Step 4: Skin Preparation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-measuring-emg-electromyography">Step 5: Measuring EMG (ElectroMyoGraphy)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-measuring-ecg-electrocardiography">Step 6: Measuring ECG (ElectroCardioGraphy)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-measuring-eog-electrooculography">Step 7: Measuring EOG (ElectroOculoGraphy)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-measuring-eeg-electroencephalography">Step 8: Measuring EEG (ElectroEncephaloGraphy)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-measuring-emg-electromyography">Step 5: Measuring EMG (ElectroMyoGraphy)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#electrodes-placement">Electrodes placement</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#uploading-the-code">Uploading the code</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-the-emg-signals">Visualizing the EMG signals</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-measuring-ecg-electrocardiography">Step 6: Measuring ECG (ElectroCardioGraphy)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Electrodes placement</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Uploading the code</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-the-ecg-signals">Visualizing the ECG signals</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-measuring-eog-electrooculography">Step 7: Measuring EOG (ElectroOculoGraphy)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Electrodes placement</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Uploading the code</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-the-eog-signals">Visualizing the EOG signals</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-measuring-eeg-electroencephalography">Step 8: Measuring EEG (ElectroEncephaloGraphy)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Electrodes placement</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Uploading the code</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-the-eeg-signals">Visualizing the EEG signals</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-project-ideas">Some Project Ideas</a></li>
@@ -1081,7 +1131,7 @@ Brain Computer Interface (BCI) projects and share them with us at <a class="refe
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Apr 25, 2024.
+  Last updated on Apr 29, 2024.
   <br/>
 </p></div>
       
