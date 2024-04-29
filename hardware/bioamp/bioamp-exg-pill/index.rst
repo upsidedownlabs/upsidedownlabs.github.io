@@ -105,7 +105,21 @@ BioAmp EXG Pill is by default configured for recording EEG or EOG but if you wan
 Step 3: Connect MCU/ADC
 =========================
 
-Connect ``VCC`` to ``5V``, ``GND`` to ``GND``, and ``OUT`` to ``Analog pin A0`` of your favorite MCU/ADC board (we'll be using Arduino UNO R3) via jumper cables provided by us. If you are connecting ``OUT`` to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.
+Connect your BioAmp EXG Pill to your MCU/ADC as per the connection table shown below:
+
+.. table:: BioAmp to MCU/ADC connection
+
+    +--------+-----------+
+    | BioAmp | MCU/ADC   |
+    +========+===========+
+    | VCC    | 5V        |
+    +--------+-----------+
+    | GND    | GND       |
+    +--------+-----------+
+    | OUT    | ADC Input |
+    +--------+-----------+
+
+For all the examples provided, we are using the A0 pin of Arduino UNO R3. Connect your BioAmp to your MCU/ADC via jumper cables provided in the kit. If you are connecting ``OUT`` pin of BioAmp to any other analog pin (A0-A5) of Arduino UNO board, then you will have to change the INPUT PIN in the Arduino sketch accordingly.
 
 .. figure:: media/connections-with-arduino.*
     :align: center
