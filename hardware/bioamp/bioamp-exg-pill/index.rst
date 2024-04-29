@@ -74,7 +74,7 @@ Software requirements
     
 .. image:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.*
 
-- Download Backyard Brains' Spike Recorder according to the operating system you are using (Windows, OSX, Linux) from this `link <https://backyardbrains.com/products/spikerecorder>`_.
+- Download Backyard Brains' `Spike Recorder https://backyardbrains.com/products/spikerecorder`_ according to the operating system you are using (Windows, OSX, Linux).
 
 .. image:: ../../../kits/diy-neuroscience/basic/media/byb.*
 
@@ -89,6 +89,9 @@ Step 1: Solder Connectors
 Insert the provided BioAmp cable's JST PH connector and header pins from top as shown in the image and solder them from below.
 
 .. figure:: media/assembly-step1.*
+    :align: center
+
+.. figure:: media/bioamp-exg-pill-soldered.*
     :align: center
 
 Step 2 (optional): Configure for ECG/EMG
@@ -114,7 +117,7 @@ Connect ``VCC`` to ``5V``, ``GND`` to ``GND``, and ``OUT`` to ``Analog pin A0`` 
 Step 4: Connecting electrode cable
 ====================================
 
-Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JST PH connector as shown.
+Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JST PH connector as shown in the graphic below.
 
 .. image:: media/connection-with-cable.*
 
