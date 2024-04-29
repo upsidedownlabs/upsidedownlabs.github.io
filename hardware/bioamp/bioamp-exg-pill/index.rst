@@ -11,6 +11,8 @@ with any microcontroller unit (MCU) or single-board computer (SBC) with an analo
 Arduino UNO & Nano, Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, and Raspberry Pi Pico, to name 
 just a few. It also works with any dedicated ADC, like the Texas Instruments ADS1115 and ADS131M0x, among others.
 
+.. note:: It is recommended to use Arduino UNO R4 while recording biopotential signals since it has 14-bit ADC and can record the signals much accurately.
+
 .. image:: ../../../media/bioamp-exg-pill.*
     :align: center
 
