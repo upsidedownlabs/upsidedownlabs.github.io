@@ -3,6 +3,8 @@
 Muscle BioAmp Patchy
 #####################
 
+:bdg-danger:`v0.2`
+
 Overview
 **********
 
