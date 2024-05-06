@@ -47,35 +47,31 @@ Hardware
 
 Images below shows a quick overview of the hardware design.
 
-.. grid:: 1 1 2 2
-    :margin: 4 4 0 0 
-    :gutter: 2
 
-    .. grid-item::
-        
-        .. card::
+.. figure:: media/PCB-Front.*
+    :align: center
+    :width: 60%
 
-            **PCB Front**
-            ^^^^^
-            .. figure:: media/PCB-Front.*
+    PCB Front
 
-    .. grid-item::
-        .. card::
+.. figure:: media/PCB-Back.*
+    :align: center
+    :width: 60%
 
-            **PCB Back**
-            ^^^^^
-            .. figure:: media/PCB-Back.*
+    PCB Back
 
 .. figure:: media/Muscle-BioAmp-Patchy-Assembled-Front.*
     :align: center
+    :width: 60%
 
-.. figure:: media/Muscle-BioAmp-Patchy-Assembled-Back.*
-    :align: center
+    Assembled PCB
 
 Contents of the kit
 ********************
 
 .. image:: media/kit-contents.*
+
+We have made a complete unboxing video of the kit. Please find the link below: 
 
 .. youtube:: qRKU_HvapDE
     :align: center
@@ -104,6 +100,8 @@ Step 2: Connecting sensor to gel electrodes
 Snap the Muscle BioAmp Patchy on the gel electrodes (Don't peel the plastic backing from the electrodes at this moment).
 
 .. image:: media/patchy-electrode-connection.*
+    :width: 80%
+    :align: center
 
 Step 3: Skin Preparation
 =============================
