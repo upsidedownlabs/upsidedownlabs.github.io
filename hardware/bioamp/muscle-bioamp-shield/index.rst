@@ -524,7 +524,7 @@ Using I2C ports
 
 There are 2 I2C ports available on Muscle BioAmp Shield and you can connect hundreds of devices having I2C compatibility using the 4-pin JST PH 2.0 mm STEMMA cables provided.
 
-Some of the examples are: ``OLED screens``, ``character displays``, ``temperature sensors``, ``accelerometers``, ``gyroscopes``, ``light sensors``, ``BioAmp Hardware``.
+Some of the examples are: ``OLED screens``, ``character displays``, ``temperature sensors``, ``accelerometers``, ``gyroscopes``, ``light sensors``, ``BioAmp Hardware``, etc.
 
 Using STEMMA Digital port
 ---------------------------
