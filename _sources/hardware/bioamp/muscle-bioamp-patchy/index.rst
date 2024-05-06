@@ -3,6 +3,8 @@
 Muscle BioAmp Patchy
 #####################
 
+:bdg-danger:`v0.2`
+
 Overview
 **********
 
@@ -40,10 +42,6 @@ Features & Specifications
 | Open Source           | Hardware + Software                                                                                                                                                                |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. youtube:: qRKU_HvapDE
-    :align: center
-    :width: 100%
-
 Hardware
 *********
 
@@ -78,6 +76,10 @@ Contents of the kit
 ********************
 
 .. image:: media/kit-contents.*
+
+.. youtube:: qRKU_HvapDE
+    :align: center
+    :width: 100%
 
 Software requirements
 **********************
