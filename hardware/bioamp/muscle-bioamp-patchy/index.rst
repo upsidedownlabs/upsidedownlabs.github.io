@@ -152,7 +152,7 @@ After opening the serial plotter make sure to select the baud rate to 115200.
 Step 7: Visualizing the EMG signals
 ======================================
 
-Now flex your arm to visualize the muscle signals in real time on your laptop.
+Now flex your arm to visualize the muscle signals in real-time on your laptop.
 
 .. image:: media/patchy-emg.*
 
