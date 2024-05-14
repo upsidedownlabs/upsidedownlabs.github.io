@@ -80,6 +80,9 @@ Step 3: Clean the skin surface
 Use gentle, circular motions to rub the gel on the skin surface. This removes all the dead skin cells & improves conductivity.
 
 .. figure:: media/step-3.*
+    :align: center
+
+    Rub the gel gently using the cotton swab
 
 .. warning:: Do not rub the gel for too long as it has abrasive properties and may cause skin redness and irritation.
 
@@ -89,6 +92,9 @@ Step 4: Wipe off the gel
 Wipe away excess gel with alcohol swabs or wet wipes.
 
 .. figure:: media/step-4.*
+    :align: center
+
+    Wipe away access gel
 
 .. warning:: Close your eyes while using the alcohol swabs for EOG recording else it may cause eye redness & irritation.
 
@@ -104,6 +110,8 @@ Connect the BioAmp cable to gel electrodes, peel the plastic backing from electr
 
 .. figure:: media/step-5a.*
     :align: center
+
+    Placing gel electrodes on skin surface
 
 .. note:: While placing the gel electrodes on the skin, make sure to place the non-sticky tab of the electrode in the direction opposite to your hair growth. This allows you to remove the electrodes easily without pulling off much body hair.
 
