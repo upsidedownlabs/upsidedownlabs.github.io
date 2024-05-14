@@ -44,7 +44,7 @@ with open('conf.yml', 'r') as conf_file:
                 # PDF build details
                 if(pdf and (name in pdf_build or pdf_build_all)):
                     pdf_paths.append(path)
-                    tex_name = '-'.join(path.split('/')[1:])
+                    tex_name = path.split('/')[-1]
                     latex_documents.append((path+"/index", tex_name+".tex", "", author, "manual"))
 
 # -- General configuration ---------------------------------------------------
