@@ -3,6 +3,8 @@
 BioAmp EXG Pill
 ##################
 
+:bdg-danger:`v1.0`
+
 Overview
 *********
 
