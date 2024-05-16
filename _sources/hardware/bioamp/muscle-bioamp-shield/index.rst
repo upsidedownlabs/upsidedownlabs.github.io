@@ -115,7 +115,7 @@ Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE
     
 .. image:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.png
 
-Assemblying the Kit
+Assembling the Kit
 ********************
 
 You can get your own Muscle BioAmp Shield bag of parts from our `online stores <https://linktr.ee/Upside_Down_Labs_stores>`_ (shipping worldwide) 
