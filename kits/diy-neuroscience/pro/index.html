@@ -53,7 +53,7 @@
     <link rel="prev" title="DIY Neuroscience Kit Basic" href="../basic/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="May 16, 2024"/>
+    <meta name="docbuild:last-update" content="May 17, 2024"/>
   </head>
   
   
@@ -646,16 +646,155 @@ applications, and gain valuable insights.</p>
 </figure>
 <section id="contents-of-the-kit">
 <h2>Contents of the kit<a class="headerlink" href="#contents-of-the-kit" title="Link to this heading">#</a></h2>
-<p>From development board (Maker UNO), BioAmp EXG Pill, BioAmp cable, jumper cables, gel electrodes, BioAmp bands to
-skin preparation kit, this includes everything that you need to get started with your awesome HCI/BCI project.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Kit Contents</p></th>
+<th class="head"><p>Qty</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>BioAmp EXG Pill</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>BioAmp Bands</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>BioAmp Cable</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Jumper Cables</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Skin Preparation Kit</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Electrode Gel</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Gel Electrodes</p></td>
+<td><p>24+100</p></td>
+</tr>
+<tr class="row-odd"><td><p>Repositionable gel electrodes (3 pc)</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Arduino UNO</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Servo Claw</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Muscle BioAmp Shield Kit</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
 <figure class="align-center">
 <img alt="../../../_images/kit-content.png" src="../../../_images/kit-content.png" />
 </figure>
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/Sn389Q7Izy4" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
 </iframe></div></section>
+<section id="software-requirements">
+<h2>Software requirements<a class="headerlink" href="#software-requirements" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Before you start using the kit, please download <a class="reference external" href="https://www.arduino.cc/en/software">Arduino IDE v1.8.19 (legacy IDE)</a>. Using this you’ll be able to upload the arduino sketches in your development board and visualise the data on your laptop.</p></li>
+</ul>
+<img alt="../../../_images/arduino-ide.png" src="../../../_images/arduino-ide.png" />
+<ul class="simple">
+<li><p>Download Backyard Brains’ <a class="reference external" href="https://backyardbrains.com/products/spikerecorder">Spike Recorder</a> according to the operating system you are using (Windows, OSX, Linux).</p></li>
+</ul>
+<img alt="../../../_images/byb.png" src="../../../_images/byb.png" />
+</section>
 <section id="using-the-kit">
 <h2>Using the kit<a class="headerlink" href="#using-the-kit" title="Link to this heading">#</a></h2>
+<p>DIY Neuroscience Kit Pro includes 2 biopotential sensors:</p>
+<ol class="arabic simple">
+<li><p>BioAmp EXG Pill (Assembled)</p></li>
+<li><p>Muscle BioAmp Shield v0.3 (Assembled)</p></li>
+</ol>
+<p>You can use these sensors either separately or connect them together to create a 2-channel EXG acquisition system wherein 1 channel can be used to record EMG signals and the 2nd channel allows you to record all the biopotential signals from your body (EMG, ECG, EOG, EEG).</p>
+<section id="step-1-using-bioamp-exg-pill">
+<h3>Step 1: Using BioAmp EXG Pill<a class="headerlink" href="#step-1-using-bioamp-exg-pill" title="Link to this heading">#</a></h3>
+<p>BioAmp EXG Pill is a small, powerful analog-front-end (AFE) biopotential signal-acquisition board that can be paired
+with any microcontroller unit (MCU) or single-board computer (SBC) with an analog-to-digital converter (ADC) such as
+Arduino UNO &amp; Nano, Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, and Raspberry Pi Pico, to name
+just a few. It also works with any dedicated ADC, like the Texas Instruments ADS1115 and ADS131M0x, among others.</p>
+<figure class="align-default">
+<img alt="../../../_images/bioamp-exg-pill.png" src="../../../_images/bioamp-exg-pill.png" />
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Checkout the complete documentation on <a class="reference external" href="https://docs.upsidedownlabs.tech/hardware/bioamp/bioamp-exg-pill/index.html#">BioAmp EXG Pill</a> which includes how to use the sensor, record various biopotential signals from your body (ECG, EMG, EOG, EEG) and make different HCI/BCI projects using it.</p>
+</div>
+</section>
+<section id="step-2-using-muscle-bioamp-shield">
+<h3>Step 2: Using Muscle BioAmp Shield<a class="headerlink" href="#step-2-using-muscle-bioamp-shield" title="Link to this heading">#</a></h3>
+<p>Muscle BioAmp Shield is an all-in-one Arduino Uno ElectroMyography (EMG) shield for learning neuroscience with ease which is inspired from
+BackYard Brains (BYB) <a class="reference external" href="https://backyardbrains.com/products/muscleSpikerShield">Muscle Spiker shield</a> and provides similar features like hobby servo output, user buttons, LED Bar, Audio output, and
+battery input. It is perfect for beginners as they can easily stack it on top of Arduino Uno to record, visualize and listen to their muscle
+signals to make amazing projects in the domain of Human-Computer Interface (HCI).</p>
+<figure class="align-default">
+<img alt="../../../_images/muscle-bioamp-shield.png" src="../../../_images/muscle-bioamp-shield.png" />
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Checkout the complete documentation on <a class="reference external" href="https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-shield/index.html">Muscle BioAmp Shield</a> which includes how to use the sensor, record/visualise/listen muscle signals and make different HCI projects using it.</p>
+</div>
+</section>
+<section id="step-3-using-the-sensors-together">
+<h3>Step 3: Using the sensors together<a class="headerlink" href="#step-3-using-the-sensors-together" title="Link to this heading">#</a></h3>
+<p>We believe that you have already gone through the documentation of BioAmp EXG Pill &amp; Muscle BioAmp Shield using the links provided in step 1 and 2 respectively.</p>
+<p>You have covered the basic steps till now including connections with the development board, skin preparation, electrodes placements, and recording the signals from your body. Let’s move forward to becoming a PRO and creating a 2-channel EXG aquisition system.</p>
+<section id="a-connecting-muscle-bioamp-shield-to-mcu-adc">
+<h4>a. Connecting Muscle BioAmp Shield to MCU/ADC<a class="headerlink" href="#a-connecting-muscle-bioamp-shield-to-mcu-adc" title="Link to this heading">#</a></h4>
+<p>Stack the Muscle BioAmp Shield on top of your Arduino Uno properly.</p>
+<figure class="align-center">
+<img alt="../../../_images/shield-arduino-connection.gif" src="../../../_images/shield-arduino-connection.gif" />
+</figure>
+</section>
+<section id="b-connecting-sensors-together">
+<h4>b. Connecting sensors together<a class="headerlink" href="#b-connecting-sensors-together" title="Link to this heading">#</a></h4>
+<p>Connect the BioAmp EXG Pill to the A2 port of Muscle BioAmp Shield via 3-pin STEMMA cable which has JST PH 2.0mm connector on one end and 3 female jumpers on the other end.</p>
+</section>
+<section id="c-connecting-electrode-cable">
+<h4>c. Connecting electrode cable<a class="headerlink" href="#c-connecting-electrode-cable" title="Link to this heading">#</a></h4>
+<p>Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JST PH connector as shown in the graphic below.</p>
+<p>Now connect another BioAmp cable to Muscle BioAmp Shield by inserting the cable end in the JST PH connector as shown in the graphic below.</p>
+</section>
+<section id="d-skin-preparation">
+<h4>d. Skin Preparation<a class="headerlink" href="#d-skin-preparation" title="Link to this heading">#</a></h4>
+<p>We’ll create a 2-channel EMG acquisition system and to do so, we’ll be using both the sensors to record EMG signals from the ulnar nerve of both the hands, Thus, prepare the skin accordingly.</p>
+<p>Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with an alcohol wipe or a wet wipe.</p>
+<p>For more information, please check out detailed step by step <a class="reference external" href="https://docs.upsidedownlabs.tech/guides/usage-guides/skin-preparation/index.html">skin preparation guide</a>.</p>
+</section>
+<section id="e-electrodes-placement">
+<h4>e. Electrodes placement<a class="headerlink" href="#e-electrodes-placement" title="Link to this heading">#</a></h4>
+<p>We have 2 options to measure the EMG signals, either using the gel electrodes or using dry electrode based Muscle BioAmp Band. You can try both of them one by one.</p>
+<section id="using-gel-electrodes">
+<h5>Using gel electrodes<a class="headerlink" href="#using-gel-electrodes" title="Link to this heading">#</a></h5>
+<ol class="arabic simple">
+<li><p>Connect the BioAmp cable to gel electrodes,</p></li>
+<li><p>Peel the plastic backing from electrodes</p></li>
+<li><p>Place the IN+ and IN- cables on the arm near the ulnar nerve &amp; REF (reference) at the back of your hand as shown in the connection diagram.</p></li>
+</ol>
+</section>
+<section id="using-muscle-bioamp-band">
+<h5>Using Muscle BioAmp Band<a class="headerlink" href="#using-muscle-bioamp-band" title="Link to this heading">#</a></h5>
+<ol class="arabic">
+<li><p>Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve &amp; REF (reference) on the far side of the band.</p></li>
+<li><p>Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.</p>
+<p><strong>Tutorial on how to use the band:</strong></p>
+</li>
+</ol>
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/xYZdw0aesa0" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.</p>
+</div>
+</section>
+</section>
+</section>
 </section>
 </section>
 
@@ -706,7 +845,24 @@ skin preparation kit, this includes everything that you need to get started with
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents-of-the-kit">Contents of the kit</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-kit">Using the kit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-requirements">Software requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-kit">Using the kit</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-using-bioamp-exg-pill">Step 1: Using BioAmp EXG Pill</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-using-muscle-bioamp-shield">Step 2: Using Muscle BioAmp Shield</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-using-the-sensors-together">Step 3: Using the sensors together</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-connecting-muscle-bioamp-shield-to-mcu-adc">a. Connecting Muscle BioAmp Shield to MCU/ADC</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-connecting-sensors-together">b. Connecting sensors together</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c-connecting-electrode-cable">c. Connecting electrode cable</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-skin-preparation">d. Skin Preparation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#e-electrodes-placement">e. Electrodes placement</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#using-gel-electrodes">Using gel electrodes</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#using-muscle-bioamp-band">Using Muscle BioAmp Band</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
@@ -773,7 +929,7 @@ skin preparation kit, this includes everything that you need to get started with
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on May 16, 2024.
+  Last updated on May 17, 2024.
   <br/>
 </p></div>
       
