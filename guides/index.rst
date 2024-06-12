@@ -9,3 +9,4 @@ Guides
    
    usage-guides/skin-preparation/index
    usage-guides/using-bioamp-bands/index
+   usage-guides/using-gel-electrodes/index
