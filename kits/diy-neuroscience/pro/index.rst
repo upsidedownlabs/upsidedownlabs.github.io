@@ -52,21 +52,27 @@ Contents of the kit
 Software requirements
 **********************
 
-- Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the arduino sketches in your development board and visualise the data on your laptop.
+Download the following according to the operating system you are using (Windows, OSX, Linux):
+
+- `Visual Studio Code <https://code.visualstudio.com/download>`_ 
+  
+- `Python <https://www.python.org/downloads/>`_
+
+- `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_
     
 .. image:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.*
 
-- Download Backyard Brains' `Spike Recorder <https://backyardbrains.com/products/spikerecorder>`_ according to the operating system you are using (Windows, OSX, Linux).
+- Backyard Brains' `Spike Recorder <https://backyardbrains.com/products/spikerecorder>`_ 
 
 .. image:: ../../../kits/diy-neuroscience/basic/media/byb.*
-
+  
 Using the kit
 **************
 
 DIY Neuroscience Kit Pro includes 2 biopotential sensors:
 
-1) BioAmp EXG Pill (Assembled)
-2) Muscle BioAmp Shield v0.3 (Assembled)
+1. BioAmp EXG Pill (Assembled)
+2. Muscle BioAmp Shield v0.3 (Assembled)
 
 You can use these sensors either separately or connect them together to create a 2-channel EXG acquisition system wherein 1 channel can be used to record EMG signals and the 2nd channel allows you to record all the biopotential signals from your body (EMG, ECG, EOG, EEG).
 
@@ -121,14 +127,26 @@ b. Connecting sensors together
 
 Connect the BioAmp EXG Pill to the A2 port of Muscle BioAmp Shield via 3-pin STEMMA cable which has JST PH 2.0mm connector on one end and 3 female jumpers on the other end.
 
-c. Connecting electrode cable
---------------------------------
-
-Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JST PH connector as shown in the graphic below.
++----------------------+-----------------+
+| Muscle BioAmp Shield | BioAmp EXG Pill |
++======================+=================+
+| GND                  | GND             |
++----------------------+-----------------+
+| VCC                  | 5V              |
++----------------------+-----------------+
+| A2                   | OUT             |
++----------------------+-----------------+
 
 .. todo:: add gif
 
-Now connect another BioAmp cable to Muscle BioAmp Shield by inserting the cable end in the JST PH connector as shown in the graphic below.
+c. Connecting electrode cables
+--------------------------------
+
+Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JST PH connector as shown below
+
+.. todo:: add gif
+
+Now connect another BioAmp cable to Muscle BioAmp Shield by inserting the cable end in the JST PH connector as shown below:
 
 .. todo:: add gif
 
@@ -149,17 +167,21 @@ We have 2 options to measure the EMG signals, either using the gel electrodes or
 Using gel electrodes
 ++++++++++++++++++++++
 
-1. Connect the BioAmp cable to gel electrodes,
-2. Peel the plastic backing from electrodes
-3. Place the IN+ and IN- cables on the arm near the ulnar nerve & REF (reference) at the back of your hand as shown in the connection diagram.
+1. Snap the BioAmp Cable connected to BioAmp EXG Pill to gel electrodes.
+2. Peel the plastic backing from electrodes.
+3. Place the IN+ and IN- cables on the left arm near the ulnar nerve & REF (reference) at the back of your left hand as shown below.
+4. Now snap the BioAmp Cable connected to Muscle BioAmp Shield to gel electrodes.
+5. Peel the plastic backing from electrodes.
+6. Place the IN+ and IN- cables on the right arm near the ulnar nerve & REF (reference) at the back of your right hand as shown below.
 
 .. todo:: add graphics of both hands
 
 Using Muscle BioAmp Band
 +++++++++++++++++++++++++
 
-1. Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve & REF (reference) on the far side of the band.
-2. Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.
+1. Snap the BioAmp Cable connected to BioAmp EXG Pill on Muscle BioAmp Band in a way such that IN+ and IN- are placed on the left arm near the ulnar nerve & REF (reference) on the far side of the band.
+2. Snap the BioAmp Cable connected to Muscle BioAmp Shield on Muscle BioAmp Band in a way such that IN+ and IN- are placed on the right arm near the ulnar nerve & REF (reference) on the far side of the band.
+3. Now put a small drop of electrode gel between the skin and metallic parts of BioAmp Cables to get the best results.
 
    **Tutorial on how to use the band:**
 
@@ -169,3 +191,57 @@ Using Muscle BioAmp Band
 
 .. note:: In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.
 
+f. Uploading the code
+----------------------
+
+Connect Arduino Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:
+    
+
+
+Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
+select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
+disconnect your Arduino UNO board and reopen the menu. The entry that disappears should be the 
+right COM port. Now upload the code.
+
+.. warning:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
+
+g. Testing the connections
+------------------------------
+
+Go to ``tools`` from the menu bar, click on ``serial monitor`` to open it or click on the icon on the top right corner. Try flexing both of your arms one-by-one. The output values should be 0 at this point.
+
+Press the SW1 button on Muscle BioAmp Shield to start getting the output values 1 & 2 when you flex your right and left arm respectively.
+
+h. Running python script
+-------------------------
+
+Open Visual Studio code, click on File<Open folder to open the folder you downloaded from the GitHub.
+
+Open the terminal, and ensure that the path is configured to the location of the requirement.txt file.
+
+To install all the modules that are required to run the Python script, write the command ``pip install -r requirements.txt`` in the terminal.
+
+Open ``EMG_Scroll.py`` and change the COM Port in the code (line 14) as per the COM Port you selected in Arduino IDE. Save the file by clicking CTRL + S.
+
+Run the Python script ``EMG_Scroll.py`` by writing the command ``python EMG_Scroll.py`` in the terminal.
+
+i. Scrolling using EMG signals
+---------------------------------
+
+In the terminal, you will see Move Now prompt. When you flex your right arm, you'll see UP in the terminal. Similarly, when you move your left arm, you'll see DOWN in the terminal.
+
+Now, open youtube shorts on your laptop and start scrolling using your muscle signals.
+
+.. note:: What's happening in the background? Whenever an EMG signal is detected, it acts as a trigger to emulate UP or DOWN key on the keyboard.
+
+j. Conclusion
+-----------------
+
+This was just a demonstration to show you how both the sensors (BioAMp EXG Pill & Muscle BioAmp Shield) can be used together to create a 2-channel EXG acquisition system.
+In this project, we used BioMap EXG Pill to record EMG signals, but it can also be used to record other biopotential signals as well like ECG, EOG, or EEG.
+
+Some project ideas
+**********************
+
+
+ 
