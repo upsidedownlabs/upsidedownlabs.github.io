@@ -122,7 +122,18 @@ Stack the Muscle BioAmp Shield on top of your Arduino Uno properly.
     .. figure:: ../../../hardware/bioamp/muscle-bioamp-shield/media/images/shield-arduino-connection.*
         :align: center
 
-b. Connecting sensors together
+b. Configure for ECG/EMG (optional)
+------------------------------------------
+
+BioAmp EXG Pill is by default configured for recording EEG or EOG but if you want to record good quality ECG or EMG, then it is recommended to configure it by making a solder joint as shown in the image.
+
+.. figure:: ../../../hardware/bioamp/bioamp-exg-pill/media/assembly-step2.*
+    :align: center
+
+.. note:: Even without making the solder joint the BioAmp EXG Pill is capable of recording ECG or EMG but the signals would be more accurate if you configure it.
+
+
+c. Connecting sensors together
 --------------------------------------
 
 Connect the BioAmp EXG Pill to the A2 port of Muscle BioAmp Shield via 3-pin STEMMA cable which has JST PH 2.0mm connector on one end and 3 female jumpers on the other end.
@@ -140,7 +151,7 @@ Connect the BioAmp EXG Pill to the A2 port of Muscle BioAmp Shield via 3-pin STE
 .. figure:: media/gifs/shield-pill-connection.*
     :align: center
 
-c. Connecting electrode cables
+d. Connecting electrode cables
 --------------------------------
 
 Connect one BioAmp cable to BioAmp EXG Pill and another BioAmp cable to Muscle BioAmp Shield by inserting the cable ends into the respective JST PH connectors as shown below:
@@ -148,7 +159,7 @@ Connect one BioAmp cable to BioAmp EXG Pill and another BioAmp cable to Muscle B
 .. figure:: media/gifs/bioamp-cables-connection.*
     :align: center
 
-d. Skin Preparation
+e. Skin Preparation
 ---------------------------
 
 We'll create a 2-channel EMG acquisition system and to do so, we'll be using both the sensors to record EMG signals from the ulnar nerve of both the hands, Thus, prepare the skin accordingly. 
@@ -157,7 +168,7 @@ Apply Nuprep Skin Preparation Gel on the skin surface where electrodes would be 
 
 For more information, please check out detailed step by step `skin preparation guide <https://docs.upsidedownlabs.tech/guides/usage-guides/skin-preparation/index.html>`_.
 
-e. Electrodes placement
+f. Electrodes placement
 -------------------------
 
 We have 2 options to measure the EMG signals, either using the gel electrodes or using dry electrode based Muscle BioAmp Band. You can try both of them one by one.
@@ -202,7 +213,7 @@ Using Muscle BioAmp Band
 
 .. note:: In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.
 
-f. Uploading the code
+g. Uploading the code
 ----------------------
 
 Connect Arduino Uno to your laptop using the USB cable (Type A to Type B). Download the github repository given below:
@@ -218,7 +229,7 @@ right COM port. Now upload the code.
 
 .. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
 
-g. Testing the connections
+h. Testing the connections
 ------------------------------
 
 Go to ``tools`` from the menu bar, click on ``serial monitor`` to open it or click on the icon on the top right corner. Try flexing both of your arms one-by-one. The output values should be 0 at this point.
@@ -228,7 +239,7 @@ Press the ``SW1 button`` on Muscle BioAmp Shield. Now you'll see green LED glowi
 .. figure:: media/gifs/testing.*
     :align: center
 
-h. Running python script
+i. Running python script
 -------------------------
 
 Open Visual Studio Code, click on File < Open folder to open the folder ``8_EMGScrolling``.
@@ -255,7 +266,7 @@ Run the Python script ``EMG_Scroll.py`` by writing the given command in the term
 
     python EMG_Scroll.py
 
-i. Scrolling using EMG signals
+j. Scrolling using EMG signals
 ---------------------------------
 
 In the terminal, you will see Move Now prompt. When you flex your right arm, you'll see UP in the terminal. Similarly, when you move your left arm, you'll see DOWN in the terminal.
@@ -270,7 +281,7 @@ Now, open youtube shorts on your laptop and start scrolling using your muscle si
 
 .. note:: What's happening in the background? Whenever an EMG signal is detected, it acts as a trigger to emulate UP or DOWN key on the keyboard.
 
-j. Calibrating the code
+k. Calibrating the code
 -------------------------
 
 **Changes in Arduino Sketch**
@@ -285,7 +296,7 @@ After setting the thresholds, comment out line 71.
 
 Adjust the latency value on line 51. A higher latency value will make the output less responsive, requiring you to flex and hold longer to scroll through the screen. A lower latency value will make the output more responsive, allowing you to scroll through the screen more easily.
 
-k. Conclusion
+l. Conclusion
 -----------------
 
 This was just a demonstration to show you how both the sensors (BioAmp EXG Pill & Muscle BioAmp Shield) can be used together to create a 2-channel EXG acquisition system.
