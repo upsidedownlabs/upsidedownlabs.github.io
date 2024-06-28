@@ -22,41 +22,38 @@ You can find the complete documentations for different hardwares by clicking the
 
       .. grid-item-card:: BioAmp EXG Pill
          :text-align: center
-         :link: https://docs.upsidedownlabs.tech/hardware/bioamp/bioamp-exg-pill/index.html
+         :link: bioamp-exg-pill
+         :link-type: ref
 
       .. grid-item-card:: Muscle BioAmp Shield
          :text-align: center
-         :link: https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-shield/index.html
+         :link: muscle-bioamp-shield
+         :link-type: ref
 
       .. grid-item-card:: Muscle BioAmp Patchy
          :text-align: center
-         :link: https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-patchy/index.html
+         :link: muscle-bioamp-patchy
+         :link-type: ref
 
       .. grid-item-card:: Muscle BioAmp Blip
          :text-align: center
-         :link: https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-blip/index.html
+         :link: muscle-bioamp-blip
+         :link-type: ref
 
       .. grid-item-card:: BioAmp v1.5
          :text-align: center
-         :link: https://docs.upsidedownlabs.tech/hardware/bioamp/bioamp-v1.5/index.html
+         :link: bioamp-v1.5
+         :link-type: ref
 
       .. grid-item-card:: Muscle BioAmp Candy
          :text-align: center
-         :link: https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-candy/index.html
+         :link: muscle-bioamp-candy
+         :link-type: ref
 
       .. grid-item-card:: Muscle BioAmp BisCute
          :text-align: center
-         :link: https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-biscute/index.html
-
-.. only:: latex
-
-   1. `BioAmp EXG Pill <https://docs.upsidedownlabs.tech/hardware/bioamp/bioamp-exg-pill/index.html>`_
-   2. `Muscle BioAmp Shield <https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-shield/index.html>`_
-   3. `Muscle BioAmp Patchy <https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-patchy/index.html>`_
-   4. `Muscle BioAmp Blip <https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-blip/index.html>`_
-   5. `BioAmp v1.5 <https://docs.upsidedownlabs.tech/hardware/bioamp/bioamp-v1.5/index.html>`_
-   6. `Muscle BioAmp Candy <https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-candy/index.html>`_
-   7. `Muscle bioAmp BisCute <https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-biscute/index.html>`_
+         :link: muscle-bioamp-biscute
+         :link-type: ref
 
 .. toctree::
    :hidden:

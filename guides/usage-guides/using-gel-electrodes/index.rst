@@ -21,7 +21,7 @@ Key components in a gel electrode
 
 ``Adhesive``:  Gel electrodes has a sticky glue like interface called adhesive that allows it to firmly attach to your skin, it can be of different types like hydrogel (where hydrogel acts both as a conductive gel and adhesive), standard, and aggressive.
 
-Types of Gel Electrodes
+Types of gel electrodes
 **************************
 
 1. Classification on basis of water-content
@@ -29,7 +29,7 @@ Types of Gel Electrodes
 
 Below are the gel electrodes categorised on the basis of the water content present in the hydrogel:
 
-a. Liquid Gel Electrodes
+a. Liquid gel electrodes
 ---------------------------
 
 These electrodes have hydrogel with higher water content which provide excellent conductivity but can dry out over time, reducing their effectiveness. They are preferred to be used if you have a dry skin and/or you want to record the biopotential data for a short time duration.
@@ -37,7 +37,7 @@ These electrodes have hydrogel with higher water content which provide excellent
 .. figure:: media/liquid-gel-electrodes.*
     :align: center 
 
-b. Solid Gel Electrodes
+b. Solid gel electrodes
 ------------------------
 
 These electrodes contain hydrogel that is more solid or jelly-like. They are less prone to drying out as compared to liquid gel electrode and have a strong adhesive.
@@ -45,7 +45,7 @@ These electrodes contain hydrogel that is more solid or jelly-like. They are les
 .. figure:: media/solid-gel-electrodes.*
     :align: center
 
-c. Full surface Hydrogel Electrodes
+c. Full-surface hydrogel electrodes
 ---------------------------------------
 
 This is a type of solid gel electodes where hydrogel has minimal water content, covers the entire electode surface and acts as an adhesive. 
@@ -60,7 +60,7 @@ These electrodes are more comfortable for long-term monitoring. They offer good 
 a. Connecting via snap
 -----------------------
 
-Some electrodes have a metallic snap connector on them which enables you to connect BioAmp Snap Cable by snapping the dry electrode part of the cable onto the electrode.
+Some electrodes have a metallic snap connector on them which enables you to connect `BioAmp Snap Cable <https://store.upsidedownlabs.tech/product/bioamp-cable-v3/>`_ by snapping the dry electrode part of the cable onto the electrode.
 
 .. figure:: media/snap-connection.*
     :align: center
@@ -69,7 +69,7 @@ b. Connecting via tab
 -----------------------
 
 Some electrodes do not have the metallic snap connector on them, instead they have a conductive tab extending from the surface of the electrode. You can directly use
-BioAmp Alligator Cable to connect to the tab.
+`BioAmp Alligator Cable <https://store.upsidedownlabs.tech/product/bioamp-alligator-cable/>`_ to connect to the tab.
 
 .. figure:: media/tab-connection.*
     :align: center

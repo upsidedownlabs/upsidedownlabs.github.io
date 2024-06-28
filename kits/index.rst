@@ -25,16 +25,13 @@ You can check the complete documentation on all the kits by clicking the links b
 
       .. grid-item-card:: DIY Neuroscience Kit Basic
          :text-align: center
-         :link: https://docs.upsidedownlabs.tech/kits/diy-neuroscience/basic/index.html
+         :link: diy-neuroscience-kit-basic
+         :link-type: ref
 
       .. grid-item-card:: DIY Neuroscience Kit Pro
          :text-align: center
-         :link: https://docs.upsidedownlabs.tech/kits/diy-neuroscience/pro/index.html
-
-.. only:: latex
-
-   1. `DIY Neuroscience Kit Basic <https://docs.upsidedownlabs.tech/kits/diy-neuroscience/basic/index.html>`_
-   2. `DIY Neuroscience Kit Pro <https://docs.upsidedownlabs.tech/kits/diy-neuroscience/pro/index.html>`_
+         :link: diy-neuroscience-kit-pro
+         :link-type: ref
 
 .. toctree::
    :hidden:
