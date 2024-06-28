@@ -93,7 +93,7 @@ For more information, please check out detailed step by step `skin preparation g
 2. Connecting the cable
 ========================
 
-Connect the BioAmp Snap Cable/BioAmp Alligator Cable on the gel electrodes.
+Connect the BioAmp Snap/Alligator Cable on the gel electrodes.
 
 3. Electrodes placement
 ========================
