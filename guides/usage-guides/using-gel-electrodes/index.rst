@@ -40,7 +40,7 @@ These electrodes have hydrogel with higher water content which provide excellent
 b. Solid Gel Electrodes
 ------------------------
 
-These electrodes contain hydrogel that is more solid or jelly-like. They are less prone to drying out as compared to liquid gel electrode and have a strong adhesive.
+These electrodes contain hydrogel that is more solid or jelly-like. They are less prone to drying out as compared to liquid gel electrodes and have a strong adhesion.
 
 .. figure:: media/solid-gel-electrodes.*
     :align: center
