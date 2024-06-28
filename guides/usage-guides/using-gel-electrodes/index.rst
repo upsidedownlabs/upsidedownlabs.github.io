@@ -40,7 +40,7 @@ These electrodes have hydrogel with higher water content which provide excellent
 b. Solid gel electrodes
 ------------------------
 
-These electrodes contain hydrogel that is more solid or jelly-like. They are less prone to drying out as compared to liquid gel electrode and have a strong adhesive.
+These electrodes contain hydrogel that is more solid or jelly-like. They are less prone to drying out as compared to liquid gel electrodes and have a strong adhesion.
 
 .. figure:: media/solid-gel-electrodes.*
     :align: center
@@ -79,7 +79,7 @@ Using the electrodes
 
 Determine the target area from where you want to record the biopotential signals.
 
-.. warning:: For people having fragile skin, it is recommended to use either gel electrodes with hydrogel/standard adhesive or use `BioAmp Bands <https://docs.upsidedownlabs.tech/guides/usage-guides/using-bioamp-bands/index.html>`_.
+.. warning:: For people having sensitive skin, it is recommended to use either gel electrodes with hydrogel/standard adhesive or use `BioAmp Bands <https://docs.upsidedownlabs.tech/guides/usage-guides/using-bioamp-bands/index.html>`_.
 
 1. Skin Preparation
 ======================
@@ -93,7 +93,7 @@ For more information, please check out detailed step by step `skin preparation g
 2. Connecting the cable
 ========================
 
-Connect the BioAmp Snap Cable/BioAmp Alligator Cable on the gel electrodes.
+Connect the BioAmp Snap/Alligator Cable on the gel electrodes.
 
 3. Electrodes placement
 ========================
@@ -105,8 +105,12 @@ Peel of the plastic backing and place the electrodes on your targeted skin surfa
 Removing the electrodes
 *************************
 
-Once you are done with your signal recording, pull the non-sticky tab gently in the direction of your body hair to remove the gel electrode from the skin. 
-Remove gel residue, if any, with a wet wipe/alcohol swab. If the residue is still there, take any baby oil, rub it gently on the skin surface and wipe it off.
+Once you are done with your signal recording, pull the non-sticky tab gently in the direction of your body hair growth to remove the gel electrode from the skin. 
+
+- To remove the gel residue with a wet wipe/alcohol swab.
+- To remove the adhesive residue apply some oil to your skin and rub it gently for a couple of minutes to dissolve the adhesive, and then wipe it off with a dry cloth. 
+
+.. important:: You should not use water & soap to clean the adhesive residue, it is oil soluble and should be dissolved with oil before removing it with dry cloth. Using water and soap can make it stick harder and irritate your skin.
 
 .. figure:: media/removing-gel-electrodes.*
     :align: center
