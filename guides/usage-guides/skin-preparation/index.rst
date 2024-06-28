@@ -96,7 +96,9 @@ Wipe away excess gel with alcohol swabs or wet wipes.
 
     Wipe away access gel
 
-.. warning:: Close your eyes while using the alcohol swabs for EOG recording else it may cause eye redness & irritation.
+.. warning:: - Using alcohol swabs can dry out the skin, so don't use them if your skin is already dry.
+    
+    - Close your eyes while using the alcohol swabs for EOG recording else it may cause eye redness & irritation.
 
 Step 5: Measuring the signals
 =================================
