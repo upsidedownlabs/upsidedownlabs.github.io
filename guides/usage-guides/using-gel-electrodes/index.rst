@@ -105,8 +105,12 @@ Peel of the plastic backing and place the electrodes on your targeted skin surfa
 Removing the electrodes
 *************************
 
-Once you are done with your signal recording, pull the non-sticky tab gently in the direction of your body hair to remove the gel electrode from the skin. 
-Remove gel residue, if any, with a wet wipe/alcohol swab. If the residue is still there, take any baby oil, rub it gently on the skin surface and wipe it off.
+Once you are done with your signal recording, pull the non-sticky tab gently in the direction of your body hair growth to remove the gel electrode from the skin. 
+
+- To remove the gel residue with a wet wipe/alcohol swab.
+- To remove the adhesive residue apply some oil to your skin and rub it gently for a couple of minutes to dissolve the adhesive, and then wipe it off with a dry cloth. 
+
+.. important:: You should not use water & soap to clean the adhesive residue, it is oil soluble and should be dissolved with oil before removing it with dry cloth. Using water and soap can make it stick harder and irritate your skin.
 
 .. figure:: media/removing-gel-electrodes.*
     :align: center
