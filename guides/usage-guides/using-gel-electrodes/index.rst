@@ -79,7 +79,7 @@ Using the electrodes
 
 Determine the target area from where you want to record the biopotential signals.
 
-.. warning:: For people having fragile skin, it is recommended to use either gel electrodes with hydrogel/standard adhesive or use `BioAmp Bands <https://docs.upsidedownlabs.tech/guides/usage-guides/using-bioamp-bands/index.html>`_.
+.. warning:: For people having sensitive skin, it is recommended to use either gel electrodes with hydrogel/standard adhesive or use `BioAmp Bands <https://docs.upsidedownlabs.tech/guides/usage-guides/using-bioamp-bands/index.html>`_.
 
 1. Skin Preparation
 ======================
