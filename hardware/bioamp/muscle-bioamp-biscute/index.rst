@@ -1,4 +1,4 @@
-.. _muscle_bioamp-biscute:
+.. _muscle-bioamp-biscute:
 
 Muscle BioAmp Biscute
 ######################
@@ -82,14 +82,14 @@ Images below shows a quick overview of the hardware design.
 Contents of the kit
 ********************
 
-.. image:: media/kit-contents.*
+.. figure:: media/kit-contents.*
 
 Software requirements
 **********************
 
 - Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the arduino sketches on your development board and visualise the data on your laptop.
     
-.. image:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.png
+.. figure:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.png
 
 Assembling the kit
 ********************
@@ -205,7 +205,7 @@ Using the kit
 Step 1: Connect Arduino UNO R3
 =================================
 
-.. image:: media/arduino-biscute-connection.*
+.. figure:: media/arduino-biscute-connection.*
 
 Connect ``VCC`` to either ``5V`` or ``3.3V``, ``GND`` to ``GND``, and ``OUT`` to ``Analog pin A0`` of your Arduino UNO via jumper cables provided by us. If you are connecting ``OUT`` to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.
 
@@ -216,7 +216,7 @@ Connect ``VCC`` to either ``5V`` or ``3.3V``, ``GND`` to ``GND``, and ``OUT`` to
 Step 3: Connecting electrode cable
 ========================================
 
-.. image:: media/biscute-cable-connection.*
+.. figure:: media/biscute-cable-connection.*
 
 Connect the BioAmp cable to Muscle BioAmp Biscute by inserting the cable end in the JST PH connector as shown above.
 
@@ -241,7 +241,7 @@ We have 2 options to measure the EMG signals, either using the gel electrodes or
 2. Peel the plastic backing from electrodes
 3. Place the IN+ and IN- cables on the arm near the ulnar nerve & REF (reference) at the back of your hand as shown in the connection diagram.
 
-.. image:: media/biscute-emg.*
+.. figure:: media/biscute-emg.*
 
 - **Using Muscle BioAmp Band:**
 
@@ -280,7 +280,7 @@ Visualizing the EMG signals
 
 Now flex your arm to visualize the muscle signals in real time on your laptop.
 
-.. image:: media/using-biscute.*
+.. figure:: media/using-biscute.*
     
 
 **Video tutorial:**

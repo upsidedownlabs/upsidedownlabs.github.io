@@ -7,7 +7,7 @@ Overview
 *********
 
 A candy-size single-channel ElectroMyography (EMG) sensor for recording of muscle signals 
-at an affordable cost. It is an SMD version of :ref:`muscle_bioamp-biscute` that can be used to make 
+at an affordable cost. It is an SMD version of :ref:`muscle-bioamp-biscute` that can be used to make 
 amazing Human-Computer Interface (HCI) projects.
 
 .. figure:: media/Muscle-BioAmp-Candy-front.*
@@ -88,14 +88,14 @@ Images below shows a quick overview of the hardware design.
 Contents of the kit
 ********************
 
-.. image:: media/kit-contents.*
+.. figure:: media/kit-contents.*
 
 Software requirements
 **********************
 
 - Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the arduino sketches on your development board and visualise the data on your laptop.
     
-.. image:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.png
+.. figure:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.png
 
 Using the kit
 ****************
@@ -103,7 +103,7 @@ Using the kit
 Step 1: Connect Arduino UNO R3
 =================================
 
-.. image:: media/arduino-candy-connection.*
+.. figure:: media/arduino-candy-connection.*
 
 Connect ``VCC`` to either ``5V`` or ``3.3V``, ``GND`` to ``GND``, and ``OUT`` to ``Analog pin A0`` of your Arduino UNO via jumper cables provided by us. If you are connecting ``OUT`` to any other analog pin, then you will have to change the `INPUT PIN` in the example arduino sketch accordingly.
 
@@ -114,7 +114,7 @@ Connect ``VCC`` to either ``5V`` or ``3.3V``, ``GND`` to ``GND``, and ``OUT`` to
 Step 2: Connecting electrode cable
 ========================================
 
-.. image:: media/candy-cable-connection.*
+.. figure:: media/candy-cable-connection.*
 
 Connect the BioAmp cable to Muscle BioAmp Candy by inserting the cable end in the JST PH connector as shown above.
 
@@ -139,7 +139,7 @@ We have 2 options to measure the EMG signals, either using the gel electrodes or
 2. Peel the plastic backing from electrodes
 3. Place the IN+ and IN- cables on the arm near the ulnar nerve & REF (reference) at the back of your hand as shown in the connection diagram.
 
-.. image:: media/candy-emg.*
+.. figure:: media/candy-emg.*
 
 - **Using Muscle BioAmp Band:**
 
@@ -178,7 +178,7 @@ Visualizing the EMG signals
 
 Now flex your arm to visualize the muscle signals in real time on your laptop.
 
-.. image:: media/using-candy.*
+.. figure:: media/using-candy.*
 
 **Video tutorial:**
 

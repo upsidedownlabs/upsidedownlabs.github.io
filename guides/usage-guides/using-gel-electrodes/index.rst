@@ -79,14 +79,14 @@ Using the electrodes
 
 Determine the target area from where you want to record the biopotential signals.
 
-.. warning:: For people having sensitive skin, it is recommended to use either gel electrodes with hydrogel/standard adhesive or use `BioAmp Bands <https://docs.upsidedownlabs.tech/guides/usage-guides/using-bioamp-bands/index.html>`_.
+.. warning:: For people having sensitive skin, it is recommended to use either gel electrodes with hydrogel/standard adhesive or :ref:`use BioAmp Bands <using-bioamp-bands>`.
 
 1. Skin Preparation
 ======================
 
 Remove any excessive hair on the targeted area. Apply Nuprep skin preparation gel on the skin surface where electrodes would be placed to remove dead skin cells and clean the skin from dirt. After rubbing the skin surface thoroughly, clean it with an alcohol wipe or a wet wipe.
 
-For more information, please check out detailed step by step `skin preparation guide <https://docs.upsidedownlabs.tech/guides/usage-guides/skin-preparation/index.html>`_.
+For more information, please check out detailed step by step :ref:`skin-preparation`.
 
 .. note:: Always ensure that the prepared skin area is dry prior to applying the gel electrodes.
 

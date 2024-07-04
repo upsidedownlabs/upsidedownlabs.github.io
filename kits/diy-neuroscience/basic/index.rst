@@ -34,11 +34,11 @@ Software requirements
 
 - Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the arduino sketches in Maker UNO and visualise the data on your laptop.
     
-.. image:: media/arduino-ide.*
+.. figure:: media/arduino-ide.*
 
 - Download Backyard Brains' `Spike Recorder <https://backyardbrains.com/products/spikerecorder>`_ according to the operating system you are using (Windows, OSX, Linux).
 
-.. image:: media/byb.*
+.. figure:: media/byb.*
 
 Using the kit
 **************
@@ -48,7 +48,7 @@ This kit is made in a way so that even beginners can use it and get started with
 Step 1 (optional): Configure for EMG/ECG
 =========================================
 
-.. image:: media/configuration-emg-ecg.*
+.. figure:: media/configuration-emg-ecg.*
 
 BioAmp EXG Pill is by default configured for recording EEG or EOG, so if you are recording any of the two signals 
 you can skip this step. But if you want to record good quality ECG or EMG, then it is recommended to configure it 
@@ -59,7 +59,7 @@ by making a solder joint as shown in the image above.
 Step 2: Connect Maker UNO
 ==========================
 
-.. image:: media/connection-with-maker-uno.*
+.. figure:: media/connection-with-maker-uno.*
 
 Connect ``VCC`` to ``5V``, ``GND`` to ``GND``, and ``OUT`` to ``Analog pin A0`` of your Maker UNO via jumper cables provided by us. If you are connecting OUT to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.
 
@@ -68,7 +68,7 @@ Connect ``VCC`` to ``5V``, ``GND`` to ``GND``, and ``OUT`` to ``Analog pin A0`` 
 Step 3: Connecting electrode cable
 ===============================================
 
-.. image:: media/bioamp-cable.*
+.. figure:: media/bioamp-cable.*
 
 Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JST PH connector as shown above.
 
@@ -93,7 +93,7 @@ We have 2 options to measure the EMG signals, either using the gel electrodes or
 2. Peel the plastic backing from electrodes
 3. Place the IN+ and IN- cables on the arm near the ulnar nerve & REF (reference) at the back of your hand as shown in the connection diagram.
 
-.. image:: media/emg.*
+.. figure:: media/emg.*
 
 - **Using Muscle BioAmp Band:**
 
@@ -132,7 +132,7 @@ Visualizing the EMG signals
 
 Now flex your arm to visualize the muscle signals in real time on your laptop.
 
-.. image:: media/EMGEnvelop.*
+.. figure:: media/EMGEnvelop.*
 
 Step 6: Measuring ECG (ElectroCardioGraphy)
 ===============================================
@@ -148,7 +148,7 @@ We have 2 options to measure the ECG signals, either using the gel electrodes or
 2. Peel the plastic backing from electrodes
 3. Place the IN- cable on the left side, IN+ in the middle and REF (reference) on the far right side as shown in the diagram.
 
-.. image:: media/ecg.*
+.. figure:: media/ecg.*
 
 - **Using Heart BioAmp Band:**
 
@@ -182,7 +182,7 @@ After opening the serial plotter make sure to select the baud rate to 115200.
 Visualizing the ECG signals
 -----------------------------
 
-.. image:: media/bioamp-Exg-Pill-ECG.*
+.. figure:: media/bioamp-Exg-Pill-ECG.*
 
 Step 7: Measuring EOG (ElectroOculoGraphy)
 =============================================
@@ -194,7 +194,7 @@ We have 2 ways to measure the EOG signals, either record the horizontal eye move
 
 - **Horizontal EOG recording:**
 
-.. image:: media/eog-horizontal.*
+.. figure:: media/eog-horizontal.*
 
 1. Connect the BioAmp cable to gel electrodes.
 2. Peel the plastic backing from electrodes.
@@ -202,7 +202,7 @@ We have 2 ways to measure the EOG signals, either record the horizontal eye move
 
 - **Vertical EOG recording:**
 
-.. image:: media/eog-vertical.*
+.. figure:: media/eog-vertical.*
 
 1. Connect the BioAmp cable to gel electrodes.
 2. Peel the plastic backing from electrodes.
@@ -228,7 +228,7 @@ After opening the serial plotter make sure to select the baud rate to 115200.
 Visualizing the EOG signals
 ------------------------------
 
-.. image:: media/bioamp-exg-pill-eog.*
+.. figure:: media/bioamp-exg-pill-eog.*
 
 Step 8: Measuring EEG (ElectroEncephaloGraphy)
 ===============================================
@@ -236,7 +236,7 @@ Step 8: Measuring EEG (ElectroEncephaloGraphy)
 Let's understand the electrode placements before moving forward in this project. For recording EEG from 
 different parts of the brain, you have to place the electrodes according to the `International 10-20 system for recording EEG <https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)>`_.
 
-.. image:: media/10-20-system.*
+.. figure:: media/10-20-system.*
     :width: 80%
 
 Electrodes placement
@@ -246,7 +246,7 @@ We have 2 options to measure the EEG signals, either using the gel electrodes or
 
 - **Using gel electrodes to record from prefrontal cortex part of brain:**
 
-.. image:: media/eeg.*
+.. figure:: media/eeg.*
 
 1. Connect the BioAmp cable to gel electrodes.
 2. Peel the plastic backing from electrodes.
