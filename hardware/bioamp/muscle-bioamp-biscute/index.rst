@@ -44,45 +44,60 @@ Hardware
 **********
 Images below shows a quick overview of the hardware design.
 
-.. grid:: 1 1 2 2
-    :margin: 4 4 0 0 
-    :gutter: 2
+.. only:: html
 
-    .. grid-item::    
-        
-        .. card::
+    .. grid:: 1 1 2 2
+        :margin: 4 4 0 0 
+        :gutter: 2
 
-            **PCB Front**
-            ^^^^^
-            .. figure:: media/front.*
+        .. grid-item::    
+            
+            .. card::
 
-    .. grid-item::
-        
-        .. card::
+                PCB Front
+                ^^^^^
+                .. figure:: media/front.*
 
-            **PCB Back**
-            ^^^^^
-            .. figure:: media/back.*            
+        .. grid-item::
+            
+            .. card::
+
+                PCB Back
+                ^^^^^
+                .. figure:: media/back.*    
+
+.. only:: latex
+
+    .. figure:: media/front.*
+        :width: 50%
+
+    .. figure:: media/back.*
+        :width: 50%    
 
 .. figure:: media/assembled.*
     :align: center
+    :width: 50%
 
-    **Assembled PCB**
+    Assembled PCB
 
 .. figure:: media/dimensions.*
     :align: center
+    :width: 100%
 
-    **PCB Layout**
+    PCB Layout
 
 .. figure:: media/schematic.*
     :align: center   
+    :width: 90%
 
-    **Schematic Diagram**
+    Schematic Diagram
 
 Contents of the kit
 ********************
 
 .. figure:: media/kit-contents.*
+    :align: center
+    :width: 60%
 
 Software requirements
 **********************
@@ -98,100 +113,172 @@ You can get Muscle BioAmp BisCute from our `online stores <https://linktr.ee/Ups
 
 **Note:** Follow the highlighted yellow shapes to assemble your Muscle BioAmp BisCute!
 
-.. grid:: 1 1 3 3
-    :margin: 2 2 0 0 
-    :gutter: 2
+.. only:: html
 
-    .. grid-item::
-        
-        .. figure:: media/Assembly/001_Board.*
+  .. grid:: 1 1 3 3
+      :margin: 2 2 0 0 
+      :gutter: 2
 
-            **Step 1 - Bare Board**
+      .. grid-item::
+          
+          .. figure:: media/Assembly/001_Board.*
 
-    .. grid-item::
+              **Step 1 - Bare Board**
 
-        .. figure:: media/Assembly/002_100K_Resistor.*
-            
-            **Step 2 - 100K Resistors** 
+      .. grid-item::
 
-    .. grid-item::
+          .. figure:: media/Assembly/002_100K_Resistor.*
+              
+              **Step 2 - 100K Resistors** 
 
-        .. figure:: media/Assembly/003_10K_Resistors.*
+      .. grid-item::
 
-            **Step 3 - 10K Resistors** 
+          .. figure:: media/Assembly/003_10K_Resistors.*
 
-    .. grid-item::
+              **Step 3 - 10K Resistors** 
 
-        .. figure:: media/Assembly/004_1M_Resistors.*
+      .. grid-item::
 
-            **Step 4 - 1M Resistors** 
+          .. figure:: media/Assembly/004_1M_Resistors.*
 
-    .. grid-item::
+              **Step 4 - 1M Resistors** 
 
-        .. figure:: media/Assembly/005_330R_Resistors.*
+      .. grid-item::
 
-            **Step 5 - 330R Resistors** 
+          .. figure:: media/Assembly/005_330R_Resistors.*
 
-    .. grid-item::
+              **Step 5 - 330R Resistors** 
 
-        .. figure:: media/Assembly/006_220K_Resistor.*
+      .. grid-item::
 
-            **Step 6 - 220K Resistor** 
+          .. figure:: media/Assembly/006_220K_Resistor.*
 
-    .. grid-item::
+              **Step 6 - 220K Resistor** 
 
-        .. figure:: media/Assembly/007_4.7nF_Capacitor.*
+      .. grid-item::
 
-            **Step 7 - 4.7nF Capacitor** 
+          .. figure:: media/Assembly/007_4.7nF_Capacitor.*
 
-    .. grid-item::
+              **Step 7 - 4.7nF Capacitor** 
 
-        .. figure:: media/Assembly/008_2.2uF_Capacitor.*
+      .. grid-item::
 
-            **Step 8 - 2.2uF Capacitor** 
+          .. figure:: media/Assembly/008_2.2uF_Capacitor.*
 
-    .. grid-item::
+              **Step 8 - 2.2uF Capacitor** 
 
-        .. figure:: media/Assembly/009_470uF_Capacitor.*
+      .. grid-item::
 
-            **Step 9 - 470uF Capacitor** 
+          .. figure:: media/Assembly/009_470uF_Capacitor.*
 
-    .. grid-item::
+              **Step 9 - 470uF Capacitor** 
 
-        .. figure:: media/Assembly/010_100nF_Capacitors.*
+      .. grid-item::
 
-            **Step 10 - 100nF Capacitors** 
+          .. figure:: media/Assembly/010_100nF_Capacitors.*
 
-    .. grid-item::
+              **Step 10 - 100nF Capacitors** 
 
-        .. figure:: media/Assembly/011_1nF_Capacitors.*
+      .. grid-item::
 
-            **Step 11 - 1nF Capacitors** 
+          .. figure:: media/Assembly/011_1nF_Capacitors.*
 
-    .. grid-item::
+              **Step 11 - 1nF Capacitors** 
 
-        .. figure:: media/Assembly/012_1K_Resistor.*
+      .. grid-item::
 
-            **Step 12 - 1K Resistor** 
+          .. figure:: media/Assembly/012_1K_Resistor.*
 
-    .. grid-item::
+              **Step 12 - 1K Resistor** 
 
-        .. figure:: media/Assembly/013_Connector.*
+      .. grid-item::
 
-            **Step 13 - BioAmp Connector** 
+          .. figure:: media/Assembly/013_Connector.*
 
-    .. grid-item::
+              **Step 13 - BioAmp Connector** 
 
-        .. figure:: media/Assembly/014_HeaderPin.*
+      .. grid-item::
 
-            **Step 14 - Header Pins** 
+          .. figure:: media/Assembly/014_HeaderPin.*
 
-    .. grid-item::
+              **Step 14 - Header Pins** 
 
-        .. figure:: media/Assembly/015_IC.*
+      .. grid-item::
 
-            **Step 15 - IC** 
+          .. figure:: media/Assembly/015_IC.*
 
+              **Step 15 - IC** 
+
+.. only:: latex
+
+    .. list-table::
+
+      * - .. figure:: media/Assembly/001_Board.*
+
+             Bare PCB
+
+        - .. figure:: media/Assembly/002_100K_Resistor.*
+
+             100K Resistor
+
+        - .. figure:: media/Assembly/003_10K_Resistors.*
+
+             10K Resistors
+
+        - .. figure:: media/Assembly/004_1M_Resistors.*
+
+             1M Resistors
+
+    .. list-table:: 
+
+      * - .. figure:: media/Assembly/005_330R_Resistors.*
+
+             330R Resistors
+
+        - .. figure:: media/Assembly/006_220K_Resistor.*
+
+             220K Resistor
+
+        - .. figure:: media/Assembly/007_4.7nF_Capacitor.*
+
+             4.7nF Capacitor
+
+        - .. figure:: media/Assembly/008_2.2uF_Capacitor.*
+
+             2.2uF Capacitor
+
+    .. list-table:: 
+
+      * - .. figure:: media/Assembly/009_470uF_Capacitor.*
+
+             470uF Capacitor
+
+        - .. figure:: media/Assembly/010_100nF_Capacitors.*
+
+             100nF Capacitors
+
+        - .. figure:: media/Assembly/011_1nF_Capacitors.*
+
+             1nF Capacitors
+
+        - .. figure:: media/Assembly/012_1K_Resistor.*
+
+             1K Resistor
+
+    .. list-table:: 
+
+      * - .. figure:: media/Assembly/013_Connector.*
+
+             BioAmp Connector
+
+        - .. figure:: media/Assembly/014_HeaderPin.*
+
+             Header Pins
+
+        - .. figure:: media/Assembly/015_IC.*
+
+             IC          
+        - 
 
 Still can't figure out the assembly? You can watch the video below to assemble your Biscute.
 
@@ -206,6 +293,7 @@ Step 1: Connect Arduino UNO R3
 =================================
 
 .. figure:: media/arduino-biscute-connection.*
+    :width: 80%
 
 Connect ``VCC`` to either ``5V`` or ``3.3V``, ``GND`` to ``GND``, and ``OUT`` to ``Analog pin A0`` of your Arduino UNO via jumper cables provided by us. If you are connecting ``OUT`` to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.
 
@@ -217,6 +305,7 @@ Step 3: Connecting electrode cable
 ========================================
 
 .. figure:: media/biscute-cable-connection.*
+    :width: 80%
 
 Connect the BioAmp cable to Muscle BioAmp Biscute by inserting the cable end in the JST PH connector as shown above.
 
@@ -242,17 +331,20 @@ We have 2 options to measure the EMG signals, either using the gel electrodes or
 3. Place the IN+ and IN- cables on the arm near the ulnar nerve & REF (reference) at the back of your hand as shown in the connection diagram.
 
 .. figure:: media/biscute-emg.*
+    :align: center
 
 - **Using Muscle BioAmp Band:**
 
 1. Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve & REF (reference) on the far side of the band.
 2. Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.
 
+.. tip:: Visit the complete documentation on how to :ref:`assemble and use the BioAmp Bands <using-bioamp-bands>` or follow the youtube video given below.
+
    **Tutorial on how to use the band:**
 
-.. youtube:: xYZdw0aesa0
-    :align: center
-    :width: 100%
+   .. youtube:: xYZdw0aesa0
+       :align: center
+       :width: 100%
 
 .. note:: In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.
 
@@ -261,9 +353,9 @@ Uploading the code
 
 Connect your Arduino UNO to your laptop using the USB cable (Type A to Type B). Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:
     
-EMG Filter: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino
+:fab:`github;pst-color-primary` `EMG Filter <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino>`_
 
-EMG Envelope: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino
+:fab:`github;pst-color-primary` `EMG Envelope <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino>`_
 
 Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
 select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
@@ -281,8 +373,8 @@ Visualizing the EMG signals
 Now flex your arm to visualize the muscle signals in real time on your laptop.
 
 .. figure:: media/using-biscute.*
+    :align: center
     
-
 **Video tutorial:**
 
 .. youtube:: ujFsAE0E0nk
