@@ -104,7 +104,7 @@ Software requirements
 
 - Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the arduino sketches on your development board and visualise the data on your laptop.
     
-.. figure:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.png
+.. figure:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.*
 
 Assembling the kit
 ********************
