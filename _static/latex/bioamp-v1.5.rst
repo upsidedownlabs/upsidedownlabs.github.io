@@ -1,7 +1,5 @@
 :orphan:
 
-.. _bioamp-v1.5-datasheet:
-
 BioAmp v1.5
 ##############
 

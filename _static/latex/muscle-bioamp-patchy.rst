@@ -1,7 +1,5 @@
 :orphan:
 
-.. _muscle-bioamp-patchy-datasheet:
-
 Muscle BioAmp Patchy
 ####################
 

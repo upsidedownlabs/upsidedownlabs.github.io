@@ -1,7 +1,5 @@
 :orphan:
 
-.. _muscle-bioamp-blip-datasheet:
-
 Muscle BioAmp Blip
 ####################
 

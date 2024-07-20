@@ -1,7 +1,5 @@
 :orphan:
 
-.. _muscle-bioamp-shield-datasheet:
-
 Muscle BioAmp Shield
 #########################
 

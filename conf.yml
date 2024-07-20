@@ -41,7 +41,7 @@ PDFs:
       pdf: _static/latex/muscle-bioamp-shield
    DIY Neuroscience Kit Pro:
       path: kits/diy-neuroscience/pro
-      pdf: _static/latex/diy-neuroscience-kit-pro 
+      pdf: _static/latex/diy-neuroscience-kit-pro
    DIY Neuroscience Kit Basic:
       path: kits/diy-neuroscience/basic
       pdf: _static/latex/diy-neuroscience-kit-basic

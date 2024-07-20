@@ -1,7 +1,5 @@
 :orphan:
 
-.. _muscle-bioamp-candy-datasheet:
-
 Muscle BioAmp Candy
 ####################
 

@@ -1,7 +1,5 @@
 :orphan:
 
-.. _bioamp-exg-pill-datasheet:
-
 BioAmp EXG Pill
 ###############
 

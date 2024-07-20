@@ -122,7 +122,7 @@ Here’s another simulation demonstrating Ohm’s law. This time, the current mo
   
     Now double the value of the left-hand resistor in the simulator and see if your predictions were correct.
   
-5.	Voltage Divider
+5. Voltage Divider
 ********************
 
 Voltage is always measured relative to a point that we consider 0V. For a battery, the negative terminal is 0V.

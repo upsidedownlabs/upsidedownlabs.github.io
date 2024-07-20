@@ -1,13 +1,11 @@
 :orphan:
 
-.. _diy-neuroscience-kit-basic-datasheet:
-
 DIY Neuroscience Kit Basic
 ###########################
 
 .. toctree::
    :hidden:
-   :maxdepth: 4
+   :maxdepth: 3
 
    ../../../kits/diy-neuroscience/basic/index
 

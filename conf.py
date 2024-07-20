@@ -21,7 +21,7 @@ author = 'Upside Down Labs'
 
 # Configure PDF build and sidebar links
 latex_documents = []
-pdf_paths = []
+pdfs = []
 
 with open('conf.yml', 'r') as conf_file:
     conf_data = yaml.safe_load(conf_file)
@@ -43,8 +43,8 @@ with open('conf.yml', 'r') as conf_file:
                 
                 # PDF build details
                 if(pdf and (name in pdf_build or pdf_build_all)):
-                    pdf_paths.append(path)
                     tex_name = pdf.split('/')[-1]
+                    pdfs.append((path, tex_name))
                     latex_documents.append((pdf, tex_name+".tex", "", author, "manual"))
 
 # -- General configuration ---------------------------------------------------
@@ -180,7 +180,7 @@ html_context = {
     "edit_page_url_template": "{{ my_vcs_site }}{{ file_name }}",
     "edit_page_provider_name": "GitHub",
     "my_vcs_site": "https://github.com/upsidedownlabs/upsidedownlabs.github.io/edit/main",
-    "pdf_paths": pdf_paths
+    "pdfs": pdfs
 }
 
 # -- Options for LaTeX output --

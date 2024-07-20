@@ -1,7 +1,5 @@
 :orphan:
 
-.. _muscle-bioamp-biscute-datasheet:
-
 Muscle BioAmp Biscute
 #######################
 
