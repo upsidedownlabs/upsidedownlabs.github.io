@@ -1,13 +1,13 @@
 :orphan:
 
-.. _diy-neuroscience-kit-pro-datasheet:
+.. _pro-datasheet:
 
 DIY Neuroscience Kit Pro
 #########################
 
 .. toctree::
    :hidden:
-   :maxdepth: 4
+   :maxdepth: 3
 
    ../../../kits/diy-neuroscience/pro/index
 
