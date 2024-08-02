@@ -25,8 +25,8 @@ Exercises Day 1: No Hardware
     :local:
 
 
-1.	Using a multimeter
-**************************
+1. Using a multimeter
+***********************
 
 We will be using a circuit simulator to model the different settings on a multimeter. A multimeter can be used to measure voltage, resistance, and current.
 
