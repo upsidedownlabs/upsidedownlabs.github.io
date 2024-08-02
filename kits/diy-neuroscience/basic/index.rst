@@ -321,6 +321,9 @@ Now everything is configured and connected. So close the settings window and sta
 
 .. figure:: media/bioamp-exg-pill-eeg.*
     :align: center
+    :alt: Recording EEG from pre-frontal cortex part of brain
+
+    Recording EEG signals from pre-frontal cortex
 
 The signals that you can see on the screen right now are originating from prefrontal cortex part of your brain and propagating through all the layers to the surface of your skin.
 
