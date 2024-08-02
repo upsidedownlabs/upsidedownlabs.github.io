@@ -99,8 +99,8 @@ When looking at a whole circuit, we can use this to calculate how much current w
     3A. Click on the image to go to the simulator.
     Right-click on the top wire in the circuit, and then select Edit to display the current through that wire. Double-click on either of the resistors to decrease their value. What happens to the current in the circuit?
 
-4.	Resistors
-*****************
+4. Resistors
+**************
 
 Here’s another simulation demonstrating Ohm’s law. This time, the current moves from a 5 Volt voltage source (bright green) into ground (grey, earth), across one of two resistors. The resistors are 'in parallel' as current can flow cross over one *or* the other resistor.
 
