@@ -21,7 +21,7 @@ author = 'Upside Down Labs'
 
 # Configure PDF build and sidebar links
 latex_documents = []
-pdf_paths = []
+pdfs = []
 
 with open('conf.yml', 'r') as conf_file:
     conf_data = yaml.safe_load(conf_file)
@@ -34,18 +34,18 @@ with open('conf.yml', 'r') as conf_file:
         pdf_build_all = False
 
     for type, data in conf_data.items():
-        # Hardware
-        if(type == "hardware"):
-            for board, data in conf_data["hardware"].items():
+        # PDFs
+        if(type == "PDFs"):
+            for board, data in conf_data["PDFs"].items():
                 name = board
                 path = data['path']
                 pdf = data.get('pdf', False)
                 
                 # PDF build details
                 if(pdf and (name in pdf_build or pdf_build_all)):
-                    pdf_paths.append(path)
-                    tex_name = path.split('/')[-1]
-                    latex_documents.append((path+"/index", tex_name+".tex", "", author, "manual"))
+                    tex_name = pdf.split('/')[-1]
+                    pdfs.append((path, tex_name))
+                    latex_documents.append((pdf, tex_name+".tex", "", author, "manual"))
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -109,7 +109,7 @@ html_theme_options = {
             "name": "GeM India",
         }
     ],
-    "header_links_before_dropdown": 5,
+    "header_links_before_dropdown": 6,
     "show_prev_next": True,
     "icon_links": [
         {
@@ -180,7 +180,7 @@ html_context = {
     "edit_page_url_template": "{{ my_vcs_site }}{{ file_name }}",
     "edit_page_provider_name": "GitHub",
     "my_vcs_site": "https://github.com/upsidedownlabs/upsidedownlabs.github.io/edit/main",
-    "pdf_paths": pdf_paths
+    "pdfs": pdfs
 }
 
 # -- Options for LaTeX output --

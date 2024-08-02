@@ -13,7 +13,8 @@ BackYard Brains (BYB) `Muscle Spiker shield <https://backyardbrains.com/products
 battery input. It is perfect for beginners as they can easily stack it on top of Arduino Uno to record, visualize and listen to their muscle 
 signals to make amazing projects in the domain of Human-Computer Interface (HCI).
 
-.. image:: media/muscle-bioamp-shield.*
+.. figure:: media/muscle-bioamp-shield.*
+    :align: center
 
 Features & Specifications
 ****************************
@@ -23,8 +24,8 @@ character displays, accelerometers, and servo controllers to name just a few usi
 digital and STEMMA analog ports. On STEMMA analog port you can connect additional BioAmp EXG Pill or any other sensor with analog 
 output. On STEMMA digital port you can connect any digital sensor or actuator of your choice.
 
-.. figure:: media/shield-pamphlet.*
-    :align: center
+.. .. figure:: media/shield-pamphlet.*
+..     :align: center
 
 +---------------------+---------------------------------------+
 | Input Voltage       | 5V                                    |
@@ -53,56 +54,80 @@ Hardware
 
 Images below shows a quick overview of the hardware design.
 
-.. grid:: 1 1 2 2
-    :margin: 4 4 0 0 
-    :gutter: 2
+.. only:: html
 
-    .. grid-item::
+    .. grid:: 1 1 2 2
+        :margin: 4 4 0 0 
+        :gutter: 2
 
-        .. card::
+        .. grid-item::
 
-            **PCB Front**
-            ^^^^^
-            .. figure:: media/Muscle-BioAmp-Shield-Front.*
+            .. card::
 
-    .. grid-item::
-        
-        .. card::
+                **PCB Front**
+                ^^^^^
+                .. figure:: media/Muscle-BioAmp-Shield-Front.*
 
-            **PCB Back**
-            ^^^^^
-            .. figure:: media/Muscle-BioAmp-Shield-Back.*
+        .. grid-item::
+            
+            .. card::
+
+                **PCB Back**
+                ^^^^^
+                .. figure:: media/Muscle-BioAmp-Shield-Back.*
+
+.. only:: latex
+
+    .. figure:: media/Muscle-BioAmp-Shield-Front.*
+        :align: center
+        :width: 30%
+
+        `PCB Front`
+
+    .. figure:: media/Muscle-BioAmp-Shield-Back.*
+        :align: center
+        :width: 30%
+
+        `PCB Back`
 
 .. figure:: media/Assembly/24_Assembled.*
     :align: center
     :width: 80%
 
-    Assembled PCB
+    `Assembled PCB`
 
 .. figure:: media/dimensions.*
     :align: center
 
-    PCB Layout
+    `PCB Layout`
 
 .. figure:: media/Schematic.*
     :align: center
 
-    Schematic Diagram
+    `Schematic Diagram`
 
 Contents of the kit
 ********************
 
 There are 2 variants available for Muscle BioAmp Shield v0.3 kit - one comes with the shield assembled and the other one contains bare PCB of the sensor and the components separately which you can assemble pretty easily.
 
+
 .. figure:: media/kit-contents-assembled.*
     :align: center
+    :width: 80%
 
-    Assembled Muscle BioAmp Shield kit content
+    `Assembled Muscle BioAmp Shield kit content`
+
+|
 
 .. figure:: media/kit-contents-unassembled.*
     :align: center
+    :width: 80%
 
-    Unassembled Muscle BioAmp Shield kit content
+    `Unassembled Muscle BioAmp Shield kit content`
+
+
+Click on the link below to see the unboxing of the kit:
 
 .. youtube:: w8yw12SUe6Q
   :width: 100%
@@ -113,170 +138,175 @@ Software requirements
 
 Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the arduino sketches on your development board and visualise the data on your laptop.
     
-.. image:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.png
+.. figure:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.*
+    :align: center
 
-Assembling the Kit
-********************
+    Download Arduino IDE v1.8.19
 
-You can get your own Muscle BioAmp Shield bag of parts from our `online stores <https://linktr.ee/Upside_Down_Labs_stores>`_ (shipping worldwide) 
-and for assembling your shield you can take a look at `this interactive BOM <https://upsidedownlabs.github.io/DIY-Muscle-BioAmp-
-Shield/ibom.html>`_ or the step by step guide below. 
+.. only:: html
 
-.. note:: Follow the highlighted yellow shapes to assemble your shield!
+    Assembling the Kit
+    ********************
 
-.. grid:: 1 1 2 2
-    :margin: 2 2 0 0 
-    :gutter: 2
+    You can get your own Muscle BioAmp Shield bag of parts from our `online stores <https://linktr.ee/Upside_Down_Labs_stores>`_ (shipping worldwide) 
+    and for assembling your shield you can take a look at `this interactive BOM <https://upsidedownlabs.github.io/DIY-Muscle-BioAmp-
+    Shield/ibom.html>`_ or the step by step guide below. 
 
-    .. grid-item::
-        
-        .. figure:: media/Assembly/01_Bare_Board.*
+    .. note:: Follow the highlighted yellow shapes to assemble your shield!
 
-            **Step 1 - Bare Board**
+    .. grid:: 1 1 2 2
+        :margin: 2 2 0 0 
+        :gutter: 2
 
-    .. grid-item::
-
-        .. figure:: media/Assembly/02_1M_Resistors.jpg
+        .. grid-item::
             
-            **Step 2 - 1M Resistors** 
+            .. figure:: media/Assembly/01_Bare_Board.*
 
-    .. grid-item::
+                **Step 1 - Bare Board**
 
-        .. figure:: media/Assembly/03_330R_Resistors.jpg
+        .. grid-item::
 
-            **Step 3 - 330R Resistors** 
+            .. figure:: media/Assembly/02_1M_Resistors.jpg
+                
+                **Step 2 - 1M Resistors** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/04_10K_Resistors.jpg
+            .. figure:: media/Assembly/03_330R_Resistors.jpg
 
-            **Step 4 - 10K Resistors** 
+                **Step 3 - 330R Resistors** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/05_22K_Resistors.jpg
+            .. figure:: media/Assembly/04_10K_Resistors.jpg
 
-            **Step 5 - 22K Resistors** 
+                **Step 4 - 10K Resistors** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/06_1K_Resistors.jpg
+            .. figure:: media/Assembly/05_22K_Resistors.jpg
 
-            **Step 6 - 1K Resistors** 
+                **Step 5 - 22K Resistors** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/07_220K_Resistors.jpg
+            .. figure:: media/Assembly/06_1K_Resistors.jpg
 
-            **Step 7 - 220K Resistors** 
+                **Step 6 - 1K Resistors** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/08_1nF_Capacitors.jpg
+            .. figure:: media/Assembly/07_220K_Resistors.jpg
 
-            **Step 8 - 1nF Capacitors** 
+                **Step 7 - 220K Resistors** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/09_100nF_Capacitors.jpg
+            .. figure:: media/Assembly/08_1nF_Capacitors.jpg
 
-            **Step 9 - 100nF Capacitors** 
+                **Step 8 - 1nF Capacitors** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/10_100pF_Capacitors.jpg
+            .. figure:: media/Assembly/09_100nF_Capacitors.jpg
 
-            **Step 10 - 100pF Capacitors** 
+                **Step 9 - 100nF Capacitors** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/11_Angled_Header_Pins.jpg
+            .. figure:: media/Assembly/10_100pF_Capacitors.jpg
 
-            **Step 11 - Angled Header Pins** 
+                **Step 10 - 100pF Capacitors** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/12_5x5mm_Buttons.jpg
+            .. figure:: media/Assembly/11_Angled_Header_Pins.jpg
 
-            **Step 12 - 5x5mm Buttons** 
+                **Step 11 - Angled Header Pins** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/13_OptoIsolator.jpg
+            .. figure:: media/Assembly/12_5x5mm_Buttons.jpg
 
-            **Step 13 - OptoIsolator** 
+                **Step 12 - 5x5mm Buttons** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/14_JST_PH_Angled_Connectors.jpg
+            .. figure:: media/Assembly/13_OptoIsolator.jpg
 
-            **Step 14 - JST PH Angled Connectors** 
+                **Step 13 - OptoIsolator** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/15_JST_PH_Straight_Connectors.jpg
+            .. figure:: media/Assembly/14_JST_PH_Angled_Connectors.jpg
 
-            **Step 15 - JST PH Straight Connectors** 
+                **Step 14 - JST PH Angled Connectors** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/16_IC_Socket.jpg
+            .. figure:: media/Assembly/15_JST_PH_Straight_Connectors.jpg
 
-            **Step 16 - IC Socket** 
+                **Step 15 - JST PH Straight Connectors** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/17_IC.jpg
+            .. figure:: media/Assembly/16_IC_Socket.jpg
 
-            **Step 17 - IC** 
+                **Step 16 - IC Socket** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/18_LEDs.jpg
+            .. figure:: media/Assembly/17_IC.jpg
 
-            **Step 18 - LEDs** 
+                **Step 17 - IC** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/19_3.5mm_Headphone_Jack.jpg
+            .. figure:: media/Assembly/18_LEDs.jpg
 
-            **Step 19 - 3.5mm Headphone Jack** 
+                **Step 18 - LEDs** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/20_2.2uF_Capacitor.jpg
+            .. figure:: media/Assembly/19_3.5mm_Headphone_Jack.jpg
 
-            **Step 20 - 2.2uF Capacitor** 
+                **Step 19 - 3.5mm Headphone Jack** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/21_1uF_Capacitor.jpg
+            .. figure:: media/Assembly/20_2.2uF_Capacitor.jpg
 
-            **Step 21 - 1uF Capacitor** 
+                **Step 20 - 2.2uF Capacitor** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/22_470uF_Capacitor.jpg
+            .. figure:: media/Assembly/21_1uF_Capacitor.jpg
 
-            **Step 22 - 470uF Capacitor** 
+                **Step 21 - 1uF Capacitor** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/23_Header_Pins.jpg
+            .. figure:: media/Assembly/22_470uF_Capacitor.jpg
 
-            **Step 23 - Header Pins** 
+                **Step 22 - 470uF Capacitor** 
 
-    .. grid-item::
+        .. grid-item::
 
-        .. figure:: media/Assembly/24_Assembled.jpg
+            .. figure:: media/Assembly/23_Header_Pins.jpg
 
-            **Step 24 - Assembled Shield** 
+                **Step 23 - Header Pins** 
 
+        .. grid-item::
 
-Still can't figure out the assembly? You can follow the video provided below to assemble your Shield.
+            .. figure:: media/Assembly/24_Assembled.jpg
 
-.. youtube:: dcuCihh3yn4
-     :width: 100%
+                **Step 24 - Assembled Shield** 
+
+
+    Still can't figure out the assembly? You can follow the video provided below to assemble your Shield.
+
+    .. youtube:: dcuCihh3yn4
+        :width: 100%
 
 Using the Sensor
 ******************
@@ -288,7 +318,7 @@ Stack the Muscle BioAmp Shield on top of Arduino Uno properly.
 
 .. only:: html
 
-    .. figure:: media/gifs/shield-arduino-connection.gif
+    .. figure:: media/gifs/shield-arduino-connection.*
         :align: center
 
 .. only:: latex
@@ -303,7 +333,7 @@ Connect the BioAmp Cable to Muscle BioAmp Shield as shown.
 
 .. only:: html
 
-    .. figure:: media/gifs/electrode-cable-connection.gif
+    .. figure:: media/gifs/electrode-cable-connection.*
         :align: center
 
 .. only:: latex
@@ -340,8 +370,12 @@ Using gel electrodes
     .. figure:: media/images/electrode-placement-1.*
         :align: center
 
+        `Electrode placement for REF cable`
+
     .. figure:: media/images/electrode-placement-2.*
         :align: center
+
+        `Electrode placement for IN+, IN- cables`
 
 Using Muscle BioAmp Band
 ---------------------------
@@ -349,11 +383,13 @@ Using Muscle BioAmp Band
 1. Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve & REF (reference) on the far side of the band.
 2. Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.
 
+.. tip:: Visit the complete documentation on how to :ref:`assemble and use the BioAmp Bands <using-bioamp-bands>` or follow the youtube video given below.
+
    **Tutorial on how to use the band:**
 
-.. youtube:: xYZdw0aesa0
-    :align: center
-    :width: 100%
+   .. youtube:: xYZdw0aesa0
+       :align: center
+       :width: 100%
 
 .. note:: In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.
 
@@ -371,9 +407,11 @@ Connect your Arduino UNO R3 to your laptop using the USB cable (Type A to Type B
 
     .. figure:: media/images/arduino-laptop-connection-1.*
         :align: center
+        :width: 50%
 
     .. figure:: media/images/arduino-laptop-connection-2.*
-        :align: center        
+        :align: center 
+        :width: 50%       
 
 .. warning:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
 
@@ -382,9 +420,9 @@ Step 6: Visualise EMG signals on laptop
 
 Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:
     
-   EMG Filter: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino
+:fab:`github;pst-color-primary` `EMG Filter <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino>`_
 
-   EMG Envelope: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino
+:fab:`github;pst-color-primary` `EMG Envelope <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino>`_
 
 Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
 select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
@@ -406,12 +444,14 @@ Now flex your arm to visualize the muscle signals in real time on your laptop.
     .. figure:: media/images/visualise-emg.*
         :align: center
 
+        `Visualise EMG signals on laptop`
+
 Step 7: Visualise EMG signals on LEDs
 ==========================================
 
 Copy paste the Arduino Sketch given below in Arduino IDE:
 
-      LED Bar Graph: https://github.com/upsidedownlabs/BioAmp-EXG-Pill/blob/main/software/LEDBarGraph/LEDBarGraph.ino
+:fab:`github;pst-color-primary` `LED Bar Graph <https://github.com/upsidedownlabs/BioAmp-EXG-Pill/blob/main/software/LEDBarGraph/LEDBarGraph.ino>`_
 
 Make sure you have selected the right board and COM port. Now upload the code, and flex your arm. You'll see the LED bar going up. More strength you apply, more the LED bar goes up.
 
@@ -424,6 +464,8 @@ Make sure you have selected the right board and COM port. Now upload the code, a
 
     .. figure:: media/images/led-graph.*
         :align: center
+
+        `Visualise EMG signals on LEDs`
 
 Step 8: Listen to your EMG signals
 ====================================
@@ -447,6 +489,8 @@ Listening EMG on speakers
     .. figure:: media/images/listening-emg-speakers.*
         :align: center
 
+        Listening EMG on speakers
+
 Listening EMG on a wired earphones/headphones
 ----------------------------------------------
 
@@ -464,6 +508,8 @@ Listening EMG on a wired earphones/headphones
      .. figure:: media/images/listening-emg-earphones.*
         :align: center
 
+        `Listening EMG on a wired earphones/headphones`
+
 Step 9: Controlling a servo motor
 ===================================
 
@@ -471,7 +517,7 @@ Connect the servo claw to Muscle BioAmp Shield.
 
 Copy paste the Arduino Sketch given below in Arduino IDE:
 
-   Servo Controller: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/5_ServoControl/5_ServoControl.ino
+:fab:`github;pst-color-primary` `Servo Controller <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/5_ServoControl/5_ServoControl.ino>`_
 
 Make sure you have selected the right board and COM port. Now upload the code, and flex your arm to control the servo claw in real time.
 
@@ -487,7 +533,7 @@ Connect the servo claw to Muscle BioAmp Shield.
 
 Copy paste the Arduino Sketch given below in Arduino IDE:
 
-   Claw Controller: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/tree/main/4_ClawController
+:fab:`github;pst-color-primary` `Claw Controller <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/tree/main/4_ClawController>`_
 
 Make sure you have selected the right board and COM port. Now upload the code, and flex your arm to control the servo claw in real time.
 

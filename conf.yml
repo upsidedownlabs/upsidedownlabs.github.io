@@ -15,27 +15,33 @@ pdf_build: all
 # hardware:
 #     name:
 #         path: First level hardware documentation path for hardware 'index.rst'
-#         pdf: True/False (optional, False if this 'pdf:' option is not added)
+#         pdf: RST source for PDF generatation from _static/latex folder
 
-hardware:
+PDFs:
    BioAmp EXG Pill:
       path: hardware/bioamp/bioamp-exg-pill
-      pdf: True
+      pdf: _static/latex/bioamp-exg-pill
    BioAmp v1.5:
       path: hardware/bioamp/bioamp-v1.5
-      pdf: True
+      pdf: _static/latex/bioamp-v1.5
    Muscle BioAmp BisCute:
       path: hardware/bioamp/muscle-bioamp-biscute
-      pdf: True
+      pdf: _static/latex/muscle-bioamp-biscute
    Muscle BioAmp Blip:
       path: hardware/bioamp/muscle-bioamp-blip
-      pdf: True
+      pdf: _static/latex/muscle-bioamp-blip
    Muscle BioAmp Candy:
       path: hardware/bioamp/muscle-bioamp-candy
-      pdf: True
+      pdf: _static/latex/muscle-bioamp-candy
    Muscle BioAmp Patchy:
       path: hardware/bioamp/muscle-bioamp-patchy
-      pdf: True
+      pdf: _static/latex/muscle-bioamp-patchy
    Muscle BioAmp Shield:
       path: hardware/bioamp/muscle-bioamp-shield
-      pdf: True
+      pdf: _static/latex/muscle-bioamp-shield
+   DIY Neuroscience Kit Pro:
+      path: kits/diy-neuroscience/pro
+      pdf: _static/latex/diy-neuroscience-kit-pro
+   DIY Neuroscience Kit Basic:
+      path: kits/diy-neuroscience/basic
+      pdf: _static/latex/diy-neuroscience-kit-basic
