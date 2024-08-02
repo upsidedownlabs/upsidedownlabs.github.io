@@ -1,0 +1,990 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercises Day 1: No Hardware &#8212; upsidedownlabs.github.io  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'courses/open-ephys/exday1-nokit';</script>
+    <link rel="canonical" href="docs.upsidedownlabs.tech/courses/open-ephys/exday1-nokit.html" />
+    <link rel="icon" href="../../_static/logo_sqr_bgw.svg"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Exercises Day 2: No Hardware" href="exday2-nokit.html" />
+    <link rel="prev" title="Theory Day 4" href="theory-day-4/index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+    <meta name="docbuild:last-update" content="Aug 02, 2024"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">Welcome to Upside Down Labs docs site!</div>
+  </div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo_black_hr_nbg.svg" class="logo__image only-light" alt="upsidedownlabs.github.io  documentation - Home"/>
+    <script>document.write(`<img src="../../_static/logo_white_hr_nbg.svg" class="logo__image only-dark" alt="upsidedownlabs.github.io  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="ms-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../hardware/index.html">
+                        Hardware
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../software/index.html">
+                        Software
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../experiments/index.html">
+                        Experiments
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../kits/index.html">
+                        DIY Kits
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../guides/index.html">
+                        Guides
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../index.html">
+                        Courses
+                      </a>
+                    </li>
+                
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+                    DigiKey
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
+                    Mouser
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.tindie.com/stores/upsidedownlabs/">
+                    Tindie
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355">
+                    Amazon India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://store.upsidedownlabs.tech/">
+                    Store India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://t.ly/ExlaF">
+                    GeM India
+                  </a>
+                </li>
+                
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instructables.com/member/Upside%20Down%20Labs/instructables/" title="Instructables" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../_static/logo/instructables.svg" class="icon-link-image" alt="Instructables"/></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../hardware/index.html">
+                        Hardware
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../software/index.html">
+                        Software
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../experiments/index.html">
+                        Experiments
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../kits/index.html">
+                        DIY Kits
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../guides/index.html">
+                        Guides
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../index.html">
+                        Courses
+                      </a>
+                    </li>
+                
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
+                    More
+                </button>
+                <ul id="pst-nav-more-links-2" class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+                    DigiKey
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
+                    Mouser
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.tindie.com/stores/upsidedownlabs/">
+                    Tindie
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355">
+                    Amazon India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://store.upsidedownlabs.tech/">
+                    Store India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://t.ly/ExlaF">
+                    GeM India
+                  </a>
+                </li>
+                
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instructables.com/member/Upside%20Down%20Labs/instructables/" title="Instructables" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../_static/logo/instructables.svg" class="icon-link-image" alt="Instructables"/></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Courses</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Extracellular Electrophysiology Acquisition</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="theory-day-1/index.html">Theory Day 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theory-day-2/index.html">Theory Day 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theory-day-3/index.html">Theory Day 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theory-day-4/index.html">Theory Day 4</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Exercises Day 1: No Hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exday2-nokit.html">Exercises Day 2: No Hardware</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Courses</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Extracellular Electrophysiology Acquisition</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Exercises...</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="exercises-day-1-no-hardware">
+<span id="exday1-nokit"></span><h1>Exercises Day 1: No Hardware<a class="headerlink" href="#exercises-day-1-no-hardware" title="Link to this heading">#</a></h1>
+<nav class="contents local" id="table-of-contents">
+<p class="topic-title">Table of Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#using-a-multimeter" id="id1">1. Using a multimeter</a></p></li>
+<li><p><a class="reference internal" href="#measuring-voltages" id="id2">2. Measuring voltages</a></p></li>
+<li><p><a class="reference internal" href="#ohms-law" id="id3">3. Ohm’s Law</a></p></li>
+<li><p><a class="reference internal" href="#resistors" id="id4">4. Resistors</a></p></li>
+<li><p><a class="reference internal" href="#voltage-divider" id="id5">5. Voltage Divider</a></p></li>
+<li><p><a class="reference internal" href="#capacitors" id="id6">6. Capacitors</a></p></li>
+<li><p><a class="reference internal" href="#alternating-signal-ac" id="id7">7. Alternating signal (AC)</a></p></li>
+<li><p><a class="reference internal" href="#impedance" id="id8">8. Impedance</a></p></li>
+<li><p><a class="reference internal" href="#capacitive-voltage-divider" id="id9">9. Capacitive voltage divider</a></p></li>
+</ul>
+</nav>
+<section id="using-a-multimeter">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">1. Using a multimeter</a><a class="headerlink" href="#using-a-multimeter" title="Link to this heading">#</a></h2>
+<p>We will be using a circuit simulator to model the different settings on a multimeter. A multimeter can be used to measure voltage, resistance, and current.</p>
+<div class="admonition-exercises admonition">
+<p class="admonition-title">Exercises</p>
+<p>First we will measure resistance of a resistor.</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="https://tinyurl.com/y65o842d"><img alt="../../_images/ohmmeter_sim.png" src="../../_images/ohmmeter_sim.png" /></a>
+</figure>
+<p>Setup:</p>
+<ul class="simple">
+<li><p>Add an Ohmmeter to the circuit (Draw/Outputs and Labels/Add Ohmmeter).</p></li>
+<li><p>Connect it to the resistor and Run the simulator.</p></li>
+<li><p>Right-click on the Ohmmeter, select ‘View in New Scope’.</p></li>
+<li><p>Set the scope to display resistance values instead of voltage. Right-click on the scope and select ‘Properties’. Select ‘Show Resistance’ instead of ‘Show Voltage’.</p></li>
+</ul>
+<p>1A. Read the value of the resistor in Ohms from the scope.</p>
+<p>Now we will measure the voltage across two batteries.</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="https://tinyurl.com/y35xq4tr"><img alt="../../_images/voltmeter_sim.png" src="../../_images/voltmeter_sim.png" /></a>
+</figure>
+<p>Setup:</p>
+<ul class="simple">
+<li><p>Add a Voltmeter to the circuit, connect it across the batteries, and run the simulator.</p></li>
+<li><p>What voltage do you measure?</p></li>
+<li><p>How can you get the Voltmeter to give a negative voltage measurement?</p></li>
+</ul>
+</div>
+</section>
+<section id="measuring-voltages">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">2. Measuring voltages</a><a class="headerlink" href="#measuring-voltages" title="Link to this heading">#</a></h2>
+<div class="admonition-exercises admonition">
+<p class="admonition-title">Exercises</p>
+<p>Take a look at this simulation. A voltage output signal is being generated on the left, which turns an LED on and off at a specific frequency. Our goal is to measure the properties of this voltage output.</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="https://tinyurl.com/y3fugler"><img alt="../../_images/squarewave_sim.png" src="../../_images/squarewave_sim.png" /></a>
+</figure>
+<p>2A. Connect a voltmeter across the LED. This is similar to using a multimeter in the lab. What is the amplitude of the signal in Volts? With what frequency does the signal change amplitude?</p>
+<p>2B. Visualise the voltage across the LED in a new Scope. This is similar to using an oscilloscope in the lab. Is the voltage measured different now? With what frequency does the signal change amplitude, how would you describe the shape of this signal?</p>
+<p>2C. What are the advantages of an oscilloscope over a multimeter?</p>
+<p>2D. Change the voltage signal so that it outputs a 50Hz sinewave.</p>
+</div>
+</section>
+<section id="ohms-law">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">3. Ohm’s Law</a><a class="headerlink" href="#ohms-law" title="Link to this heading">#</a></h2>
+<p>Ohm’s law describes how potential (V), current (I) and resistance (R) are related:</p>
+<div class="math notranslate nohighlight">
+\[V = IR\]</div>
+<p>When looking at a whole circuit, we can use this to calculate how much current will flow. Here is a simple circuit with a battery and two resistors. Current flows from the positive terminal of the battery to the negative terminal of the battery. The resistors are ‘in series’ as there is only 1 path for current flow.</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="https://tinyurl.com/y4r8nsnj"><img alt="../../_images/resistors_series_sim.png" src="../../_images/resistors_series_sim.png" /></a>
+</figure>
+<div class="admonition-exercises admonition">
+<p class="admonition-title">Exercises</p>
+<p>3A. Click on the image to go to the simulator.
+Right-click on the top wire in the circuit, and then select Edit to display the current through that wire. Double-click on either of the resistors to decrease their value. What happens to the current in the circuit?</p>
+</div>
+</section>
+<section id="resistors">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">4. Resistors</a><a class="headerlink" href="#resistors" title="Link to this heading">#</a></h2>
+<p>Here’s another simulation demonstrating Ohm’s law. This time, the current moves from a 5 Volt voltage source (bright green) into ground (grey, earth), across one of two resistors. The resistors are ‘in parallel’ as current can flow cross over one <em>or</em> the other resistor.</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="https://www.falstad.com/circuit/e-ohms.html"><img alt="../../_images/resistors_parallel_sim.png" src="../../_images/resistors_parallel_sim.png" /></a>
+</figure>
+<div class="admonition-exercises admonition">
+<p class="admonition-title">Exercises</p>
+<p>Setup:</p>
+<ul class="simple">
+<li><p>Click the image open the simulator.</p></li>
+<li><p>Right click on a resistor and select ‘View in new scope’.</p></li>
+<li><p>Do the same for the other resistor. You can click ‘Reset’ to restart the simulation and synchronise the scopes.</p></li>
+</ul>
+<p>4A. What do you predict will happen to the voltage over the left resistor if you double its resistance? What will happen to the current?</p>
+<p>4B. What will happen to the voltage and current over the right-hand resistor when the other doubles in resistance?</p>
+<p>Now double the value of the left-hand resistor in the simulator and see if your predictions were correct.</p>
+</div>
+</section>
+<section id="voltage-divider">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">5. Voltage Divider</a><a class="headerlink" href="#voltage-divider" title="Link to this heading">#</a></h2>
+<p>Voltage is always measured relative to a point that we consider 0V. For a battery, the negative terminal is 0V.</p>
+<p>Voltage (potential energy) ‘drops’ over each resistor, as potential energy is converted to another form of energy such as heat or light. In a circuit powered by a 9V battery, all 9V of potential energy from our battery source <em>must</em> drop over circuit components, to return to 0V at the negative terminal of the battery.</p>
+<p>In each circuit below, the current through R1 must equal the current through R2, as they are resistors in series. Following Ohm’s law, given the same current, a higher resistor will have a higher voltage drop (V=IR). The total voltage drop over the circuit must equal the provided voltage.</p>
+<figure class="align-center">
+<img alt="../../_images/voltage_divider.png" src="../../_images/voltage_divider.png" />
+</figure>
+<p>Therefore, in a circuit with multiple resistors in series, the ratio of their resistances determines how much voltage will drop over each. We can therefore split up (divide) the voltage from a source across resistors to produce an output voltage V<sub>out</sub>:</p>
+<div class="math notranslate nohighlight">
+\[|Vout| = |Vin| \frac{R2}{R1+R2}\]</div>
+<div class="admonition-exercises admonition">
+<p class="admonition-title">Exercises</p>
+<p>5A. Using the simulator (here’s an empty full-screen <a class="reference external" href="https://tinyurl.com/y477e9qd">https://tinyurl.com/y477e9qd</a>) build a voltage divider circuit in which you use:</p>
+<ul class="simple">
+<li><p>a 3V battery (‘Draw’ a 1-terminal voltage source set to 3V)</p></li>
+<li><p>2 resistors</p></li>
+<li><p>a readout wire (right click and ‘Edit’ to show the voltage V<sub>out</sub>)</p></li>
+</ul>
+<p>To provide an 2.1V output voltage V<sub>out</sub> at the readout wire.</p>
+<p>5B. Change the ratios of the resistors until the readout voltage is the size of an action potential measured in the extracellular fluid.</p>
+</div>
+</section>
+<section id="capacitors">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">6. Capacitors</a><a class="headerlink" href="#capacitors" title="Link to this heading">#</a></h2>
+<p>There are two types of capacitor. Polarised capacitors must be used in a specific orientation. Usually, ceramic capacitors are not polarised and you can use them in either direction, whereas tube-shaped electrolytic capacitors  <strong>are</strong> polarised. The negative pin is indicated by a ‘-’ marking, and the positive leg is often longer.</p>
+<p><a class="reference internal" href="theory-day-1/index.html#refcapacitancetheory"><span class="std std-ref">As discussed in the Theory handout</span></a>, capacitors occur wherever charge can be separated along two conducting surfaces, separated by an insulating material that prevents the plates from touching. Cell membranes are capacitors, as are electrodes.</p>
+<div class="math notranslate nohighlight">
+\[Q = C * V\]</div>
+<p>The amount of charge (Q) a capacitor can separate depends on is its capacitance (C, measured in farads) and the voltage (V) across the capacitor.</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="https://tinyurl.com/y5nglnv7"><img alt="../../_images/capacitor_membrane.png" src="../../_images/capacitor_membrane.png" /></a>
+</figure>
+<div class="admonition-exercises admonition">
+<p class="admonition-title">Exercises</p>
+<p>Setup:</p>
+<p>The simulator shows a simplified ‘cell membrane’ represented as a capacitor and a resistor. Changing the intracellular voltage supply changes the voltage across the cell membrane. The extracellular fluid is always 0 V.</p>
+<p>6A. The initial voltage over the capacitor should be -72mV. If not, set the Voltage slider to around -70mV. Click ‘Reset’ to see current move through the circuit until the capacitor is charged to 72mV. Which direction is the current flow? Why does current stop moving?</p>
+<p>6B. Using the ‘Voltage’ slider, set the voltage supply to 0 mVolts, and then to 20mV. What happens to the current flow in the circuit?</p>
+<p>6C. Can you mimic an action potential by changing the intracellular voltage?</p>
+</div>
+<div class="admonition-exercises admonition">
+<p class="admonition-title">Exercises</p>
+<p>In this simulation, you can charge and discharge a capacitor and see the current flow through the circuit.</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="https://tinyurl.com/y6ov8bnn"><img alt="../../_images/charging_cap_sim.png" src="../../_images/charging_cap_sim.png" /></a>
+</figure>
+<p>6D. Modify the simulation to power an LED (Draw/Outputs and Labels/Add LED) by the capacitor as it discharges. The simulator will turn the LED red when it is on.</p>
+<p>6E. Visualise the charging and discharging of voltage over the capacitor. How can you make the charging and discharging slower?</p>
+<p>6F. Increase the capacitance value of the capacitor. How long does it take the capacitor to discharge?</p>
+</div>
+</section>
+<section id="alternating-signal-ac">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">7. Alternating signal (AC)</a><a class="headerlink" href="#alternating-signal-ac" title="Link to this heading">#</a></h2>
+<p>Batteries provide ‘direct current’ in a single direction. In contrast, the action potentials and LFPs we measure from neurons can go in both directions; they are <strong>alternating currents</strong>. You produced an alternating current yourself in exercise 6C.</p>
+<p>Alternating currents have a frequency, which is the rate at which they alternate direction. Action potentials have a very high frequency, whereas synaptic inputs and their sums are much slower.</p>
+<p>Here is a demo where an alternating signal increases and decreases in frequency. At the bottom of the page, you can see the wave visualised.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you have capacitors in the simulator, it is a good idea to click ‘reset’ whenever you make changes, as they will otherwise store charge and can create weird effects.</p>
+</div>
+<div class="admonition-exercises admonition">
+<p class="admonition-title">Exercises</p>
+<p>7A. Press ‘Play Audio’ to hear how the sound is modulated as the frequency increases.</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="https://tinyurl.com/yyrvugha"><img alt="../../_images/audio_sweep.png" src="../../_images/audio_sweep.png" /></a>
+</figure>
+</div>
+</section>
+<section id="impedance">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">8. Impedance</a><a class="headerlink" href="#impedance" title="Link to this heading">#</a></h2>
+<p>Alternating currents have a frequency, so we need to use the term ‘Impedance’ (Z) instead of ‘Resistance’ to describe how circuit components oppose current flow. See the theory handout for more information.</p>
+<p>The impedance magnitude of a capacitor, also called reactance (X<sub>c</sub>), depends on:</p>
+<div class="math notranslate nohighlight">
+\[Xc = \frac{1}{2 \pi fC}\]</div>
+<p>Where f is the frequency with which the current alternates, and C is the capacitance.</p>
+<p>The impedance provided by capacitors varies with frequency. Because we are interested in signals at specific frequencies (e.g. 1000Hz for action potentials), we have to make sure to build our recording circuit so that the frequencies we are interested in experience little opposition.</p>
+<p>When you see a capacitor in a circuit, you know you need to think about the frequency of the signal. Steady direct current has no frequency, so X<sub>c</sub> is infinite: capacitors only pass alternating signals.</p>
+<div class="admonition-exercises admonition">
+<p class="admonition-title">Exercises</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="https://tinyurl.com/y3sbgfl6"><img alt="../../_images/cap_freq_circuits.png" src="../../_images/cap_freq_circuits.png" /></a>
+</figure>
+<p>Setup:</p>
+<p>Here are two circuits with an alternating voltage source of 15 and 40 Hz, respectively. In the oscilloscope at the bottom of the simulator, the voltage trace of the source and the capacitor are plotted.</p>
+<p>8A. Visualise the current in the circuit (for instance the current flowing through the stretch of wire). You could add a new scope to do this or double-click the wire and ‘show current’. Which circuit has higher amplitude current?</p>
+<p>8B. Add a third circuit, powered by an alternating voltage source of 120 Hz. What happens to the current as the frequency increases?</p>
+<p>(Bonus question: what happens to the voltage drop across the capacitor as frequency increases?)</p>
+</div>
+</section>
+<section id="capacitive-voltage-divider">
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">9. Capacitive voltage divider</a><a class="headerlink" href="#capacitive-voltage-divider" title="Link to this heading">#</a></h2>
+<p>Because capacitors impede current flow, we can use them to build voltage dividers, just like the resistor divider shown above.</p>
+<div class="admonition-exercises admonition">
+<p class="admonition-title">Exercises</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="https://tinyurl.com/yxdwvulv"><img alt="../../_images/cap_voltage_div.png" src="../../_images/cap_voltage_div.png" /></a>
+</figure>
+<p>9A. Change the capacitance values C for the first capacitor to test whether the formula for the resistor voltage divider applies for capacitors.</p>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="theory-day-4/index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Theory Day 4</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="exday2-nokit.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Exercises Day 2: No Hardware</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-a-multimeter">1. Using a multimeter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-voltages">2. Measuring voltages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ohms-law">3. Ohm’s Law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resistors">4. Resistors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#voltage-divider">5. Voltage Divider</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#capacitors">6. Capacitors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alternating-signal-ac">7. Alternating signal (AC)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#impedance">8. Impedance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#capacitive-voltage-divider">9. Capacitive voltage divider</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/upsidedownlabs/upsidedownlabs.github.io/edit/maincourses/open-ephys/exday1-nokit.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../_sources/courses/open-ephys/exday1-nokit.rst">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, Upside Down Labs.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="last-updated">
+  Last updated on Aug 02, 2024.
+  <br/>
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

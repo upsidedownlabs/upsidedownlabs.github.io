@@ -73,20 +73,20 @@ Images below shows a quick overview of the hardware design.
 Contents of the kit
 ********************
 
-.. image:: media/kit-contents.*
+.. figure:: media/kit-contents.*
 
 Software requirements
 **********************
 
 Before you start using the kit, download Backyard Brains' `Spike Recorder <https://backyardbrains.com/products/spikerecorder>`_ or `Audacity <https://www.audacityteam.org/download/>`_ according to the operating system you are using (Windows, OSX, Linux).
 
-.. figure:: ../../../kits/diy-neuroscience/basic/media/byb.*
+.. .. figure:: ../../../kits/diy-neuroscience/basic/media/byb.*
 
-    **Backyard Brains Spike Recorder**
+..     **Backyard Brains Spike Recorder**
 
-.. figure:: media/audacity.*
+.. .. figure:: media/audacity.*
 
-    **Audacity (An easy-to-use, multi-track audio editor and recorder)**
+..     **Audacity (An easy-to-use, multi-track audio editor and recorder)**
 
 Assembling the kit
 ********************
@@ -103,91 +103,91 @@ You can get your own BioAmp v1.5 bag of parts from our `online stores <https://l
         
         .. figure:: media/Assembly/1.*
 
-            **Step 1 - Bare Board**
+            Step 1 - Bare Board
 
     .. grid-item::
 
         .. figure:: media/Assembly/2-100K-resistor.*
             
-            **Step 2 - 100K Resistors** 
+            Step 2 - 100K Resistors 
 
     .. grid-item::
 
         .. figure:: media/Assembly/3-2.2K-resistor.*
 
-            **Step 3 - 2.2K Resistor** 
+            Step 3 - 2.2K Resistor 
 
     .. grid-item::
 
         .. figure:: media/Assembly/4-1K-resistor.*
 
-            **Step 4 - 1K Resistors** 
+            Step 4 - 1K Resistors 
 
     .. grid-item::
 
         .. figure:: media/Assembly/5-220K-resistor.*
 
-            **Step 5 - 220K Resistors** 
+            Step 5 - 220K Resistors 
 
     .. grid-item::
 
         .. figure:: media/Assembly/6-10K-resistor.*
 
-            **Step 6 - 10K Resistors** 
+            Step 6 - 10K Resistors 
 
     .. grid-item::
 
         .. figure:: media/Assembly/7-100nF-capacitor.*
 
-            **Step 7 - 100nF Capacitors** 
+            Step 7 - 100nF Capacitors 
 
     .. grid-item::
 
         .. figure:: media/Assembly/8-1nF-capacitor.*
 
-            **Step 8 - 1nF Capacitors** 
+            Step 8 - 1nF Capacitors 
 
     .. grid-item::
 
         .. figure:: media/Assembly/9-connectors.*
 
-            **Step 9 - JST PH Connectors** 
+            Step 9 - JST PH Connectors 
 
     .. grid-item::
 
         .. figure:: media/Assembly/10-socket.*
 
-            **Step 10 - IC Socket** 
+            Step 10 - IC Socket 
 
     .. grid-item::
 
         .. figure:: media/Assembly/11-IC.*
 
-            **Step 11 - IC** 
+            Step 11 - IC 
 
     .. grid-item::
 
         .. figure:: media/Assembly/12-LED.*
 
-            **Step 12 - Power LED** 
+            Step 12 - Power LED 
 
     .. grid-item::
 
         .. figure:: media/Assembly/13-47uF-capacitor.*
 
-            **Step 13 - 47uF Capacitors** 
+            Step 13 - 47uF Capacitors 
 
     .. grid-item::
 
         .. figure:: media/Assembly/14-switch.*
 
-            **Step 14 - Switch** 
+            Step 14 - Switch 
 
     .. grid-item::
 
         .. figure:: media/Assembly/15-headphone-jack.*
 
-            **Step 15 - Headphone jack** 
+            Step 15 - Headphone jack 
 
 
 Using the kit
@@ -195,14 +195,25 @@ Using the kit
 
 The image below shows the possibilities of using BioAmp v1.5. Seems complicated? Don't worry, we'll explain each and every step in detail. So follow along to create your own setup.
 
-.. image:: media/bioamp-v1-5-connections.*
+.. only:: html
+
+    .. figure:: media/bioamp-v1-5-connections.*
+        :align: center
+
+.. only:: latex
+
+    .. figure:: media/bioamp-v1-5-connections.*
+        :width: 80%
+        :align: center
+
 
 Step 1: Connecting the cables
 ==================================
 
 Connect the BioAmp cable, 9V snap cable and BioAmp AUX cable to BioAmp v1.5 by inserting the cable ends in the respective JST PH connectors as shown below.
 
-.. image:: media/board-with-cables.*
+.. figure:: media/board-with-cables.*
+    :align: center
 
 Step 2: Skin Preparation
 ==========================
@@ -223,7 +234,8 @@ Using gel Electrodes
 2. Peel the plastic backing from the electrodes.
 3. Place the IN+ and IN- cables on the arm near the ulnar nerve & REF (reference) at the back of your hand as shown in the connection diagram.
 
-.. image:: media/bioamp-v1-5-emg.*
+.. figure:: media/bioamp-v1-5-emg.*
+    :align: center
 
 Using Muscle BioAmp Band
 ----------------------------
@@ -233,14 +245,17 @@ Using Muscle BioAmp Band
 
 .. note:: These BioAmp Cable connections to gel electrodes/band are specifically for this version of BioAmp v1.5 only. The connections for other BioAmp hardware can be different.
 
-.. tip:: In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.
+.. tip:: - In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.
+    
+    - You can visit the complete documentation on how to :ref:`assemble and use the BioAmp Bands <using-bioamp-bands>`.
 
 Step 4: Connecting 9V battery
 ===============================
 
 Connect any 9V battery to BioAmp v1.5 using the 9V snap cable. Now activate the board by flipping ON the power switch, and you'll notice an LED light up, showing that the board is ready to use.
 
-.. image:: media/9v-battery.*
+.. figure:: media/9v-battery.*
+    :align: center
 
 Step 5: Listen to your muscle signals
 ======================================
@@ -254,7 +269,8 @@ Using speakers
 2. Switch on the speaker and turn the volume to maximum.
 3. Flex and listen to your muscles.
 
-.. image:: media/listening-emg-2.*
+.. figure:: media/listening-emg-2.*
+    :align: center
 
 Using wired earphones/headphones
 ----------------------------------------------
@@ -263,7 +279,9 @@ Using wired earphones/headphones
 2. Plug it in your ears.
 3. Flex and listen to your muscles.
 
-.. image:: media/listening-emg-3.*
+.. figure:: media/listening-emg-3.*
+    :align: center
+    :width: 80%
 
 Step 6: Visualize EMG signals on mobile phone
 ===================================================
@@ -277,7 +295,9 @@ Using Phone Recorder app
 2. Flex your muscle to be able to record the muscle signals.
 3. If you want to extract that data then it will be saved by default as a .wav file but you can convert it in any other format according to your project requirements.
 
-.. image:: media/emg-in-mobile-2.*
+.. figure:: media/emg-in-mobile-2.*
+    :align: center
+    :width: 80%
 
 Using Backyard Brains' Spike Recorder mobile app
 ------------------------------------------------
@@ -286,15 +306,17 @@ Using Backyard Brains' Spike Recorder mobile app
 2. Open the app, click the setting icon on the top right corner and set the recording type to EMG.
 3. Apply the 50Hz or 60Hz notch filter depending on the country you are living in. For example if you are in India then the AC current oscillates at a frequency of 50Hz but it oscillates at 60Hz frequency in USA. This AC current acts as a noise in the signals so we have to remove it by applying this notch filter.
 
-.. image:: media/spike-recorder-mobile.*
-    :width: 80%
+.. figure:: media/spike-recorder-mobile.*
+    :width: 60%
     :align: center
 
 4. Again click on the setting icon to close it and you are ready.
 5. Flex your muscles to be able to visualize the muscle signals (EMG).
 6. You can record the EMG data as a .wav file by pressing the record button on the top right corner of the app and then convert it in any other format as per your project requirements.
 
-.. image:: media/emg-in-mobile.*
+.. figure:: media/emg-in-mobile.*
+    :width: 80%
+    :align: center
 
 Step 7: Visualize the EMG signals on laptop
 ============================================
@@ -308,13 +330,15 @@ Using Backyard Brains' Spike Recorder
 2. Open the software, click the setting icon on the top right corner and set the low band pass filter to 72Hz and high band pass filter to 720Hz.
 3. Apply the 50Hz or 60Hz notch filter depending on the country you are living in. For example if you are in India then the AC current oscillates at a frequency of 50Hz but it oscillates at 60Hz frequency in USA. This AC current acts as a noise in the signals so we have to remove it by applying this notch filter.
 
-.. image:: media/spike-recorder-laptop.*
+.. figure:: media/spike-recorder-laptop.*
+    :align: center
 
 4. Again click on the setting icon to close it and you are ready.
 5. Flex your muscles to be able to visualize the muscle signals (EMG)
 6. You can record the EMG data as a .wav file by pressing the record button on the top right corner of the app and then convert it in any other format as per your project requirements.
 
-.. image:: media/emg-in-laptop.*
+.. figure:: media/emg-in-laptop.*
+    :align: center
 
 Using Audacity
 ----------------
@@ -324,6 +348,7 @@ Using Audacity
 3. Flex your muscles to be able to visualize the muscle signals (EMG)
 4. By default the EMG data would be recorded as a .wav file but you can convert it in any other format as per your project requirements.
 
-.. image:: media/emg-in-audacity.*
+.. figure:: media/emg-in-audacity.*
+    :align: center
 
 

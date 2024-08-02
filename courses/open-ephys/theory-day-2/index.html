@@ -1,0 +1,969 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Theory Day 2 &#8212; upsidedownlabs.github.io  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'courses/open-ephys/theory-day-2/index';</script>
+    <link rel="canonical" href="docs.upsidedownlabs.tech/courses/open-ephys/theory-day-2/index.html" />
+    <link rel="icon" href="../../../_static/logo_sqr_bgw.svg"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Theory Day 3" href="../theory-day-3/index.html" />
+    <link rel="prev" title="Theory Day 1" href="../theory-day-1/index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+    <meta name="docbuild:last-update" content="Aug 02, 2024"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">Welcome to Upside Down Labs docs site!</div>
+  </div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo_black_hr_nbg.svg" class="logo__image only-light" alt="upsidedownlabs.github.io  documentation - Home"/>
+    <script>document.write(`<img src="../../../_static/logo_white_hr_nbg.svg" class="logo__image only-dark" alt="upsidedownlabs.github.io  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="ms-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../hardware/index.html">
+                        Hardware
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../software/index.html">
+                        Software
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../experiments/index.html">
+                        Experiments
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../kits/index.html">
+                        DIY Kits
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../guides/index.html">
+                        Guides
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../../index.html">
+                        Courses
+                      </a>
+                    </li>
+                
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+                    DigiKey
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
+                    Mouser
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.tindie.com/stores/upsidedownlabs/">
+                    Tindie
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355">
+                    Amazon India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://store.upsidedownlabs.tech/">
+                    Store India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://t.ly/ExlaF">
+                    GeM India
+                  </a>
+                </li>
+                
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instructables.com/member/Upside%20Down%20Labs/instructables/" title="Instructables" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/instructables.svg" class="icon-link-image" alt="Instructables"/></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../hardware/index.html">
+                        Hardware
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../software/index.html">
+                        Software
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../experiments/index.html">
+                        Experiments
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../kits/index.html">
+                        DIY Kits
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../guides/index.html">
+                        Guides
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../../index.html">
+                        Courses
+                      </a>
+                    </li>
+                
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
+                    More
+                </button>
+                <ul id="pst-nav-more-links-2" class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+                    DigiKey
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
+                    Mouser
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.tindie.com/stores/upsidedownlabs/">
+                    Tindie
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355">
+                    Amazon India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://store.upsidedownlabs.tech/">
+                    Store India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://t.ly/ExlaF">
+                    GeM India
+                  </a>
+                </li>
+                
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instructables.com/member/Upside%20Down%20Labs/instructables/" title="Instructables" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/instructables.svg" class="icon-link-image" alt="Instructables"/></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Courses</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Extracellular Electrophysiology Acquisition</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../theory-day-1/index.html">Theory Day 1</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Theory Day 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../theory-day-3/index.html">Theory Day 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../theory-day-4/index.html">Theory Day 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exday1-nokit.html">Exercises Day 1: No Hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exday2-nokit.html">Exercises Day 2: No Hardware</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Courses</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Extracellular Electrophysiology Acquisition</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Theory Day 2</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="theory-day-2">
+<span id="id1"></span><h1>Theory Day 2<a class="headerlink" href="#theory-day-2" title="Link to this heading">#</a></h1>
+<nav class="contents local" id="table-of-contents">
+<p class="topic-title">Table of Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#impedance-ratios-determine-signal-transmission" id="id2">Impedance ratios determine signal transmission</a></p>
+<ul>
+<li><p><a class="reference internal" href="#why-is-impedance-important" id="id3">Why is impedance important?</a></p></li>
+<li><p><a class="reference internal" href="#electrode-impedance" id="id4">Electrode Impedance</a></p></li>
+<li><p><a class="reference internal" href="#shunt-impedance" id="id5">Shunt Impedance</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#amplifiers" id="id6">Amplifiers</a></p>
+<ul>
+<li><p><a class="reference internal" href="#amplifiers-in-the-headstage-prevent-current-being-drawn" id="id7">Amplifiers in the headstage prevent current being drawn</a></p></li>
+<li><p><a class="reference internal" href="#the-operational-amplifier" id="id8">The operational amplifier</a></p></li>
+<li><p><a class="reference internal" href="#amplifiers-have-high-input-impedance" id="id9">Amplifiers have high input impedance</a></p></li>
+<li><p><a class="reference internal" href="#amplifiers-have-low-output-impedance" id="id10">Amplifiers have low output impedance</a></p></li>
+<li><p><a class="reference internal" href="#amplifiers-output-a-voltage" id="id11">Amplifiers output a voltage</a></p></li>
+<li><p><a class="reference internal" href="#negative-feedback-prevents-saturation" id="id12">Negative feedback prevents saturation</a></p></li>
+<li><p><a class="reference internal" href="#an-op-amp-as-a-headstage" id="id13">An op-amp as a headstage</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Yesterday, we said that an acquisition system must:</p>
+<ul class="simple">
+<li><p><em>Detect</em> changes in electric potential difference</p></li>
+<li><p><strong>Faithfully *transfer* this signal to our acquisition system output</strong></p></li>
+<li><p>Distinguish interesting biological <em>signals</em> from other sources of electrical <em>noise</em></p></li>
+</ul>
+<section id="impedance-ratios-determine-signal-transmission">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Impedance ratios determine signal transmission</a><a class="headerlink" href="#impedance-ratios-determine-signal-transmission" title="Link to this heading">#</a></h2>
+<figure class="align-center">
+<img alt="../../../_images/black_box_recording_system.png" src="../../../_images/black_box_recording_system.png" />
+</figure>
+<p>The signal V<sub>ec</sub> (V electrode) is measured at the electrode tip. V<sub>in</sub> is the voltage that enters the acquisition system. V<sub>out</sub> is the signal output of the acquisition system. Faithfully transferring the signal means not losing (much) signal between V<sub>ec</sub>, V<sub>in</sub>, and V<sub>out</sub>. This is all based on the idea of voltage dividers; that the voltage between two impedances in series will be determined by the ratio of their impedances.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<center><iframe width="560" height="340" src="https://www.youtube.com/embed/fVloDI4b1ts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<br><section id="why-is-impedance-important">
+<h3><a class="toc-backref" href="#id3" role="doc-backlink">Why is impedance important?</a><a class="headerlink" href="#why-is-impedance-important" title="Link to this heading">#</a></h3>
+<p>The figure below includes the equivalent circuit of the electrode, as discussed yesterday. The signal V<sub>ec</sub> must travel through the electrode, to V<sub>in</sub>, the voltage before the acquisition system itself. From there, currents coming from our neurons travel to ground. They can do so either by passing through our acquisition system, or (in parallel) they can be lost to ground through shunt impedance. Shunt impedance is primarily capacitive (see section below) and represented as (C<sub>s</sub>). Shunt capacitances are created by cables or the sides of electrodes; they are accidental but unavoidable capacitances in the system.</p>
+<figure class="align-center">
+<img alt="equivalent circuit of the electrode, with a subsequent capacitance to ground representing shunt capacitance" src="../../../_images/circuit_electrode_shunt_capacitance.png" />
+</figure>
+<p>We can replace these components with a representation of the impedance (Z) they provide.</p>
+<figure class="align-center">
+<img alt="equivalent circuit of electrode, shunt capacitance and acquisition system with each component represented as an impedance." src="../../../_images/circuit_impedance_shunt_capacitance.png" />
+</figure>
+<p>The impedance of the shunt capacitance, Z<sub>cs</sub> and the impedance of the acquisition system Z<sub>a</sub> are impedances in parallel.
+We can simplify our circuit by combining their impedances and calling it Z<sub>a</sub>’.</p>
+<figure class="align-center">
+<img alt="The electrode impedance and the shunt+amplifier impedance in series, showing how these two parts form a voltage divider." src="../../../_images/shunt_amplifier_voltage_divider.png" />
+</figure>
+<p>This gives us a voltage divider, similar to the one we built before, where:</p>
+<div class="math notranslate nohighlight">
+\[Vin = \frac{Za'}{Za'+Ze} Vec\]</div>
+<p>The ratio of Z<sub>e</sub> and Z<sub>a</sub>’ therefore determines how much of our electrode tip voltage V<sub>ec</sub> reaches V<sub>in</sub>.</p>
+<p><strong>To get more of our voltage Vec into our recording system, we want to keep electrode impedance Ze low, and system input impedance Za’ very high.</strong></p>
+<p>If Z<sub>a</sub>’ is not substantially greater than Z<sub>e</sub>, V<sub>in</sub> will be much lower than V<sub>ec</sub>. To have high Z<sub>a</sub>’, we need amplifiers with high input impedance and high shunt impedance.</p>
+</section>
+<section id="electrode-impedance">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Electrode Impedance</a><a class="headerlink" href="#electrode-impedance" title="Link to this heading">#</a></h3>
+<p>The impedance of an electrode is a measure of its ability to resist the flow of charge across the electrode-solution interface (i.e., across the electronic conductor (metal) and ionic conductor (extracellular fluid)). It is the impedance of the whole electrode equivalent circuit we built yesterday, consisting of the resistance of the electrode metal (R<sub>m</sub>) and the resistance (R<sub>e</sub>) and capacitance (C<sub>e</sub>) of the double layer at the electrode-solution interface.</p>
+<figure class="align-center">
+<img alt="../../../_images/circuit_double_layer_interface.png" src="../../../_images/circuit_double_layer_interface.png" />
+</figure>
+<p>In polarized electrodes, the large R<sub>e</sub> prevents much current from taking this route. Therefore, in practice, the electrode is primarily the double-layer capacitor C<sub>e</sub> in series with R<sub>m</sub> and R<sub>s</sub> (Robinson, 1968).</p>
+<p>So far, we know that the impedance magnitude of a capacitor decreases with increased capacitance, and that electrode impedance is dominated by double layer capacitor, C<sub>e</sub>. Therefore, to decrease our electrode impedance, we need to increase the electrode capacitance C<sub>e</sub>.
+How can we increase the value of C<sub>e</sub>?</p>
+<div class="math notranslate nohighlight">
+\[C = \frac{\epsilon A}{d}\]</div>
+<p><cite>The capacitance of a capacitor (C, in Farads), is proportional to the area of the capacitor plates (A) divided by the distance (d) between them. ε is the electrostatic constant.</cite></p>
+<p>To make C bigger, we can increase the surface area (A) of the electrode, for instance by electroplating a thin layer of gold on to an electrode. We can also coat electrodes with materials complemented with pseudo-capacitance, such as conducting polymers or transition metal oxide films, such as IrOx (Green, Lovell, Wallace, &amp; Poole-Warren, 2008; Musa, 2011).</p>
+<p>Electrode impedance magnitude is usually measured at 1 kHz, before and after electrode coating, allowing us to see an impedance decrease of up to 10-fold (Neto et al., 2018).</p>
+<p>By increasing the capacitance (C<sub>e</sub>) of our electrode, the electrode impedance (Z<sub>e</sub>) will be smaller, preserving more of our signal amplitude at V<sub>in</sub>.</p>
+</section>
+<section id="shunt-impedance">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">Shunt Impedance</a><a class="headerlink" href="#shunt-impedance" title="Link to this heading">#</a></h3>
+<p>Shunt impedance is the total impedance of shunt capacitance C<sub>s</sub> and shunt resistance R<sub>sh</sub>. These are both routes to ground outside of the intended acquisition system. At the high frequencies (1kHz) we are interested in, the capacitive component will have relatively low impedance. It will therefore have more effect than the resistive component, so R<sub>sh</sub> is often ignored.</p>
+<p>Remember that any two conducting surfaces, with a non-conducting layer in between, <em>is</em> a capacitor. Shunt capacitance arises mainly from the capacitance across the thin insulation layer isolating an electrode and the surrounding electrolyte, as well as the cumulative capacitance along cables and connectors (Robinson, 1968).</p>
+<p>The shunt capacitance for a tungsten wire (~50 to 100 pF) is usually higher than for a silicon probe (5-20 pF/cm). (Why? Think of what makes a capacitor, and the relative shape and conductances of these electrodes).</p>
+<div class="admonition-try-it-yourself admonition">
+<p class="admonition-title">Try it yourself</p>
+<p>Here is a model of the electrode with shunt capacitance, resistance, and amplifier in parallel to ground. You should see that either decreasing electrode impedance or increasing shunt impedance gives you a larger output voltage.</p>
+<p><a class="reference external" href="https://tinyurl.com/yepsdold">https://tinyurl.com/yepsdold</a></p>
+</div>
+<p>We want a large shunt impedance, to prevent current from flowing down this route. Being capacitive, the impedance decreases with signal frequency (Nelson et al., 2008). Therefore, to create a large shunt impedance, the shunt capacitance should be small:</p>
+<div class="math notranslate nohighlight">
+\[Z = \frac{1}{2 \pi fC}\]</div>
+<p>However, some shunt capacitance is inevitable and often there is not much we can do about it. Because the shunt impedance is in parallel with the impedance of the acquisition system, we can focus on increasing the acquisition system impedance to give us a large Z<sub>a</sub>’.</p>
+</section>
+</section>
+<section id="amplifiers">
+<span id="refamplifierintro"></span><h2><a class="toc-backref" href="#id6" role="doc-backlink">Amplifiers</a><a class="headerlink" href="#amplifiers" title="Link to this heading">#</a></h2>
+<section id="amplifiers-in-the-headstage-prevent-current-being-drawn">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">Amplifiers in the headstage prevent current being drawn</a><a class="headerlink" href="#amplifiers-in-the-headstage-prevent-current-being-drawn" title="Link to this heading">#</a></h3>
+<p>A perfect 5V voltage source would always provide exactly 5 Volts, no matter what the rest of the circuit looks like. If we put a lot of high impedance components in the rest of the circuit, less current will flow, and if we put low impedance components we will get a high current.</p>
+<p>A real voltage source has a bit of output impedance, which means it acts as a voltage source in series with an impedance. This is modelled here (click to view high-quality version in the simulator):</p>
+<figure class="align-center">
+<a class="reference external image-reference" href="https://tinyurl.com/yfvzdxbz"><img alt="voltage sources passing a resistance to ground. Real and ideal voltage sources are compared, where real voltage sources act as a perfect voltage source in series with a small resistance." src="../../../_images/output_impedance.png" /></a>
+</figure>
+<p>That invisible, small series resistance creates a voltage divider. Though the actual source voltage is the same 5V, the apparent voltage of the source varies depending on the ratio between the output impedance of the source, and the impedance of the rest of the circuit. The lower the impedance of the components used in the rest of the circuit, the higher the relative influence of the source output impedance, and the lower the apparent source voltage (the voltage droops).</p>
+<p>In our acquisition system, the voltage source is the potential changes in the extracellular fluid (V<sub>ec</sub>). The resistive and capacitive properties of the electrode create an output resistance. The relative impedance of the circuit before and after V<sub>in</sub> influences the magnitude of the signal at V<sub>in</sub>. If we allow a lot of current to flow from our electrode to ground, we have a low impedance circuit, which will distort our signal. We therefore need something with a very high impedance to stop current being drawn from our V<sub>ec</sub>. Amplifiers do exactly this: their high input impedance prevents current flow from the electrodes, and amplifiers provide the necessary current for the rest of the circuit from a separate source.</p>
+</section>
+<section id="the-operational-amplifier">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">The operational amplifier</a><a class="headerlink" href="#the-operational-amplifier" title="Link to this heading">#</a></h3>
+<p>The <cite>operational amplifier</cite> or <cite>op-amp</cite> is a crucial building block of our acquisition system. The amplifier has two inputs (+ and -), one output, and two power rails (e.g. a 3 and -3V power rail).</p>
+<figure class="align-center">
+<img alt="an amplifier is represented as a triangle pointing towards the right. It has two inputs (+ and -) and one output." src="../../../_images/op-amp-basic.png" />
+</figure>
+</section>
+<section id="amplifiers-have-high-input-impedance">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Amplifiers have high input impedance</a><a class="headerlink" href="#amplifiers-have-high-input-impedance" title="Link to this heading">#</a></h3>
+<p>The amplifier input impedance, Z<sub>a</sub>is very high. The circuit acts as though the current has to cross a very high resistor to actually enter the amplifier. The current flow therefore becomes very low (Ferree et al., 2001), preventing us from drawing much current from the electrode to ground.</p>
+<p>Here is the amplifier added into our circuit diagram:</p>
+<figure class="align-center">
+<img alt="../../../_images/circuit_electrode_shunt_amp.png" src="../../../_images/circuit_electrode_shunt_amp.png" />
+</figure>
+</section>
+<section id="amplifiers-have-low-output-impedance">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">Amplifiers have low output impedance</a><a class="headerlink" href="#amplifiers-have-low-output-impedance" title="Link to this heading">#</a></h3>
+<p>The output impedance of amplifiers is very low, which means that a lot of current can flow <em>from</em> the amplifier. This current enables the driving of the signal through all the subsequent circuits (e.g., interconnect lines, multiplexer, and ADC). By placing an amplifier in our circuit, we make sure that the rest of our recording circuit is driven by current provided by the amplifier, not by current provided by the electrode tip.</p>
+</section>
+<section id="amplifiers-output-a-voltage">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">Amplifiers output a voltage</a><a class="headerlink" href="#amplifiers-output-a-voltage" title="Link to this heading">#</a></h3>
+<p>The amplifier outputs the voltage difference between the voltages at its two inputs.</p>
+<figure class="align-center">
+<img alt="../../../_images/op-amp-basic.png" src="../../../_images/op-amp-basic.png" />
+</figure>
+<p>How does it do that?</p>
+<p>If the difference between its two inputs is <strong>positive</strong>, the amplifier connects its output to the positive ‘power rail’, giving a positive output voltage. If the positive power rail is 3V, the amplifier will output (pretty much) that.</p>
+<p>If the difference between the two inputs is <strong>negative</strong>, the amplifier will connect its output to the negative rail, outputting -3V. While doing that, the operational amplifier draws basically no current on its inputs.</p>
+<p>In this configuration, the amplifier does not distinguish between small or large differences in voltage across its inputs; it will only every output the most negative or most positive voltage it can. Another way to say that, is that it amplifies the difference between its inputs with a huge factor, also called ‘gain’. This gain is so large that the amplifier always saturates, providing either the maximum or minimum voltage it can.</p>
+</section>
+<section id="negative-feedback-prevents-saturation">
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Negative feedback prevents saturation</a><a class="headerlink" href="#negative-feedback-prevents-saturation" title="Link to this heading">#</a></h3>
+<figure class="align-center">
+<a class="reference external image-reference" href="https://tinyurl.com/ygby3xqh"><img alt="an amplifier with the output and negative terminal connected" src="../../../_images/op_amp_feedback.png" /></a>
+</figure>
+<p>If we connect the output of the operational amplifier to the <code class="docutils literal notranslate"><span class="pre">-</span></code> input, then the following happens:</p>
+<ul class="simple">
+<li><p>Initially, if <code class="docutils literal notranslate"><span class="pre">+</span></code> is higher than <code class="docutils literal notranslate"><span class="pre">-</span></code>, the operational amplifier will output a high voltage.</p></li>
+<li><p>If we connect the output back to <code class="docutils literal notranslate"><span class="pre">-</span></code>, the amplifier will continue to output a high voltage, but now this voltage starts to increase the value of <code class="docutils literal notranslate"><span class="pre">-</span></code>, bringing the value of the inputs closer together. This behaviour will keep the voltages at its <code class="docutils literal notranslate"><span class="pre">+</span></code> and <code class="docutils literal notranslate"><span class="pre">-</span></code> inputs the same.</p></li>
+<li><p>Now, the <code class="docutils literal notranslate"><span class="pre">-</span></code> input is always actively driven to follow the voltage on the <code class="docutils literal notranslate"><span class="pre">+</span></code> input. This means that whatever voltage we connect to the <code class="docutils literal notranslate"><span class="pre">+</span></code> input can be measured just by looking at the <code class="docutils literal notranslate"><span class="pre">-</span></code> input (which is connected to / the same as the output). Increasing <code class="docutils literal notranslate"><span class="pre">+</span></code> will induce a difference between <code class="docutils literal notranslate"><span class="pre">+</span></code> and <code class="docutils literal notranslate"><span class="pre">-</span></code>, but the corresponding change in the amount of output voltage will bring <code class="docutils literal notranslate"><span class="pre">-</span></code> back up.</p></li>
+</ul>
+<p>We can measure the voltage that at <code class="docutils literal notranslate"><span class="pre">+</span></code> by just measuring the output of the operational amplifier, BUT because the <code class="docutils literal notranslate"><span class="pre">+</span></code> input draws almost no current at all (in other words, very high input impedance), we can now measure weak signals. The output of the operational amplifier on the other hand side has very low output impedance. In other words, we can draw a lot of current from it and it will keep its voltage.</p>
+<p>You can run this example in the simulator (click the image above), and see if what we said about the operational amplifier makes sense.</p>
+</section>
+<section id="an-op-amp-as-a-headstage">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">An op-amp as a headstage</a><a class="headerlink" href="#an-op-amp-as-a-headstage" title="Link to this heading">#</a></h3>
+<p>Our electrodes will be attached to a headstage, which contains an amplifier. This amplification step performs several functions:</p>
+<ul class="simple">
+<li><p>Prevents us from drawing current and allows to drive current to ADC and computer</p></li>
+<li><p>Rejects common mode noise</p></li>
+<li><p>Increases the range of the signal to fit the dynamic range of our digitizer</p></li>
+</ul>
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/NP6nE5P82e8" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../theory-day-1/index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Theory Day 1</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../theory-day-3/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Theory Day 3</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#impedance-ratios-determine-signal-transmission">Impedance ratios determine signal transmission</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-is-impedance-important">Why is impedance important?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electrode-impedance">Electrode Impedance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shunt-impedance">Shunt Impedance</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amplifiers">Amplifiers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#amplifiers-in-the-headstage-prevent-current-being-drawn">Amplifiers in the headstage prevent current being drawn</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-operational-amplifier">The operational amplifier</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#amplifiers-have-high-input-impedance">Amplifiers have high input impedance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#amplifiers-have-low-output-impedance">Amplifiers have low output impedance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#amplifiers-output-a-voltage">Amplifiers output a voltage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negative-feedback-prevents-saturation">Negative feedback prevents saturation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#an-op-amp-as-a-headstage">An op-amp as a headstage</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/upsidedownlabs/upsidedownlabs.github.io/edit/maincourses/open-ephys/theory-day-2/index.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../../_sources/courses/open-ephys/theory-day-2/index.rst">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, Upside Down Labs.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="last-updated">
+  Last updated on Aug 02, 2024.
+  <br/>
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

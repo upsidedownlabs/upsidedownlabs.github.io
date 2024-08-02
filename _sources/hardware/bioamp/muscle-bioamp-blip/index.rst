@@ -46,43 +46,66 @@ Hardware
 
 Images below shows a quick overview of the hardware design.
 
-.. grid:: 1 1 2 2
-    :margin: 4 4 0 0 
-    :gutter: 2
+.. .. only:: html
 
-    .. grid-item::
+..     .. grid:: 1 1 2 2
+..         :margin: 4 4 0 0 
+..         :gutter: 2
 
-        .. card::
+..         .. grid-item::
 
-            **PCB Front**
-            ^^^^^
-            .. figure:: media/muscle-bioamp-blip-front.*
+..             .. card::
 
-    .. grid-item::
-        
-        .. card::
+..                 **PCB Front**
+..                 ^^^^^
+..                 .. figure:: media/muscle-bioamp-blip-front.*
 
-            **PCB Back**
-            ^^^^^
-            .. figure:: media/muscle-bioamp-blip-front.*
+..         .. grid-item::
+            
+..             .. card::
+
+..                 **PCB Back**
+..                 ^^^^^
+..                 .. figure:: media/muscle-bioamp-blip-front.*
+
+.. .. only:: latex
+
+..     .. figure:: media/muscle-bioamp-blip-front.*
+..         :align: center
 
 .. figure:: media/muscle-bioamp-blip-assembled.*
     :align: center
-    :width: 400
+    :width: 60%
 
     Assembled PCB
 
 Contents of the kit
 ********************
 
-.. image:: media/blip-kit-contents.*
++---------------------+-----+
+| Contents of the kit | Qty |
++=====================+=====+
+| Muscle BioAmp Blip  | 1   |
++---------------------+-----+
+| BioAmp Cable v3     | 1   |
++---------------------+-----+
+| Muscle BioAmp Band  | 1   |
++---------------------+-----+
+| Boxy gel electrodes | 6   |
++---------------------+-----+
+
+.. figure:: media/blip-kit-contents.*
+    :align: center
+    :width: 80%
 
 Software requirements
 **********************
 
-- Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the arduino sketches on your development board and visualise the data on your laptop.
+Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the arduino sketches on your development board and visualise the data on your laptop.
     
-.. image:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.png
+.. figure:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.*
+    :align: center
+    :width: 80%
 
 Using the kit
 ****************
@@ -92,7 +115,9 @@ Step 1: Soldering connector & header pins
 
 Solder the header pins and JST Ph 2.0mm connector on the Muscle BioAmp Blip as shown below. If you ordered assembled kit then you can skip this step and directly move to step 2.
 
-.. image:: media/soldering-blip.*
+.. figure:: media/soldering-blip.*
+    :width: 80%
+    :align: center
 
 Step 2: Connections with the sensor
 ========================================
@@ -104,28 +129,35 @@ Directly connecting jumper cables
 
 You can directly connect the male to female jumper cables on the header pins of Muscle BioAmp Blip at ``5V``, ``GND``, ``AN``.
 
-.. image:: media/blip-with-jumper-cables.*
+.. figure:: media/blip-with-jumper-cables.*
+    :width: 80%
+    :align: center
 
 Connecting on breadboard
 ---------------------------
 
 If you are thinking to connect more components/sensors and want to integrate Muscle BioAmp Blip in the complete circuit then it will be better to use a breadboard. Snap the Muscle BioAmp Blip on the breadboard and connect the jumper cables (male to male) at ``5V``, ``GND``, ``AN``.
 
-.. image:: media/blip-with-breadboard.*
+.. figure:: media/blip-with-breadboard.*
+    :width: 80%
+    :align: center
 
 Connecting via mikroBUS port
 -----------------------------
 
 You can also connect the Muscle BioAmp Blip to any hardware that has mikroBUS™ port like mikroBUS™ shuttle, mikroBUS™ Arduino UNO Click Shield to name a few.
 
-.. image:: media/blip-with-shuttle.*
+.. figure:: media/blip-with-shuttle.*
+    :width: 80%
+    :align: center
 
 Step 3: Connecting with Arduino UNO R3
 =======================================
 
 Connect ``5V`` of the sensor to ``5V`` of your Arduino UNO, ``GND`` to ``GND``, and ``AN`` to ``Analog pin A0`` via other end of the jumper cables. If you are connecting ``AN`` to any other analog pin, then you will have to change the `INPUT PIN` in the example arduino sketch accordingly.
 
-.. image:: media/blip-arduino-connections.*
+.. figure:: media/blip-arduino-connections.*
+    :align: center
 
 .. note:: For demonstration purposes we are showing connections of the sensor with Arduino UNO R3 but you can use any other development board or a standalone ADC of your choice.
 
@@ -134,7 +166,8 @@ Step 4: Connecting electrode cable
 
 Connect the BioAmp cable to Muscle BioAmp Blip by inserting the cable end in the JST PH connector as shown.
 
-.. image:: media/blip-bioamp-cable.*
+.. figure:: media/blip-bioamp-cable.*
+    :align: center
 
 Step 5: Skin Preparation
 ===============================================
@@ -155,13 +188,20 @@ Using gel electrodes
 2. Peel the plastic backing from electrodes
 3. Place the IN+ and IN- cables on the arm near the ulnar nerve & REF (reference) at the back of your hand as shown in the connection diagram.
 
-.. figure:: media/emg-connections-1.*
+.. only:: latex
 
-    Muscle BioAmp Blip with breadboard
+   .. figure:: media/emg-connections-1.*
+       :align: center
+       :width: 60%
 
-.. figure:: media/emg-connections-2.*
+       Muscle BioAmp Blip with breadboard
 
-    Muscle BioAmp Blip directly connected via jumper cables
+.. only:: html
+
+   .. figure:: media/emg-connections-1.*
+       :align: center
+
+       Muscle BioAmp Blip with breadboard
 
 Using Muscle BioAmp Band
 ---------------------------
@@ -169,11 +209,12 @@ Using Muscle BioAmp Band
 1. Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve & REF (reference) on the far side of the band.
 2. Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.
 
+.. tip:: Visit the complete documentation on how to :ref:`assemble and use the BioAmp Bands <using-bioamp-bands>` or follow the youtube video given below.
    **Tutorial on how to use the band:**
 
-.. youtube:: xYZdw0aesa0
-    :align: center
-    :width: 100%
+   .. youtube:: xYZdw0aesa0
+       :align: center
+       :width: 100%
 
 .. note:: In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.
 
@@ -182,9 +223,9 @@ Step 7: Uploading the code
 
 Connect your Arduino UNO R3 to your laptop using the USB cable (Type A to Type B). Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:
     
-EMG Filter: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino
+:fab:`github;pst-color-primary` `EMG Filter <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino>`_
 
-EMG Envelope: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino
+:fab:`github;pst-color-primary` `EMG Envelope <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino>`_
 
 Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
 select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
@@ -201,7 +242,8 @@ Step 8: Visualizing the EMG signals
 
 Now flex your arm to visualize the muscle signals in real time on your laptop.
 
-.. image:: media/emg-recording.*
+.. figure:: media/emg-recording.*
+    :align: center
 
 .. rubric:: Footnotes
 

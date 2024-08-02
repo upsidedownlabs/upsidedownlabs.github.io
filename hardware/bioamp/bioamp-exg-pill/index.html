@@ -53,7 +53,7 @@
     <link rel="prev" title="Hardware" href="../../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Jun 28, 2024"/>
+    <meta name="docbuild:last-update" content="Aug 02, 2024"/>
   </head>
   
   
@@ -181,6 +181,13 @@
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../../../guides/index.html">
                         Guides
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../courses/index.html">
+                        Courses
                       </a>
                     </li>
                 
@@ -422,6 +429,13 @@ document.write(`
                       </a>
                     </li>
                 
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../courses/index.html">
+                        Courses
+                      </a>
+                    </li>
+                
             <li class="nav-item dropdown">
                 <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
                     More
@@ -653,7 +667,9 @@ just a few. It also works with any dedicated ADC, like the Texas Instruments ADS
 <p class="admonition-title">Note</p>
 <p>It is recommended to use Arduino UNO R4 while recording biopotential signals since it has 14-bit ADC and can record the signals much accurately.</p>
 </div>
-<img alt="../../../_images/bioamp-exg-pill.png" class="align-center" src="../../../_images/bioamp-exg-pill.png" />
+<figure class="align-center">
+<img alt="../../../_images/bioamp-exg-pill.png" src="../../../_images/bioamp-exg-pill.png" />
+</figure>
 </section>
 <section id="what-makes-it-different">
 <h2>What makes it different?<a class="headerlink" href="#what-makes-it-different" title="Link to this heading">#</a></h2>
@@ -724,11 +740,15 @@ just a few. It also works with any dedicated ADC, like the Texas Instruments ADS
 <ul class="simple">
 <li><p>Before you start using the kit, please download <a class="reference external" href="https://www.arduino.cc/en/software">Arduino IDE v1.8.19 (legacy IDE)</a>. Using this you’ll be able to upload the arduino sketches in your development board and visualise the data on your laptop.</p></li>
 </ul>
+<figure class="align-default">
 <img alt="../../../_images/arduino-ide.png" src="../../../_images/arduino-ide.png" />
+</figure>
 <ul class="simple">
 <li><p>Download Backyard Brains’ <a class="reference external" href="https://backyardbrains.com/products/spikerecorder">Spike Recorder</a> according to the operating system you are using (Windows, OSX, Linux).</p></li>
 </ul>
+<figure class="align-default">
 <img alt="../../../_images/byb.png" src="../../../_images/byb.png" />
+</figure>
 </section>
 <section id="using-the-hardware">
 <h2>Using the Hardware<a class="headerlink" href="#using-the-hardware" title="Link to this heading">#</a></h2>
@@ -736,11 +756,17 @@ just a few. It also works with any dedicated ADC, like the Texas Instruments ADS
 <section id="step-1-solder-connectors">
 <h3>Step 1: Solder Connectors<a class="headerlink" href="#step-1-solder-connectors" title="Link to this heading">#</a></h3>
 <p>Insert the provided BioAmp cable’s JST PH connector and header pins from top as shown in the image and solder them from below.</p>
-<figure class="align-center">
+<figure class="align-center" id="id8">
 <img alt="../../../_images/assembly-step1.png" src="../../../_images/assembly-step1.png" />
+<figcaption>
+<p><span class="caption-text"><cite>Soldering the connector &amp; header pins on BioAmp EXG Pill</cite></span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
-<figure class="align-center">
+<figure class="align-center" id="id9">
 <img alt="../../../_images/bioamp-exg-pill-soldered.png" src="../../../_images/bioamp-exg-pill-soldered.png" />
+<figcaption>
+<p><span class="caption-text"><cite>After soldering, BioAmp EXG Pill should look like this</cite></span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
 </section>
 <section id="step-2-optional-configure-for-ecg-emg">
@@ -757,8 +783,8 @@ just a few. It also works with any dedicated ADC, like the Texas Instruments ADS
 <section id="step-3-connect-mcu-adc">
 <h3>Step 3: Connect MCU/ADC<a class="headerlink" href="#step-3-connect-mcu-adc" title="Link to this heading">#</a></h3>
 <p>Connect your BioAmp EXG Pill to your MCU/ADC as per the connection table shown below:</p>
-<table class="table" id="id8">
-<caption><span class="caption-text">BioAmp to MCU/ADC connection</span><a class="headerlink" href="#id8" title="Link to this table">#</a></caption>
+<table class="table" id="id10">
+<caption><span class="caption-text">BioAmp to MCU/ADC connection</span><a class="headerlink" href="#id10" title="Link to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>BioAmp</p></th>
 <th class="head"><p>MCU/ADC</p></th>
@@ -777,8 +803,11 @@ just a few. It also works with any dedicated ADC, like the Texas Instruments ADS
 </tbody>
 </table>
 <p>For all the examples provided, we are using the A0 pin of Arduino UNO R3. Connect your BioAmp to your MCU/ADC via jumper cables provided in the kit. If you are connecting <code class="docutils literal notranslate"><span class="pre">OUT</span></code> pin of BioAmp to any other analog pin (A0-A5) of Arduino UNO board, then you will have to change the INPUT PIN in the Arduino sketch accordingly.</p>
-<figure class="align-center">
+<figure class="align-center" id="id11">
 <img alt="../../../_images/connections-with-arduino.png" src="../../../_images/connections-with-arduino.png" />
+<figcaption>
+<p><span class="caption-text"><cite>Connections with Arduino UNO R3</cite></span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -788,7 +817,12 @@ just a few. It also works with any dedicated ADC, like the Texas Instruments ADS
 <section id="step-4-connecting-electrode-cable">
 <h3>Step 4: Connecting electrode cable<a class="headerlink" href="#step-4-connecting-electrode-cable" title="Link to this heading">#</a></h3>
 <p>Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JST PH connector as shown in the graphic below.</p>
+<figure class="align-center" id="id12">
 <img alt="../../../_images/connection-with-cable.png" src="../../../_images/connection-with-cable.png" />
+<figcaption>
+<p><span class="caption-text"><cite>Connections with BioAmp Cable v3</cite></span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="step-5-skin-preparation">
 <h3>Step 5: Skin Preparation<a class="headerlink" href="#step-5-skin-preparation" title="Link to this heading">#</a></h3>
@@ -814,19 +848,24 @@ neurons). EMG results can reveal nerve dysfunction, muscle dysfunction, or probl
 <li><p>Peel the plastic backing from electrodes</p></li>
 <li><p>Place the IN+ and IN- cables on the arm near the ulnar nerve &amp; REF (reference) at the back of your hand as shown in the connection diagram.</p></li>
 </ol>
+<figure class="align-default">
 <img alt="../../../_images/emg.png" src="../../../_images/emg.png" />
+</figure>
 <ul class="simple">
 <li><p><strong>Using Muscle BioAmp Band:</strong></p></li>
 </ul>
-<ol class="arabic">
+<ol class="arabic simple">
 <li><p>Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve &amp; REF (reference) on the far side of the band.</p></li>
-<li><p>Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.</p>
-<p><strong>Tutorial on how to use the band:</strong></p>
-</li>
+<li><p>Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.</p></li>
 </ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Visit the complete documentation on how to <a class="reference internal" href="../../../guides/usage-guides/using-bioamp-bands/index.html#using-bioamp-bands"><span class="std std-ref">assemble and use the BioAmp Bands</span></a> or follow the youtube video given below.</p>
+<p><strong>Tutorial on how to use the band:</strong></p>
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/xYZdw0aesa0" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
-</iframe></div><div class="admonition note">
+</iframe></div></div>
+<div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.</p>
 </div>
@@ -834,23 +873,25 @@ neurons). EMG results can reveal nerve dysfunction, muscle dysfunction, or probl
 <section id="uploading-the-code">
 <h4>Uploading the code<a class="headerlink" href="#uploading-the-code" title="Link to this heading">#</a></h4>
 <p>Connect the Arduino Uno to your laptop using the USB cable (Type A to Type B). Copy paste any one of the Arduino Sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
-<p>EMG Filter: <a class="github reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino">upsidedownlabs/Muscle-BioAmp-Arduino-Firmware</a></p>
-<p>EMG Envelope: <a class="github reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino">upsidedownlabs/Muscle-BioAmp-Arduino-Firmware</a></p>
-<p>Go to tools from the menu bar, select “board” option then select Arduino UNO. In the same menu,
+<p><span class="fab fa-github pst-color-primary"></span> <a class="reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino">EMG Filter</a></p>
+<p><span class="fab fa-github pst-color-primary"></span> <a class="reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino">EMG Envelope</a></p>
+<p>Go to <code class="docutils literal notranslate"><span class="pre">tools</span></code> from the menu bar, select <code class="docutils literal notranslate"><span class="pre">board</span></code> option then select Arduino UNO. In the same menu,
 select the COM port on which your Arduino Uno is connected. To find out the right COM port,
 disconnect your board and reopen the menu. The entry that disappears should be the
 right COM port. Now upload the code, &amp; open the serial plotter from the tools menu to visualize
 the EMG signals.</p>
 <p>After opening the serial plotter make sure to select the baud rate to 115200.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p>Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.</p>
 </div>
 </section>
 <section id="visualizing-the-emg-signals">
 <h4>Visualizing the EMG signals<a class="headerlink" href="#visualizing-the-emg-signals" title="Link to this heading">#</a></h4>
 <p>Now flex your arm to visualize the muscle signals in real time on your laptop.</p>
+<figure class="align-center">
 <img alt="../../../_images/EMGEnvelop.jpg" src="../../../_images/EMGEnvelop.jpg" />
+</figure>
 </section>
 </section>
 <section id="step-6-measuring-electrocardiography-ecg">
@@ -872,7 +913,9 @@ that are a consequence of cardiac muscle depolarization followed by repolarizati
 <li><p>Peel the plastic backing from electrodes</p></li>
 <li><p>Place the IN- cable on the left side, IN+ in the middle and REF (reference) on the far right side as shown in the diagram.</p></li>
 </ol>
+<figure class="align-center">
 <img alt="../../../_images/ecg.png" src="../../../_images/ecg.png" />
+</figure>
 <ul class="simple">
 <li><p><strong>Using Heart BioAmp Band:</strong></p></li>
 </ul>
@@ -881,28 +924,35 @@ that are a consequence of cardiac muscle depolarization followed by repolarizati
 <li><p>Place the IN- cable on the left side, IN+ in the middle and REF (reference) on the far right side.</p></li>
 <li><p>Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.</p></li>
 </ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Visit the complete documentation on how to <a class="reference internal" href="../../../guides/usage-guides/using-bioamp-bands/index.html#using-bioamp-bands"><span class="std std-ref">assemble and use the BioAmp Bands</span></a> or follow the youtube video given below.</p>
 <p><strong>Tutorial on how to use the band:</strong></p>
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/fr5iORsVyUM" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
-</iframe></div></section>
+</iframe></div></div>
+</section>
 <section id="id3">
 <h4>Uploading the code<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
 <p>Connect Arduino Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
-<p>ECG Filter: <a class="github reference external" href="https://github.com/upsidedownlabs/Heart-BioAmp-Arduino-Firmware/blob/main/2_ECGFilter/2_ECGFilter.ino">upsidedownlabs/Heart-BioAmp-Arduino-Firmware</a></p>
-<p>Go to tools from the menu bar, select “board” option then select Arduino UNO. In the same menu,
+<p><span class="fab fa-github pst-color-primary"></span> <a class="reference external" href="https://github.com/upsidedownlabs/Heart-BioAmp-Arduino-Firmware/blob/main/2_ECGFilter/2_ECGFilter.ino">ECG Filter</a></p>
+<p>Go to <code class="docutils literal notranslate"><span class="pre">tools</span></code> from the menu bar, select <code class="docutils literal notranslate"><span class="pre">board</span></code> option then select Arduino UNO. In the same menu,
 select the COM port on which your Arduino Uno is connected. To find out the right COM port,
 disconnect your board and reopen the menu. The entry that disappears should be the
 right COM port. Now upload the code, &amp; open the serial plotter from the tools menu to visualize
 the signals.</p>
 <p>After opening the serial plotter make sure to select the baud rate to 115200.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p>Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.</p>
 </div>
 </section>
 <section id="visualizing-the-ecg-signals">
 <h4>Visualizing the ECG signals<a class="headerlink" href="#visualizing-the-ecg-signals" title="Link to this heading">#</a></h4>
+<p>Sit back, relax and see your ECG signals in real time on your laptop.</p>
+<figure class="align-center">
 <img alt="../../../_images/bioamp-Exg-Pill-ECG.jpg" src="../../../_images/bioamp-Exg-Pill-ECG.jpg" />
+</figure>
 </section>
 </section>
 <section id="step-7-measuring-electrooculography-eog">
@@ -922,7 +972,9 @@ is a measure of the eye’s position.</p>
 <ul class="simple">
 <li><p><strong>Horizontal EOG recording:</strong></p></li>
 </ul>
+<figure class="align-center">
 <img alt="../../../_images/eog-horizontal.png" src="../../../_images/eog-horizontal.png" />
+</figure>
 <ol class="arabic simple">
 <li><p>Connect the BioAmp cable to gel electrodes.</p></li>
 <li><p>Peel the plastic backing from electrodes.</p></li>
@@ -931,7 +983,9 @@ is a measure of the eye’s position.</p>
 <ul class="simple">
 <li><p><strong>Vertical EOG recording:</strong></p></li>
 </ul>
+<figure class="align-center">
 <img alt="../../../_images/eog-vertical.png" src="../../../_images/eog-vertical.png" />
+</figure>
 <ol class="arabic simple">
 <li><p>Connect the BioAmp cable to gel electrodes.</p></li>
 <li><p>Peel the plastic backing from electrodes.</p></li>
@@ -941,21 +995,24 @@ is a measure of the eye’s position.</p>
 <section id="id5">
 <h4>Uploading the code<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
 <p>Connect Arduino Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
-<p>EOG Filter: <a class="github reference external" href="https://github.com/upsidedownlabs/Eye-BioAmp-Arduino-Firmware/blob/main/2_EOGFilter/2_EOGFilter.ino">upsidedownlabs/Eye-BioAmp-Arduino-Firmware</a></p>
-<p>Go to tools from the menu bar, select “board” option then select Arduino UNO. In the same menu,
+<p><span class="fab fa-github pst-color-primary"></span> <a class="reference external" href="https://github.com/upsidedownlabs/Eye-BioAmp-Arduino-Firmware/blob/main/2_EOGFilter/2_EOGFilter.ino">EOG Filter</a></p>
+<p>Go to <code class="docutils literal notranslate"><span class="pre">tools</span></code> from the menu bar, select <code class="docutils literal notranslate"><span class="pre">board</span></code> option then select Arduino UNO. In the same menu,
 select the COM port on which your Arduino Uno is connected. To find out the right COM port,
 disconnect your board and reopen the menu. The entry that disappears should be the
 right COM port. Now upload the code, &amp; open the serial plotter from the tools menu to visualize
 the signals.</p>
 <p>After opening the serial plotter make sure to select the baud rate to 115200.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p>Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.</p>
 </div>
 </section>
 <section id="visualizing-the-eog-signals">
 <h4>Visualizing the EOG signals<a class="headerlink" href="#visualizing-the-eog-signals" title="Link to this heading">#</a></h4>
+<p>Move your eyes up-down or left-right to see your EOG signals in real time on your laptop.</p>
+<figure class="align-center">
 <img alt="../../../_images/bioamp-exg-pill-eog.jpg" src="../../../_images/bioamp-exg-pill-eog.jpg" />
+</figure>
 </section>
 </section>
 <section id="step-8-measuring-electroencephalography-eeg">
@@ -968,14 +1025,18 @@ electrical charges that result from the activity of your brain cells which are t
 It is typically non-invasive, with the electrodes placed along the scalp.</p>
 </div>
 <p>For recording EEG from different parts of the brain, you have to place the electrodes according to the <a class="reference external" href="https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)">International 10-20 system for recording EEG</a>.</p>
-<img alt="../../../_images/10-20-system.png" class="align-center" src="../../../_images/10-20-system.png" />
+<figure class="align-center">
+<img alt="../../../_images/10-20-system.png" src="../../../_images/10-20-system.png" />
+</figure>
 <section id="id6">
 <h4>Electrodes placement<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
 <p>We have 2 options to measure the EEG signals, either using the gel electrodes or using dry electrode based Brain BioAmp Band. You can try both of them one by one.</p>
 <ul class="simple">
 <li><p><strong>Using gel electrodes to record from prefrontal cortex part of brain:</strong></p></li>
 </ul>
+<figure class="align-center">
 <img alt="../../../_images/eeg.png" src="../../../_images/eeg.png" />
+</figure>
 <ol class="arabic simple">
 <li><p>Connect the BioAmp cable to gel electrodes.</p></li>
 <li><p>Peel the plastic backing from electrodes.</p></li>
@@ -989,24 +1050,28 @@ It is typically non-invasive, with the electrodes placed along the scalp.</p>
 <li><p>In this case, the REF (reference) should be connected using gel electrode. So connect the reference of BioAmp cable to the gel electrode, peel the plastic backing and place it at the bony part, on the back side of your earlobe.</p></li>
 <li><p>Now put a small drop of electrode gel on the dry electrodes (IN+ and IN-) between the skin and metallic part of BioAmp cable to get the best results.</p></li>
 </ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Visit the complete documentation on how to <a class="reference internal" href="../../../guides/usage-guides/using-bioamp-bands/index.html#using-bioamp-bands"><span class="std std-ref">assemble and use the BioAmp Bands</span></a> or follow the youtube video given below.</p>
+<p><strong>Tutorial on how to use the band:</strong></p>
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/O6qp7teT-sM" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Similarly you can use the band to record EEG signals from the visual cortex part of brain by placing the dry electrodes on O1 and O2 instead of Fp1 and Fp2. Everything else will remain the same.</p>
 </div>
-<p><strong>Tutorial on how to use the band:</strong></p>
-<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
-<iframe allowfullscreen="true" src="https://www.youtube.com/embed/O6qp7teT-sM" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
-</iframe></div></section>
+</section>
 <section id="id7">
 <h4>Uploading the code<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
 <p>Connect Arduino Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
-<p><a class="reference external" href="https://raw.githubusercontent.com/BackyardBrains/SpikerShield/master/Muscle/Arduino%20Code/SpikeRecorder/SpikeRecorderSpikerShield_V1_1.ino">Spike recorder arduino code</a></p>
-<p>Go to tools from the menu bar, select “board” option then select Arduino UNO. In the same menu,
+<p><span class="fab fa-github pst-color-primary"></span> <a class="reference external" href="https://raw.githubusercontent.com/BackyardBrains/SpikerShield/master/Muscle/Arduino%20Code/SpikeRecorder/SpikeRecorderSpikerShield_V1_1.ino">Spike recorder arduino code</a></p>
+<p>Go to <code class="docutils literal notranslate"><span class="pre">tools</span></code> from the menu bar, select <code class="docutils literal notranslate"><span class="pre">board</span></code> option then select Arduino UNO. In the same menu,
 select the COM port on which your development board is connected. To find out the right COM port, screen
 disconnect your board and reopen the menu. The entry that disappears should be the
 right COM port. Now upload the code.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p>Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.</p>
 </div>
 </section>
@@ -1014,14 +1079,22 @@ right COM port. Now upload the code.</p>
 <h4>Visualizing the EEG signals<a class="headerlink" href="#visualizing-the-eeg-signals" title="Link to this heading">#</a></h4>
 <p>Open the Spike Recorder software. When the Spike Recorder starts, it will start recording from your microphone. To change that, go to the settings by clicking
 the first icon on the top left corner of the screen, select the COM port on which your Arduino UNO is connected and click on connect.</p>
-<figure class="align-default">
+<figure class="align-center" id="id13">
 <img alt="../../../_images/spike-recorder-configurations.jpg" src="../../../_images/spike-recorder-configurations.jpg" />
+<figcaption>
+<p><span class="caption-text"><cite>Spike Recorder settings</cite></span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
 <p>Mute the speakers and apply the 50Hz notch filter by clicking on the checkbox as shown in the screenshot above. You should
 set the low band pass filter to 1Hz and high bandpass filter to 40Hz as we are only recording the EEG signals which range between
 these frequencies.</p>
 <p>Now everything is configured and connected. So close the settings window and start recording EEG signals.</p>
+<figure class="align-center" id="id14">
 <img alt="../../../_images/bioamp-exg-pill-eeg.png" src="../../../_images/bioamp-exg-pill-eeg.png" />
+<figcaption>
+<p><span class="caption-text"><cite>EEG signals being visualised in Spike Recorder</cite></span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>The signals that you can see on the screen right now are originating from prefrontal cortex part of your brain and propagating through all the layers to the surface of your skin.</p>
 <p>To record these EEG signals, you have placed the electrodes on the forehead (Fp1 &amp; Fp2), then BioAmp EXG Pill is amplifying those signals so that we can detect it and finally sending it to the ADC (Analog to Digital Convertor) of your Arduino Uno. Ultimately the signals are being visualized in Spike Recorder software.</p>
 <p>We hope everything is clear now and you understand how the signals are propagating from your brain to the screen of the laptop.</p>
@@ -1086,17 +1159,41 @@ be used for a wide variety of interesting biosensing projects, including:</p>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Detecting heart beats</div>
+Controlling video game using brainwaves (EEG)</div>
 </div>
-<a class="sd-stretched-link reference external" href="https://youtu.be/uB5R-vGJjJo"></a></div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Controlling-Video-Game-Using-Brainwaves-EEG/"></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Measuring heart rate</div>
+Visualising electrical impulses from eyes (EOG)</div>
 </div>
-<a class="sd-stretched-link reference external" href="https://youtu.be/PvWtCFNK3_s"></a></div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Visualizing-Electrical-Impulses-of-Eyes-EOG-Using-/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Recording EEG from visual cortex</div>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Recording-EEG-From-Visual-Cortex-of-Brain-Using-Bi/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Recording EEG from prefrontal cortex</div>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Recording-EEG-From-Pre-Frontal-Cortex-of-Brain-Usi/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Eye blink detection</div>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Eye-Blink-Detection-by-Recording-EOG-Using-BioAmp-/"></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
@@ -1104,23 +1201,47 @@ Measuring heart rate</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Creating a drowsiness detector</div>
 </div>
-<a class="sd-stretched-link reference external" href="https://youtu.be/h4F41mp4mWk"></a></div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Drowsiness-Detector-by-Detecting-EOG-Signals-Using/"></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Detecting eye blinks</div>
+Record publication-grade ECG</div>
 </div>
-<a class="sd-stretched-link reference external" href="https://youtu.be/PfEJVa3gv6E"></a></div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Record-Publication-Grade-ECG-at-Your-Home-Using-Bi/"></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Record EEG from visual cortex part of brain</div>
+Measuring heart rate</div>
 </div>
-<a class="sd-stretched-link reference external" href="https://youtu.be/XENPUkfxLec"></a></div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Measuring-Heart-Rate-Using-BioAmp-EXG-Pill/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Detecting heart beats</div>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Detecting-Heart-Beats-Using-BioAmp-EXG-Pill/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Record publication-grade EMG</div>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Recording-Publication-Grade-Muscle-Signals-Using-B/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Detecting up and down movement of eyes</div>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Tracking-UP-and-DOWN-Movements-of-Eyes-Using-EOG/"></a></div>
 </div>
 </div>
 </div>
@@ -1276,10 +1397,13 @@ Brain Computer Interface (BCI) projects and share them with us at <a class="refe
 
   <div class="sidebar-secondary-item">
     
-        
         <a role="button" href="../../../bioamp-exg-pill.pdf" target="_blank">
             <i class="fa-solid fa-download"></i> Download PDF
         </a>
+    
+
+    
+
     
 
     
@@ -1333,7 +1457,7 @@ Brain Computer Interface (BCI) projects and share them with us at <a class="refe
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Jun 28, 2024.
+  Last updated on Aug 02, 2024.
   <br/>
 </p></div>
       

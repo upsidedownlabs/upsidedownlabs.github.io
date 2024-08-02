@@ -39,7 +39,7 @@ that you can use with our hardware.
     .. grid-item::
         
         .. card:: 
-            :link: muscle_bioamp-biscute
+            :link: muscle-bioamp-biscute
             :link-type: ref
             :img-top: media/muscle-bioamp-biscute.*
             :img-alt:
@@ -144,3 +144,10 @@ that you can use with our hardware.
    :caption: Guides
 
    guides/index
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Courses
+
+   courses/index

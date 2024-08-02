@@ -1,0 +1,1173 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Theory Day 1 &#8212; upsidedownlabs.github.io  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'courses/open-ephys/theory-day-1/index';</script>
+    <link rel="canonical" href="docs.upsidedownlabs.tech/courses/open-ephys/theory-day-1/index.html" />
+    <link rel="icon" href="../../../_static/logo_sqr_bgw.svg"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Theory Day 2" href="../theory-day-2/index.html" />
+    <link rel="prev" title="Extracellular Electrophysiology Acquisition" href="../index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+    <meta name="docbuild:last-update" content="Aug 02, 2024"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">Welcome to Upside Down Labs docs site!</div>
+  </div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo_black_hr_nbg.svg" class="logo__image only-light" alt="upsidedownlabs.github.io  documentation - Home"/>
+    <script>document.write(`<img src="../../../_static/logo_white_hr_nbg.svg" class="logo__image only-dark" alt="upsidedownlabs.github.io  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="ms-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../hardware/index.html">
+                        Hardware
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../software/index.html">
+                        Software
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../experiments/index.html">
+                        Experiments
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../kits/index.html">
+                        DIY Kits
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../guides/index.html">
+                        Guides
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../../index.html">
+                        Courses
+                      </a>
+                    </li>
+                
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+                    DigiKey
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
+                    Mouser
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.tindie.com/stores/upsidedownlabs/">
+                    Tindie
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355">
+                    Amazon India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://store.upsidedownlabs.tech/">
+                    Store India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://t.ly/ExlaF">
+                    GeM India
+                  </a>
+                </li>
+                
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instructables.com/member/Upside%20Down%20Labs/instructables/" title="Instructables" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/instructables.svg" class="icon-link-image" alt="Instructables"/></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../hardware/index.html">
+                        Hardware
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../software/index.html">
+                        Software
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../experiments/index.html">
+                        Experiments
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../kits/index.html">
+                        DIY Kits
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../guides/index.html">
+                        Guides
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../../index.html">
+                        Courses
+                      </a>
+                    </li>
+                
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
+                    More
+                </button>
+                <ul id="pst-nav-more-links-2" class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+                    DigiKey
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
+                    Mouser
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.tindie.com/stores/upsidedownlabs/">
+                    Tindie
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355">
+                    Amazon India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://store.upsidedownlabs.tech/">
+                    Store India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://t.ly/ExlaF">
+                    GeM India
+                  </a>
+                </li>
+                
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instructables.com/member/Upside%20Down%20Labs/instructables/" title="Instructables" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/instructables.svg" class="icon-link-image" alt="Instructables"/></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Courses</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Extracellular Electrophysiology Acquisition</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Theory Day 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../theory-day-2/index.html">Theory Day 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../theory-day-3/index.html">Theory Day 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../theory-day-4/index.html">Theory Day 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exday1-nokit.html">Exercises Day 1: No Hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exday2-nokit.html">Exercises Day 2: No Hardware</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Courses</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Extracellular Electrophysiology Acquisition</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Theory Day 1</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="theory-day-1">
+<span id="id1"></span><h1>Theory Day 1<a class="headerlink" href="#theory-day-1" title="Link to this heading">#</a></h1>
+<nav class="contents local" id="table-of-contents">
+<p class="topic-title">Table of Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#introduction" id="id12">Introduction</a></p></li>
+<li><p><a class="reference internal" href="#talk-introduction" id="id13">Talk: Introduction</a></p></li>
+<li><p><a class="reference internal" href="#types-of-extracellular-electrophysiology" id="id14">Types of extracellular electrophysiology</a></p></li>
+<li><p><a class="reference internal" href="#electronics-refresher" id="id15">Electronics Refresher</a></p>
+<ul>
+<li><p><a class="reference internal" href="#charged-particles-exert-electric-force" id="id16">Charged particles exert electric force</a></p></li>
+<li><p><a class="reference internal" href="#currents-are-moving-charges" id="id17">Currents are moving charges</a></p></li>
+<li><p><a class="reference internal" href="#electric-potential-difference" id="id18">Electric Potential Difference</a></p></li>
+<li><p><a class="reference internal" href="#resistance" id="id19">Resistance</a></p></li>
+<li><p><a class="reference internal" href="#capacitance" id="id20">Capacitance</a></p></li>
+<li><p><a class="reference internal" href="#impedance" id="id21">Impedance</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#equivalent-circuits-in-the-brain" id="id22">Equivalent circuits in the brain</a></p>
+<ul>
+<li><p><a class="reference internal" href="#neuronal-output-action-potentials" id="id23">Neuronal output: Action Potentials</a></p></li>
+<li><p><a class="reference internal" href="#neuronal-input-postsynaptic-potentials" id="id24">Neuronal input: Postsynaptic potentials</a></p></li>
+<li><p><a class="reference internal" href="#capacitors-in-the-brain" id="id25">Capacitors in the brain</a></p></li>
+<li><p><a class="reference internal" href="#extracellular-measurements" id="id26">Extracellular measurements</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#what-does-an-acquisition-system-do" id="id27">What does an acquisition system do?</a></p></li>
+<li><p><a class="reference internal" href="#the-electrode-detects-changes-in-electric-potential" id="id28">The electrode detects changes in electric potential</a></p>
+<ul>
+<li><p><a class="reference internal" href="#non-polarised-electrodes" id="id29">Non-polarised electrodes</a></p></li>
+<li><p><a class="reference internal" href="#polarised-electrodes" id="id30">Polarised electrodes</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#references" id="id31">References</a></p></li>
+</ul>
+</nav>
+<section id="introduction">
+<span id="refwot"></span><h2><a class="toc-backref" href="#id12" role="doc-backlink">Introduction</a><a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>Welcome to the Open Ephys Cajal course on extracellular electrophysiology acquisition!</p>
+<p>The goal of electrophysiology (‘ephys’) is to record signals generated by electrically active cells. There are many different
+types of acquisition systems and setups, but they are built upon the same principles.
+By understanding these fundamental ideas, we hope you will be able to see past branding and tradition, and decide for yourself what
+you need your setup to be able to do.</p>
+</section>
+<section id="talk-introduction">
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">Talk: Introduction</a><a class="headerlink" href="#talk-introduction" title="Link to this heading">#</a></h2>
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/eaAKn61R6MY" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></section>
+<section id="types-of-extracellular-electrophysiology">
+<h2><a class="toc-backref" href="#id14" role="doc-backlink">Types of extracellular electrophysiology</a><a class="headerlink" href="#types-of-extracellular-electrophysiology" title="Link to this heading">#</a></h2>
+<p>Several biological processes in the body generate time-varying electrical signals that we can measure outside of cells, such as skeletal muscle contraction (electromyography, EMG), or the heartbeat (electrocardiogram, ECG). In systems neuroscience, we often use intracranial electrodes to measure action potential firing (spikes) or local field potentials (LFP). Electrodes outside the skull allow us to detect the electroencephalogram (EEG) non-invasively.</p>
+<p>Most of the theory in this course will focus on intracranial extracellular recordings of neuronal activity, as these are the most common in systems neuroscience. For the practical exercises, we will be building an EMG recording circuit, as it is straightforward to test on yourself.</p>
+<table class="table" id="id2">
+<caption><span class="caption-text">Table 1: Overview of Extracellular Electrophysiology Methods</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 25.0%" />
+<col style="width: 35.0%" />
+<col style="width: 20.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Technique</p></th>
+<th class="head"><p>Signal</p></th>
+<th class="head"><p>Electrodes</p></th>
+<th class="head"><p>Typical amplitude</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ECG/EKG</p></td>
+<td><p>Heart: Depolarisation/repolarisation of cardiac tissue</p></td>
+<td><p>Surface electrodes</p></td>
+<td><p>mV range</p></td>
+</tr>
+<tr class="row-odd"><td><p>EMG</p></td>
+<td><p>Skeletal muscle: A train of motor unit action potentials.</p></td>
+<td><p>Surface electrodes placed on skin above muscle, reference electrode on skin above bone.</p></td>
+<td><p>mV range</p></td>
+</tr>
+<tr class="row-even"><td><p>EEG</p></td>
+<td><p>Brain: Summations of slow neural activity</p></td>
+<td><p>Surface electrodes on scalp</p></td>
+<td><p>50 µV</p></td>
+</tr>
+<tr class="row-odd"><td><p>LFP</p></td>
+<td><p>Brain: Summations of slow neural activity</p></td>
+<td><p>Intracranial electrode</p></td>
+<td><p>100-1000 µV</p></td>
+</tr>
+<tr class="row-even"><td><p>‘Spike’ recording</p></td>
+<td><p>Brain: Action potentials (fast ‘spikes’) from individual neurons</p></td>
+<td><p>Intracranial electrodes, e.g. tetrodes (4 insulated wires twisted together), Single-wire electrodes, Silicon probes.</p></td>
+<td><p>20-200 µV</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="electronics-refresher">
+<h2><a class="toc-backref" href="#id15" role="doc-backlink">Electronics Refresher</a><a class="headerlink" href="#electronics-refresher" title="Link to this heading">#</a></h2>
+<section id="charged-particles-exert-electric-force">
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">Charged particles exert electric force</a><a class="headerlink" href="#charged-particles-exert-electric-force" title="Link to this heading">#</a></h3>
+<p>Electric signals in organic tissues are generated by positively charged (Na<sup>+</sup>, K<sup>+</sup>, Ca<sup>2+</sup>) and negatively charged (Cl<sup>-</sup>) ions. Electrons are negatively charged particles in our electrodes and wires (i.e., metal).</p>
+<p>All charged particles exert an electric force on other charged particles. Coulomb’s law (Eq 1) describes that this force will have both magnitude (it will be bigger if the charges are larger or closer together) and direction (it will either attract or repel, depending on whether the charges have different or the same polarity).</p>
+<div class="math notranslate nohighlight">
+\[F= k\frac{q1q2}{r^2}\]</div>
+<p>Equation 1: F = electric force, k = Coulomb constant, q1 + q2 = charges, r = distance of separation</p>
+<figure class="align-center" id="id3">
+<img alt="Representation of a positive and negative charge being attracted towards each other, and two positive charges being repelled from each other." src="../../../_images/coulombs_law_visual.png" />
+<figcaption>
+<p><span class="caption-text"><cite>Figure 1: The magnitude of electric force between charges depends on their charge and the distance between them.</cite></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We often represent electric force using electric field lines surrounding the particle. These lines show that charges in the vicinity of the particle will be influenced by its force, and that this influence has a particular direction.</p>
+<figure class="align-center" id="id4">
+<img alt="A single positive charge represented as a circle, surrounded by a gradient (which is darkest close to the charge) representing the strength of the electric force, and electric field lines radiating out from the charge." src="../../../_images/electric_force_field.png" />
+<figcaption>
+<p><span class="caption-text">Figure 2: Electric field lines show the direction of the force on a positive charge. Colour intensity represents electric potential</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>If a charged particle is free to move and placed within an electric field, then the electric forces acting on it will cause it to move in a certain direction. An example is an ion in the cytoplasm; if not bound to a membrane, this ion will be moved by electric forces it experiences.</p>
+</section>
+<section id="currents-are-moving-charges">
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">Currents are moving charges</a><a class="headerlink" href="#currents-are-moving-charges" title="Link to this heading">#</a></h3>
+<p>Moving charges create a current (I) measured in amperes. The current tells us how much charge is moving per second.</p>
+<div class="math notranslate nohighlight">
+\[I = \frac{Q}{t}\]</div>
+<p>Equation 2: Current (I) is equal to charge (Q) over time (t).</p>
+<p>By convention, the direction of this current is always the direction of positive charge movement. When currents are generated by a negatively charged ion, such as chloride, we describe them as a positive current moving in the opposite direction to the chloride ion.</p>
+</section>
+<section id="electric-potential-difference">
+<span id="refepot"></span><h3><a class="toc-backref" href="#id18" role="doc-backlink">Electric Potential Difference</a><a class="headerlink" href="#electric-potential-difference" title="Link to this heading">#</a></h3>
+<p>Figure 3 shows a negative and positive charge that are held in a certain position in space. These large charges are not allowed to move, but still exert an attracting force on each other. If we let them, they would move towards each other. We can see that their electric forces will interact.</p>
+<figure class="align-center" id="id5">
+<img alt="../../../_images/electric_potential.png" src="../../../_images/electric_potential.png" />
+<figcaption>
+<p><span class="caption-text"><cite>Figure 3: Electric potential mapped around a positive and negative charge</cite></span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<div class="legend">
+<p><a class="reference external" href="https://commons.wikimedia.org/wiki/File:VFPt_metal_balls_plusminus_potential%2Bcontour.svg">© 2010 Geek3 /CC BY-SA 4.0</a></p>
+</div>
+</figcaption>
+</figure>
+<p>Each point in this image has a value that describes the <strong>electric potential</strong> at that point, represented by colour. If free to do so, positive charges will move from areas of higher potential to areas of lower potential. Just as a difference in gravitational potential energy can cause a river to flow down a mountain, a difference in electric potential can cause charged particles to flow from a region of higher potential towards a region of lower potential until the charges no longer experience a net electrical driving force. In an electric circuit, the driving force is therefore a difference in electric potential between two points.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The bigger the difference in electric potential between A and B, the higher the driving force on the charges. If there is no difference in electric potential, no net charges will move (no current). Our driving force is therefore the Electric Potential Difference between two points, measured in volts and often referred to as ‘voltage’.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>If we placed a +1 ‘test’ charge at any point in this space, it would experience a net electric force; some influence from the + charge, some influence from the negative charge. The vector description of the magnitude and direction of that force is the electric field, and is shown as field lines on Figure 3.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The electric potential is different to the electric field. While the electric field has both magnitude and direction, the electric potential only has magnitude, and is represented as colour in Figure 3. High, (orange) positive electric potential surrounds our positive charge, and low (blue) negative potential surrounds our negative charge.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>If we placed our positive +1 test charge at an area of high potential, like point ‘A’, it would follow the gradient of the electric potential until it reached the negative particle at point ‘B’. The difference in electric potential between point A and B therefore generated a current (a moving charge). We could use that converted potential energy to power something else.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In contrast, to move the same particle from point B to point A, we would need to provide additional energy to counteract the repelling force generated by the positive point charge. The difference in electric potential between two points tells us how much energy we need to move a charge from one place to another. If we were to add more point charges (that are not allowed to move) to this image, their generated forces will sum, giving a more complex map of electric potentials at every point in space.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Because it is defined as a difference between two points, voltage always has to be measured between two points. When we do extracellular recordings, we measure the electric potential difference between the tip of our electrode and our ground or reference point.</p>
+<section id="where-is-0-volts">
+<h4>Where is 0 volts?<a class="headerlink" href="#where-is-0-volts" title="Link to this heading">#</a></h4>
+<p>To describe the height of a mountain, there is no such thing as absolute altitude; instead, we use ‘sea level’ as our point 0 and measure from there. A similar thing goes for voltage. We pick a point to call ‘0 V’ and compare the rest of the circuit to that. This point can be the negative terminal of a battery, the extracellular fluid, or a point at infinity, far from all sources of electric potential (Einevoll et al., 2013).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The terms <code class="docutils literal notranslate"><span class="pre">ground</span></code>, <code class="docutils literal notranslate"><span class="pre">reference</span></code>, and <code class="docutils literal notranslate"><span class="pre">earth</span></code> are often used interchangeably, but are not quite the same thing.</p>
+<p>Reference: A point in the circuit that you labelled 0V, so that you can measure the other values from there.</p>
+<p>Ground: Often used as a reference point and considered 0V, but has the additional capacity to provide (source) or get rid of (sink) a lot of current, without its own potential changing.</p>
+<p>Earth: The actual planet earth is the best ground we have. Metal poles in the earth are used to sink current from lightning bolts because the sheer size of the earth means that such a tiny bit of extra current is not a problem, and won’t change the potential of the earth.</p>
+</section>
+</section>
+<section id="resistance">
+<h3><a class="toc-backref" href="#id19" role="doc-backlink">Resistance</a><a class="headerlink" href="#resistance" title="Link to this heading">#</a></h3>
+<p>Resistance opposes current flow. The electric potential difference (V) drives a current (I) from point A to B across a resistance (R). A resistance can be measured between any two points A and B; it may be so high as to be infinite in which case we consider the points isolated from each other. The resistance may be very low, such as in a wire, in which case we consider the two points short circuited.</p>
+<p>This is described by Ohm’s law:</p>
+<div class="math notranslate nohighlight">
+\[I = V/R\]</div>
+<p>Equation 3: Current (I) is equal to voltage (V) over resistance (R).</p>
+</section>
+<section id="capacitance">
+<span id="refcapacitancetheory"></span><h3><a class="toc-backref" href="#id20" role="doc-backlink">Capacitance</a><a class="headerlink" href="#capacitance" title="Link to this heading">#</a></h3>
+<p>Capacitors for use in electronics are made of two conducting plates, separated by a thin layer of insulating material that prevents the plates from touching. When a capacitor is connected to a voltage source, such as a battery, charges collect on one of the plates. The charges cannot move through the insulating layer, but they can exert a force through it. This electric force pushes away similar charges on the opposite plate. This movement of charge is what gives us current flow in the circuit, even though charges cannot flow directly through the capacitor.</p>
+<div class="math notranslate nohighlight">
+\[Q = C * V\]</div>
+<p>Equation 4: The amount of charge (Q) a capacitor can separate depends on is its capacitance (C, measured in farads) and the voltage (V) across the capacitor.</p>
+<figure class="align-center" id="id6">
+<img alt="two capacitors are represented as vertical lines. The left capacitor is uncharged, and has balanced positive and negative charges on each side represented as circles with +1 or -1 charge. The capacitor on the right has been charged; a voltage has been applied and now the positive charges are aligned on one side of the plate, and the negative charges on the other." src="../../../_images/capacitor_charge.png" />
+<figcaption>
+<p><span class="caption-text"><cite>Figure 4: An uncharged capacitor has no net charge on either plate (left). A charged capacitor separates charges with positive charges on one plate, and negative charges on the other (right).</cite></span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In a direct current circuit, current will flow while the capacitor charges, as charge is pushed or pulled on either plate. Current flow will stop once the capacitor is fully charged. This electric charge can be discharged (and, for instance, used to power something) by providing a path that connects the positive and negative charges of the capacitor.</p>
+</section>
+<section id="impedance">
+<span id="refimpedanceintro"></span><h3><a class="toc-backref" href="#id21" role="doc-backlink">Impedance</a><a class="headerlink" href="#impedance" title="Link to this heading">#</a></h3>
+<p>A battery provides a positive current flow in a single direction. In contrast, neuronal currents can move both towards and away from our measuring electrode. After all, Na<sup>+</sup> ions can both enter and exit the cell. Neuronal signals are therefore <strong>alternating signals</strong>. The <strong>frequency</strong> of an alternating signal tells us how often the direction of flow changes. The power supply in buildings is also alternating: the current direction switches at a fixed frequency, producing a sinewave (the notorious 50/60Hz frequency noise in ephys recordings).</p>
+<p>For alternating signals, we need to use impedance (Z) to describe opposition to current flow, instead of using resistance. The impedance represents opposition to current flow measured in both magnitude and phase, which allows us to describe the relationship between voltage and current for time-varying signals. We can measure the impedance of a component at different frequencies, so that we understand both the magnitude and phase relationship between V and I over a broad frequency range (from 1 Hz to 10 kHz). Let’s examine the response of resistors and capacitors to an applied sinusoidal voltage (an alternating signal).</p>
+<section id="impedance-resistors">
+<h4>Impedance: Resistors<a class="headerlink" href="#impedance-resistors" title="Link to this heading">#</a></h4>
+<p>For resistors, the impedance magnitude (Z) is constant and does not vary with the frequency of signal applied. The impedance follows Ohm’s Law (V = IR), which doesn’t take the frequency of the signal into account.</p>
+</section>
+<section id="impedance-capacitors">
+<h4>Impedance: Capacitors<a class="headerlink" href="#impedance-capacitors" title="Link to this heading">#</a></h4>
+<p>In contrast, for a capacitor, the magnitude of impedance decreases as the frequency increases (see Eq 5). We can therefore only describe the impedance of a capacitor at a specific frequency. A second component of impedance is phase offset; in capacitors, the current is 90° out of phase with the voltage. This second aspect of impedance is not within the scope of this course.</p>
+<div class="math notranslate nohighlight">
+\[Zc = \frac{1}{2 \pi fC}\]</div>
+<p>Equation 5: The magnitude of impedance of a capacitor (Zc) will decrease with increasing frequency (f). The larger the capacitance (C), the lower the impedance at a specific frequency.</p>
+</section>
+</section>
+</section>
+<section id="equivalent-circuits-in-the-brain">
+<h2><a class="toc-backref" href="#id22" role="doc-backlink">Equivalent circuits in the brain</a><a class="headerlink" href="#equivalent-circuits-in-the-brain" title="Link to this heading">#</a></h2>
+<p>Let’s apply the electronics concepts above to our neuronal tissue. Neuronal activity relies mainly on ions such as Na<sup>+</sup>, K<sup>+</sup> and Ca<sup>2+</sup>. Whenever these charges flow, we have a <strong>current</strong>. In neurons, our <strong>resistance</strong> to current flow is largely formed by the permeability of the cell membrane to our ion, and changed by opening or closing ion channels in the membrane. When more channels open, the resistance to a certain ion is lowered, and the charge is able to flow in or out of the cell.</p>
+<p>The driving force in this scenario is the membrane potential, i.e. the <strong>difference in electric potential</strong> between the inside of the cell membrane and the extracellular fluid. A neuron typically has a resting membrane potential of around -70 mV compared to the extracellular fluid, if we decide that the extracellular fluid has 0 V.</p>
+<p>In addition to electric forces, ions in neurons are affected by a second driving force; concentration gradients. Ions will tend to diffuse away from areas where there is a high concentration of the ion, to areas with a lower concentration. The interaction of the concentration and electrical driving forces is the electrochemical gradient and this balance is described by the Nernst equation. This will not be covered in this course, but <a class="reference external" href="https://journals.physiology.org/doi/pdf/10.1152/advan.00029.2004">Wright 2004</a> provides a clear refresher on this, and to understand how the -70mV is maintained by the cell.</p>
+<section id="neuronal-output-action-potentials">
+<h3><a class="toc-backref" href="#id23" role="doc-backlink">Neuronal output: Action Potentials</a><a class="headerlink" href="#neuronal-output-action-potentials" title="Link to this heading">#</a></h3>
+<p>Input signals to the neuron can trigger the opening of voltage-dependent Na<sup>+</sup> ion channels, greatly reducing membrane resistance to Na<sup>+</sup>. This allows Na<sup>+</sup> to follow its concentration and electrical gradient, an travel from outside the cell, where the Na<sup>+</sup> concentration is high, to the inside of the cell, where Na<sup>+</sup> concentration is low and the intracellular medium has a lower potential (Kandel, Schwartz, &amp; Jessel, 2000). In neurons, voltage-sensitive Na<sup>+</sup> channels are usually concentrated at the initial segment of the axon, and it is therefore more likely that an action potential will be generated there, rather than in other regions of the cell. The subsequent opening of K<sup>+</sup> channels begins the process of returning the membrane potential to resting conditions (Hodgkin and Huxley, 1939).</p>
+</section>
+<section id="neuronal-input-postsynaptic-potentials">
+<h3><a class="toc-backref" href="#id24" role="doc-backlink">Neuronal input: Postsynaptic potentials</a><a class="headerlink" href="#neuronal-input-postsynaptic-potentials" title="Link to this heading">#</a></h3>
+<p>Slower frequencies in extracellular recordings are the focus of the LFP or EEG. These are thought to be largely generated by postsynaptic potentials, as these occur over slower timescales (10s of ms) than the action potential (1-2 ms), so there is more opportunity for signals from multiple cells to summate and result in larger signals. When activated, AMPA and NMDA synapses mediate excitatory currents as Na<sup>+</sup> and Ca<sup>2+</sup> enter the cell.</p>
+</section>
+<section id="capacitors-in-the-brain">
+<h3><a class="toc-backref" href="#id25" role="doc-backlink">Capacitors in the brain</a><a class="headerlink" href="#capacitors-in-the-brain" title="Link to this heading">#</a></h3>
+<p>The definition of a capacitor was described above. This configuration of two conducting materials separated by a thin, insulating layer, does not only happen in specifically designed electronics components, but can occur anywhere. One example is the neuron, where both the intracellular and extracellular medium are conductive, but the cell membrane is not. The cell membrane is therefore also a capacitor, and charge can be separated along the membrane depending on the potential difference between the inside and the outside of the cell.</p>
+<p>Remember that:</p>
+<div class="math notranslate nohighlight">
+\[Q = C * V\]</div>
+<p>The amount of charge (Q) a capacitor can separate depends on is its capacitance (C, measured in farads) and the voltage (V) across the capacitor. That means that when the voltage across the cell membrane is reduced (i.e. the cell depolarises), the ability for the membrane to store charge is also reduced. These charges are released from the membrane and generate capacitive currents (see Fig 5 below).</p>
+<p>Importantly for acquisition systems, cables are capacitors too; imagine a cable containing two wires. These wires are conductive, and are separated by a thin layer of insulation. These wires will separate and release charge depending on the electric potential difference between them.</p>
+</section>
+<section id="extracellular-measurements">
+<h3><a class="toc-backref" href="#id26" role="doc-backlink">Extracellular measurements</a><a class="headerlink" href="#extracellular-measurements" title="Link to this heading">#</a></h3>
+<p>When we perform extracellular recordings, we are measuring the electric potential induced at the electrode (V<sub>electrode</sub>or V<sub>ec</sub> ) by these currents. The effect on the induced electric potential depends on the magnitude, sign and location of the current sources, and on the conductivity of the extracellular medium (Buzsaki et al., 2012; Nunez and Srinivasan, 2006). The effect of these currents diminishes with distance, depending on how well the extracellular fluid conducts electricity. The extracellular potential Vec at position re and time t, with respect to a point at infinity, can be computed with the following equation (Einevoll et al., 2013; Nunez and Srinivasan, 2006):</p>
+<figure class="align-center" id="id7">
+<img alt="../../../_images/point_source_equation.png" src="../../../_images/point_source_equation.png" />
+<figcaption>
+<p><span class="caption-text"><cite>Equation 6: The point source equation</cite></span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Conceptually, this point-source equation (Equation 6) is key for computing the extracellular potential in response to any transmembrane current (Buzsaki et al., 2012). In(t) represents the nth point current source and re – rn  represents the distance between the point source and the position of measurement, with n = 1…N, where N is the number of individual point sources and ρ is the extracellular conductivity. If the extracellular medium is considered homogeneous and isotropic, we can use a constant conductivity value for the extracellular fluid (Einevoll et al., 2013).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Extracellular action potential waveforms usually last on the order of 1-2 ms, and are in the range of tens to hundreds of microvolts in amplitude, with the largest potential deflections being detected close to the soma of a neuron. These stereotypical temporal deflections of the electric potential in the extracellular space are called action potentials or spikes. The model in Fig 5 below illustrates how the electric potential varies depending on electrode location relative to a spiking neuron.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Fig 5 depicts the (modelled) time-varying extracellular potential measured at 3 different locations close to a neuron. Each extracellular waveform results from the superposition of ionic and capacitive transmembrane currents. The peaks in the potential waveforms correspond to the current (right column) that is dominant at that time-point: the first positive peak of the waveform is attributed to the positive capacitive current resulting from the strong Na<sup>+</sup>  current entering the axon initial segment; the main negative peak is attributed to the influx of Na<sup>+</sup>; and finally, the second positive peak results from repolarising K<sup>+</sup> current flowing out of the cell (Gold et al., 2006). As the effect of a current decreases with distance, the relative position of the electrode determines the relative contribution of each current and therefore the net overall current shape (left column). For instance, if the electrode is close to the axon initial segment (where many voltage-dependent Na<sup>+</sup> channels are), the Na<sup>+</sup> current will be larger.</p>
+<figure class="align-center" id="id8">
+<img alt="../../../_images/electric_potential_spike.png" src="../../../_images/electric_potential_spike.png" />
+<figcaption>
+<p><span class="caption-text"><cite>Figure 5: Electric potential generated by current sources in a conductive volume.</cite></span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Electric potential generated by current sources in a conductive volume. The extracellular potentials and currents are adapted from Gold et al., 2006. The shape of the extracellular potential waveforms at various spatial positions ‘re’ (marked with black dots) are simulated for a CA1 pyramidal neuron.</p>
+<p>Currents: simulated net membrane current (first column) across the soma and proximal dendrites that best estimates the extracellular potential waveform and membrane current components in terms of Na+, K+ and capacitive currents (second column). In the soma, the positive capacitive current coincides with the larger Na+ current. At locations along the apical trunk, the initial capacitive peak becomes visible. In dendritic compartments the membrane depolarisation is initially driven by Na+ current from the soma, until local Na+ currents are activated and the action potential regenerates. In the brief time before the local Na+ currents activate, the positive capacitive current is the dominant membrane current and a capacitive-dominant phase is visible in the net current (Gold et al., 2006, adapted by Joana Neto).</p>
+</div>
+</section>
+</section>
+<section id="what-does-an-acquisition-system-do">
+<h2><a class="toc-backref" href="#id27" role="doc-backlink">What does an acquisition system do?</a><a class="headerlink" href="#what-does-an-acquisition-system-do" title="Link to this heading">#</a></h2>
+<p>There are several things that any extracellular acquisition system has to be able to do. Here is a quick overview so that you can start to imagine what the acquisition system does, but don’t worry if they don’t make sense yet. We will go through each of these points carefully during the course.</p>
+<p>The extracellular electrophysiology techniques in Table 1 all share the same major goal: to measure activity occurring in biological tissue. They do that by detecting changes in electric potential due to cellular activity, compared to a reference or ground point, and by faithfully shuttling these signals to an output where the experimenter can view or record them. In most cases this output will be a computer where we can visualise and store our data.</p>
+<p>The signal at the electrode is measured in volts (V) and is very small, in the microvolt range. This is tiny compared to the voltages we encounter elsewhere in the lab: for instance, a battery is around 3V, and the building main power supply  120 or 230V. The world, and your lab, is also an electrically noisy place, which you will know if you have done any ephys before. Electrical equipment, communications devices, but also just walking around (static electricity) creates electric potential differences many orders of magnitude larger than the biological signal you are trying to measure. The acquisition system needs to be designed so that it can detect our tiny signals even in the face of surrounding noise signals generated by other sources.</p>
+<figure class="align-center" id="id9">
+<img alt="An extracellular voltage beside a neuron is detected by an electrode. The signal coming out of the electrode is Vin. This goes into a recording system, and the output of that system is called Vout." src="../../../_images/black_box_recording_system.png" />
+<figcaption>
+<p><span class="caption-text"><cite>Figure 6: The voltage at the electrode tip (Vec), the voltage after the electrode (Vin) and the voltage we read out (Vout). We can only read Vout, and must design our acquisition system so that it is as similar to Vec as possible.</cite></span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>To know what is going on in our cells, we need as much as possible of the signal at the electrode tip (V<sub>ec</sub>) to make it through the electrode (V<sub>in</sub>) and acquisition system and arrive at our output (V<sub>out</sub>). If we lose signal magnitude, or lose certain frequencies because of the way our acquisition system is designed, we may miss important data or come to wrong conclusions about our cells. We therefore have to design our acquisition system to pass on signals as faithfully as possible, losing little signal to the environment.</p>
+<p>An acquisition system must therefore:</p>
+<ul class="simple">
+<li><p><strong>Detect changes in electric potential difference</strong></p></li>
+<li><p>Faithfully <em>transfer</em> this signal to our acquisition system output</p></li>
+<li><p>Distinguish interesting biological <em>signals</em> from other sources of electrical <em>noise</em></p></li>
+</ul>
+</section>
+<section id="the-electrode-detects-changes-in-electric-potential">
+<h2><a class="toc-backref" href="#id28" role="doc-backlink">The electrode detects changes in electric potential</a><a class="headerlink" href="#the-electrode-detects-changes-in-electric-potential" title="Link to this heading">#</a></h2>
+<p>Getting from neuronal activity (V<sub>ec</sub>) to the input to the recording system (V<sub>in</sub>) relies first on the interface between the electrode and the extracellular space. Extracellular microelectrodes are usually made from metallic conductors. A thin insulated metal wire with an exposed tip is the most basic, and still widely used, device for in vivo extracellular recording from brains. Metals such as platinum, gold, tungsten, iridium, titanium nitride, stainless steel, iridium, iridium oxide, and alloys, nickel-chrome, platinum-iridium and platinum-tungsten have all been used in neural electrodes.</p>
+<p>The transition from ion flow in the extracellular space (due to neural activity) to electron flow in the electrode is made through the double layer interface. When a metal is placed in a saline solution two phenomena occur: water dipoles close to the metal surface become oriented, and assuming the metal surface is negatively charged, the solution close to the metal surface become depleted of negative ions (anions), leaving behind a cloud of positive ions (cations). This cloud of cations screens the electric field caused by the excess of charge on the metal. Electroneutrality across the interface requires that the charge on the metal is always equal and opposite to the total charge on the solution side of the interface (Musa et al., 2012). The resulting charge distribution - two narrow regions of equal and opposite charge - is known as the electrical double layer (EDL). The double layer region (represented in pink in the schematics) has the ability to separate charges on both sides, and therefore a capacitance ‘C<sub>e</sub>’. The double layer also opposes the direct flow of current across it, and therefore has a resistance ‘R<sub>e</sub>’.</p>
+<figure class="align-center" id="id10">
+<img alt="Depicts cartoon of metal and solution touching (electrode and extracellular fluid respectively). Negative ions within the metal are attracted to positive charges in the solution." src="../../../_images/double_layer_interface.png" />
+<figcaption>
+<p><span class="caption-text"><cite>Figure 7: The double layer interface between an electrode and the extracellular fluid</cite></span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We can describe the electrical behaviour of electrodes by making an ‘equivalent circuit’, getting rid of the specific shape or material and just representing the electrical properties of the double layer interface:</p>
+<figure class="align-center" id="id11">
+<img alt="The components of the double layer interface abstracted as electrical components, where the metal electrode is a resistance called Rm, the double layer interface is a capacitor and resistor in parallel called Re and Ce, and the extracellular solution is a resistance named Rs." src="../../../_images/circuit_double_layer_interface.png" />
+<figcaption>
+<p><span class="caption-text"><cite>Figure 8: The equivalent circuit describes the electrical properties of the double-layer interface between electrode and extracellular fluid</cite></span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In the above figure, the double layer interface between the solution and the electrode is represented by a parallel resistance and capacitance, in combination with resistances R<sub>m</sub> (metal) and R<sub>s</sub> (solution) in series.</p>
+<ul class="simple">
+<li><p>R<sub>e</sub> represents leakage resistance of the electrode; the charge transfer due to charge carriers crossing the electrical double layer.</p></li>
+<li><p>C<sub>e</sub> is the capacitance of the electrical double layer at the interface of the exposed metal and the solution.</p></li>
+<li><p>R<sub>m</sub> (metal) is the resistance within the electrode itself, which depends on what the electrode is made of.</p></li>
+<li><p>R<sub>s</sub> (solution) is the resistance of the fluid surrounding the electrode.</p></li>
+</ul>
+<p>Because the resistance of the extracellular fluid R<sub>s</sub> is small and independent of the electrode or acquisition system, we often simplify our equivalent circuits by leaving this value out.</p>
+<p>The ratio between C<sub>e</sub> and R<sub>e</sub> determines how current can flow. If R<sub>e</sub> is relatively small, this low resistance allows individual charges to travel directly across the electrode-solution interface, transferring between the electrode and the extracellular fluid. This current over the small R<sub>e</sub> bypasses the capacitor C<sub>e</sub>, which we can then ignore. Electrodes with this property are called ‘non-polarised’ electrodes.</p>
+<p>In contrast, if R<sub>e</sub> is very large, ions cannot cross the double layer directly. Instead, charge transfer relies on the capacitive properties C<sub>e</sub> of the double layer. The double layer will separate charges, with negative charges inside the electrode and positive charges on the side of the extracellular fluid holding each other in place. When cellular activity causes a redistribution of ions in the extracellular fluid, the resulting increase or decrease in attractive force will recruit or release electrons in the electrode. Either direction, a current will flow inside the electrode. Electrodes with a large R<sub>e</sub> are called ‘polarised’ electrodes.</p>
+<section id="non-polarised-electrodes">
+<h3><a class="toc-backref" href="#id29" role="doc-backlink">Non-polarised electrodes</a><a class="headerlink" href="#non-polarised-electrodes" title="Link to this heading">#</a></h3>
+<p>The silver-silver chloride (Ag-AgCl) electrode approaches the ideal nonpolarisable type. In these ‘charge transfer’ electrodes, surface-confined species are oxidized and reduced (Bard &amp; Faulkner, 2001, Merrill et al., 2005). Non-polarisable electrodes have a small R<sub>e</sub>. This low resistance allows individual charges to travel directly across the electrode-solution interface, transferring between the electrode and the extracellular fluid. This current over the small R<sub>e</sub> bypasses the capacitor C<sub>e</sub>, thus providing a direct path for the measurement of steady potential levels.</p>
+</section>
+<section id="polarised-electrodes">
+<h3><a class="toc-backref" href="#id30" role="doc-backlink">Polarised electrodes</a><a class="headerlink" href="#polarised-electrodes" title="Link to this heading">#</a></h3>
+<p>The tungsten microelectrode is considered a <strong>polarised</strong> electrode. Polarised electrodes have large R<sub>e</sub> values, in the order of several megaOhms, and so charges cannot cross the double layer. Instead, the transition from ion flow in the solution to electron flow in the electrode is capacitive. The double layer will separate charges, with negative charges inside the electrode and positive charges on the side of the extracellular fluid holding each other in place. When cellular activity causes a redistribution of ions in the extracellular fluid, the resulting increase or decrease in attractive force will recruit or release electrons in the electrode. Either direction, a current will flow inside the electrode.</p>
+<p>Therefore, processes in polarisable electrodes are purely electrostatic and caused by the charging and discharging of the double layer capacitance. Although charge does not cross the interface, currents inside the recording system can flow when the potential or solution composition changes (Cooper, 1971).</p>
+<p>To give an example of a polarised electrode, a tungsten microelectrode like the one used by Hubel and Wiesel in the 1950’s and 60’s has:</p>
+<ul class="simple">
+<li><p>C<sub>e</sub> ~ 0.2 pF / um2 ~ 10 - 20 pF (unplated)</p></li>
+<li><p>R<sub>e</sub> ~ 10 to 100 MOhm.</p></li>
+<li><p>R<sub>m</sub> ~ 10 to 100 Ohm (Rm= (resistivity x length)/ cross sectional area)</p></li>
+</ul>
+</section>
+</section>
+<section id="references">
+<h2><a class="toc-backref" href="#id31" role="doc-backlink">References</a><a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<p>Bard, A. J., &amp; Faulkner, L. R. (2001). Electrochemical methods Fundamentals and Applications. Molecular Biology (Second, Vol. 8). John Wiley &amp; Sons, Inc.</p>
+<p>Buzsaki, G., Anastassiou, C.A., and Koch, C. (2012). The origin of extracellular fields and currents - EEG, ECoG, LFP and spikes. Nat Rev Neurosci 13, 407–420.</p>
+<p>Defelipe, J., Alonso-Nanclares, L., and Arellano, J. (2002). Microstructure of the neocortex: Comparative aspects. Journal of Neurocytology 31, 299–316.</p>
+<p>Einevoll, G.T., Kayser, C., Logothetis, N.K., and Panzeri, S. (2013). Modelling and analysis of local field potentials for studying the function of cortical circuits. Nature Reviews Neuroscience 14, 770–785.</p>
+<p>Gold, C., Henze, D.A., Koch, C., and Buzsáki, G. (2006). On the Origin of the Extracellular Action Potential Waveform: A Modeling Study. Journal of Neurophysiology 95, 3113–3128.</p>
+<p>Herculano-Houzel, S. (2009). The human brain in numbers: a linearly scaled-up primate brain. Front. Hum. Neurosci. 3.</p>
+<p>Hodgkin, A.L., and Huxley, A.F. (1939). Action Potentials Recorded from Inside a Nerve Fibre. Nature 144, 710–711.</p>
+<p>Kandel, E.R., Schwartz, J.H., and Jessel, T.M. (1991). Principles of neural science.</p>
+<p>Markram, H., Muller, E., Ramaswamy, S., Reimann, M.W., Abdellah, M., Sanchez, C.A., Ailamaki, A., Alonso-Nanclares, L., Antille, N., Arsever, S., et al. (2015). Reconstruction and Simulation of Neocortical Microcircuitry. Cell 163, 456–492.</p>
+<p>Merrill, D.R., Bikson, M., and Jefferys, J.G.R. (2005). Electrical stimulation of excitable tissue: design of efficacious and safe protocols. Journal of Neuroscience Methods 141, 171–198.</p>
+<p>Meyer, A.C., and Moser, T. (2010). Structure and function of cochlear afferent innervation. Curr Opin Otolaryngol Head Neck Surg 18, 441–446.</p>
+<p>Musa, R. (2011). Design, fabrication and characterization of a neural probe for deep brain stimulation and recording.</p>
+<p>Musa, S., Rand, D.R., Cott, D.J., Loo, J., Bartic, C., Eberle, W., Nuttin, B., and Borghs, G. (2012). Bottom-Up SiO2 Embedded Carbon Nanotube Electrodes with Superior Performance for Integration in Implantable Neural Microsystems. ACS Nano 6, 4615–4628.</p>
+<p>Nelson, M.J., Bosch, C., Venance, L., and Pouget, P. (2013). Microscale Inhomogeneity of Brain Tissue Distorts Electrical Signal Propagation. J. Neurosci. 33, 2821–2827.</p>
+<p>Nunez, P.L., and Srinivasan, R. (2006). Electric fields of the brain: the neurophysics of EEG (Oxford ; New York: Oxford University Press).</p>
+<p>Obien, M.E.J., Deligkaris, K., Bullmann, T., Bakkum, D.J., and Frey, U. (2015). Revealing neuronal function through microelectrode array recordings. Front. Neurosci. 8.</p>
+<p>Ray Cooper. (1971). Recording Changes in Electrical Properties in the Brain in Methods of Psychobiology. (R. D. Myers, Ed.) (Volume 1). London and New York: Academic Press.</p>
+<p>Wright, S. (2004). Generation of resting membrane potential. Adv Physiol Educ. 28: 139-142.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Extracellular Electrophysiology Acquisition</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../theory-day-2/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Theory Day 2</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#talk-introduction">Talk: Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-extracellular-electrophysiology">Types of extracellular electrophysiology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electronics-refresher">Electronics Refresher</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#charged-particles-exert-electric-force">Charged particles exert electric force</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#currents-are-moving-charges">Currents are moving charges</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-potential-difference">Electric Potential Difference</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#where-is-0-volts">Where is 0 volts?</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resistance">Resistance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#capacitance">Capacitance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#impedance">Impedance</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#impedance-resistors">Impedance: Resistors</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#impedance-capacitors">Impedance: Capacitors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equivalent-circuits-in-the-brain">Equivalent circuits in the brain</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neuronal-output-action-potentials">Neuronal output: Action Potentials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neuronal-input-postsynaptic-potentials">Neuronal input: Postsynaptic potentials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#capacitors-in-the-brain">Capacitors in the brain</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extracellular-measurements">Extracellular measurements</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-an-acquisition-system-do">What does an acquisition system do?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-electrode-detects-changes-in-electric-potential">The electrode detects changes in electric potential</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-polarised-electrodes">Non-polarised electrodes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#polarised-electrodes">Polarised electrodes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/upsidedownlabs/upsidedownlabs.github.io/edit/maincourses/open-ephys/theory-day-1/index.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../../_sources/courses/open-ephys/theory-day-1/index.rst">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, Upside Down Labs.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="last-updated">
+  Last updated on Aug 02, 2024.
+  <br/>
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
