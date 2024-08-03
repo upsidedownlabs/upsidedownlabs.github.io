@@ -117,18 +117,19 @@ Technical Capabilities
 - **Signal Recording:** Users can record the data collected from the Arduino. This functionality allows for the preservation of real-time data for later analysis.
 - **CSV File Export:** Data from all channels will be exported to a CSV file. This feature is useful for detailed analysis and for research purposes. The CSV export includes comprehensive data from all channels, facilitating easy examination of the recorded data.
 
-
 Technologies Used
 *****************
 
 HTML 
 =====
+
 **Purpose**: HTML provides the foundational structure for web pages. It uses elements such as headings, paragraphs, links, images, and forms to define the content and layout of a webpage.
 
 **Role in our Project**: HTML is used to create the layout of our web application, including the navigation bar, modals, buttons, and containers (canvas) for charts. It defines the semantic structure and organizes the content, ensuring that all elements are properly placed and accessible.
 
 CSS 
 ========
+
 **Purpose**: CSS is used to style the visual presentation of HTML elements. It controls aspects such as layout, colors, fonts, spacing, and responsiveness.
 
 **Role in our Project**: CSS is responsible for the look and feel of our web application. It ensures that the design is visually appealing and responsive, adapting the layout to different screen sizes and devices.
@@ -157,6 +158,7 @@ Web Serial API
 
 Bootstrap
 =============
+
 **Purpose**: Bootstrap is a popular front-end framework that provides a collection of pre-designed CSS and JavaScript components. It simplifies the process of creating responsive and visually appealing web interfaces.
 
 **Role in our Project**: Bootstrap enhances the user interface by offering components like navigation bars, buttons and modals. It ensures that your application has a consistent look and feel and is responsive, adapting to various screen sizes. By importing Bootstrap CSS and JS, you leverage its components and styling to quickly build and customize your web application.
@@ -168,6 +170,7 @@ Bootstrap
 
 SmoothieCharts
 ===============
+
 **Purpose**: SmoothieCharts is a JavaScript library used for creating timeseries charts and real time data visualizations.
 
 **Role in our Project**: SmoothieCharts facilitates the dynamic visualization of bio potential signal data in our application. It allows for real-time updates to the chart as new data is added, providing an interactive and visually informative way to monitor the data.
