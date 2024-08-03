@@ -29,7 +29,15 @@ In this section, you'll find easy-to-follow guides that will help you while usin
 .. toctree::
    :hidden:
    :maxdepth: 1
+   :caption: Hardware Guides
    
    usage-guides/skin-preparation/index
    usage-guides/using-bioamp-bands/index
    usage-guides/using-gel-electrodes/index
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Contribution Guide
+
+   contribute/index
