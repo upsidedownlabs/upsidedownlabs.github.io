@@ -3,7 +3,7 @@
 Research using BioAmp hardware
 ###############################
 
-Below is a list of research papers that have used BioAmp hardware for their research. You can click on the title of a paper to view it or click here to get the complete list of all the research papers published so far.
+Below is a list of research papers that have used BioAmp hardware for their research. You can click on the title of a paper to view it or click `here <https://docs.google.com/spreadsheets/d/1PvCvDChmfluVT6FGZGGMHOx0uguboAdeQ9vF9-XD28U/edit?usp=sharing>`_ to get the complete list of all the research papers published so far.
 
 .. tab-set::
 
@@ -94,3 +94,6 @@ Below is a list of research papers that have used BioAmp hardware for their rese
         +===============================================================================+================================================================+===========================+
         | `Development of Low-Cost Biosignal Acquisition System for ECG, EMG, and EOG`_ | Hassanein Riyadh Mahmood, Manaf K. Hussein, Riyadh A. Abedraba | University of Wasit, Iraq |
         +-------------------------------------------------------------------------------+----------------------------------------------------------------+---------------------------+
+
+
+.. note:: Published your own research paper using BioAmp hardware? Send it to us at contact@upsidedownlabs.tech and we will add it to the list!
