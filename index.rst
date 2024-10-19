@@ -127,9 +127,9 @@ that you can use with our hardware.
 .. toctree::
    :hidden:
    :maxdepth: 1
-   :caption: Experiments
+   :caption: Research
 
-   experiments/index
+   research/index
 
 .. toctree::
    :hidden:
@@ -151,3 +151,11 @@ that you can use with our hardware.
    :caption: Courses
 
    courses/index
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: FAQs
+
+   faq/index
+   
