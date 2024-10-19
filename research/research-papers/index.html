@@ -1,0 +1,910 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Research using BioAmp hardware &#8212; upsidedownlabs.github.io  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'research/research-papers/index';</script>
+    <link rel="canonical" href="docs.upsidedownlabs.tech/research/research-papers/index.html" />
+    <link rel="icon" href="../../_static/logo_sqr_bgw.svg"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="DIY Kits" href="../../kits/index.html" />
+    <link rel="prev" title="Experiments done so far" href="../experiments/index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+    <meta name="docbuild:last-update" content="Oct 19, 2024"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">Welcome to Upside Down Labs docs site!</div>
+  </div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo_black_hr_nbg.svg" class="logo__image only-light" alt="upsidedownlabs.github.io  documentation - Home"/>
+    <script>document.write(`<img src="../../_static/logo_white_hr_nbg.svg" class="logo__image only-dark" alt="upsidedownlabs.github.io  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="ms-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../hardware/index.html">
+                        Hardware
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../software/index.html">
+                        Software
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../index.html">
+                        Research
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../kits/index.html">
+                        DIY Kits
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../guides/index.html">
+                        Guides
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../courses/index.html">
+                        Courses
+                      </a>
+                    </li>
+                
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+                    DigiKey
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
+                    Mouser
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.tindie.com/stores/upsidedownlabs/">
+                    Tindie
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355">
+                    Amazon India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://store.upsidedownlabs.tech/">
+                    Store India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://t.ly/ExlaF">
+                    GeM India
+                  </a>
+                </li>
+                
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instructables.com/member/Upside%20Down%20Labs/instructables/" title="Instructables" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../_static/logo/instructables.svg" class="icon-link-image" alt="Instructables"/></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../hardware/index.html">
+                        Hardware
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../software/index.html">
+                        Software
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../index.html">
+                        Research
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../kits/index.html">
+                        DIY Kits
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../guides/index.html">
+                        Guides
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../courses/index.html">
+                        Courses
+                      </a>
+                    </li>
+                
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
+                    More
+                </button>
+                <ul id="pst-nav-more-links-2" class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+                    DigiKey
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
+                    Mouser
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.tindie.com/stores/upsidedownlabs/">
+                    Tindie
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355">
+                    Amazon India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://store.upsidedownlabs.tech/">
+                    Store India
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link dropdown-item nav-external" href="https://t.ly/ExlaF">
+                    GeM India
+                  </a>
+                </li>
+                
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instructables.com/member/Upside%20Down%20Labs/instructables/" title="Instructables" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../_static/logo/instructables.svg" class="icon-link-image" alt="Instructables"/></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Research Experiments</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../experiments/index.html">Experiments done so far</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Research Papers</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Research using BioAmp hardware</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Research</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Research...</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="research-using-bioamp-hardware">
+<span id="research-papers"></span><h1>Research using BioAmp hardware<a class="headerlink" href="#research-using-bioamp-hardware" title="Link to this heading">#</a></h1>
+<p>Below is a list of research papers that have used BioAmp hardware for their research. You can click on the title of a paper to view it or click <a class="reference external" href="https://docs.google.com/spreadsheets/d/1PvCvDChmfluVT6FGZGGMHOx0uguboAdeQ9vF9-XD28U/edit?usp=sharing">here</a> to get the complete list of all the research papers published so far.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+2024</label><div class="sd-tab-content docutils">
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Title</p></th>
+<th class="head"><p>Authors</p></th>
+<th class="head"><p>University of authors</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://doi.org/10.60087/jklst.v3.n4.p247">Classification of obstructive sleep apnea using bio-control feedback EEG biosensor device</a></p></td>
+<td><p>Sean Lennon, Srushti Kulkarni</p></td>
+<td><p>Independent researchers</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://doi.org/10.60087/jklst.v3.n4.p148">A Wearable EMG Sensor for Continuous Wrist Neuromuscular Activity Monitoring</a></p></td>
+<td><p>Lalita Chilmakuri, Ayush Kumar Mishra, Divyansh Shokeen, Paakhi Gupta, Harmankaur Harjeetsingh Wadhwa, Karan Dhingra, Saloni Verma</p></td>
+<td><p>University of Cincinnati (USA), University of Ottawa (Canada), Cornell University (USA), Independant researchers from India</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://doi.org/10.1115/ISFA2024-140778">Implementing Eye Movement Tracking for UAV Navigation</a></p></td>
+<td><p>Niloofar Zendehdel, Haodong Chen, Yun Seong Song, Ming C. Leu</p></td>
+<td><p>Missouri University of Science and Technology, USA</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://doi.org/10.1007/s00604-024-06595-8">WSe2/chitosan-based wearable multi-functional platform for monitoring electrophysiological signals, pulse rate, respiratory rate, and body movements</a></p></td>
+<td><p>Shuvam Mukherjee, Sushmee Badhulika</p></td>
+<td><p>Indian Institute of Technology Hyderabad, India</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://ieeexplore.ieee.org/document/10585066">IoT Driven Bioelectrical Signals Detection and Monitoring System</a></p></td>
+<td><p>Megha Chakole, Ishwari Ainchwar, Vaishnavi Budhe, Anikeit Babhale, Atharva Katolkar, Sanjay Dorle</p></td>
+<td><p>Yeshwantrao Chavan College of Engineering, India</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pubs.rsc.org/en/content/articlehtml/2024/ma/d4ma00151f">Shellac-mediated laser-induced reduced graphene oxide film on paper and fabric- exceptional performance in flexible fuel cell, supercapacitor and electrocardiography applications</a></p></td>
+<td><p>Pavar Sai Kumar, Vanmathi S, Himanshi Awasthi, Imran Khan, Ritesh Kumar Singh, Vimal Kumar Sharma, Chandrani Pramanik, Sanket Goel</p></td>
+<td><p>BITS Pilani (Hyderabad Campus, India), Graphene Center Tata Steel Limited (India)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://doi.org/10.1016/j.bspc.2024.106486">Blink-induced artifacts in aqueous flare measurements by EOG-based spot fluorometer and their reduction using unsupervised clustering</a></p></td>
+<td><p>Sirisha Tadepalli, Roselin Kiruba, Surekha Paneerselvam, Abhilash Ravikumar, Rachapalle Reddi Sudhir, Prema Padmanabhan, Sangly P. Srinivas</p></td>
+<td><p>Amrita School of Engineering (India), SRM University (Chennai, India), Department of Cornea and Refractive Surgery (Sankara Nethralaya, India), Indiana University (USA)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://doi.org/10.17148/IARJSET.2024.11439">NeuroSync- Thoughts to Character Conversion Through Deep Learning Ensemble Model</a></p></td>
+<td><p>Dr Vijayalaxmi Mekali, Anusha Phaniraj, Kartik Bhatt, Sahithi Bhashyam, Vipul Kant Tripathi</p></td>
+<td><p>K.S Institute of Technology, India</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://doi.org/10.21015/vtse.v12i1.1593">EOG Based Text and Voice Controlled Remote Interpreter for Quadriplegic Patients</a></p></td>
+<td><p>Rania A, Fahad Shamim, Sarmad Shams, Murk Saleem, Roz Nisha</p></td>
+<td><p>Liaquat University of Medical and Health Sciences, Pakistan</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://ieeexplore.ieee.org/document/10468364">Investigating EMG Fatigue Markers of Biceps Muscle- A Comparative Study Through Mono Fractal and Band Power Analysis</a></p></td>
+<td><p>Saurabh Chaudhari, Pallab Das, Uttaran Bhattacharjee, Cheruvu Siva Kumar, Manjunatha Mahadevappa</p></td>
+<td><p>Indian Institute of Technology Kharagpur, India</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://doi.org/10.1061/9780784485293.083">Application of Paper-Based Wearable Electronics (PBWE) for Objective Assessment of Fatigue in Lower Back of Construction Workers</a></p></td>
+<td><p>Oluwaseun Olabode, J. Alfredo Ocegueda, Ramses V. Martinez, Behzad Esmaeili</p></td>
+<td><p>Purdue University, USA</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://ieeexplore.ieee.org/document/10420266">Comparative Analysis of AD8232 and BioAmp EXG Pill Analog Front-End Devices in ECG Signal Processing</a></p></td>
+<td><p>Tanakrit Mamee, Panason Manorost, Chakkapong Chamroon, Kittiya Thunsiri</p></td>
+<td><p>Chiang Mai University, Thailand</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://ieeexplore.ieee.org/abstract/document/10420107">EOG-based Blink Authentication</a></p></td>
+<td><ol class="upperalpha simple" start="2">
+<li><p>Kaushik, M Vinay Kumar, Sirisha Tadepalli, Ashish Vats, R Bhargav</p></li>
+</ol>
+</td>
+<td><p>Amrita School of Engineering, India</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+2023</label><div class="sd-tab-content docutils">
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Title</p></th>
+<th class="head"><p>Authors</p></th>
+<th class="head"><p>University of authors</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://ieeexplore.ieee.org/document/10308150">EMG Interface for SCI Patients</a></p></td>
+<td><p>Alphi Kurian Shajan, Ananthu V, Bageeradhan K H, Jayaraj J, Sruthy Manmadhan</p></td>
+<td><p>NSS College of Engineering, India</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://doi.org/10.1007/978-3-031-47055-4_27">Enhancing Sustainable Development Through Electrooculography Based Computer Control System for Individuals with Mobility Limitations</a></p></td>
+<td><p>Pragya Bhalla, Diksha Tiwary, Manasvi Aggarwal, Sakshi Sharma, Monika Kaushik, Megha Agarwal</p></td>
+<td><p>Bhagwan Parshuram Institute of Technology, GGSIPU, India</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://doi.org/10.1016/j.bios.2023.115414">A Non-Newtonian liquid metal enabled enhanced electrography</a></p></td>
+<td><p>Veronika Timosina, Tim Cole, Hongda Lu, Jian Shu, Xiangbo Zhou, Chengchen Zhang, Jinhong Guo, Omid Kavehei, Shi-Yang Tang</p></td>
+<td><p>University of Birmingham (UK), University of Wollongong (Australia), University of Science and Technology of China, University of New South Wales (Australia), Chongqing Medical University (China), University of Sydney (Australia)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://doi.org/10.1007/978-3-031-47055-4">Sustainable Development through Machine Learning, AI and IoT</a></p></td>
+<td><p>Pawan Whig, Nuno Silva, Ahmed A. Elngar, Nagender Aneja, Pavika Sharma</p></td>
+<td><p>Vivekananda Institute of Professional Studies (India), UnifAI Technology (UK), Beni-Suef University (Egypt), Universiti Brunei Darussalam, Parshuram Institute of Technology (India)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://doi.org/10.1063/5.0149403">Eye blink detection using electrooculography based on support vector machine</a></p></td>
+<td><p>Hassanein R. Mahmood, Mohammed S. Irshayyid, Manaf K. Hussien, Riyadh A. Abedraba</p></td>
+<td><p>University of Wasit, Iraq</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://doi.org/10.1051/e3sconf/202339101106">Computing and Monitoring various Biopotential signals using Machine Learning algorithms</a></p></td>
+<td><p>Devi P. Sri Vidya, Krishna C.H. Sai, P. Sai Srinivas, S.K. Ashraf, K. Sushith</p></td>
+<td><p>Gokaraju Rangaraju Institute of Engineering and Technology, India</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://ncbi.nlm.nih.gov/pmc/articles/PMC10426815/">Using Open Neuroscience to Advance Equity in the Pedagogy and Research Infrastructure in Colleges/Universities still Financially Impacted by COVID-19- The Emergence of a Global Resource Network Aimed at Integrating Neuroscience and Society</a></p></td>
+<td><p>Andre Maia Chagas, Turhan Canli, Donya Ziadlou, Paul M. Forlano, Sreyashi Samaddar, Elizabeth Chua, Karen A. Baskerville, Kinning Poon, Lorenz S. Neuwirth</p></td>
+<td><p>University of Sussex (United Kingdom), Stony Brook University (USA), The City University of New York (USA), Lincoln University (USA), SUNY Old Westbury (USA)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://doi.org/10.5281/zenodo.5524414">Towards FAIR Principles for Open Hardware</a></p></td>
+<td><p>Nadica Miljkovic, Ana Trisovic, Limor Peer</p></td>
+<td><p>University of Belgrade (Serbia), Harvard University (USA), Yale University (USA)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+2022</label><div class="sd-tab-content docutils">
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Title</p></th>
+<th class="head"><p>Authors</p></th>
+<th class="head"><p>University of authors</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://doi.org/10.31185/ejuow.Vol10.Iss3.352">Development of Low-Cost Biosignal Acquisition System for ECG, EMG, and EOG</a></p></td>
+<td><p>Hassanein Riyadh Mahmood, Manaf K. Hussein, Riyadh A. Abedraba</p></td>
+<td><p>University of Wasit, Iraq</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Published your own research paper using BioAmp hardware? Send it to us at <a class="reference external" href="mailto:contact&#37;&#52;&#48;upsidedownlabs&#46;tech">contact<span>&#64;</span>upsidedownlabs<span>&#46;</span>tech</a> and we will add it to the list!</p>
+</div>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../experiments/index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Experiments done so far</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../kits/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">DIY Kits</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/upsidedownlabs/upsidedownlabs.github.io/edit/mainresearch/research-papers/index.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../_sources/research/research-papers/index.rst">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, Upside Down Labs.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="last-updated">
+  Last updated on Oct 19, 2024.
+  <br/>
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
