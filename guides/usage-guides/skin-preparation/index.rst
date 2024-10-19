@@ -8,12 +8,12 @@ Why skin preparation is important?
 
 Proper skin preparation is crucial before recording any biopotential signal be it Electrocardiography (ECG), Electromyography (EMG), Electroencephalography (EEG), or Electrooculography (EOG).
 
-- ``Clean skin surface`` Removes dead skin cells, oils, & other substances that increases skin impedance.
-- ``Improve impedance`` Improves the conduction of electrical signals from the body to the recording equipment and minimizes impedance.
-- ``Electrode-skin contact`` Ensures optimal contact between the electrodes and the skin surface.
-- ``Signal quality`` Enhances the overall quality of recorded signals, providing clear & reliable data for analysis & improves the ability to capture subtle variations in biopotential signals.
-- ``Consistency in recordings`` Reduces variability in signal quality, making it easier to make any Human-Computer Interface (HCI), Brain-Computer Interface (BCI) project or a real-world application.
-- ``Long term adhesion`` Facilitates long-term adhesion & stable placement of electrodes to the skin during extended signal monitoring.
+- ``Clean skin surface:`` Removes dead skin cells, oils, & other substances that increases skin impedance.
+- ``Improve impedance:`` Improves the conduction of electrical signals from the body to the recording equipment and minimizes impedance.
+- ``Electrode-skin contact:`` Ensures optimal contact between the electrodes and the skin surface.
+- ``Signal quality:`` Enhances the overall quality of recorded signals, providing clear & reliable data for analysis & improves the ability to capture subtle variations in biopotential signals.
+- ``Consistency in recordings:`` Reduces variability in signal quality, making it easier to make any Human-Computer Interface (HCI), Brain-Computer Interface (BCI) project or a real-world application.
+- ``Long term adhesion:`` Facilitates long-term adhesion & stable placement of electrodes to the skin during extended signal monitoring.
 
 Kit Contents
 **************
@@ -96,7 +96,9 @@ Wipe away excess gel with alcohol swabs or wet wipes.
 
     Wipe away access gel
 
-.. warning:: Close your eyes while using the alcohol swabs for EOG recording else it may cause eye redness & irritation.
+.. warning:: - Using alcohol swabs can dry out the skin, so don't use them if your skin is already dry.
+    
+    - Close your eyes while using the alcohol swabs for EOG recording else it may cause eye redness & irritation.
 
 Step 5: Measuring the signals
 =================================

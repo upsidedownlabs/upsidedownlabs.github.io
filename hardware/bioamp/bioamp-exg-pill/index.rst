@@ -15,7 +15,7 @@ just a few. It also works with any dedicated ADC, like the Texas Instruments ADS
 
 .. note:: It is recommended to use Arduino UNO R4 while recording biopotential signals since it has 14-bit ADC and can record the signals much accurately.
 
-.. image:: ../../../media/bioamp-exg-pill.*
+.. figure:: ../../../media/bioamp-exg-pill.*
     :align: center
 
 What makes it different?
@@ -75,11 +75,11 @@ Software requirements
 
 - Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the arduino sketches in your development board and visualise the data on your laptop.
     
-.. image:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.*
+.. figure:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.*
 
 - Download Backyard Brains' `Spike Recorder <https://backyardbrains.com/products/spikerecorder>`_ according to the operating system you are using (Windows, OSX, Linux).
 
-.. image:: ../../../kits/diy-neuroscience/basic/media/byb.*
+.. figure:: ../../../kits/diy-neuroscience/basic/media/byb.*
 
 Using the Hardware
 *********************
@@ -94,8 +94,12 @@ Insert the provided BioAmp cable's JST PH connector and header pins from top as 
 .. figure:: media/assembly-step1.*
     :align: center
 
+    `Soldering the connector & header pins on BioAmp EXG Pill`
+
 .. figure:: media/bioamp-exg-pill-soldered.*
     :align: center
+
+    `After soldering, BioAmp EXG Pill should look like this`
 
 Step 2 (optional): Configure for ECG/EMG
 ==========================================
@@ -129,6 +133,8 @@ For all the examples provided, we are using the A0 pin of Arduino UNO R3. Connec
 .. figure:: media/connections-with-arduino.*
     :align: center
 
+    `Connections with Arduino UNO R3`
+
 .. warning:: Take precautions while connecting to power, if power pins are to be swapped, your BioAmp EXG Pill will be fried and it’ll become unusable (DIE).
 
 Step 4: Connecting electrode cable
@@ -136,7 +142,10 @@ Step 4: Connecting electrode cable
 
 Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JST PH connector as shown in the graphic below.
 
-.. image:: media/connection-with-cable.*
+.. figure:: media/connection-with-cable.*
+    :align: center
+
+    `Connections with BioAmp Cable v3`
 
 Step 5: Skin Preparation
 ===========================
@@ -171,18 +180,21 @@ We have 2 options to measure the EMG signals, either using the gel electrodes or
 2. Peel the plastic backing from electrodes
 3. Place the IN+ and IN- cables on the arm near the ulnar nerve & REF (reference) at the back of your hand as shown in the connection diagram.
 
-.. image:: media/emg.*
+.. figure:: media/emg.*
 
 - **Using Muscle BioAmp Band:**
 
 1. Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve & REF (reference) on the far side of the band.
+
 2. Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.
+
+.. tip:: Visit the complete documentation on how to :ref:`assemble and use the BioAmp Bands <using-bioamp-bands>` or follow the youtube video given below.
 
    **Tutorial on how to use the band:**
 
-.. youtube:: xYZdw0aesa0
-    :align: center
-    :width: 100%
+   .. youtube:: xYZdw0aesa0
+       :align: center
+       :width: 100%
 
 .. note:: In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.
 
@@ -191,11 +203,11 @@ Uploading the code
 
 Connect the Arduino Uno to your laptop using the USB cable (Type A to Type B). Copy paste any one of the Arduino Sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:
     
-EMG Filter: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino
+:fab:`github;pst-color-primary` `EMG Filter <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino>`_
 
-EMG Envelope: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino
+:fab:`github;pst-color-primary` `EMG Envelope <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino>`_
 
-Go to tools from the menu bar, select "board" option then select Arduino UNO. In the same menu, 
+Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
 select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
 disconnect your board and reopen the menu. The entry that disappears should be the 
 right COM port. Now upload the code, & open the serial plotter from the tools menu to visualize 
@@ -203,14 +215,15 @@ the EMG signals.
 
 After opening the serial plotter make sure to select the baud rate to 115200.
 
-.. warning:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
+.. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
 
 Visualizing the EMG signals
 ----------------------------
 
 Now flex your arm to visualize the muscle signals in real time on your laptop.
 
-.. image:: media/EMGEnvelop.*
+.. figure:: media/EMGEnvelop.*
+    :align: center
 
 Step 6: Measuring ElectroCardioGraphy (ECG)
 =============================================
@@ -232,7 +245,8 @@ We have 2 options to measure the ECG signals, either using the gel electrodes or
 2. Peel the plastic backing from electrodes
 3. Place the IN- cable on the left side, IN+ in the middle and REF (reference) on the far right side as shown in the diagram.
 
-.. image:: media/ecg.*
+.. figure:: media/ecg.*
+    :align: center
 
 - **Using Heart BioAmp Band:**
 
@@ -240,20 +254,22 @@ We have 2 options to measure the ECG signals, either using the gel electrodes or
 2. Place the IN- cable on the left side, IN+ in the middle and REF (reference) on the far right side.
 3. Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.
 
-**Tutorial on how to use the band:**
+.. tip:: Visit the complete documentation on how to :ref:`assemble and use the BioAmp Bands <using-bioamp-bands>` or follow the youtube video given below.
 
-.. youtube:: fr5iORsVyUM
-    :align: center
-    :width: 100%
+   **Tutorial on how to use the band:**
+
+   .. youtube:: fr5iORsVyUM
+       :align: center
+       :width: 100%
 
 Uploading the code
 ---------------------
 
 Connect Arduino Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:
     
-ECG Filter: https://github.com/upsidedownlabs/Heart-BioAmp-Arduino-Firmware/blob/main/2_ECGFilter/2_ECGFilter.ino
+:fab:`github;pst-color-primary` `ECG Filter <https://github.com/upsidedownlabs/Heart-BioAmp-Arduino-Firmware/blob/main/2_ECGFilter/2_ECGFilter.ino>`_
 
-Go to tools from the menu bar, select "board" option then select Arduino UNO. In the same menu, 
+Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
 select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
 disconnect your board and reopen the menu. The entry that disappears should be the 
 right COM port. Now upload the code, & open the serial plotter from the tools menu to visualize 
@@ -261,12 +277,15 @@ the signals.
 
 After opening the serial plotter make sure to select the baud rate to 115200.
 
-.. warning:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
+.. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
 
 Visualizing the ECG signals
 -----------------------------
 
-.. image:: media/bioamp-Exg-Pill-ECG.*
+Sit back, relax and see your ECG signals in real time on your laptop.
+
+.. figure:: media/bioamp-Exg-Pill-ECG.*
+    :align: center
 
 Step 7: Measuring Electrooculography (EOG)
 ================================================
@@ -287,7 +306,8 @@ We have 2 ways to measure the EOG signals, either record the horizontal eye move
 
 - **Horizontal EOG recording:**
 
-.. image:: media/eog-horizontal.*
+.. figure:: media/eog-horizontal.*
+    :align: center
 
 1. Connect the BioAmp cable to gel electrodes.
 2. Peel the plastic backing from electrodes.
@@ -295,7 +315,8 @@ We have 2 ways to measure the EOG signals, either record the horizontal eye move
 
 - **Vertical EOG recording:**
 
-.. image:: media/eog-vertical.*
+.. figure:: media/eog-vertical.*
+    :align: center
 
 1. Connect the BioAmp cable to gel electrodes.
 2. Peel the plastic backing from electrodes.
@@ -306,9 +327,9 @@ Uploading the code
 
 Connect Arduino Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:
     
-EOG Filter: https://github.com/upsidedownlabs/Eye-BioAmp-Arduino-Firmware/blob/main/2_EOGFilter/2_EOGFilter.ino
+:fab:`github;pst-color-primary` `EOG Filter <https://github.com/upsidedownlabs/Eye-BioAmp-Arduino-Firmware/blob/main/2_EOGFilter/2_EOGFilter.ino>`_
 
-Go to tools from the menu bar, select "board" option then select Arduino UNO. In the same menu, 
+Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
 select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
 disconnect your board and reopen the menu. The entry that disappears should be the 
 right COM port. Now upload the code, & open the serial plotter from the tools menu to visualize 
@@ -316,12 +337,15 @@ the signals.
 
 After opening the serial plotter make sure to select the baud rate to 115200.
 
-.. warning:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
+.. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
 
 Visualizing the EOG signals
 ------------------------------
 
-.. image:: media/bioamp-exg-pill-eog.*
+Move your eyes up-down or left-right to see your EOG signals in real time on your laptop.
+
+.. figure:: media/bioamp-exg-pill-eog.*
+    :align: center
 
 Step 8: Measuring Electroencephalography (EEG)
 ===================================================
@@ -335,7 +359,7 @@ Step 8: Measuring Electroencephalography (EEG)
 
 For recording EEG from different parts of the brain, you have to place the electrodes according to the `International 10-20 system for recording EEG <https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)>`_.
 
-.. image:: ../../../kits/diy-neuroscience/basic/media/10-20-system.*
+.. figure:: ../../../kits/diy-neuroscience/basic/media/10-20-system.*
     :align: center
 
 Electrodes placement
@@ -345,7 +369,8 @@ We have 2 options to measure the EEG signals, either using the gel electrodes or
 
 - **Using gel electrodes to record from prefrontal cortex part of brain:**
 
-.. image:: media/eeg.*
+.. figure:: media/eeg.*
+    :align: center
 
 1. Connect the BioAmp cable to gel electrodes.
 2. Peel the plastic backing from electrodes.
@@ -357,27 +382,29 @@ We have 2 options to measure the EEG signals, either using the gel electrodes or
 2. In this case, the REF (reference) should be connected using gel electrode. So connect the reference of BioAmp cable to the gel electrode, peel the plastic backing and place it at the bony part, on the back side of your earlobe.
 3. Now put a small drop of electrode gel on the dry electrodes (IN+ and IN-) between the skin and metallic part of BioAmp cable to get the best results.
 
+.. tip:: Visit the complete documentation on how to :ref:`assemble and use the BioAmp Bands <using-bioamp-bands>` or follow the youtube video given below.
+
+   **Tutorial on how to use the band:**
+
+   .. youtube:: O6qp7teT-sM
+       :align: center
+       :width: 100%
+
 .. note:: Similarly you can use the band to record EEG signals from the visual cortex part of brain by placing the dry electrodes on O1 and O2 instead of Fp1 and Fp2. Everything else will remain the same.
-
-**Tutorial on how to use the band:**
-
-.. youtube:: O6qp7teT-sM
-    :align: center
-    :width: 100%
 
 Uploading the code
 -----------------------
 
 Connect Arduino Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:
     
-`Spike recorder arduino code <https://raw.githubusercontent.com/BackyardBrains/SpikerShield/master/Muscle/Arduino%20Code/SpikeRecorder/SpikeRecorderSpikerShield_V1_1.ino>`_
+:fab:`github;pst-color-primary` `Spike recorder arduino code <https://raw.githubusercontent.com/BackyardBrains/SpikerShield/master/Muscle/Arduino%20Code/SpikeRecorder/SpikeRecorderSpikerShield_V1_1.ino>`_
 
-Go to tools from the menu bar, select "board" option then select Arduino UNO. In the same menu, 
+Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
 select the COM port on which your development board is connected. To find out the right COM port, screen
 disconnect your board and reopen the menu. The entry that disappears should be the 
 right COM port. Now upload the code.
 
-.. warning:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
+.. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
 
 Visualizing the EEG signals
 -------------------------------
@@ -386,6 +413,9 @@ Open the Spike Recorder software. When the Spike Recorder starts, it will start 
 the first icon on the top left corner of the screen, select the COM port on which your Arduino UNO is connected and click on connect. 
 
 .. figure:: ../../../kits/diy-neuroscience/basic/media/spike-recorder-configurations.*
+    :align: center
+
+    `Spike Recorder settings`
 
 Mute the speakers and apply the 50Hz notch filter by clicking on the checkbox as shown in the screenshot above. You should 
 set the low band pass filter to 1Hz and high bandpass filter to 40Hz as we are only recording the EEG signals which range between 
@@ -393,7 +423,10 @@ these frequencies.
 
 Now everything is configured and connected. So close the settings window and start recording EEG signals.
 
-.. image:: ../../../kits/diy-neuroscience/basic/media/bioamp-exg-pill-eeg.*
+.. figure:: ../../../kits/diy-neuroscience/basic/media/bioamp-exg-pill-eeg.*
+    :align: center
+
+    `EEG signals being visualised in Spike Recorder`
 
 The signals that you can see on the screen right now are originating from prefrontal cortex part of your brain and propagating through all the layers to the surface of your skin.
 
@@ -458,25 +491,49 @@ Project ideas & tutorials
         :margin: 4 4 0 0 
         :gutter: 2
 
-        .. grid-item-card:: Detecting heart beats
+        .. grid-item-card:: Controlling video game using brainwaves (EEG)
             :text-align: center
-            :link: https://youtu.be/uB5R-vGJjJo
+            :link: https://www.instructables.com/Controlling-Video-Game-Using-Brainwaves-EEG/
 
-        .. grid-item-card:: Measuring heart rate
+        .. grid-item-card:: Visualising electrical impulses from eyes (EOG)
             :text-align: center
-            :link: https://youtu.be/PvWtCFNK3_s
+            :link: https://www.instructables.com/Visualizing-Electrical-Impulses-of-Eyes-EOG-Using-/
+
+        .. grid-item-card:: Recording EEG from visual cortex
+            :text-align: center
+            :link: https://www.instructables.com/Recording-EEG-From-Visual-Cortex-of-Brain-Using-Bi/
+
+        .. grid-item-card:: Recording EEG from prefrontal cortex
+            :text-align: center
+            :link: https://www.instructables.com/Recording-EEG-From-Pre-Frontal-Cortex-of-Brain-Usi/
+
+        .. grid-item-card:: Eye blink detection
+            :text-align: center
+            :link: https://www.instructables.com/Eye-Blink-Detection-by-Recording-EOG-Using-BioAmp-/
 
         .. grid-item-card:: Creating a drowsiness detector
             :text-align: center
-            :link: https://youtu.be/h4F41mp4mWk
+            :link: https://www.instructables.com/Drowsiness-Detector-by-Detecting-EOG-Signals-Using/
 
-        .. grid-item-card:: Detecting eye blinks
+        .. grid-item-card:: Record publication-grade ECG
             :text-align: center
-            :link: https://youtu.be/PfEJVa3gv6E
+            :link: https://www.instructables.com/Record-Publication-Grade-ECG-at-Your-Home-Using-Bi/
 
-        .. grid-item-card:: Record EEG from visual cortex part of brain
+        .. grid-item-card:: Measuring heart rate
             :text-align: center
-            :link: https://youtu.be/XENPUkfxLec
+            :link: https://www.instructables.com/Measuring-Heart-Rate-Using-BioAmp-EXG-Pill/
+
+        .. grid-item-card:: Detecting heart beats
+            :text-align: center
+            :link: https://www.instructables.com/Detecting-Heart-Beats-Using-BioAmp-EXG-Pill/
+
+        .. grid-item-card:: Record publication-grade EMG
+            :text-align: center
+            :link: https://www.instructables.com/Recording-Publication-Grade-Muscle-Signals-Using-B/
+
+        .. grid-item-card:: Detecting up and down movement of eyes
+            :text-align: center
+            :link: https://www.instructables.com/Tracking-UP-and-DOWN-Movements-of-Eyes-Using-EOG/
 
     These are some of the project ideas but the possibilities are endless. So create your own Human Computer Interface (HCI) and 
     Brain Computer Interface (BCI) projects and share them with us at contact@upsidedownlabs.tech.
@@ -487,11 +544,17 @@ Project ideas & tutorials
 
     Below are some project ideas that you can try making at your home.
 
-    1. `Recording EEG from visual cortex <https://youtu.be/XENPUkfxLec>`_
-    2. `Measuring heart rate <https://youtu.be/PvWtCFNK3_s>`_
-    3. `Detecting heart beats <https://youtu.be/uB5R-vGJjJo>`_
-    4. `Creating a drowsiness detector <https://youtu.be/h4F41mp4mWk>`_
-    5. `Detecting eye blinks <https://youtu.be/PfEJVa3gv6E>`_
+    1. `Controlling video game using brainwaves (EEG) <https://www.instructables.com/Controlling-Video-Game-Using-Brainwaves-EEG/>`_
+    2. `Visualising electrical impulses from eyes (EOG) <https://www.instructables.com/Visualizing-Electrical-Impulses-of-Eyes-EOG-Using-/>`_
+    3. `Recording EEG from visual cortex part of brain <https://www.instructables.com/Recording-EEG-From-Visual-Cortex-of-Brain-Using-Bi/>`_
+    4. `Recording EEG from prefrontal cortex part of brain <https://www.instructables.com/Recording-EEG-From-Pre-Frontal-Cortex-of-Brain-Usi/>`_
+    5. `Eye blink detection <https://www.instructables.com/Eye-Blink-Detection-by-Recording-EOG-Using-BioAmp-/>`_
+    6. `Creating a drowsiness detector <https://www.instructables.com/Drowsiness-Detector-by-Detecting-EOG-Signals-Using/>`_
+    7. `Record publication-grade ECG <https://www.instructables.com/Record-Publication-Grade-ECG-at-Your-Home-Using-Bi/>`_
+    8. `Measuring heart rate <https://www.instructables.com/Measuring-Heart-Rate-Using-BioAmp-EXG-Pill/>`_
+    9. `Detecting heart beats <https://www.instructables.com/Detecting-Heart-Beats-Using-BioAmp-EXG-Pill/>`_
+    10. `Record publication-grade EMG <https://www.instructables.com/Recording-Publication-Grade-Muscle-Signals-Using-B/>`_
+    11. `Detecting up and down movement of eyes <https://www.instructables.com/Tracking-UP-and-DOWN-Movements-of-Eyes-Using-EOG/>`_
 
     These are some of the project ideas but the possibilities are endless. So create your own Human Computer Interface (HCI) and 
     Brain Computer Interface (BCI) projects and share them with us at contact@upsidedownlabs.tech
