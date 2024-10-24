@@ -7,6 +7,10 @@ Overview
 ********
 Chords is an open source web application designed for real-time signal visualization, particularly tailored for bio-potential signals like EEG, EMG, ECG and EOG. This tool serves as an advanced alternative to the standard Arduino IDE serial plotter, offering enhanced functionality for students, researchers and hobbyists alike who want to record biopotential data using  `BioAmp hardware <https://docs.upsidedownlabs.tech/hardware/index.html>`_.
 
+.. figure:: media/chords_landing_page.*
+    :align: center
+    :alt: chords landing page
+
 Features
 ********
 - **Connection**: Effortlessly compatible with BioAmp Hardware and automatically detects the ADC of the development board, simplifying the setup process and ensuring a smooth and efficient workflow from data acquisition to visualization.
@@ -175,9 +179,14 @@ For more information, refer to MDN Web Docs on the `Web Serial API <https://deve
 Technologies Used
 *******************
 - **Next.js**: A framework built on top of React.js.
-- **TypeScript**: Statically typed superset of JavaScript.
+- **Web Serial API**: API for serial communication with devices.
 - **Tailwind CSS**: Utility-first CSS framework.
 - **Shadcn UI**: Reusable and customizable components, built with Radix UI.
 - **WebGL Plot**: Real-time charting library.
-- **IndexedDB**: Browser-based database for storing recorded data.
+- **IndexedDB API**: Browser-based database for storing recorded data.
 
+.. figure:: media/chords_tech_stack.*
+    :align: center
+    :alt: chords tech stack
+
+  
