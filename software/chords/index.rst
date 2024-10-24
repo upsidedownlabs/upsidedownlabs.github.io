@@ -13,7 +13,7 @@ Chords is an open source web application designed for real-time signal visualiza
 
 Features
 ********
-- **Connection**: Effortlessly compatible with BioAmp Hardware and automatically detects the ADC of the development board, simplifying the setup process and ensuring a smooth and efficient workflow from data acquisition to visualization.
+- **Connection**: Effortlessly compatible with BioAmp Hardware and automatically detects the ADC of the development board running the Chords application, simplifying the setup process and ensuring a smooth and efficient workflow from data acquisition to visualization.
 - **Real-time Visualization**: Experience smooth real-time visualization of incoming data rendered with `WebGL-Plot <https://github.com/danchitnis/webgl-plot>`_. The system ensures smooth signal display, helping you monitor the signal flow without interruptions or lag.
 - **Recording**: You can record data in CSV format indefinitely or set a timer to stop recording automatically when it expires.
 - **Download/Delete**: Easily download or delete recorded data with just a few clicks. Manage your data efficiently, allowing for quick access to relevant data or removal of unwanted data to free up storage.
@@ -27,7 +27,7 @@ Features
 Software Requirements
 *********************
 
-* Before using Chords, download the `Arduino IDE <https://www.arduino.cc/en/software>`_ .
+* You have to install `Chords Arduino Firmware <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ using arduino IDE.
 * For now Chords is compatible with chromium based browsers. To ensure compatibility with supported browsers, see :ref:`chords-browsers-compatibility`.
 
 Hardware Requirements
@@ -43,12 +43,6 @@ To use Chords, you need:
   - `Muscle BioAmp Candy <https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-candy/index.html>`_
   - `Muscle BioAmp Patchy <https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-patchy/index.html>`_
   - `Muscle BioAmp Shield <https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-shield/index.html>`_
-
-- Accessories :
-
-  - BioAmp Cable
-  - Gel Electrodes or BioAmp Bands
-  - Jumper Cables
   
 
 How to Use Chords
