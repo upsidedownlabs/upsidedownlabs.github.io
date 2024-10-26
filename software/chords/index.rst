@@ -15,14 +15,14 @@ Chords is an open source web application designed for real-time signal visualiza
 
 Features
 ********
-- **Connection**: Effortlessly compatible with BioAmp Hardware and automatically detects the ADC of the development board running the Chords application, simplifying the setup process and ensuring a smooth and efficient workflow from data acquisition to visualization.
-- **Real-time Visualization**: Experience smooth real-time visualization of incoming data rendered with `WebGL-Plot <https://github.com/danchitnis/webgl-plot>`_. The system ensures smooth signal display, helping you monitor the signal flow without interruptions or lag.
+- **Connection**: It is effortlessly compatible with BioAmp Hardware attached to an Arduino-compatible development board running the `Chords Arduino firmware <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_, simplifying the setup process and ensuring a smooth and efficient workflow from data acquisition to visualization.
+- **Real-time Visualization**: Experience smooth real-time visualization of incoming data rendered with `WebGL-Plot <https://github.com/danchitnis/webgl-plot>`_. The system ensures smooth signal display, helping you monitor the flow without interruptions or lag.
 - **Recording**: You can record data in CSV format indefinitely or set a timer to stop recording automatically when it expires.
 - **Download/Delete**: Easily download or delete recorded data with just a few clicks. Manage your data efficiently, allowing for quick access to relevant data or removal of unwanted data to free up storage.
 - **Zoom**: Zoom-in and zoom-out feature, gives you more control as now you can either zoom in to look at signal or zoom out for an overall view.
-- **Mode Toggle**: Offers both light and dark modes, enabling you to switch according to your preference for a more comfortable user experience.
+- **Theme Toggle**: Offers both light and dark themes, enabling you to switch according to your preference for a more comfortable user experience.
 - **Pause/Play**: Includes options to freeze and resume data display, allowing users to pause the visualization for detailed examination and then continue data monitoring seamlessly.
-- **Channel**: Supports plotting of up to six channels of data simultaneously in real time where each stream is color coded differently for easy identification.
+- **Channel**: Supports plotting of up to six channels of data simultaneously in real time where each stream is color-coded differently for easy identification.
 - **Disconnect**: Terminate the connection to the development board with a simple click. This functionality ensures a hassle-free disconnection process when you’re done with data collection or visualization.
 
 
