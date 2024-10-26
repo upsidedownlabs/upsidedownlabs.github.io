@@ -155,8 +155,6 @@ Chords Icons
         :height: 20px
      - Dark Mode
     
-    
-
 .. _chords-browsers-compatibility:
 
 Browser Compatibility
