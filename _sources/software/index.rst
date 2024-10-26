@@ -20,3 +20,10 @@ Software
 
    bioamp-visualizer/index
    bioamp_visualizer_technical_doc/index
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Chords
+
+   chords/index
