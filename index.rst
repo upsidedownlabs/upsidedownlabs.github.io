@@ -152,10 +152,10 @@ that you can use with our hardware.
 
    courses/index
 
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-   :caption: FAQs
+.. .. toctree::
+..    :hidden:
+..    :maxdepth: 1
+..    :caption: FAQs
 
-   faq/index
+..    faq/index
    
