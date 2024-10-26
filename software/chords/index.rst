@@ -25,7 +25,6 @@ Features
 - **Channel**: Supports plotting of up to six channels of data simultaneously in real time where each stream is color-coded differently for easy identification.
 - **Disconnect**: Terminate the connection to the development board with a simple click. This functionality ensures a hassle-free disconnection process when you’re done with data collection or visualization.
 
-
 Software Requirements
 *********************
 
@@ -46,7 +45,6 @@ To use Chords, you need:
   - `Muscle BioAmp Patchy <https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-patchy/index.html>`_
   - `Muscle BioAmp Shield <https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-shield/index.html>`_
   
-
 How to Use Chords
 *******************
 
@@ -170,7 +168,6 @@ If the user's browser does not support the Web Serial API, a message will inform
 
 For more information, refer to MDN Web Docs on the `Web Serial API <https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API>`_.
 
-
 Technologies Used
 *******************
 - **Next.js**: A framework built on top of React.js.
@@ -184,4 +181,4 @@ Technologies Used
     :align: center
     :alt: chords tech stack
 
-  
+    chords tech stack
