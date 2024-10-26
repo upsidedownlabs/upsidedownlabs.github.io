@@ -29,8 +29,8 @@ Features
 Software Requirements
 *********************
 
-* You have to install `Chords Arduino Firmware <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ using arduino IDE.
-* For now Chords is compatible with chromium based browsers. To ensure compatibility with supported browsers, see :ref:`chords-browsers-compatibility`.
+* You have to flash  `Chords Arduino Firmware <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ to your Arduino board using Arduino IDE.
+* For now the Chords web application is only compatible with Chromium-based browsers. To check your browser compatibility, see :ref:`chords-browsers-compatibility` section of this page.
 
 Hardware Requirements
 *********************
