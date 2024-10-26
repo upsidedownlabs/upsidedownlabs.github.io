@@ -10,6 +10,8 @@ Chords is an open source web application designed for real-time signal visualiza
 .. figure:: media/chords_landing_page.*
     :align: center
     :alt: chords landing page
+    
+    chords landing page
 
 Features
 ********
