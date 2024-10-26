@@ -55,10 +55,11 @@ Uploading the Code
 
 1. Connect the Arduino board to your laptop using the USB cable.
 2. Copy and paste the `Arduino Firmware  <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ into the Arduino IDE.
-3. Select your board under `Board > Arduino AVR` in the tools menu.
+3. Select your board from `Board` section in the tools menu.
 4. Choose the correct COM port in the tools menu (the one that disappears when you disconnect the board).
-5. Upload the code and open Chords in your web browser.
+5. Click on the `Upload` button to flash your Arduino board.
 
+Now, you are ready to use `Chords <https://chords.upsidedownlabs.tech/stream>`_.
 
 Using the Software
 ------------------
