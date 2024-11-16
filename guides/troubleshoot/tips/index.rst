@@ -5,8 +5,7 @@ Tips for best signal acquisition
 
 - When recording biopotential signals (EEG, ECG, EOG, or EMG), ensure your laptop **is not connected to its charger** 
   and maintain a **minimum distance of 5 meters** from any AC-powered appliances (e.g., motors, refrigerators) to 
-  minimize interference noise and get better signal acquisition. Our body, essentially a "bag of salt water," acts as a large antenna when electrodes 
-  are attached, picking up surrounding electromagnetic signals. This interference includes radio waves (usually filtered in hardware) and 50Hz/60Hz AC noise from appliances, which is typically removed through software 
+  minimize interference noise and get better signal acquisition. Our body is essentially a "bag of salt water", when electodes are connected to our body it acts like an antenna picking up surrounding electromagnetic signals also known as Radio/AC interference noise. This interference noise includes radio waves (usually filtered in hardware) and 50Hz/60Hz AC noise from appliances, which is typically removed through software 
   filtering.
   
   .. figure:: ../media/precaution-measures-for-better-signals.*
