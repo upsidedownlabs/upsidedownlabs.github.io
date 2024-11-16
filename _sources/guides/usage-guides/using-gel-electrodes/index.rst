@@ -100,6 +100,30 @@ Connect the BioAmp Snap/Alligator Cable on the gel electrodes.
 
 Peel of the plastic backing and place the electrodes on your targeted skin surface as per the connections directed with every BioAmp hardware.
 
+.. figure:: media/electrode-placement-eog.*
+    :align: center
+    :alt: Electrode placement for EOG
+
+    Gel electrodes placement for EOG signal recording
+
+.. figure:: media/electrode-placement-emg.*
+    :align: center
+    :alt: Electrode placement for EMG
+
+    Gel electrodes placement for EMG signal recording
+
+.. figure:: media/electrode-placement-ecg.*
+    :align: center
+    :alt: Electrode placement for ECG
+
+    Gel electrodes placement for ECG signal recording
+
+.. figure:: media/electrode-placement-eeg.*
+    :align: center
+    :alt: Electrode placement for EEG
+
+    Gel electrodes placement for EEG signal recording
+
 .. tip:: While placing the gel electrodes on the skin, make sure to place the non-sticky tab of the electrode in the direction opposite to your hair growth. This allows you to remove the electrodes easily without pulling off much body hair.
 
 Removing the electrodes
