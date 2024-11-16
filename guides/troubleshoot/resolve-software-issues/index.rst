@@ -7,8 +7,8 @@ Resolving software issues
 
 - **Better signal visualization:** Many people find it difficult to visualize the biopotential signals in the serial plotter even if everything is correct because the serial plotter of the latest version (v2.0) of Arduino IDE plots very few data points per frame and this is why you may find it moving very fast. To resolve this issue you can either:
   
+  - Use `Chords application <chords.upsidedownlabs.tech>`_ to visualise the data. :bdg-success-line:`Recommended`  
   - Download the Arduino IDE version 1.8.X (Legacy IDE) in which the serial plotter plots more data points per frame so it moves comparatively slow as compared to the latest version.
-  - Use `Chords application <chords.upsidedownlabs.tech>`_ to visualise the data.
 
 - **COM Port selection:** Make sure you have selected the correct COM port of the development board connected to your laptop. If you are unable to detect the COM port, follow the steps given below:
 
