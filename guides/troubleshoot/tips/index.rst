@@ -13,6 +13,7 @@ Tips for best signal acquisition
      :align: center
      :alt: tip for better signal acquisition
 
+     tip for better signal acquisition
 - Before placing electrodes on your body, prepare your skin thoroughly using `Nuprep skin preparation gel <https://store.upsidedownlabs.tech/product/nuprep-gel/>`_ to remove dead skin cells, 
   oils, & other substances. This will enhance the connection of electrodes to the skin surface and also decrease the 
   skin-electrode impedance which results in better signal acquisition. For more information, you can check out the complete :ref:`skin-preparation`.
