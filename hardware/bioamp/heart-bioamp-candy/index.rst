@@ -15,6 +15,7 @@ research purposes.
     :align: center
     :alt: Heart BioAmp Candy
 
+    Heart BioAmp Candy
 Features & Specifications
 *****************************
 
