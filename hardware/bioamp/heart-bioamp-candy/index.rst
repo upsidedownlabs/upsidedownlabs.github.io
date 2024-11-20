@@ -43,7 +43,7 @@ Hardware
 *************
 
 
-.. figure:: media/-heart-bioamp-candy-front.*
+.. figure:: media/heart-bioamp-candy-front.*
     :width: 800
     :align: center
     :alt: Heart BioAmp Candy
@@ -104,7 +104,21 @@ Using the kit
 Step 1: Connections with development board
 ============================================
 
-Connect ``VCC`` to either ``5V`` or ``3.3V``, ``GND`` to ``GND``, and ``OUT`` to ``Analog pin A0`` of your development board via jumper cables provided in the kit.
+Connect your Heart BioAmp Candy to your MCU/ADC as per the connection table shown below:
+
+.. table:: 
+
+    +--------------------+-----------+
+    | Heart BioAmp Candy | MCU/ADC   |
+    +====================+===========+
+    | VCC                | 5V        |
+    +--------------------+-----------+
+    | GND                | GND       |
+    +--------------------+-----------+
+    | OUT                | ADC Input |
+    +--------------------+-----------+
+
+While making connections with the development board, make sure to use jumper cables that are provided in the kit.
 
 .. figure:: media/development-board-connections.*
     :align: center
@@ -112,6 +126,7 @@ Connect ``VCC`` to either ``5V`` or ``3.3V``, ``GND`` to ``GND``, and ``OUT`` to
     :alt: Heart BioAmp Candy - Development board connection
     
     Heart BioAmp Candy - Development board connection
+
 .. note:: For demonstration purposes we are showing connections of the sensor with Arduino UNO R3/R4 but you can use any other development board or a standalone ADC of your choice.
 
 .. warning:: Take precautions while connecting to power, if power pins (GND & VCC) are to be swapped, your sensor will be fried and it’ll become unusable (DIE).
