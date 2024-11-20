@@ -177,6 +177,8 @@ Connect the development board to your laptop using a compatible USB cable. Copy 
 .. figure:: media/chords-arduino-firmware.*
     :align: center
     :alt: Chords Arduino firmware
+    
+    Chords Arduino firmware
 
 .. note:: Upload the Arduino firmware according to the development board you are using. If you are using Arduino UNO R3 then you should upload UNO-R3 firmware but if you are using Arduino UNO R4 then make sure to upload the UNO-R4 firmware.
 
