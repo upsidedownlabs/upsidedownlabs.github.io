@@ -124,7 +124,9 @@ Connect the BioAmp cable to Heart BioAmp Candy by inserting the cable end in the
 .. figure:: media/electrode-cable-connections.*
     :width: 100%
     :align: center
-
+    :alt: Heart BioAmp Candy - Electrode cable connections
+    
+    Heart BioAmp Candy - Electrode cable connections
 Step 3: Skin Preparation
 ===============================================
 
