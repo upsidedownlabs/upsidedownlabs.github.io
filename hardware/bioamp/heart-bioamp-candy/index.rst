@@ -10,7 +10,7 @@ Heart BioAmp Candy is a candy-sized sensor for recording ECG signals easily. It 
 as it offers reliable and accurate ECG recordings, making heart monitoring accessible and convenient for educational and 
 research purposes.
 
-.. figure:: media/heart-bioamp-candy-front.*
+.. figure:: media/candy-angled.*
     :width: 100%
     :align: center
     :alt: Heart BioAmp Candy
