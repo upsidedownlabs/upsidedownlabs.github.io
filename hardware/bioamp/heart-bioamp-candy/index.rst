@@ -109,7 +109,9 @@ Connect ``VCC`` to either ``5V`` or ``3.3V``, ``GND`` to ``GND``, and ``OUT`` to
 .. figure:: media/development-board-connections.*
     :align: center
     :width: 100%
-
+    :alt: Heart BioAmp Candy - Development board connection
+    
+    Heart BioAmp Candy - Development board connection
 .. note:: For demonstration purposes we are showing connections of the sensor with Arduino UNO R3/R4 but you can use any other development board or a standalone ADC of your choice.
 
 .. warning:: Take precautions while connecting to power, if power pins (GND & VCC) are to be swapped, your sensor will be fried and it’ll become unusable (DIE).
