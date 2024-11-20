@@ -42,12 +42,20 @@ Features & Specifications
 Hardware
 *************
 
+
+.. figure:: media/-heart-bioamp-candy-front.*
+    :width: 800
+    :align: center
+    :alt: Heart BioAmp Candy
+
+    Assembled PCB Render - Front
+    
 .. figure:: media/candy-back.*
     :width: 800
     :align: center
     :alt: Heart BioAmp Candy
 
-    Assembled PCB - Back
+    Assembled PCB Render - Back
 
 .. figure:: media/candy-dimensions.*
     :width: 800
