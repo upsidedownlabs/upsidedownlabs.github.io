@@ -152,6 +152,8 @@ Using gel electrodes:
 .. figure:: media/ecg-using-gel-electrodes.*
     :align: center
     :alt: Using Heart BioAmp Candy to measure ECG with gel electrodes
+    
+    Using Heart BioAmp Candy to measure ECG with gel electrodes
 
 Using Heart BioAmp Band:
 ++++++++++++++++++++++++++
