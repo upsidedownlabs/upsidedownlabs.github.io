@@ -95,7 +95,7 @@ Contents of the kit
 Software requirements
 **********************
 
-1. **Uploading the code:** Before you start using the kit, please download `Arduino IDE <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the Chords Arduino Firmware on your development board.
+1. **Uploading the code:** Before you start using the kit, please download `Arduino IDE <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the `Chords Arduino Firmware <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ on your development board.
 2. **Visualizing the signals:** After uploading the firmware, you can use `Chords <https://chords.upsidedownlabs.tech/>`_, an open-source web application developed by us to record and visualize real-time biopotential signals (ECG, EMG, EEG, EOG).
 
 Using the kit
