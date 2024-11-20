@@ -164,6 +164,8 @@ Using Heart BioAmp Band:
 .. figure:: media/ecg-using-band.*
     :align: center
     :alt: Using Heart BioAmp Candy to measure ECG with Heart BioAmp Band
+    
+    Using Heart BioAmp Candy to measure ECG with Heart BioAmp Band
 
 .. tip:: Visit the complete documentation on how to :ref:`assemble and use the BioAmp Bands <using-bioamp-bands>` or follow the youtube `tutorial video <https://youtu.be/fr5iORsVyUM>`_.
 
