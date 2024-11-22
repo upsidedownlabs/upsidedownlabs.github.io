@@ -40,6 +40,11 @@ You can find the complete documentations for different hardwares by clicking the
          :link: muscle-bioamp-blip
          :link-type: ref
 
+      .. grid-item-card:: Heart BioAmp Candy
+         :text-align: center
+         :link: heart-bioamp-candy
+         :link-type: ref      
+
       .. grid-item-card:: BioAmp v1.5
          :text-align: center
          :link: bioamp-v1.5
@@ -64,6 +69,7 @@ You can find the complete documentations for different hardwares by clicking the
    bioamp/muscle-bioamp-shield/index
    bioamp/muscle-bioamp-patchy/index
    bioamp/muscle-bioamp-blip/index
+   bioamp/heart-bioamp-candy/index
    bioamp/bioamp-v1.5/index
    bioamp/muscle-bioamp-candy/index
    bioamp/muscle-bioamp-biscute/index
