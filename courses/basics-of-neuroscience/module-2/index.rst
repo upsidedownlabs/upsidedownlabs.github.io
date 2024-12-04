@@ -19,7 +19,7 @@ It is divided into two major parts:
 
     Types of nervous system
 
-.. figure:: ../media/nervous-system-flowchart.*
+.. figure:: ../media/flowchart-nervous-system.*
     :align: center
     :alt: nervous system flowchart
 
@@ -33,27 +33,34 @@ The central nervous system (CNS) is the body’s command center and is made up o
 2.2.1 The Brain
 ================
 
-The brain is the most complex organ which communicates with the body by sending and receiving chemical and electrical signals. Some signals remain within the brain, while others are transmitted through the spinal cord and across a network of nerves to distant parts of the body. This communication relies on billions of neurons that form the central nervous system.
+The brain is the most complex organ which communicates with the body by sending and receiving chemical and electrical signals. Some signals remain within the brain, while others are transmitted through the spinal cord and across a network of nerves to distant parts of the body. This communication relies on billions of neurons that form the central nervous system. Structure of the brain can be divided into 3 major parts.
 
-.. note:: - Brain weighs about 3 pounds in the average adult and contains about 60% fat. The remaining 40% is a combination of water, protein, carbohydrates and salts. 
-          - The brain itself is not a muscle. It contains blood vessels and nerves, including neurons and glial cells.
-          - Our brain is made up of about 80 billion  neurons (that is 80,000,000,000).
+.. figure:: ../media/parts-of-human-brain.*
+    :align: center
+    :alt: Part of the brain
 
-Structure of the brain can be divided into 3 major parts: 
+    3 major parts of human brain
+
+.. admonition:: Fun Fact
+
+    - Brain weighs about 3 pounds in the average adult and contains about 60% fat. The remaining 40% is a combination of water, protein, carbohydrates and salts. 
+    - The brain itself is not a muscle. It contains blood vessels and nerves, including neurons and glial cells.
 
 Cerebrum
 -------------
 
 Cerebrum is the largest part of the brain  which can be divided into 2 hemispheres, right and left.
 
-.. figure:: ../media/brain-anatomy.*
+.. figure:: ../media/two-hemispheres.*
     :align: center
     :alt: Brain Anatomy
 
-    Anatomy of the brain
+    The 2 hemispheres of the brain
 
-.. note:: - The right hemisphere controls the left side of the body, and the left hemisphere controls the right side of the body.
-          - The two halves communicate with one another through a large C shaped structure called corpus callosum which is the center part of the cerebrum.
+.. admonition:: Fun fact
+    
+    - The right hemisphere controls the left side of the body, and the left hemisphere controls the right side of the body.
+    - The two halves communicate with one another through a large C shaped structure called corpus callosum which is the center part of the cerebrum.
 
 Each hemisphere is further divided into four lobes:
    
@@ -62,16 +69,22 @@ b. **Parietal lobe:** Located in the middle part of the brain, the parietal lobe
 c. **Temporal lobe:** Positioned on the sides of the brain, the temporal lobes are involved in short-term memory, speech, musical rhythm and some degree of smell recognition.
 d. **Occipital lobe:** Found at the back of the brain, the occipital lobe is primarily responsible for processing visual information.
 
-.. figure:: ../media/parts-of-human-brain.*
+.. figure:: ../media/different-lobes-of-brain.*
     :align: center
-    :alt: Parts of human brain
+    :alt: Different lobes of the brain
 
-    Parts of the Human Brain
+    Different lobes of the brain
 
 Cerebellum
 -------------------
 
 The cerebellum (little brain) is a fist-sized portion of the brain located at the back of the head and above the brainstem. Its function is to coordinate voluntary muscle movements and to maintain posture, balance and equilibrium.
+
+.. figure:: ../media/parts-of-human-brain-1.*
+    :align: center
+    :alt: Part of the brain
+
+    The cerebellum and brainstem
 
 Brainstem
 --------------
@@ -82,15 +95,25 @@ a. **Midbrain:** Involved in motor control and auditory/visual processing.
 b. **Pons:** It is a connection between midbrain and medulla. It controls sleep, respiration, and some motor functions.
 c. **Medulla:** At the bottom of the brainstem, the medulla is where the brain meets the spinal cord. The medulla is crucial for survival, as it regulates vital bodily functions, including heart rate, breathing, blood circulation, and the balance of oxygen and carbon dioxide levels. It also controls reflexive actions such as sneezing, vomiting, coughing, and swallowing.
 
+.. figure:: ../media/brainstem.*
+    :align: center
+    :alt: Brainstem
+
+    Overview of the brainstem
+
 2.2.2 The Spinal Cord
 ======================
 
 The spinal cord begins at the base of the medulla and passes through a large opening at the bottom of the skull. Supported by the vertebrae, it serves as a communication highway between the brain and the rest of the body. This long, tubular structure transmits sensory information from the body to the brain and sends motor commands from the brain to the body. Additionally, it is responsible for reflex actions, which are quick and involuntary responses to stimuli.
 
+.. figure:: ../media/spinal-cord.*
+    :align: center
+    :alt: Spinal cord
+
+    Spinal cord and vertebrae
+
 2.3 Peripheral Nervous System (PNS)
 **************************************
-
-.. todo:: Add a graph on how PNS is subdivided into various types
 
 The Peripheral Nervous System connects the Central Nervous System to the rest of the body and is responsible for transmitting signals to and from various organs and tissues. It is divided into two major systems:
 
@@ -115,6 +138,10 @@ b. **Parasympathetic Nervous System:** It does the opposite of the sympathetic n
 
 Neurons are the building blocks of the nervous system and are responsible for sending, receiving and transmitting electrochemical signals throughout the body.
 
+.. admonition:: Fun Fact
+    
+    - Our brain is made up of about 80 billion  neurons (that is 80,000,000,000).
+
 2.4.1 Types of neurons
 =========================
 
@@ -122,14 +149,18 @@ Neurons are the building blocks of the nervous system and are responsible for se
 2. **Motor Neurons:** Carry commands from the CNS to muscles and glands, enabling actions like muscle contraction or hormone release. It is the most common type of neuron.
 3. **Interneurons:** These neurons are found in the CNS and act as connectors between sensory and motor neurons. They help process and integrate information.
 
+.. figure:: ../media/types-of-neurons.*
+    :align: center
+    :alt: types of neurons
+
 2.4.2 Structure of neuron
 ============================
 
-.. figure:: ../media/parts-of-neuron.*
+.. figure:: ../media/parts-of-a-neuron.*
     :align: center
-    :alt: Parts of neuron
+    :alt: Structure of neuron
 
-    Parts of a neuron
+    Structure of a neuron
 
 - **Cell Body (Soma):** The soma, or cell body, is the core of the neuron which maintains the cell and to keep the neuron functioning efficiently. It is enclosed by a membrane that protects it and allows it to interact with its immediate surroundings
 - **Nucleus:** Nucleus contains the genetic material (chromosomes) of the neuron cell.
@@ -138,7 +169,9 @@ Neurons are the building blocks of the nervous system and are responsible for se
 - **Myelin sheath:** Myelin sheath is a fatty layer that insulates the axon, speeding up signal transmission. 
 - **Synapse:** Neurons do not touch each other, but where one neuron comes close to another neuron, a synapse is formed between the two which acts as a junction between two neurons where neurotransmitters are released to transmit signals to the next neuron.
 
-.. note:: There are axon-less neurons too where the signal is transmitted and received both by the dendrites.
+.. admonition:: Fun fact
+    
+    There are axon-less neurons too where the signal is transmitted and received both by the dendrites.
 
 2.5 References
 ******************
