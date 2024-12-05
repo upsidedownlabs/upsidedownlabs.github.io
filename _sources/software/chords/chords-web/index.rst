@@ -1,7 +1,7 @@
 .. _chords:
 
 Chords-Web
-#################
+############
 
 Overview
 ********
@@ -50,7 +50,7 @@ To use Chords-Web, you need:
   - `Muscle BioAmp Shield <https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-shield/index.html>`_
   
 How to Use Chords-Web
-*******************
+***********************
 
 Uploading the Code
 ==================

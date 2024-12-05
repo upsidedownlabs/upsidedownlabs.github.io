@@ -1,6 +1,6 @@
 .. _open-epyhs:
 
-Extracellular Electrophysiology Acquisition
+Course Curriculum
 #####################################################
 
 Introduction
