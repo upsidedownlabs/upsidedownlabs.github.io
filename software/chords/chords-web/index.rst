@@ -1,26 +1,26 @@
 .. _chords:
 
 Chords-Web
-#################
+###############
 
 Overview
 ********
 
-Chords is an open source web application designed for real-time signal visualization, particularly tailored for bio-potential signals like EEG, EMG, ECG and EOG. This tool serves as an advanced alternative to the standard Arduino IDE serial plotter, offering enhanced functionality for students, researchers and hobbyists alike who want to record biopotential data using  `BioAmp hardware <https://docs.upsidedownlabs.tech/hardware/index.html>`_.
+Chords-Web is an open-source web application designed for real-time signal visualization, particularly tailored for bio-potential signals like EEG, EMG, ECG and EOG. This tool serves as an advanced alternative to the standard Arduino IDE serial plotter, offering enhanced functionality for students, researchers and hobbyists alike who want to record biopotential data using  `BioAmp hardware <https://docs.upsidedownlabs.tech/hardware/index.html>`_.
 
 .. figure:: ./media/chords_landing_page.*
     :align: center
-    :alt: Chords Landing Page
+    :alt: Chords-Web Landing Page
 
 Features
 ********
-- **Connection**: Effortlessly compatible with BioAmp Hardware and automatically detects the development board running the Chords Arduino Firmware, simplifying the setup process and ensuring a smooth and efficient workflow from data acquisition to visualization.
+- **Connection**: Effortlessly compatible with BioAmp Hardware and automatically detects the development board running the Chords-Web Arduino Firmware, simplifying the setup process and ensuring a smooth and efficient workflow from data acquisition to visualization.
 
 .. figure:: ./media/chords_connection.*
     :align: center
-    :alt: Chords Connection
+    :alt: Chords-Web Connection
 
-- **Board Support** : We have support for Arduino UNO R3, R4 and Maker UNO. Chords should now work for other Arduino R3 clones with CH340 USB to UART Chips as well.
+- **Board Support** : You can check out `Compatible Development Board <https://github.com/upsidedownlabs/Chords-Web-Arduino-Firmware?tab=readme-ov-file#chords-arduino-firmware>`_.
 - **Real-time Visualization**: Experience smooth real-time visualization of incoming data rendered with `WebGL-Plot <https://github.com/danchitnis/webgl-plot>`_. The system ensures smooth signal display, helping you monitor the signal flow without interruptions or lag.
 - **Frame Buffer Feature**: View and save up to the last five snapshots of your data. Snapshots are automatically captured per frame and can be navigated using left/right buttons. Adjusting the channel count resets snapshots for the new configuration. Plus, zoom in or out for a closer look!
 - **Recording**: You can record data in CSV format indefinitely or set a timer to stop recording automatically when it expires.
@@ -30,57 +30,56 @@ Features
 
 .. figure:: ./media/chords_filter.*
     :align: center
-    :alt: Chords Filter
+    :alt: Chords-Web Filter
 
-- **Pause/Play**: Control the data flow on the screen, and use the two additional buttons to move backward and forward through previous and next frames.
-- **Channel**: Supports plotting of up to six channels of data simultaneously in real time where each stream is color coded differently for easy identification.
+- **Channel**: Supports plotting of multiple channels of data simultaneously in real time where each stream is color coded differently for easy identification.
 - **Disconnect**: Terminate the connection to the development board with a simple click. This functionality ensures a hassle-free disconnection process when you’re done with data collection or visualization.
 
 
 Software Requirements
 *********************
 
-* You have to flash `Chords Arduino Firmware <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ to your development board using Arduino IDE.
-* For now Chords is compatible with chromium based browsers. To ensure compatibility with supported browsers, see :ref:`chords-browsers-compatibility`.
+* You have to flash `Chords-Web Arduino Firmware <https://github.com/upsidedownlabs/Chords-Web-Arduino-Firmware>`_ to your development board using Arduino IDE.
+* For now Chords-Web is compatible with chromium based browsers. To ensure compatibility with supported browsers, see :ref:`chords-browsers-compatibility`.
 
 Hardware Requirements
 *********************
 
-- `Compatible Development Board <https://github.com/upsidedownlabs/Chords-Arduino-Firmware?tab=readme-ov-file#chords-arduino-firmware>`_
+- `Compatible Development Board <https://github.com/upsidedownlabs/Chords-Web-Arduino-Firmware?tab=readme-ov-file#chords-arduino-firmware>`_
 - A USB cable (type depends on board)
 - `BioAmp Hardware <https://docs.upsidedownlabs.tech/hardware/index.html>`_
   
-How to Use Chords
-*******************
+How to Use Chords-Web
+*********************
 
 Uploading the Code
 ==================
 
 1. Connect the Arduino board to your laptop using the USB cable.
-2. Copy and paste the `Arduino Firmware  <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ into the Arduino IDE.
+2. Copy and paste the `Arduino Firmware  <https://github.com/upsidedownlabs/Chords-Web-Arduino-Firmware>`_  for your board into the Arduino IDE.
 3. Select your board under `Tools > Board`.
 4. Choose the correct COM port in the tools menu (the one that disappears when you disconnect the board).
-5. Upload the code and open Chords in your web browser.
+5. Upload the code and open Chords-Web in your web browser.
 
 
 Using the Software
 ==================
 
 1. Click the ``Connect`` button to establish a connection with the Arduino and start streaming.
-2. Use the ``Zoom in/out`` button to adjust the data visualization.
-3. Use the ``Play/Pause`` button to control the data stream.
+2. Use the ``ZoomIn/Out`` button to adjust the data visualization.
+3. Use the ``Play/Pause`` button to control the data stream. Navigate the last five snapshots with the ``Left/Right`` buttons in the Frame Buffer feature.
 4. Click the ``Record`` button to start recording data into a CSV file.
 5. To save the recorded data, click the ``Download`` button.
 6. Click the ``Delete`` button to remove recorded data.
 7. Click ``Filter`` button for EMG, ECG, EOG and EEG filters with ``muscle``, ``heart``, ``eye`` and ``brain`` icons or master buttons for all channels. You can apply 50Hz or 60Hz filter to individual or all channel.
 8. Adjust the number of channels by using the ``Plus/Minus`` buttons.
 
-Chords Icons
+Chords-Web Icons
 ************
 
 .. figure:: ./media/chords_icons.*
     :align: center
-    :alt: Chords Icons
+    :alt: Chords-Web Icons
 
 .. _chords-browsers-compatibility:
 
@@ -194,5 +193,5 @@ Technologies Used
 
 .. figure:: ./media/chords_tech_stack.*
     :align: center
-    :alt: Chords Tech Stack
+    :alt: Chords-Web Tech Stack
 
