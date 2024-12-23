@@ -20,7 +20,7 @@ Features
     :align: center
     :alt: Chords-Web Connection
 
-- **Board Support** : You can check out `Compatible Development Board <https://github.com/upsidedownlabs/Chords-Web-Arduino-Firmware?tab=readme-ov-file#chords-arduino-firmware>`_.
+- **Board Support** : You can check out `Compatible Development Board <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_.
 - **Real-time Visualization**: Experience smooth real-time visualization of incoming data rendered with `WebGL-Plot <https://github.com/danchitnis/webgl-plot>`_. The system ensures smooth signal display, helping you monitor the signal flow without interruptions or lag.
 - **Frame Buffer Feature**: View and save up to the last five snapshots of your data. Snapshots are automatically captured per frame and can be navigated using left/right buttons. Adjusting the channel count resets snapshots for the new configuration. Plus, zoom in or out for a closer look!
 - **Recording**: You can record data in CSV format indefinitely or set a timer to stop recording automatically when it expires.
