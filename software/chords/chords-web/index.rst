@@ -39,13 +39,13 @@ Features
 Software Requirements
 *********************
 
-* You have to flash `Chords-Web Arduino Firmware <https://github.com/upsidedownlabs/Chords-Web-Arduino-Firmware>`_ to your development board using Arduino IDE.
+* You have to flash `Chords-Web Arduino Firmware <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ to your development board using Arduino IDE.
 * For now Chords-Web is compatible with chromium based browsers. To ensure compatibility with supported browsers, see :ref:`chords-browsers-compatibility`.
 
 Hardware Requirements
 *********************
 
-- `Compatible Development Board <https://github.com/upsidedownlabs/Chords-Web-Arduino-Firmware?tab=readme-ov-file#chords-arduino-firmware>`_
+- `Compatible Development Board <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_
 - A USB cable (type depends on board)
 - `BioAmp Hardware <https://docs.upsidedownlabs.tech/hardware/index.html>`_
   
@@ -56,7 +56,7 @@ Uploading the Code
 ==================
 
 1. Connect the Arduino board to your laptop using the USB cable.
-2. Copy and paste the `Arduino Firmware  <https://github.com/upsidedownlabs/Chords-Web-Arduino-Firmware>`_  for your board into the Arduino IDE.
+2. Copy and paste the `Arduino Firmware  <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_  for your board into the Arduino IDE.
 3. Select your board under `Tools > Board`.
 4. Choose the correct COM port in the tools menu (the one that disappears when you disconnect the board).
 5. Upload the code and open Chords-Web in your web browser.
