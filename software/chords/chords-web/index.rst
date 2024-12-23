@@ -47,7 +47,7 @@ Hardware Requirements
 
 - `Compatible Development Board <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_
 - A USB cable (type depends on board)
-- `BioAmp Hardware <https://docs.upsidedownlabs.tech/hardware/index.html>`_
+- :ref:`BioAmp Hardware <upsidedownlabs_hardware_home>`
   
 How to Use Chords-Web
 *********************
