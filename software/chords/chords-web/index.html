@@ -57,7 +57,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="Dec 05, 2024"/>
+    <meta name="docbuild:last-update" content="Dec 23, 2024"/>
   </head>
   
   
@@ -630,50 +630,49 @@
 <span id="chords"></span><h1>Chords-Web<a class="headerlink" href="#chords-web" title="Link to this heading">#</a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
-<p>Chords is an open source web application designed for real-time signal visualization, particularly tailored for bio-potential signals like EEG, EMG, ECG and EOG. This tool serves as an advanced alternative to the standard Arduino IDE serial plotter, offering enhanced functionality for students, researchers and hobbyists alike who want to record biopotential data using  <a class="reference external" href="https://docs.upsidedownlabs.tech/hardware/index.html">BioAmp hardware</a>.</p>
-<figure class="align-center" id="id3">
-<img alt="chords landing page" src="../../../_images/chords_landing_page.png" />
-<figcaption>
-<p><span class="caption-text">chords landing page</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
-</figcaption>
+<p>Chords-Web is an open-source web application designed for real-time signal visualization, particularly tailored for bio-potential signals like EEG, EMG, ECG and EOG. This tool serves as an advanced alternative to the standard Arduino IDE serial plotter, offering enhanced functionality for students, researchers and hobbyists alike who want to record biopotential data using  <a class="reference external" href="https://docs.upsidedownlabs.tech/hardware/index.html">BioAmp hardware</a>.</p>
+<figure class="align-center">
+<img alt="Chords-Web Landing Page" src="../../../_images/chords_landing_page.png" />
 </figure>
 </section>
 <section id="features">
 <h2>Features<a class="headerlink" href="#features" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><strong>Connection</strong>: It is effortlessly compatible with BioAmp Hardware attached to an Arduino-compatible development board running the <a class="reference external" href="https://github.com/upsidedownlabs/Chords-Arduino-Firmware">Chords Arduino firmware</a>, simplifying the setup process and ensuring a smooth and efficient workflow from data acquisition to visualization.</p></li>
-<li><p><strong>Real-time Visualization</strong>: Experience smooth real-time visualization of incoming data rendered with <a class="reference external" href="https://github.com/danchitnis/webgl-plot">WebGL-Plot</a>. The system ensures smooth signal display, helping you monitor the flow without interruptions or lag.</p></li>
+<li><p><strong>Connection</strong>: Effortlessly compatible with BioAmp Hardware and automatically detects the development board running the Chords-Web Arduino Firmware, simplifying the setup process and ensuring a smooth and efficient workflow from data acquisition to visualization.</p></li>
+</ul>
+<figure class="align-center">
+<img alt="Chords-Web Connection" src="../../../_images/chords_connection.png" />
+</figure>
+<ul class="simple">
+<li><p><strong>Board Support</strong> : You can check out <a class="reference external" href="https://github.com/upsidedownlabs/Chords-Arduino-Firmware">Compatible Development Board</a>.</p></li>
+<li><p><strong>Real-time Visualization</strong>: Experience smooth real-time visualization of incoming data rendered with <a class="reference external" href="https://github.com/danchitnis/webgl-plot">WebGL-Plot</a>. The system ensures smooth signal display, helping you monitor the signal flow without interruptions or lag.</p></li>
+<li><p><strong>Frame Buffer Feature</strong>: View and save up to the last five snapshots of your data. Snapshots are automatically captured per frame and can be navigated using left/right buttons. Adjusting the channel count resets snapshots for the new configuration. Plus, zoom in or out for a closer look!</p></li>
 <li><p><strong>Recording</strong>: You can record data in CSV format indefinitely or set a timer to stop recording automatically when it expires.</p></li>
-<li><p><strong>Download/Delete</strong>: Easily download or delete recorded data with just a few clicks. Manage your data efficiently, allowing for quick access to relevant data or removal of unwanted data to free up storage.</p></li>
+<li><p><strong>Download/Delete</strong>: You can manage recorded files more efficiently with a popover menu to download or delete individual files stored in IndexedDB. Additionally, buttons to download all files as a ZIP or delete them in one click.</p></li>
 <li><p><strong>Zoom</strong>: Zoom-in and zoom-out feature, gives you more control as now you can either zoom in to look at signal or zoom out for an overall view.</p></li>
-<li><p><strong>Theme Toggle</strong>: Offers both light and dark themes, enabling you to switch according to your preference for a more comfortable user experience.</p></li>
-<li><p><strong>Pause/Play</strong>: Includes options to freeze and resume data display, allowing users to pause the visualization for detailed examination and then continue data monitoring seamlessly.</p></li>
-<li><p><strong>Channel</strong>: Supports plotting of up to six channels of data simultaneously in real time where each stream is color-coded differently for easy identification.</p></li>
+<li><p><strong>Filter</strong>: You can easily enhance biopotential signal quality with intuitive filter controls. select the muscle icon to apply a 70 Hz high-pass filter for EMG signals, improving their clarity. For ECG signals, click the heart icon to activate a 30 Hz low-pass filter for accurate heart rhythm visualization. The eye icon applies a 10 Hz low-pass filter to EOG signals, reducing high-frequency noise, while the brain icon enables a 45 Hz low-pass filter to enhance EEG signal analysis. Use the master button to apply these filters across all channels.</p></li>
+</ul>
+<figure class="align-center">
+<img alt="Chords-Web Filter" src="../../../_images/chords_filter.png" />
+</figure>
+<ul class="simple">
+<li><p><strong>Channel</strong>: Supports plotting of multiple channels of data simultaneously in real time where each stream is color coded differently for easy identification.</p></li>
 <li><p><strong>Disconnect</strong>: Terminate the connection to the development board with a simple click. This functionality ensures a hassle-free disconnection process when you’re done with data collection or visualization.</p></li>
 </ul>
 </section>
 <section id="software-requirements">
 <h2>Software Requirements<a class="headerlink" href="#software-requirements" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>You have to flash  <a class="reference external" href="https://github.com/upsidedownlabs/Chords-Arduino-Firmware">Chords Arduino Firmware</a> to your Arduino board using Arduino IDE.</p></li>
-<li><p>For now the Chords web application is only compatible with Chromium-based browsers. To check your browser compatibility, see <a class="reference internal" href="#chords-browsers-compatibility"><span class="std std-ref">Browser Compatibility</span></a> section of this page.</p></li>
+<li><p>You have to flash <a class="reference external" href="https://github.com/upsidedownlabs/Chords-Arduino-Firmware">Chords-Web Arduino Firmware</a> to your development board using Arduino IDE.</p></li>
+<li><p>For now Chords-Web is compatible with chromium based browsers. To ensure compatibility with supported browsers, see <a class="reference internal" href="#chords-browsers-compatibility"><span class="std std-ref">Browser Compatibility</span></a>.</p></li>
 </ul>
 </section>
 <section id="hardware-requirements">
 <h2>Hardware Requirements<a class="headerlink" href="#hardware-requirements" title="Link to this heading">#</a></h2>
-<p>To use Chords-Web, you need:</p>
 <ul class="simple">
-<li><p>Compatible Development Board : Arduino Uno R3 And R4 Minima</p></li>
+<li><p><a class="reference external" href="https://github.com/upsidedownlabs/Chords-Arduino-Firmware">Compatible Development Board</a></p></li>
 <li><p>A USB cable (type depends on board)</p></li>
-<li><p>BioAmp Hardware :</p>
-<ul>
-<li><p><a class="reference external" href="https://docs.upsidedownlabs.tech/hardware/bioamp/bioamp-exg-pill/index.html">BioAmp EXG Pill</a></p></li>
-<li><p><a class="reference external" href="https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-biscute/index.html">Muscle BioAmp Biscute</a></p></li>
-<li><p><a class="reference external" href="https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-candy/index.html">Muscle BioAmp Candy</a></p></li>
-<li><p><a class="reference external" href="https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-patchy/index.html">Muscle BioAmp Patchy</a></p></li>
-<li><p><a class="reference external" href="https://docs.upsidedownlabs.tech/hardware/bioamp/muscle-bioamp-shield/index.html">Muscle BioAmp Shield</a></p></li>
-</ul>
-</li>
+<li><p><a class="reference internal" href="../../../hardware/index.html#upsidedownlabs-hardware-home"><span class="std std-ref">BioAmp Hardware</span></a></p></li>
 </ul>
 </section>
 <section id="how-to-use-chords-web">
@@ -682,115 +681,31 @@
 <h3>Uploading the Code<a class="headerlink" href="#uploading-the-code" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Connect the Arduino board to your laptop using the USB cable.</p></li>
-<li><p>Copy and paste the <a class="reference external" href="https://github.com/upsidedownlabs/Chords-Arduino-Firmware">Arduino Firmware</a> into the Arduino IDE.</p></li>
-<li><p>Select your board from <cite>Board</cite> section in the tools menu.</p></li>
+<li><p>Copy and paste the <a class="reference external" href="https://github.com/upsidedownlabs/Chords-Arduino-Firmware">Arduino Firmware</a>  for your board into the Arduino IDE.</p></li>
+<li><p>Select your board under <cite>Tools &gt; Board</cite>.</p></li>
 <li><p>Choose the correct COM port in the tools menu (the one that disappears when you disconnect the board).</p></li>
-<li><p>Click on the <cite>Upload</cite> button to flash your Arduino board.</p></li>
+<li><p>Upload the code and open Chords-Web in your web browser.</p></li>
 </ol>
-<p>Now, you are ready to use <a class="reference external" href="https://chords.upsidedownlabs.tech/stream">Chords</a>.</p>
 </section>
 <section id="using-the-software">
 <h3>Using the Software<a class="headerlink" href="#using-the-software" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Click the <code class="docutils literal notranslate"><span class="pre">Connect</span></code> button to establish a connection with the Arduino and start streaming.</p></li>
-<li><p>Use the <code class="docutils literal notranslate"><span class="pre">Play/Pause</span></code> button to control the data stream.</p></li>
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">ZoomIn/ZoomOut</span></code> button to adjust the data visualization.</p></li>
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">Play/Pause</span></code> button to control the data stream. Navigate the last five snapshots with the <code class="docutils literal notranslate"><span class="pre">Left/Right</span></code> buttons in the Frame Buffer feature.</p></li>
 <li><p>Click the <code class="docutils literal notranslate"><span class="pre">Record</span></code> button to start recording data into a CSV file.</p></li>
 <li><p>To save the recorded data, click the <code class="docutils literal notranslate"><span class="pre">Download</span></code> button.</p></li>
 <li><p>Click the <code class="docutils literal notranslate"><span class="pre">Delete</span></code> button to remove recorded data.</p></li>
-<li><p>Change the mode using the <code class="docutils literal notranslate"><span class="pre">Mode</span></code> button which is present in the navbar.</p></li>
-<li><p>Use the <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">in/out</span></code> button to adjust the data visualization.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Filter</span></code> button for EMG, ECG, EOG and EEG filters with <code class="docutils literal notranslate"><span class="pre">muscle</span></code>, <code class="docutils literal notranslate"><span class="pre">heart</span></code>, <code class="docutils literal notranslate"><span class="pre">eye</span></code> and <code class="docutils literal notranslate"><span class="pre">brain</span></code> icons or master buttons for all channels. You can apply 50Hz or 60Hz filter to individual or all channel.</p></li>
 <li><p>Adjust the number of channels by using the <code class="docutils literal notranslate"><span class="pre">Plus/Minus</span></code> buttons.</p></li>
 </ol>
 </section>
 </section>
-<section id="chords-icons">
-<h2>Chords Icons<a class="headerlink" href="#chords-icons" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="table">
-<colgroup>
-<col style="width: 25.0%" />
-<col style="width: 75.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Icons</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><figure class="align-left">
-<a class="reference internal image-reference" href="../../../_images/chords_connect.png"><img alt="chords Connect" src="../../../_images/chords_connect.png" style="width: 20px; height: 20px;" /></a>
+<section id="chords-web-icons">
+<h2>Chords-Web Icons<a class="headerlink" href="#chords-web-icons" title="Link to this heading">#</a></h2>
+<figure class="align-center">
+<img alt="Chords-Web Icons" src="../../../_images/chords_icons.png" />
 </figure>
-</td>
-<td><p>Connect</p></td>
-</tr>
-<tr class="row-odd"><td><figure class="align-left">
-<a class="reference internal image-reference" href="../../../_images/chords_zoom_in.png"><img alt="chords zoom in" src="../../../_images/chords_zoom_in.png" style="width: 20px; height: 20px;" /></a>
-</figure>
-</td>
-<td><p>Zoom in</p></td>
-</tr>
-<tr class="row-even"><td><figure class="align-left">
-<a class="reference internal image-reference" href="../../../_images/chords_zoom_out.png"><img alt="chords zoom out" src="../../../_images/chords_zoom_out.png" style="width: 20px; height: 20px;" /></a>
-</figure>
-</td>
-<td><p>Zoom out</p></td>
-</tr>
-<tr class="row-odd"><td><figure class="align-left">
-<a class="reference internal image-reference" href="../../../_images/chords_pause.jpg"><img alt="chords pause" src="../../../_images/chords_pause.jpg" style="width: 20px; height: 20px;" /></a>
-</figure>
-</td>
-<td><p>Pause</p></td>
-</tr>
-<tr class="row-even"><td><figure class="align-left">
-<a class="reference internal image-reference" href="../../../_images/chords_resume.png"><img alt="chords resume" src="../../../_images/chords_resume.png" style="width: 20px; height: 20px;" /></a>
-</figure>
-</td>
-<td><p>Resume</p></td>
-</tr>
-<tr class="row-odd"><td><figure class="align-left">
-<a class="reference internal image-reference" href="../../../_images/chords_record.png"><img alt="chords record" src="../../../_images/chords_record.png" style="width: 20px; height: 20px;" /></a>
-</figure>
-</td>
-<td><p>Record</p></td>
-</tr>
-<tr class="row-even"><td><figure class="align-left">
-<a class="reference internal image-reference" href="../../../_images/chords_save.png"><img alt="chords save" src="../../../_images/chords_save.png" style="width: 20px; height: 20px;" /></a>
-</figure>
-</td>
-<td><p>Save</p></td>
-</tr>
-<tr class="row-odd"><td><figure class="align-left">
-<a class="reference internal image-reference" href="../../../_images/chords_delete.png"><img alt="chords delete" src="../../../_images/chords_delete.png" style="width: 20px; height: 20px;" /></a>
-</figure>
-</td>
-<td><p>Delete</p></td>
-</tr>
-<tr class="row-even"><td><figure class="align-left">
-<a class="reference internal image-reference" href="../../../_images/chords_plus.png"><img alt="chords plus" src="../../../_images/chords_plus.png" style="width: 20px; height: 20px;" /></a>
-</figure>
-</td>
-<td><p>Increase Channel</p></td>
-</tr>
-<tr class="row-odd"><td><figure class="align-left">
-<a class="reference internal image-reference" href="../../../_images/chords_minus.png"><img alt="chords minus" src="../../../_images/chords_minus.png" style="width: 20px; height: 20px;" /></a>
-</figure>
-</td>
-<td><p>Decrease Channel</p></td>
-</tr>
-<tr class="row-even"><td><figure class="align-left">
-<a class="reference internal image-reference" href="../../../_images/chords_light_mode.png"><img alt="chords light theme" src="../../../_images/chords_light_mode.png" style="width: 20px; height: 20px;" /></a>
-</figure>
-</td>
-<td><p>Light Mode</p></td>
-</tr>
-<tr class="row-odd"><td><figure class="align-left">
-<a class="reference internal image-reference" href="../../../_images/chords_dark_mode.png"><img alt="chords dark theme" src="../../../_images/chords_dark_mode.png" style="width: 20px; height: 20px;" /></a>
-</figure>
-</td>
-<td><p>Dark Mode</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 </section>
 <section id="browser-compatibility">
 <span id="chords-browsers-compatibility"></span><h2>Browser Compatibility<a class="headerlink" href="#browser-compatibility" title="Link to this heading">#</a></h2>
@@ -805,19 +720,66 @@
 </section>
 <section id="technologies-used">
 <h2>Technologies Used<a class="headerlink" href="#technologies-used" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>Next.js</strong>: A framework built on top of React.js.</p></li>
-<li><p><strong>Web Serial API</strong>: API for serial communication with devices.</p></li>
-<li><p><strong>Tailwind CSS</strong>: Utility-first CSS framework.</p></li>
-<li><p><strong>Shadcn UI</strong>: Reusable and customizable components, built with Radix UI.</p></li>
-<li><p><strong>WebGL Plot</strong>: Real-time charting library.</p></li>
-<li><p><strong>IndexedDB API</strong>: Browser-based database for storing recorded data.</p></li>
-</ul>
-<figure class="align-center" id="id4">
-<img alt="chords tech stack" src="../../../_images/chords_tech_stack.png" />
-<figcaption>
-<p><span class="caption-text">chords tech stack</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
-</figcaption>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-4 sd-mb-4 sd-ml-0 sd-mr-0 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"><img alt="Next.js Logo" class="align-center" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" style="width: 50px; height: 50px;" /></a>
+<p class="sd-card-text"><strong>Next.js</strong>
+A React framework for building web apps.</p>
+</div>
+<a class="sd-stretched-link reference external" href="https://nextjs.org/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<a class="reference internal image-reference" href="../../../_images/chords_serialdevice.png"><img alt="Web Serial API" class="align-center" src="../../../_images/chords_serialdevice.png" style="width: 40px; height: 40px;" /></a>
+<p class="sd-card-text"><strong>Web Serial API</strong>
+For communication with hardware devices.</p>
+</div>
+<a class="sd-stretched-link reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Serial"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<a class="reference internal image-reference" href="../../../_images/chords_tailwindcss.svg"><img alt="Tailwind CSS Logo" class="align-center" src="../../../_images/chords_tailwindcss.svg" style="width: 50px; height: 50px;" /></a>
+<p class="sd-card-text"><strong>Tailwind CSS</strong>
+A utility-first CSS framework.</p>
+</div>
+<a class="sd-stretched-link reference external" href="https://tailwindcss.com/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<a class="reference internal image-reference" href="../../../_images/chords_shadcn.png"><img alt="Shadcn UI Logo" class="align-center" src="../../../_images/chords_shadcn.png" style="width: 40px; height: 40px;" /></a>
+<p class="sd-card-text"><strong>Shadcn UI</strong>
+Advanced UI components for React.</p>
+</div>
+<a class="sd-stretched-link reference external" href="https://ui.shadcn.com/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<a class="reference internal image-reference" href="../../../_images/chords_webgl_plot.svg"><img alt="WebGL Plot Logo" class="align-center" src="../../../_images/chords_webgl_plot.svg" style="width: 50px; height: 50px;" /></a>
+<p class="sd-card-text"><strong>WebGL Plot</strong>
+Real-time plotting with WebGL.</p>
+</div>
+<a class="sd-stretched-link reference external" href="https://github.com/danchitnis/webgl-plot"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<a class="reference internal image-reference" href="../../../_images/chords_Indexeddbdark.png"><img alt="IndexedDB API Logo" class="align-center" src="../../../_images/chords_Indexeddbdark.png" style="width: 40px; height: 40px;" /></a>
+<p class="sd-card-text"><strong>IndexedDB API</strong>
+Local database for web applications.</p>
+</div>
+<a class="sd-stretched-link reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API"></a></div>
+</div>
+</div>
+</div>
+<figure class="align-center">
+<img alt="Chords-Web Tech Stack" src="../../../_images/chords_tech_stack.png" />
 </figure>
 </section>
 </section>
@@ -878,7 +840,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-software">Using the Software</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chords-icons">Chords Icons</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chords-web-icons">Chords-Web Icons</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#browser-compatibility">Browser Compatibility</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#technologies-used">Technologies Used</a></li>
 </ul>
@@ -947,7 +909,7 @@
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Dec 05, 2024.
+  Last updated on Dec 23, 2024.
   <br/>
 </p></div>
       
