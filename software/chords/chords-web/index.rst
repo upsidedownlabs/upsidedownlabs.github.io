@@ -66,7 +66,7 @@ Using the Software
 ==================
 
 1. Click the ``Connect`` button to establish a connection with the Arduino and start streaming.
-2. Use the ``ZoomIn/Out`` button to adjust the data visualization.
+2. Use the ``ZoomIn/ZoomOut`` button to adjust the data visualization.
 3. Use the ``Play/Pause`` button to control the data stream. Navigate the last five snapshots with the ``Left/Right`` buttons in the Frame Buffer feature.
 4. Click the ``Record`` button to start recording data into a CSV file.
 5. To save the recorded data, click the ``Download`` button.
