@@ -10,6 +10,7 @@ Module 3: Understanding the resting potential
 .. |Eion| replace:: E\ :sub:`ion`\
 .. |Iout| replace:: I\ :sub:`out`\
 .. |Iin| replace:: I\ :sub:`in`\
+.. |Vm| replace:: V\ :sub:`m`\
 .. |PX| replace:: P\ :sub:`X`\
 .. |Xin| replace:: X\ :sub:`in`\
 .. |Xout| replace:: X\ :sub:`out`\
@@ -184,11 +185,11 @@ The Goldman equation, often referred to as the GHK equation, calculates the rest
 
 .. math::
 
-   V = \frac{RT}{F} \ln \left( \frac{P_{K^+}[K^+]_{out} + P_{Na^+}[Na^+]_{out} + P_{Cl^-}[Cl^-]_{in}}{P_{K^+}[K^+]_{in} + P_{Na^+}[Na^+]_{in} + P_{Cl^-}[Cl^-]_{out}} \right)
+   V_m = \frac{RT}{F} \ln \left( \frac{P_{K^+}[K^+]_{out} + P_{Na^+}[Na^+]_{out} + P_{Cl^-}[Cl^-]_{in}}{P_{K^+}[K^+]_{in} + P_{Na^+}[Na^+]_{in} + P_{Cl^-}[Cl^-]_{out}} \right)
 
 where:
 
-- V is the membrane potential
+- |Vm| is the membrane potential
 - R is Universal gas constant
 - T is absolute temperature in Kelvin
 - F is Faraday's constant
