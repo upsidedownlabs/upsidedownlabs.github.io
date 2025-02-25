@@ -20,6 +20,11 @@ You can find the complete documentations for different hardwares by clicking the
       :margin: 4 4 0 0 
       :gutter: 2
 
+      .. grid-item-card:: Neuro Play Ground (NPG) Lite
+         :text-align: center
+         :link: neuro-play-ground-lite
+         :link-type: ref
+
       .. grid-item-card:: BioAmp EXG Pill
          :text-align: center
          :link: bioamp-exg-pill
@@ -65,6 +70,7 @@ You can find the complete documentations for different hardwares by clicking the
    :maxdepth: 1
    :caption: BioAmp Hardware
 
+   bioamp/neuro-play-ground-lite/index
    bioamp/bioamp-exg-pill/index
    bioamp/muscle-bioamp-shield/index
    bioamp/muscle-bioamp-patchy/index
