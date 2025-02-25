@@ -8,7 +8,7 @@ Neuro Play Ground (NPG) Lite
 Overview
 **********
 
-Neuro Playground (NPG) Lite is a multichannel wireless bio-potential signal amplification device designed for recording EMG, ECG, EOG, and EEG. It comes in a compact `Adafruit feather <https://learn.adafruit.com/adafruit-feather/overview>`_ form factor and offers WiFi/BLE wireless connectivity. With the addition of playmate daughter boards, users can easily enhance the device’s capabilities, enabling the students/researchers/hobbyists to create awesome Human-Computer Interface (HCI) and Brain-Computer Interface (BCI) applications.
+Neuro Playground (NPG) Lite is a multichannel wireless bio-potential signal amplification device designed for recording EMG, ECG, EOG, and EEG. It comes in a compact `Adafruit feather <https://learn.adafruit.com/adafruit-feather/overview>`_ form factor and offers WiFi/BLE wireless connectivity. With the addition of daughter boards called Playmates, users can easily enhance the device’s capabilities, enabling the students/researchers/hobbyists to create awesome Human-Computer Interface (HCI) and Brain-Computer Interface (BCI) applications.
 
 
 .. figure:: media/npg-hero-1.*
@@ -22,9 +22,9 @@ Features & Specifications
 +------------------------+-----------------------------------------------------------------------+
 | No. of channels        | 3                                                                     |
 +------------------------+-----------------------------------------------------------------------+
-| Power options          | USB type C or Lipo battery                                            |
+| Power options          | USB type C or LiPo battery                                            |
 +------------------------+-----------------------------------------------------------------------+
-| Microcontroller        | ESP32-CX (RISC-V) with 4MB Flash                                      |
+| Microcontroller        | ESP32-C3 (RISC-V) with 4MB Flash                                      |
 +------------------------+-----------------------------------------------------------------------+
 | Power supply           | 600mA LDO with filtering                                              |
 +------------------------+-----------------------------------------------------------------------+
@@ -35,8 +35,6 @@ Features & Specifications
 | LEDs                   | User LED, charging LED, 6 addressable RGB LEDs                        |
 +------------------------+-----------------------------------------------------------------------+
 | Buttons                | Reset & user button                                                   |
-+------------------------+-----------------------------------------------------------------------+
-| LEDs                   | 6 NeoPixel mini RGB LEDs with controllable power pins                 |
 +------------------------+-----------------------------------------------------------------------+
 | BioPotentials          | EMG, ECG, EOG and EEG                                                 |
 +------------------------+-----------------------------------------------------------------------+
@@ -56,7 +54,7 @@ Board Layout
 Playmates
 *********
 
-Playmates are modular expansion boards designed to enhance the functionality of **Neuro Play Ground (NPG) Lite**. These add-ons seamlessly integrate with the core system, allowing users to extend their bio-potential signal processing capabilities with additional features.
+Playmates are modular expansion boards designed to enhance the functionality of **Neuro Play Ground (NPG) Lite**. These add-ons seamlessly integrate with the core system, allowing users to extend their capabilities to create awesome Human-Computer Interface (HCI) & Brain-Computer Interface (BCI).
 
 VibZ
 =====
