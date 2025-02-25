@@ -28,7 +28,8 @@ What makes it different?
 5. Pair it with any MCU with an ADC. It is by default compatible with 5V but you can make it compatible with 3.3V as well using a voltage divider.
 6. Configure the gain, band pass filter and electrode count according to your requirements.
 
-
+Features & Specifications
+**************************
 
 +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Operating Voltage                   | 5 V                                                                                                                                                                                                   |
