@@ -12,8 +12,22 @@ Chords-Web is an open-source web application designed for real-time signal visua
     :align: center
     :alt: Chords-Web Landing Page
 
+Software Requirements
+*********************
+
+* You have to flash `Chords-Web Arduino Firmware <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ to your development board using Arduino IDE.
+* For now Chords-Web is compatible with chromium based browsers. To ensure compatibility with supported browsers, see :ref:`chords-browsers-compatibility`.
+
+Hardware Requirements
+*********************
+
+- `Compatible Development Board <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_
+- A USB cable (type depends on board)
+- :ref:`BioAmp Hardware <upsidedownlabs_hardware_home>`
+
 Applications
 ************
+
 Below are some key applications of Chords-Web:
 
 Chords Visualizer
@@ -24,7 +38,7 @@ On the visualization page, you'll find the "Chords Visualizer" button, which all
 - **Connection**  
   Effortlessly compatible with **BioAmp Hardware**, Chords-Web automatically detects the development board running the **Chords-Web Arduino Firmware**. This simplifies the setup process, ensuring a smooth and efficient workflow from data acquisition to visualization.  
 
-  .. figure:: ./media/chords_connection.*  
+  .. figure:: ./media/chords_connectpage.*  
      :align: center  
      :alt: Chords-Web Connection  
 
@@ -63,7 +77,7 @@ On the visualization page, you'll find the "Chords Visualizer" button, which all
   - **EEG (Brain) Filter**: 45 Hz low-pass filter for better EEG signal analysis.  
   - **Master Filter**: Apply filters across all channels with one button.  
 
-  .. figure:: ./media/chords_filter.*  
+  .. figure:: ./media/chords_filters.*  
      :align: center  
      :alt: Chords-Web Filter  
 
@@ -80,10 +94,58 @@ On the visualization page, you'll find the "Chords Visualizer" button, which all
 
   - One-click disconnect from the development board, ensuring a hassle-free disconnection process after data collection or visualization.  
 
+How to Use Chords-Web
+-----------------------
+
+Uploading the Code
+------------------
+
+1. Connect the Arduino board to your laptop using the USB cable.
+2. Copy and paste the `Arduino Firmware  <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_  for your board into the Arduino IDE.
+3. Select your board under `Tools > Board`.
+4. Choose the correct COM port in the tools menu (the one that disappears when you disconnect the board).
+5. Upload the code and open Chords-Web in your web browser.
+
+
+Using the Software
+-----------------------
+
+1. Click the ``Visualize Now`` button to navigate to the applications page. Here, you will find two options.
+2. Click the ``Chords Visualizer`` button to establish a connection with the Arduino and start streaming data.  
+3. Use the ``ZoomIn/ZoomOut`` buttons to adjust data visualization.  
+4. Use the ``Play/Pause`` button to control the data stream. Navigate the last five snapshots with the ``Left/Right`` buttons in the **Frame Buffer** feature.  
+5. Click the ``Record`` button to start recording data into a CSV file.  
+6. Click the ``Download`` button to save the recorded data.  
+7. Click the ``Delete`` button to remove recorded data.  
+8. Click the ``Filter`` button to apply filters for EMG, ECG, EOG, and EEG signals:  
+   - ``Muscle`` (70Hz high-pass for EMG)  
+   - ``Heart`` (30Hz low-pass for ECG)  
+   - ``Eye`` (10Hz low-pass for EOG)  
+   - ``Brain`` (45Hz low-pass for EEG)  
+   - Use the **Master button** to apply filters across all channels.  
+   - Apply **50Hz or 60Hz** filters to individual or all channels.  
+9.  Select channels via the ``Channels`` button in the settings popover.  
+10. Adjust the number of channels using the ``Plus/Minus`` buttons.  
+11. Adjust zoom using the ``Zoom`` slider for a detailed or overall view.  
+
+Chords-Web Icons
+-----------------
+
+.. figure:: ./media/chords_icon.*
+    :align: center
+    :alt: Chords-Web Icons
+
+
 Serial Plotter & Monitor  
 ========================
 
+Click the ``Serial Wizard`` button to open the **Serial Plotter & Monitor**.  
+
 The **Serial Plotter & Monitor** is designed as a standalone feature within Chords-Web, replacing the **Arduino IDE's serial plotter and monitor**, which had limitations in real-time data visualization.  
+
+- A button bar in the footer lets you toggle between the **Plotter**, **Monitor**, or both together.  
+- Select the **baud rate** from the available options.  
+- Use the **navigation bar** to switch themes, visit the GitHub repository, check contributors, or return to the previous page.  
 
 .. figure:: ./media/chords_serialwizard.*  
      :align: center  
@@ -121,75 +183,51 @@ We have introduced **FFT (Fast Fourier Transform) analysis** and **EEG band spec
 - Download recorded channel data as a **CSV file** for further analysis, storage, or visualization using external tools.
 - View **live plots of EEG band values**, allowing better monitoring of brainwave activity.
 
+Example of Biopotential Signals
+********************************
 
-Software Requirements
-*********************
+The examples below combine theoretical descriptions with illustrative images to showcase signal quality.
 
-* You have to flash `Chords-Web Arduino Firmware <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ to your development board using Arduino IDE.
-* For now Chords-Web is compatible with chromium based browsers. To ensure compatibility with supported browsers, see :ref:`chords-browsers-compatibility`.
+EMG(Electromyography)
+======================
 
-Hardware Requirements
-*********************
+EMG captures the electrical activity produced by skeletal muscles. This signal is essential for assessing muscle health and diagnosing neuromuscular disorders.
 
-- `Compatible Development Board <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_
-- A USB cable (type depends on board)
-- :ref:`BioAmp Hardware <upsidedownlabs_hardware_home>`
-  
-How to Use Chords-Web
-*********************
+.. image:: ./media/chords_emg_signal.*
+   :alt: EMG Signal Example
+   :width: 600px
+   :align: center
 
-Uploading the Code
-==================
+EEG(Electroencephalography)
+===========================
 
-1. Connect the Arduino board to your laptop using the USB cable.
-2. Copy and paste the `Arduino Firmware  <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_  for your board into the Arduino IDE.
-3. Select your board under `Tools > Board`.
-4. Choose the correct COM port in the tools menu (the one that disappears when you disconnect the board).
-5. Upload the code and open Chords-Web in your web browser.
+EEG records the electrical activity of the brain and is commonly used for diagnosing neurological conditions and studying brain functions.
 
+.. image:: ./media/chords_eeg_signal.*
+   :alt: EEG Signal Example
+   :width: 600px
+   :align: center
+   
+EOG(Electrooculography)
+=======================
 
-Using the Software
-==================
+EOG measures the electrical potential generated by eye movements. It is often used in studies related to sleep, fatigue, and eye movement disorders.
 
-1. Click the ``Visualize Now`` button to navigate to the applications page. Here, you will find two options:  
-   - ``Chords Visualizer``  
-   - ``Serial Wizard``  
+.. image:: ./media/chords_eog_signal.*
+   :alt: EOG Signal Example
+   :width: 600px
+   :align: center
 
-**Chords Visualizer**  
-===================
-2. Click the ``Chords Visualizer`` button to establish a connection with the Arduino and start streaming data.  
-3. Use the ``ZoomIn/ZoomOut`` buttons to adjust data visualization.  
-4. Use the ``Play/Pause`` button to control the data stream. Navigate the last five snapshots with the ``Left/Right`` buttons in the **Frame Buffer** feature.  
-5. Click the ``Record`` button to start recording data into a CSV file.  
-6. Click the ``Download`` button to save the recorded data.  
-7. Click the ``Delete`` button to remove recorded data.  
-8. Click the ``Filter`` button to apply filters for EMG, ECG, EOG, and EEG signals:  
-   - ``Muscle`` (70Hz high-pass for EMG)  
-   - ``Heart`` (30Hz low-pass for ECG)  
-   - ``Eye`` (10Hz low-pass for EOG)  
-   - ``Brain`` (45Hz low-pass for EEG)  
-   - Use the **Master button** to apply filters across all channels.  
-   - Apply **50Hz or 60Hz** filters to individual or all channels.  
-9.  Select channels via the ``Channels`` button in the settings popover.  
-10. Adjust the number of channels using the ``Plus/Minus`` buttons.  
-11. Adjust zoom using the ``Zoom`` slider for a detailed or overall view.  
+ECG(Electrocardiography)
+========================
 
+The **ECG (Electrocardiography)** signal represents the electrical activity of the heart. This custom ECG signal is used both in clinical practice and research to evaluate heart rhythm, detect abnormalities, and assess cardiac health. 
 
- 
-**Serial Wizard**  
-================
-10. Click the ``Serial Wizard`` button to open the **Serial Plotter & Monitor**.  
-    - A button bar in the footer lets you toggle between the **Plotter**, **Monitor**, or both together.  
-    - Select the **baud rate** from the available options.  
-    - Use the **navigation bar** to switch themes, visit the GitHub repository, check contributors, or return to the previous page.  
+.. image:: ./media/chords_ecg_signal.*
+   :alt: ECG Signal Example
+   :width: 600px
+   :align: center
 
-
-Chords-Web Icons
-************
-
-.. figure:: ./media/chords_icons.*
-    :align: center
-    :alt: Chords-Web Icons
 
 .. _chords-browsers-compatibility:
 
