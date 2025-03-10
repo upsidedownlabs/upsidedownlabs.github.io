@@ -25,6 +25,7 @@ Hardware Requirements
 - A USB cable (type depends on board)
 - :ref:`BioAmp Hardware <upsidedownlabs_hardware_home>`
 
+
 Applications
 ************
 
@@ -136,53 +137,6 @@ Chords-Web Icons
     :alt: Chords-Web Icons
 
 
-Serial Plotter & Monitor  
-========================
-
-Click the ``Serial Wizard`` button to open the **Serial Plotter & Monitor**.  
-
-The **Serial Plotter & Monitor** is designed as a standalone feature within Chords-Web, replacing the **Arduino IDE's serial plotter and monitor**, which had limitations in real-time data visualization.  
-
-- A button bar in the footer lets you toggle between the **Plotter**, **Monitor**, or both together.  
-- Select the **baud rate** from the available options.  
-- Use the **navigation bar** to switch themes, visit the GitHub repository, check contributors, or return to the previous page.  
-
-.. figure:: ./media/chords_serialwizard.*  
-     :align: center  
-     :alt: Chords-Web Filter  
-
-- **User-Friendly Interface**  
-
-  - Provides seamless navigation and mode switching for efficient monitoring.  
-  - Allows toggling between **Plotter**, **Monitor**, or both combined using the footer button bar.  
-  - Selectable **baud rate** for optimized serial communication.  
-
-- **Navigation Bar Options**  
-
-  - Switch between **light and dark themes**.  
-  - Visit the `GitHub Repository <https://github.com/upsidedownlabs/Chords-Web>`_.  
-  - View contributors.  
-  - Return to the previous page.  
-
-FFT Analysis and EEG Band Spectrum Plotting
-============================================
-
-We have introduced **FFT (Fast Fourier Transform) analysis** and **EEG band spectrum plotting** to enhance real-time signal processing. These features allow you to visualize and analyze EEG frequency bands, providing deeper insights into brain activity.
-
-- **Supported EEG Bands**
-
-- **Delta (0.5 - 4 Hz)** – Associated with deep sleep and unconscious states.  
-- **Theta (4 - 8 Hz)** – Linked to relaxation, meditation, and light sleep.  
-- **Alpha (8 - 13 Hz)** – Reflects calm, wakeful relaxation, often seen during closed-eye rest.  
-- **Beta (13 - 30 Hz)** – Related to active thinking, problem-solving, and focused mental activity.  
-- **Gamma (30 - 100 Hz)** – Involved in high-level cognitive functioning, attention, and perception.  
-
-
-- **Features**
-
-- Download recorded channel data as a **CSV file** for further analysis, storage, or visualization using external tools.
-- View **live plots of EEG band values**, allowing better monitoring of brainwave activity.
-
 Example of Biopotential Signals
 ********************************
 
@@ -227,6 +181,67 @@ The **ECG (Electrocardiography)** signal represents the electrical activity of t
    :alt: ECG Signal Example
    :width: 600px
    :align: center
+
+
+Serial Plotter & Monitor
+========================
+
+Overview
+--------
+The **Serial Plotter & Monitor** is a standalone feature within Chords-Web that provides real‑time serial data visualization. 
+
+Features
+--------
+- **Dual View Modes:**  
+  Previous Arduino versions did not support simultaneous viewing of the serial plotter and monitor. This tool allows you to toggle between the **Plotter**, **Monitor**, or a combined view for comprehensive visualization.
+- **Optimized Data Rendering:**  
+  In newer Arduino versions, fast data plotting can lead to cluttered displays. The Serial Plotter & Monitor is optimized to handle high-frequency data, ensuring clear and accurate visual representation.
+- **Footer Button Bar:**  
+  Easily switch between different viewing modes using an intuitive footer button bar.
+- **Baud Rate Selection:**  
+  Choose from multiple baud rates to optimize serial communication based on your device's requirements.
+- **Navigation Bar:**  
+  Access features such as theme switching (light/dark), visit the GitHub repository, view contributor details, or return to the previous page.
+
+.. figure:: ./media/chords_serialwizard.*
+   :align: center
+   :alt: Chords-Web Filter
+
+User-Friendly Interface
+-----------------------
+- **Intuitive Layout:**  
+  Designed for seamless navigation and mode switching.
+- **Enhanced Serial Communication:**  
+  Selectable baud rates and optimized data rendering ensure reliable, clear visual output.
+- **Comprehensive Navigation:**  
+  Quick access to GitHub, contributor information, and other resources via the navigation bar.
+
+Running the Application
+-----------------------
+1. Click the **Serial Wizard** button to launch the Serial Plotter & Monitor.
+2. Click on Connect button select board.
+3. Use the footer button bar to toggle between the Plotter, Monitor, or a combined view.
+4. Navigate using the top bar to switch themes, visit the GitHub repository, view contributors, or return to the previous page.
+
+
+FFT Analysis and EEG Band Spectrum Plotting
+============================================
+
+We have introduced **FFT (Fast Fourier Transform) analysis** and **EEG band spectrum plotting** to enhance real-time signal processing. These features allow you to visualize and analyze EEG frequency bands, providing deeper insights into brain activity.
+
+- **Supported EEG Bands**
+
+- **Delta (0.5 - 4 Hz)** – Associated with deep sleep and unconscious states.  
+- **Theta (4 - 8 Hz)** – Linked to relaxation, meditation, and light sleep.  
+- **Alpha (8 - 13 Hz)** – Reflects calm, wakeful relaxation, often seen during closed-eye rest.  
+- **Beta (13 - 30 Hz)** – Related to active thinking, problem-solving, and focused mental activity.  
+- **Gamma (30 - 100 Hz)** – Involved in high-level cognitive functioning, attention, and perception.  
+
+
+- **Features**
+
+- Download recorded channel data as a **CSV file** for further analysis, storage, or visualization using external tools.
+- View **live plots of EEG band values**, allowing better monitoring of brainwave activity.
 
 
 .. _chords-browsers-compatibility:
