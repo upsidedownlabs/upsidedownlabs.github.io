@@ -199,7 +199,7 @@ Features:
 Running the Application:
 ------------------------
 
-To run the Heart Rate with ECG application, execute the following command in a terminal:a
+To run the Heart Rate with ECG application, execute the following command in a terminal:
 
 .. code-block:: python
 
