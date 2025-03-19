@@ -22,7 +22,7 @@ Features
 - **Timer**: This feature enables time-based recording, automatically stopping after a user-defined duration in seconds. Ideal for experiments requiring specific data intervals, it simplifies automated data collection.
 
 Software Requirements  
-======================
+=====================
 
 - `Arduino IDE <https://www.arduino.cc/en/software>`_ – Required to upload the Chords Arduino firmware to your development board.  
 - Latest version of `Python <https://www.python.org/downloads/>`_ – Ensure you have the most recent version installed.  
@@ -33,19 +33,19 @@ Hardware Requirements
 
 To use Chords-Python, you need:
 
-- A development board (see the list of compatible development boards)
+- A development board (`Compatible Boards <https://github.com/upsidedownlabs/Chords-Arduino-Firmware/blob/main/README.md>`_)  
 - A USB cable (type depends on the board)
 - BioAmp hardware and its accessories
 
 Setting up the hardware:
 ------------------------
 
-Make all the connections according to the hardware you are using, including sensor connections with the development board, body connections with the sensor, and connections from the development board to your laptop.
+Make all the connections according to the `hardware you are using <https://docs.upsidedownlabs.tech/hardware/index.html>`_ , including sensor connections with the development board, body connections with the sensor, and connections from the development board to your laptop.[Link]
 
 Uploading the code:
 -------------------
 
-Once you are all set, it is time to upload the code to your development board. Go to Chords Arduino Firmware GitHub repo, scroll down to the supported boards table, find your board name, and click on the Arduino sketch corresponding to that row.
+Once you are all set, it is time to upload the code to your development board. Go to `Chords Arduino Firmware <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_. GitHub repo, scroll down to the supported boards table, find your board name, and click on the Arduino sketch corresponding to that row.
 
 Copy the sketch and paste it into Arduino IDE.
 
@@ -62,9 +62,10 @@ Follow these steps to set up and install Chords-Python:
    - You can download the Chords-Python repository from GitHub by visiting the following link: `Chords-Python <https://github.com/upsidedownlabs/Chords-Python/>`_.
    - Or, You can clone the repository using Git by running the following command:
 
-   ```
-   git clone https://github.com/upsidedownlabs/Chords-Python.git
-   ```
+   .. code-block:: python
+      
+      git clone https://github.com/upsidedownlabs/Chords-Python.git
+
 3. **Create a Virtual Environment**:
    
    A virtual environment allows you to manage dependencies for your project in isolation.
@@ -73,38 +74,39 @@ Follow these steps to set up and install Chords-Python:
    - Navigate to the directory where you have cloned the repository.
    - Run the following command to create a virtual environment:
 
-   ```
-   python -m venv venv
-   ```
+   .. code-block:: python
+      
+      python -m venv venv
 
    - To activate the virtual environment:
       - **On Windows**:
-      ```
-      .\venv\Scripts\activate
-      ```
+      .. code-block:: python
+
+         .\venv\Scripts\activate
 
       - **On macOS/Linux**:
-      ```
-      source venv/bin/activate
-      ```
+      .. code-block:: python
+         
+         source venv/bin/activate
+
 4. **Install the Required Python Libraries**:
 
    Once the virtual environment is activated, you need to install the required libraries for the project.
 
    - In the terminal or command prompt, run the following command to install the dependencies needed to run the python script listed in the `chords_requirements.txt` file:
 
-   ```
-   pip install -r chords_requirements.txt
-   ```
+   .. code-block:: python
+      
+      pip install -r chords_requirements.txt
 
    - This will install all the necessary Python libraries and dependencies for Chords-Python.
 
    Once these steps are completed, you will be ready to run the Chords-Python Script.
 5. To run the Script, run the following command :
 
-   ```
-   python chords.py [Options]
-   ```
+   .. code-block:: python
+      
+      python chords.py [options]
 
 .. tip::
 
@@ -122,9 +124,11 @@ Options available are:
 
 Example:
 If you run the following command:
-```
-python chords.py --lsl -v --csv -t 60
-```
+
+.. code-block:: python
+   
+   python chords.py --lsl -v --csv -t 60
+
 Then, This command executes the Python script chords.py, initiates the LSL stream, enables verbose output, activates CSV logging, and script runs for 60 seconds.
 
 Applications:
@@ -135,9 +139,9 @@ Open another terminal and run any application. Ensure the LSL Stream is running 
 .. note::
 
 Before running any application, install all the dependencies required. Run the following command in a new terminal:
-```
-pip install -r app_requirements.txt
-```
+.. code-block:: python
+   
+   pip install -r app_requirements.txt
 
 After installing the dependencies, you can run any of the following applications by executing the corresponding command in a new terminal.
 
@@ -572,14 +576,3 @@ To run the CSV Plotter, execute the following command in a terminal:
 .. code-block:: python
 
    python csvplotter.py
-
-Web Interface
-#############
-
-.. youtube:: m_ppRxwKojM&t=29s
-
-Overview:
-*********
-
-Features:
-*********
