@@ -80,9 +80,16 @@ Follow these steps to set up and install Chords-Python:
 
    - To activate the virtual environment:
       - **On Windows**:
+<<<<<<< HEAD
       .. code-block:: python
 
          .\venv\Scripts\activate
+=======
+
+      ```
+      .\venv\Scripts\activate
+      ```
+>>>>>>> 27e9b6ade67dd0189e43481ac256d80edf94dd00
 
       - **On macOS/Linux**:
       .. code-block:: python
