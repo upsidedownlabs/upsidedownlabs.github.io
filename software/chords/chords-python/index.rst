@@ -162,31 +162,37 @@ Features:
 
 1. Real-Time ECG Visualization:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Displays real-time ECG signals in a dynamic plot using `pyqtgraph`.
    - Supports adjustable y-axis scaling based on the sampling rate (e.g., 250 Hz or 500 Hz).
 
 2. R-Peak Detection:
 ~~~~~~~~~~~~~~~~~~~~
+
    - Utilizes the `neurokit2` library to detect R-peaks in the ECG signal.
    - Highlights detected R-peaks as red dots on the plot for easy visualization.
 
 3. Heart Rate Calculation:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Computes heart rate (in BPM) using the time intervals between consecutive R-peaks.
    - Implements a moving average filter to smooth heart rate values and reduce noise.
 
 4. Interactive GUI:
 ~~~~~~~~~~~~~~~~~~~
+
    - Built with PyQt5, providing a user-friendly interface with a real-time ECG plot and heart rate display.
    - Allows double-click to reset the plot's zoom level to default settings.
 
 5. Signal Filtering:
 ~~~~~~~~~~~~~~~~~~~~
+
    - Applies a low-pass Butterworth filter to remove high-frequency noise from the ECG signal.
    - Ensures clean and accurate R-peak detection.
 
 6. Dynamic Updates:
 ~~~~~~~~~~~~~~~~~~~
+
    - Updates the ECG plot and heart rate display at regular intervals (every 10 ms).
    - Provides real-time feedback on heart rate and R-peak detection.
 
@@ -212,27 +218,32 @@ Features:
 
 1. Real-Time EMG Signal Visualization:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Connects to an LSL stream to acquire real-time EMG data.
    - Displays the raw EMG signal after applying a high-pass filter (70 Hz cutoff) to remove low-frequency noise.
 
 2. EMG Envelope Extraction:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Computes the Root Mean Square (RMS) envelope of the filtered EMG signal using a moving window.
    - Visualizes the EMG envelope alongside the filtered EMG signal for easy comparison.
 
 3. Interactive and Responsive GUI:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Built using `PyQt5` for a modern and intuitive user interface.
    - Features two synchronized plots: one for the filtered EMG signal and one for the EMG envelope.
    - Disables zoom and pan for a clean, fixed-axis visualization.
 
 4. Customizable Signal Processing:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Implements a high-pass Butterworth filter to remove baseline drift and noise.
    - Adjusts the RMS window size dynamically based on the sampling rate (e.g., 25 samples for 250 Hz, 50 samples for 500 Hz).
 
 5. Dynamic Plot Updates:
 ~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Updates the plots in real-time using a fixed-size circular buffer for efficient data handling.
    - Refreshes the display every 15 milliseconds for smooth and responsive visualization.
 
@@ -258,22 +269,26 @@ Features:
 
 1. Real-Time EOG Signal Visualization:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Displays the filtered EOG signal in real-time using a low-pass filter (10 Hz cutoff).
    - Dynamically updates the plot with a 5-second rolling window for continuous monitoring.
 
 2. Blink Detection:
 ~~~~~~~~~~~~~~~~~~~
+
    - Detects blinks by identifying peaks in the filtered EOG signal.
    - Uses a dynamic threshold based on the mean and standard deviation of the signal to distinguish blinks from noise.
    - Implements a minimum time gap (0.1 seconds) between detected blinks to avoid false positives.
 
 3. Dual-Plot Interface:
 ~~~~~~~~~~~~~~~~~~~~~~~
+
    - EOG Signal Plot: Displays the filtered EOG signal with detected peaks marked in red.
    - Blink Detection Plot: Shows a binary representation of detected blinks (1 for blink, 0 for no blink).
 
 4. User-Friendly GUI:
 ~~~~~~~~~~~~~~~~~~~~~
+
    - Built with PyQt5 for a responsive and intuitive interface.
    - Includes features like grid lines, auto-scaling, and zoom disablement for better usability.
 
@@ -300,22 +315,26 @@ Features:
 
 1. Real-Time EEG Signal Visualization:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Displays raw EEG signals in a real-time scrolling plot.
    - Utilizes a moving window of 500 samples for continuous visualization.
 
 2. Signal Processing:
 ~~~~~~~~~~~~~~~~~~~~~
+
    - Applies a notch filter to remove 50 Hz powerline interference.
    - Uses a bandpass filter (0.5-48 Hz) to isolate relevant EEG frequencies.
    - Implements a Hanning window for FFT computation to reduce spectral leakage.
 
 3. Fast Fourier Transform (FFT):
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Computes the FFT of the EEG signal to analyze its frequency components.
    - Visualizes the FFT results in a separate plot, focusing on the 0-50 Hz range.
 
 4. Brainwave Power Analysis:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Calculates the power of five brainwave frequency bands:
      - Delta (0.5-4 Hz)
      - Theta (4-8 Hz)
@@ -326,6 +345,7 @@ Features:
 
 5. User-Friendly GUI:
 ~~~~~~~~~~~~~~~~~~~~~
+
    - Provides a clean and intuitive interface with two main sections:
      - Top Section: Real-time EEG signal plot.
      - Bottom Section: FFT plot and brainwave power bar chart.
@@ -355,28 +375,33 @@ Features:
 
 1. Real-Time EEG Signal Processing:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Connects to an LSL stream to acquire real-time EEG data.
    - Computes the power spectral density (PSD) of Alpha (8-13 Hz) and Beta (13-30 Hz) frequency bands using Welch's method.
    - Calculates the relative power ratio (Beta/Alpha) to determine player force.
 
 2. Interactive Gameplay:
 ~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Two players compete to move a ball to the opponent's side using their brain activity.
    - The ball's movement is determined by the net force derived from the players' EEG signals.
 
 3. Dynamic Thresholding:
 ~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Uses a moving average of the last 10 data points to smooth the force calculations.
    - Applies a threshold to prevent small fluctuations from affecting the ball's movement.
 
 4. User-Friendly GUI:
 ~~~~~~~~~~~~~~~~~~~~~
+
    - Features a full-screen graphical interface with a central ball and two player paddles.
    - Displays real-time updates of the ball's position and forces applied by each player.
    - Includes buttons for starting, pausing, resuming, and exiting the game.
 
 5. Win Condition and Feedback:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Declares a winner when the ball reaches either side of the screen.
    - Plays a sound effect to celebrate the winner.
    - Automatically pauses the game upon a win and allows for a restart.
@@ -405,32 +430,38 @@ Features:
 
 1. Real-Time EEG Signal Processing:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Connects to an LSL stream to acquire real-time EEG data.
    - Implements a notch filter to remove 50 Hz power line interference and a bandpass filter to isolate relevant EEG frequency bands (0.5–48 Hz).
 
 2. Focus Level Calculation:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Computes the user's focus level by analyzing the power spectral density of the EEG signal.
    - Focus level is calculated using the ratio of high-frequency (beta and gamma) to low-frequency (delta, theta, and alpha) power bands.
 
 3. Calibration System:
 ~~~~~~~~~~~~~~~~~~~~~~
+
    - Includes a calibration phase to establish a baseline focus level for the user.
    - Dynamically sets a focus threshold based on the user's EEG data during calibration.
 
 4. Beetle Movement Control:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Moves the beetle upward when the user's focus level exceeds the threshold.
    - Moves the beetle downward when the focus level is below the threshold.
    - Implements smooth animation and boundary constraints to ensure the beetle stays within the game window.
 
 5. Interactive Game Interface:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Features a 2D game environment with a beetle sprite that responds to the user's focus level.
    - Displays real-time feedback on the beetle's position and focus level.
 
 6. Dynamic Animation:
 ~~~~~~~~~~~~~~~~~~~~~
+
    - Uses a sequence of beetle sprites to create smooth animations.
    - Adjusts animation speed based on the game's frame rate.
 
@@ -458,23 +489,27 @@ Features:
 
 1. LSL Stream Integration:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Automatically searches for and connects to available LSL streams.
    - Supports dynamic detection of the number of channels in the stream.
    - Displays connection status and channel count in the GUI.
 
 2. Real-Time Data Visualization:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Plots real-time data for each channel in separate graphs.
    - Updates plots at a high frequency for smooth visualization.
 
 3. Customizable GUI:
 ~~~~~~~~~~~~~~~~~~~~
+
    - Built using `PyQt` and `pyqtgraph` for a responsive and interactive interface.
    - Features a clean layout with individual plots for each channel.
    - Includes a status bar to display LSL connection details.
 
 4. Efficient Data Handling:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Uses a rolling buffer to store the last 2000 samples for each channel.
    - Implements downsampling and clipping to optimize performance and memory usage.
 
@@ -500,22 +535,26 @@ Features:
 
 1. Real-Time EOG Signal Processing:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Connects to an LSL stream to acquire real-time EOG data.
    - Implements a low-pass filter to smooth the EOG signal for accurate blink detection.
 
 2. Blink Detection:
 ~~~~~~~~~~~~~~~~~~~
+
    - Detects blinks by identifying peaks in the filtered EOG signal.
    - Uses a dynamic threshold based on the mean and standard deviation of the signal to distinguish blinks from noise.
    - Incorporates a refractory period to prevent multiple detections from a single blink.
 
 3. Keystroke Emulation:
 ~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Simulates a spacebar press (`pyautogui.press('space')`) whenever a blink is detected.
    - Provides visual feedback by updating the GUI button color upon blink detection.
 
 4. User-Friendly GUI:
 ~~~~~~~~~~~~~~~~~~~~~
+
    - Features a compact, movable popup window with a clean and intuitive interface.
    - Includes buttons for connecting to the LSL stream, starting/stopping blink detection, and quitting the application.
    - Displays an eye icon to represent the blink detection status.
@@ -544,16 +583,19 @@ Features:
 
 1. Load CSV Files:
 ~~~~~~~~~~~~~~~~~~
+
    - Users can load CSV files containing data with a `Counter` column and multiple channels (e.g., `Channel1`, `Channel2`, etc.).
    - The application automatically detects the header row and skips any metadata above it.
 
 2. Channel Selection:
 ~~~~~~~~~~~~~~~~~~~~~
+
    - A dropdown menu dynamically populates with available channels (e.g., `Channel1`, `Channel2`, etc.) from the loaded CSV file.
    - Users can select a specific channel to plot.
 
 3. Interactive Data Visualization:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    - Utilizes `plotly` to generate interactive line plots for the selected channel.
    - Plots include advanced features such as:
          - Zoom: Zoom in to inspect specific data ranges.
