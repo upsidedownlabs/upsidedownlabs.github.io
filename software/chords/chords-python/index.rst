@@ -35,7 +35,7 @@ To use Chords-Python, you need:
 
 - A development board (`Compatible Boards <https://github.com/upsidedownlabs/Chords-Arduino-Firmware/blob/main/README.md>`_)  
 - A USB cable (type depends on the board)
-- BioAmp hardware and its accessories
+- `BioAmp Hardware <https://docs.upsidedownlabs.tech/hardware/index.html>`_ and its accessories
 
 Setting up the hardware:
 ------------------------
@@ -51,7 +51,7 @@ Copy the sketch and paste it into Arduino IDE.
 
 Go to tools, select your board, and the correct COM port. Now, hit the upload button.
 
-Opening Chords-python:
+Opening Chords-Python:
 ----------------------
 
 Follow these steps to set up and install Chords-Python:
@@ -80,16 +80,9 @@ Follow these steps to set up and install Chords-Python:
 
    - To activate the virtual environment:
       - **On Windows**:
-<<<<<<< HEAD
       .. code-block:: python
 
          .\venv\Scripts\activate
-=======
-
-      ```
-      .\venv\Scripts\activate
-      ```
->>>>>>> 27e9b6ade67dd0189e43481ac256d80edf94dd00
 
       - **On macOS/Linux**:
       .. code-block:: python
@@ -126,7 +119,7 @@ Options available are:
 - **--csv**: Enable CSV logging. Data will be saved to a timestamped file.
 - **--lsl**: Enable LSL streaming. Sends data to an LSL outlet.
 - **-v, --verbose**: Enable verbose output with detailed statistics and error reporting.
-- **--inverted**:Invert the signal before streaming LSL and logging.
+- **--inverted**: Invert the signal before streaming LSL and logging.
 - **-t** : Enable the timer to run program for a set time in seconds.
 
 Example:
@@ -167,7 +160,7 @@ The **Heart Rate with ECG** is a real-time application designed to visualize and
 Features:
 ---------
 
-1. Real-Time ECG Visualizatiaon:
+1. Real-Time ECG Visualization:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    - Displays real-time ECG signals in a dynamic plot using `pyqtgraph`.
    - Supports adjustable y-axis scaling based on the sampling rate (e.g., 250 Hz or 500 Hz).
