@@ -16,6 +16,7 @@ research purposes.
     :alt: Heart BioAmp Candy
 
     Heart BioAmp Candy
+
 Features & Specifications
 *****************************
 
@@ -142,6 +143,7 @@ Connect the BioAmp cable to Heart BioAmp Candy by inserting the cable end in the
     :alt: Heart BioAmp Candy - Electrode cable connections
     
     Heart BioAmp Candy - Electrode cable connections
+    
 Step 3: Skin Preparation
 ===============================================
 
