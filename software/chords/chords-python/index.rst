@@ -148,18 +148,18 @@ After installing the dependencies, you can run any of the following applications
 
 List of available applications:
 
-1. `Heart Rate with ECG`:
-*************************
+1. `Heart Rate with ECG`
+************************
 
 .. youtube:: tZud2tc-TGI
 
-Overview:
----------
+Overview
+=========
 
 The **Heart Rate with ECG** is a real-time application designed to visualize and analyze Electrocardiogram (ECG) data using the Lab Streaming Layer (LSL) protocol. Built with Python and PyQt5, this application provides a graphical interface for monitoring ECG signals, detecting R-peaks (heartbeats), and calculating the heart rate in real time. It leverages signal processing techniques and the `neurokit2` library for accurate R-peak detection and heart rate estimation.
 
-Features:
----------
+Features
+=========
 
 1. Real-Time ECG Visualization:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -191,8 +191,8 @@ Features:
    - Applies a low-pass Butterworth filter to remove high-frequency noise from the ECG signal.
    - Ensures clean and accurate R-peak detection.
 
-Running the Application:
-------------------------
+Running the Application
+=======================
 
 To run the Heart Rate with ECG application, execute the following command in a terminal:
 
@@ -204,16 +204,16 @@ To run the Heart Rate with ECG application, execute the following command in a t
     :align: center
     :alt: Heart Rate with ECG
 
-2. `EMG with Envelope`:
-~~~~~~~~~~~~~~~~~~~~~~~
+2. `EMG with Envelope`
+**********************
 
-Overview:
----------
+Overview
+=========
 
 The **EMG with Envelope** is a Python-based application designed to visualize and analyze Electromyography (EMG) signals in real-time. It connects to an EMG data stream using the Lab Streaming Layer (LSL) protocol, processes the signal to extract the EMG envelope, and displays both the filtered EMG signal and its envelope in a user-friendly graphical interface. Built with `PyQt5` and `pyqtgraph`, the application provides a responsive and interactive visualization tool for researchers, clinicians, or developers working with EMG data.
 
-Features:
----------
+Features
+=========
 
 1. Real-Time EMG Signal Visualization:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -246,8 +246,8 @@ Features:
    - Updates the plots in real-time using a fixed-size circular buffer for efficient data handling.
    - Refreshes the display every 15 milliseconds for smooth and responsive visualization.
 
-Running the Application:
-------------------------
+Running the Application
+=======================
 
 To run the EMG with Envelope, execute the following command in a terminal:
 
@@ -259,16 +259,16 @@ To run the EMG with Envelope, execute the following command in a terminal:
     :align: center
     :alt: EMG with Envelope
 
-3. `EOG with Blinks`:
-*********************
+3. `EOG with Blinks`
+********************
 
-Overview:
----------
+Overview
+=========
 
 The **EOG with Blinks** is a Python-based application designed to visualize and detect eye blinks in real-time using Electrooculography (EOG) signals. Built with the PyQt5 framework and PyQtGraph for plotting, the application connects to an LSL (Lab Streaming Layer) stream to acquire EOG data, processes the signal using a low-pass filter, and detects blinks based on dynamic thresholds. The application provides a dual-plot interface to display the filtered EOG signal and detected blinks, making it a useful tool for real-time monitoring and analysis of EOG data.
 
-Features:
----------
+Features
+=========
 
 1. Real-Time EOG Signal Visualization:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -296,8 +296,8 @@ Features:
    - Includes features like grid lines, auto-scaling, and zoom disablement for better usability.
 
 
-Running the Application:
-------------------------
+Running the Application
+=======================
 
 To run the EOG with Blink Detection, execute the following command in a terminal:
 
@@ -309,16 +309,16 @@ To run the EOG with Blink Detection, execute the following command in a terminal
     :align: center
     :alt: EOG with Blinks
 
-4. `EEG with FFT`:
-******************
+4. `EEG with FFT`
+*****************
 
-Overview:
----------
+Overview
+=========
 
 The **EEG with FFT and Brainwave Power** is a Python-based application designed to visualize and analyze Electroencephalography (EEG) signals in real-time. It connects to an EEG data stream using the Lab Streaming Layer (LSL) protocol, processes the signal to remove noise, and performs Fast Fourier Transform (FFT) to compute the power of different brainwave frequency bands (Delta, Theta, Alpha, Beta, and Gamma). The application provides a graphical user interface (GUI) built with `PyQt5` and `pyqtgraph` for real-time visualization of raw EEG signals, FFT results, and brainwave power distribution.
 
-Features:
----------
+Features
+=========
 
 1. Real-Time EEG Signal Visualization:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -358,8 +358,8 @@ Features:
      - Bottom Section: FFT plot and brainwave power bar chart.
    - Allows users to monitor EEG data and its frequency components simultaneously.
 
-Running the Application:
-------------------------
+Running the Application
+=======================
 
 To run the EEG with FFT, execute the following command in a terminal:
 
@@ -371,18 +371,18 @@ To run the EEG with FFT, execute the following command in a terminal:
     :align: center
     :alt: EEG with FFT
 
-5. `EEG Tug of War Game`:
-*************************
+5. `EEG Tug of War Game`
+************************
 
 .. youtube:: XAhcYg1J_7k
 
-Overview:
----------
+Overview
+=========
 
 The **EEG Tug of War Game** is a Python-based application that leverages Electroencephalography (EEG) signals to create an interactive two-player game. Players control the movement of a ball on the screen by modulating their brain activity, specifically the Alpha and Beta frequency bands. The game uses the Lab Streaming Layer (LSL) protocol to acquire real-time EEG data, processes the signals to calculate relative power in the Alpha and Beta bands, and translates these into forces that move the ball. The first player to push the ball to the opponent's side wins the game. The application is built using the `pygame` library for the graphical interface and integrates with `pylsl` for EEG data acquisition.
 
-Features:
----------
+Features
+=========
 
 1. Real-Time EEG Signal Processing:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -417,8 +417,8 @@ Features:
    - Plays a sound effect to celebrate the winner.
    - Automatically pauses the game upon a win and allows for a restart.
 
-Running the Application:
-------------------------
+Running the Application
+=======================
 
 To run the EEG Tug of War, execute the following command in a terminal:
 
@@ -432,16 +432,16 @@ To run the EEG Tug of War, execute the following command in a terminal:
 
 The link for the Instructrables of this EEG Tug of War Game is [here](https://www.instructables.com/Play-Tug-of-War-Game-With-Your-Mind-Using-EEG-1/#ible-footer-portal)
 
-6. `EEG Beetle Game`:
-*********************
+6. `EEG Beetle Game`
+********************
 
-Overview:
----------
+Overview
+=========
 
 The **EEG Beetle Game** is a Python-based application that uses Electroencephalography (EEG) signals to control a beetle's movement in a 2D game environment. The game leverages the Lab Streaming Layer (LSL) protocol to acquire real-time EEG data, processes the signal to detect the user's focus level, and translates it into upward or downward movement of the beetle. The application is built using the `pygame` library for the game interface and integrates signal processing techniques to analyze EEG data in real-time.
 
-Features:
----------
+Features
+=========
 
 1. Real-Time EEG Signal Processing:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -480,8 +480,8 @@ Features:
    - Uses a sequence of beetle sprites to create smooth animations.
    - Adjusts animation speed based on the game's frame rate.
 
-Running the Application:
-------------------------
+Running the Application
+=======================
 
 To run the EEG Beetle Game, execute the following command in a terminal:
 
@@ -493,18 +493,18 @@ To run the EEG Beetle Game, execute the following command in a terminal:
     :align: center
     :alt: EEG Beetle Game
 
-7. `GUI`:
-*********
+7. `GUI`
+********
 
 .. youtube:: BseTIdoimws
 
-Overview:
----------
+Overview
+=========
 
 The **GUI** application is a Python-based tool designed to visualize real-time data streams from an Arduino device using the Lab Streaming Layer (LSL) protocol. The application connects to an LSL stream, retrieves multi-channel data, and plots it in real-time using the `pyqtgraph` library.
 
-Features:
----------
+Features
+=========
 
 1. LSL Stream Integration:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -532,8 +532,8 @@ Features:
    - Uses a rolling buffer to store the last 2000 samples for each channel.
    - Implements downsampling and clipping to optimize performance and memory usage.
 
-Running the Application:
-------------------------
+Running the Application
+=======================
 
 To run the GUI Visualization, execute the following command in a terminal:
 
@@ -545,16 +545,16 @@ To run the GUI Visualization, execute the following command in a terminal:
     :align: center
     :alt: GUI
 
-8. `EOG Keystroke Emulator`:
-****************************
+8. `EOG Keystroke Emulator`
+***************************
 
-Overview:
----------
+Overview
+========
 
 The **EOG Keystroke Emulator** is a Python-based application designed to detect eye blinks using Electrooculography (EOG) signals and translate them into keystrokes. The application leverages the Lab Streaming Layer (LSL) protocol to acquire real-time EOG data, processes the signal to detect blinks, and simulates a spacebar press whenever a blink is detected. The application is built using the `tkinter` library for the graphical user interface (GUI) and integrates with `pyautogui` for keystroke emulation.
 
-Features:
----------
+Features
+========
 
 1. Real-Time EOG Signal Processing:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -582,8 +582,8 @@ Features:
    - Includes buttons for connecting to the LSL stream, starting/stopping blink detection, and quitting the application.
    - Displays an eye icon to represent the blink detection status.
 
-Running the Application:
-------------------------
+Running the Application
+=======================
 
 To run the EOG Keystroke Emulator, execute the following command in a terminal:
 
@@ -595,18 +595,18 @@ To run the EOG Keystroke Emulator, execute the following command in a terminal:
     :align: center
     :alt: Keystroke
 
-9. `CSV Plotter`:
-*****************
+9. `CSV Plotter`
+****************
 
 .. youtube:: wMnCOprRpZo
 
-Overview:
----------
+Overview
+========
 
 The **CSV Plotter** is a Python-based application designed to visualize data from CSV files. Built using the `tkinter` library for the graphical user interface (GUI) and `plotly` for data visualization, this tool allows users to load CSV files, select specific data channels, and generate interactive line plots.
 
-Features:
----------
+Features
+========
 
 1. Load CSV Files:
 ~~~~~~~~~~~~~~~~~~
@@ -637,8 +637,8 @@ Features:
    - Simple and intuitive GUI with buttons for loading files and plotting data.
    - Displays the name of the loaded CSV file for easy reference.
 
-Running the Application:
-------------------------
+Running the Application
+=======================
 
 To run the CSV Plotter, execute the following command in a terminal:
 
