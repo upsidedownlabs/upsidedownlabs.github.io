@@ -25,7 +25,7 @@ Software Requirements
 =====================
 
 - `Arduino IDE <https://www.arduino.cc/en/software>`_ – Required to upload the Chords Arduino firmware to your development board.  
-- Latest version of `Python <https://www.python.org/downloads/>`_ – Ensure you have the most recent version installed.  
+- `Python <https://www.python.org/downloads/>`_ – Ensure you have the most recent version installed.  
 - `VS Code <https://code.visualstudio.com/>`_ or any other code editor (Alternatively, you can use the Command Prompt).  
 
 Hardware Requirements
@@ -151,7 +151,7 @@ List of available applications:
 1. `Heart Rate with ECG`:
 *************************
 
-.. youtube:: tZud2tc-TGI&t=1s
+.. youtube:: tZud2tc-TGI
 
 Overview:
 ---------
