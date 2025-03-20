@@ -139,6 +139,7 @@ Open another terminal and run any application. Ensure the LSL Stream is running 
 .. note::
 
 Before running any application, install all the dependencies required. Run the following command in a new terminal:
+
 .. code-block:: python
    
    pip install -r app_requirements.txt
@@ -648,3 +649,15 @@ To run the CSV Plotter, execute the following command in a terminal:
 .. figure:: ./media/csvplotter.*
     :align: center
     :alt: CSV Plotter
+
+Web Interface
+#############
+
+.. youtube:: m_ppRxwKojM&t=29s
+
+Overview:
+*********
+
+Features:
+*********
+
