@@ -649,15 +649,3 @@ To run the CSV Plotter, execute the following command in a terminal:
 .. figure:: ./media/csvplotter.*
     :align: center
     :alt: CSV Plotter
-
-Web Interface
-#############
-
-.. youtube:: m_ppRxwKojM&t=29s
-
-Overview:
-*********
-
-Features:
-*********
-
