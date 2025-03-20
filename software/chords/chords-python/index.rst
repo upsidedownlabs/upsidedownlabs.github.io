@@ -653,10 +653,10 @@ To run the CSV Plotter, execute the following command in a terminal:
 Web Interface
 #############
 
-.. youtube:: m_ppRxwKojM&t=29s
+.. youtube:: m_ppRxwKojM
 
 Overview
-********
+========
 
 The Chords-Python Web Interface provides a user-friendly way to control and manage the LSL stream, and other applications from a single web Interface.  
 It is built using Flask and enables real-time interaction with data acquisition processes.  
@@ -667,7 +667,7 @@ It is built using Flask and enables real-time interaction with data acquisition 
 - Simplifies the process of managing multiple applications without needing separate terminal windows.  
 
 Features
-********
+========
 
 1. Start LSL Stream:
 --------------------
@@ -691,7 +691,7 @@ Features
   - Provides an option to stop all running processes and exit the server safely by pressing **Ctrl + C** in the terminal.  
 
 Running the Web Interface
-*************************
+=========================
 
 1. Ensure dependencies are installed:
 -------------------------------------
@@ -701,6 +701,9 @@ Running the Web Interface
 .. code-block:: python
    
    pip install chords_requirements.txt
+
+.. code-block:: python
+   
    pip install app_requirements.txt
 
 2. Start the Web Interface:
@@ -724,7 +727,7 @@ Running the Web Interface
 4. Start LSL and Other Applications:
 ------------------------------------
 
-- Click **"Start LSL"** to begin streaming.The Button turns green showing that the LSL Stream is running.
+- Click **Start LSL** to begin streaming.The Button turns green showing that the LSL Stream is running.
 - Launch additional applications as needed.
 
 .. figure:: ./media/web_interface.*
