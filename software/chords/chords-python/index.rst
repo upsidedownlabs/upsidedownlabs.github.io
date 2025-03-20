@@ -155,7 +155,7 @@ List of available applications:
 Overview:
 ---------
 
-The **Heart Rate with ECG** is a real-time application designed to visualize and analyze Electrocardiogram (ECG) data using the Lab Streaming Layer (LSL) protocol. Built with Python and PyQt5, this application provides a graphical interface for monitoring ECG signals, detecting R-peaks (heartbeats), and calculating the heart rate in real time. It leverages signal processing techniques and the `neurokit2` library for accurate R-peak detection and heart rate estimation. The application is ideal for researchers, developers, and healthcare professionals working with ECG data.
+The **Heart Rate with ECG** is a real-time application designed to visualize and analyze Electrocardiogram (ECG) data using the Lab Streaming Layer (LSL) protocol. Built with Python and PyQt5, this application provides a graphical interface for monitoring ECG signals, detecting R-peaks (heartbeats), and calculating the heart rate in real time. It leverages signal processing techniques and the `neurokit2` library for accurate R-peak detection and heart rate estimation.
 
 Features:
 ---------
@@ -190,12 +190,6 @@ Features:
    - Applies a low-pass Butterworth filter to remove high-frequency noise from the ECG signal.
    - Ensures clean and accurate R-peak detection.
 
-6. Dynamic Updates:
-~~~~~~~~~~~~~~~~~~~
-
-   - Updates the ECG plot and heart rate display at regular intervals (every 10 ms).
-   - Provides real-time feedback on heart rate and R-peak detection.
-
 Running the Application:
 ------------------------
 
@@ -204,6 +198,10 @@ To run the Heart Rate with ECG application, execute the following command in a t
 .. code-block:: python
 
    python heartbeat_ecg.py
+
+.. figure:: ./media/heartbeat_ecg.*
+    :align: center
+    :alt: Heart Rate with ECG
 
 2. `EMG with Envelope`:
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -256,6 +254,10 @@ To run the EMG with Envelope, execute the following command in a terminal:
 
    python emgenvelope.py
 
+.. figure:: ./media/emgenvelope.*
+    :align: center
+    :alt: EMG with Envelope
+
 3. `EOG with Blinks`:
 *********************
 
@@ -301,6 +303,10 @@ To run the EOG with Blink Detection, execute the following command in a terminal
 .. code-block:: python
 
    python eog.py
+
+.. figure:: ./media/eog.*
+    :align: center
+    :alt: EOG with Blinks
 
 4. `EEG with FFT`:
 ******************
@@ -360,6 +366,10 @@ To run the EEG with FFT, execute the following command in a terminal:
 
    python ffteeg.py
 
+.. figure:: ./media/ffteeg.*
+    :align: center
+    :alt: EEG with FFT
+
 5. `EEG Tug of War Game`:
 *************************
 
@@ -414,6 +424,10 @@ To run the EEG Tug of War, execute the following command in a terminal:
 .. code-block:: python
 
    python game.py
+
+.. figure:: ./media/game.*
+    :align: center
+    :alt: EEG Tug of War
 
 The link for the Instructrables of this EEG Tug of War Game is [here](https://www.instructables.com/Play-Tug-of-War-Game-With-Your-Mind-Using-EEG-1/#ible-footer-portal)
 
@@ -474,6 +488,10 @@ To run the EEG Beetle Game, execute the following command in a terminal:
 
    python beetle.py
 
+.. figure:: ./media/beetle.*
+    :align: center
+    :alt: EEG Beetle Game
+
 7. `GUI`:
 *********
 
@@ -522,6 +540,10 @@ To run the GUI Visualization, execute the following command in a terminal:
 
    python gui.py
 
+.. figure:: ./media/gui.*
+    :align: center
+    :alt: GUI
+
 8. `EOG Keystroke Emulator`:
 ****************************
 
@@ -567,6 +589,10 @@ To run the EOG Keystroke Emulator, execute the following command in a terminal:
 .. code-block:: python
 
    python keystroke.py
+
+.. figure:: ./media/keystroke.*
+    :align: center
+    :alt: Keystroke
 
 9. `CSV Plotter`:
 *****************
@@ -618,3 +644,7 @@ To run the CSV Plotter, execute the following command in a terminal:
 .. code-block:: python
 
    python csvplotter.py
+
+.. figure:: ./media/csvplotter.*
+    :align: center
+    :alt: CSV Plotter
