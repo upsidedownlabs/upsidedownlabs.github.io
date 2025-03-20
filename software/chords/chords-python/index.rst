@@ -563,7 +563,7 @@ Features
    - Implements a low-pass filter to smooth the EOG signal for accurate blink detection.
 
 2. Blink Detection:
-------------------~
+-------------------
 
    - Detects blinks by identifying peaks in the filtered EOG signal.
    - Uses a dynamic threshold based on the mean and standard deviation of the signal to distinguish blinks from noise.
@@ -649,3 +649,4 @@ To run the CSV Plotter, execute the following command in a terminal:
 .. figure:: ./media/csvplotter.*
     :align: center
     :alt: CSV Plotter
+
