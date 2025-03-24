@@ -14,25 +14,24 @@ Features
 ********
 
 .. table:: Available Options
-   :align: center
 
-   +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | **Feature**              | **Description**                                                                                                                                                                                |
-   +=========================+================================================================================================================================================================================================+
-   | **Automatic Arduino Detection** | Automatically scans and detects connected Arduino devices, streamlining setup by eliminating manual port configuration. Ensures quick, user-friendly selection of the correct device.     |
-   +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | **Data Reading**         | Reads data packets from the Arduino in real-time, efficiently processing them to ensure no data loss and accurate signal representation for analysis or visualization.                            |
-   +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | **CSV Logging**          | Optionally logs incoming data to a CSV file with columns for Counter and up to 6-Channel data, enabling easy storage for analysis or sharing.                                                     |
-   +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | **LSL Streaming**        | Streams data via Lab Streaming Layer (LSL), a protocol for time-synchronized data sharing. Enables real-time analysis, visualization, or integration with platforms like BrainVision LSL Viewer.  |
-   +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | **Verbose Output**       | Provides detailed output, including real-time statistics and error reporting. Tracks sampling rate, signal drift, and other key metrics to ensure smooth data acquisition.                         |
-   +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | **Inverted Signal**      | Allows users to invert the signal in software to correct electrode placement issues without needing physical adjustments, ensuring seamless experimentation.                                       |
-   +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | **Timer**                | Enables time-based recording, automatically stopping after a user-defined duration in seconds. Ideal for experiments requiring specific data intervals, simplifying automated data collection.     |
-   +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Feature                         | Description                                                                                                                                                                                     |
+   +=================================+=================================================================================================================================================================================================+
+   | Automatic Arduino Detection     | Automatically scans and detects connected Arduino devices, streamlining setup by eliminating manual port configuration. Ensures quick, user-friendly selection of the correct device.           |
+   +---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Data Reading                    | Reads data packets from the Arduino in real-time, efficiently processing them to ensure no data loss and accurate signal representation for analysis or visualization.                          |
+   +---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | CSV Logging                     | Optionally logs incoming data to a CSV file with columns for Counter and up to 6-Channel data, enabling easy storage for analysis or sharing.                                                   |
+   +---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | LSL Streaming                   | Streams data via Lab Streaming Layer (LSL), a protocol for time-synchronized data sharing. Enables real-time analysis, visualization, or integration with platforms like BrainVision LSL Viewer.|
+   +---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Verbose Output                  | Provides detailed output, including real-time statistics and error reporting. Tracks sampling rate, signal drift, and other key metrics to ensure smooth data acquisition.                      |
+   +---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Inverted Signal                 | Allows users to invert the signal in software to correct electrode placement issues without needing physical adjustments, ensuring seamless experimentation.                                    |
+   +---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Timer                           | Enables time-based recording, automatically stopping after a user-defined duration in seconds. Ideal for experiments requiring specific data intervals, simplifying automated data collection.  |
+   +---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Software Requirements  
 =====================
@@ -126,27 +125,26 @@ Follow these steps to set up and install Chords-Python:
 Options available are:
 
 .. table:: Available Options
-   :align: center
 
    +-----------------------+----------------------------------------------------------------------------------------+
-   | **Option**            | **Description**                                                                          |
+   |  Option               |   Description                                                                          |
    +=======================+========================================================================================+
-   | **-p, --port**        | Specify the serial port to use (e.g., COM5, /dev/ttyUSB0).                               |
-   |                       | (By default, it automatically detects the port.)                                          |
+   |  -p,                  | Specify the serial port to use (e.g., COM5, /dev/ttyUSB0).                             |
+   |  --port               | (By default, it automatically detects the port.)                                       |
    +-----------------------+----------------------------------------------------------------------------------------+
-   | **-b, --baudrate**    | Set the baud rate for serial communication.                                               |
-   |                       | (By default, the script first attempts to use 230400, and if that fails,                  |
-   |                       | it automatically falls back to 115200.)                                                   |
+   |  -b,                  | Set the baud rate for serial communication.                                            |
+   |  --baudrate           | (By default, the script first attempts to use 230400, and if that fails,               |
+   |                       | it automatically falls back to 115200.)                                                |
    +-----------------------+----------------------------------------------------------------------------------------+
-   | **--csv**             | Enable CSV logging. Data will be saved to a timestamped file.                              |
+   |  --csv                | Enable CSV logging. Data will be saved to a timestamped file.                          |
    +-----------------------+----------------------------------------------------------------------------------------+
-   | **--lsl**             | Enable LSL streaming. Sends data to an LSL outlet.                                        |
+   |  --lsl                | Enable LSL streaming. Sends data to an LSL outlet.                                     |
    +-----------------------+----------------------------------------------------------------------------------------+
-   | **-v, --verbose**     | Enable verbose output with detailed statistics and error reporting.                        |
+   |  -v, --verbose        | Enable verbose output with detailed statistics and error reporting.                    |
    +-----------------------+----------------------------------------------------------------------------------------+
-   | **--inverted**        | Invert the signal before streaming LSL and logging.                                        |
+   |  --inverted           | Invert the signal before streaming LSL and logging.                                    |
    +-----------------------+----------------------------------------------------------------------------------------+
-   | **-t**                | Enable the timer to run the program for a set time in seconds.                             |
+   |  -t                   | Enable the timer to run the program for a set time in seconds.                         |
    +-----------------------+----------------------------------------------------------------------------------------+
 
 **Example**:
@@ -158,18 +156,18 @@ If you run the following command:
 
 Then, This command executes the Python script chords.py, initiates the LSL stream, enables verbose output, activates CSV logging, and script runs for 60 seconds.
 
-Applications:
-#############
+Applications
+############
 
 There are many applications available that stream the LSL and can be run for various purposes. Open another terminal and run any application. Ensure the LSL stream is running first.
 
-.. note::
-
-Before running any application, install all the dependencies required for running the application. Run the following command in a new terminal:
-
-.. code-block:: python
+.. note:: 
    
-   pip install -r app_requirements.txt
+   Before running any application, install all the dependencies required for running the application. Run the following command in a new terminal:
+
+   .. code-block:: python
+   
+      pip install -r app_requirements.txt
 
 After installing the dependencies, you can run any of the following applications by executing the corresponding command in a new terminal.
 
@@ -695,7 +693,7 @@ Web Interface
 .. youtube:: m_ppRxwKojM
 
 Overview
-========
+********
 
 The Chords-Python Web Interface provides a user-friendly way to control and manage the LSL stream, and other applications from a single web Interface.  
 It is built using Flask and enables real-time interaction with data acquisition processes.  
@@ -705,40 +703,38 @@ It is built using Flask and enables real-time interaction with data acquisition 
 - All applications can be run simultaneously by just starting the LSL stream once, reducing manual effort.  
 - Simplifies the process of managing multiple applications without needing separate terminal windows.  
 
-.. note::
-
-To save the data in CSV files, first run the LSL Stream in a terminal, then launch any applications in a separate terminal (as explained above). Ignore the web interface option in this case.
+.. note:: To save the data in CSV files, first run the LSL Stream in a terminal, then launch any applications in a separate terminal (as explained above). Ignore the web interface option in this case.
 
 Features
-========
+********
 
 1. Start LSL Stream:
---------------------
+====================
 
-  - Allows users to start the Lab Streaming Layer (LSL) process to stream biosignals.  
-  - Displays real-time LSL status and provides error handling.  
+- Allows users to start the Lab Streaming Layer (LSL) process to stream biosignals.  
+- Displays real-time LSL status and provides error handling.  
 
 2. Launch Additional Applications:
-----------------------------------
+==================================
 
-  - Users can start and monitor external applications dynamically.  
-  - Ensures that applications are not started multiple times.  
+- Users can start and monitor external applications dynamically.  
+- Ensures that applications are not started multiple times.  
 
 3. Real-time Application Status:
----------------------------------
+================================
 
-  - The web interface continuously checks and displays the status of running processes.  
+- The web interface continuously checks and displays the status of running processes.  
 
 4. Graceful Shutdown:
----------------------
+=====================
 
-  - Provides an option to stop all running processes and exit the server safely by pressing **Ctrl + C** in the terminal.  
+- Provides an option to stop all running processes and exit the server safely by pressing **Ctrl + C** in the terminal.  
 
 Running the Web Interface
-=========================
+*************************
 
-1. Ensure dependencies are installed:
--------------------------------------
+1. Ensure dependencies are installed
+=====================================
 
 - Install all required dependencies:  
 
@@ -750,8 +746,8 @@ Running the Web Interface
    
    pip install app_requirements.txt
 
-2. Start the Web Interface:
----------------------------
+2. Start the Web Interface
+===========================
 
 - Run the Flask server using the following command:  
 
@@ -759,8 +755,8 @@ Running the Web Interface
    
    python app.py
 
-3. Access the Interface:
-------------------------
+3. Access the Interface
+========================
 
 - Open the Web Interface by clicking on the link generated in the terminal.
 
@@ -768,8 +764,8 @@ Running the Web Interface
     :align: center
     :alt: Web Interface
 
-4. Start LSL and Other Applications:
-------------------------------------
+4. Start LSL and Other Applications
+====================================
 
 - Click **Start LSL** to begin streaming.The Button turns green showing that the LSL Stream is running.
 - Launch additional applications as needed.
@@ -778,7 +774,7 @@ Running the Web Interface
     :align: center
     :alt: Web Interface
 
-5. Stop All Processes:
-----------------------
+5. Stop All Processes
+======================
 
 - Press **Ctrl + C** in the terminal to safely stop all running applications.  
