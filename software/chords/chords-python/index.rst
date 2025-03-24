@@ -8,18 +8,31 @@ Chords-Python
 Overview
 ********
 
-Chords Python script is designed to interface with an Arduino-based bio-potential amplifier, read data from it, optionally log this data to CSV or stream it via the Lab Streaming Layer (LSL).
+Chords-Python is an open-source bag of tools for recording biopotential signals like **ECG**, **EMG**, **EEG**, or **EOG**, along with visualization using BioAmp hardware. It’s ideal for educational purposes as it promotes DIY Neuroscience and makes biopotential signal exploration more accessible for students and researchers.
 
 Features
 ********
 
-- **Automatic Arduino Detection**: The tool automatically scans and detects connected Arduino devices, streamlining setup by eliminating manual port configuration. This ensures quick and user-friendly selection of the correct device for data acquisition.
-- **Data Reading**: The system reads data packets from the Arduino in real-time, efficiently processing them to ensure no data loss and accurate signal representation for analysis or visualization.
-- **CSV Logging**: An optional feature logs incoming data to a CSV file with columns for Counter and upto 6-Channel data, enabling easy storage for analysis or sharing.
-- **LSL Streaming**: The tool streams data via Lab Streaming Layer (LSL), a protocol for time-synchronized data sharing, enabling real-time analysis, visualization, or integration with platforms like BrainVision LSL Viewer.
-- **Verbose Output**: This feature provides detailed output, including real-time statistics and error reporting. It tracks the sampling rate, signal drift, and other key metrics to ensure the data acquisition process is smooth.
-- **Inverted Signal**: Users can invert the signal in software to correct electrode placement issues without needing physical adjustments, ensuring seamless experimentation.
-- **Timer**: This feature enables time-based recording, automatically stopping after a user-defined duration in seconds. Ideal for experiments requiring specific data intervals, it simplifies automated data collection.
+.. table:: Available Options
+   :align: center
+
+   +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | **Feature**              | **Description**                                                                                                                                                                                |
+   +=========================+================================================================================================================================================================================================+
+   | **Automatic Arduino Detection** | Automatically scans and detects connected Arduino devices, streamlining setup by eliminating manual port configuration. Ensures quick, user-friendly selection of the correct device.     |
+   +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | **Data Reading**         | Reads data packets from the Arduino in real-time, efficiently processing them to ensure no data loss and accurate signal representation for analysis or visualization.                            |
+   +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | **CSV Logging**          | Optionally logs incoming data to a CSV file with columns for Counter and up to 6-Channel data, enabling easy storage for analysis or sharing.                                                     |
+   +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | **LSL Streaming**        | Streams data via Lab Streaming Layer (LSL), a protocol for time-synchronized data sharing. Enables real-time analysis, visualization, or integration with platforms like BrainVision LSL Viewer.  |
+   +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | **Verbose Output**       | Provides detailed output, including real-time statistics and error reporting. Tracks sampling rate, signal drift, and other key metrics to ensure smooth data acquisition.                         |
+   +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | **Inverted Signal**      | Allows users to invert the signal in software to correct electrode placement issues without needing physical adjustments, ensuring seamless experimentation.                                       |
+   +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | **Timer**                | Enables time-based recording, automatically stopping after a user-defined duration in seconds. Ideal for experiments requiring specific data intervals, simplifying automated data collection.     |
+   +-------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Software Requirements  
 =====================
@@ -37,22 +50,20 @@ To use Chords-Python, you need:
 - A USB cable (type depends on the board)
 - `BioAmp Hardware <https://docs.upsidedownlabs.tech/hardware/index.html>`_ and its accessories
 
-Setting up the hardware:
-------------------------
+Setting up the hardware
+=======================
 
-Make all the connections according to the `hardware you are using <https://docs.upsidedownlabs.tech/hardware/index.html>`_ , including sensor connections with the development board, body connections with the sensor, and connections from the development board to your laptop.[Link]
+Make all the connections according to the `hardware you are using <https://docs.upsidedownlabs.tech/hardware/index.html>`_ , including sensor connections with the development board, body connections with the sensor, and connections from the development board to your laptop.
 
-Uploading the code:
--------------------
+Uploading the code
+==================
 
-Once you are all set, it is time to upload the code to your development board. Go to `Chords Arduino Firmware <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_. GitHub repo, scroll down to the supported boards table, find your board name, and click on the Arduino sketch corresponding to that row.
-
+Once you are all set, it is time to upload the code to your development board. Go to `Chords Arduino Firmware <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ GitHub repo, scroll down to the supported boards table, find your board name, and click on the Arduino sketch corresponding to that row.
 Copy the sketch and paste it into Arduino IDE.
-
 Go to tools, select your board, and the correct COM port. Now, hit the upload button.
 
-Opening Chords-Python:
-----------------------
+Opening Chords-Python
+=====================
 
 Follow these steps to set up and install Chords-Python:
 
@@ -114,15 +125,31 @@ Follow these steps to set up and install Chords-Python:
 
 Options available are:
 
-- **-p, --port**: Specify the serial port to use (e.g., COM5, /dev/ttyUSB0).(By default it automatically detects the port.)
-- **-b, --baudrate** : Set the baud rate for serial communication (By default the script will first attempt to use 230400, and if that fails, it will automatically fallback to 115200.)
-- **--csv**: Enable CSV logging. Data will be saved to a timestamped file.
-- **--lsl**: Enable LSL streaming. Sends data to an LSL outlet.
-- **-v, --verbose**: Enable verbose output with detailed statistics and error reporting.
-- **--inverted**: Invert the signal before streaming LSL and logging.
-- **-t** : Enable the timer to run program for a set time in seconds.
+.. table:: Available Options
+   :align: center
 
-Example:
+   +-----------------------+----------------------------------------------------------------------------------------+
+   | **Option**            | **Description**                                                                          |
+   +=======================+========================================================================================+
+   | **-p, --port**        | Specify the serial port to use (e.g., COM5, /dev/ttyUSB0).                               |
+   |                       | (By default, it automatically detects the port.)                                          |
+   +-----------------------+----------------------------------------------------------------------------------------+
+   | **-b, --baudrate**    | Set the baud rate for serial communication.                                               |
+   |                       | (By default, the script first attempts to use 230400, and if that fails,                  |
+   |                       | it automatically falls back to 115200.)                                                   |
+   +-----------------------+----------------------------------------------------------------------------------------+
+   | **--csv**             | Enable CSV logging. Data will be saved to a timestamped file.                              |
+   +-----------------------+----------------------------------------------------------------------------------------+
+   | **--lsl**             | Enable LSL streaming. Sends data to an LSL outlet.                                        |
+   +-----------------------+----------------------------------------------------------------------------------------+
+   | **-v, --verbose**     | Enable verbose output with detailed statistics and error reporting.                        |
+   +-----------------------+----------------------------------------------------------------------------------------+
+   | **--inverted**        | Invert the signal before streaming LSL and logging.                                        |
+   +-----------------------+----------------------------------------------------------------------------------------+
+   | **-t**                | Enable the timer to run the program for a set time in seconds.                             |
+   +-----------------------+----------------------------------------------------------------------------------------+
+
+**Example**:
 If you run the following command:
 
 .. code-block:: python
@@ -134,11 +161,11 @@ Then, This command executes the Python script chords.py, initiates the LSL strea
 Applications:
 #############
 
-Open another terminal and run any application. Ensure the LSL Stream is running first.
+There are many applications available that stream the LSL and can be run for various purposes. Open another terminal and run any application. Ensure the LSL stream is running first.
 
 .. note::
 
-Before running any application, install all the dependencies required. Run the following command in a new terminal:
+Before running any application, install all the dependencies required for running the application. Run the following command in a new terminal:
 
 .. code-block:: python
    
@@ -148,7 +175,7 @@ After installing the dependencies, you can run any of the following applications
 
 List of available applications:
 
-1. `Heart Rate with ECG`
+1. `ECG with Heart Rate`
 ************************
 
 .. youtube:: tZud2tc-TGI
@@ -156,7 +183,7 @@ List of available applications:
 Overview
 =========
 
-The **Heart Rate with ECG** is a real-time application designed to visualize and analyze Electrocardiogram (ECG) data using the Lab Streaming Layer (LSL) protocol. Built with Python and PyQt5, this application provides a graphical interface for monitoring ECG signals, detecting R-peaks (heartbeats), and calculating the heart rate in real time. It leverages signal processing techniques and the `neurokit2` library for accurate R-peak detection and heart rate estimation.
+The **ECG with Heart Rate** is a real-time application designed to visualize and analyze Electrocardiogram (ECG) data using the Lab Streaming Layer (LSL) protocol. Built with Python and PyQt5, this application provides a graphical interface for monitoring ECG signals, detecting R-peaks (heartbeats), and calculating the heart rate in real time. It applies signal processing techniques and utilizes the `neurokit2` library to estimate R-peak detection and heart rate.
 
 Features
 =========
@@ -189,16 +216,18 @@ Features
 --------------------
 
 - Applies a low-pass Butterworth filter to remove high-frequency noise from the ECG signal.
-- Ensures clean and accurate R-peak detection.
+- Helps in enhancing signal clarity, which can assist in identifying R-peaks.
 
 Running the Application
 =======================
 
-To run the Heart Rate with ECG application, execute the following command in a terminal:
+To run the ECG with Heart Rate application, execute the following command in a terminal:
 
 .. code-block:: python
 
    python heartbeat_ecg.py
+
+A GUI window will appear, displaying the real-time ECG signal along with the calculated heart rate.
 
 .. figure:: ./media/heartbeat_ecg.*
     :align: center
@@ -210,7 +239,7 @@ To run the Heart Rate with ECG application, execute the following command in a t
 Overview
 =========
 
-The **EMG with Envelope** is a Python-based application designed to visualize and analyze Electromyography (EMG) signals in real-time. It connects to an EMG data stream using the Lab Streaming Layer (LSL) protocol, processes the signal to extract the EMG envelope, and displays both the filtered EMG signal and its envelope in a user-friendly graphical interface. Built with `PyQt5` and `pyqtgraph`, the application provides a responsive and interactive visualization tool for researchers, clinicians, or developers working with EMG data.
+The **EMG with Envelope** is a Python-based application designed to visualize and analyze Electromyography (EMG) signals in real-time. It connects to an EMG data stream using the Lab Streaming Layer (LSL) protocol, processes the signal to extract the EMG envelope, and displays both the filtered EMG signal and its envelope in a user-friendly graphical interface. Built with `PyQt5` and `pyqtgraph`, the application provides a responsive and interactive visualization tool for students, researchers, or developers working with EMG data.
 
 Features
 =========
@@ -219,13 +248,13 @@ Features
 --------------------------------------
 
 - Connects to an LSL stream to acquire real-time EMG data.
-- Displays the raw EMG signal after applying a high-pass filter (70 Hz cutoff) to remove low-frequency noise.
+- Displays the EMG signal after applying a high-pass filter (70 Hz cutoff) to remove low-frequency noise.
 
 2. EMG Envelope Extraction:
 ---------------------------
 
 - Computes the Root Mean Square (RMS) envelope of the filtered EMG signal using a moving window.
-- Visualizes the EMG envelope alongside the filtered EMG signal for easy comparison.
+- Applies convolution with a uniform window and pads the result to align with the original signal length.
 
 3. Interactive and Responsive GUI:
 ----------------------------------
@@ -254,6 +283,8 @@ To run the EMG with Envelope, execute the following command in a terminal:
 .. code-block:: python
 
    python emgenvelope.py
+
+A GUI window will appear, displaying the real-time EMG signal along with the calculated EMG Envelope.
 
 .. figure:: ./media/emgenvelope.*
     :align: center
@@ -304,6 +335,8 @@ To run the EOG with Blink Detection, execute the following command in a terminal
 .. code-block:: python
 
    python eog.py
+
+A GUI window will appear, displaying the real-time EOG signal along with the Blinks marked as Red dot.
 
 .. figure:: ./media/eog.*
     :align: center
@@ -367,6 +400,8 @@ To run the EEG with FFT, execute the following command in a terminal:
 
    python ffteeg.py
 
+A GUI window will appear, displaying the real-time EEG signal along with the calculated FFT and Brainwave power distribution.
+
 .. figure:: ./media/ffteeg.*
     :align: center
     :alt: EEG with FFT
@@ -379,7 +414,7 @@ To run the EEG with FFT, execute the following command in a terminal:
 Overview
 =========
 
-The **EEG Tug of War Game** is a Python-based application that leverages Electroencephalography (EEG) signals to create an interactive two-player game. Players control the movement of a ball on the screen by modulating their brain activity, specifically the Alpha and Beta frequency bands. The game uses the Lab Streaming Layer (LSL) protocol to acquire real-time EEG data, processes the signals to calculate relative power in the Alpha and Beta bands, and translates these into forces that move the ball. The first player to push the ball to the opponent's side wins the game. The application is built using the `pygame` library for the graphical interface and integrates with `pylsl` for EEG data acquisition.
+The **EEG Tug of War Game** is a Python-based application that leverages Electroencephalography (EEG) signals to create an interactive two-player game. Players control the movement of a ball on the screen by modulating their brain activity, specifically the Alpha and Beta frequency bands. The game uses the Lab Streaming Layer (LSL) protocol to acquire real-time EEG data, processes the signals to calculate relative power in the Alpha and Beta bands, and translates these into forces that move the ball. The first player aims to push the ball onto the opponent’s side to score and win the game. The application is built using the `pygame` library for the graphical interface and integrates with `pylsl` for EEG data acquisition.
 
 Features
 =========
@@ -426,11 +461,13 @@ To run the EEG Tug of War, execute the following command in a terminal:
 
    python game.py
 
+The game window will open, featuring buttons for **START/RESTART**, **PLAY/PAUSE**, and **EXIT**. These buttons offer intuitive control, allowing players to easily start, pause, resume, or exit the game as needed.
+
 .. figure:: ./media/game.*
     :align: center
     :alt: EEG Tug of War
 
-The link for the Instructrables of this EEG Tug of War Game is [here](https://www.instructables.com/Play-Tug-of-War-Game-With-Your-Mind-Using-EEG-1/#ible-footer-portal)
+For detailed instructions, check out the `EEG Tig of War Game <https://www.instructables.com/Play-Tug-of-War-Game-With-Your-Mind-Using-EEG-1/#ible-footer-portal>`_ Instructable.
 
 6. `EEG Beetle Game`
 ********************
@@ -489,6 +526,8 @@ To run the EEG Beetle Game, execute the following command in a terminal:
 
    python beetle.py
 
+A GUI window will appear, showing all calibration messages, followed by the game starting, and finally displaying the game with the beetle.
+
 .. figure:: ./media/beetle.*
     :align: center
     :alt: EEG Beetle Game
@@ -526,12 +565,6 @@ Features
 - Features a clean layout with individual plots for each channel.
 - Includes a status bar to display LSL connection details.
 
-4. Efficient Data Handling:
----------------------------
-
-- Uses a rolling buffer to store the last 2000 samples for each channel.
-- Implements downsampling and clipping to optimize performance and memory usage.
-
 Running the Application
 =======================
 
@@ -540,6 +573,8 @@ To run the GUI Visualization, execute the following command in a terminal:
 .. code-block:: python
 
    python gui.py
+
+A GUI window will appear that shows the data in real-time.
 
 .. figure:: ./media/gui.*
     :align: center
@@ -591,6 +626,8 @@ To run the EOG Keystroke Emulator, execute the following command in a terminal:
 
    python keystroke.py
 
+A small window appears in the corner, displaying a *Connect* button. Once connected, a *Start* button becomes visible. Pressing the *Start* button initiates blink detection, and each detected blink triggers a spacebar key press.
+
 .. figure:: ./media/keystroke.*
     :align: center
     :alt: Keystroke
@@ -625,11 +662,11 @@ Features
 
 - Utilizes `plotly` to generate interactive line plots for the selected channel.
 - Plots include advanced features such as:
-   - Zoom: Zoom in to inspect specific data ranges.
-   - Pan: Move across the plot to explore different sections.
-   - Autoscale: Automatically adjust the plot scale to fit the data.
-   - Download Plot as PNG: Save the generated plot as a high-quality PNG image.
-   - Hover-to-View Data Points: Hover over the plot to view precise data values.
+   - *Zoom*: Zoom in to inspect specific data ranges.
+   - *Pan*: Move across the plot to explore different sections.
+   - *Autoscale*: Automatically adjust the plot scale to fit the data.
+   - *Download Plot as PNG*: Save the generated plot as a high-quality PNG image.
+   - *Hover-to-View Data Points*: Hover over the plot to view precise data values.
 
 4. User-Friendly Interface:
 ---------------------------
@@ -645,6 +682,8 @@ To run the CSV Plotter, execute the following command in a terminal:
 .. code-block:: python
 
    python csvplotter.py
+
+A small pop-up will appear, providing options to load the file, select the channel, and plot the data.
 
 .. figure:: ./media/csvplotter.*
     :align: center
@@ -666,6 +705,10 @@ It is built using Flask and enables real-time interaction with data acquisition 
 - All applications can be run simultaneously by just starting the LSL stream once, reducing manual effort.  
 - Simplifies the process of managing multiple applications without needing separate terminal windows.  
 
+.. note::
+
+To save the data in CSV files, first run the LSL Stream in a terminal, then launch any applications in a separate terminal (as explained above). Ignore the web interface option in this case.
+
 Features
 ========
 
@@ -683,6 +726,7 @@ Features
 
 3. Real-time Application Status:
 ---------------------------------
+
   - The web interface continuously checks and displays the status of running processes.  
 
 4. Graceful Shutdown:
@@ -696,7 +740,7 @@ Running the Web Interface
 1. Ensure dependencies are installed:
 -------------------------------------
 
-- Install Flask and required Python packages if not already installed:  
+- Install all required dependencies:  
 
 .. code-block:: python
    
