@@ -82,7 +82,7 @@ Follow these steps to set up and install Chords-Python:
    - Navigate to the directory where you have cloned the repository.
    - Run the following command to create a virtual environment:
 
-   .. code-block:: python
+   .. code-block:: console
       
       python -m venv venv
 
