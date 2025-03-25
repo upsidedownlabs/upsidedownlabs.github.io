@@ -112,7 +112,7 @@ Follow these steps to set up and install Chords-Python:
    Once these steps are completed, you will be ready to run the Chords-Python Script.
 5. To run the Script, run the following command :
 
-   .. code-block:: python
+   .. code-block:: console
       
       python chords.py [options]
 
