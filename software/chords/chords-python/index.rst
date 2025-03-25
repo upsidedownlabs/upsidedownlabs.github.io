@@ -70,7 +70,7 @@ Follow these steps to set up and install Chords-Python:
    - You can download the Chords-Python repository from GitHub by visiting the following link: `Chords-Python <https://github.com/upsidedownlabs/Chords-Python/>`_.
    - Or, You can clone the repository using Git by running the following command:
 
-   .. code-block:: python
+   .. code-block:: console
       
       git clone https://github.com/upsidedownlabs/Chords-Python.git
 
