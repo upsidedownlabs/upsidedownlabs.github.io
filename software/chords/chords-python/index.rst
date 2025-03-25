@@ -538,7 +538,7 @@ Running the Application
 
 To run the EOG Keystroke Emulator, execute the following command in a terminal:
 
-.. code-block:: python
+.. code-block:: console
 
    python keystroke.py
 
