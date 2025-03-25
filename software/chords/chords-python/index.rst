@@ -297,7 +297,7 @@ Running the Application
 
 To run the EOG with Blink Detection, execute the following command in a terminal:
 
-.. code-block:: python
+.. code-block:: console
 
    python eog.py
 
