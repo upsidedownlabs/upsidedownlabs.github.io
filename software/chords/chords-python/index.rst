@@ -208,7 +208,7 @@ Running the Application
 
 To run the ECG with Heart Rate application, execute the following command in a terminal:
 
-.. code-block:: python
+.. code-block:: console
 
    python heartbeat_ecg.py
 
