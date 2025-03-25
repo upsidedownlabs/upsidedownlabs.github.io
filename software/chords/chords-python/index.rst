@@ -640,7 +640,7 @@ Running the Web Interface
 
 - Install all required dependencies:  
 
-.. code-block:: python
+.. code-block:: console
    
    pip install chords_requirements.txt
 
