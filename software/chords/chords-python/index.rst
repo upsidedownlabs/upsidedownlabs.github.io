@@ -587,7 +587,7 @@ Running the Application
 
 To run the CSV Plotter, execute the following command in a terminal:
 
-.. code-block:: python
+.. code-block:: console
 
    python csvplotter.py
 
