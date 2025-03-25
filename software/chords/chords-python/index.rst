@@ -653,7 +653,7 @@ Running the Web Interface
 
 - Run the Flask server using the following command:  
 
-.. code-block:: python
+.. code-block:: console
    
    python app.py
 
