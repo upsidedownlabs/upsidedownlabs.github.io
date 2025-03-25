@@ -254,7 +254,7 @@ Running the Application
 
 To run the EMG with Envelope, execute the following command in a terminal:
 
-.. code-block:: python
+.. code-block:: console
 
    python emgenvelope.py
 
