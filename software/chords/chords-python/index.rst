@@ -644,7 +644,7 @@ Running the Web Interface
    
    pip install chords_requirements.txt
 
-.. code-block:: python
+.. code-block:: console
    
    pip install app_requirements.txt
 
