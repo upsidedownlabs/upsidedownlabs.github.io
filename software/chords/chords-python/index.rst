@@ -451,7 +451,7 @@ Running the Application
 
 To run the EEG Beetle Game, execute the following command in a terminal:
 
-.. code-block:: python
+.. code-block:: console
 
    python beetle.py
 
