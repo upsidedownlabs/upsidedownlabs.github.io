@@ -494,7 +494,7 @@ Running the Application
 
 To run the GUI Visualization, execute the following command in a terminal:
 
-.. code-block:: python
+.. code-block:: console
 
    python gui.py
 
