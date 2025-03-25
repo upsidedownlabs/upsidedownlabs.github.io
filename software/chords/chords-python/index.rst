@@ -350,7 +350,7 @@ Running the Application
 
 To run the EEG with FFT, execute the following command in a terminal:
 
-.. code-block:: python
+.. code-block:: console
 
    python ffteeg.py
 
