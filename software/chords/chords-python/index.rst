@@ -400,7 +400,7 @@ Running the Application
 
 To run the EEG Tug of War, execute the following command in a terminal:
 
-.. code-block:: python
+.. code-block:: console
 
    python game.py
 
