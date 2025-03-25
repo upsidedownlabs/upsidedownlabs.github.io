@@ -103,7 +103,7 @@ Follow these steps to set up and install Chords-Python:
 
    - In the terminal or command prompt, run the following command to install the dependencies needed to run the python script listed in the `chords_requirements.txt` file:
 
-   .. code-block:: python
+   .. code-block:: console
       
       pip install -r chords_requirements.txt
 
