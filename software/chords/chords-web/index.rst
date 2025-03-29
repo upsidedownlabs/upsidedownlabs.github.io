@@ -79,7 +79,7 @@ Chords Visualizer
 The Chords Visualizer is a powerful web-based tool designed for seamless real-time biopotential signal acquisition and analysis. Designed for researchers, developers, and enthusiasts, this app provides an intuitive interface for monitoring multiple signal channels, applying advanced filters, and managing recorded data efficiently. Whether you're analyzing EMG, ECG, EOG, or EEG signals, the app ensures a smooth and interactive experience, simplifying data acquisition and enhancing signal interpretation.
 
 Features
------------------
+---------
 
 .. list-table:: Features
    :widths: 25 75
@@ -244,10 +244,13 @@ Overview
 --------
 We have introduced **FFT (Fast Fourier Transform) analysis** and **EEG band spectrum plotting** to improve real-time signal processing. These features enable you to visualize and analyze EEG frequency bands, providing deeper insights into brain activity.  
 
-**Features**  
+Features
+--------
+
 .. list-table:: Features
    :widths: 25 75
    :header-rows: 1
+
 
    * - **Feature**
      - **Description**
@@ -256,7 +259,9 @@ We have introduced **FFT (Fast Fourier Transform) analysis** and **EEG band spec
    * - **Live EEG Band Monitoring**
      - View real-time plots of EEG band values for better brain activity tracking.
 
-### **Supported EEG Bands**  
+
+Supported EEG Bands
+-------------------
 
 - **Delta (0.5 - 4 Hz)** → Associated with deep sleep and unconscious states.  
 - **Theta (4 - 8 Hz)** → Linked to relaxation, meditation, and light sleep.  
@@ -294,6 +299,8 @@ The **Serial Plotter & Monitor** is a standalone feature within Chords-Web that 
 
 Features
 --------
+
+
 .. list-table:: Features
    :widths: 25 75
    :header-rows: 1
