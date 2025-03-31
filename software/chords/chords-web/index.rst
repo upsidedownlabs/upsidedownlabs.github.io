@@ -127,6 +127,8 @@ Setting Channel Count
 .. figure:: ./media/chords_channelsupport.*
     :align: center
     :alt: Chords-Web Channel Support
+    
+    Chords-Web Channel Support
 
 - The number of available channels depends on the development board in use (list different boards and their channel counts).
 - Select a specific channel by clicking the channel button.  
