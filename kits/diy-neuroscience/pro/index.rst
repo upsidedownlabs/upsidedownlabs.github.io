@@ -36,16 +36,12 @@ Contents of the kit
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+
 | Repositionable gel electrodes (3 pc)                                                                                                                              | 1      |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+
-| Arduino UNO R3                                                                                                                                                    | 1      |
+| Arduino UNO R3/Arduino UNO R4 Minima                                                                                                                              | 1      |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+
 | Servo Claw                                                                                                                                                        | 1      |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+
 | Muscle BioAmp Shield Kit (With 1 BioAmp Cable, 6 STEMMA Cables, 9V snap cable, BioAmp AUX Cable, Muscle BioAmp Band, 24 gel electrodes, & Muscle BioAmp Shield)   | 1      |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+
-
-
-.. figure:: media/kit-content.*
-    :align: center
 
 Click on the link below to see the unboxing of the kit:
 
@@ -56,17 +52,22 @@ Click on the link below to see the unboxing of the kit:
 Software requirements
 **********************
 
-Download the following according to the operating system you are using (Windows, OSX, Linux):
+To use your DIY Neuroscience Kit Pro, you will need the softwares mentioned below. Instructions on how to use them are provided later in the guide.
 
-- `Visual Studio Code <https://code.visualstudio.com/download>`_ 
+- `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_ (Download this to upload Chords arduino firmware to your development board)
+
+- `Chords Web <https://chords.upsidedownlabs.tech/>`_ (Use this open-source web application to visualize your biopotential signals)
+
+- `Visual Studio Code <https://code.visualstudio.com/download>`_ (or any other Code editor of your choice)
   
-- `Python <https://www.python.org/downloads/>`_
+- `Python <https://www.python.org/downloads/>`_ (To run Chords-Python script)
 
-- `Spike Recorder <https://backyardbrains.com/products/spikerecorder>`_ 
+- `Chords Python <https://github.com/upsidedownlabs/Chords-Python>`_ (Use this open-source python script designed to record and visualize biopotential signals)
 
-- `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_
-    
-.. figure:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.*
+.. note::
+
+    1. The Chords Arduino firmware is identical for both Chords Web and Chords Python, so you only need to upload the code once, and you're all set.
+    2. You can choose either Chords Web or Chords Python to record and visualize your biopotential signals based on your needs. If you're curious, you can try both one at a time.
   
 Using the kit
 **************
@@ -501,6 +502,14 @@ Some project ideas
             :text-align: center
             :link: https://www.instructables.com/Control-a-Servo-Claw-Using-Your-Eye-Blinks-EOG/
 
+        .. grid-item-card:: Control video game using 2-ch EMG
+            :text-align: center
+            :link: https://www.instructables.com/Controlling-Video-Games-Using-Muscle-Signals-EMG/
+
+        .. grid-item-card:: Visualize 2-ch EMG on LCD Display
+            :text-align: center
+            :link: https://www.instructables.com/Visualizing-2-Channel-EMG-on-LCD-Display-Module/
+
     These are some of the project ideas but the possibilities are endless. So create your own Human Computer Interface (HCI) and 
     Brain Computer Interface (BCI) projects and share them with us at contact@upsidedownlabs.tech.
  
@@ -537,6 +546,8 @@ Some project ideas
 
     1. `Control dino game using eye blinks <https://www.instructables.com/Control-Dino-Game-Using-Eye-Blinks-EOG/>`_
     2. `Control servo claw using EOG <https://www.instructables.com/Control-a-Servo-Claw-Using-Your-Eye-Blinks-EOG/>`_
+    3. `<Visualize 2-ch EMG on LCD display module https://www.instructables.com/Visualizing-2-Channel-EMG-on-LCD-Display-Module/>`_
+    4. `Control video games using 2-ch EMG <https://www.instructables.com/Controlling-Video-Games-Using-Muscle-Signals-EMG/>`_
 
     These are some of the project ideas but the possibilities are endless. So create your own Human Computer Interface (HCI) and 
-    Brain Computer Interface (BCI) projects and share them with us at contact@upsidedownlabs.tech
+    Brain Computer Interfachttps://www.instructables.com/Controlling-Video-Games-Using-Muscle-Signals-EMG/e (BCI) projects and share them with us at contact@upsidedownlabs.tech

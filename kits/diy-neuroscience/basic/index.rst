@@ -38,6 +38,10 @@ To use your DIY Neuroscience Kit Basic, you will need the softwares mentioned be
 
 - `Chords Web <https://chords.upsidedownlabs.tech/>`_ (Use this open-source web application to visualize your biopotential signals)
 
+- `Visual Studio Code <https://code.visualstudio.com/download>`_ (or any other Code editor of your choice)
+  
+- `Python <https://www.python.org/downloads/>`_ (To run Chords-Python script)
+
 - `Chords Python <https://github.com/upsidedownlabs/Chords-Python>`_ (Use this open-source python script designed to record and visualize biopotential signals)
 
 .. note::
