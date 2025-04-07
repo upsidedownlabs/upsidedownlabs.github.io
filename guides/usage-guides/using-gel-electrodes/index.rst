@@ -74,8 +74,10 @@ Some electrodes do not have the metallic snap connector on them, instead they ha
 .. figure:: media/tab-connection.*
     :align: center
 
+.. _steps-for-gel-electrodes:
+
 Using the electrodes
-***********************
+********************
 
 Determine the target area from where you want to record the biopotential signals.
 
