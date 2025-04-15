@@ -138,5 +138,7 @@ Once you are done with your signal recording, pull the non-sticky tab gently in 
 
 .. important:: You should not use water & soap to clean the adhesive residue, it is oil soluble and should be dissolved with oil before removing it with dry cloth. Using water and soap can make it stick harder and irritate your skin.
 
-.. figure:: media/removing-gel-electrodes.*
-    :align: center
+.. only:: html
+
+    .. figure:: media/removing-gel-electrodes.*
+        :align: center
