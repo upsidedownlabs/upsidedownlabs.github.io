@@ -289,7 +289,7 @@ Running the Application
        - **Brighter candle** = Higher beta waves = Strong focus.  
        - **Dim candle** = Lower beta waves = Distraction.  
 
-.. _serial-wizard:
+.. _chords-web-serial-wizard:
 
 Serial Plotter & Monitor
 ========================
