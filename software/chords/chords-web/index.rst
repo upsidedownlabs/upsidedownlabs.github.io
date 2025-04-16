@@ -239,7 +239,7 @@ Running the Application
 9.  Select channels via the ``Channels`` button in the settings popover.  
 10. Adjust zoom using the ``Zoom`` slider for a detailed or overall view.  
 
-.. _fft-visualizer:
+.. _chords-web-fft-visualizer:
 
 FFT Analysis and EEG Band Spectrum Plotting
 ===========================================
