@@ -122,8 +122,8 @@ Step 7: Setting up Chords Web
 2. Click on "Visualize now" button.
 3. At the bottom, you can see buttons to access various applications:
     a. :ref:`Chords Visualizer <chords-visualizer>`: Use this application for real-time data visualization, recording and data management, filter options, and multi-channel support.
-    b. :ref:`FFT Visualizer <fft-visualizer>`: Use this app to visualize filtered EEG signals in real-time, FFT graph, EEG frequency bands, and a beta candle to determine your focus.
-    c. :ref:`Serial Wizard <serial-wizard>`: This interface provides real-time serial data visualization using serial plotter and monitor, optimised data rendering, baud rate selection and options to toggle between different modes.
+    b. :ref:`FFT Visualizer <chords-web-fft-visualizer>`: Use this app to visualize filtered EEG signals in real-time, FFT graph, EEG frequency bands, and a beta candle to determine your focus.
+    c. :ref:`Serial Wizard <chords-web-serial-wizard>`: This interface provides real-time serial data visualization using serial plotter and monitor, optimised data rendering, baud rate selection and options to toggle between different modes.
 
 4. Click on any of the button according to your requirement, select the COM port and click OK. You will be able to visualize your signals on the screen.
 
