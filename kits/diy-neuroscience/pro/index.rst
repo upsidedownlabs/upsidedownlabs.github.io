@@ -550,4 +550,4 @@ Some project ideas
     4. `Control video games using 2-ch EMG <https://www.instructables.com/Controlling-Video-Games-Using-Muscle-Signals-EMG/>`_
 
     These are some of the project ideas but the possibilities are endless. So create your own Human Computer Interface (HCI) and 
-    Brain Computer Interfachttps://www.instructables.com/Controlling-Video-Games-Using-Muscle-Signals-EMG/e (BCI) projects and share them with us at contact@upsidedownlabs.tech
+    Brain Computer Interface (BCI) projects and share them with us at ``contact@upsidedownlabs.tech``
