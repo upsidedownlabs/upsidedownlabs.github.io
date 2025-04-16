@@ -511,7 +511,7 @@ Some project ideas
             :link: https://www.instructables.com/Visualizing-2-Channel-EMG-on-LCD-Display-Module/
 
     These are some of the project ideas but the possibilities are endless. So create your own Human Computer Interface (HCI) and 
-    Brain Computer Interface (BCI) projects and share them with us at contact@upsidedownlabs.tech.
+    Brain Computer Interface (BCI) projects and share them with us at ``contact@upsidedownlabs.tech``.
  
 .. only:: latex
 
