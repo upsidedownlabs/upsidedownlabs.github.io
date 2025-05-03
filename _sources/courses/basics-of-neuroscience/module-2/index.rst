@@ -1,12 +1,14 @@
 .. _module-2:
 
-Module 2: Nervous System
-##########################
+Module 2: Human Nervous System
+###############################
 
 2.1 Introduction
 ******************
 
-The nervous system consists of a brain, spinal cord, nerves and is one of the most complex and vital systems in the body, responsible for receiving, transmitting, and processing information. It acts as the body's command center and enables communication between different parts of the body, allowing organisms to interact with their environment.
+The Human nervous system consists of a brain, spinal cord, nerves and is one of the most complex and vital systems 
+in the body, responsible for receiving, transmitting, and processing information. It acts as the body's command 
+center and enables communication between different parts of the body, allowing organisms to interact with their environment.
 
 It is divided into two major parts:
 
@@ -106,6 +108,8 @@ c. **Medulla:** At the bottom of the brainstem, the medulla is where the brain m
 
 The spinal cord begins at the base of the medulla and passes through a large opening at the bottom of the skull. Supported by the vertebrae, it serves as a communication highway between the brain and the rest of the body. This long, tubular structure transmits sensory information from the body to the brain and sends motor commands from the brain to the body. Additionally, it is responsible for reflex actions, which are quick and involuntary responses to stimuli.
 
+.. todo:: The number of vertebrae is wrong, we have to update the image.
+
 .. figure:: ../media/spinal-cord.*
     :align: center
     :alt: Spinal cord
@@ -120,7 +124,7 @@ The Peripheral Nervous System connects the Central Nervous System to the rest of
 2.3.1 Somatic Nervous System (SNS)
 =====================================
 
-The somatic nervous system controls voluntary movements and transmits sensory information to the central nervous system. It consists:
+The somatic nervous system controls voluntary movements and transmits sensory information to and from the central nervous system. It consists:
 
 a. **Sensory Neurons (Afferent Neurons):** These neurons carry signals from sensory receptors (skin, muscles, joints) to the CNS, allowing us to perceive sensations like pain, temperature, and touch.
 b. **Motor Neurons (Efferent Neurons):** These neurons transmit commands from the CNS to the skeletal muscles, enabling voluntary movement such as walking, talking, and picking up objects.
@@ -128,7 +132,7 @@ b. **Motor Neurons (Efferent Neurons):** These neurons transmit commands from th
 2.3.2 Autonomic Nervous System (ANS)
 ======================================
 
-The autonomic nervous system controls involuntary physiological processes, such as heart rate, digestion, and respiratory rate. It operates without conscious control and is divided into three main parts:
+The autonomic nervous system controls involuntary physiological processes, such as heart rate, digestion, and respiratory rate. It operates without conscious control and is divided into two main parts:
 
 a. **Sympathetic Nervous System:** Known as the "fight or flight" system, it prepares the body for stress or emergency situations by increasing heart rate, dilating pupils, releasing adrenaline, and redirecting blood flow to muscles.
 b. **Parasympathetic Nervous System:** It does the opposite of the sympathetic nervous system. Often referred to as the "rest and digest" system, it promotes relaxation by slowing the heart rate, promoting digestion, and conserving energy after a stressful event.
@@ -136,7 +140,7 @@ b. **Parasympathetic Nervous System:** It does the opposite of the sympathetic n
 2.4 Neurons
 **************
 
-Neurons are the building blocks of the nervous system and are responsible for sending, receiving and transmitting electrochemical signals throughout the body.
+Neurons are the building blocks of the nervous system and are responsible for receiving and transmitting electrochemical signals throughout the body.
 
 .. admonition:: Fun Fact
     
@@ -148,6 +152,8 @@ Neurons are the building blocks of the nervous system and are responsible for se
 1. **Sensory Neurons:** Transmit sensory information (e.g., pain, temperature, pressure) from receptors to the CNS.
 2. **Motor Neurons:** Carry commands from the CNS to muscles and glands, enabling actions like muscle contraction or hormone release. It is the most common type of neuron.
 3. **Interneurons:** These neurons are found in the CNS and act as connectors between sensory and motor neurons. They help process and integrate information.
+
+.. todo:: CORRECT INTERNEURON DIAGRAM
 
 .. figure:: ../media/types-of-neurons.*
     :align: center
