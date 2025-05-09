@@ -1,0 +1,957 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 5 : The Action Potential and its Propagation &#8212; upsidedownlabs.github.io  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'courses/basics-of-neuroscience/module-5/index';</script>
+    <link rel="canonical" href="docs.upsidedownlabs.tech/courses/basics-of-neuroscience/module-5/index.html" />
+    <link rel="icon" href="../../../_static/logo_sqr_bgw.svg"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="prev" title="Module 4 : Passive Membrane Properties" href="../module-4/index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+    <meta name="docbuild:last-update" content="May 09, 2025"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Welcome to Upside Down Labs docs site!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo_black_hr_nbg.svg" class="logo__image only-light" alt="upsidedownlabs.github.io  documentation - Home"/>
+    <img src="../../../_static/logo_white_hr_nbg.svg" class="logo__image only-dark pst-js-only" alt="upsidedownlabs.github.io  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="ms-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../hardware/index.html">
+    Hardware
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../software/index.html">
+    Software
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../research/index.html">
+    Research
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../kits/index.html">
+    DIY Kits
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../guides/index.html">
+    Guides
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../index.html">
+    Courses
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+    DigiKey
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
+    Mouser
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://www.tindie.com/stores/upsidedownlabs/">
+    Tindie
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355">
+    Amazon India
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://store.upsidedownlabs.tech/">
+    Store India
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://t.ly/ExlaF">
+    GeM India
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instructables.com/member/Upside%20Down%20Labs/instructables/" title="Instructables" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/instructables.svg" class="icon-link-image" alt="Instructables"/></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../hardware/index.html">
+    Hardware
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../software/index.html">
+    Software
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../research/index.html">
+    Research
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../kits/index.html">
+    DIY Kits
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../guides/index.html">
+    Guides
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../index.html">
+    Courses
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+    DigiKey
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
+    Mouser
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.tindie.com/stores/upsidedownlabs/">
+    Tindie
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355">
+    Amazon India
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://store.upsidedownlabs.tech/">
+    Store India
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://t.ly/ExlaF">
+    GeM India
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instructables.com/member/Upside%20Down%20Labs/instructables/" title="Instructables" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/instructables.svg" class="icon-link-image" alt="Instructables"/></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Extracellular Electrophysiology Acquisition</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../open-ephys/index.html">Course Curriculum</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/theory-day-1/index.html">Theory Day 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/theory-day-2/index.html">Theory Day 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/theory-day-3/index.html">Theory Day 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/theory-day-4/index.html">Theory Day 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/exday1-nokit.html">Exercises Day 1: No Hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/exday2-nokit.html">Exercises Day 2: No Hardware</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Basics of Neuroscience</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Course Curriculum</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../module-2/index.html">Module 2: Human Nervous System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module-3/index.html">Module 3: Understanding the resting potential</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module-4/index.html">Module 4 : Passive Membrane Properties</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Module 5 : The Action Potential and its Propagation</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Courses</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Course Curriculum</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Module 5 : The Action Potential and its Propagation</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-5-the-action-potential-and-its-propagation">
+<span id="basics-of-neuroscience-module-5"></span><h1>Module 5 : The Action Potential and its Propagation<a class="headerlink" href="#module-5-the-action-potential-and-its-propagation" title="Link to this heading">#</a></h1>
+<p>The action potential is a rapid, temporary change in the electrical potential difference (voltage) of a neuron’s
+membrane, which is critical for transmitting signals down an axon. It is the fundamental mechanism by which
+neurons communicate with one another and other cells. Another word used for the action potential is “spike”.
+In this module, we will study the phases, mechanisms and factors influencing the propagation of the action potential. <a class="footnote-reference brackets" href="#id26" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<p>During the action potential, the electrical potential moves from a negative resting potential to a positive value,
+and goes undershoot, and then again reaches back to resting potential. <a class="footnote-reference brackets" href="#id26" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<section id="voltage-gated-ion-channels">
+<h2>5.1 Voltage Gated Ion Channels<a class="headerlink" href="#voltage-gated-ion-channels" title="Link to this heading">#</a></h2>
+<p>In the previous lessons, we have studied about the passive leak ion channels which are unable to generate rapid
+changes in the membrane potential of a neuron, so here we need a new type of ion channel called Voltage Gated
+Ion Channels.</p>
+<p>Voltage-gated channels are specialized membrane proteins that open or close in response to changes in the membrane potential. Their coordinated opening and closing
+allow neurons to transmit signals rapidly and effectively throughout the nervous system. The action potential arises from the activity of two primary voltage-gated ion
+channels: voltage-gated Na⁺ channels and K⁺ channels. These channels open and close at specific moments, generating ion flow, which leads to an action potential.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Voltage gated ion channels open when the neuron’s membrane potential reaches a certain value called threshold value. <a class="footnote-reference brackets" href="#id26" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+</div>
+</section>
+<section id="phases-of-the-action-potential">
+<h2>5.2 Phases of the Action Potential<a class="headerlink" href="#phases-of-the-action-potential" title="Link to this heading">#</a></h2>
+<p>The action potential consists of several distinct phases, each characterized by specific changes in membrane potential and ion movement :</p>
+<section id="resting-phase">
+<h3>Resting Phase<a class="headerlink" href="#resting-phase" title="Link to this heading">#</a></h3>
+<p>At the resting phase, the neuron has a resting potential of around -70mv, and the voltage-gated sodium and
+potassium channels are closed.</p>
+</section>
+<section id="depolarisation-phase-rising-phase-1">
+<h3>Depolarisation Phase (Rising Phase) <a class="footnote-reference brackets" href="#id26" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#depolarisation-phase-rising-phase-1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>A stimulus causes the membrane potential to become less negative.</p></li>
+<li><p>If depolarization reaches the threshold (around -55 mV), voltage-gated Na⁺ channels open.</p></li>
+<li><p>Na⁺ ions rush into the neuron due to an electrochemical gradient, leading to a rapid rise in membrane potential, often reaching +30 mV.</p></li>
+</ul>
+</section>
+<section id="repolarization-phase-falling-phase-1">
+<h3>Repolarization Phase (Falling Phase) <a class="footnote-reference brackets" href="#id26" id="id10" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#repolarization-phase-falling-phase-1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>At the depolarization peak, the Na⁺ channels close.</p></li>
+<li><p>After approx. 1ms, the sodium channel becomes inactive i.e., the channel gets blocked and the potassium channel becomes open.</p></li>
+<li><p>K⁺ ions exit the neuron, causing the membrane potential to decrease and return to the resting level.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Sodium channels open immediately, but potassium channels take some time . <a class="footnote-reference brackets" href="#id26" id="id12" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+</div>
+</section>
+<section id="hyperpolarization-phase-undershoot-1">
+<h3>Hyperpolarization Phase (Undershoot) <a class="footnote-reference brackets" href="#id26" id="id13" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#hyperpolarization-phase-undershoot-1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The membrane potential temporarily becomes more negative than the resting potential (around -80 mV) due to the prolonged opening of K⁺ channels.</p></li>
+<li><p>This phase makes the neuron less likely to fire another action potential immediately.</p></li>
+</ul>
+</section>
+<section id="return-to-resting-phase-1">
+<h3>Return to Resting Phase <a class="footnote-reference brackets" href="#id26" id="id15" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#return-to-resting-phase-1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>K⁺ channels close, and the sodium-potassium pump (Na⁺/K⁺ ATPase) restores the resting membrane potential.</p></li>
+<li><p>The neuron is ready to fire another action potential when appropriately stimulated.</p></li>
+</ul>
+</section>
+</section>
+<section id="action-potential-propagation">
+<h2>5.3 Action Potential Propagation<a class="headerlink" href="#action-potential-propagation" title="Link to this heading">#</a></h2>
+<p>Action potential propagation refers to the movement of an action potential (a rapid, transient electrical signal)
+along the membrane of an excitable cell, such as a neuron or muscle cell. The propagation of an action potential
+allows communication within the nervous system and muscle contraction. The process involves a sequence of events
+that ensures the signal is transmitted from the cell body to the axon terminal, where it can trigger
+neurotransmitter release or muscle contraction.</p>
+<p>Action potentials typically move in one direction along an axon, from the cell body toward the axon terminal. This is due to the refractory period, which prevents
+backward propagation. <a class="footnote-reference brackets" href="#id26" id="id17" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<section id="refractory-period">
+<h3>Refractory Period<a class="headerlink" href="#refractory-period" title="Link to this heading">#</a></h3>
+<p>The refractory period refers to the period of time following an action potential during which a neuron is unable
+to fire another action potential, or requires a stronger-than-normal stimulus to do so. This period ensures that
+action potentials propagate in one direction (without reversing course) and that the cell has enough time to
+reset its membrane potential to its resting state.</p>
+<section id="types-of-refractory-periods">
+<h4>Types of Refractory Periods<a class="headerlink" href="#types-of-refractory-periods" title="Link to this heading">#</a></h4>
+<section id="absolute-refractory-period-1">
+<h5>Absolute Refractory Period: <a class="footnote-reference brackets" href="#id26" id="id19" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#absolute-refractory-period-1" title="Link to this heading">#</a></h5>
+<p><strong>Definition:</strong> This is the period during and immediately after an action potential when the neuron is completely
+incapable of firing another action potential, no matter how strong the stimulus is.</p>
+<p><strong>Duration:</strong> It lasts from the beginning of depolarization to the end of repolarization (until the membrane potential returns to a sufficiently negative value).
+Cause: During the absolute refractory period, the voltage-gated Na⁺ channels are either open or inactivated, preventing any further depolarization. The inactivation gates of the Na⁺ channels are closed, meaning that no new action potential can be initiated until they reset.</p>
+<p><strong>Significance:</strong> This period ensures that the action potential travels in only one direction along the axon, as the region that has already undergone depolarization cannot be re-excited immediately. It also prevents the overlapping of action potentials.</p>
+</section>
+</section>
+<section id="relative-refractory-period-1">
+<h4>Relative Refractory Period: <a class="footnote-reference brackets" href="#id26" id="id21" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#relative-refractory-period-1" title="Link to this heading">#</a></h4>
+<p><strong>Definition:</strong> This is the period that follows the absolute refractory period, during which the neuron can generate another
+action potential, but only if the stimulus is stronger than normal.</p>
+<p><strong>Duration:</strong> The relative refractory period begins after repolarization, typically starting during the later stages of hyperpolarization, and it ends when the membrane potential returns to its resting level.</p>
+<p><strong>Cause:</strong> During this period, voltage-gated K⁺ channels are still open, causing the membrane potential to be more negative than usual (hyperpolarized). While some of the Na⁺ channels are back to their resting state and capable of reopening, not all of them are reset, so a stronger-than-usual stimulus is needed to overcome this state.</p>
+<p><strong>Significance:</strong> The relative refractory period allows for the possibility of a new action potential but prevents excessive firing, ensuring that neurons do not fire too frequently.</p>
+</section>
+<section id="factors-affecting-speed-of-propagation">
+<h4>Factors affecting speed of propagation<a class="headerlink" href="#factors-affecting-speed-of-propagation" title="Link to this heading">#</a></h4>
+<section id="myelination-1">
+<h5>Myelination : <a class="footnote-reference brackets" href="#id26" id="id23" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#myelination-1" title="Link to this heading">#</a></h5>
+<p><strong>Myelin Sheath:</strong> Many axons are covered in myelin, a fatty substance that insulates the axon and increases the speed of action potential propagation.</p>
+<p><strong>Nodes of Ranvier:</strong> Action potentials jump between nodes of Ranvier (gaps in the myelin sheath) through a process known as saltatory conduction. This significantly speeds up the transmission of impulses compared to continuous conduction in unmyelinated axons.</p>
+</section>
+<section id="diameter-of-axon-1">
+<h5>Diameter of Axon : <a class="footnote-reference brackets" href="#id26" id="id24" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#diameter-of-axon-1" title="Link to this heading">#</a></h5>
+<p>The diameter of the axon plays a crucial role in determining the speed at which an action potential travels along it. Specifically, a larger axon diameter results in faster transmission of the action potential. This is because a wider axon offers less resistance to the flow of ions. As a result, sodium ions are able to move more rapidly, which facilitates the quicker regeneration of the action potential in the adjacent segments of the axon. Essentially, the larger the axon, the more efficiently it can conduct electrical signals due to reduced ion flow resistance.</p>
+<div class="admonition-important-fact admonition">
+<p class="admonition-title">Important Fact</p>
+<p>When myelin is damaged, such as in demyelinating diseases like multiple sclerosis, the previously insulated areas of the axon become exposed. This leads to an increase in the capacitance of the exposed membrane, meaning it can store more charge. Consequently, this allows some of the electrical current to leak out of the axon, reducing the efficiency of signal transmission. As a result, the action potential that reaches these unmyelinated sections of the axon begins to weaken or decay, preventing it from being successfully propagated further along the axon. Essentially, the loss of myelin disrupts the normal flow of the electrical signal, leading to a failure in communication between nerve cells(i.e., action potential stops propagating).</p>
+</div>
+</section>
+</section>
+</section>
+</section>
+<section id="additional-info-section">
+<h2>Additional Info Section<a class="headerlink" href="#additional-info-section" title="Link to this heading">#</a></h2>
+<p>Tetrodotoxin (TTX) is a potent neurotoxin known for blocking nerve function, leading to paralysis and potentially
+death. It is found in certain animals, particularly pufferfish (fugu), but also in some other marine organisms,
+such as certain species of octopus, newts, and frogs.</p>
+<section id="mechanism-of-action">
+<h3>Mechanism of Action:<a class="headerlink" href="#mechanism-of-action" title="Link to this heading">#</a></h3>
+<p>Tetrodotoxin works by selectively binding to voltage-gated sodium channels in the membranes of nerve cells,
+blocking sodium ions from entering the cells. This interferes with the action potential, which is critical for
+nerve signaling.</p>
+<section id="blocking-sodium-channels">
+<h4>Blocking Sodium Channels:<a class="headerlink" href="#blocking-sodium-channels" title="Link to this heading">#</a></h4>
+<p>TTX binds to the outer pores of voltage-gated sodium channels, preventing the influx of sodium ions during depolarization. This blocks the generation of action potentials.</p>
+</section>
+<section id="effect-on-nerve-function">
+<h4>Effect on Nerve Function:<a class="headerlink" href="#effect-on-nerve-function" title="Link to this heading">#</a></h4>
+<p>The inability to generate action potentials prevents nerves from communicating with each other, leading to paralysis and respiratory failure.</p>
+</section>
+</section>
+<section id="sources-of-tetrodotoxin">
+<h3>Sources of Tetrodotoxin :<a class="headerlink" href="#sources-of-tetrodotoxin" title="Link to this heading">#</a></h3>
+<p>Tetrodotoxin is produced by certain bacteria, not directly by the animals that carry it. These animals accumulate TTX through their diet, usually from consuming TTX-producing microorganisms like certain Vibrio species.</p>
+<p>Despite its toxicity, many animals that carry TTX are not harmed by it due to adaptations in their sodium channels, which prevent TTX from binding effectively.
+Tetrodotoxin is extremely potent. As little as 2–3 mg of TTX is enough to kill a human. The mechanism by which it causes death is primarily through respiratory paralysis due to the blocking of nerve transmission.</p>
+</section>
+<section id="medical-research-and-uses">
+<h3>Medical Research and Uses :<a class="headerlink" href="#medical-research-and-uses" title="Link to this heading">#</a></h3>
+<p>Despite its toxicity, TTX has attracted attention in medical research for its potential as a painkiller and as a tool for studying sodium channel function.
+Pain Management: Due to its ability to block sodium channels and its potential to inhibit pain pathways without affecting other sensory functions, TTX has been investigated for use in localized pain treatment (e.g., in patients with chronic pain conditions like neuropathic pain or post-surgical pain).
+Sodium Channel Research: TTX is a valuable tool in neuroscience and pharmacology for studying the role of sodium channels in nerve function.</p>
+</section>
+</section>
+<section id="fun-fact">
+<h2>Fun Fact:<a class="headerlink" href="#fun-fact" title="Link to this heading">#</a></h2>
+<p>Pufferfish is eaten for its delicate, subtle flavor and the tingling, numbing sensation that the TTX causes when eaten in small doses. <a class="footnote-reference brackets" href="#id27" id="id25" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p>
+<p class="rubric">References</p>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id26" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id2">2</a>,<a role="doc-backlink" href="#id5">3</a>,<a role="doc-backlink" href="#id8">4</a>,<a role="doc-backlink" href="#id10">5</a>,<a role="doc-backlink" href="#id12">6</a>,<a role="doc-backlink" href="#id13">7</a>,<a role="doc-backlink" href="#id15">8</a>,<a role="doc-backlink" href="#id17">9</a>,<a role="doc-backlink" href="#id19">10</a>,<a role="doc-backlink" href="#id21">11</a>,<a role="doc-backlink" href="#id23">12</a>,<a role="doc-backlink" href="#id24">13</a>)</span>
+<p><a class="reference external" href="https://openbooks.lib.msu.edu/neuroscience/chapter/action-potentials/">Henley, C. (2021, January 1). Action Potentials. Pressbooks.</a></p>
+</aside>
+<aside class="footnote brackets" id="id27" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id25">2</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://www.jstage.jst.go.jp/article/pjab/84/5/84_5_147/_article/-char/en">Toshio NARAHASHI, Tetrodotoxin, Proceedings of the Japan Academy, Series B, 2008, Volume 84, Issue 5, Pages 147-154, Released on J-STAGE May 15, 2008, Online ISSN 1349-2896, Print ISSN 0386-2208, https://doi.org/10.2183/pjab.84.147</a></p>
+</aside>
+</aside>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../module-4/index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Module 4 : Passive Membrane Properties</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#voltage-gated-ion-channels">5.1 Voltage Gated Ion Channels</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phases-of-the-action-potential">5.2 Phases of the Action Potential</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resting-phase">Resting Phase</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#depolarisation-phase-rising-phase-1">Depolarisation Phase (Rising Phase) </a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repolarization-phase-falling-phase-1">Repolarization Phase (Falling Phase) </a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hyperpolarization-phase-undershoot-1">Hyperpolarization Phase (Undershoot) </a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#return-to-resting-phase-1">Return to Resting Phase </a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#action-potential-propagation">5.3 Action Potential Propagation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#refractory-period">Refractory Period</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-refractory-periods">Types of Refractory Periods</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#absolute-refractory-period-1">Absolute Refractory Period: </a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-refractory-period-1">Relative Refractory Period: </a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-affecting-speed-of-propagation">Factors affecting speed of propagation</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#myelination-1">Myelination : </a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#diameter-of-axon-1">Diameter of Axon : </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-info-section">Additional Info Section</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mechanism-of-action">Mechanism of Action:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#blocking-sodium-channels">Blocking Sodium Channels:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#effect-on-nerve-function">Effect on Nerve Function:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sources-of-tetrodotoxin">Sources of Tetrodotoxin :</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medical-research-and-uses">Medical Research and Uses :</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fun-fact">Fun Fact:</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/upsidedownlabs/upsidedownlabs.github.io/edit/maincourses/basics-of-neuroscience/module-5/index.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../../_sources/courses/basics-of-neuroscience/module-5/index.rst">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, Upside Down Labs.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="last-updated">
+  Last updated on May 09, 2025.
+  <br/>
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

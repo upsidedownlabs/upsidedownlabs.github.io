@@ -1,4 +1,4 @@
-.. _module-4:
+.. _basics-of-neuroscience-module-4:
 
 Module 4 : Passive Membrane Properties
 ########################################
@@ -52,6 +52,7 @@ Axial resistance refers to resistance to the flow of electrical current along th
 .. todo:: ADD RESISTANCE FORMULA
 
 .. admonition:: CONDUCTANCE: (Additional info section)
+
    It is the ease with which electric current can flow through a membrane. In the context of neurons, it refers to the ease with which ions can move across the neuronal membrane, meaning a higher conductance indicates a lower resistance, allowing for easier passage of electrical signals through the neuron. 
 
 .. todo:: ADD CONDUCTANCE FORMULA
