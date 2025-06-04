@@ -65,7 +65,7 @@ Before we begin, you'll need to install a few tools on your computer. Don't worr
       - Create a strong password
       - Verify your account through email
 
-4. **VSCode (Visual Studo Code)**
+4. **VSCode (Visual Studio Code)**
    
    .. dropdown:: Microsoft Store (Recommended for Windows)
       :open:
@@ -97,7 +97,7 @@ Before we begin, you'll need to install a few tools on your computer. Don't worr
 
       Visit Visual Studio Code Website: https://code.visualstudio.com/download
 
-   To learn about VSCode and it's setup visit: https://code.visualstudio.com/docs
+   To learn about VSCode and its setup visit: https://code.visualstudio.com/docs
 
 
 🛠️ Setup Steps (Getting Everything Ready)
@@ -319,7 +319,45 @@ Once you're happy with your changes, here's how to submit them to UpsideDown Lab
    
    .. tab-item:: Using GUI
 
-      VSCODE
+      **Steps to Commit and Push using VS Code GUI**
+
+      After you have made all the changes and contributions to documentation **Save your changes ``Ctrl + S``**.
+
+      **Step 1: Open the Source Control panel**
+      
+      - Click the Source Control icon on the left sidebar (looks like a branch icon) or press ``Ctrl + Shift + G``.
+
+      **Step 2: Stage your changes**
+      
+      - You’ll see a list of changed files.
+      - Hover over the file and click the plus icon (+) to stage it or click **"Stage All Changes"** at the top.
+
+      **Step 3: Write a commit message**
+      - Type a message in the box at the top that says **"Message"** (press ``Ctrl+Enter`` to commit on 'main'). It's mandatory to write a message.  
+         
+      Example:
+      ::
+         Update README and fix typos
+
+      **Step 4: Commit your changes**
+
+      - Press ``Ctrl + Enter`` OR click the ✅ checkmark icon at the top of the Source Control panel.
+
+      **Step 5: Push to GitHub**
+      
+      - In the bottom status bar or top right of Source Control, click the **"… menu" (More Actions) > "Push"** or click the **"Synchronize Changes"** icon 🔄 in the bottom left.
+
+      **VS Code will push your commit to GitHub.**
+
+      **For the First Time? You Might Be Prompted to Sign In**
+      
+      If this is your first time using GitHub with VS Code, it may ask you to:
+
+      - Sign in with GitHub
+      - Authorize VS Code to access your repos
+      - Configure your Git username/email (it may guide you through it).
+
+
 
 **What happens next:** The Upside Down Labs team will review your changes and either accept them or ask for modifications.
 
