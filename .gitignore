@@ -6,6 +6,7 @@ public/*
 .*project
 .settings
 .envrc
+.venv/*
 .vscode
 .history/
 *.vsix
