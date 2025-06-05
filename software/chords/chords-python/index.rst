@@ -68,7 +68,7 @@ Follow these steps to set up and install Chords-Python:
    - You can download the Chords-Python repository from GitHub by visiting the following link: `Chords-Python <https://github.com/upsidedownlabs/Chords-Python/>`_.
    - Or, You can clone the repository using Git by running the following command:
 
-   .. code-block:: python
+   .. code-block:: console
       
       git clone https://github.com/upsidedownlabs/Chords-Python.git
 
@@ -80,13 +80,13 @@ Follow these steps to set up and install Chords-Python:
    - Navigate to the directory where you have cloned the repository.
    - Run the following command to create a virtual environment:
 
-   .. code-block:: python
+   .. code-block:: console
       
       python -m venv venv
 
    - To activate the virtual environment:
       - **On Windows**:
-      .. code-block:: python
+      .. code-block:: console
 
          .\venv\Scripts\activate
 
@@ -101,7 +101,7 @@ Follow these steps to set up and install Chords-Python:
 
    - In the terminal or command prompt, run the following command to install the dependencies needed to run the python script listed in the `requirements.txt` file:
 
-   .. code-block:: python
+   .. code-block:: console
       
       pip install -r requirements.txt
 
