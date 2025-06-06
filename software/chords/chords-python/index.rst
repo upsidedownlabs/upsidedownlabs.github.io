@@ -116,12 +116,16 @@ Follow these steps to set up and install Chords-Python:
 Click on the generated link to open the web interface.
 
 .. figure:: ./media/light-interface.*
-    :align: center
-    :alt: Interface in Light Mode
+   :align: center
+   :alt: Interface in Light Mode
+   
+   Interface in Light Mode
 
 .. figure:: ./media/dark-interface.*
-    :align: center
-    :alt: Interface in Dark Mode
+   :align: center
+   :alt: Interface in Dark Mode
+
+   Interface in Dark Mode
 
 Connection
 **********
@@ -138,7 +142,7 @@ Wi-Fi
 =====
 
 1. Upload the Wi-Fi firmware through the ``Chords-Arduino-Firmware`` repository
-2. Turn on the device and connect to the same Wi-Fi network as your device
+2. Turn on the device and connect to the access point created by the device (e.g., ``npg-lite-2``)
 3. In the web interface:
 
    - Click the **Wi-Fi** button
@@ -188,8 +192,10 @@ To use CSV logging:
    - File will be saved in the same folder
 
 .. figure:: ./media/csv.*
-    :align: center
-    :alt: CSV Logging
+   :align: center
+   :alt: CSV Logging
+
+   CSV Logging
 
 Applications
 ************
@@ -233,8 +239,10 @@ Features
 A GUI window will appear, displaying the real-time ECG signal along with the calculated heart rate.
 
 .. figure:: ./media/heartbeat_ecg.*
-    :align: center
-    :alt: Heart Rate with ECG
+   :align: center
+   :alt: Heart Rate with ECG
+
+   Heart Rate with ECG
 
 2. `EMG with Envelope`
 ======================
@@ -272,8 +280,10 @@ Features
 A GUI window will appear, displaying the real-time EMG signal along with the calculated EMG Envelope.
 
 .. figure:: ./media/emgenvelope.*
-    :align: center
-    :alt: EMG with Envelope
+   :align: center
+   :alt: EMG with Envelope
+
+   EMG with Envelope
 
 3. `EOG with Blinks`
 ========================erview
@@ -304,8 +314,10 @@ Features
 A GUI window will appear, displaying the real-time EOG signal along with the Blinks marked as Red dot.
 
 .. figure:: ./media/eog.*
-    :align: center
-    :alt: EOG with Blinks
+   :align: center
+   :alt: EOG with Blinks
+
+   EOG with Blinks
 
 4. `EEG with FFT`
 *****************
@@ -349,8 +361,10 @@ Features
 A GUI window will appear, displaying the real-time EEG signal along with the calculated FFT and Brainwave power distribution.
 
 .. figure:: ./media/ffteeg.*
-    :align: center
-    :alt: EEG with FFT
+   :align: center
+   :alt: EEG with FFT
+
+   EEG with FFT
 
 5. `EEG Tug of War Game`
 ========================
@@ -390,8 +404,10 @@ Features
 The game window will open, featuring buttons for **START/RESTART**, **PLAY/PAUSE**, and **EXIT**. These buttons offer intuitive control, allowing players to easily start, pause, resume, or exit the game as needed.
 
 .. figure:: ./media/game.*
-    :align: center
-    :alt: EEG Tug of War
+   :align: center
+   :alt: EEG Tug of War
+
+   EEG Tug of War
 
 For detailed instructions, check out the `EEG Tug of War Game <https://www.instructables.com/Play-Tug-of-War-Game-With-Your-Mind-Using-EEG-1/#ible-footer-portal>`_ Instructable.
 
@@ -432,8 +448,10 @@ Features
 A GUI window will appear, showing all calibration messages, followed by the game starting, and finally displaying the game with the beetle.
 
 .. figure:: ./media/beetle.*
-    :align: center
-    :alt: EEG Beetle Game
+   :align: center
+   :alt: EEG Beetle Game
+
+   EEG Beetle Game
 
 7. `GUI`
 ========
@@ -466,8 +484,10 @@ Features
 A GUI window will appear that shows the data in real-time.
 
 .. figure:: ./media/gui.*
-    :align: center
-    :alt: GUI
+   :align: center
+   :alt: GUI
+
+   GUI
 
 8. `EOG Keystroke Emulator`
 ===========================
@@ -501,8 +521,10 @@ Features
 A small window appears in the corner, displaying a *Connect* button. Once connected, a *Start* button becomes visible. Pressing the *Start* button initiates blink detection, and each detected blink triggers a spacebar key press.
 
 .. figure:: ./media/keystroke.*
-    :align: center
-    :alt: Keystroke
+   :align: center
+   :alt: Keystroke Emulator
+
+   Keystroke Emulator
 
 9. `CSV Plotter`
 ================
@@ -541,8 +563,10 @@ Features
 A small pop-up will appear, providing options to load the file, select the channel, and plot the data.
 
 .. figure:: ./media/csvplotter.*
-    :align: center
-    :alt: CSV Plotter
+   :align: center
+   :alt: CSV Plotter
+
+   CSV Plotter
 
 Create Custom application
 **************************
