@@ -26,7 +26,7 @@ Features
 +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Applications              | Provides an interface to run multiple applications simultaneously via the LSL stream.                                                                                             |
 +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Create Own Application    | Allows users to develop and integrate their own applications with the system.                                                                                                     |
+| Create Custom Application | Allows users to develop and integrate their own applications with the system.                                                                                                     |
 +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Software Requirements  
@@ -107,7 +107,7 @@ Follow these steps to set up and install Chords-Python:
 
    - This will install all the necessary Python libraries and dependencies for Chords-Python.
 
-5. To launch the flask server, run the following command :
+5. To launch the Flask server, run the following command :
 
    .. code-block:: python
       
@@ -544,7 +544,7 @@ A small pop-up will appear, providing options to load the file, select the chann
     :align: center
     :alt: CSV Plotter
 
-Create custom application
+Create Custom application
 **************************
 
 You can create custom applications using the provided framework by following these steps:
