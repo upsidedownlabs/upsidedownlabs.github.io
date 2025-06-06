@@ -286,8 +286,7 @@ A GUI window will appear, displaying the real-time EMG signal along with the cal
    EMG with Envelope
 
 3. `EOG with Blinks`
-========================erview
-=========
+====================
 
 The **EOG with Blinks** is a Python-based application designed to visualize and detect eye blinks in real-time using Electrooculography (EOG) signals. Built with the PyQt5 framework and PyQtGraph for plotting, the application connects to an LSL (Lab Streaming Layer) stream to acquire EOG data, processes the signal using a low-pass filter, and detects blinks based on dynamic thresholds. The application provides a dual-plot interface to display the filtered EOG signal and detected blinks, making it a useful tool for real-time monitoring and analysis of EOG data.
 
@@ -320,15 +319,15 @@ A GUI window will appear, displaying the real-time EOG signal along with the Bli
    EOG with Blinks
 
 4. `EEG with FFT`
-*****************
+=================
 
 Overview
-=========
+--------
 
 The **EEG with FFT and Brainwave Power** is a Python-based application designed to visualize and analyze Electroencephalography (EEG) signals in real-time. It connects to an EEG data stream using the Lab Streaming Layer (LSL) protocol, processes the signal to remove noise, and performs Fast Fourier Transform (FFT) to compute the power of different brainwave frequency bands (Delta, Theta, Alpha, Beta, and Gamma). The application provides a graphical user interface (GUI) built with `PyQt5` and `pyqtgraph` for real-time visualization of raw EEG signals, FFT results, and brainwave power distribution.
 
 Features
-========
+--------
 
 +-----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
 | Features                                                              | Description                                                                                                               |
