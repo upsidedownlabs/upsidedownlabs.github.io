@@ -57,6 +57,8 @@ Once you are all set, it is time to upload the code to your development board. G
 Copy the sketch and paste it into Arduino IDE.
 Go to tools, select your board, and the correct COM port. Now, hit the upload button.
 
+.. _using-chords-python:
+
 Opening Chords-Python
 *********************
 

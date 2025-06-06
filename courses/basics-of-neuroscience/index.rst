@@ -14,3 +14,15 @@ Course Curriculum
    :maxdepth: 1
 
    module-3/index
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+   module-4/index
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+   module-5/index
