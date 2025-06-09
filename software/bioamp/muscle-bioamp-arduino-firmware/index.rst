@@ -152,12 +152,14 @@ Make sure the sticky side of electrodes touches your skin firmly.
 3. Select the correct COM port (same one from Arduino IDE).
 4. Click Connect.
 
+.. important::
+
+    - Remember to close the **Serial Monitor** in **Arduino IDE** before starting the Chords Visualizer.
+    - Always **disconnect your laptop charger** while testing. Why? Charging can introduce 50 Hz noise that affects the signal.
+
+
 🎉 Now move your hand or clench your fist — you’ll see real-time EMG waves on the screen!
-
-.. important:: 
     
-    Always disconnect your laptop charger while testing. Why? Charging can introduce 50 Hz noise that affects the signal.
-
 .. _experiments step by step:
 
 Let's explore all the experiments step by step
@@ -337,6 +339,8 @@ Let's explore all the experiments step by step
     - Strong Flex → Envelope peaks higher.
     - Envelope changes smoothly, making thresholds easy to detect.
 
+    .. note::
+        You may also visit our Instructables page: https://www.instructables.com/Recording-Publication-Grade-Muscle-Signals-Using-B/
 .. Experiment 4
 
 .. dropdown:: 4. Claw Controller
@@ -708,25 +712,365 @@ Let's explore all the experiments step by step
     - **Continue Reps** → Each distinct flex increments the score by one.  
     - **Adjust Threshold** → If your muscle is very strong, raise **THRESHOLD** (e.g., from 0.020 to 0.030). If weak, lower it (e.g., to 0.015).
 
+    .. note::
+        To learn about this project, visit our Instructables page for detailed guide: https://www.instructables.com/Making-a-Muscle-Strength-Game-Using-Muscle-BioAmp-/
+    
+
 .. dropdown:: 8. EMG Scrolling
  
-    To be documented.
+    The EMG Scrolling sketch lets you scroll content on a screen—either a web page, a text document, 
+    or a TFT/OLED display—using only muscle contractions. Flexing above one threshold scrolls “down,” and 
+    relaxing below another threshold scrolls “up.” This can be a hands-free way to navigate long documents or 
+    assist users with limited mobility.
+
+    .. note::
+    
+        To learn about this project, visit our Instructables page for detailed guide: https://www.instructables.com/Scroll-YouTube-Shorts-Using-2-Channel-EMG-Signals/
+
 
 .. dropdown:: 9. 2 Channel LCD BarGraph
- 
-    To be documented.
+
+    The 2 Channel LCD BarGraph sketch reads EMG signals from two separate channels (two BioAmp sensors) 
+    and displays their envelopes side by side on a 16×2 LCD as two horizontal bar graphs. 
+    This allows you to compare left vs. right muscle groups (e.g., left bicep vs. right bicep) in real time. 
+    It’s an educational tool for understanding bilateral muscle activation and for developing applications like 
+    adaptive prosthetics that monitor two muscle groups simultaneously.
+
+    .. note::
+        To learn about this project, visit our Instructables page for detailed guide: https://www.instructables.com/Visualizing-2-Channel-EMG-on-LCD-Display-Module/
 
 .. dropdown:: 10. EMG Rehab Game
  
-    To be documented.
+    
+    **1. Program Purpose & Overview**
+
+    The EMG Rehab Game sketch is a rehabilitation-focused game that challenges patients (or users) 
+    to hit specific EMG thresholds for set durations. For example, the game might require a user to hold 
+    a muscle contraction for 2 seconds, then relax for 2 seconds, repeating a cycle 10 times. 
+    This is helpful in post-injury or post-surgery rehab, where therapists want to measure both muscle strength (peak envelope) 
+    and endurance (time held). The game might display feedback on an LCD or via Serial Monitor, encouraging the patient to complete each stage.
+
+
+    **2. How It Works**
+
+    1.  **Initialize Hardware & Variables**
+
+        - In ``setup()``, call:
+        
+        ::
+            
+            pinMode(A0, INPUT);                         // EMG sensor on A0
+            Serial.begin(115200);                       // For debugging & prompts
+            Wire.begin();                               // For I²C if using LCD
+            LiquidCrystal_I2C lcd(0x27, 16, 2);         // If using I²C LCD
+            lcd.init();
+            lcd.backlight();
+
+            enum State { HOLD, REST, COMPLETE };
+            State currentState = HOLD;
+            unsigned long stateStartTime = millis();
+            int cycleCount = 0;
+            const int MAX_CYCLES = 10;                  // Total cycles
+            const unsigned long HOLD_DURATION = 2000;   // 2 seconds
+            const unsigned long REST_DURATION = 2000;   // 2 seconds
+            const float HOLD_THRESHOLD = 0.030;         // Envelope threshold for “hold”
+            const float REST_THRESHOLD = 0.005;         // Envelope threshold for “rest”
+            float envelope = 0;
+
+        - This sets up the state machine, cycle counter, timings, and thresholds.
+
+    2.  **Sampling, Filtering, and Envelope**
+
+        - In ``loop()``, sample at ~500 Hz (every 2 ms), apply band-pass filter, then compute the envelope:
+        
+        ::
+            
+            unsigned long nowMicros = micros();
+            if (nowMicros - lastMicros >= 2000) {       // 2000 µs = 2 ms
+                lastMicros = nowMicros;
+                int rawValue = analogRead(A0);
+                float filtered = applyBandPassFilter(rawValue);
+                float rectified = abs(filtered);
+                envelope = alpha * rectified + (1.0 - alpha) * prevEnvelope;
+                prevEnvelope = envelope;
+            }
+
+    3.  **State Machine Logic**
+
+        - Track which stage (HOLD, REST, or COMPLETE) the user is in, with ``stateStartTime`` marking the start of that stage:
+        
+        ::
+            
+            unsigned long now = millis();
+            switch (currentState) {
+                case HOLD:
+                    if (cycleCount == 0 && now - stateStartTime < 100) {
+                        displayMessage("Hold for 2s");
+                    }
+                    if (envelope >= HOLD_THRESHOLD) {
+                        if (now - stateStartTime >= HOLD_DURATION) {
+                            currentState = REST;
+                            stateStartTime = now;
+                            displayMessage("Rest for 2s");
+                        }
+                    } else {
+                        stateStartTime = now;  // Reset hold timer if envelope dips
+                    }
+                    break;
+
+                case REST:
+                    if (envelope <= REST_THRESHOLD) {
+                        if (now - stateStartTime >= REST_DURATION) {
+                            cycleCount++;
+                            if (cycleCount < MAX_CYCLES) {
+                                currentState = HOLD;
+                                stateStartTime = now;
+                                displayMessage("Cycle " + String(cycleCount + 1) + "/10: Hold");
+                            } else {
+                                currentState = COMPLETE;
+                                displayMessage("Exercise Complete!");
+                            }
+                        }
+                    } else {
+                        stateStartTime = now;  // Reset rest timer if envelope rises
+                    }
+                    break;
+
+                case COMPLETE:
+                    // Optionally tone a buzzer or stop processing
+                    break;
+            }
+
+        - **displayMessage(String msg)** can either clear/update the LCD or print via Serial:
+        
+        ::
+            
+            void displayMessage(String msg) {
+                lcd.clear();
+                lcd.setCursor(0, 0);
+                lcd.print(msg);
+            }
+            
+            // Or if no LCD:
+            
+            void displayMessage(String msg) {
+                Serial.println(msg);
+            }
+
+    4.  **Loop Forever**
+
+        - Each iteration: sample → filter → envelope → update state → display prompt → delay.
+
+    **3. Perform the Hardware**
+
+    - Refer to :ref:`Connect Your Hardware<Connect Your Hardware>` for sensor wiring.
+    - Additionally connect (if using LCD and/or buzzer):
+
+    - **BioAmp Sensor → Arduino**  
+        
+      - BioAmp VCC → Arduino 5 V  
+      - BioAmp GND → Arduino GND  
+      - BioAmp OUT → Arduino A0  
+
+    - **Optional I²C LCD**  
+        
+      - LCD VCC → Arduino 5 V  
+      - LCD GND → Arduino GND  
+      - LCD SDA → Arduino A4 (Uno/Nano)  
+      - LCD SCL → Arduino A5 (Uno/Nano)  
+
+    - **Optional Buzzer on D10**  
+        
+      - Buzzer + → Arduino D10  
+      - Buzzer – → Arduino GND  
+
+    - Tie all grounds together.
+
+    **4. Firmware Upload**
+
+    - For this project, navigate to `10_EMG_Rehab_Game/EMG_Rehab_Game.ino` and click **Open**.
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    - **Also Install & Verify LCD Library (if using LCD)**
+    - Go to **Sketch → Include Library → Manage Libraries…**  
+    - Search for **“LiquidCrystal I2C”** and install **LiquidCrystal I2C by Frank de Brabander**.  
+    - Confirm the I²C address (e.g., `0x27` or `0x3F`) in code matches your module.
+
+    **5. Visualize Your Signal**
+
+    - **On-Device LCD Prompts**
+
+    - After upload, the LCD shows:
+        
+    ::
+
+        Hold for 2s
+        Cycle 1/10
+
+        
+    - After holding 2 seconds above `0.030`, it updates to:
+        
+    ::
+
+        Rest for 2s
+        Cycle 1/10
+    
+    
+    - After resting 2 seconds below `0.005`, it updates to:
+        
+    ::
+
+        Hold for 2s
+        Cycle 2/10
+        
+    
+    - Repeat until:
+        
+    ::
+
+        Exercise Complete!
+    
+
+    - **Serial Monitor (Optional)**
+
+    - Open **Tools → Serial Monitor** (115200 baud).  
+    - The code prints the same messages via Serial, e.g.:
+        
+    ::
+
+        Hold for 2s
+        Rest for 2s
+        Cycle 3/10: Hold
+        …
+        Exercise Complete!
+    
+
+    - **Serial Plotter (Optional)**
+
+    1. Open **Tools → Serial Plotter** (115200 baud).  
+    2. Modify the sketch so each loop also prints:
+        
+    ::
+        
+        Serial.println(envelope);
+
+    3. The plotter shows the envelope waveform, confirming threshold crossings.
+
+    **6. Running & Observing Results**
+
+    4.  **Program Start**  
+        - LCD or Serial displays:
+        
+    ::
+
+        Hold for 2s
+        Cycle 1/10
+    
+
+    5.  **Stage 1: Hold for 2 seconds**  
+        - Flex your muscle so ``envelope >= 0.030`` continuously.  
+        - If envelope dips below `0.030` before 2 s, timer resets.
+        - If held for 2000 ms, code switches to **REST**:
+        
+    ::
+
+        Rest for 2s
+        Cycle 1/10
+        
+    6.  **Stage 2: Rest for 2 seconds**  
+        - Relax so ``envelope <= 0.005`` continuously.  
+        - If envelope rises above `0.005` too early, rest timer resets.
+        - After 2000 ms, `cycleCount` increments to 1, code switches to **HOLD** again:
+        
+    ::
+
+        Hold for 2s
+        Cycle 2/10
+  
+    7.  **Repeat for 10 Cycles**  
+        - Each hold/rest cycle increments `cycleCount`.  
+        - Optionally, buzzer beeps once.
+        - After Cycle 10, switches to **COMPLETE** and displays:
+        
+    ::
+
+        Exercise Complete!
+        
+    8.  **Breaking Early**  
+        - If envelope dips below `HOLD_THRESHOLD` during a hold stage, you restart the 2 s hold.  
+        - If envelope rises above `REST_THRESHOLD` during rest, you restart the 2 s rest.
+
+    .. dropdown:: Troubleshooting
+
+        - **Message Doesn’t Appear on LCD**  
+        
+          - Confirm **LiquidCrystal I2C** is installed and correct I²C address.  
+          - Check SDA → A4, SCL → A5 wiring (or correct pins on other boards).  
+          - Adjust LCD contrast potentiometer.
+
+        - **Envelope Never Reaches HOLD_THRESHOLD**  
+        
+          - Use **Serial Plotter** to watch raw envelope.  
+          - Lower **HOLD_THRESHOLD** (e.g., 0.020) so moderate flex registers.  
+          - Ensure BioAmp sensor electrodes are firmly attached and grounds are common.
+
+        - **Session Progresses Too Quickly or Slowly**  
+        
+          - If hold stage completes too easily, raise **HOLD_THRESHOLD** (e.g., to 0.035).  
+          - If rest stage never finishes, raise **REST_THRESHOLD** (e.g., to 0.010).
+
+        - **Buzzer Doesn’t Sound**  
+        
+          - Verify buzzer + → D10 and buzzer – → GND.  
+          - Ensure code calls:
+              
+        ::
+            
+            tone(10, 1000, 500);
+
+          - Adjust frequency (1000 Hz) or duration (500 ms) as needed.
+
+        - **Serial Monitor Displays Gibberish**  
+        
+          - Confirm Serial Monitor baud is **115200**.
+
+        - **LCD Displays Incomplete Text**  
+        
+          - The code calls ``lcd.clear()`` before each new prompt. If remnants remain, insert:
+            
+        ::
+            
+            delay(50);
+
+        to allow the LCD to clear fully.
+
 
 .. dropdown:: 11. EMG Counter
  
-    To be documented.
+    The EMG Counter sketch keeps a running count of how many distinct muscle
+    contraction events occur within a session. Each time your EMG envelope
+    crosses above a specified threshold (and had previously been below),
+    the counter increments by one. This is useful for tracking the number of
+    repetitions you perform in an exercise or for monitoring muscle activation events.
+    
+    .. note::
+        To learn about this project, visit our Instructables page for detailed guide: https://www.instructables.com/Exercise-Monitoring-Using-Wearable-Muscle-Sensor-E/
 
 .. dropdown:: 12. 2 Channel EMG Game Controller
  
-    To be documented.
+    The 2CH EMG Game Controller sketch allows two EMG channels (two separate Muscle BioAmp sensors) 
+    to act as independent controls for navigating a cursor or character in a game environment. 
+    Channel 1 controls horizontal movement (left/right), and Channel 2 controls vertical movement (up/down).
+    By flexing different muscle groups, you can move a dot on a TFT screen, send arrow-key presses to a PC, 
+    or manipulate a sprite in a web application.
+
+    For a detailed walkthrough, follow along with the YouTube tutorial for this project:
+
+    .. youtube:: zJ_Ei5tvHiQ
+
+    .. note::
+        You may also visit our Instructables page for detailed guide: https://www.instructables.com/Controlling-Video-Games-Using-Muscle-Signals-EMG/
+
+
 
 
 ✅ **And That’s it!, Congrats on making your neuroscience project using BioAmp Hardware.**
