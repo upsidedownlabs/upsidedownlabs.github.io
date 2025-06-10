@@ -161,15 +161,22 @@ There are two ways use Gel Electrods or Muscle BioAmp Band.
     - The onboard LED labeled **“L”** may blink during upload. When you see **“Done uploading”**, the new firmware is running.
 
 
-9.	Open Serial Monitor
+9. Open Serial Monitor and Serial Plotter (Optional)
 
-        - In the IDE, click **Tools → Serial Monitor** (or press ``Ctrl + Shift + M``).
-        - Ensure the baud rate at the bottom right of the Serial Monitor is set to ``115200`` (or whatever the sketch’s Serial.begin(115200); line specifies).
-        - You should start seeing lines of numbers. Those are your readings.
-  
+   - For visualization, we suggest `Chords Web <https://chords.upsidedownlabs.tech>`_. However, if you're learning to develop, you might also find these options useful.
+
+   - For Serial Monitor: In the IDE, click **Tools → Serial Monitor** (or press ``Ctrl + Shift + M``).
+   - Ensure the baud rate at the bottom right of the Serial Monitor is set to ``115200`` (or whatever the sketch’s Serial.begin(115200); line specifies).
+   - You should start seeing lines of numbers. Those are your readings.
+
+
+   - For Serial Plotter: In the IDE, click **Tools → Serial Plotter**.
+   - You should start seeing plotting of graph and visualize the waves.
+
 .. important::
 
-    - Remember to close the **Serial Monitor** in **Arduino IDE** before starting the Chords Visualizer.
+
+    - Remember to close the **Serial Monitor & Serial Plotter** in **Arduino IDE** before starting the Chords Visualizer.
 
 .. _Visualize Your Muscle Signals!:
 
