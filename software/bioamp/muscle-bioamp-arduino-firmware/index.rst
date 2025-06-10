@@ -238,7 +238,7 @@ Let's explore all the experiments step by step
     - Relax Muscle → Values return toward the midpoint.
    
     .. note::
-        
+
         For a detailed guide, visit our Instructables page: https://www.instructables.com/Visualizing-Muscle-Signals-EMG-Using-Worlds-Most-A/
     .. Experiment 2
 
