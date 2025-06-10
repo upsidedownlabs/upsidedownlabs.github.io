@@ -3,7 +3,8 @@
 Muscle (EMG) BioAmp Firmware
 ###############################
 
-**What is Electromyography (EMG)?**
+What is Electromyography (EMG)?
+====================================
 
 Electromyography (EMG) `[1] <https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/electromyography-emg>`_ is a technique for evaluating and recording the electrical activity produced by skeletal muscles.
 EMG is performed using an instrument called an electromyograph to produce a record called an electromyogram. 
@@ -33,7 +34,7 @@ With the hardware in your hands, you're just a few steps away from unlocking its
 .. dropdown:: Simply Download (recommended for beginners)
     :open:
 
-    - Go to the GitHub page: https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware
+    - Go to the GitHub page: `Muscle BioAmp Arduino Firmware <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware>`_
     - Click the green “**Code**” button > Download ZIP
     - Unzip the folder and save it somewhere easy to find.
 
@@ -58,7 +59,7 @@ Before you start using the kit, please download or open the following:
 2. **Chords Website**
    
    - We will use Chords Website to visualize the Muscle Signals!
-   - Open this website: https://chords.upsidedownlabs.tech
+   - Open this website: `Chords Web <https://chords.upsidedownlabs.tech>`_
 
 .. _Connect Your Hardware:
 
@@ -77,25 +78,29 @@ Before you start using the kit, please download or open the following:
 
 It’s just like putting together a puzzle!
 
-**Step 4: Prepare the Electrodes**
+**Step 4: Skin Preparation and Electrodes Placement**
 
 There are two ways use Gel Electrods or Muscle BioAmp Band.
 
-👉 For detailed skin prep visit: :ref:`Skin Preparation Guide <skin-preparation>`
-
 - **Using Gel Electrodes:**
 
-1. Place the 3 gel electrodes on a clean surface.
-2. Prepare the skin where you'll place them.
-3. Use an alcohol swab or Nuprep Gel to clean the area (this helps get clearer signals).
-4. Find your ulnar nerve area on your forearm (refer diagram below).
-5. Attach the electrodes:
-   
-   - ``IN+`` (positive): Place on the **belly of the biceps muscle**.
-   - ``IN–`` (negative): Place **2–3 cm away from IN+** along the direction of the muscle fibers.
-   - ``REF`` (reference): Place on a **bony or electrically neutral area**, like the **elbow bone or wrist joint**.
+1. **Prepare your skin**
 
-Make sure the sticky side of electrodes touches your skin firmly.
+   - Choose the area where you'll place the electrodes.
+   - Clean the skin using **an alcohol swab** or **Nuprep Gel** to remove oils and dead cells — this improves signal clarity.
+
+   .. note::
+
+      Need help with skin prep? Check out the full guide here: :ref:`Skin Preparation Guide <skin-preparation>`
+
+2. **Attach the wires to the electrodes, then attach the electrodes to the skin**
+
+   - ``IN+`` (positive): Place this on your **inner forearm**.
+   - ``IN–`` (negative): Place **2–3 cm away from IN+**, following the direction of the muscle fibers.
+   - ``REF`` (reference): Place on a **bony or electrically neutral area**, such as the **elbow bone** or **wrist joint**.
+   - Refer to the diagram below for accurate placement.
+   - Make sure the **sticky side makes firm contact** with the skin for best performance.
+   
 
 .. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-emg.png
 
@@ -134,49 +139,49 @@ Make sure the sticky side of electrodes touches your skin firmly.
 
 .. note::
     You'll find all the experiments listed below, each with :ref:`step-by-step instructions<experiments step by step>`. Just scroll to the one you're working on to get started with the right setup.
-
-
-5. Inside that folder, open the **.ino** file using **Arduino IDE**
    
-6. Connect Your Arduino
+5. Connect Your Arduino
 
    - Plug your Arduino board into your computer’s USB port using the USB cable.
    - Wait for the operating system to install any required USB drivers.
 
-7. In Arduino IDE:
+6. In Arduino IDE:
 
    - Go to **Tools > Board > Arduino UNO** choose the model of your board (e.g., “Arduino Uno” or “Arduino Nano” if you wired to a Nano)
    - Go to **Tools > Port > [select the correct COM port]**
 
-8.	Verify (Compile) the Sketch
+7.	Verify (Compile) the Sketch
 
         - Click the **“✔️ Verify”** button (or press ``Ctrl + R``).
         - Wait for **“Done compiling.”** If errors appear, double-check you opened the correct .ino file.
 
-9.  Click the **✓** Upload (or press ``Ctrl + U``) button to send the code to your Arduino.  
+8.  Click the **✓** Upload (or press ``Ctrl + U``) button to send the code to your Arduino.  
 
     - The IDE will compile again and then send the code to your board.
     - The onboard LED labeled **“L”** may blink during upload. When you see **“Done uploading”**, the new firmware is running.
 
 
-10.	Open Serial Monitor
+9.	Open Serial Monitor
 
         - In the IDE, click **Tools → Serial Monitor** (or press ``Ctrl + Shift + M``).
         - Ensure the baud rate at the bottom right of the Serial Monitor is set to ``115200`` (or whatever the sketch’s Serial.begin(115200); line specifies).
         - You should start seeing lines of numbers. Those are your readings.
+  
+.. important::
+
+    - Remember to close the **Serial Monitor** in **Arduino IDE** before starting the Chords Visualizer.
 
 .. _Visualize Your Muscle Signals!:
 
 **Step 6: Visualize Your Muscle Signals!**
 
-1. Open this website: https://chords.upsidedownlabs.tech
-2. Click: Visualize Now → then choose Serial Wizard.
-3. Select the correct COM port (same one from Arduino IDE).
-4. Click Connect.
+1. Open the website: `Chords Web <https://chords.upsidedownlabs.tech>`_
+2. Click: **Visualize Now** → then choose **Serial Wizard**.
+3. Select the correct **COM port** (same one from Arduino IDE).
+4. Click **Connect**.
 
 .. important::
 
-    - Remember to close the **Serial Monitor** in **Arduino IDE** before starting the Chords Visualizer.
     - Always **disconnect your laptop charger** while testing. Why? Charging can introduce 50 Hz noise that affects the signal.
 
 
@@ -433,8 +438,6 @@ Let's explore all the experiments step by step
     - Strong Flex → Servo moves to maximum (180°, claw fully closed).
     - Relax → Servo returns to open angle. Adjust mapping if directions are inverted.
 
-    **7. Extra Libraries Needed**: ``Servo.h (built‐in)``
-
     .. note::
 
         For a detailed guide, visit our Instructables page: https://www.instructables.com/Controlling-a-Servo-Claw-With-Muscle-Signals-EMG-U/
@@ -504,13 +507,12 @@ Let's explore all the experiments step by step
     - Strong Flex → Servo moves to maximum (180°).
     - Relax → Servo returns to open angle. Adjust mapping if directions are inverted.
 
-    **7. Extra Libraries Needed**: ``Servo.h (built‐in)``
 
 .. dropdown:: 6. LED BarGraph
  
     **1. Program Purpose & Overview**
 
-    The LED_BarGraph sketch visualizes muscle activation by lighting up a row of LEDs in proportion to EMG envelope
+    The **LED BarGraph** sketch visualizes muscle activation by lighting up a row of LEDs in proportion to EMG envelope
     amplitude. As contraction strength increases, more LEDs turn on (like a VU meter). 
     This provides immediate visual feedback without needing a computer.
     
@@ -537,7 +539,7 @@ Let's explore all the experiments step by step
         if (i < numLit) digitalWrite(ledPins[i], HIGH);
         else digitalWrite(ledPins[i], LOW);
 
-    5. Loop Forever
+    1. Loop Forever
 
        - The ``loop()`` repeats indefinitely: read → filter → envelope → map → set LEDs → delay (e.g., 10 ms).
        
@@ -569,175 +571,12 @@ Let's explore all the experiments step by step
 
 .. dropdown:: 7. Muscle Strength Game
 
-    **1. Program Purpose & Overview**
-
-    The **Muscle Strength Game** sketch is an interactive example that counts and displays how many times a
-    user can flex their muscle above a certain threshold within a short interval. Think of it as a simple 
-    “score counter”: each valid muscle contraction increases your score by one. This makes exercising or
-    rehabilitation more engaging, since you get instant feedback when you reach each new rep.
-
-    **2. How It Works**
-
-    1.  **Read Raw EMG Value**
-
-    - In ``setup()``, configure the analog input and Serial:
+    The Muscle Strength Game sketch is an interactive demonstration using the Muscle BioAmp Shield and Arduino (Uno or Nano), often presented inside a creative “dashboard” setup. It reads EMG signals from your arm to control a servo-driven pointer, which moves forward as you flex your muscles.
     
-    ::
-        
-        pinMode(A0, INPUT);
-        Serial.begin(115200);
-
-    - This prepares analog pin **A0** to read voltage from the BioAmp sensor and opens Serial at **115200** baud.
-
-    2.  **Set Sampling Interval**
-
-        - Inside ``loop()``, enforce a consistent sampling rate (e.g., every 2 ms → ~500 Hz):
+    When your muscle contraction is strong and sustained, the servo pointer advances toward a goal (like “beating Thanos”). If the contraction weakens or stops, the pointer gradually moves back, encouraging continuous effort. This transforms muscle activity into a fun, visual challenge — the harder and longer you flex, the more power you generate, and the more progress you make in the game.
     
-    ::
-        
-        unsigned long currentMicros = micros();
-        if (currentMicros - lastSampleMicros >= 2000) {  // 2000 µs = 2 ms
-            lastSampleMicros = currentMicros;
-            int rawValue = analogRead(A0);
-            // … process rawValue …
-        }
-
-    3.  **Apply Band-Pass Filter**
-
-        - Each ``rawValue`` (0–1023) is converted to a voltage and passed into a digital band-pass filter (FIR example):
-        - The result ``filtered`` is a float representing the EMG signal with noise removed.
-
-    ::
-        
-        const int FILTER_ORDER = 4;
-        float b[FILTER_ORDER+1] = {0.0048, 0.0191, 0.0287, 0.0191, 0.0048};
-        float xBuffer[FILTER_ORDER+1] = {0};
-        
-        // Shift input history
-        for (int i = FILTER_ORDER; i > 0; i--) {
-            xBuffer[i] = xBuffer[i - 1];
-        }
-        xBuffer[0] = (float)rawValue;  // Insert latest raw reading
-        
-        // Compute filtered output
-        float filtered = 0;
-        for (int i = 0; i <= FILTER_ORDER; i++) {
-            filtered += b[i] * xBuffer[i];
-        }
-
-  
-    4.  **Compute Envelope**
-
-        - After filtering, calculate the envelope by rectification and smoothing.
-        - This produces a gradual rise/fall correlating to muscle contraction intensity.
+    By turning physical effort into real-time feedback, it’s an engaging way to motivate exercise and rehabilitation.
     
-    ::
-        
-        float rectified = abs(filtered);
-        float alpha = 0.1;  // smoothing factor between 0 and 1
-        envelope = alpha * rectified + (1.0 - alpha) * previousEnvelope;
-        previousEnvelope = envelope;
-
-    
-
-    5.  **Threshold Detection and Score Counting**
-
-        - Define constants for threshold and debounce.
-        - This logic:
-  
-          - Increments ``score`` only when ``envelope`` crosses above ``THRESHOLD`` and was previously below.
-          - Enforces a cooldown so that sustained holds don’t register multiple counts.
-
-    
-    ::
-        
-        const float THRESHOLD = 0.020;         // Adjust based on muscle strength
-        const unsigned long COOLDOWN_MS = 500; // Minimum time between valid counts, in ms
-
-    - Maintain a Boolean flag ``belowThreshold`` and a timestamp ``lastCountTime``:
-    
-    ::
-        
-        unsigned long now = millis();
-        
-        if (envelope > THRESHOLD && belowThreshold && (now - lastCountTime) >= COOLDOWN_MS) {
-            score++;
-            lastCountTime = now;
-            belowThreshold = false;   // Wait until envelope drops below threshold
-        }
-        if (envelope <= THRESHOLD) {
-            belowThreshold = true;
-        }
-
-    6.  **Loop Forever**
-
-    - The ``loop()`` function repeats indefinitely: read → filter → envelope → threshold check → update score → print/update display → delay
-
-    **3. Perform the Hardware**
-
-    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<Connect Your Hardware>`.
-    - Additionally connect (if using an LCD and/or buzzer):
-    
-    - **BioAmp Sensor → Arduino**  
-        
-      - BioAmp VCC → Arduino 5 V  
-      - BioAmp GND → Arduino GND  
-      - BioAmp OUT → Arduino A0  
-
-    - **Optional I²C LCD**  
-        
-      - LCD VCC → Arduino 5 V  
-      - LCD GND → Arduino GND  
-      - LCD SDA → Arduino A4 (Uno/Nano) or dedicated SDA pin  
-      - LCD SCL → Arduino A5 (Uno/Nano) or dedicated SCL pin  
-
-    - **Optional Buzzer** (piezo)  
-        
-      - Buzzer + → Arduino D10 (or any PWM-capable pin)  
-      - Buzzer – → Arduino GND  
-
-    - Tie all grounds together (Sensor GND, Arduino GND, LCD GND, Buzzer GND).
-
-    **4. Firmware Upload**
-
-    - For this project, navigate to the repository folder `07_Muscle_Strength_Game/` and select ``Muscle_Strength_Game.ino``.
-    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
-    - In this project you many also install **Install LCD Library (if using LCD)** by following the steps given below:
-
-      - Go to **Sketch → Include Library → Manage Libraries…**  
-      - Search for **“LiquidCrystal I2C”** and install the version by **Frank de Brabander** (or an equivalent stable version).  
-      - Confirm the I²C address in code (e.g., ``0x27`` or ``0x3F``) matches your module.
-
-    **5. Visualize Your Signal**
-
-    - In the **Serial Monitor** as you flex your muscle, you will see lines such as:  
-    
-    ::
-
-        ```
-        Score: 1  
-        Score: 2  
-        Score: 3  
-        ```  
-    
-    - Each time the envelope crosses the threshold after a cooldown, the printed score increments by one.
-
-    - **Chords Web Application**  
-    
-    1. After uploading, open a Web Serial–compatible browser (Chrome or Edge).  
-    2. Go to [https://chords.upsidedownlabs.tech/](https://chords.upsidedownlabs.tech/) and click **Connect**. Grant permission for Web Serial.  
-    3. In Chords, choose **“EMG Strength Game”** from the menu.  
-    4. You will see a live plot of the EMG envelope and the current score displayed. Each time your muscle contraction crosses the threshold, Chords increments the score.
-
-    **6. Running & Observing Results**
-
-    - **Relaxed Muscle** → No score increment; the display remains at **Score: 0**.  
-    - **First Contraction Above 0.020** → Envelope crosses threshold, cooldown cleared → score becomes **1**, printed to Serial or shown on LCD.  
-    - **Cooldown Period** → Holding above 0.020 does not increment again until envelope falls below 0.020 and 500 ms have passed.  
-    - **Second Contraction** → Relax below threshold, wait ≥ 500 ms, flex above threshold again → score becomes **2**.  
-    - **Continue Reps** → Each distinct flex increments the score by one.  
-    - **Adjust Threshold** → If your muscle is very strong, raise **THRESHOLD** (e.g., from 0.020 to 0.030). If weak, lower it (e.g., to 0.015).
-
     .. note::
 
         For a detailed guide, visit our Instructables page:: https://www.instructables.com/Making-a-Muscle-Strength-Game-Using-Muscle-BioAmp-/
