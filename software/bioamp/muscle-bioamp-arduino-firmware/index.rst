@@ -53,7 +53,7 @@ Before you start using the kit, please download or open the following:
 1. **Arduino IDE** 
    
    - We need Arduino IDE to upload code to your Arduino board
-   - Link to donwload IDE for your OS: https://www.arduino.cc/en/software
+   - Link to download IDE for your OS: https://www.arduino.cc/en/software
 
 2. **Chords Website**
    
@@ -66,6 +66,14 @@ Before you start using the kit, please download or open the following:
 
 1. Plug the Hardware into your Arduino UNO using jumper wires.
 2. Follow the exact wiring diagram from the :ref:`hardware documentation <upsidedownlabs_hardware_home>` of the hardware you are using.
+3. Hardwares that are compatible with Muscle BioAmp Firmware:
+
+   - :ref:`Bioamp EXG Pill <bioamp-exg-pill>`
+   - :ref:`Muscle Bioamp Candy <muscle-bioamp-candy>`
+   - :ref:`Muscle Bioamp Patchy <muscle-bioamp-patchy>`
+   - :ref:`Muscle Bioamp Blip <muscle-bioamp-blip>`
+   - :ref:`Muscle Bioamp Biscute <muscle-bioamp-biscute>`
+   - :ref:`Muscle Bioamp Shield <muscle-bioamp-shield>`
 
 It’s just like putting together a puzzle!
 
@@ -80,20 +88,34 @@ There are two ways use Gel Electrods or Muscle BioAmp Band.
 1. Place the 3 gel electrodes on a clean surface.
 2. Prepare the skin where you'll place them.
 3. Use an alcohol swab or Nuprep Gel to clean the area (this helps get clearer signals).
-4. Find your ulnar nerve area on your forearm (check diagram in docs).
+4. Find your ulnar nerve area on your forearm (refer diagram below).
 5. Attach the electrodes:
    
-
-   - `+` (positive) and `-` (negative) on the forearm.
-   - `REF` (reference) on the back of your hand or elbow.
+   - ``IN+`` (positive): Place on the **belly of the biceps muscle**.
+   - ``IN–`` (negative): Place **2–3 cm away from IN+** along the direction of the muscle fibers.
+   - ``REF`` (reference): Place on a **bony or electrically neutral area**, like the **elbow bone or wrist joint**.
 
 Make sure the sticky side of electrodes touches your skin firmly.
- 
+
+.. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-emg.png
+
+    :align: center
+    :alt: EMG Placement
+
+    EMG Placement
+
+
 - **Using Muscle BioAmp Band:**
 
 1. Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve & REF (reference) on the far side of the band.
 2. Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results
 
+.. figure:: ../../../guides/usage-guides/skin-preparation/media/step-5c.png
+
+    :align: center
+    :alt: Muscle BioAmp Band Placement
+
+    Muscle BioAmp Band  Placement
 
 
 .. _How to upload the Code to Arduino:
@@ -214,8 +236,10 @@ Let's explore all the experiments step by step
     - No Muscle Contraction → Raw values will show noise like spikes.
     - Flex Muscle → Suddenly values jump up or down.
     - Relax Muscle → Values return toward the midpoint.
-
-
+   
+    .. note::
+        
+        For a detailed guide, visit our Instructables page: https://www.instructables.com/Visualizing-Muscle-Signals-EMG-Using-Worlds-Most-A/
     .. Experiment 2
 
 .. dropdown:: 2. EMG Filter
@@ -340,7 +364,8 @@ Let's explore all the experiments step by step
     - Envelope changes smoothly, making thresholds easy to detect.
 
     .. note::
-        You may also visit our Instructables page: https://www.instructables.com/Recording-Publication-Grade-Muscle-Signals-Using-B/
+
+        For a detailed guide, visit our Instructables page: https://www.instructables.com/Recording-Publication-Grade-Muscle-Signals-Using-B/
 .. Experiment 4
 
 .. dropdown:: 4. Claw Controller
@@ -411,7 +436,8 @@ Let's explore all the experiments step by step
     **7. Extra Libraries Needed**: ``Servo.h (built‐in)``
 
     .. note::
-        You may also visit our Instructables page for detailed guide: https://www.instructables.com/Controlling-a-Servo-Claw-With-Muscle-Signals-EMG-U/
+
+        For a detailed guide, visit our Instructables page: https://www.instructables.com/Controlling-a-Servo-Claw-With-Muscle-Signals-EMG-U/
 
 .. dropdown:: 5. Servo Control
  
@@ -713,7 +739,8 @@ Let's explore all the experiments step by step
     - **Adjust Threshold** → If your muscle is very strong, raise **THRESHOLD** (e.g., from 0.020 to 0.030). If weak, lower it (e.g., to 0.015).
 
     .. note::
-        To learn about this project, visit our Instructables page for detailed guide: https://www.instructables.com/Making-a-Muscle-Strength-Game-Using-Muscle-BioAmp-/
+
+        For a detailed guide, visit our Instructables page:: https://www.instructables.com/Making-a-Muscle-Strength-Game-Using-Muscle-BioAmp-/
     
 
 .. dropdown:: 8. EMG Scrolling
@@ -725,7 +752,7 @@ Let's explore all the experiments step by step
 
     .. note::
     
-        To learn about this project, visit our Instructables page for detailed guide: https://www.instructables.com/Scroll-YouTube-Shorts-Using-2-Channel-EMG-Signals/
+        For a detailed guide, visit our Instructables page:: https://www.instructables.com/Scroll-YouTube-Shorts-Using-2-Channel-EMG-Signals/
 
 
 .. dropdown:: 9. 2 Channel LCD BarGraph
@@ -737,7 +764,8 @@ Let's explore all the experiments step by step
     adaptive prosthetics that monitor two muscle groups simultaneously.
 
     .. note::
-        To learn about this project, visit our Instructables page for detailed guide: https://www.instructables.com/Visualizing-2-Channel-EMG-on-LCD-Display-Module/
+
+        For a detailed guide, visit our Instructables page:: https://www.instructables.com/Visualizing-2-Channel-EMG-on-LCD-Display-Module/
 
 .. dropdown:: 10. EMG Rehab Game
  
@@ -1053,7 +1081,8 @@ Let's explore all the experiments step by step
     repetitions you perform in an exercise or for monitoring muscle activation events.
     
     .. note::
-        To learn about this project, visit our Instructables page for detailed guide: https://www.instructables.com/Exercise-Monitoring-Using-Wearable-Muscle-Sensor-E/
+
+        For a detailed guide, visit our Instructables page:: https://www.instructables.com/Exercise-Monitoring-Using-Wearable-Muscle-Sensor-E/
 
 .. dropdown:: 12. 2 Channel EMG Game Controller
  
@@ -1068,7 +1097,8 @@ Let's explore all the experiments step by step
     .. youtube:: zJ_Ei5tvHiQ
 
     .. note::
-        You may also visit our Instructables page for detailed guide: https://www.instructables.com/Controlling-Video-Games-Using-Muscle-Signals-EMG/
+
+        For a detailed guide, visit our Instructables page:: https://www.instructables.com/Controlling-Video-Games-Using-Muscle-Signals-EMG/
 
 
 
