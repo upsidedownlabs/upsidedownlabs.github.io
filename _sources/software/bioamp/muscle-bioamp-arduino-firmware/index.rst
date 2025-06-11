@@ -205,7 +205,7 @@ Let's explore all the experiments step by step
     
     **1. Program Purpose & Overview**
 
-    The Fixed Sampling sketch demonstrates continuous, regular‐interval sampling of raw EMG (electromyography) 
+    The **Fixed Sampling** sketch demonstrates continuous, regular‐interval sampling of raw EMG (electromyography) 
     voltage readings from a Muscle BioAmp sensor. By reading analog voltage at a fixed rate 
     (for example, 500 samples per second), you get a stable stream of unfiltered EMG data. 
     This acts as the foundation for every subsequent signal-processing demonstration. 
@@ -251,14 +251,14 @@ Let's explore all the experiments step by step
    
     .. note::
 
-        For a detailed guide, visit our Instructables page: https://www.instructables.com/Visualizing-Muscle-Signals-EMG-Using-Worlds-Most-A/
+        For a detailed guide, visit our Instructables page: `Visualizing Muscle Signals (EMG) <https://www.instructables.com/Visualizing-Muscle-Signals-EMG-Using-Worlds-Most-A/>`_
     .. Experiment 2
 
 .. dropdown:: 2. EMG Filter
  
     **1. Program Purpose & Overview**
 
-    The EMG Filter sketch acquires raw EMG data from a Muscle BioAmp sensor and applies a band‐pass filter 
+    The **EMG Filter** sketch acquires raw EMG data from a Muscle BioAmp sensor and applies a band‐pass filter 
     (approximately 74.5 Hz–149.5 Hz) to isolate the muscle signal. 
     By removing low‐frequency motion artifacts and high‐frequency noise, you get a cleaner, more stable EMG stream. 
     This filtered output is ideal for downstream tasks like envelope detection or device control.
@@ -314,7 +314,7 @@ Let's explore all the experiments step by step
     
     **1. Program Purpose & Overview**
 
-    The EMG Envelope sketch reads raw EMG data, applies a band‐pass filter (≈ 74.5 Hz–149.5 Hz), 
+    The **EMG Envelope** sketch reads raw EMG data, applies a band‐pass filter (≈ 74.5 Hz–149.5 Hz), 
     then computes the envelope of the filtered signal. The envelope is a smoothed, rectified representation 
     of muscle activation amplitude. It is commonly used in prosthetic control, robotics, and biomedical 
     research to detect when a muscle is contracting and with what strength.
@@ -377,7 +377,7 @@ Let's explore all the experiments step by step
 
     .. note::
 
-        For a detailed guide, visit our Instructables page: https://www.instructables.com/Recording-Publication-Grade-Muscle-Signals-Using-B/
+        For a detailed guide, visit our Instructables page: `Recording Publication Grade Muscle Signals Using BioAmp EXG Pill <https://www.instructables.com/Recording-Publication-Grade-Muscle-Signals-Using-B/>`_
 .. Experiment 4
 
 .. dropdown:: 4. Claw Controller
@@ -385,7 +385,7 @@ Let's explore all the experiments step by step
         
     **1. Program Purpose & Overview**
 
-    The Claw Controller sketch uses EMG envelope data to drive a servo‐powered “claw” mechanism. 
+    The **Claw Controller** sketch uses EMG envelope data to drive a servo‐powered “claw” mechanism. 
     As you flex your muscle, the servo closes the claw; when you relax, it opens. 
     This demonstrates a simple bio‐controlled prosthetic or robotic gripper, 
     illustrating how EMG signals can be translated into mechanical movement.
@@ -447,14 +447,14 @@ Let's explore all the experiments step by step
 
     .. note::
 
-        For a detailed guide, visit our Instructables page: https://www.instructables.com/Controlling-a-Servo-Claw-With-Muscle-Signals-EMG-U/
+        For a detailed guide, visit our Instructables page: `Controlling Servo Claw With Muscle Signals Using Muscle BioAmp Shield <https://www.instructables.com/Controlling-a-Servo-Claw-With-Muscle-Signals-EMG-U/>`_
 
 .. dropdown:: 5. Servo Control
  
         
     **1. Program Purpose & Overview**
 
-    The Servo Control sketch is a generic demonstration of using EMG envelope amplitude to drive a 
+    The **Servo Control** sketch is a generic demonstration of using EMG envelope amplitude to drive a 
     single servo motor. Instead of a claw mechanism, it maps envelope directly to any servo’s rotation angle.
     This example can be repurposed to control robotic arms, wheels, or any servo‐driven structure based on 
     muscle effort.
@@ -578,7 +578,7 @@ Let's explore all the experiments step by step
 
 .. dropdown:: 7. Muscle Strength Game
 
-    The Muscle Strength Game sketch is an interactive demonstration using the Muscle BioAmp Shield and Arduino (Uno or Nano), often presented inside a creative “dashboard” setup. It reads EMG signals from your arm to control a servo-driven pointer, which moves forward as you flex your muscles.
+    The **Muscle Strength Game** sketch is an interactive demonstration using the Muscle BioAmp Shield and Arduino (Uno or Nano), often presented inside a creative “dashboard” setup. It reads EMG signals from your arm to control a servo-driven pointer, which moves forward as you flex your muscles.
     
     When your muscle contraction is strong and sustained, the servo pointer advances toward a goal (like “beating Thanos”). If the contraction weakens or stops, the pointer gradually moves back, encouraging continuous effort. This transforms muscle activity into a fun, visual challenge — the harder and longer you flex, the more power you generate, and the more progress you make in the game.
     
@@ -586,7 +586,7 @@ Let's explore all the experiments step by step
     
     .. note::
 
-        For a detailed guide, visit our Instructables page:: https://www.instructables.com/Making-a-Muscle-Strength-Game-Using-Muscle-BioAmp-/
+        For a detailed guide, visit our Instructables page: `Making a Muscle Strength Game Using Muscle BioAmp Shield & Arduino Uno <https://www.instructables.com/Making-a-Muscle-Strength-Game-Using-Muscle-BioAmp-/>`_
     
 
 .. dropdown:: 8. EMG Scrolling
@@ -598,12 +598,12 @@ Let's explore all the experiments step by step
 
     .. note::
     
-        For a detailed guide, visit our Instructables page:: https://www.instructables.com/Scroll-YouTube-Shorts-Using-2-Channel-EMG-Signals/
+        For a detailed guide, visit our Instructables page: `Scroll YouTube Shorts Using 2 Channel EMG Signals <https://www.instructables.com/Scroll-YouTube-Shorts-Using-2-Channel-EMG-Signals/>`_
 
 
 .. dropdown:: 9. 2 Channel LCD BarGraph
 
-    The 2 Channel LCD BarGraph sketch reads EMG signals from two separate channels (two BioAmp sensors) 
+    The **2 Channel LCD BarGraph** sketch reads EMG signals from two separate channels (two BioAmp sensors) 
     and displays their envelopes side by side on a 16×2 LCD as two horizontal bar graphs. 
     This allows you to compare left vs. right muscle groups (e.g., left bicep vs. right bicep) in real time. 
     It’s an educational tool for understanding bilateral muscle activation and for developing applications like 
@@ -611,14 +611,14 @@ Let's explore all the experiments step by step
 
     .. note::
 
-        For a detailed guide, visit our Instructables page:: https://www.instructables.com/Visualizing-2-Channel-EMG-on-LCD-Display-Module/
+        For a detailed guide, visit our Instructables page: `Visualizing 2 Channel EMG on LCD Display Module <https://www.instructables.com/Visualizing-2-Channel-EMG-on-LCD-Display-Module/>`_
 
 .. dropdown:: 10. EMG Rehab Game
  
     
     **1. Program Purpose & Overview**
 
-    The EMG Rehab Game sketch is a rehabilitation-focused game that challenges patients (or users) 
+    The **EMG Rehab Game** sketch is a rehabilitation-focused game that challenges patients (or users) 
     to hit specific EMG thresholds for set durations. For example, the game might require a user to hold 
     a muscle contraction for 2 seconds, then relax for 2 seconds, repeating a cycle 10 times. 
     This is helpful in post-injury or post-surgery rehab, where therapists want to measure both muscle strength (peak envelope) 
@@ -920,7 +920,7 @@ Let's explore all the experiments step by step
 
 .. dropdown:: 11. EMG Counter
  
-    The EMG Counter sketch keeps a running count of how many distinct muscle
+    The **EMG Counter** sketch keeps a running count of how many distinct muscle
     contraction events occur within a session. Each time your EMG envelope
     crosses above a specified threshold (and had previously been below),
     the counter increments by one. This is useful for tracking the number of
@@ -928,11 +928,11 @@ Let's explore all the experiments step by step
     
     .. note::
 
-        For a detailed guide, visit our Instructables page:: https://www.instructables.com/Exercise-Monitoring-Using-Wearable-Muscle-Sensor-E/
+        For a detailed guide, visit our Instructables page: `Exercise Monitoring Using Wearable Muscle Sensor (EMG) <https://www.instructables.com/Exercise-Monitoring-Using-Wearable-Muscle-Sensor-E/>`_
 
 .. dropdown:: 12. 2 Channel EMG Game Controller
  
-    The 2CH EMG Game Controller sketch allows two EMG channels (two separate Muscle BioAmp sensors) 
+    The **2 Channel EMG Game Controller** sketch allows two EMG channels (two separate Muscle BioAmp sensors) 
     to act as independent controls for navigating a cursor or character in a game environment. 
     Channel 1 controls horizontal movement (left/right), and Channel 2 controls vertical movement (up/down).
     By flexing different muscle groups, you can move a dot on a TFT screen, send arrow-key presses to a PC, 
@@ -944,7 +944,7 @@ Let's explore all the experiments step by step
 
     .. note::
 
-        For a detailed guide, visit our Instructables page:: https://www.instructables.com/Controlling-Video-Games-Using-Muscle-Signals-EMG/
+        For a detailed guide, visit our Instructables page: `Controlling Video Games Using Muscle Signals (EMG) <https://www.instructables.com/Controlling-Video-Games-Using-Muscle-Signals-EMG/>`_
 
 
 

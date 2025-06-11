@@ -57,7 +57,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="Jun 10, 2025"/>
+    <meta name="docbuild:last-update" content="Jun 11, 2025"/>
   </head>
   
   
@@ -628,6 +628,394 @@
                   
   <section id="eye-eog-bioamp-arduino-firmware">
 <span id="eye-bioamp-arduino-firmware"></span><h1>Eye (EOG) BioAmp Arduino Firmware<a class="headerlink" href="#eye-eog-bioamp-arduino-firmware" title="Link to this heading">#</a></h1>
+<section id="what-is-electrooculography-eog">
+<h2>What is Electrooculography (EOG)?<a class="headerlink" href="#what-is-electrooculography-eog" title="Link to this heading">#</a></h2>
+<p>Electrooculography (EOG) <a class="reference external" href="https://eyewiki.org/Electrooculogram">[1]</a>  is a technique for measuring the corneo-retinal standing potential that exists between the front and the back of the human eye. The resulting signal is called the electrooculogram.
+Primary applications are in ophthalmological diagnosis and in recording eye movements. To measure eye movement, pairs of electrodes are typically placed either above and below the eye or to the left and right of the eye.
+If the eye moves from center position toward one of the two electrodes,
+this electrode “sees” the positive side of the retina and the opposite electrode “sees”
+the negative side of the retina. Consequently, a potential difference occurs between the electrodes.
+Assuming that the resting potential is constant, the recorded potential is a measure of the eye’s position.</p>
+<p>To know more about EOG <a class="reference external" href="https://en.wikipedia.org/wiki/Electrooculography">visit here</a>.</p>
+<p><strong>Who is this for?</strong></p>
+<p>Anyone who’s using the BioAmp Hardware for the very first time — whether you’re a student, hobbyist, educator, or just curious. No experience needed!</p>
+<p>👉 To learn about our BioAmp Hardware checkout <a class="reference internal" href="../../../hardware/index.html#upsidedownlabs-hardware-home"><span class="std std-ref">the hardware page</span></a>.</p>
+</section>
+<section id="step-by-step-setup-guide">
+<h2>Step-by-Step Setup Guide<a class="headerlink" href="#step-by-step-setup-guide" title="Link to this heading">#</a></h2>
+<p>With the hardware in your hands, you’re just a few steps away from unlocking its full potential — let’s get the software set up!</p>
+<p><strong>Step 1: Downloading GitHub Repository for Hardware</strong></p>
+<ul class="simple">
+<li><p>This is the code your Arduino needs to read Eye (EOG) signals.</p></li>
+<li><p>You have two easy ways to get the code that will help you read your EOG signals:</p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Simply Download (recommended for beginners)<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Go to the GitHub page: <a class="reference external" href="https://github.com/upsidedownlabs/Eye-BioAmp-Arduino-Firmware">Eye BioAmp Arduino Firmware</a></p></li>
+<li><p class="sd-card-text">Click the green “<strong>Code</strong>” button &gt; Download ZIP</p></li>
+<li><p class="sd-card-text">Unzip the folder and save it somewhere easy to find.</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Clone using Git (for tech-savvy users)<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul>
+<li><p class="sd-card-text">Install Git for your OS: <a class="reference external" href="https://git-scm.com/">https://git-scm.com/</a></p></li>
+<li><p class="sd-card-text">Clone this GitHub repository using</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/upsidedownlabs/Eye-BioAmp-Arduino-Firmware
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+</details><p><strong>Step 2: Application Required</strong></p>
+<p>Before you start using the kit, please download or open the following:</p>
+<ol class="arabic simple">
+<li><p><strong>Arduino IDE</strong></p>
+<ul class="simple">
+<li><p>We need Arduino IDE to upload code to your Arduino board</p></li>
+<li><p>Link to download IDE for your OS: <a class="reference external" href="https://www.arduino.cc/en/software">https://www.arduino.cc/en/software</a></p></li>
+</ul>
+</li>
+<li><p><strong>Chords Website</strong></p>
+<ul class="simple">
+<li><p>We will use Chords Website to visualize the Eye Signals!</p></li>
+<li><p>Open this website: <a class="reference external" href="https://chords.upsidedownlabs.tech">Chords Web</a></p></li>
+</ul>
+</li>
+</ol>
+<p id="connect-your-hardware"><strong>Step 3: Connect Your Hardware</strong></p>
+<ol class="arabic simple">
+<li><p>Plug the Hardware into your Arduino UNO using jumper wires.</p></li>
+<li><p>Follow the exact wiring diagram from the <a class="reference internal" href="../../../hardware/index.html#upsidedownlabs-hardware-home"><span class="std std-ref">hardware documentation</span></a> of the hardware you are using.</p></li>
+<li><p>Hardwares that are compatible with Eye BioAmp Firmware:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../../../hardware/bioamp/bioamp-exg-pill/index.html#bioamp-exg-pill"><span class="std std-ref">Bioamp EXG Pill</span></a></p></li>
+</ul>
+</li>
+</ol>
+<p>It’s just like putting together a puzzle!</p>
+<p><strong>Step 4: Prepare the Electrodes</strong></p>
+<ul class="simple">
+<li><p><strong>Using Gel Electrodes:</strong></p></li>
+</ul>
+<ol class="arabic">
+<li><p><strong>Prepare your skin</strong></p>
+<ul class="simple">
+<li><p>Choose the area where you’ll place the electrodes.</p></li>
+<li><p>Clean the skin using <strong>an alcohol swab</strong> or <strong>Nuprep Gel</strong> to remove oils and dead cells — this improves signal clarity.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Need help with skin prep? Check out the full guide here: <a class="reference internal" href="../../../guides/usage-guides/skin-preparation/index.html#skin-preparation"><span class="std std-ref">Skin Preparation Guide</span></a></p>
+</div>
+</li>
+<li><p>For <strong>Vertical EOG</strong>, attach the wires to the electrodes, then attach the electrodes to skin (refer diagram below):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">IN+</span></code> (positive): Place just below the eye (under the pupil).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IN–</span></code> (negative): Place just above the eyebrow (in line with the pupil).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">REF</span></code> (reference): Attach on the bony area near the cheek or behind the ear (as in the diagram).</p></li>
+</ul>
+</li>
+<li><p>For <strong>Horizontal EOG</strong>, attach the wires to the electrodes, then attach the electrodes to skin (refer diagram below):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">IN+</span></code> (positive): Place on the right temple, just outside the right eyebrow.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IN–</span></code> (negative): Place on the left temple, just outside the left eyebrow.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">REF</span></code> (reference): Attach on the bony area near the cheek or behind the ear (as in the diagram).</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-default">
+<img alt="../../../_images/skin-prep-eog.png" src="../../../_images/skin-prep-eog.png" />
+</figure>
+<p id="how-to-upload-the-code-to-arduino"><strong>Step 5: How to upload the Code to Arduino</strong></p>
+<ol class="arabic simple">
+<li><p>Open the folder you downloaded: <strong>Eye-BioAmp-Arduino-Firmware</strong></p></li>
+<li><p>Inside that, you’ll find several subfolders.</p></li>
+<li><p>Pick the folder for the experiment you want to try. (For beginners: start with the first one and move step-by-step through the others for a better learning experience )</p></li>
+<li><p>Inside that folder, open the <strong>.ino</strong> file using <strong>Arduino IDE</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>For example:</p>
+<ul>
+<li><p>To try raw signal: open <code class="docutils literal notranslate"><span class="pre">01_FixedSampling.ino</span></code></p></li>
+<li><p>To try filtered signal: open <code class="docutils literal notranslate"><span class="pre">02_EOGFilter.ino</span></code></p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You’ll find all the experiments listed below, each with <a class="reference internal" href="../muscle-bioamp-arduino-firmware/index.html#experiments-step-by-step"><span class="std std-ref">step-by-step instructions</span></a>. Just scroll to the one you’re working on to get started with the right setup.</p>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Connect Your Arduino</p>
+<ul class="simple">
+<li><p>Plug your Arduino board into your computer’s USB port using the USB cable.</p></li>
+<li><p>Wait for the operating system to install any required USB drivers.</p></li>
+</ul>
+</li>
+<li><p>In Arduino IDE:</p>
+<ul class="simple">
+<li><p>Go to <strong>Tools &gt; Board &gt; Arduino UNO</strong> choose the model of your board (e.g., “Arduino Uno” or “Arduino Nano” if you wired to a Nano)</p></li>
+<li><p>Go to <strong>Tools &gt; Port &gt; [select the correct COM port]</strong></p></li>
+</ul>
+</li>
+<li><p>Verify (Compile) the Sketch</p>
+<ul class="simple">
+<li><p>Click the <strong>“✔️ Verify”</strong> button (or press <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">R</span></code>).</p></li>
+<li><p>Wait for <strong>“Done compiling.”</strong> If errors appear, double-check you opened the correct .ino file.</p></li>
+</ul>
+</li>
+<li><p>Click the <strong>✓</strong> Upload (or press <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">U</span></code>) button to send the code to your Arduino.</p>
+<ul class="simple">
+<li><p>The IDE will compile again and then send the code to your board.</p></li>
+<li><p>The onboard LED labeled <strong>“L”</strong> may blink during upload. When you see <strong>“Done uploading”</strong>, the new firmware is running.</p></li>
+</ul>
+</li>
+<li><p>Open Serial Monitor and Serial Plotter (Optional)</p>
+<ul class="simple">
+<li><p>For serial monitor and plotter, we recommend using <a class="reference external" href="https://chords.upsidedownlabs.tech">Chords Web</a>. However, if you’re learning to develop, you might also find these options useful.</p></li>
+<li><p>For Serial Monitor: In the IDE, click <strong>Tools → Serial Monitor</strong> (or press <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">M</span></code>).</p></li>
+<li><p>Ensure the baud rate at the bottom right of the Serial Monitor is set to <code class="docutils literal notranslate"><span class="pre">115200</span></code> (or whatever the sketch’s Serial.begin(115200); line specifies).</p></li>
+<li><p>You should start seeing lines of numbers. Those are your readings.</p></li>
+<li><p>For Serial Plotter: In the IDE, click <strong>Tools → Serial Plotter</strong>.</p></li>
+<li><p>You should start seeing plotting of graph and visualize the waves.</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<ul class="simple">
+<li><p>Remember to close the <strong>Serial Monitor &amp; Serial Plotter</strong> in <strong>Arduino IDE</strong> before starting the Chords Visualizer.</p></li>
+</ul>
+</div>
+<p id="visualize-your-eye-signals"><strong>Step 6: Visualize Your Eye Signals!</strong></p>
+<ol class="arabic simple">
+<li><p>Open this website: <a class="reference external" href="https://chords.upsidedownlabs.tech">Chords Web</a></p></li>
+<li><p>Click: Visualize Now → then choose Serial Wizard.</p></li>
+<li><p>Select the correct COM port (same one from Arduino IDE).</p></li>
+<li><p>Click Connect.</p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<ul class="simple">
+<li><p>Always <strong>disconnect your laptop charger</strong> while testing. Why? Charging can introduce 50 Hz noise that affects the signal.</p></li>
+</ul>
+</div>
+<p>🎉 Now blink your eyes or look side to side — you’ll see real-time EOG waves on the screen!</p>
+</section>
+<section id="let-s-explore-all-the-experiments-step-by-step">
+<span id="experiments-step-by-step"></span><h2>Let’s explore all the experiments step by step<a class="headerlink" href="#let-s-explore-all-the-experiments-step-by-step" title="Link to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+1. Fixed Sampling<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>1. Program Purpose &amp; Overview</strong></p>
+<p class="sd-card-text">The <strong>Fixed Sampling</strong> program reads the raw electrical signal from the eyes (Electrooculography or EOG)
+using an analog pin and prints it to the Serial Monitor. It’s useful for understanding
+what the unfiltered eye signal looks like. Think of it like looking at the “raw ingredients” before cooking.</p>
+<p class="sd-card-text"><strong>2. How It Works</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">analogRead(A0)</span></code> reads voltage from the Eye BioAmp sensor.</p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Serial.println()</span></code> prints those values to the computer.</p></li>
+<li><p class="sd-card-text">A timer ensures values are read at a steady rate (e.g., 500 times per second or 500 Hz).</p></li>
+</ul>
+<p class="sd-card-text">You can see how blinking or moving eyes changes the waveform.</p>
+<p class="sd-card-text"><strong>3. Perform the Hardware</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Refer to wiring as per instructions given in <a class="reference internal" href="../muscle-bioamp-arduino-firmware/index.html#connect-your-hardware"><span class="std std-ref">Connect Your Hardware</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>4. Firmware Upload</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">For this project, navigate to the repository folder (Eye-BioAmp-Arduino-Firmware/1_FixedSampling) and select <code class="docutils literal notranslate"><span class="pre">1_FixedSampling.ino</span></code>.</p></li>
+<li><p class="sd-card-text">To upload firmware, refer to <a class="reference internal" href="../muscle-bioamp-arduino-firmware/index.html#how-to-upload-the-code-to-arduino"><span class="std std-ref">How to upload the Code to Arduino</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>5. Visualize your signal</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Follow the steps given in <a class="reference internal" href="#visualize-your-eye-signals"><span class="std std-ref">Visualize Your Eye Signals!</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>6. Running &amp; Observing Results</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">A stream of numbers.</p></li>
+<li><p class="sd-card-text">Looking up/down → sudden voltage change.</p></li>
+<li><p class="sd-card-text">Blinks → sharp spikes.</p></li>
+</ul>
+<p class="sd-card-text">Checkout Demo Visualization on <strong>YouTube</strong>:</p>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/Txo7DjUr5Tk" style="border: 0; height: 345px; width: 560px">
+</iframe></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">To learn more about this project, visit our Instructables page: <a class="reference external" href="https://www.instructables.com/Visualizing-Electrical-Impulses-of-Eyes-EOG-Using-/">Visualizing Electrical Impulses of Eyes (EOG) Using BioAmp EXG Pill</a></p>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+2. EOG Filter<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>1. Program Purpose &amp; Overview</strong></p>
+<p class="sd-card-text">The <strong>EOG Filter</strong> program cleans the raw signal by removing slow drift (DC offset) and high-frequency noise.
+It gives a more accurate view of intentional eye movements.</p>
+<p class="sd-card-text"><strong>2. How It Works</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Uses a bandpass IIR filter (0.5 Hz to 19.5 Hz).</p></li>
+<li><p class="sd-card-text">Stores several recent samples in an array (circular buffer).</p></li>
+<li><p class="sd-card-text">For each new reading, calculates a weighted average using filter coefficients.</p></li>
+<li><p class="sd-card-text">Prints filtered values to Serial Monitor.</p></li>
+<li><p class="sd-card-text">To learn more about filters and how to generate new filters, visit:  <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.butter.html">https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.butter.html</a></p></li>
+</ul>
+<p class="sd-card-text"><strong>3. Perform the Hardware</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Refer to wiring as per instructions given in <a class="reference internal" href="../muscle-bioamp-arduino-firmware/index.html#connect-your-hardware"><span class="std std-ref">Connect Your Hardware</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>4. Firmware Upload</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">For this project, go to the repository folder (Eye-BioAmp-Arduino-Firmware/2_EOGFilter) and select <code class="docutils literal notranslate"><span class="pre">2_EOGFilter.ino</span></code>.</p></li>
+<li><p class="sd-card-text">To upload firmware, refer to <a class="reference internal" href="../muscle-bioamp-arduino-firmware/index.html#how-to-upload-the-code-to-arduino"><span class="std std-ref">How to upload the Code to Arduino</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>5. Visualize your signal</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Follow the steps given in <a class="reference internal" href="#visualize-your-eye-signals"><span class="std std-ref">Visualize Your Eye Signals!</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>6. Running &amp; Observing Results</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">A smoother, more stable signal.</p></li>
+<li><p class="sd-card-text">Eye blinks and movement are easier to detect visually.</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+3. Drowsiness Detection<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The <strong>Drowsiness Detection</strong> sketch helps detect drowsiness or sleepiness by measuring blink intervals.
+If someone doesn’t blink for a long time or their eye remains closed, the system can
+raise an alert (e.g., buzz).</p>
+<ul class="simple">
+<li><p class="sd-card-text">It continuously reads EOG signal.</p></li>
+<li><p class="sd-card-text">Calculates the signal envelope (peak activity).</p></li>
+<li><p class="sd-card-text">If envelope is above a blink threshold, it counts as a blink.</p></li>
+<li><p class="sd-card-text">Measures time between blinks.</p></li>
+<li><p class="sd-card-text">If time exceeds a set limit → triggers buzzer.</p></li>
+</ul>
+<p class="sd-card-text">For a detailed walkthrough, follow along with the <strong>YouTube</strong> tutorial for this project:</p>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/h4F41mp4mWk" style="border: 0; height: 345px; width: 560px">
+</iframe></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">To learn more about this project, visit our Instructables page: <a class="reference external" href="https://www.instructables.com/Drowsiness-Detector-by-Detecting-EOG-Signals-Using/">Drowsiness Detector by Detecting EOG Signals Using BioAmp EXG Pill</a></p>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+4. EOG Photo Capture BLE<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">To be documented.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+5. Eye Blink Detection<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The <strong>Eye Blink Detection</strong> program detects individual eye blinks in real-time and activates an output, like a buzzer or LED. Great for making
+blink-based interfaces!</p>
+<p class="sd-card-text">Continuously samples the filtered EOG waveform and applies a dynamic threshold + hysteresis to catch
+the rapid voltage swings caused by an eyelid closing. Whenever the signal crosses the blink threshold,
+the firmware immediately flags a “blink event” and drives a configurable digital output (LED, buzzer, relay
+or serial message).</p>
+<p class="sd-card-text">Because it operates in real‑time on the microcontroller, you get sub‑50 ms latency from
+physical blink to output trigger—perfect for responsive, blink‑based user interfaces or assistive‑tech
+prototypes.</p>
+<p class="sd-card-text">For a detailed walkthrough, follow along with the <strong>YouTube</strong> tutorial for this project:</p>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/PfEJVa3gv6E" style="border: 0; height: 345px; width: 560px">
+</iframe></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">To learn more about this project, visit our Instructables page: <a class="reference external" href="https://www.instructables.com/Eye-Blink-Detection-by-Recording-EOG-Using-BioAmp-/">Eye Blink Detection by Recording EOG Using BioAmp EXG Pill</a></p>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+6. EOG DinoGame<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The <strong>EOG DinoGame</strong> program controls Chrome Dino Game with your eye blinks!</p>
+<p class="sd-card-text">Transforms your blinks into game inputs for Chrome’s offline “Dino Run.”
+The Arduino runs the same blink‑detection algorithm as above, but instead of an onboard
+LED it sends a simple code over USB serial for each blink.</p>
+<p class="sd-card-text">A companion script on your PC listens on the COM port and synthesizes a space‑bar keypress
+whenever a blink event arrives—letting you jump over cacti and dodge pterodactyls using only your eyes.
+It’s a fun demo of how EOG can drive full applications with no hands at all.</p>
+<p class="sd-card-text">Uses serial communication or USB HID to simulate a jump action when you blink.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">To learn about this project, visit our Instructables page for detailed guide: <a class="reference external" href="https://www.instructables.com/Control-Dino-Game-Using-Eye-Blinks-EOG/">Control Dino Game Using Eye Blinks (EOG)</a></p>
+</div>
+<p class="sd-card-text">Checkout our <strong>YouTube</strong> video, to know how it looks :</p>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/Sw46RTjeLs4" style="border: 0; height: 345px; width: 560px">
+</iframe></div></div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+7. EOG Servo Control<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The <strong>EOG Servo Control</strong> sketch maps eye blinks to physical motion—e.g., controlling a servo claw with eye input.</p>
+<p class="sd-card-text">Maps individual blinks (or blink patterns) to precise servo motions for mechanical actuation.
+Blink events are detected exactly as in the Eye Blink Detection sketch, but here each blink pulses a
+hobby‑servo control signal (via Arduino’s Servo library) to move to a predefined angle.</p>
+<p class="sd-card-text">You can configure single‑blink/double‑blink sequences to open and close a gripper, nod a toy head,
+or point an indicator—showcasing simple, hands‑free robotics driven entirely by your eye movements.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">To learn about this project, visit our Instructables page for detailed guide: <a class="reference external" href="https://www.instructables.com/Control-a-Servo-Claw-Using-Your-Eye-Blinks-EOG/">Control a Servo Claw Using Your Eye Blinks (EOG)</a></p>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+8. Vertical Eye Movement Detector<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The <strong>Vertical Eye Movement Detector</strong> firmware detects <strong>upward and downward eye movements</strong> using EOG signals captured by the <strong>Eye-BioAmp sensor</strong>.
+It is useful for applications where vertical eye gestures are mapped to specific control functions, such as assistive device interaction or simple user interfaces.</p>
+<p class="sd-card-text">For a detailed walkthrough, follow along with the <strong>YouTube</strong> tutorial for this project:</p>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/Zt7YWTnSAY0" style="border: 0; height: 345px; width: 560px">
+</iframe></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">To learn about this project, visit our Instructables page for detailed guide: <a class="reference external" href="https://www.instructables.com/Tracking-UP-and-DOWN-Movements-of-Eyes-Using-EOG/">Detecting UP and DOWN Movements of Eyes Using EOG</a></p>
+</div>
+</div>
+</details><p>✅ <strong>And That’s it!, Congrats on making your neuroscience project using BioAmp Hardware.</strong></p>
+</section>
 </section>
 
 
@@ -668,6 +1056,20 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-electrooculography-eog">What is Electrooculography (EOG)?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-setup-guide">Step-by-Step Setup Guide</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-explore-all-the-experiments-step-by-step">Let’s explore all the experiments step by step</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 
@@ -732,7 +1134,7 @@
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Jun 10, 2025.
+  Last updated on Jun 11, 2025.
   <br/>
 </p></div>
       
