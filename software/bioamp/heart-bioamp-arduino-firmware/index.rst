@@ -14,7 +14,7 @@ of the heart using electrodes placed on the skin. These electrodes detect the sm
 changes that are a consequence of cardiac muscle depolarization followed by repolarization during 
 each cardiac cycle (heartbeat).
 
-To know more about EEG `visit here <https://en.wikipedia.org/wiki/Electroencephalography>`_.
+To know more about ECG `visit here <https://en.wikipedia.org/wiki/Electroencephalography>`_.
 
 **Who is this for?**
 
@@ -59,7 +59,7 @@ Before you start using the kit, please download or open the following:
 
 2. **Chords Website**
    
-   - We will use Chords Website to visualize the Eye Signals!
+   - We will use Chords Website to visualize the Heart Signals!
    - Open this website: `Chords Web <https://chords.upsidedownlabs.tech>`_
 
 
@@ -69,7 +69,7 @@ Before you start using the kit, please download or open the following:
 
 1. Plug the Hardware into your Arduino UNO using jumper wires.
 2. Follow the exact wiring diagram from the :ref:`hardware documentation <upsidedownlabs_hardware_home>` of the hardware you are using.
-3. Hardwares that are compatible with Eye BioAmp Firmware:
+3. Hardwares that are compatible with Heart BioAmp Firmware:
    
    - :ref:`Bioamp EXG Pill <bioamp-exg-pill>`
    - :ref:`Heart BioAmp Candy <heart-bioamp-candy>`
@@ -103,13 +103,16 @@ It’s just like putting together a puzzle!
 
     ECG Placement
 
+
+- **Using BioAmp Band:** For BioAmp Band, refer to the following documentation: :ref:`Using BioAmp Bands <using-bioamp-bands>`
+
 .. _How to upload the Code to Arduino:
 
 **Step 5: How to upload the Code to Arduino**
 
 1. Open the folder you downloaded: **Heart-BioAmp-Arduino-Firmware**
 2. Inside that, you’ll find several subfolders.
-3. Pick the folder for the experiment you want to try. (For beginners: start with the first one and move step-by-step through the others for a better learning experience )
+3. Pick the folder for the experiment you want to try. (For beginners: start with the first one and move step-by-step through the others for a better learning experience)
 4. Inside that folder, open the **.ino** file using **Arduino IDE**
    
 - For example:
@@ -178,6 +181,7 @@ It’s just like putting together a puzzle!
 
 Let's explore all the experiments step by step
 ===============================================
+
 .. Experiment 1
 
 .. dropdown:: 1. Fixed Sampling
@@ -191,7 +195,7 @@ Let's explore all the experiments step by step
 
     **2. How It Works**
 
-    - ``analogRead(A0)`` reads voltage from the Eye BioAmp sensor.
+    - ``analogRead(A0)`` reads voltage from the Heart BioAmp sensor.
     - ``Serial.println()`` prints those values to the computer.
     - A timer ensures values are read at a steady rate.
 
@@ -212,22 +216,63 @@ Let's explore all the experiments step by step
   
     **6. Running & Observing Results**
 
-    - A stream of numbers.
-    - Looking up/down → sudden voltage change.
-    - Blinks → sharp spikes.
-
-    Checkout Demo Visualization on **YouTube**:
-
-    .. youtube:: Txo7DjUr5Tk
-    
-    .. note::
-        To learn more about this project, visit our Instructables page: `Visualizing Electrical Impulses of Eyes (EOG) Using BioAmp EXG Pill <https://www.instructables.com/Visualizing-Electrical-Impulses-of-Eyes-EOG-Using-/>`_
+    - The numbers jump up and down rapidly, reflecting every tiny fluctuation in the raw ECG voltage.
+    - Baseline wander (slow drift up/down over seconds).
+    - High‑frequency spikes (muscle noise, line interference).
+    - The peaks corresponding to heartbeats are buried in noise and drift—this is purely your unfiltered signal.
 
 .. dropdown:: 2. ECG Filter
+
+    **1. Program Purpose & Overview**
+
+    The **ECG Filter** program passes your raw ECG through a digital band‑pass filter (0.5–44.5 Hz), 
+    removing baseline drift and high‑frequency noise so you see only the heart’s true waveform.
+
+    Real ECGs have very slow wandering trends (e.g. breathing‑related drift) and high‑frequency 
+    interference (muscle noise, powerline hum). A band‑pass filter isolates the clinically relevant 
+    0.5–44 Hz band where the QRS complex and T‑waves live.
+
+    **2. How It Works**
+
+    - Uses a bandpass IIR filter order and coefficients chosen to sharply cut below 0.5 Hz and above 44.5 Hz.
+    - Applies filter sample‑by‑sample inside the same fixed‑rate loop.
+    - Prints filtered values to Serial Monitor.
+    - To learn more about filters and how to generate new filters, visit:  https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.butter.html
+
+    **3. Perform the Hardware**
+
+    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<Connect Your Hardware>`
+
+    **4. Firmware Upload**
+
+    - For this project, go to the repository folder (Heart-BioAmp-Arduino-Firmware/2_ECGFilter) and select ``2_ECGFilter.ino``.
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    
+    **5. Visualize your signal**
+
+    - Follow the steps given in :ref:`Visualize Your Heart Signals!<Visualize Your Heart Signals!>` 
+
+    **6. Running & Observing Results**
+
+    - A smooth, centered waveform where the QRS complexes (the heart’s main spikes) and T‑waves stand out clearly.
+    - You should easily spot the repeating pattern of one large spike (R‑peak) followed by smaller waves (P and T waves).
+    - If you flex or cough gently, you may see transient artifacts—these will be suppressed compared to the unfiltered signal.
 
     For detailed guide, visit our **Instructables Page**: `Record Publication Grade ECG at Your Home Using BioAmp EXG Pill <https://www.instructables.com/Record-Publication-Grade-ECG-at-Your-Home-Using-Bi/>`_
 
 .. dropdown:: 3. Heart Rate Detection
+
+    The **Heart Rate Detection** transforms your filtered ECG signal into a live, numerical heart‑rate readout. 
+    As the Arduino continuously samples the cleaned‑up ECG waveform from the BioAmp EXG Pill, this sketch 
+    identifies each heartbeat’s characteristic R‑wave peak and timestamps its occurrence. By measuring the 
+    time between successive peaks, it calculates your beats per minute (BPM) and prints the result to the 
+    Serial Monitor, giving you a real‑time view of your current heart rate without any external software or display.
+
+    Under the hood, the sketch operates like a simple digital stethoscope: it maintains a running scan of the 
+    incoming ECG, and whenever the signal sharply rises above a chosen threshold—indicating an R‑wave—it
+    marks that as one beat. It then computes the interval since the previous beat and applies the standard 
+    conversion (60 000 ms divided by the interval) to determine BPM. This approach delivers an immediate and 
+    intuitive heart‑rate measurement, turning raw biopotential spikes into meaningful, human‑readable data.
 
     For detailed guide, visit our **Instructables Page**: `Measuring Heart Rate Using BioAmp EXG Pill <https://www.instructables.com/Measuring-Heart-Rate-Using-BioAmp-EXG-Pill/>`_
 
@@ -235,14 +280,38 @@ Let's explore all the experiments step by step
 
 .. dropdown:: 4. Heart Beat Detection
 
+    The **Heart Beat Detection** program converts your filtered ECG waveform into a reliable count of heartbeats 
+    by monitoring the signal’s “energy” rather than raw peaks. As the Arduino continuously reads the cleaned ECG 
+    from the BioAmp EXG Pill, this sketch computes a short‑term measure of signal variability—essentially a running
+    envelope or standard deviation of the voltage. Whenever that envelope surges above a tuned threshold 
+    (indicating the rapid voltage change of an R‑wave), the code registers a single heartbeat and then waits
+    for the signal to subside below the threshold again, ensuring each beat is counted only once.
+
+    By tracking the moments when the envelope crosses its threshold, the sketch builds a real‑time tally of your 
+    heartbeats. Rather than simply looking for voltage spikes, it uses the envelope to smooth out noise and 
+    baseline drift, making it far more robust in everyday, less‑controlled settings. The result is a dependable 
+    heartbeat counter that works even if the ECG amplitude varies or your electrodes shift slightly—perfect for 
+    basic heart‑rate monitoring without complex peak‑detection circuitry.
+
     For detailed guide, visit our **Instructables Page**: `Detecting Heart Beats Using BioAmp EXG Pill <https://www.instructables.com/Detecting-Heart-Beats-Using-BioAmp-EXG-Pill/>`_
 
+    Checkout Demo Visualization on **YouTube**:
 
+    .. youtube:: uB5R-vGJjJo
 
+.. dropdown:: 5. BLE Heart Rate Detection
 
-.. dropdown:: 6. OLED BPM
+.. dropdown:: 6. Faster Heart Rate Detection
 
-    The 
+.. dropdown:: 7. OLED BPM
+
+    The OLED BPM program turns your Arduino‑measured heart rate into a real‑time, on‑screen display. As your BioAmp sensor and beat‑detection code calculate BPM, this sketch:
+    
+    - Renders large, easy‑to‑read numerals on a 128×64 OLED so you can see your current heart rate at a glance.
+    - Updates the display instantly each time a new heartbeat is detected, keeping the shown BPM in sync with your pulse.
+    - Optionally animates a pulsing icon or simple bar alongside the number, giving a visual “heartbeat” cue.
+
+    In other words, OLED BPM makes your Arduino setup function as a standalone heart‑rate monitor—no PC, phone, or external plotting required.
 
     For detailed guide, visit our **Instructables Page**: `Heartrate on OLED Display in Real Time <https://www.instructables.com/Heartrate-on-OLED-Display-in-Real-Time/>`_
 
