@@ -301,8 +301,47 @@ Let's explore all the experiments step by step
 
 .. dropdown:: 5. BLE Heart Rate Detection
 
+    To be documented.
 
 .. dropdown:: 6. Faster Heart Rate Detection
+
+    **1. Program Purpose & Overview**
+
+    The **Faster Heart Rate Detection** sketch delivers the same beat‑to‑BPM functionality as its predecessor
+    but in a highly optimized package. It reads your ECG from the BioAmp EXG Pill and Muscle BioAmp Shield at a
+    controlled 125 Hz rate, applies a four‑stage Butterworth band‑pass IIR filter to isolate the 0.5–44.5 Hz 
+    heartband, then detects each R‑wave using a running‑buffer envelope method. Rather than simple 
+    threshold‑crossing, it uses a small circular window of recent samples to compute both the mean and standard 
+    deviation, flagging a heartbeat only when the incoming sample exceeds the current mean by more than half the 
+    window’s standard deviation and respects a brief debounce interval.
+
+    **2. How It Works**
+    
+    - Fixed‐rate sampling at 125 Hz using a microsecond timer (micros() + timer loop) ensures consistent data intervals with very little timing overhead.
+    - Inlined 4‑section Butterworth IIR filter (ECGFilter()) removes baseline drift and high‑frequency noise in a single pass, avoiding function‑call costs.
+    - Envelope‑based peak detection over a 26‑sample circular buffer computes mean and standard deviation on the fly, flagging a heartbeat only when the current sample exceeds mean + 0.5 × stddev.
+    - Debounce logic (peakCooldownPeriod = 2 ms) uses just two Booleans and a timestamp to prevent false re‑triggers on the same beat.
+    - Circular timing buffers (timeBuffer/sumBuffer, size 5) average recent inter‑beat intervals before converting to BPM, smoothing out irregularities without large loops.
+
+    **3. Perform the Hardware**
+
+    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<Connect Your Hardware>`
+
+    **4. Firmware Upload**
+
+    - For this project, go to the repository folder (Heart-BioAmp-Arduino-Firmware/6_Faster_HeartRateDetection) and select ``6_Faster_HeartRateDetection.ino``.
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    
+    **5. Visualize your signal**
+
+    - Follow the steps given in :ref:`Visualize Your Heart Signals!<Visualize Your Heart Signals!>` 
+  
+    **6. Running & Observing Results**
+    
+    - Smooth Readings: Thanks to the small moving‐average buffer, your displayed BPM stays steady, even if a beat comes slightly early or late.
+    - Low CPU Usage: The loop remains fast and responsive, so you can add displays or wireless features without missing any heartbeats.
+
+
 
 .. dropdown:: 7. OLED BPM
 
