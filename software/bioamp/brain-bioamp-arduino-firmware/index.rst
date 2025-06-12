@@ -140,8 +140,8 @@ Make sure the sticky side of electrodes touches your skin firmly.
    
 - For example:
 
-  - To try raw signal: open ``01-Fixed-Sampling.ino``
-  - To try filtered signal: open ``02-EEG-Filter.ino``
+  - To try raw signal: open ``01-fixed-sampling.ino``
+  - To try filtered signal: open ``02-eeg-filter.ino``
 
 .. note::
     You'll find all the experiments listed below, each with :ref:`step-by-step instructions<experiments step by step>`. Just scroll to the one you're working on to get started with the right setup.
