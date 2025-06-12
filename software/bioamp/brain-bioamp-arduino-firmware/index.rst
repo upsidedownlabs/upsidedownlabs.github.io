@@ -8,13 +8,23 @@ What is Electroencephalography (EEG)?
 
 Electroencephalography (EEG) `[1] <https://www.mayoclinic.org/tests-procedures/eeg/about/pac-20393875>`_ 
 is a method to record an electrogram of the spontaneous electrical activity
-of the brain. The bio signals detected by EEG have been shown to represent the postsynaptic potentials of 
+of the brain. The bio potential signals detected by EEG have been shown to represent the postsynaptic potentials of 
 pyramidal neurons in the neocortex and allocortex. It is typically non-invasive, with the EEG electrodes
 placed along the scalp (commonly called "scalp EEG") using the International 10–20 system,
 or variations of it. Clinical interpretation of EEG recordings is most often performed by visual inspection of 
 the tracing or quantitative EEG analysis
 
 To know more about EEG `visit here <https://en.wikipedia.org/wiki/Electroencephalography>`_.
+
+The International 10–20 system is a standard method for placing EEG electrodes on the scalp in relation
+to the brain's cerebral cortex. Electrode positions are labeled with letters (like Fp, F, T, C, P, O, and Z for
+midline) and numbers (odd for left, even for right hemisphere). The "10" and "20" refer to the percentage distances
+between electrodes based on the size of the head. Key reference points like the nasion, inion, and preauricular 
+points are used for accurate placement. The system helps ensure consistent, repeatable, and comparable EEG
+recordings. More detailed versions like the 10–10 or 10–5 systems provide higher resolution by adding extra 
+electrodes.
+
+To know more about International 10–20 system `visit here <https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)>`_.
 
 **Who is this for?**
 
@@ -72,8 +82,11 @@ Before you start using the kit, please download or open the following:
    
    - :ref:`Bioamp EXG Pill <bioamp-exg-pill>`
 
-4. For the experiments given below, you will require : **Arduino UNO R4 Minima / WiFi boards**
-5. For  ``Fixed Sampling`` and ``EEG Filter`` programs any Arduino Board can be used.
+4. For  ``Fixed Sampling`` and ``EEG Filter`` programs any Arduino Board can be used.
+
+.. note::
+
+    For the experiments given below, you will require : **Arduino UNO R4 Minima / WiFi boards**
 
 It’s just like putting together a puzzle!
 
