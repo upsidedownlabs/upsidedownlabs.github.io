@@ -301,6 +301,7 @@ Let's explore all the experiments step by step
 
 .. dropdown:: 5. BLE Heart Rate Detection
 
+
 .. dropdown:: 6. Faster Heart Rate Detection
 
 .. dropdown:: 7. OLED BPM
