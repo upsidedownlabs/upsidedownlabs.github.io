@@ -18,7 +18,7 @@ To know more about EOG `visit here <https://en.wikipedia.org/wiki/Electrooculogr
 
 **Who is this for?**
 
-Anyone who's using the BioAmp Hardware for the very first time — whether you're a student, hobbyist, educator, or just curious. No experience needed!
+Anyone who's using the BioAmp Hardware for the very first time — whether you're a student, hobbyist, educator or just curious. No experience needed!
 
 👉 To learn about our BioAmp Hardware checkout :ref:`the hardware page <upsidedownlabs_hardware_home>`.
 
@@ -74,7 +74,7 @@ Before you start using the kit, please download or open the following:
 
 It’s just like putting together a puzzle!
 
-**Step 4: Prepare the Electrodes**
+**Step 4: Skin Preparation and Electrodes Placement**
 
 - **Using Gel Electrodes:**
 
