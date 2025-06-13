@@ -33,7 +33,7 @@ Step 1: Downloading GitHub Repository for Hardware
 
 
 - This is the code your Arduino needs to read Heart (ECG) signals.
-- You have two easy ways to get the code that will help you read your EOG signals:
+- You have two easy ways to get the code that will help you read your ECG signals:
 
 .. dropdown:: Simply Download (recommended for beginners)
     :open:
@@ -69,7 +69,8 @@ Before you start using the kit, please download or open the following:
 
 .. _Connect Your Hardware:
 
-**Step 3: Connect Your Hardware**
+Step 3: Connect Your Hardware
+=================================
 
 1. Plug the Hardware into your Arduino UNO using jumper wires.
 2. Follow the exact wiring diagram from the :ref:`hardware documentation <upsidedownlabs_hardware_home>` of the hardware you are using.
@@ -359,6 +360,8 @@ Let's explore all the experiments step by step
     In other words, OLED BPM makes your Arduino setup function as a standalone heart‑rate monitor—no PC, phone, or external plotting required.
 
     For detailed guide, visit our **Instructables Page**: `Heartrate on OLED Display in Real Time <https://www.instructables.com/Heartrate-on-OLED-Display-in-Real-Time/>`_
+
+✅ **And That’s it!, Congrats on making your neuroscience project using BioAmp Hardware.**
 
 
 

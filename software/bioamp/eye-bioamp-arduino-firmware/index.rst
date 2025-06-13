@@ -67,7 +67,8 @@ Before you start using the kit, please download or open the following:
 
 .. _Connect Your Hardware:
 
-**Step 3: Connect Your Hardware**
+Step 3: Connect Your Hardware
+================================
 
 1. Plug the Hardware into your Arduino UNO using jumper wires.
 2. Follow the exact wiring diagram from the :ref:`hardware documentation <upsidedownlabs_hardware_home>` of the hardware you are using.
