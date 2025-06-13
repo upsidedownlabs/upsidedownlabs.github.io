@@ -14,7 +14,7 @@ of the heart using electrodes placed on the skin. These electrodes detect the sm
 changes that are a consequence of cardiac muscle depolarization followed by repolarization during 
 each cardiac cycle (heartbeat).
 
-To know more about ECG `visit here <https://en.wikipedia.org/wiki/Electroencephalography>`_.
+To know more about ECG `visit here <https://en.wikipedia.org/wiki/Electrocardiography>`_.
 
 Who is this for?
 ===================
