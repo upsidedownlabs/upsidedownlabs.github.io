@@ -16,16 +16,35 @@ Each section includes detailed instructions, code, and resources to help you get
       :margin: 4 4 0 0 
       :gutter: 2
 
-      .. grid-item-card:: Chords
+      .. grid-item-card:: Chords Web
          :text-align: center
          :link: chords
          :link-type: ref
 
-      .. grid-item-card:: BioAmp Software
+      .. grid-item-card:: Chords Python
+         :text-align: center
+         :link: chords-pythons
+         :link-type: ref
+
+      .. grid-item-card:: Muscle (EMG) BioAmp Software
          :text-align: center
          :link: muscle(emg)-bioamp-arduino-firmware
          :link-type: ref
-
+      
+      .. grid-item-card:: Eye (EOG) BioAmp Software
+         :text-align: center
+         :link: eye-bioamp-arduino-firmware
+         :link-type: ref
+      
+      .. grid-item-card:: Heart (ECG) BioAmp Software
+         :text-align: center
+         :link: heart-bioamp-arduino-firmware
+         :link-type: ref
+      
+      .. grid-item-card:: Brain (EEG) BioAmp Software
+         :text-align: center
+         :link: brain-bioamp-arduino-firmware
+         :link-type: ref
 
 
 .. toctree::
