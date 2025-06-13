@@ -1,4 +1,4 @@
-.. _chords-python:
+.. _chords-pythons:
 
 Chords-Python
 ##############
