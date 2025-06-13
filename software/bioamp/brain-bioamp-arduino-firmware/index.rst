@@ -4,7 +4,7 @@ Brain (EEG) BioAmp Arduino Firmware
 ######################################
 
 What is Electroencephalography (EEG)?
-========================================
+**************************************
 
 Electroencephalography (EEG) `[1] <https://www.mayoclinic.org/tests-procedures/eeg/about/pac-20393875>`_ 
 is a method to record an electrogram of the spontaneous electrical activity
@@ -26,18 +26,20 @@ electrodes.
 
 To know more about International 10–20 system `visit here <https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)>`_.
 
-**Who is this for?**
+Who is this for?
+==================
 
 Anyone who's using the BioAmp Hardware for the very first time — whether you're a student, hobbyist, educator or just curious. No experience needed!
 
 👉 To learn about our BioAmp Hardware checkout :ref:`the hardware page <upsidedownlabs_hardware_home>`.
 
 Step-by-Step Setup Guide
-===========================
+***************************
 
 With the hardware in your hands, you're just a few steps away from unlocking its full potential — let's get the software set up!
 
-**Step 1: Downloading GitHub Repository for Hardware**
+Step 1: Downloading GitHub Repository for Hardware
+===================================================
 
 - This is the code your Arduino needs to read Brain (EEG) signals.
 - You have two easy ways to get the code that will help you read your EEG signals:
@@ -58,7 +60,8 @@ With the hardware in your hands, you're just a few steps away from unlocking its
             
             git clone https://github.com/upsidedownlabs/Brain-BioAmp-Arduino-Firmware
 
-**Step 2: Application Required**
+Step 2: Application Required
+===================================
 
 Before you start using the kit, please download or open the following: 
 
@@ -74,7 +77,8 @@ Before you start using the kit, please download or open the following:
 
 .. _Connect Your Hardware:
 
-**Step 3: Connect Your Hardware**
+Step 3: Connect Your Hardware
+===============================
 
 1. Plug the Hardware into your Arduino UNO using jumper wires.
 2. Follow the exact wiring diagram from the :ref:`hardware documentation <upsidedownlabs_hardware_home>` of the hardware you are using.
@@ -90,7 +94,8 @@ Before you start using the kit, please download or open the following:
 
 It’s just like putting together a puzzle!
 
-**Step 4: Skin Preparation and Electrodes Placement**
+Step 4: Skin Preparation and Electrodes Placement
+==================================================
 
 - **Using Gel Electrodes:**
 
@@ -129,7 +134,8 @@ Make sure the sticky side of electrodes touches your skin firmly.
 
 .. _How to upload the Code to Arduino:
 
-**Step 5: How to upload the Code to Arduino**
+Step 5: How to upload the Code to Arduino
+============================================
 
 1. Open the folder you downloaded: **Brain-BioAmp-Arduino-Firmware**
 2. Inside that, you’ll find several subfolders.
@@ -183,7 +189,8 @@ Make sure the sticky side of electrodes touches your skin firmly.
 
 .. _Visualize Your Brain Signals!:
 
-**Step 6: Visualize Your Brain Signals!**
+Step 6: Visualize Your Brain Signals!
+============================================
 
 1. Open this website: https://chords.upsidedownlabs.tech
 2. Click: Visualize Now → then choose Serial Wizard.
@@ -201,7 +208,7 @@ Make sure the sticky side of electrodes touches your skin firmly.
 .. _experiments step by step:
 
 Let's explore all the experiments step by step
-===============================================
+***********************************************
 .. Experiment 1
 
 .. dropdown:: 1. Fixed Sampling
