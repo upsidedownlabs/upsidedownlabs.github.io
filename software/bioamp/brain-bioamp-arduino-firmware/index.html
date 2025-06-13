@@ -57,7 +57,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="Jun 11, 2025"/>
+    <meta name="docbuild:last-update" content="Jun 13, 2025"/>
   </head>
   
   
@@ -628,6 +628,481 @@
                   
   <section id="brain-eeg-bioamp-arduino-firmware">
 <span id="brain-bioamp-arduino-firmware"></span><h1>Brain (EEG) BioAmp Arduino Firmware<a class="headerlink" href="#brain-eeg-bioamp-arduino-firmware" title="Link to this heading">#</a></h1>
+<section id="what-is-electroencephalography-eeg">
+<h2>What is Electroencephalography (EEG)?<a class="headerlink" href="#what-is-electroencephalography-eeg" title="Link to this heading">#</a></h2>
+<p>Electroencephalography (EEG) <a class="reference external" href="https://www.mayoclinic.org/tests-procedures/eeg/about/pac-20393875">[1]</a>
+is a method to record an electrogram of the spontaneous electrical activity
+of the brain. The bio potential signals detected by EEG have been shown to represent the postsynaptic potentials of
+pyramidal neurons in the neocortex and allocortex. It is typically non-invasive, with the EEG electrodes
+placed along the scalp (commonly called “scalp EEG”) using the International 10–20 system,
+or variations of it. Clinical interpretation of EEG recordings is most often performed by visual inspection of
+the tracing or quantitative EEG analysis</p>
+<p>To know more about EEG <a class="reference external" href="https://en.wikipedia.org/wiki/Electroencephalography">visit here</a>.</p>
+<p>The International 10–20 system is a standard method for placing EEG electrodes on the scalp in relation
+to the brain’s cerebral cortex. Electrode positions are labeled with letters (like Fp, F, T, C, P, O, and Z for
+midline) and numbers (odd for left, even for right hemisphere). The “10” and “20” refer to the percentage distances
+between electrodes based on the size of the head. Key reference points like the nasion, inion, and preauricular
+points are used for accurate placement. The system helps ensure consistent, repeatable, and comparable EEG
+recordings. More detailed versions like the 10–10 or 10–5 systems provide higher resolution by adding extra
+electrodes.</p>
+<p>To know more about International 10–20 system <a class="reference external" href="https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)">visit here</a>.</p>
+<section id="who-is-this-for">
+<h3>Who is this for?<a class="headerlink" href="#who-is-this-for" title="Link to this heading">#</a></h3>
+<p>Anyone who’s using the BioAmp Hardware for the very first time — whether you’re a student, hobbyist, educator or just curious. No experience needed!</p>
+<p>👉 To learn about our BioAmp Hardware checkout <a class="reference internal" href="../../../hardware/index.html#upsidedownlabs-hardware-home"><span class="std std-ref">the hardware page</span></a>.</p>
+</section>
+</section>
+<section id="step-by-step-setup-guide">
+<h2>Step-by-Step Setup Guide<a class="headerlink" href="#step-by-step-setup-guide" title="Link to this heading">#</a></h2>
+<p>With the hardware in your hands, you’re just a few steps away from unlocking its full potential — let’s get the software set up!</p>
+<section id="step-1-downloading-github-repository-for-hardware">
+<h3>Step 1: Downloading GitHub Repository for Hardware<a class="headerlink" href="#step-1-downloading-github-repository-for-hardware" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>This is the code your Arduino needs to read Brain (EEG) signals.</p></li>
+<li><p>You have two easy ways to get the code that will help you read your EEG signals:</p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Simply Download (recommended for beginners)<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Go to the GitHub page: <a class="reference external" href="https://github.com/upsidedownlabs/Brain-BioAmp-Arduino-Firmware">Brain BioAmp Arduino Firmware</a></p></li>
+<li><p class="sd-card-text">Click the green “<strong>Code</strong>” button &gt; Download ZIP</p></li>
+<li><p class="sd-card-text">Unzip the folder and save it somewhere easy to find.</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Clone using Git (for tech-savvy users)<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul>
+<li><p class="sd-card-text">Install Git for your OS: <a class="reference external" href="https://git-scm.com/">https://git-scm.com/</a></p></li>
+<li><p class="sd-card-text">Clone this GitHub repository using</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/upsidedownlabs/Brain-BioAmp-Arduino-Firmware
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+</details></section>
+<section id="step-2-application-required">
+<h3>Step 2: Application Required<a class="headerlink" href="#step-2-application-required" title="Link to this heading">#</a></h3>
+<p>Before you start using the kit, please download or open the following:</p>
+<ol class="arabic simple">
+<li><p><strong>Arduino IDE</strong></p>
+<ul class="simple">
+<li><p>We need Arduino IDE to upload code to your Arduino board.</p></li>
+<li><p>Link to download IDE for your OS: <a class="reference external" href="https://www.arduino.cc/en/software">https://www.arduino.cc/en/software</a></p></li>
+</ul>
+</li>
+<li><p><strong>Chords Website</strong></p>
+<ul class="simple">
+<li><p>We will use Chords Website to visualize the Brain Signals!</p></li>
+<li><p>Open this website: <a class="reference external" href="https://chords.upsidedownlabs.tech">Chords Web</a></p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="step-3-connect-your-hardware">
+<span id="connect-your-hardware"></span><h3>Step 3: Connect Your Hardware<a class="headerlink" href="#step-3-connect-your-hardware" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Plug the Hardware into your Arduino UNO using jumper wires.</p></li>
+<li><p>Follow the exact wiring diagram from the <a class="reference internal" href="../../../hardware/index.html#upsidedownlabs-hardware-home"><span class="std std-ref">hardware documentation</span></a> of the hardware you are using.</p></li>
+<li><p>Hardwares that are compatible with Brain BioAmp Firmware:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../../../hardware/bioamp/bioamp-exg-pill/index.html#bioamp-exg-pill"><span class="std std-ref">Bioamp EXG Pill</span></a></p></li>
+</ul>
+</li>
+<li><p>For  <code class="docutils literal notranslate"><span class="pre">Fixed</span> <span class="pre">Sampling</span></code> and <code class="docutils literal notranslate"><span class="pre">EEG</span> <span class="pre">Filter</span></code> programs any Arduino Board can be used.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For the experiments given below, you will require : <strong>Arduino UNO R4 Minima / WiFi boards</strong></p>
+</div>
+<p>It’s just like putting together a puzzle!</p>
+</section>
+<section id="step-4-skin-preparation-and-electrodes-placement">
+<h3>Step 4: Skin Preparation and Electrodes Placement<a class="headerlink" href="#step-4-skin-preparation-and-electrodes-placement" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Using Gel Electrodes:</strong></p></li>
+</ul>
+<ol class="arabic simple">
+<li><p><strong>Prepare your skin</strong></p>
+<ul class="simple">
+<li><p>Choose the area where you’ll place the electrodes.</p></li>
+<li><p>Clean the skin using <strong>an alcohol swab</strong> or <strong>Nuprep Gel</strong> to remove oils and dead cells — this improves signal clarity.</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Need help with skin prep? Check out the full guide here: <a class="reference internal" href="../../../guides/usage-guides/skin-preparation/index.html#skin-preparation"><span class="std std-ref">Skin Preparation Guide</span></a></p></li>
+<li><p>The described electrode placement <strong>isn’t universal</strong>. Always refer to the <strong>“Connect Your Hardware”</strong> section for the specific requirements of your experiment</p></li>
+</ul>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>For <strong>Prefrontal EEG (for frontal brain activity)</strong>, attach the wires to the electrodes, then attach the electrodes to skin (refer diagram below):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">IN+</span></code> (red wire): Place on center of forehead (above nose bridge).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IN–</span></code> (black wire): Place on left side of forehead (above left eyebrow).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">REF</span></code> (yellow/white wire): Place behind the ear (bony area).</p></li>
+</ul>
+</li>
+<li><p>For <strong>Visual Cortex EEG (for back-of-brain activity)</strong>, attach the wires to the electrodes, then attach the electrodes to skin (refer diagram below):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">IN+</span></code> (red wire): Place on right side of the occipital lobe (back of head).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IN–</span></code> (black wire): Place on left side of the occipital lobe.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">REF</span></code> (yellow/white wire): Place behind the ear (as above).</p></li>
+</ul>
+</li>
+</ol>
+<p>Make sure the sticky side of electrodes touches your skin firmly.</p>
+<figure class="align-default">
+<img alt="../../../_images/skin-prep-eeg.png" src="../../../_images/skin-prep-eeg.png" />
+</figure>
+<ul class="simple">
+<li><p><strong>Using BioAmp Band:</strong> For BioAmp Band, refer to the following documentation: <a class="reference internal" href="../../../guides/usage-guides/using-bioamp-bands/index.html#using-bioamp-bands"><span class="std std-ref">Using BioAmp Bands</span></a></p></li>
+</ul>
+</section>
+<section id="step-5-how-to-upload-the-code-to-arduino">
+<span id="how-to-upload-the-code-to-arduino"></span><h3>Step 5: How to upload the Code to Arduino<a class="headerlink" href="#step-5-how-to-upload-the-code-to-arduino" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Open the folder you downloaded: <strong>Brain-BioAmp-Arduino-Firmware</strong></p></li>
+<li><p>Inside that, you’ll find several subfolders.</p></li>
+<li><p>Pick the folder for the experiment you want to try. (For beginners: start with the first one and move step-by-step through the others for a better learning experience )</p></li>
+<li><p>Inside that folder, open the <strong>.ino</strong> file using <strong>Arduino IDE</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>For example:</p>
+<ul>
+<li><p>To try raw signal: open <code class="docutils literal notranslate"><span class="pre">01-fixed-sampling.ino</span></code></p></li>
+<li><p>To try filtered signal: open <code class="docutils literal notranslate"><span class="pre">02-eeg-filter.ino</span></code></p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You’ll find all the experiments listed below, each with <a class="reference internal" href="../muscle-bioamp-arduino-firmware/index.html#experiments-step-by-step"><span class="std std-ref">step-by-step instructions</span></a>. Just scroll to the one you’re working on to get started with the right setup.</p>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Connect Your Arduino</p>
+<ul class="simple">
+<li><p>Plug your Arduino board into your computer’s USB port using the USB cable.</p></li>
+<li><p>Wait for the operating system to install any required USB drivers.</p></li>
+</ul>
+</li>
+<li><p>In Arduino IDE:</p>
+<ul class="simple">
+<li><p>Go to <strong>Tools &gt; Board &gt; Arduino UNO</strong> choose the model of your board (e.g., “Arduino UNO R4”)</p></li>
+<li><p>Go to <strong>Tools &gt; Port &gt; [select the correct COM port]</strong></p></li>
+</ul>
+</li>
+<li><p>Verify (Compile) the Sketch</p>
+<ul class="simple">
+<li><p>Click the <strong>“✔️ Verify”</strong> button (or press <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">R</span></code>).</p></li>
+<li><p>Wait for <strong>“Done compiling.”</strong> If errors appear, double-check you opened the correct .ino file.</p></li>
+</ul>
+</li>
+<li><p>Click the <strong>✓</strong> Upload (or press <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">U</span></code>) button to send the code to your Arduino.</p>
+<ul class="simple">
+<li><p>The IDE will compile again and then send the code to your board.</p></li>
+<li><p>The onboard LED labeled <strong>“L”</strong> may blink during upload. When you see <strong>“Done uploading”</strong>, the new firmware is running.</p></li>
+</ul>
+</li>
+<li><p>Open Serial Monitor and Serial Plotter (Optional)</p>
+<ul class="simple">
+<li><p>For serial monitor and plotter, we recommend using <a class="reference external" href="https://chords.upsidedownlabs.tech">Chords Web</a>. However, if you’re learning to develop, you might also find these options useful.</p></li>
+<li><p>For Serial Monitor: In the IDE, click <strong>Tools → Serial Monitor</strong> (or press <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">M</span></code>).</p></li>
+<li><p>Ensure the baud rate at the bottom right of the Serial Monitor is set to <code class="docutils literal notranslate"><span class="pre">115200</span></code> (or whatever the sketch’s Serial.begin(115200); line specifies).</p></li>
+<li><p>You should start seeing lines of numbers. Those are your readings.</p></li>
+<li><p>For Serial Plotter: In the IDE, click <strong>Tools → Serial Plotter</strong>.</p></li>
+<li><p>You should start seeing plotting of graph and visualize the waves.</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<ul class="simple">
+<li><p>Remember to close the <strong>Serial Monitor &amp; Serial Plotter</strong> in <strong>Arduino IDE</strong> before starting the Chords Visualizer.</p></li>
+</ul>
+</div>
+</section>
+<section id="step-6-visualize-your-brain-signals">
+<span id="visualize-your-brain-signals"></span><h3>Step 6: Visualize Your Brain Signals!<a class="headerlink" href="#step-6-visualize-your-brain-signals" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Open this website: <a class="reference external" href="https://chords.upsidedownlabs.tech">https://chords.upsidedownlabs.tech</a></p></li>
+<li><p>Click: Visualize Now → then choose Serial Wizard.</p></li>
+<li><p>Select the correct COM port (same one from Arduino IDE).</p></li>
+<li><p>Click Connect.</p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<ul class="simple">
+<li><p>Remember to close the <strong>Serial Monitor</strong> in <strong>Arduino IDE</strong> before starting the Chords Visualizer.</p></li>
+<li><p>Always <strong>disconnect your laptop charger</strong> while testing. Why? Charging can introduce 50 Hz noise that affects the signal.</p></li>
+</ul>
+</div>
+<p>🎉 Now sit still and let your mind wander—or blink and shift your gaze—you’ll see real‑time EEG waves on the screen!</p>
+</section>
+</section>
+<section id="let-s-explore-all-the-experiments-step-by-step">
+<span id="experiments-step-by-step"></span><h2>Let’s explore all the experiments step by step<a class="headerlink" href="#let-s-explore-all-the-experiments-step-by-step" title="Link to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+1. Fixed Sampling<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>1. Program Purpose &amp; Overview</strong></p>
+<p class="sd-card-text">The <strong>Fixed Sampling</strong> sketch acquires raw EEG/biopotential data from the Brain‑BioAmp’s ADC at
+a user‑defined, constant rate. By using a hardware timer interrupt rather than a delay loop,
+it guarantees uniformly‑spaced samples—critical for accurate digital filtering, spectral analysis,
+or machine‑learning pipelines downstream.</p>
+<p class="sd-card-text"><strong>2. How It Works</strong></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Initialize the Sensor Pin</p>
+<ul class="simple">
+<li><p class="sd-card-text">The sketch sets an Arduino analog input pin (e.g., A0) to read voltage values from the BioAmp sensor.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">Set Sampling Rate</p>
+<ul class="simple">
+<li><p class="sd-card-text">A timer (using <code class="docutils literal notranslate"><span class="pre">micros()</span></code> or <code class="docutils literal notranslate"><span class="pre">delayMicroseconds()</span></code>) ensures that we call <code class="docutils literal notranslate"><span class="pre">analogRead(A0)</span></code> at a precise interval.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">Print Raw Values</p>
+<ul class="simple">
+<li><p class="sd-card-text">The user sees raw voltage fluctuations corresponding to brain waves.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">Loop Forever</p>
+<ul class="simple">
+<li><p class="sd-card-text">The <code class="docutils literal notranslate"><span class="pre">loop()</span></code> continues indefinitely, constantly reading and printing.</p></li>
+</ul>
+</li>
+</ol>
+<p class="sd-card-text"><strong>3. Perform the Hardware</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Refer to wiring as per instructions given in <a class="reference internal" href="../muscle-bioamp-arduino-firmware/index.html#connect-your-hardware"><span class="std std-ref">Connect Your Hardware</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>4. Firmware Upload</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">For this project, navigate to the repository folder (Brain-BioAmp-Arduino-Firmware/01-fixed-sampling) and select <code class="docutils literal notranslate"><span class="pre">01-fixed-sampling.ino</span></code>.</p></li>
+<li><p class="sd-card-text">To upload firmware, refer to <a class="reference internal" href="../muscle-bioamp-arduino-firmware/index.html#how-to-upload-the-code-to-arduino"><span class="std std-ref">How to upload the Code to Arduino</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>5. Visualize your signal</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Follow the steps given in <a class="reference internal" href="#visualize-your-brain-signals"><span class="std std-ref">Visualize Your Brain Signals!</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>6. Running &amp; Observing Results</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Quiet Baseline (No Signal): Trace hovers near mid‑rail.</p></li>
+<li><p class="sd-card-text">EEG Burst (e.g. Alpha Waves): You observe rhythmic oscillations.</p></li>
+<li><p class="sd-card-text">Muscle Artifact or Motion: Large, slow deflections riding on the baseline.</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+2. EEG Filter<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>1. Program Purpose &amp; Overview</strong></p>
+<p class="sd-card-text">The EEG Filter sketch acquires raw EEG data from the BioAmp EXG Pill sensor at 256 Hz and applies
+a 0.5 – 29.5 Hz 4th‑order Butterworth band‑pass filter (implemented as four biquad sections) to
+isolate true EEG rhythms. By stripping out slow DC drifts and high‑frequency noise, you obtain a
+clean EEG stream ideal for real‑time visualization, event detection, or further spectral analysis.</p>
+<p class="sd-card-text"><strong>2. How It Works</strong></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Initialize the Sensor Pin</p>
+<ul class="simple">
+<li><p class="sd-card-text">The sketch configures an Arduino analog input pin (e.g., A0) to read voltage values from the BioAmp sensor.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">Compute Elapsed time</p>
+<ul class="simple">
+<li><p class="sd-card-text">A static <code class="docutils literal notranslate"><span class="pre">past</span></code> timestamp holds the previous sample’s microsecond count.</p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">present</span> <span class="pre">=</span> <span class="pre">micros()</span></code> and <code class="docutils literal notranslate"><span class="pre">interval</span> <span class="pre">=</span> <span class="pre">present</span> <span class="pre">–</span> <span class="pre">past</span></code> give the time since the last loop.</p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">past</span></code> is updated to present for the next iteration.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">Run the Sample Timer</p>
+<ul class="simple">
+<li><p class="sd-card-text">A static <code class="docutils literal notranslate"><span class="pre">timer</span></code> variable counts down by <code class="docutils literal notranslate"><span class="pre">interval</span></code> each loop.</p></li>
+<li><p class="sd-card-text">When <code class="docutils literal notranslate"><span class="pre">timer</span> <span class="pre">&lt;</span> <span class="pre">0</span></code>, it’s time to take the next sample:</p></li>
+</ul>
+</li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>timer += 1000000 / SAMPLE_RATE;  // ≈3906 µs for 256 Hz
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p class="sd-card-text">Acquire Raw Sample</p>
+<ul class="simple">
+<li><p class="sd-card-text">Calls <code class="docutils literal notranslate"><span class="pre">analogRead(INPUT_PIN)</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">A0</span></code>) to get the latest ADC count from the BioAmp output.</p></li>
+<li><p class="sd-card-text">Converts the integer reading to a <code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">sensor_value</span></code>.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">Apply 4th‑Order Butterworth Band‑Pass.</p>
+<ul class="simple">
+<li><p class="sd-card-text">Passes <code class="docutils literal notranslate"><span class="pre">sensor_value</span></code> into <code class="docutils literal notranslate"><span class="pre">EEGFilter(input)</span></code>, which implements four cascaded biquad sections.</p></li>
+<li><p class="sd-card-text">Coefficients (<code class="docutils literal notranslate"><span class="pre">a1,</span> <span class="pre">a2,</span> <span class="pre">b0,</span> <span class="pre">b1,</span> <span class="pre">b2</span></code>) were generated via SciPy’s <code class="docutils literal notranslate"><span class="pre">butter()</span></code> and exported by <code class="docutils literal notranslate"><span class="pre">filter_gen.py</span></code>.</p></li>
+<li><p class="sd-card-text">Each section maintains two static states (<code class="docutils literal notranslate"><span class="pre">z1</span></code>, <code class="docutils literal notranslate"><span class="pre">z2</span></code>), computes the difference‑equation:</p></li>
+</ul>
+</li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>x = output – a1*z1 – a2*z2;
+output = b0*x + b1*z1 + b2*z2;
+z2 = z1;
+z1 = x;
+</pre></div>
+</div>
+<ol class="arabic simple" start="6">
+<li><p class="sd-card-text">Stream Filtered Output</p>
+<ul class="simple">
+<li><p class="sd-card-text">After filtering, Serial.println(signal); sends the clean EEG value to your PC or host.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">Loop Forever</p>
+<ul class="simple">
+<li><p class="sd-card-text">The sketch never blocks: timing logic and filtering run every ≈3.9 ms (256 Hz), then immediately repeat.</p></li>
+</ul>
+</li>
+</ol>
+<ul class="simple">
+<li><p class="sd-card-text">To learn more about filters and how to generate new filters, visit:  <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.butter.html">https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.butter.html</a></p></li>
+</ul>
+<p class="sd-card-text"><strong>3. Perform the Hardware</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Refer to wiring as per instructions given in <a class="reference internal" href="../muscle-bioamp-arduino-firmware/index.html#connect-your-hardware"><span class="std std-ref">Connect Your Hardware</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>4. Firmware Upload</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">For this project, go to the repository folder (Brain-BioAmp-Arduino-Firmware/02-eeg-filter) and select <code class="docutils literal notranslate"><span class="pre">02-eeg-filter.ino</span></code>.</p></li>
+<li><p class="sd-card-text">To upload firmware, refer to <a class="reference internal" href="../muscle-bioamp-arduino-firmware/index.html#how-to-upload-the-code-to-arduino"><span class="std std-ref">How to upload the Code to Arduino</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>5. Visualize your signal</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Follow the steps given in <a class="reference internal" href="#visualize-your-brain-signals"><span class="std std-ref">Visualize Your Brain Signals!</span></a></p></li>
+<li><p class="sd-card-text">You’ll see a smooth EEG waveform updating at 256 Hz, free of drift and high‑frequency spikes.</p></li>
+</ul>
+<p class="sd-card-text"><strong>6. Running &amp; Observing Results</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Quiet Rest (Eyes Closed): Trace should be mostly low‑amplitude noise around zero.</p></li>
+<li><p class="sd-card-text">Alpha Rhythm (8–12 Hz): Rhythmic oscillations become clearly visible after you close your eyes and relax.</p></li>
+<li><p class="sd-card-text">Movement Artifacts (&gt;30 Hz): Spikes from blinks or muscle tension are greatly attenuated, keeping the focus on EEG bands.</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+3. BCI FFT<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">This foundational sketch is designed to display real-time EEG bandpower values—Delta, Theta, Alpha, Beta,
+and Gamma—on the Arduino IDE’s Serial Monitor. It serves as a powerful tool for observing how your brain
+state affects brainwave activity. For instance, you’ll notice a rise in beta waves when focusing on a single
+point, and an increase in alpha waves when you close your eyes and relax. It’s ideal for understanding how
+different activities in the brain influence your EEG signals.</p>
+<p class="sd-card-text">For this project, you need to do <strong>electrode placement</strong> as per the given figure:</p>
+<figure class="align-default">
+<img alt="../../../_images/eeg-f1-f2.png" src="../../../_images/eeg-f1-f2.png" />
+</figure>
+<p class="sd-card-text">For detailed guide, visit our <strong>Instructables Page</strong>: <a class="reference external" href="https://www.instructables.com/Controlling-LEDs-of-Arduino-Uno-R4-With-Your-Mind-/">Controlling LEDs of Arduino Uno R4 With Your Mind (EEG)</a></p>
+<p class="sd-card-text">For a detailed walkthrough, follow along with the <strong>YouTube</strong> tutorial for this project:</p>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/_GDfogfElII" style="border: 0; height: 345px; width: 560px">
+</iframe></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">This project will only work with <strong>Arduino UNO R4 Minima and R4 WiFi</strong> board.</p>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+4. BCI LED<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">This sketch allows you to control the built-in LED on the Arduino UNO R4 using your focus.
+When your beta activity rises (indicating strong concentration), the LED lights up. As your mind relaxes
+and beta power drops, the LED turns off. It creates a simple yet effective neurofeedback to train and
+observe your concentration levels.</p>
+<p class="sd-card-text">For this project, you need to do <strong>electrode placement</strong> as per the given figure:</p>
+<figure class="align-default">
+<img alt="../../../_images/eeg-f1-f2.png" src="../../../_images/eeg-f1-f2.png" />
+</figure>
+<p class="sd-card-text">For detailed guide, visit our <strong>Instructables Page</strong>: <a class="reference external" href="https://www.instructables.com/Controlling-LEDs-of-Arduino-Uno-R4-With-Your-Mind-/">Controlling LEDs of Arduino Uno R4 With Your Mind (EEG)</a></p>
+<p class="sd-card-text">For a detailed walkthrough, follow along with the <strong>YouTube</strong> tutorial for this project:</p>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/_GDfogfElII" style="border: 0; height: 345px; width: 560px">
+</iframe></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">This project will only work with <strong>Arduino UNO R4 Minima and R4 WiFi</strong> board.</p>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+5. BCI Toggle<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The BCI Toggle program enables hands-free toggling of the built-in LED using sustained focus.
+By maintaining your concentration for 4–5 seconds, the system switches the LED on or off,
+like flipping a switch using your brain. This method can be extended to control other devices,
+making it a stepping stone for brain-controlled automation.</p>
+<p class="sd-card-text">For this project, you need to do <strong>electrode placement</strong> as per the given figure:</p>
+<figure class="align-default">
+<img alt="../../../_images/eeg-f1-f2.png" src="../../../_images/eeg-f1-f2.png" />
+</figure>
+<p class="sd-card-text">For detailed guide, visit our <strong>Instructables Page</strong>: <a class="reference external" href="https://www.instructables.com/Controlling-LEDs-of-Arduino-Uno-R4-With-Your-Mind-/">Controlling LEDs of Arduino Uno R4 With Your Mind (EEG)</a></p>
+<p class="sd-card-text">For a detailed walkthrough, follow along with the <strong>YouTube</strong> tutorial for this project:</p>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/_GDfogfElII" style="border: 0; height: 345px; width: 560px">
+</iframe></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">This project will only work with <strong>Arduino UNO R4 Minima and R4 WiFi</strong> board.</p>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+6. BCI Spiral<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The BCI Spiral program is one of the most engaging and interesting sketch as it transforms your focus into gameplay.</p>
+<p class="sd-card-text">Running on the Arduino UNO R4 WiFi, it controls the 12×8 LED matrix on the board.
+As you concentrate, LEDs begin to light up in a clockwise spiral pattern.</p>
+<p class="sd-card-text">The more intense and sustained your focus, the more the spiral progresses.
+If your concentration lapses, the spiral unwinds in reverse. This sketch creates an immersive and intuitive
+brain-training game driven entirely by your EEG signals.</p>
+<p class="sd-card-text">For this project, you need to do <strong>electrode placement</strong> as per the given figure:</p>
+<figure class="align-default">
+<img alt="../../../_images/eeg-f1-f2.png" src="../../../_images/eeg-f1-f2.png" />
+</figure>
+<p class="sd-card-text">For detailed guide, visit our <strong>Instructables Page</strong>: <a class="reference external" href="https://www.instructables.com/Controlling-LEDs-of-Arduino-Uno-R4-With-Your-Mind-/">Controlling LEDs of Arduino Uno R4 With Your Mind (EEG)</a></p>
+<p class="sd-card-text">For a detailed walkthrough, follow along with the <strong>YouTube</strong> tutorial for this project:</p>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/_GDfogfElII" style="border: 0; height: 345px; width: 560px">
+</iframe></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">This project will only work with <strong>Arduino UNO R4 WiFi</strong> board.</p>
+</div>
+</div>
+</details><p>✅ <strong>And That’s it!, Congrats on making your neuroscience project using BioAmp Hardware.</strong></p>
+</section>
 </section>
 
 
@@ -668,6 +1143,31 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-electroencephalography-eeg">What is Electroencephalography (EEG)?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#who-is-this-for">Who is this for?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-setup-guide">Step-by-Step Setup Guide</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-downloading-github-repository-for-hardware">Step 1: Downloading GitHub Repository for Hardware</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-application-required">Step 2: Application Required</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-connect-your-hardware">Step 3: Connect Your Hardware</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-skin-preparation-and-electrodes-placement">Step 4: Skin Preparation and Electrodes Placement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-how-to-upload-the-code-to-arduino">Step 5: How to upload the Code to Arduino</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-visualize-your-brain-signals">Step 6: Visualize Your Brain Signals!</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-explore-all-the-experiments-step-by-step">Let’s explore all the experiments step by step</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 
@@ -732,7 +1232,7 @@
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Jun 11, 2025.
+  Last updated on Jun 13, 2025.
   <br/>
 </p></div>
       
