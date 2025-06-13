@@ -174,7 +174,7 @@ It’s just like putting together a puzzle!
     - Always **disconnect your laptop charger** while testing. Why? Charging can introduce 50 Hz noise that affects the signal.
 
 
-🎉 Now 
+🎉 Now sit back, relax, and stay still—or take a deep breath—you’ll see your heartbeat come alive as real‑time ECG waves dancing across the screen!
 
     
 .. _experiments step by step:
@@ -340,8 +340,6 @@ Let's explore all the experiments step by step
     
     - Smooth Readings: Thanks to the small moving‐average buffer, your displayed BPM stays steady, even if a beat comes slightly early or late.
     - Low CPU Usage: The loop remains fast and responsive, so you can add displays or wireless features without missing any heartbeats.
-
-
 
 .. dropdown:: 7. OLED BPM
 

@@ -99,6 +99,11 @@ It’s just like putting together a puzzle!
    - Choose the area where you'll place the electrodes.
    - Clean the skin using **an alcohol swab** or **Nuprep Gel** to remove oils and dead cells — this improves signal clarity.
 
+.. note::
+
+    - Need help with skin prep? Check out the full guide here: :ref:`Skin Preparation Guide <skin-preparation>`
+    - The described electrode placement **isn't universal**. Always refer to the **"Connect Your Hardware"** section for the specific requirements of your experiment
+
 2. For **Prefrontal EEG (for frontal brain activity)**, attach the wires to the electrodes, then attach the electrodes to skin (refer diagram below):
 
    - ``IN+`` (red wire): Place on center of forehead (above nose bridge).
@@ -110,13 +115,6 @@ It’s just like putting together a puzzle!
    - ``IN+`` (red wire): Place on right side of the occipital lobe (back of head).
    - ``IN–`` (black wire): Place on left side of the occipital lobe.
    - ``REF`` (yellow/white wire): Place behind the ear (as above).
-
-
-.. note::
-
-    - Need help with skin prep? Check out the full guide here: :ref:`Skin Preparation Guide <skin-preparation>`
-    - The described electrode placement **isn't universal**. Always refer to the **"Connect Your Hardware"** section for the specific requirements of your experiment
-
 
 Make sure the sticky side of electrodes touches your skin firmly.
 
