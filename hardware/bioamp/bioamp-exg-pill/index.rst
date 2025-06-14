@@ -466,7 +466,7 @@ For visualizing the EEG signals, use `Chords Web <https://chords.upsidedownlabs.
 .. figure:: ../../../software/chords/chords-web/media/chords_eeg_signal.*
     :align: center
 
-    `Visualizing ECG signals on Chords Web`
+    `Visualizing EEG signals on Chords Web`
 
 The signals that you can see on the screen right now are originating from prefrontal cortex part of your brain and propagating through all the layers to the surface of your skin.
 
