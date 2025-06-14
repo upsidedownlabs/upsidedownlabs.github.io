@@ -77,9 +77,25 @@ Software requirements
     
 .. figure:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.*
 
-- Download Backyard Brains' `Spike Recorder <https://backyardbrains.com/products/spikerecorder>`_ according to the operating system you are using (Windows, OSX, Linux).
+- Visit Upside Down Labs `Chords Web <https://chords.upsidedownlabs.tech>`_ to visualize your biosignals directly in the browser.
 
-.. figure:: ../../../kits/diy-neuroscience/basic/media/byb.*
+.. figure:: ../../../software/chords/chords-web/media/chords_landing_page.*
+
+.. grid:: 1 1 1 1
+    :margin: 4 4 0 0 
+    :gutter: 2
+
+    .. grid-item::
+
+        .. card::
+            
+            **Getting started with Chords Web**
+
+            .. youtube:: IVIPnk9z75g
+                :align: center
+                :width: 100%
+
+.. tip:: To know more about Chords Web :ref:`click here<chords>`.
 
 Using the Hardware
 *********************
@@ -215,15 +231,25 @@ the EMG signals.
 
 After opening the serial plotter make sure to select the baud rate to 115200.
 
+.. tip:: Visit the complete documentation on how to :ref:`How to upload the code <muscle(emg)-bioamp-arduino-firmware>`.
+
 .. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
 
 Visualizing the EMG signals
 ----------------------------
+For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`_ for quick and hassle-free real-time biosignal visualization—right from your browser, without installing any software.
+
+.. figure:: ../../../software/chords/chords-web/media/chords_emg_signal.*
+    :align: center
+
+    `Visualizing EMG signals on Chords Web`
 
 Now flex your arm to visualize the muscle signals in real time on your laptop.
 
 .. figure:: media/EMGEnvelop.*
     :align: center
+
+    `Visualizing EMG signals on Arduino IDE v1.8.x`
 
 Step 6: Measuring ElectroCardioGraphy (ECG)
 =============================================
@@ -277,15 +303,27 @@ the signals.
 
 After opening the serial plotter make sure to select the baud rate to 115200.
 
+.. tip:: Visit the complete documentation on how to :ref:`How to upload the code <heart-bioamp-arduino-firmware>`.
+
 .. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
 
 Visualizing the ECG signals
 -----------------------------
 
+For visualizing the ECG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`_ for quick and hassle-free real-time biosignal visualization—right from your browser, without installing any software.
+
+.. figure:: ../../../software/chords/chords-web/media/chords_ecg_signal.*
+    :align: center
+
+    `Visualizing ECG signals on Chords Web`
+
+
 Sit back, relax and see your ECG signals in real time on your laptop.
 
 .. figure:: media/bioamp-Exg-Pill-ECG.*
     :align: center
+
+    `Visualizing ECG signals on Arduino IDE v1.8.x`
 
 Step 7: Measuring Electrooculography (EOG)
 ================================================
@@ -337,15 +375,27 @@ the signals.
 
 After opening the serial plotter make sure to select the baud rate to 115200.
 
+.. tip:: Visit the complete documentation on how to :ref:`How to upload the code <eye-bioamp-arduino-firmware>`.
+
 .. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
 
 Visualizing the EOG signals
 ------------------------------
 
+For visualizing the EOG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`_ for quick and hassle-free real-time biosignal visualization—right from your browser, without installing any software.
+
+.. figure:: ../../../software/chords/chords-web/media/chords_eog_signal.*
+    :align: center
+
+    `Visualizing EOG signals on Chords Web`
+
+
 Move your eyes up-down or left-right to see your EOG signals in real time on your laptop.
 
 .. figure:: media/bioamp-exg-pill-eog.*
     :align: center
+
+    `Visualizing EOG signals on Arduino IDE v1.8.x`
 
 Step 8: Measuring Electroencephalography (EEG)
 ===================================================
@@ -397,50 +447,32 @@ Uploading the code
 
 Connect Arduino Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:
     
-:fab:`github;pst-color-primary` `Spike recorder arduino code <https://raw.githubusercontent.com/BackyardBrains/SpikerShield/master/Muscle/Arduino%20Code/SpikeRecorder/SpikeRecorderSpikerShield_V1_1.ino>`_
+:fab:`github;pst-color-primary` `EEG Filter Code <https://github.com/upsidedownlabs/Brain-BioAmp-Arduino-Firmware/blob/main/02-eeg-filter/02-eeg-filter.ino>`_
 
 Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
 select the COM port on which your development board is connected. To find out the right COM port, screen
 disconnect your board and reopen the menu. The entry that disappears should be the 
 right COM port. Now upload the code.
 
-.. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
+.. tip:: Visit the complete documentation on how to :ref:`How to upload the code <brain-bioamp-arduino-firmware>`.
 
+.. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
+ 
 Visualizing the EEG signals
 -------------------------------
 
-Open the Spike Recorder software. When the Spike Recorder starts, it will start recording from your microphone. To change that, go to the settings by clicking 
-the first icon on the top left corner of the screen, select the COM port on which your Arduino UNO is connected and click on connect. 
+For visualizing the EEG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`_ for quick and hassle-free real-time biosignal visualization—right from your browser, without installing any software.
 
-.. figure:: ../../../kits/diy-neuroscience/basic/media/spike-recorder-configurations.*
+.. figure:: ../../../software/chords/chords-web/media/chords_eeg_signal.*
     :align: center
 
-    `Spike Recorder settings`
-
-Mute the speakers and apply the 50Hz notch filter by clicking on the checkbox as shown in the screenshot above. You should 
-set the low band pass filter to 1Hz and high bandpass filter to 40Hz as we are only recording the EEG signals which range between 
-these frequencies.
-
-Now everything is configured and connected. So close the settings window and start recording EEG signals.
-
-.. figure:: ../../../kits/diy-neuroscience/basic/media/bioamp-exg-pill-eeg.*
-    :align: center
-
-    `EEG signals being visualised in Spike Recorder`
+    `Visualizing ECG signals on Chords Web`
 
 The signals that you can see on the screen right now are originating from prefrontal cortex part of your brain and propagating through all the layers to the surface of your skin.
 
-To record these EEG signals, you have placed the electrodes on the forehead (Fp1 & Fp2), then BioAmp EXG Pill is amplifying those signals so that we can detect it and finally sending it to the ADC (Analog to Digital Convertor) of your Arduino Uno. Ultimately the signals are being visualized in Spike Recorder software.
+You have placed the electrodes on the forehead (Fp1 & Fp2), the BioAmp EXG Pill is amplifying those signals so that we can detect it and finally sending it to the ADC (Analog to Digital Convertor) of your Arduino Uno and the signals are being visualized in Chords Web.
 
 We hope everything is clear now and you understand how the signals are propagating from your brain to the screen of the laptop.
-
-**Features of Spike Recorder that you can explore:**
-
-- Increase or decrease the scale of the Y axis by clicking on the + and - icons respecitively that is present on the left side of the graph.
-- Increase or decrease the X axis timescale by sliding up and down on the scroll wheel of the mouse.
-- Visualize the FFT graph by clicking on the FFT icon on top left size of the screen.
-- Record the data in .wav format by clicking the record icon on the top right corner. You can convert this data in any other format according to your project requirements.
-- Listen to the signals by clicking the volume icon on the top right corner. No don't smile right now, that's how your brain sounds like :P
 
 Glimpses of previous versions
 *******************************
@@ -558,33 +590,3 @@ Project ideas & tutorials
 
     These are some of the project ideas but the possibilities are endless. So create your own Human Computer Interface (HCI) and 
     Brain Computer Interface (BCI) projects and share them with us at contact@upsidedownlabs.tech
-
-Software tutorials
-********************
-
-.. grid:: 1 1 1 1
-    :margin: 4 4 0 0 
-    :gutter: 2
-
-    .. grid-item::
-
-        .. card::
-            
-            **1. Getting started with Backyard Brains' Spike Recorder**
-            ^^^^
-
-            .. youtube:: QzZh243-Ac8
-                :align: center
-                :width: 100%
-
-        .. card::
-            
-            **2. Getting started with Brainbay**
-            ^^^^
-
-            .. youtube:: 8vKYAg9C8Jg
-                :align: center
-                :width: 100%
-
-
-
