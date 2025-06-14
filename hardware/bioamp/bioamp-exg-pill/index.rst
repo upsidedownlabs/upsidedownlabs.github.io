@@ -109,11 +109,13 @@ Insert the provided BioAmp cable's JST PH connector and header pins from top as 
 
 .. figure:: media/assembly-step1.*
     :align: center
+    :alt: Soldering the connector & header pins on BioAmp EXG Pill
 
     Soldering the connector & header pins on BioAmp EXG Pill
 
 .. figure:: media/bioamp-exg-pill-soldered.*
     :align: center
+    :alt: After soldering, BioAmp EXG Pill should look like this
 
     After soldering, BioAmp EXG Pill should look like this
 
@@ -148,6 +150,7 @@ For all the examples provided, we are using the A0 pin of Arduino UNO R3. Connec
 
 .. figure:: media/connections-with-arduino.*
     :align: center
+    :alt: Connections with Arduino UNO R3
 
     Connections with Arduino UNO R3
 
@@ -160,6 +163,7 @@ Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JS
 
 .. figure:: media/connection-with-cable.*
     :align: center
+    :alt: Connections with BioAmp Cable v3
 
     Connections with BioAmp Cable v3
 
@@ -242,6 +246,7 @@ For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_emg_signal.*
     :align: center
+    :alt: Visualizing EMG signals on Chords Web
 
     Visualizing EMG signals on Chords Web
 
@@ -249,6 +254,7 @@ Now flex your arm to visualize the muscle signals in real time on your laptop.
 
 .. figure:: media/EMGEnvelop.*
     :align: center
+    :alt: Visualizing EMG signals on Arduino IDE v1.8.x
 
     Visualizing EMG signals on Arduino IDE v1.8.x
 
@@ -315,6 +321,7 @@ For visualizing the ECG signals, use `Chords Web <https://chords.upsidedownlabs.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_ecg_signal.*
     :align: center
+    :alt: Visualizing ECG signals on Chords Web
 
     Visualizing ECG signals on Chords Web
 
@@ -323,6 +330,7 @@ Sit back, relax and see your ECG signals in real time on your laptop.
 
 .. figure:: media/bioamp-Exg-Pill-ECG.*
     :align: center
+    :alt: Visualizing ECG signals on Arduino IDE v1.8.x
 
     Visualizing ECG signals on Arduino IDE v1.8.x
 
@@ -387,6 +395,7 @@ For visualizing the EOG signals, use `Chords Web <https://chords.upsidedownlabs.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_eog_signal.*
     :align: center
+    :alt: Visualizing EOG signals on Chords Web
 
     Visualizing EOG signals on Chords Web
 
@@ -395,6 +404,7 @@ Move your eyes up-down or left-right to see your EOG signals in real time on you
 
 .. figure:: media/bioamp-exg-pill-eog.*
     :align: center
+    :alt: Visualizing EOG signals on Arduino IDE v1.8.x
 
     Visualizing EOG signals on Arduino IDE v1.8.x
 
@@ -466,6 +476,7 @@ For visualizing the EEG signals, use `Chords Web <https://chords.upsidedownlabs.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_eeg_signal.*
     :align: center
+    :alt: Visualizing EEG signals on Chords Web
 
     Visualizing EEG signals on Chords Web
 
