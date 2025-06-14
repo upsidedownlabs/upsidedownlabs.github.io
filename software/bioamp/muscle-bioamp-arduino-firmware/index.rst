@@ -1,4 +1,4 @@
-.. _muscle(emg)-bioamp-arduino-firmware:
+.. _muscle-bioamp-arduino-firmware:
 
 Muscle (EMG) BioAmp Firmware
 ###############################
@@ -64,7 +64,7 @@ Before you start using the kit, please download or open the following:
    - We will use Chords Website to visualize the Muscle Signals!
    - Open this website: `Chords Web <https://chords.upsidedownlabs.tech>`_
 
-.. _Connect Your Hardware:
+.. _muscle-bioamp-arduino-firmware-connect-hardware:
 
 Step 3: Connect Your Hardware
 ================================
@@ -128,7 +128,7 @@ There are two ways use Gel Electrods or Muscle BioAmp Band.
     Muscle BioAmp Band  Placement
 
 
-.. _How to upload the Code to Arduino:
+.. _muscle-bioamp-arduino-firmware-code-upload:
 
 Step 5: How to upload the Code to Arduino
 ============================================
@@ -144,7 +144,7 @@ Step 5: How to upload the Code to Arduino
   - To try filtered signal: open ``02_EMG_Filter.ino``
 
 .. note::
-    You'll find all the experiments listed below, each with :ref:`step-by-step instructions<experiments step by step>`. Just scroll to the one you're working on to get started with the right setup.
+    You'll find all the experiments listed below, each with :ref:`step-by-step instructions<muscle-bioamp-arduino-firmware-exp-list>`. Just scroll to the one you're working on to get started with the right setup.
    
 5. Connect Your Arduino
 
@@ -184,7 +184,7 @@ Step 5: How to upload the Code to Arduino
 
     - Remember to close the **Serial Monitor & Serial Plotter** in **Arduino IDE** before starting the Chords Visualizer.
 
-.. _Visualize Your Muscle Signals!:
+.. _muscle-bioamp-arduino-firmware-visualize-signals:
 
 Step 6: Visualize Your Muscle Signals!
 ==========================================
@@ -201,7 +201,7 @@ Step 6: Visualize Your Muscle Signals!
 
 🎉 Now move your hand or clench your fist — you’ll see real-time EMG waves on the screen!
     
-.. _experiments step by step:
+.. _muscle-bioamp-arduino-firmware-exp-list:
 
 Let's explore all the experiments step by step
 ***********************************************
@@ -239,16 +239,16 @@ Let's explore all the experiments step by step
   
     **3. Perform the Hardware**
     
-    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<Connect Your Hardware>`
+    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<muscle-bioamp-arduino-firmware-connect-hardware>`
 
     **4. Firmware Upload**
 
     - For this project, navigate to the repository folder (Muscle-BioAmp-Arduino-Firmware/01_Fixed_Sampling) and select ``01_Fixed_Sampling.ino``.
-    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<muscle-bioamp-arduino-firmware-code-upload>`
     
     **5. Visualize your signal**
 
-    - Follow the steps given in :ref:`Visualize Your Muscle Signals!<Visualize Your Muscle Signals!>` 
+    - Follow the steps given in :ref:`Visualize Your Muscle Signals!<muscle-bioamp-arduino-firmware-visualize-signals>` 
   
     **6. Running & Observing Results**
 
@@ -297,16 +297,16 @@ Let's explore all the experiments step by step
 
     **3. Perform the Hardware**
 
-    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<Connect Your Hardware>`
+    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<muscle-bioamp-arduino-firmware-connect-hardware>`
 
     **4. Firmware Upload**
 
     - For this project, go to the repository folder (Muscle-BioAmp-Arduino-Firmware/02_EMG_Filter) and select ``02_EMG_Filter.ino``.
-    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<muscle-bioamp-arduino-firmware-code-upload>`
     
     **5. Visualize your signal**
 
-    - Follow the steps given in :ref:`Visualize Your Muscle Signals!<Visualize Your Muscle Signals!>` 
+    - Follow the steps given in :ref:`Visualize Your Muscle Signals!<muscle-bioamp-arduino-firmware-visualize-signals>` 
 
     **6. Running & Observing Results**
 
@@ -364,16 +364,16 @@ Let's explore all the experiments step by step
 
     **3. Perform the Hardware**
 
-    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<Connect Your Hardware>`
+    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<muscle-bioamp-arduino-firmware-connect-hardware>`
 
     **4. Firmware Upload**
 
     - For this project, navigate to the repository folder (Muscle-BioAmp-Arduino-Firmware/03_EMG_Envelope) and select ``03_EMG_Envelope.ino``.
-    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<muscle-bioamp-arduino-firmware-code-upload>`
 
     **5. Visualize your signal**
 
-    - Follow the steps given in :ref:`Visualize Your Muscle Signals!<Visualize Your Muscle Signals!>` 
+    - Follow the steps given in :ref:`Visualize Your Muscle Signals!<muscle-bioamp-arduino-firmware-visualize-signals>` 
 
     **6. Running & Observing Results**
 
@@ -429,7 +429,7 @@ Let's explore all the experiments step by step
 
     **3. Perform the Hardware**
 
-    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<Connect Your Hardware>`
+    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<muscle-bioamp-arduino-firmware-connect-hardware>`
     - Additionally connect:
   
       - Servo VCC (Red) → Arduino 5 V (or external 5 V supply for stable power)
@@ -439,11 +439,11 @@ Let's explore all the experiments step by step
     **4. Firmware Upload**
 
     - For this project, navigate to the repository folder (Muscle-BioAmp-Arduino-Firmware/04_Claw_Controller) and select ``04_Claw_Controller.ino``.
-    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<muscle-bioamp-arduino-firmware-code-upload>`
     
     **5. Visualize your signal**
 
-    - Follow the steps given in :ref:`Visualize Your Muscle Signals!<Visualize Your Muscle Signals!>` 
+    - Follow the steps given in :ref:`Visualize Your Muscle Signals!<muscle-bioamp-arduino-firmware-visualize-signals>` 
 
     **6. Running & Observing Results**
 
@@ -498,7 +498,7 @@ Let's explore all the experiments step by step
 
     **3. Perform the Hardware**
 
-    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<Connect Your Hardware>`
+    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<muscle-bioamp-arduino-firmware-connect-hardware>`
     - Additionally connect:
   
       - Servo VCC (Red) → Arduino 5 V (or external 5 V supply for stable power)
@@ -508,11 +508,11 @@ Let's explore all the experiments step by step
     **4. Firmware Upload**
 
     - For this project, navigate to the repository folder (Muscle-BioAmp-Arduino-Firmware/05_Servo_Control) and select ``05_Servo_Control.ino``.
-    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<muscle-bioamp-arduino-firmware-code-upload>`
     
     **5. Visualize your signal**
 
-    - Follow the steps given in :ref:`Visualize Your Muscle Signals!<Visualize Your Muscle Signals!>` 
+    - Follow the steps given in :ref:`Visualize Your Muscle Signals!<muscle-bioamp-arduino-firmware-visualize-signals>` 
 
     **6. Running & Observing Results**
 
@@ -560,7 +560,7 @@ Let's explore all the experiments step by step
 
     **3. Perform the Hardware**
 
-    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<Connect Your Hardware>`
+    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<muscle-bioamp-arduino-firmware-connect-hardware>`
     - Additionally connect:
   
       - Each LED’s anode → 220 Ω resistor → Arduino digital pins D2–D9.
@@ -570,11 +570,11 @@ Let's explore all the experiments step by step
     **4. Firmware Upload**
 
     - For this project, navigate to the repository folder (Muscle-BioAmp-Arduino-Firmware/06_LED_BarGraph) and select ``06_LED_BarGraph.ino``.
-    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<muscle-bioamp-arduino-firmware-code-upload>`
     
     **5. Visualize your signal**
 
-    - Follow the steps given in :ref:`Visualize Your Muscle Signals!<Visualize Your Muscle Signals!>` 
+    - Follow the steps given in :ref:`Visualize Your Muscle Signals!<muscle-bioamp-arduino-firmware-visualize-signals>` 
 
     **6. Running & Observing Results**
 
@@ -744,7 +744,7 @@ Let's explore all the experiments step by step
 
     **3. Perform the Hardware**
 
-    - Refer to :ref:`Connect Your Hardware<Connect Your Hardware>` for sensor wiring.
+    - Refer to :ref:`Connect Your Hardware<muscle-bioamp-arduino-firmware-connect-hardware>` for sensor wiring.
     - Additionally connect (if using LCD and/or buzzer):
 
     - **BioAmp Sensor → Arduino**  
@@ -770,7 +770,7 @@ Let's explore all the experiments step by step
     **4. Firmware Upload**
 
     - For this project, navigate to `10_EMG_Rehab_Game/EMG_Rehab_Game.ino` and click **Open**.
-    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<muscle-bioamp-arduino-firmware-code-upload>`
     - **Also Install & Verify LCD Library (if using LCD)**
     - Go to **Sketch → Include Library → Manage Libraries…**  
     - Search for **“LiquidCrystal I2C”** and install **LiquidCrystal I2C by Frank de Brabander**.  

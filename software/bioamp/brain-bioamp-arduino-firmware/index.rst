@@ -75,7 +75,7 @@ Before you start using the kit, please download or open the following:
    - We will use Chords Website to visualize the Brain Signals!
    - Open this website: `Chords Web <https://chords.upsidedownlabs.tech>`_
 
-.. _Connect Your Hardware:
+.. _brain-bioamp-arduino-firmware-connect-hardware:
 
 Step 3: Connect Your Hardware
 ===============================
@@ -132,7 +132,7 @@ Make sure the sticky side of electrodes touches your skin firmly.
 
 - **Using BioAmp Band:** For BioAmp Band, refer to the following documentation: :ref:`Using BioAmp Bands <using-bioamp-bands>`
 
-.. _How to upload the Code to Arduino:
+.. _brain-bioamp-arduino-firmware-code-upload:
 
 Step 5: How to upload the Code to Arduino
 ============================================
@@ -148,7 +148,7 @@ Step 5: How to upload the Code to Arduino
   - To try filtered signal: open ``02-eeg-filter.ino``
 
 .. note::
-    You'll find all the experiments listed below, each with :ref:`step-by-step instructions<experiments step by step>`. Just scroll to the one you're working on to get started with the right setup.
+    You'll find all the experiments listed below, each with :ref:`step-by-step instructions<brain-bioamp-arduino-firmware-exp-list>`. Just scroll to the one you're working on to get started with the right setup.
    
 5. Connect Your Arduino
 
@@ -187,7 +187,7 @@ Step 5: How to upload the Code to Arduino
 
     - Remember to close the **Serial Monitor & Serial Plotter** in **Arduino IDE** before starting the Chords Visualizer.
 
-.. _Visualize Your Brain Signals!:
+.. _brain-bioamp-arduino-firmware-visualize-signals:
 
 Step 6: Visualize Your Brain Signals!
 ============================================
@@ -205,7 +205,7 @@ Step 6: Visualize Your Brain Signals!
 
 🎉 Now sit still and let your mind wander—or blink and shift your gaze—you’ll see real‑time EEG waves on the screen!
     
-.. _experiments step by step:
+.. _brain-bioamp-arduino-firmware-exp-list:
 
 Let's explore all the experiments step by step
 ***********************************************
@@ -241,16 +241,16 @@ Let's explore all the experiments step by step
   
     **3. Perform the Hardware**
     
-    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<Connect Your Hardware>`
+    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<brain-bioamp-arduino-firmware-connect-hardware>`
 
     **4. Firmware Upload**
 
     - For this project, navigate to the repository folder (Brain-BioAmp-Arduino-Firmware/01-fixed-sampling) and select ``01-fixed-sampling.ino``.
-    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<brain-bioamp-arduino-firmware-code-upload>`
     
     **5. Visualize your signal**
 
-    - Follow the steps given in :ref:`Visualize Your Brain Signals!<Visualize Your Brain Signals!>` 
+    - Follow the steps given in :ref:`Visualize Your Brain Signals!<brain-bioamp-arduino-firmware-visualize-signals>` 
   
     **6. Running & Observing Results**
 
@@ -321,16 +321,16 @@ Let's explore all the experiments step by step
 
     **3. Perform the Hardware**
 
-    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<Connect Your Hardware>`
+    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<brain-bioamp-arduino-firmware-connect-hardware>`
 
     **4. Firmware Upload**
 
     - For this project, go to the repository folder (Brain-BioAmp-Arduino-Firmware/02-eeg-filter) and select ``02-eeg-filter.ino``.
-    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<brain-bioamp-arduino-firmware-code-upload>`
     
     **5. Visualize your signal**
 
-    - Follow the steps given in :ref:`Visualize Your Brain Signals!<Visualize Your Brain Signals!>` 
+    - Follow the steps given in :ref:`Visualize Your Brain Signals!<brain-bioamp-arduino-firmware-visualize-signals>` 
     - You’ll see a smooth EEG waveform updating at 256 Hz, free of drift and high‑frequency spikes.
 
     **6. Running & Observing Results**

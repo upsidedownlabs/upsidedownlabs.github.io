@@ -28,7 +28,7 @@ Each section includes detailed instructions, code, and resources to help you get
 
       .. grid-item-card:: Muscle (EMG) BioAmp Software
          :text-align: center
-         :link: muscle(emg)-bioamp-arduino-firmware
+         :link: muscle-bioamp-arduino-firmware
          :link-type: ref
       
       .. grid-item-card:: Eye (EOG) BioAmp Software

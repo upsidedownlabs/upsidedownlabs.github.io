@@ -67,7 +67,7 @@ Before you start using the kit, please download or open the following:
    - Open this website: `Chords Web <https://chords.upsidedownlabs.tech>`_
 
 
-.. _Connect Your Hardware:
+.. _heart-bioamp-arduino-firmware-connect-hardware:
 
 Step 3: Connect Your Hardware
 =================================
@@ -112,7 +112,7 @@ Step 4: Skin Preparation and Electrodes Placement
 
 - **Using BioAmp Band:** For BioAmp Band, refer to the following documentation: :ref:`Using BioAmp Bands <using-bioamp-bands>`
 
-.. _How to upload the Code to Arduino:
+.. _heart-bioamp-arduino-firmware-code-upload:
 
 Step 5: How to upload the Code to Arduino
 ===========================================
@@ -128,7 +128,7 @@ Step 5: How to upload the Code to Arduino
   - To try filtered signal: open ``2_ECGFilter.ino``
 
 .. note::
-    You'll find all the experiments listed below, each with :ref:`step-by-step instructions<experiments step by step>`. Just scroll to the one you're working on to get started with the right setup.
+    You'll find all the experiments listed below, each with :ref:`step-by-step instructions <heart-bioamp-arduino-firmware-exp-list>`. Just scroll to the one you're working on to get started with the right setup.
    
 5. Connect Your Arduino
 
@@ -167,7 +167,7 @@ Step 5: How to upload the Code to Arduino
 
     - Remember to close the **Serial Monitor & Serial Plotter** in **Arduino IDE** before starting the Chords Visualizer.
 
-.. _Visualize Your Heart Signals!:
+.. _heart-bioamp-arduino-firmware-visualize-signals:
 
 Step 6: Visualize Your Heart Signals!
 ======================================
@@ -185,7 +185,7 @@ Step 6: Visualize Your Heart Signals!
 🎉 Now sit back, relax, and stay still—or take a deep breath—you’ll see your heartbeat come alive as real‑time ECG waves dancing across the screen!
 
     
-.. _experiments step by step:
+.. _heart-bioamp-arduino-firmware-exp-list:
 
 Let's explore all the experiments step by step
 ***********************************************
@@ -211,16 +211,16 @@ Let's explore all the experiments step by step
     
     **3. Perform the Hardware**
     
-    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<Connect Your Hardware>`
+    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<heart-bioamp-arduino-firmware-connect-hardware>`
 
     **4. Firmware Upload**
 
     - For this project, navigate to the repository folder (Heart-BioAmp-Arduino-Firmware/1_FixedSampling) and select ``1_FixedSampling.ino``.
-    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<heart-bioamp-arduino-firmware-code-upload>`
     
     **5. Visualize your signal**
 
-    - Follow the steps given in :ref:`Visualize Your Heart Signals!<Visualize Your Heart Signals!>` 
+    - Follow the steps given in :ref:`Visualize Your Heart Signals! <heart-bioamp-arduino-firmware-visualize-signals>` 
   
     **6. Running & Observing Results**
 
@@ -249,16 +249,16 @@ Let's explore all the experiments step by step
 
     **3. Perform the Hardware**
 
-    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<Connect Your Hardware>`
+    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<heart-bioamp-arduino-firmware-connect-hardware>`
 
     **4. Firmware Upload**
 
     - For this project, go to the repository folder (Heart-BioAmp-Arduino-Firmware/2_ECGFilter) and select ``2_ECGFilter.ino``.
-    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<heart-bioamp-arduino-firmware-code-upload>`
     
     **5. Visualize your signal**
 
-    - Follow the steps given in :ref:`Visualize Your Heart Signals!<Visualize Your Heart Signals!>` 
+    - Follow the steps given in :ref:`Visualize Your Heart Signals! <heart-bioamp-arduino-firmware-visualize-signals>` 
 
     **6. Running & Observing Results**
 
@@ -283,8 +283,6 @@ Let's explore all the experiments step by step
     intuitive heart‑rate measurement, turning raw biopotential spikes into meaningful, human‑readable data.
 
     For detailed guide, visit our **Instructables Page**: `Measuring Heart Rate Using BioAmp EXG Pill <https://www.instructables.com/Measuring-Heart-Rate-Using-BioAmp-EXG-Pill/>`_
-
-
 
 .. dropdown:: 4. Heart Beat Detection
 
@@ -333,16 +331,16 @@ Let's explore all the experiments step by step
 
     **3. Perform the Hardware**
 
-    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<Connect Your Hardware>`
+    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<heart-bioamp-arduino-firmware-connect-hardware>`
 
     **4. Firmware Upload**
 
     - For this project, go to the repository folder (Heart-BioAmp-Arduino-Firmware/6_Faster_HeartRateDetection) and select ``6_Faster_HeartRateDetection.ino``.
-    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<heart-bioamp-arduino-firmware-code-upload>`
     
     **5. Visualize your signal**
 
-    - Follow the steps given in :ref:`Visualize Your Heart Signals!<Visualize Your Heart Signals!>` 
+    - Follow the steps given in :ref:`Visualize Your Heart Signals! <heart-bioamp-arduino-firmware-visualize-signals>` 
   
     **6. Running & Observing Results**
     
