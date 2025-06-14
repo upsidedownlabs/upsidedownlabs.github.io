@@ -110,12 +110,12 @@ Insert the provided BioAmp cable's JST PH connector and header pins from top as 
 .. figure:: media/assembly-step1.*
     :align: center
 
-    `Soldering the connector & header pins on BioAmp EXG Pill`
+    Soldering the connector & header pins on BioAmp EXG Pill
 
 .. figure:: media/bioamp-exg-pill-soldered.*
     :align: center
 
-    `After soldering, BioAmp EXG Pill should look like this`
+    After soldering, BioAmp EXG Pill should look like this
 
 Step 2 (optional): Configure for ECG/EMG
 ==========================================
@@ -149,7 +149,7 @@ For all the examples provided, we are using the A0 pin of Arduino UNO R3. Connec
 .. figure:: media/connections-with-arduino.*
     :align: center
 
-    `Connections with Arduino UNO R3`
+    Connections with Arduino UNO R3
 
 .. warning:: Take precautions while connecting to power, if power pins are to be swapped, your BioAmp EXG Pill will be fried and it’ll become unusable (DIE).
 
@@ -161,7 +161,7 @@ Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JS
 .. figure:: media/connection-with-cable.*
     :align: center
 
-    `Connections with BioAmp Cable v3`
+    Connections with BioAmp Cable v3
 
 Step 5: Skin Preparation
 ===========================
@@ -231,25 +231,26 @@ the EMG signals.
 
 After opening the serial plotter make sure to select the baud rate to 115200.
 
-.. tip:: Visit the complete documentation on how to :ref:`How to upload the code <muscle(emg)-bioamp-arduino-firmware>`.
+.. tip:: Visit the complete documentation on how to :ref:`How to upload the code <muscle-bioamp-arduino-firmware-code-upload>`.
 
 .. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
 
 Visualizing the EMG signals
 ----------------------------
+
 For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`_ for quick and hassle-free real-time biosignal visualization—right from your browser, without installing any software.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_emg_signal.*
     :align: center
 
-    `Visualizing EMG signals on Chords Web`
+    Visualizing EMG signals on Chords Web
 
 Now flex your arm to visualize the muscle signals in real time on your laptop.
 
 .. figure:: media/EMGEnvelop.*
     :align: center
 
-    `Visualizing EMG signals on Arduino IDE v1.8.x`
+    Visualizing EMG signals on Arduino IDE v1.8.x
 
 Step 6: Measuring ElectroCardioGraphy (ECG)
 =============================================
@@ -303,7 +304,7 @@ the signals.
 
 After opening the serial plotter make sure to select the baud rate to 115200.
 
-.. tip:: Visit the complete documentation on how to :ref:`How to upload the code <heart-bioamp-arduino-firmware>`.
+.. tip:: Visit the complete documentation on how to :ref:`How to upload the code <heart-bioamp-arduino-firmware-code-upload>`.
 
 .. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
 
@@ -315,7 +316,7 @@ For visualizing the ECG signals, use `Chords Web <https://chords.upsidedownlabs.
 .. figure:: ../../../software/chords/chords-web/media/chords_ecg_signal.*
     :align: center
 
-    `Visualizing ECG signals on Chords Web`
+    Visualizing ECG signals on Chords Web
 
 
 Sit back, relax and see your ECG signals in real time on your laptop.
@@ -323,7 +324,7 @@ Sit back, relax and see your ECG signals in real time on your laptop.
 .. figure:: media/bioamp-Exg-Pill-ECG.*
     :align: center
 
-    `Visualizing ECG signals on Arduino IDE v1.8.x`
+    Visualizing ECG signals on Arduino IDE v1.8.x
 
 Step 7: Measuring Electrooculography (EOG)
 ================================================
@@ -375,7 +376,7 @@ the signals.
 
 After opening the serial plotter make sure to select the baud rate to 115200.
 
-.. tip:: Visit the complete documentation on how to :ref:`How to upload the code <eye-bioamp-arduino-firmware>`.
+.. tip:: Visit the complete documentation on how to :ref:`How to upload the code <eye-bioamp-arduino-firmware-code-upload>`.
 
 .. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
 
@@ -387,7 +388,7 @@ For visualizing the EOG signals, use `Chords Web <https://chords.upsidedownlabs.
 .. figure:: ../../../software/chords/chords-web/media/chords_eog_signal.*
     :align: center
 
-    `Visualizing EOG signals on Chords Web`
+    Visualizing EOG signals on Chords Web
 
 
 Move your eyes up-down or left-right to see your EOG signals in real time on your laptop.
@@ -395,7 +396,7 @@ Move your eyes up-down or left-right to see your EOG signals in real time on you
 .. figure:: media/bioamp-exg-pill-eog.*
     :align: center
 
-    `Visualizing EOG signals on Arduino IDE v1.8.x`
+    Visualizing EOG signals on Arduino IDE v1.8.x
 
 Step 8: Measuring Electroencephalography (EEG)
 ===================================================
@@ -454,7 +455,7 @@ select the COM port on which your development board is connected. To find out th
 disconnect your board and reopen the menu. The entry that disappears should be the 
 right COM port. Now upload the code.
 
-.. tip:: Visit the complete documentation on how to :ref:`How to upload the code <brain-bioamp-arduino-firmware>`.
+.. tip:: Visit the complete documentation on how to :ref:`How to upload the code <brain-bioamp-arduino-firmware-code-upload>`.
 
 .. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
  
@@ -466,7 +467,7 @@ For visualizing the EEG signals, use `Chords Web <https://chords.upsidedownlabs.
 .. figure:: ../../../software/chords/chords-web/media/chords_eeg_signal.*
     :align: center
 
-    `Visualizing EEG signals on Chords Web`
+    Visualizing EEG signals on Chords Web
 
 The signals that you can see on the screen right now are originating from prefrontal cortex part of your brain and propagating through all the layers to the surface of your skin.
 

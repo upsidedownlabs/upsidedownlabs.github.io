@@ -65,7 +65,7 @@ Before you start using the kit, please download or open the following:
    - We will use Chords Website to visualize the Eye Signals!
    - Open this website: `Chords Web <https://chords.upsidedownlabs.tech>`_
 
-.. _Connect Your Hardware:
+.. _eye-bioamp-arduino-firmware-connect-hardware:
 
 Step 3: Connect Your Hardware
 ================================
@@ -112,7 +112,7 @@ Step 4: Skin Preparation and Electrodes Placement
 
     EOG Placement
 
-.. _How to upload the Code to Arduino:
+.. _eye-bioamp-arduino-firmware-code-upload:
 
 Step 5: How to upload the Code to Arduino
 ===========================================
@@ -128,7 +128,7 @@ Step 5: How to upload the Code to Arduino
   - To try filtered signal: open ``02_EOGFilter.ino``
 
 .. note::
-    You'll find all the experiments listed below, each with :ref:`step-by-step instructions<experiments step by step>`. Just scroll to the one you're working on to get started with the right setup.
+    You'll find all the experiments listed below, each with :ref:`step-by-step instructions<eye-bioamp-arduino-firmware-exp-list>`. Just scroll to the one you're working on to get started with the right setup.
    
 5. Connect Your Arduino
 
@@ -167,7 +167,7 @@ Step 5: How to upload the Code to Arduino
 
     - Remember to close the **Serial Monitor & Serial Plotter** in **Arduino IDE** before starting the Chords Visualizer.
 
-.. _Visualize Your Eye Signals!:
+.. _eye-bioamp-arduino-firmware-visualize-signals:
 
 Step 6: Visualize Your Eye Signals!
 ======================================
@@ -184,7 +184,7 @@ Step 6: Visualize Your Eye Signals!
 
 🎉 Now blink your eyes or look side to side — you’ll see real-time EOG waves on the screen!
     
-.. _experiments step by step:
+.. _eye-bioamp-arduino-firmware-exp-list:
 
 Let's explore all the experiments step by step
 ***********************************************
@@ -209,16 +209,16 @@ Let's explore all the experiments step by step
     
     **3. Perform the Hardware**
     
-    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<Connect Your Hardware>`
+    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<eye-bioamp-arduino-firmware-connect-hardware>`
 
     **4. Firmware Upload**
 
     - For this project, navigate to the repository folder (Eye-BioAmp-Arduino-Firmware/1_FixedSampling) and select ``1_FixedSampling.ino``.
-    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<eye-bioamp-arduino-firmware-code-upload>`
     
     **5. Visualize your signal**
 
-    - Follow the steps given in :ref:`Visualize Your Eye Signals!<Visualize Your Eye Signals!>` 
+    - Follow the steps given in :ref:`Visualize Your Eye Signals!<eye-bioamp-arduino-firmware-visualize-signals>` 
   
     **6. Running & Observing Results**
 
@@ -251,16 +251,16 @@ Let's explore all the experiments step by step
 
     **3. Perform the Hardware**
 
-    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<Connect Your Hardware>`
+    - Refer to wiring as per instructions given in :ref:`Connect Your Hardware<eye-bioamp-arduino-firmware-connect-hardware>`
 
     **4. Firmware Upload**
 
     - For this project, go to the repository folder (Eye-BioAmp-Arduino-Firmware/2_EOGFilter) and select ``2_EOGFilter.ino``.
-    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<How to upload the Code to Arduino>`
+    - To upload firmware, refer to :ref:`How to upload the Code to Arduino<eye-bioamp-arduino-firmware-code-upload>`
     
     **5. Visualize your signal**
 
-    - Follow the steps given in :ref:`Visualize Your Eye Signals!<Visualize Your Eye Signals!>` 
+    - Follow the steps given in :ref:`Visualize Your Eye Signals!<eye-bioamp-arduino-firmware-visualize-signals>` 
 
     **6. Running & Observing Results**
 
