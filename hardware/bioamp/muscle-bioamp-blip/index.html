@@ -57,7 +57,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="Jun 14, 2025"/>
+    <meta name="docbuild:last-update" content="Jun 16, 2025"/>
   </head>
   
   
@@ -630,7 +630,7 @@
 <span id="id1"></span><h1>Muscle BioAmp Blip<a class="headerlink" href="#muscle-bioamp-blip" title="Link to this heading">#</a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
-<p>Muscle BioAmp Blip <a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> is single channel mikroBUS™ <a class="footnote-reference brackets" href="#id5" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> compatible ElectroMyography (EMG) sensor for precise  muscle signal recording.
+<p>Muscle BioAmp Blip <a class="footnote-reference brackets" href="#id5" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> is single channel mikroBUS™ <a class="footnote-reference brackets" href="#id6" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> compatible ElectroMyography (EMG) sensor for precise  muscle signal recording.
 It allows you to add the EMG functionality to your projects at ease. You can either connect it to any mikroBUS™ port or even
 a breadboard to get started.</p>
 <figure class="align-center">
@@ -678,10 +678,10 @@ a breadboard to get started.</p>
 <section id="hardware">
 <h2>Hardware<a class="headerlink" href="#hardware" title="Link to this heading">#</a></h2>
 <p>Images below shows a quick overview of the hardware design.</p>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../../_images/muscle-bioamp-blip-assembled.png"><img alt="../../../_images/muscle-bioamp-blip-assembled.png" src="../../../_images/muscle-bioamp-blip-assembled.png" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-text">Assembled PCB</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-text">Assembled PCB</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -716,10 +716,23 @@ a breadboard to get started.</p>
 <section id="software-requirements">
 <h2>Software requirements<a class="headerlink" href="#software-requirements" title="Link to this heading">#</a></h2>
 <p>Before you start using the kit, please download <a class="reference external" href="https://www.arduino.cc/en/software">Arduino IDE v1.8.19 (legacy IDE)</a>. Using this you’ll be able to upload the arduino sketches on your development board and visualise the data on your laptop.</p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../../../_images/arduino-ide.png"><img alt="../../../_images/arduino-ide.png" src="../../../_images/arduino-ide.png" style="width: 80%;" /></a>
+<figure class="align-center" id="id8">
+<img alt="Arduino IDE v1.8.19 (legacy IDE)" src="../../../_images/arduino-ide.png" />
+<figcaption>
+<p><span class="caption-text">Arduino IDE v1.8.19 (legacy IDE)</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
-</section>
+<p>Visit Upside Down Labs <a class="reference external" href="https://chords.upsidedownlabs.tech">Chords Web</a> to visualize your biosignals directly in the browser.</p>
+<figure class="align-center" id="id9">
+<img alt="Chords Web Landing Page" src="../../../_images/chords_landing_page.png" />
+<figcaption>
+<p><span class="caption-text">Chords Web Landing Page</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Getting started with Chords Web</strong></p>
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/IVIPnk9z75g" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></section>
 <section id="using-the-kit">
 <h2>Using the kit<a class="headerlink" href="#using-the-kit" title="Link to this heading">#</a></h2>
 <section id="step-1-soldering-connector-header-pins">
@@ -787,10 +800,10 @@ a breadboard to get started.</p>
 <li><p>Peel the plastic backing from electrodes</p></li>
 <li><p>Place the IN+ and IN- cables on the arm near the ulnar nerve &amp; REF (reference) at the back of your hand as shown in the connection diagram.</p></li>
 </ol>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id11">
 <img alt="../../../_images/emg-connections-1.png" src="../../../_images/emg-connections-1.png" />
 <figcaption>
-<p><span class="caption-text">Muscle BioAmp Blip with breadboard</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">Muscle BioAmp Blip with breadboard</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -831,17 +844,27 @@ the EMG signals.</p>
 </section>
 <section id="step-8-visualizing-the-emg-signals">
 <h3>Step 8: Visualizing the EMG signals<a class="headerlink" href="#step-8-visualizing-the-emg-signals" title="Link to this heading">#</a></h3>
+<p>For visualizing the EMG signals, use <a class="reference external" href="https://chords.upsidedownlabs.tech/">Chords Web</a> for quick and hassle free real-time biosignal visualization right from your browser, without installing any software.</p>
+<figure class="align-center" id="id12">
+<img alt="Visualizing EMG signals on Chords Web" src="../../../_images/chords_emg_signal.png" />
+<figcaption>
+<p><span class="caption-text">Visualizing EMG signals on Chords Web</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Now flex your arm to visualize the muscle signals in real time on your laptop.</p>
-<figure class="align-center">
-<img alt="../../../_images/emg-recording.png" src="../../../_images/emg-recording.png" />
+<figure class="align-center" id="id13">
+<img alt="Visualizing EMG signals on Arduino IDE v1.8.x" src="../../../_images/emg-recording.png" />
+<figcaption>
+<p><span class="caption-text">Visualizing EMG signals on Arduino IDE v1.8.x</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
 <p class="rubric">Footnotes</p>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id4" role="doc-footnote">
+<aside class="footnote brackets" id="id5" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
 <p>Please not that click board is a registered trademark of MIKROE thus you might see a white mark on the Muscle BioAmp Blip v0.1 pcbs (since the sensor was named as Muscle BioAmp Click earlier).</p>
 </aside>
-<aside class="footnote brackets" id="id5" role="doc-footnote">
+<aside class="footnote brackets" id="id6" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
 <p>mikroBUS™ is a socket standard developed by MIKROE which enables hundreds of Click boards™ to be connected to the microcontroller or microprocessor.</p>
 </aside>
@@ -1012,7 +1035,7 @@ the EMG signals.</p>
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Jun 14, 2025.
+  Last updated on Jun 16, 2025.
   <br/>
 </p></div>
       
