@@ -133,6 +133,24 @@ Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE
 
     Arduino IDE v1.8.19
 
+Visit Upside Down Labs `Chords Web <https://chords.upsidedownlabs.tech>`_ to visualize your biosignals directly in the browser.
+
+.. figure:: ../../../software/chords/chords-web/media/chords_landing_page.*
+
+.. grid:: 1 1 1 1
+    :margin: 4 4 0 0 
+    :gutter: 2
+
+    .. grid-item::
+
+        .. card::
+            
+            **Getting started with Chords Web**
+
+            .. youtube:: IVIPnk9z75g
+                :align: center
+                :width: 100%
+
 Using the kit
 ****************
 
@@ -219,10 +237,21 @@ After opening the serial plotter make sure to select the baud rate to 115200.
 Visualizing the EMG signals
 ------------------------------
 
+For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`_ for quick and hassle-free real-time biosignal visualization—right from your browser, without installing any software.
+
+.. figure:: ../../../software/chords/chords-web/media/chords_emg_signal.*
+    :align: center
+    :alt: Visualizing EMG signals on Chords Web
+
+    Visualizing EMG signals on Chords Web
+
 Now flex your arm to visualize the muscle signals in real time on your laptop.
 
 .. figure:: media/using-candy.*
     :align: center
+    :alt: Visualizing EMG signals on Arduino IDE v1.8.x
+
+    Visualizing EMG signals on Arduino IDE v1.8.x
 
 **Video tutorial:**
 

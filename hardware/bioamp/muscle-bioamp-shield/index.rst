@@ -143,6 +143,24 @@ Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE
 
     Download Arduino IDE v1.8.19
 
+Visit Upside Down Labs `Chords Web <https://chords.upsidedownlabs.tech>`_ to visualize your biosignals directly in the browser.
+
+.. figure:: ../../../software/chords/chords-web/media/chords_landing_page.*
+
+.. grid:: 1 1 1 1
+    :margin: 4 4 0 0 
+    :gutter: 2
+
+    .. grid-item::
+
+        .. card::
+            
+            **Getting started with Chords Web**
+
+            .. youtube:: IVIPnk9z75g
+                :align: center
+                :width: 100%
+
 .. only:: html
 
     Assembling the Kit
@@ -423,6 +441,16 @@ Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 th
 :fab:`github;pst-color-primary` `EMG Filter <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino>`_
 
 :fab:`github;pst-color-primary` `EMG Envelope <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino>`_
+
+For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`_ for quick and hassle-free real-time biosignal visualization—right from your browser, without installing any software.
+
+.. figure:: ../../../software/chords/chords-web/media/chords_emg_signal.*
+    :align: center
+    :alt: Visualizing EMG signals on Chords Web
+
+    Visualizing EMG signals on Chords Web
+
+You can also use Arduino IDE's Serial Plotter to visualize the signal:
 
 Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
 select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
