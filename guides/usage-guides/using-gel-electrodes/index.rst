@@ -120,7 +120,7 @@ Peel of the plastic backing and place the electrodes on your targeted skin surfa
 
     Gel electrodes placement for ECG signal recording
 
-.. figure:: media/electrode-placement-eeg.*
+.. figure:: media/electrode-placement-eeg-new.*
     :align: center
     :alt: Electrode placement for EEG
 
