@@ -57,7 +57,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="Jun 17, 2025"/>
+    <meta name="docbuild:last-update" content="Jun 25, 2025"/>
   </head>
   
   
@@ -628,99 +628,353 @@
                   
   <section id="neuro-play-ground-npg-lite">
 <span id="neuro-play-ground-lite"></span><h1>Neuro Play Ground (NPG) Lite<a class="headerlink" href="#neuro-play-ground-npg-lite" title="Link to this heading">#</a></h1>
-<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Launching soon</span></p>
+<p><strong>An expandable 3-channel wireless BioAmp for HCI &amp; BCI</strong></p>
+<figure class="align-center">
+<a class="reference external image-reference" href="https://www.crowdsupply.com/upside-down-labs/neuro-playground-lite"><img alt="NPG Lite Crowd Supply Banner" src="../../../_images/npg-lite-banner.png" /></a>
+</figure>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
-<p>Neuro Playground (NPG) Lite is a multichannel wireless bio-potential signal amplification device designed for recording EMG, ECG, EOG, and EEG. It comes in a compact <a class="reference external" href="https://learn.adafruit.com/adafruit-feather/overview">Adafruit feather</a> form factor and offers WiFi/BLE wireless connectivity. With the addition of daughter boards called Playmates, users can easily enhance the device’s capabilities, enabling the students/researchers/hobbyists to create awesome Human-Computer Interface (HCI) and Brain-Computer Interface (BCI) applications.</p>
-<figure class="align-center" id="id2">
-<img alt="../../../_images/npg-hero-1.png" src="../../../_images/npg-hero-1.png" />
+<p>Neuro PlayGround Lite (NPG Lite) is a multichannel Adafruit feather form-factor wireless bio-physiological signal acquisition board.
+It can be used for Electrocardiography (ECG), Electromyography (EMG),
+Electrooculography (EOG), or Electroencephalography (EEG). Its compact footprint and hassle-free setup ensure
+portability, quick deployment and a clutter-free experience, making it ideal for research, education and
+wearable applications.</p>
+<figure class="align-center" id="id6">
+<img alt="Neuro Play Ground (NPG) Lite" src="../../../_images/npg-lite-front-back.jpg" />
 <figcaption>
-<p><span class="caption-text">Neuro Play Ground (NPG) Lite</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-text">Neuro Play Ground (NPG) Lite</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>With the addition of Playmate boards and 3rd party FeatherWing boards,
+users can easily enhance the device’s capabilities, enabling them
+to create awesome Human-Computer Interface (HCI) and Brain-Computer Interface (BCI) applications.
+Its extensive compatibility lets you equip your device with features like a vibration motor for
+haptic feedback, a buzzer for audio feedback, and I2C connectivity, making it highly versatile for a
+wide range of applications.</p>
+<p>It leverages our powerful open source, cross-platform Chords software suite
+(<a class="reference internal" href="../../../software/chords/chords-web/index.html#chords"><span class="std std-ref">Chords-Web</span></a>, <a class="reference internal" href="../../../software/chords/chords-python/index.html#chords-pythons"><span class="std std-ref">Chords-Python</span></a>, <a class="reference external" href="https://github.com/upsidedownlabs/Chords-LSL-Connector">Chords LSL Connector</a> and <a class="reference external" href="https://github.com/upsidedownlabs/NPG-Lite-Flasher">NPG Lite Flasher</a>),
+letting users visualize  captured bio-physiological signals in real-time, apply filtering, perform FFT analysis, and much, much, more.
+Because of its expandability, wide array of applications, and robust networking capabilities
+(using Bluetooth, Zigbee, Wi-Fi, or Thread for mesh networking), NPG Lite lets you capture bio-physiological
+signals how you want and where you want it.</p>
+<figure class="align-center" id="id7">
+<img alt="3 Channel Data using Chords Web" src="../../../_images/npg-lite-chords-3-ch-data.png" />
+<figcaption>
+<p><span class="caption-text">3 Channel Data using Chords Web</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="features-specifications">
 <h2>Features &amp; Specifications<a class="headerlink" href="#features-specifications" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>No. of channels</p></td>
-<td><p>3</p></td>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Feature</strong></p></th>
+<th class="head"><p><strong>Details</strong></p></th>
 </tr>
-<tr class="row-even"><td><p>Power options</p></td>
-<td><p>USB type C or LiPo battery</p></td>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Bio-signal channels</p></td>
+<td><p>3-channel BioAmp (ECG, EMG, EOG, EEG)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Microcontroller</p></td>
-<td><p>ESP32-C3 (RISC-V) with 4MB Flash</p></td>
+<td><p>ESP32-C6 (RISC-V) with 8 MB flash</p></td>
 </tr>
-<tr class="row-even"><td><p>Power supply</p></td>
-<td><p>600mA LDO with filtering</p></td>
+<tr class="row-even"><td><p>Wireless I/O</p></td>
+<td><p>Wi-Fi, Bluetooth LE, Thread, Zigbee</p></td>
 </tr>
-<tr class="row-odd"><td><p>Connectivity options</p></td>
-<td><p>WiFi, Bluetooth, USB</p></td>
+<tr class="row-odd"><td><p>USB &amp; Programming</p></td>
+<td><p>USB-C for power, charging &amp; programming; UART, JTAG</p></td>
 </tr>
-<tr class="row-even"><td><p>Debugging options</p></td>
-<td><p>JTAG, UART</p></td>
+<tr class="row-even"><td><p>LEDs</p></td>
+<td><p>6 addressable RGB LEDs, User LED, Charging indicator LED</p></td>
 </tr>
-<tr class="row-odd"><td><p>LEDs</p></td>
-<td><p>User LED, charging LED, 6 addressable RGB LEDs</p></td>
+<tr class="row-odd"><td><p>Buttons</p></td>
+<td><p>Reset button + User/Boot buttons</p></td>
 </tr>
-<tr class="row-even"><td><p>Buttons</p></td>
-<td><p>Reset &amp; user button</p></td>
+<tr class="row-even"><td><p>Power Options</p></td>
+<td><p>USB-C or LiPo battery</p></td>
 </tr>
-<tr class="row-odd"><td><p>BioPotentials</p></td>
-<td><p>EMG, ECG, EOG and EEG</p></td>
+<tr class="row-odd"><td><p>Power Regulation</p></td>
+<td><p>600 mA LDO with LiPo battery charging onboard</p></td>
 </tr>
-<tr class="row-even"><td><p>Compatible hardware</p></td>
+<tr class="row-even"><td><p>Battery Connector</p></td>
+<td><p>PicoBlade LiPo</p></td>
+</tr>
+<tr class="row-odd"><td><p>Form Factor</p></td>
+<td><p>Standard Adafruit Feather (GPIO, Power, RX/TX pins)</p></td>
+</tr>
+<tr class="row-even"><td><p>Protection</p></td>
+<td><p>On-board patient &amp; USB ESD protection</p></td>
+</tr>
+<tr class="row-odd"><td><p>Compatible hardware</p></td>
 <td><p>NPG Playmates &amp; FeatherWing boards</p></td>
-</tr>
-<tr class="row-odd"><td><p>Protection</p></td>
-<td><p>Built-in patient &amp; USB ESD protection</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
-<section id="board-layout">
-<h2>Board Layout<a class="headerlink" href="#board-layout" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id3">
-<img alt="../../../_images/npg-front-annotations.png" src="../../../_images/npg-front-annotations.png" />
+<section id="board-layout-pinout-diagram">
+<h2>Board Layout &amp; Pinout Diagram<a class="headerlink" href="#board-layout-pinout-diagram" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id8">
+<img alt="Neuro Play Ground (NPG) Lite annotations" src="../../../_images/npg-lite-annotated.jpg" />
 <figcaption>
-<p><span class="caption-text">Neuro Play Ground (NPG) Lite annotations</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text">Neuro Play Ground (NPG) Lite annotations</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id9">
+<img alt="Neuro Play Ground (NPG) Lite Pinout" src="../../../_images/npg-lite-pinout.jpg" />
+<figcaption>
+<p><span class="caption-text">Neuro Play Ground (NPG) Lite Pinout</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="playmates">
 <h2>Playmates<a class="headerlink" href="#playmates" title="Link to this heading">#</a></h2>
-<p>Playmates are modular expansion boards designed to enhance the functionality of <strong>Neuro Play Ground (NPG) Lite</strong>. These add-ons seamlessly integrate with the core system, allowing users to extend their capabilities to create awesome Human-Computer Interface (HCI) &amp; Brain-Computer Interface (BCI).</p>
-<section id="vibz">
-<h3>VibZ<a class="headerlink" href="#vibz" title="Link to this heading">#</a></h3>
-<p>The first Playmate, <strong>VibZ</strong>, introduces haptic feedback, a buzzer, a QWIIC port for easy sensor integration, an ON/OFF switch, and electrode header pins. With these Playmates, users can customize their setup for specific applications, whether in research, education, or interactive biofeedback experiments. This modular approach ensures flexibility, scalability, and better user experience.</p>
-<figure class="align-center" id="id4">
-<img alt="../../../_images/npg-playmate-annotations.png" src="../../../_images/npg-playmate-annotations.png" />
+<p>Playmates are modular expansion boards designed to enhance the functionality of Neuro Play Ground (NPG) Lite. These add-ons seamlessly integrate with the core system, allowing users to extend their capabilities to create awesome Human-Computer Interface (HCI) &amp; Brain-Computer Interface (BCI).</p>
+<section id="npg-vibz-playmate">
+<h3>NPG Vibz Playmate<a class="headerlink" href="#npg-vibz-playmate" title="Link to this heading">#</a></h3>
+<p>VibZ introduces vibration motor for haptic feedback, a buzzer for auditory feedback, a QWIIC port for easy I2C sensor integration, an ON/OFF slide switch, 2.54 mm electrode header pins
+and common negative electrode option. With these Playmates, users can customize their setup for specific applications, whether in research, education, or
+interactive biofeedback experiments. This modular approach ensures flexibility, scalability, and better user experience.</p>
+<figure class="align-center" id="id10">
+<img alt="Neuro Play Ground (NPG) Vibz Playmate" src="../../../_images/vibz-playmate-front-and-back.jpg" />
 <figcaption>
-<p><span class="caption-text">VibZ Playmate</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-text">Neuro Play Ground (NPG) Vibz Playmate</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<section id="id1">
-<h4>Features &amp; Specifications<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="compatible-software">
+<h2>Compatible Software<a class="headerlink" href="#compatible-software" title="Link to this heading">#</a></h2>
+<section id="chords-web">
+<h3>Chords Web<a class="headerlink" href="#chords-web" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Visit <a class="reference external" href="https://chords.upsidedownlabs.tech/">Chords Web</a> for real-time biopotential signal visualization (EEG, EMG, ECG, EOG), featuring advanced plotting, filtering, snapshotting and CSV recording.</p></li>
+</ul>
+<figure class="align-center" id="id11">
+<img alt="Chords Web Landing Page" src="../../../_images/chords_landing_page.png" />
+<figcaption>
+<p><span class="caption-text">Chords Web Landing Page</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>To know more about Chords Web <a class="reference internal" href="../../../software/chords/chords-web/index.html#chords"><span class="std std-ref">click here</span></a> or watch the YouTube video.</p></li>
+</ul>
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/Tqor4mo2Ji8" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></section>
+<section id="chords-python">
+<h3>Chords Python<a class="headerlink" href="#chords-python" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="../../../software/chords/chords-python/index.html#chords-pythons"><span class="std std-ref">Chords Python</span></a> is an open-source bag of tools for recording biopotential signals like ECG, EMG, EEG, or EOG, along with visualization using BioAmp hardware.</p></li>
+</ul>
+<figure class="align-center" id="id12">
+<img alt="Chords Python Landing Page" src="../../../_images/dark-interface.png" />
+<figcaption>
+<p><span class="caption-text">Chords Python Landing Page</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>To know more about Chords Python watch the YouTube video.</p></li>
+</ul>
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/TiDwSQEY2eY" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></section>
+<section id="id2">
+<h3>Chords LSL Connector<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/upsidedownlabs/Chords-LSL-Connector">Chords LSL Connector</a> is a Rust based bridge that streams data from devices running Chords firmware into the Lab Streaming Layer (LSL), enabling synchronized acquisition and analysis with BCI/EEG software.</p></li>
+</ul>
+<figure class="align-center" id="id13">
+<img alt="Chords LSL Connector Landing Page" src="../../../_images/chords-lsl-connector-landing-page.png" />
+<figcaption>
+<p><span class="caption-text">Chords LSL Connector Landing Page</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>To know more about Chords LSL Connector watch the YouTube video.</p></li>
+</ul>
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/94lPImB0eRo" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></section>
+<section id="id4">
+<h3>NPG Lite Flasher<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/upsidedownlabs/NPG-Lite-Flasher">NPG Lite Flasher</a> is a cross-platform, flashing utility for the Neuro PlayGround Lite board, providing seamless firmware updates over serial or DFU via a simple CLI.</p></li>
+</ul>
+<figure class="align-center" id="id14">
+<img alt="NPG Lite Flasher Landing Page" src="../../../_images/npg-lite-flasher-launch-page.jpg" />
+<figcaption>
+<p><span class="caption-text">NPG Lite Flasher Landing Page</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>To know more about NPG Lite Flasher watch the YouTube video.</p></li>
+</ul>
+<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/NDk-P3nob_0" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></section>
+</section>
+<section id="project-tutorials">
+<span id="neuro-play-ground-lite-project-tutorials"></span><h2>Project Tutorials<a class="headerlink" href="#project-tutorials" title="Link to this heading">#</a></h2>
+<p>NPG Lite, with its multi-channel BioAmp, wireless connectivity, battery operation, and expansion interface, allows
+users to create HCI and BCI applications with ease. We’ve created projects leveraging ECG, EMG, EOG, and EEG signals to
+inspire you, but the possibilities cover so many more use cases.</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+1. Make Muscular Music</div>
+<p class="sd-card-text">This is a human-computer interface (HCI) that uses 3-channel EMG data to detect muscle signals from the
+left hand, right hand, and chest to control virtual musical instruments. When muscles contract, each channel
+triggers a distinct sound effect, transforming your body into an organic orchestra.</p>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/zUwIHk5culs" style="border: 0; height: 345px; width: 560px">
+</iframe></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">To learn about this project, visit our Instructables page for detailed guide: <a class="reference external" href="https://www.instructables.com/Muscle-Melody-Play-Music-With-Your-Muscle-Movement/">Muscle Melody: Create Music With Your Muscle Movements (EMG)</a></p>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+2. Track Your Ticker</div>
+<p class="sd-card-text">This project focuses on capturing electrocardiogram (ECG) signals to calculate heart rate using
+Neuro PlayGround Lite and displaying them in a Chrome-based browser on a mobile phone in real-time
+via a Bluetooth LE connection.</p>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/2UDBqEsjJSI" style="border: 0; height: 345px; width: 560px">
+</iframe></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">To learn about this project, visit our Instructables page for detailed guide: <a class="reference external" href="https://www.instructables.com/Monitor-ECG-and-Heartrate-on-Your-Mobile-Phone/">Monitor ECG and Heartrate on Your Mobile Phone</a></p>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+3. Jump In the Blink of an Eye</div>
+<p class="sd-card-text">Instead of using the keyboard, you can control a game simply by blinking. The setup detects EOG signals from the eyes,
+sends the data over Bluetooth LE to the PC, detects eye blinks, and then takes the eye blink as a trigger to emulate the
+spacebar keystroke. You can configure the code to simulate any other keystroke as well.</p>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/ZJmUUtHJj08" style="border: 0; height: 345px; width: 560px">
+</iframe></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">To learn about this project, visit our Instructables page for detailed guide: <a class="reference external" href="https://www.instructables.com/Controlling-Keyboard-With-Eye-Blinks-Using-Neuro-P/">Controlling Keyboard With Eye Blinks Using Neuro PlayGround Lite</a></p>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+4. Pop Bubbles With Your Mind</div>
+<p class="sd-card-text">This project showcases a brain-computer interface (BCI) application that utilizes EEG (electroencephalography) signals
+to operate an interactive bubble-popping game in a web browser. The system identifies beta wave activity (12–30 Hz),
+indicating concentration and attention levels. Bubbles appear and pop as the user maintains focus, but they cease to
+pop when concentration wanes.</p>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/EjJBlU8QiEI" style="border: 0; height: 345px; width: 560px">
+</iframe></div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">To learn about this project, visit our Instructables page for detailed guide: <a class="reference external" href="https://www.instructables.com/Pop-Bubbles-With-Your-Mind-EEG-Neuro-PlayGround-NP/">Pop Bubbles With Your Mind (EEG) | Neuro PlayGround (NPG) Lite</a></p>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Neuro-Playground Lite C3 (Obsolete)<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="rubric">Overview</p>
+<p class="sd-card-text">Neuro Playground (NPG) Lite is a multichannel wireless bio-potential signal amplification device
+designed for recording EMG, ECG, EOG, and EEG. It comes in a
+compact <a class="reference external" href="https://learn.adafruit.com/adafruit-feather/overview">Adafruit feather</a> form factor and
+offers WiFi/BLE wireless connectivity. With the addition of daughter boards called Playmates, users can
+easily enhance the device’s capabilities, enabling the students/researchers/hobbyists to create awesome
+Human-Computer Interface (HCI) and Brain-Computer Interface (BCI) applications.</p>
+<figure class="align-center" id="id15">
+<img alt="Neuro Play Ground (NPG) Lite C3" src="../../../_images/npg-C3-hero-1.png" />
+<figcaption>
+<p><span class="caption-text">Neuro Play Ground (NPG) Lite C3</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p class="rubric">Features &amp; Specifications</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
-<tr class="row-odd"><td><p>2.54mm Dupont header pin for electrode connection</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">No. of channels</p></td>
+<td><p class="sd-card-text">3</p></td>
 </tr>
-<tr class="row-even"><td><p>Vibration motor for haptic Feedback motor</p></td>
+<tr class="row-even"><td><p class="sd-card-text">Power options</p></td>
+<td><p class="sd-card-text">USB type C or LiPo battery</p></td>
 </tr>
-<tr class="row-odd"><td><p>Buzzer for audio feedback</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">Microcontroller</p></td>
+<td><p class="sd-card-text">ESP32-C3 (RISC-V) with 4MB Flash</p></td>
 </tr>
-<tr class="row-even"><td><p>QWIIC / STEMMA QT I2C port</p></td>
+<tr class="row-even"><td><p class="sd-card-text">Power supply</p></td>
+<td><p class="sd-card-text">600mA LDO with filtering</p></td>
 </tr>
-<tr class="row-odd"><td><p>ON/OFF Switch</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">Connectivity options</p></td>
+<td><p class="sd-card-text">WiFi, Bluetooth, USB</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Debugging options</p></td>
+<td><p class="sd-card-text">JTAG, UART</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">LEDs</p></td>
+<td><p class="sd-card-text">User LED, charging LED, 6 addressable RGB LEDs</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Buttons</p></td>
+<td><p class="sd-card-text">Reset &amp; user button</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">BioPotentials</p></td>
+<td><p class="sd-card-text">EMG, ECG, EOG and EEG</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Compatible hardware</p></td>
+<td><p class="sd-card-text">NPG Playmates &amp; FeatherWing boards</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Protection</p></td>
+<td><p class="sd-card-text">Built-in patient &amp; USB ESD protection</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-</section>
-</section>
-</section>
+<p class="rubric">Board Layout</p>
+<figure class="align-center" id="id16">
+<img alt="Neuro Play Ground (NPG) Lite C3 annotations" src="../../../_images/npg-C3-front-annotations.png" />
+<figcaption>
+<p><span class="caption-text">Neuro Play Ground (NPG) Lite C3 annotations</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p class="rubric">Playmates</p>
+<p class="sd-card-text">Playmates are modular expansion boards designed to enhance the functionality of <strong>Neuro Play Ground (NPG) Lite</strong>. These add-ons seamlessly integrate with the core system, allowing users to extend their capabilities to create awesome Human-Computer Interface (HCI) &amp; Brain-Computer Interface (BCI).</p>
+<p class="sd-card-text"><strong>VibZ</strong></p>
+<p class="sd-card-text">The first Playmate, <strong>VibZ</strong>, introduces haptic feedback, a buzzer, a QWIIC port for easy sensor integration, an ON/OFF switch, and electrode header pins. With these Playmates, users can customize their setup for specific applications, whether in research, education, or interactive biofeedback experiments. This modular approach ensures flexibility, scalability, and better user experience.</p>
+<figure class="align-center" id="id17">
+<img alt="VibZ Playmate" src="../../../_images/npg-C3-playmate-annotations.png" />
+<figcaption>
+<p><span class="caption-text">VibZ Playmate</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p class="rubric">Features &amp; Specifications</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p class="sd-card-text">2.54mm Dupont header pin for electrode connection</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Vibration motor for haptic Feedback motor</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Buzzer for audio feedback</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">QWIIC / STEMMA QT I2C port</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">ON/OFF Switch</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</details></section>
 </section>
 
 
@@ -772,14 +1026,19 @@
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features-specifications">Features &amp; Specifications</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#board-layout">Board Layout</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#board-layout-pinout-diagram">Board Layout &amp; Pinout Diagram</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#playmates">Playmates</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vibz">VibZ</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Features &amp; Specifications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#npg-vibz-playmate">NPG Vibz Playmate</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compatible-software">Compatible Software</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chords-web">Chords Web</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chords-python">Chords Python</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Chords LSL Connector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">NPG Lite Flasher</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-tutorials">Project Tutorials</a></li>
 </ul>
   </nav></div>
 
@@ -846,7 +1105,7 @@
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Jun 17, 2025.
+  Last updated on Jun 25, 2025.
   <br/>
 </p></div>
       
