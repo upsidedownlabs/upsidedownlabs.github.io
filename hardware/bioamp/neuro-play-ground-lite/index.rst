@@ -98,19 +98,18 @@ Playmates
 
 Playmates are modular expansion boards designed to enhance the functionality of Neuro Play Ground (NPG) Lite. These add-ons seamlessly integrate with the core system, allowing users to extend their capabilities to create awesome Human-Computer Interface (HCI) & Brain-Computer Interface (BCI).
 
-NPG Playmate Vibz
-=================
+NPG Vibz Playmate
+===================
 
-VibZ introduces vibration motor for haptic feedback, a buzzer, a QWIIC port for easy sensor integration, an ON/OFF slide switch, 2.54 mm electrode header pins
+VibZ introduces vibration motor for haptic feedback, a buzzer for auditory feedback, a QWIIC port for easy I2C sensor integration, an ON/OFF slide switch, 2.54 mm electrode header pins
 and common negative electrode option. With these Playmates, users can customize their setup for specific applications, whether in research, education, or 
 interactive biofeedback experiments. This modular approach ensures flexibility, scalability, and better user experience.
 
-.. figure:: media/playmate-vibz-front-and-back.*
+.. figure:: media/vibz-playmate-front-and-back.*
     :align: center
     :alt: Neuro Play Ground (NPG) Vibz Playmate
 
     Neuro Play Ground (NPG) Vibz Playmate
-
 
 Compatible Software
 ************************
@@ -155,22 +154,22 @@ Chords LSL Connector
 
 - `Chords LSL Connector <https://github.com/upsidedownlabs/Chords-LSL-Connector>`_ is a Rust based bridge that streams data from devices running Chords firmware into the Lab Streaming Layer (LSL), enabling synchronized acquisition and analysis with BCI/EEG software.
 
+.. figure:: media/chords-lsl-connector-landing-page.*
+    :align: center
+    :alt: Chords LSL Connector Landing Page 
+
+    Chords LSL Connector Landing Page 
+
 - To know more about Chords LSL Connector watch the YouTube video.
 
 .. youtube:: 94lPImB0eRo
     :align: center
     :width: 100%
 
-.. .. figure:: ../../../software/chords/chords-python/media/dark-interface.*
-    :align: center
-    :alt: Chords Web Landing Page 
-
-    Chords Web Landing Page
-..
-    
+ 
 
 NPG Lite Flasher
-============================
+===================
   
 - `NPG Lite Flasher <https://github.com/upsidedownlabs/NPG-Lite-Flasher>`_ is a cross-platform, flashing utility for the Neuro PlayGround Lite board, providing seamless firmware updates over serial or DFU via a simple CLI.
 
@@ -185,12 +184,6 @@ NPG Lite Flasher
 .. youtube:: NDk-P3nob_0
     :align: center
     :width: 100%
-
-
-Arduino IDE
-==============
-  
-- The official `Arduino IDE <https://www.arduino.cc/en/software/>`_ development environment for writing, compiling, and uploading Chords-Arduino-Firmware sketches to supported boards; features built-in library management, serial monitor, and easy board configuration for rapid bio-signal prototyping.
 
 .. _neuro-play-ground-lite-project-tutorials:
 
