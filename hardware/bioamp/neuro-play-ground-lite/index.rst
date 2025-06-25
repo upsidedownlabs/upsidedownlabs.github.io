@@ -231,7 +231,7 @@ inspire you, but the possibilities cover so many more use cases.
 .. card:: 3. Jump In the Blink of an Eye
 
     Instead of using the keyboard, you can control a game simply by blinking. The setup detects EOG signals from the eyes, 
-    ends the data over Bluetooth LE to the PC, detects eye blinks, and then takes the eye blink as a trigger to emulate the 
+    sends the data over Bluetooth LE to the PC, detects eye blinks, and then takes the eye blink as a trigger to emulate the 
     spacebar keystroke. You can configure the code to simulate any other keystroke as well.
 
     .. youtube:: ZJmUUtHJj08
