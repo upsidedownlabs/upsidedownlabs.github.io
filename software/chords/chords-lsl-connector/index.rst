@@ -86,7 +86,7 @@ Installation
       sudo dnf install chords-lsl-connector-0.3.0-1.x86_64.rpm  
     
     2. Enter your password and confirm the install when prompted.  
-    3. After installation, launch **NPG Lite Flasher** from your Applications menu.
+    3. After installation, launch **Chords LSL Connector** from your Applications menu.
 
 .. dropdown:: **Debian/Ubuntu (.deb)**  
 
@@ -106,7 +106,7 @@ Installation
   
   ::
     
-    npg-lite-flasher
+    chords-lsl-connector
 
 .. dropdown:: **macOS (.dmg)**  
 
