@@ -3,6 +3,8 @@
 Chords-Web
 ###############
 
+.. youtube:: fM0c6JVh3uE
+
 Overview
 ********
 
@@ -32,6 +34,7 @@ Software Requirements
 *********************
 
 *  `Arduino Firmware <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ (Use this software to upload Chords Arduino firmware to your development board).
+* :ref:`NPG Lite Flasher <npg-lite-flasher>` (Use this software to upload NPG Lite firmware to your NPG Lite board or any ESP32 based board).
 * Chromium-based browsers (Know more about  :ref:`chords-browsers-compatibility`).
 
 Hardware Requirements
@@ -60,6 +63,19 @@ Once ready, upload the firmware to your development board. Visit the Chords Ardu
 Copy the sketch, paste it into the Arduino IDE, go to `Tools`, select your board and the correct COM port, then click the upload button.  
 
 
+To learn about how to flash the code on the NPG Lite Board, checkout: 
+
+.. only:: html
+
+   .. grid:: 1 2 2 1
+      :margin: 4 4 0 0 
+      :gutter: 2
+
+      .. grid-item-card:: NPG Lite Flasher
+         :text-align: center
+         :link: npg-lite-flasher
+         :link-type: ref
+
 Opening Chords-web
 *******************
 
@@ -82,7 +98,7 @@ The Chords Visualizer is a powerful web-based tool designed for seamless real-ti
 Features
 ---------
 
-.. list-table:: Features
+.. list-table:: 
    :widths: 25 75
    :header-rows: 1
 
@@ -239,64 +255,14 @@ Running the Application
 9.  Select channels via the ``Channels`` button in the settings popover.  
 10. Adjust zoom using the ``Zoom`` slider for a detailed or overall view.  
 
-.. _chords-web-fft-visualizer:
-
-FFT Analysis and EEG Band Spectrum Plotting
-===========================================
-
-Overview
---------
-
-We have introduced **FFT (Fast Fourier Transform) analysis** and **EEG band spectrum plotting** to improve real-time signal processing. These features enable you to visualize and analyze EEG frequency bands, providing deeper insights into brain activity.  
-
-Features
---------
-
-.. list-table:: Features
-   :widths: 25 75
-   :header-rows: 1
-
-   * - **Feature**
-     - **Description**
-   * - **Download EEG Data**
-     - Save recorded channel data as a **CSV file** for further analysis, storage, or external visualization.
-   * - **Live EEG Band Monitoring**
-     - View real-time plots of EEG band values for better brain activity tracking.
-
-
-Supported EEG Bands
--------------------
-
-- **Delta (0.5 - 4 Hz)** → Associated with deep sleep and unconscious states.  
-- **Theta (4 - 8 Hz)** → Linked to relaxation, meditation, and light sleep.  
-- **Alpha (8 - 13 Hz)** → Reflects calm, wakeful relaxation, often seen during closed-eye rest.  
-- **Beta (13 - 30 Hz)** → Related to active thinking, problem-solving, and focus.  
-- **Gamma (30 - 100 Hz)** → Involved in high-level cognitive functioning, attention, and perception.  
-
-Running the Application 
-------------------------
-
-1. Select **"FFT Visualizer"** to see your brainwaves in real time. 
-2. The **top segment** displays filtered EEG data using a **45Hz low-pass filter** to remove noise.  
-3. The **bottom segment** is divided into two sections: 
-
-   - **Left side** → Shows EEG frequency values in Hz.  
-   - **Right side** → Offers two interactive modes:  
-
-     - **Band Power Mode** → Displays real-time EEG band power values.  
-     - **Beta Candle Mode** → A unique visualization where a glowing candle represents your focus level.  
-
-       - **Brighter candle** = Higher beta waves = Strong focus.  
-       - **Dim candle** = Lower beta waves = Distraction.  
-
 .. _chords-web-serial-wizard:
 
-Serial Plotter & Monitor
-========================
+Serial Wizard Plotter & Monitor
+=================================
 
 Overview
 --------
-The **Serial Plotter & Monitor** is a standalone feature within Chords-Web that provides real‑time serial data visualization. 
+The **Serial Wizard Plotter & Monitor** is a standalone feature within Chords-Web that provides real‑time serial data visualization. 
 
 .. figure:: ./media/chords_serialwizard.*
    :align: center
@@ -307,7 +273,7 @@ The **Serial Plotter & Monitor** is a standalone feature within Chords-Web that 
 Features
 --------
 
-.. list-table:: Features
+.. list-table::
    :widths: 25 75
    :header-rows: 1
 
@@ -331,6 +297,188 @@ Running the Application
 2. Click on Connect button select board.
 3. Use the footer button bar to toggle between the Plotter, Monitor, or a combined view.
 4. Navigate using the top bar to switch themes, visit the GitHub repository, view contributors, or return to the previous page.
+
+.. note::
+  Checkout our YouTube video for more information: 
+  
+  .. youtube:: -C_QUpwcEJQ
+
+.. _chords-web-fft-visualizer:
+
+FFT Analysis and EEG Band Spectrum Plotting
+===========================================
+
+Overview
+--------
+
+We have introduced **FFT (Fast Fourier Transform) analysis** and **EEG band spectrum plotting** to improve real-time signal processing. These features enable you to visualize and analyze EEG frequency bands, providing deeper insights into brain activity.  
+
+.. figure:: ./media/chords_fft_visualiser.*
+   :align: center
+   :alt: Chords-Web FFT Visualiser
+
+   Chords-Web FFT Visualiser
+
+
+Features
+--------
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - **Feature**
+     - **Description**
+   * - **Download EEG Data**
+     - Save recorded channel data as a **CSV file** for further analysis, storage, or external visualization.
+   * - **Live EEG Band Monitoring**
+     - View real-time plots of EEG band values for better brain activity tracking.
+   * - **Channel Selection**
+     - Toggle individual channels (CH1–CH3) on or off to customize which electrode inputs are displayed and recorded.
+
+
+Supported EEG Bands
+-------------------
+
+- **Delta (0.5 - 4 Hz)** → Associated with deep sleep and unconscious states.  
+- **Theta (4 - 8 Hz)** → Linked to relaxation, meditation, and light sleep.  
+- **Alpha (8 - 13 Hz)** → Reflects calm, wakeful relaxation, often seen during closed-eye rest.  
+- **Beta (13 - 30 Hz)** → Related to active thinking, problem-solving, and focus.  
+- **Gamma (30 - 45 Hz)** → Involved in high-level cognitive functioning, attention, and perception.  
+
+Running the Application 
+------------------------
+
+1. Select **"FFT Visualizer"** to see your brainwaves in real time.
+2. You will get two option, select the appropriate option based on how your device is connected:
+   
+   - Serial
+   - Bluetooth
+
+3. The **top segment** displays filtered EEG data using a **45Hz low-pass filter** to remove noise.  
+4. The **bottom segment** is divided into two sections: 
+
+   - **Left side** → Shows EEG frequency values in Hz.  
+   - **Right side** → Offers two interactive modes:  
+
+     - **Band Power Mode** → Displays real-time EEG band power values.  
+     - **Beta Candle Mode** → A unique visualization where a glowing candle represents your focus level.  
+
+       - **Brighter candle** = Higher beta waves = Strong focus.  
+       - **Dim candle** = Lower beta waves = Distraction.  
+
+.. note::
+  Checkout our YouTube video for more information: 
+  
+  .. youtube:: zkPGzX3GKnk
+
+
+.. _chords-web-npg-lite:
+
+NPG Lite
+===========
+
+Overview
+--------
+
+We have added support for :ref:`NPG Lite<neuro-play-ground-lite>`, enabling real-time visualization of signals directly
+from the onboard 3-channel BioAmp. Powered by the ESP32-C6 with a built-in 12-bit ADC, setup is seamless: simply upload the firmware, power on the board, and begin streaming instantly.
+
+.. figure:: ./media/chords_npg_lite.*
+   :align: center
+   :alt: Chords-Web NPG Lite
+
+   Chords-Web NPG Lite
+
+Features
+--------
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - **Feature**
+     - **Description**
+   * - **Wireless Bluetooth LE**
+     - Stream up to 3 channels of biopotential data over BLE - no cables after initial power-on.
+   * - **Built-in BioAmp & 12-bit ADC**
+     - On-board amplifier and ESP32-C6 ADC ensure high-quality signal capture.
+   * - **Interactive Controls**
+     - Select channels, play/pause live stream, apply bandpass & 50/60 Hz notch filters, and record to CSV.
+
+Running the application
+---------------------------
+
+1. **Flash the correct firmware**  
+   - Visit the :ref:`NPG-Lite Flasher<npg-lite-flasher>` and upload the **BLE firmware** to your board.  
+2. **Open Chords-Web**  
+   - Navigate to https://chords.upsidedownlabs.tech and click **Visualize Now**.  
+3. **Select “NPG-Lite”**  
+   - From the application list, choose **NPG-Lite**.  
+4. **Enable Bluetooth on your computer**  
+   - Turn on your system’s Bluetooth, then click **Connect** in Chords-Web.  
+5. **Choose your device**  
+   - Select your NPG-Lite from the list of available devices.  
+6. **Begin streaming**  
+   - Visualize your biopotential signals in real time, select 1-3 channels, toggle play/pause, apply filters, or record to CSV.
+
+Use Cases
+---------
+
+- **Neurofeedback & Focus Training**: Monitor alpha/beta power to track attention.  
+- **Rehabilitation & Sports Science**: Quantify muscle (EMG) activity during exercises.  
+- **Research & Education**: Capture synchronized EEG/ECG/EOG data for analysis.
+
+.. note::
+  Checkout our YouTube video for more information: 
+  
+  .. youtube:: 3YCioyc4uKs
+
+.. _chords-web-rep-forge:
+
+Rep Forge
+===========
+
+Overview
+--------
+
+We’ve added **Rep-Forge** - a real-time, 3-channel EMG visualization tool for the NPG Lite. Rep-Forge lets you monitor your muscle strength as you work out or rehabilitate, directly in your browser. No external ADC or development board required: simply flash your firmware, apply electrodes, and start streaming.
+
+Features
+--------
+
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
+
+   * - **Feature**
+     - **Description**
+   * - **3-Channel EMG Streaming**
+     - Stream up to three simultaneous EMG signals from your NPG Lite’s onboard BioAmp.
+   * - **Intelligent Channel Detection**
+     - Automatically highlights the active muscle channel so you can quickly identify which muscle you’re engaging.
+   * - **Live Strength Bars**
+     - Dynamic bar graphs update in real time to show relative contraction levels for each channel.
+   * - **Noise-Reducing Filters**
+     - Built-in signal filters remove 50/60 Hz mains interference and high-frequency artifacts for a cleaner EMG trace.
+   * - **Wireless BLE Connectivity**
+     - Stream data over Bluetooth LE—no cables needed once your board is powered on.
+
+Running the application
+------------------------
+
+1. **Power on your NPG Lite** by flipping its on/off switch.  
+2. **Connect** via USB-C and flash the **Rep-Forge** firmware using the NPG Lite Flasher.  
+3. **Unplug** USB and enable Bluetooth on your computer (or use Serial/Wi-Fi as needed).  
+4. Open your browser to **chords.upsidedownlabs.tech**, click **Visualize Now**, then choose **Rep-Forge**.  
+5. Click **Connect**, select your NPG Lite device from the list, and wait for the live EMG bars to appear.  
+6. **Place electrodes** on the target muscle group; watch Rep-Forge dynamically highlight and plot the active channel’s strength.
+
+Use Cases
+---------
+- **Strength Training**: Quantify muscle activation during lifts or repetitions.  
+- **Rehabilitation**: Monitor recovery progress in injured muscle groups.  
+- **Research**: Capture high-quality EMG data for neuromuscular studies.  
 
 
 Technologies Used
