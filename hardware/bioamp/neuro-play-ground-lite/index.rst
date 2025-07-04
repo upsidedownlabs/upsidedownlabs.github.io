@@ -98,10 +98,10 @@ Playmates
 
 Playmates are modular expansion boards designed to enhance the functionality of Neuro Play Ground (NPG) Lite. These add-ons seamlessly integrate with the core system, allowing users to extend their capabilities to create awesome Human-Computer Interface (HCI) & Brain-Computer Interface (BCI).
 
-NPG Vibz Playmate
+NPG VibZ Playmate
 ===================
 
-Vibz Playmate introduces vibration motor for haptic feedback, a buzzer for auditory feedback, a QWIIC port for easy I2C sensor integration, an ON/OFF slide switch, 2.54 mm electrode header pins
+VibZ Playmate introduces a vibration motor for haptic feedback, a buzzer for auditory feedback, a QWIIC port for easy I2C sensor integration, an ON/OFF slide switch, 2.54 mm electrode header pins
 and common negative electrode option. With these Playmates, users can customize their setup for specific applications, whether in research, education, or 
 interactive biofeedback experiments. This modular approach ensures flexibility, scalability, and better user experience.
 

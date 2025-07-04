@@ -82,7 +82,7 @@ Installation
 
     1. Open a terminal and run:  
     
-    :: 
+    .. code:: 
       
       sudo dnf install npg-lite-flasher-<version>.rpm  
     
@@ -93,19 +93,19 @@ Installation
 
   1. Open a terminal and run:  
   
-  ::
+  .. code:: 
     
     sudo apt install ./npg-lite-flasher_<version>_amd64.deb
   
   2. If you hit missing dependencies, run:  
   
-  ::
+  .. code:: 
     
     sudo apt --fix-broken install  
   
   3. Launch **NPG Lite Flasher** from your desktop launcher or via:  
   
-  ::
+  .. code:: 
     
     npg-lite-flasher
 

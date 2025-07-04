@@ -46,7 +46,7 @@ Hardware Requirements
 
 - :ref:`Neuro PlayGround Lite Board <neuro-play-ground-lite>`.
 - USB type-C cable
-- Or listed hardware on the `GitHub page <https://github.com/upsidedownlabs/Chords-LSL-Connector>`_.
+- Or Chords Arduino firmware repository on the `GitHub page <https://github.com/upsidedownlabs/Chords-LSL-Connector>`_.
 
 Setting up the hardware
 ***********************
@@ -81,7 +81,7 @@ Installation
 
     1. Open a terminal and run:  
     
-    :: 
+    .. code:: 
       
       sudo dnf install chords-lsl-connector-0.3.0-1.x86_64.rpm  
     
@@ -92,19 +92,19 @@ Installation
 
   1. Open a terminal and run:  
   
-  ::
+  .. code:: 
     
     sudo apt install ./chords-lsl-connector_<version>_amd64.deb
   
   2. If you hit missing dependencies, run:  
   
-  ::
+  .. code:: 
     
     sudo apt --fix-broken install  
   
   3. Launch **Chords LSL Connector** from your desktop launcher or via:  
   
-  ::
+  .. code:: 
     
     chords-lsl-connector
 

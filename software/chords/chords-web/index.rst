@@ -334,7 +334,7 @@ Features
    * - **Live EEG Band Monitoring**
      - View real-time plots of EEG band values for better brain activity tracking.
    * - **Channel Selection**
-     - Toggle individual channels (CH1–CH3) on or off to customize which electrode inputs are displayed and recorded.
+     - Toggle individual channels (CH0-CH2) on or off to customize which electrode inputs are displayed and recorded.
 
 
 Supported EEG Bands
