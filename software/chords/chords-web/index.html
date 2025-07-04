@@ -57,7 +57,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="Jun 25, 2025"/>
+    <meta name="docbuild:last-update" content="Jul 04, 2025"/>
   </head>
   
   
@@ -564,6 +564,11 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Chords-Web</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chords-python/index.html">Chords-Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chords-lsl-connector/index.html">Chords-LSL-Connector</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../tools/npg-lite-flasher/index.html">NPG Lite Flasher</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">BioAmp Software</span></p>
 <ul class="nav bd-sidenav">
@@ -628,7 +633,9 @@
                   
   <section id="chords-web">
 <span id="chords"></span><h1>Chords-Web<a class="headerlink" href="#chords-web" title="Link to this heading">#</a></h1>
-<section id="overview">
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/fM0c6JVh3uE" style="border: 0; height: 345px; width: 560px">
+</iframe></div><section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
 <p>Chords-Web is an open-source web application designed for real-time signal visualization, particularly tailored for bio-potential signals like EEG, EMG, ECG and EOG. This tool serves as an advanced alternative to the standard Arduino IDE serial plotter, offering enhanced functionality for students, researchers and hobbyists alike who want to record biopotential data using  <a class="reference external" href="https://docs.upsidedownlabs.tech/hardware/index.html">BioAmp hardware</a>.</p>
 <figure class="align-center">
@@ -650,6 +657,7 @@
 <h2>Software Requirements<a class="headerlink" href="#software-requirements" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/upsidedownlabs/Chords-Arduino-Firmware">Arduino Firmware</a> (Use this software to upload Chords Arduino firmware to your development board).</p></li>
+<li><p><a class="reference internal" href="../../tools/npg-lite-flasher/index.html#npg-lite-flasher"><span class="std std-ref">NPG Lite Flasher</span></a> (Use this software to upload NPG Lite firmware to your NPG Lite board or any ESP32 based board).</p></li>
 <li><p>Chromium-based browsers (Know more about  <a class="reference internal" href="#chords-browsers-compatibility"><span class="std std-ref">Browser Compatibility</span></a>).</p></li>
 </ul>
 </section>
@@ -675,6 +683,19 @@
 </ol>
 <p>Once ready, upload the firmware to your development board. Visit the Chords Arduino Firmware GitHub repository, scroll to the supported boards table, locate your board, and click on the corresponding Arduino sketch.</p>
 <p>Copy the sketch, paste it into the Arduino IDE, go to <cite>Tools</cite>, select your board and the correct COM port, then click the upload button.</p>
+<p>To learn about how to flash the code on the NPG Lite Board, checkout:</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-4 sd-mb-4 sd-ml-0 sd-mr-0 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-1 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+NPG Lite Flasher</div>
+</div>
+<a class="sd-stretched-link reference internal" href="../../tools/npg-lite-flasher/index.html#npg-lite-flasher"><span class="std std-ref"></span></a></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="opening-chords-web">
@@ -694,8 +715,7 @@
 <p>The Chords Visualizer is a powerful web-based tool designed for seamless real-time biopotential signal acquisition and analysis. Designed for researchers, developers, and enthusiasts, this app provides an intuitive interface for monitoring multiple channels, applying advanced filters, and managing recorded data efficiently. Whether you’re analyzing EMG, ECG, EOG, or EEG signals, the app ensures a smooth and interactive experience, simplifying data acquisition and enhancing signal interpretation.</p>
 <section id="features">
 <h4>Features<a class="headerlink" href="#features" title="Link to this heading">#</a></h4>
-<div class="pst-scrollable-table-container"><table class="table" id="id9">
-<caption><span class="caption-text">Features</span><a class="headerlink" href="#id9" title="Link to this table">#</a></caption>
+<div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 25.0%" />
 <col style="width: 75.0%" />
@@ -736,10 +756,10 @@
 </section>
 <section id="chords-web-icons">
 <h4>Chords-Web Icons<a class="headerlink" href="#chords-web-icons" title="Link to this heading">#</a></h4>
-<figure class="align-center" id="id10">
+<figure class="align-center" id="id16">
 <img alt="Chords-Web Icons" src="../../../_images/chords_icon.png" />
 <figcaption>
-<p><span class="caption-text">Chords-Web Icons</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-text">Chords-Web Icons</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -754,10 +774,10 @@
 </section>
 <section id="setting-channel-count">
 <h4>Setting Channel Count<a class="headerlink" href="#setting-channel-count" title="Link to this heading">#</a></h4>
-<figure class="align-center" id="id11">
+<figure class="align-center" id="id17">
 <img alt="Chords-Web Channel Support" src="../../../_images/chords_channelsupport.png" />
 <figcaption>
-<p><span class="caption-text">Chords-Web Channel Support</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">Chords-Web Channel Support</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -769,10 +789,10 @@
 </section>
 <section id="recording-the-data">
 <h4>Recording the Data<a class="headerlink" href="#recording-the-data" title="Link to this heading">#</a></h4>
-<figure class="align-center" id="id12">
+<figure class="align-center" id="id18">
 <img alt="Recording Time" src="../../../_images/chords_recordingTime.png" />
 <figcaption>
-<p><span class="caption-text">Recording Time</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">Recording Time</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -783,50 +803,50 @@
 <li><p>Manage individual files by downloading specific files and removing them as needed.</p></li>
 <li><p>Easily download all files as a ZIP or delete them with a single click for seamless file management.</p></li>
 </ul>
-<figure class="align-center" id="id13">
+<figure class="align-center" id="id19">
 <img alt="Save and Delete Option" src="../../../_images/chords_filesaveordelete.png" />
 <figcaption>
-<p><span class="caption-text">Save and Delete Option</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">Save and Delete Option</span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="visualizing-emg-electromyography-signal">
 <h4>Visualizing EMG (Electromyography) signal<a class="headerlink" href="#visualizing-emg-electromyography-signal" title="Link to this heading">#</a></h4>
 <p>EMG captures the electrical activity produced by skeletal muscles.</p>
-<figure class="align-center" id="id14">
+<figure class="align-center" id="id20">
 <a class="reference internal image-reference" href="../../../_images/chords_emg_signal.png"><img alt="EMG Signal Example" src="../../../_images/chords_emg_signal.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">EMG Signal Example</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">EMG Signal Example</span><a class="headerlink" href="#id20" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="visualizing-eeg-electroencephalography-signals">
 <h4>Visualizing EEG (Electroencephalography) signals<a class="headerlink" href="#visualizing-eeg-electroencephalography-signals" title="Link to this heading">#</a></h4>
 <p>EEG records the electrical activity of the brain and is commonly used for diagnosing neurological conditions and studying brain activity.</p>
-<figure class="align-center" id="id15">
+<figure class="align-center" id="id21">
 <a class="reference internal image-reference" href="../../../_images/chords_eeg_signal.png"><img alt="EEG Signal Example" src="../../../_images/chords_eeg_signal.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">EEG Signal Example</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">EEG Signal Example</span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="visualizing-eog-electrooculography-signals">
 <h4>Visualizing EOG (Electrooculography) signals<a class="headerlink" href="#visualizing-eog-electrooculography-signals" title="Link to this heading">#</a></h4>
 <p>EOG measures the electrical potential generated by eye movements.</p>
-<figure class="align-center" id="id16">
+<figure class="align-center" id="id22">
 <a class="reference internal image-reference" href="../../../_images/chords_eog_signal.png"><img alt="EOG Signal Example" src="../../../_images/chords_eog_signal.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">EOG Signal Example</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text">EOG Signal Example</span><a class="headerlink" href="#id22" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="visualizing-ecg-electrocardiography-signals">
 <h4>Visualizing ECG (Electrocardiography) signals<a class="headerlink" href="#visualizing-ecg-electrocardiography-signals" title="Link to this heading">#</a></h4>
 <p>The ECG (Electrocardiography) signal represents the electrical activity of the heart. This custom ECG signal is used both in clinical practice and research to evaluate heart rhythm, detect abnormalities, and assess cardiac health.</p>
-<figure class="align-center" id="id17">
+<figure class="align-center" id="id23">
 <a class="reference internal image-reference" href="../../../_images/chords_ecg_signal.png"><img alt="ECG Signal Example" src="../../../_images/chords_ecg_signal.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text">ECG Signal Example</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<p><span class="caption-text">ECG Signal Example</span><a class="headerlink" href="#id23" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -863,86 +883,21 @@ View the list of contributors using the link in the navigation bar’s top-right
 </ol>
 </section>
 </section>
-<section id="fft-analysis-and-eeg-band-spectrum-plotting">
-<span id="chords-web-fft-visualizer"></span><h3>FFT Analysis and EEG Band Spectrum Plotting<a class="headerlink" href="#fft-analysis-and-eeg-band-spectrum-plotting" title="Link to this heading">#</a></h3>
+<section id="serial-wizard-plotter-monitor">
+<span id="chords-web-serial-wizard"></span><h3>Serial Wizard Plotter &amp; Monitor<a class="headerlink" href="#serial-wizard-plotter-monitor" title="Link to this heading">#</a></h3>
 <section id="id3">
 <h4>Overview<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
-<p>We have introduced <strong>FFT (Fast Fourier Transform) analysis</strong> and <strong>EEG band spectrum plotting</strong> to improve real-time signal processing. These features enable you to visualize and analyze EEG frequency bands, providing deeper insights into brain activity.</p>
-</section>
-<section id="id4">
-<h4>Features<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
-<div class="pst-scrollable-table-container"><table class="table" id="id18">
-<caption><span class="caption-text">Features</span><a class="headerlink" href="#id18" title="Link to this table">#</a></caption>
-<colgroup>
-<col style="width: 25.0%" />
-<col style="width: 75.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Feature</strong></p></th>
-<th class="head"><p><strong>Description</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Download EEG Data</strong></p></td>
-<td><p>Save recorded channel data as a <strong>CSV file</strong> for further analysis, storage, or external visualization.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Live EEG Band Monitoring</strong></p></td>
-<td><p>View real-time plots of EEG band values for better brain activity tracking.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="supported-eeg-bands">
-<h4>Supported EEG Bands<a class="headerlink" href="#supported-eeg-bands" title="Link to this heading">#</a></h4>
-<ul class="simple">
-<li><p><strong>Delta (0.5 - 4 Hz)</strong> → Associated with deep sleep and unconscious states.</p></li>
-<li><p><strong>Theta (4 - 8 Hz)</strong> → Linked to relaxation, meditation, and light sleep.</p></li>
-<li><p><strong>Alpha (8 - 13 Hz)</strong> → Reflects calm, wakeful relaxation, often seen during closed-eye rest.</p></li>
-<li><p><strong>Beta (13 - 30 Hz)</strong> → Related to active thinking, problem-solving, and focus.</p></li>
-<li><p><strong>Gamma (30 - 100 Hz)</strong> → Involved in high-level cognitive functioning, attention, and perception.</p></li>
-</ul>
-</section>
-<section id="id5">
-<h4>Running the Application<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
-<ol class="arabic simple">
-<li><p>Select <strong>“FFT Visualizer”</strong> to see your brainwaves in real time.</p></li>
-<li><p>The <strong>top segment</strong> displays filtered EEG data using a <strong>45Hz low-pass filter</strong> to remove noise.</p></li>
-<li><p>The <strong>bottom segment</strong> is divided into two sections:</p>
-<ul class="simple">
-<li><p><strong>Left side</strong> → Shows EEG frequency values in Hz.</p></li>
-<li><p><strong>Right side</strong> → Offers two interactive modes:</p>
-<ul>
-<li><p><strong>Band Power Mode</strong> → Displays real-time EEG band power values.</p></li>
-<li><p><strong>Beta Candle Mode</strong> → A unique visualization where a glowing candle represents your focus level.</p>
-<ul>
-<li><p><strong>Brighter candle</strong> = Higher beta waves = Strong focus.</p></li>
-<li><p><strong>Dim candle</strong> = Lower beta waves = Distraction.</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-</section>
-</section>
-<section id="serial-plotter-monitor">
-<span id="chords-web-serial-wizard"></span><h3>Serial Plotter &amp; Monitor<a class="headerlink" href="#serial-plotter-monitor" title="Link to this heading">#</a></h3>
-<section id="id6">
-<h4>Overview<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
-<p>The <strong>Serial Plotter &amp; Monitor</strong> is a standalone feature within Chords-Web that provides real‑time serial data visualization.</p>
-<figure class="align-center" id="id19">
+<p>The <strong>Serial Wizard Plotter &amp; Monitor</strong> is a standalone feature within Chords-Web that provides real‑time serial data visualization.</p>
+<figure class="align-center" id="id24">
 <img alt="Chords-Web Filter" src="../../../_images/chords_serialwizard.png" />
 <figcaption>
-<p><span class="caption-text">Chords-Web Filter</span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
+<p><span class="caption-text">Chords-Web Filter</span><a class="headerlink" href="#id24" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id7">
-<h4>Features<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
-<div class="pst-scrollable-table-container"><table class="table" id="id20">
-<caption><span class="caption-text">Features</span><a class="headerlink" href="#id20" title="Link to this table">#</a></caption>
+<section id="id4">
+<h4>Features<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 25.0%" />
 <col style="width: 75.0%" />
@@ -972,14 +927,233 @@ View the list of contributors using the link in the navigation bar’s top-right
 </table>
 </div>
 </section>
-<section id="id8">
-<h4>Running the Application<a class="headerlink" href="#id8" title="Link to this heading">#</a></h4>
+<section id="id5">
+<h4>Running the Application<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Click the <strong>Serial Wizard</strong> button to launch the Serial Plotter &amp; Monitor.</p></li>
 <li><p>Click on Connect button select board.</p></li>
 <li><p>Use the footer button bar to toggle between the Plotter, Monitor, or a combined view.</p></li>
 <li><p>Navigate using the top bar to switch themes, visit the GitHub repository, view contributors, or return to the previous page.</p></li>
 </ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Checkout our YouTube video for more information:</p>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/-C_QUpwcEJQ" style="border: 0; height: 345px; width: 560px">
+</iframe></div></div>
+</section>
+</section>
+<section id="fft-analysis-and-eeg-band-spectrum-plotting">
+<span id="chords-web-fft-visualizer"></span><h3>FFT Analysis and EEG Band Spectrum Plotting<a class="headerlink" href="#fft-analysis-and-eeg-band-spectrum-plotting" title="Link to this heading">#</a></h3>
+<section id="id6">
+<h4>Overview<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
+<p>We have introduced <strong>FFT (Fast Fourier Transform) analysis</strong> and <strong>EEG band spectrum plotting</strong> to improve real-time signal processing. These features enable you to visualize and analyze EEG frequency bands, providing deeper insights into brain activity.</p>
+<figure class="align-center" id="id25">
+<img alt="Chords-Web FFT Visualiser" src="../../../_images/chords_fft_visualiser.png" />
+<figcaption>
+<p><span class="caption-text">Chords-Web FFT Visualiser</span><a class="headerlink" href="#id25" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id7">
+<h4>Features<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Feature</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Download EEG Data</strong></p></td>
+<td><p>Save recorded channel data as a <strong>CSV file</strong> for further analysis, storage, or external visualization.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Live EEG Band Monitoring</strong></p></td>
+<td><p>View real-time plots of EEG band values for better brain activity tracking.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Channel Selection</strong></p></td>
+<td><p>Toggle individual channels (CH0-CH2) on or off to customize which electrode inputs are displayed and recorded.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="supported-eeg-bands">
+<h4>Supported EEG Bands<a class="headerlink" href="#supported-eeg-bands" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Delta (0.5 - 4 Hz)</strong> → Associated with deep sleep and unconscious states.</p></li>
+<li><p><strong>Theta (4 - 8 Hz)</strong> → Linked to relaxation, meditation, and light sleep.</p></li>
+<li><p><strong>Alpha (8 - 13 Hz)</strong> → Reflects calm, wakeful relaxation, often seen during closed-eye rest.</p></li>
+<li><p><strong>Beta (13 - 30 Hz)</strong> → Related to active thinking, problem-solving, and focus.</p></li>
+<li><p><strong>Gamma (30 - 45 Hz)</strong> → Involved in high-level cognitive functioning, attention, and perception.</p></li>
+</ul>
+</section>
+<section id="id8">
+<h4>Running the Application<a class="headerlink" href="#id8" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Select <strong>“FFT Visualizer”</strong> to see your brainwaves in real time.</p></li>
+<li><p>You will get two option, select the appropriate option based on how your device is connected:</p>
+<ul class="simple">
+<li><p>Serial</p></li>
+<li><p>Bluetooth</p></li>
+</ul>
+</li>
+<li><p>The <strong>top segment</strong> displays filtered EEG data using a <strong>45Hz low-pass filter</strong> to remove noise.</p></li>
+<li><p>The <strong>bottom segment</strong> is divided into two sections:</p>
+<ul class="simple">
+<li><p><strong>Left side</strong> → Shows EEG frequency values in Hz.</p></li>
+<li><p><strong>Right side</strong> → Offers two interactive modes:</p>
+<ul>
+<li><p><strong>Band Power Mode</strong> → Displays real-time EEG band power values.</p></li>
+<li><p><strong>Beta Candle Mode</strong> → A unique visualization where a glowing candle represents your focus level.</p>
+<ul>
+<li><p><strong>Brighter candle</strong> = Higher beta waves = Strong focus.</p></li>
+<li><p><strong>Dim candle</strong> = Lower beta waves = Distraction.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Checkout our YouTube video for more information:</p>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/zkPGzX3GKnk" style="border: 0; height: 345px; width: 560px">
+</iframe></div></div>
+</section>
+</section>
+<section id="npg-lite">
+<span id="chords-web-npg-lite"></span><h3>NPG Lite<a class="headerlink" href="#npg-lite" title="Link to this heading">#</a></h3>
+<section id="id9">
+<h4>Overview<a class="headerlink" href="#id9" title="Link to this heading">#</a></h4>
+<p>We have added support for <a class="reference internal" href="../../../hardware/bioamp/neuro-play-ground-lite/index.html#neuro-play-ground-lite"><span class="std std-ref">NPG Lite</span></a>, enabling real-time visualization of signals directly
+from the onboard 3-channel BioAmp. Powered by the ESP32-C6 with a built-in 12-bit ADC, setup is seamless: simply upload the firmware, power on the board, and begin streaming instantly.</p>
+<figure class="align-center" id="id26">
+<img alt="Chords-Web NPG Lite" src="../../../_images/chords_npg_lite.png" />
+<figcaption>
+<p><span class="caption-text">Chords-Web NPG Lite</span><a class="headerlink" href="#id26" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id10">
+<h4>Features<a class="headerlink" href="#id10" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Feature</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Wireless Bluetooth LE</strong></p></td>
+<td><p>Stream up to 3 channels of biopotential data over BLE - no cables after initial power-on.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Built-in BioAmp &amp; 12-bit ADC</strong></p></td>
+<td><p>On-board amplifier and ESP32-C6 ADC ensure high-quality signal capture.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Interactive Controls</strong></p></td>
+<td><p>Select channels, play/pause live stream, apply bandpass &amp; 50/60 Hz notch filters, and record to CSV.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id11">
+<h4>Running the application<a class="headerlink" href="#id11" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Flash the correct firmware</strong>
+- Visit the <a class="reference internal" href="../../tools/npg-lite-flasher/index.html#npg-lite-flasher"><span class="std std-ref">NPG-Lite Flasher</span></a> and upload the <strong>BLE firmware</strong> to your board.</p></li>
+<li><p><strong>Open Chords-Web</strong>
+- Navigate to <a class="reference external" href="https://chords.upsidedownlabs.tech">https://chords.upsidedownlabs.tech</a> and click <strong>Visualize Now</strong>.</p></li>
+<li><p><strong>Select “NPG-Lite”</strong>
+- From the application list, choose <strong>NPG-Lite</strong>.</p></li>
+<li><p><strong>Enable Bluetooth on your computer</strong>
+- Turn on your system’s Bluetooth, then click <strong>Connect</strong> in Chords-Web.</p></li>
+<li><p><strong>Choose your device</strong>
+- Select your NPG-Lite from the list of available devices.</p></li>
+<li><p><strong>Begin streaming</strong>
+- Visualize your biopotential signals in real time, select 1-3 channels, toggle play/pause, apply filters, or record to CSV.</p></li>
+</ol>
+</section>
+<section id="use-cases">
+<h4>Use Cases<a class="headerlink" href="#use-cases" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Neurofeedback &amp; Focus Training</strong>: Monitor alpha/beta power to track attention.</p></li>
+<li><p><strong>Rehabilitation &amp; Sports Science</strong>: Quantify muscle (EMG) activity during exercises.</p></li>
+<li><p><strong>Research &amp; Education</strong>: Capture synchronized EEG/ECG/EOG data for analysis.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Checkout our YouTube video for more information:</p>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/3YCioyc4uKs" style="border: 0; height: 345px; width: 560px">
+</iframe></div></div>
+</section>
+</section>
+<section id="rep-forge">
+<span id="chords-web-rep-forge"></span><h3>Rep Forge<a class="headerlink" href="#rep-forge" title="Link to this heading">#</a></h3>
+<section id="id12">
+<h4>Overview<a class="headerlink" href="#id12" title="Link to this heading">#</a></h4>
+<p>We’ve added <strong>Rep-Forge</strong> - a real-time, 3-channel EMG visualization tool for the NPG Lite. Rep-Forge lets you monitor your muscle strength as you work out or rehabilitate, directly in your browser. No external ADC or development board required: simply flash your firmware, apply electrodes, and start streaming.</p>
+</section>
+<section id="id13">
+<h4>Features<a class="headerlink" href="#id13" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Feature</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>3-Channel EMG Streaming</strong></p></td>
+<td><p>Stream up to three simultaneous EMG signals from your NPG Lite’s onboard BioAmp.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Intelligent Channel Detection</strong></p></td>
+<td><p>Automatically highlights the active muscle channel so you can quickly identify which muscle you’re engaging.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Live Strength Bars</strong></p></td>
+<td><p>Dynamic bar graphs update in real time to show relative contraction levels for each channel.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Noise-Reducing Filters</strong></p></td>
+<td><p>Built-in signal filters remove 50/60 Hz mains interference and high-frequency artifacts for a cleaner EMG trace.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Wireless BLE Connectivity</strong></p></td>
+<td><p>Stream data over Bluetooth LE—no cables needed once your board is powered on.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id14">
+<h4>Running the application<a class="headerlink" href="#id14" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Power on your NPG Lite</strong> by flipping its on/off switch.</p></li>
+<li><p><strong>Connect</strong> via USB-C and flash the <strong>Rep-Forge</strong> firmware using the NPG Lite Flasher.</p></li>
+<li><p><strong>Unplug</strong> USB and enable Bluetooth on your computer (or use Serial/Wi-Fi as needed).</p></li>
+<li><p>Open your browser to <strong>chords.upsidedownlabs.tech</strong>, click <strong>Visualize Now</strong>, then choose <strong>Rep-Forge</strong>.</p></li>
+<li><p>Click <strong>Connect</strong>, select your NPG Lite device from the list, and wait for the live EMG bars to appear.</p></li>
+<li><p><strong>Place electrodes</strong> on the target muscle group; watch Rep-Forge dynamically highlight and plot the active channel’s strength.</p></li>
+</ol>
+</section>
+<section id="id15">
+<h4>Use Cases<a class="headerlink" href="#id15" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Strength Training</strong>: Quantify muscle activation during lifts or repetitions.</p></li>
+<li><p><strong>Rehabilitation</strong>: Monitor recovery progress in injured muscle groups.</p></li>
+<li><p><strong>Research</strong>: Capture high-quality EMG data for neuromuscular studies.</p></li>
+</ul>
 </section>
 </section>
 </section>
@@ -1055,10 +1229,10 @@ Local database for web applications.</p>
 </div>
 </div>
 </div>
-<figure class="align-center" id="id21">
+<figure class="align-center" id="id27">
 <img alt="Chords-Web Tech Stack" src="../../../_images/chords_tech_stack.png" />
 <figcaption>
-<p><span class="caption-text">Chords-Web Tech Stack</span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
+<p><span class="caption-text">Chords-Web Tech Stack</span><a class="headerlink" href="#id27" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -1135,17 +1309,31 @@ Local database for web applications.</p>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#running-the-application">Running the Application</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fft-analysis-and-eeg-band-spectrum-plotting">FFT Analysis and EEG Band Spectrum Plotting</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serial-wizard-plotter-monitor">Serial Wizard Plotter &amp; Monitor</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Overview</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Features</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#supported-eeg-bands">Supported EEG Bands</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Running the Application</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serial-plotter-monitor">Serial Plotter &amp; Monitor</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fft-analysis-and-eeg-band-spectrum-plotting">FFT Analysis and EEG Band Spectrum Plotting</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Overview</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Features</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#supported-eeg-bands">Supported EEG Bands</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Running the Application</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#npg-lite">NPG Lite</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Features</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Running the application</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#use-cases">Use Cases</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rep-forge">Rep Forge</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Features</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Running the application</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Use Cases</a></li>
 </ul>
 </li>
 </ul>
@@ -1217,7 +1405,7 @@ Local database for web applications.</p>
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Jun 25, 2025.
+  Last updated on Jul 04, 2025.
   <br/>
 </p></div>
       

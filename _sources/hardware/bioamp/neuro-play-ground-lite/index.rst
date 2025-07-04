@@ -34,7 +34,7 @@ haptic feedback, a buzzer for audio feedback, and I2C connectivity, making it hi
 wide range of applications. 
 
 It leverages our powerful open source, cross-platform Chords software suite 
-(:ref:`Chords-Web<chords>`, :ref:`Chords-Python<chords-pythons>`, `Chords LSL Connector <https://github.com/upsidedownlabs/Chords-LSL-Connector>`_ and `NPG Lite Flasher <https://github.com/upsidedownlabs/NPG-Lite-Flasher>`_), 
+(:ref:`Chords-Web<chords>`, :ref:`Chords-Python<chords-pythons>`, :ref:`Chords LSL Connector<chords-lsl-connector>` and :ref:`NPG Lite Flasher<npg-lite-flasher>`), 
 letting users visualize  captured bio-physiological signals in real-time, apply filtering, perform FFT analysis, and much, much, more. 
 Because of its expandability, wide array of applications, and robust networking capabilities 
 (using Bluetooth, Zigbee, Wi-Fi, or Thread for mesh networking), NPG Lite lets you capture bio-physiological 
@@ -94,14 +94,14 @@ Board Layout & Pinout Diagram
     Neuro Play Ground (NPG) Lite Pinout
 
 Playmates
-*********
+**********
 
-Playmates are modular expansion boards designed to enhance the functionality of Neuro Play Ground (NPG) Lite. These add-ons seamlessly integrate with the core system, allowing users to extend their capabilities to create awesome Human-Computer Interface (HCI) & Brain-Computer Interface (BCI).
+Playmates are modular expansion boards designed to enhance the functionality of Neuro PlayGround (NPG) Lite. These add-ons seamlessly integrate with the core system, allowing users to extend their capabilities to create awesome Human-Computer Interface (HCI) & Brain-Computer Interface (BCI).
 
-NPG Vibz Playmate
+NPG VibZ Playmate
 ===================
 
-VibZ introduces vibration motor for haptic feedback, a buzzer for auditory feedback, a QWIIC port for easy I2C sensor integration, an ON/OFF slide switch, 2.54 mm electrode header pins
+VibZ Playmate introduces a vibration motor for haptic feedback, a buzzer for auditory feedback, a QWIIC port for easy I2C sensor integration, an ON/OFF slide switch, 2.54 mm electrode header pins
 and common negative electrode option. With these Playmates, users can customize their setup for specific applications, whether in research, education, or 
 interactive biofeedback experiments. This modular approach ensures flexibility, scalability, and better user experience.
 
@@ -152,9 +152,9 @@ Chords Python
 Chords LSL Connector
 =====================
 
-- `Chords LSL Connector <https://github.com/upsidedownlabs/Chords-LSL-Connector>`_ is a Rust based bridge that streams data from devices running Chords firmware into the Lab Streaming Layer (LSL), enabling synchronized acquisition and analysis with BCI/EEG software.
+- :ref:`Chords LSL Connector<chords-lsl-connector>` is a Rust based bridge that streams data from devices running Chords firmware into the Lab Streaming Layer (LSL), enabling synchronized acquisition and analysis with BCI/EEG software.
 
-.. figure:: media/chords-lsl-connector-landing-page.*
+.. figure:: ../../../software/chords/chords-lsl-connector/media/chords-lsl-connector-landing-page.*
     :align: center
     :alt: Chords LSL Connector Landing Page 
 
@@ -166,14 +166,12 @@ Chords LSL Connector
     :align: center
     :width: 100%
 
- 
-
 NPG Lite Flasher
 ===================
   
-- `NPG Lite Flasher <https://github.com/upsidedownlabs/NPG-Lite-Flasher>`_ is a cross-platform, flashing utility for the Neuro PlayGround Lite board, providing seamless firmware updates over serial or DFU via a simple CLI.
+- :ref:`NPG Lite Flasher <npg-lite-flasher>` is a cross-platform, flashing utility for the Neuro PlayGround Lite board, providing seamless firmware updates over serial or DFU via a simple CLI.
 
-.. figure:: media/npg-lite-flasher-launch-page.*
+.. figure:: ../../../software/tools/npg-lite-flasher/media/npg-lite-flasher-launch-page.*
     :align: center
     :alt: NPG Lite Flasher Landing Page
 
@@ -184,6 +182,34 @@ NPG Lite Flasher
 .. youtube:: NDk-P3nob_0
     :align: center
     :width: 100%
+
+
+Select Your Kit
+*******************
+
+**Identify your kit from the three options below, then let’s walk through the setup:**
+
+.. only:: html
+
+   .. grid:: 1 2 2 1
+      :margin: 4 4 0 0 
+      :gutter: 2
+
+      .. grid-item-card:: Neuro PlayGround Lite Explorer Pack 
+         :text-align: center
+         :link: npg-lite-explorer
+         :link-type: ref
+
+      .. grid-item-card:: Neuro PlayGround Lite Ninja Pack 
+         :text-align: center
+         :link: npg-lite-ninja
+         :link-type: ref
+
+      .. grid-item-card:: Neuro PlayGround Lite Beast Pack 
+         :text-align: center
+         :link: npg-lite-beast
+         :link-type: ref
+
 
 .. _neuro-play-ground-lite-project-tutorials:
 
@@ -328,3 +354,15 @@ inspire you, but the possibilities cover so many more use cases.
     +---------------------------------------------------+
     | ON/OFF Switch                                     |
     +---------------------------------------------------+
+
+
+
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+   :caption: Neuro PlayGround Lite Pack
+
+   npg-lite-explorer/index
+   npg-lite-ninja/index
+   npg-lite-beast/index
+
