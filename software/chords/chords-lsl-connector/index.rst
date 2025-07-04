@@ -46,7 +46,7 @@ Hardware Requirements
 
 - :ref:`Neuro PlayGround Lite Board <neuro-play-ground-lite>`.
 - USB type-C cable
-- Or Chords Arduino firmware repository on the `GitHub page <https://github.com/upsidedownlabs/Chords-LSL-Connector>`_.
+- Or Chords Arduino firmware repository on the `Chords Arduino Firmware GitHub <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_.
 
 Setting up the hardware
 ***********************

@@ -96,7 +96,7 @@ Board Layout & Pinout Diagram
 Playmates
 **********
 
-Playmates are modular expansion boards designed to enhance the functionality of Neuro Play Ground (NPG) Lite. These add-ons seamlessly integrate with the core system, allowing users to extend their capabilities to create awesome Human-Computer Interface (HCI) & Brain-Computer Interface (BCI).
+Playmates are modular expansion boards designed to enhance the functionality of Neuro PlayGround (NPG) Lite. These add-ons seamlessly integrate with the core system, allowing users to extend their capabilities to create awesome Human-Computer Interface (HCI) & Brain-Computer Interface (BCI).
 
 NPG VibZ Playmate
 ===================
@@ -188,7 +188,6 @@ Select Your Kit
 *******************
 
 **Identify your kit from the three options below, then let’s walk through the setup:**
-
 
 .. only:: html
 
