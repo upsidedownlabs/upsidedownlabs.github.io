@@ -220,6 +220,10 @@ NPG Lite, with its multi-channel BioAmp, wireless connectivity, battery operatio
 users to create HCI and BCI applications with ease. We’ve created projects leveraging ECG, EMG, EOG, and EEG signals to 
 inspire you, but the possibilities cover so many more use cases.
 
+Each of these projects runs on the ``BLE firmware``, which you can flash using the following flasher tools: 
+
+- We recommend using :ref:`NPG Lite Flasher <npg-lite-flasher-uploading-firmware>` for flashing BLE Firmware.
+- Alternatively, you can use `Arduino IDE <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ to manually upload the firmware.
 
 .. card:: 1. Make Muscular Music
 
@@ -227,12 +231,14 @@ inspire you, but the possibilities cover so many more use cases.
     left hand, right hand, and chest to control virtual musical instruments. When muscles contract, each channel 
     triggers a distinct sound effect, transforming your body into an organic orchestra.
 
-    .. youtube:: zUwIHk5culs
+    .. youtube:: O36z_YhaDqg
         :align: center
 
     .. Note::
 
-        To learn about this project, visit our Instructables page for detailed guide: `Muscle Melody: Create Music With Your Muscle Movements (EMG) <https://www.instructables.com/Muscle-Melody-Play-Music-With-Your-Muscle-Movement/>`_
+        - To learn about this project, visit our Instructables page for detailed guide: `Muscle Melody: Create Music With Your Muscle Movements (EMG) <https://www.instructables.com/Muscle-Melody-Play-Music-With-Your-Muscle-Movement/>`_
+        
+        - Visit the `Web Interface <https://amanmahe.github.io/Muscle_game/>`_ to visualize in real time.
 
 .. card:: 2. Track Your Ticker
 
@@ -245,7 +251,9 @@ inspire you, but the possibilities cover so many more use cases.
 
     .. Note::
 
-        To learn about this project, visit our Instructables page for detailed guide: `Monitor ECG and Heartrate on Your Mobile Phone <https://www.instructables.com/Monitor-ECG-and-Heartrate-on-Your-Mobile-Phone/>`_
+        - To learn about this project, visit our Instructables page for detailed guide: `Monitor ECG and Heartrate on Your Mobile Phone <https://www.instructables.com/Monitor-ECG-and-Heartrate-on-Your-Mobile-Phone/>`_
+
+        - Visit the `Web Interface <https://ciumsy.github.io/ECG_Monitor/>`_ to visualize in real time.
 
 .. card:: 3. Jump In the Blink of an Eye
 
@@ -258,7 +266,7 @@ inspire you, but the possibilities cover so many more use cases.
 
     .. Note::
 
-        To learn about this project, visit our Instructables page for detailed guide: `Controlling Keyboard With Eye Blinks Using Neuro PlayGround Lite <https://www.instructables.com/Controlling-Keyboard-With-Eye-Blinks-Using-Neuro-P/>`_
+        - To learn about this project, visit our Instructables page for detailed guide: `Controlling Keyboard With Eye Blinks Using Neuro PlayGround Lite <https://www.instructables.com/Controlling-Keyboard-With-Eye-Blinks-Using-Neuro-P/>`_
 
 .. card:: 4. Pop Bubbles With Your Mind
 
@@ -267,13 +275,53 @@ inspire you, but the possibilities cover so many more use cases.
     indicating concentration and attention levels. Bubbles appear and pop as the user maintains focus, but they cease to
     pop when concentration wanes.
     
-    .. youtube:: EjJBlU8QiEI
+    .. youtube:: MGTNjFtikZE
         :align: center
 
     .. Note::
 
-        To learn about this project, visit our Instructables page for detailed guide: `Pop Bubbles With Your Mind (EEG) | Neuro PlayGround (NPG) Lite <https://www.instructables.com/Pop-Bubbles-With-Your-Mind-EEG-Neuro-PlayGround-NP/>`_
+        - To learn about this project, visit our Instructables page for detailed guide: `Pop Bubbles With Your Mind (EEG) | Neuro PlayGround (NPG) Lite <https://www.instructables.com/Pop-Bubbles-With-Your-Mind-EEG-Neuro-PlayGround-NP/>`_
+        
+        - Visit the `Web Interface <https://upsidedownlabs.github.io/Focion/>`_ to visualize in real time.
 
+.. card:: 5. Cuboid
+
+    Cuboid is a neurofeedback-powered game that turns your focus into action. Using real-time brainwave
+    data from the NPG Lite device, the game challenges you to move a geometric cuboid upward by
+    maintaining mental focus. With multiple difficulty levels, live EEG streaming, and visual feedback, 
+    Cuboid transforms concentration into an immersive, brain-controlled experience.
+    
+    .. Note::
+        
+        - Visit the `Web Interface <https://upsidedownlabs.github.io/Cuboid/>`_ to visualize in real time.
+
+.. card:: 6. Muscle Strength
+
+    Muscle Strength Game transforms your physical efforts into insightful data. Simply connect 
+    to any muscle group you want to focus on, and you'll instantly visualize the raw electrical 
+    activity your muscles generate. But it's more than just raw data; the game also processes this 
+    information to display your real-time muscle strength. This allows you to track your progress, 
+    identify areas for improvement, and engage with your workouts in a whole new, data-driven way. 
+    Whether you're an athlete, rehabilitating an injury, or just curious about your body, this project 
+    offers a unique window into your muscular capabilities.
+    
+
+    .. Note::
+
+        - Visit the `Web Interface <https://chords.upsidedownlabs.tech/muscle-strength>`_  to visualize in real time.
+
+.. card:: 7. CortEX
+
+    CortEX is an open-source neurofeedback meditation platform that combines EEG and ECG signals
+    to provide real-time feedback on your mental and emotional state. Designed to enhance mindfulness, 
+    it visualizes brainwave activity, heart rate, and hemisphere balance to help you meditate more 
+    effectively - all from your browser, using the NPG Lite device.
+    
+
+    .. Note::
+
+        - Visit the `Web Interface <https://upsidedownlabs.github.io/CortEX/>`_  to visualize in real time.
+ 
 
 .. dropdown:: Neuro-Playground Lite C3 (Obsolete)
 
