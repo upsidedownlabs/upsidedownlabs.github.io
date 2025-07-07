@@ -238,7 +238,7 @@ Each of these projects runs on the ``BLE firmware``, which you can flash using t
 
         - To learn about this project, visit our Instructables page for detailed guide: `Muscle Melody: Create Music With Your Muscle Movements (EMG) <https://www.instructables.com/Muscle-Melody-Play-Music-With-Your-Muscle-Movement/>`_
         
-        - You can find the complete source code and updates on the `GitHub repository <https://amanmahe.github.io/Muscle_game/>`_
+        - Visit the `Web Interface <https://amanmahe.github.io/Muscle_game/>`_ to visualize in real time.
 
 .. card:: 2. Track Your Ticker
 
@@ -253,8 +253,7 @@ Each of these projects runs on the ``BLE firmware``, which you can flash using t
 
         - To learn about this project, visit our Instructables page for detailed guide: `Monitor ECG and Heartrate on Your Mobile Phone <https://www.instructables.com/Monitor-ECG-and-Heartrate-on-Your-Mobile-Phone/>`_
 
-        - You can find the complete source code and updates on the `GitHub repository <https://amanmahe.github.io/Muscle_game/>`_
-
+        - Visit the `Web Interface <https://ciumsy.github.io/ECG_Monitor/>`_ to visualize in real time.
 
 .. card:: 3. Jump In the Blink of an Eye
 
@@ -267,8 +266,7 @@ Each of these projects runs on the ``BLE firmware``, which you can flash using t
 
     .. Note::
 
-        To learn about this project, visit our Instructables page for detailed guide: `Controlling Keyboard With Eye Blinks Using Neuro PlayGround Lite <https://www.instructables.com/Controlling-Keyboard-With-Eye-Blinks-Using-Neuro-P/>`_
-        To 
+        - To learn about this project, visit our Instructables page for detailed guide: `Controlling Keyboard With Eye Blinks Using Neuro PlayGround Lite <https://www.instructables.com/Controlling-Keyboard-With-Eye-Blinks-Using-Neuro-P/>`_
 
 .. card:: 4. Pop Bubbles With Your Mind
 
@@ -282,7 +280,9 @@ Each of these projects runs on the ``BLE firmware``, which you can flash using t
 
     .. Note::
 
-        To learn about this project, visit our Instructables page for detailed guide: `Pop Bubbles With Your Mind (EEG) | Neuro PlayGround (NPG) Lite <https://www.instructables.com/Pop-Bubbles-With-Your-Mind-EEG-Neuro-PlayGround-NP/>`_
+        - To learn about this project, visit our Instructables page for detailed guide: `Pop Bubbles With Your Mind (EEG) | Neuro PlayGround (NPG) Lite <https://www.instructables.com/Pop-Bubbles-With-Your-Mind-EEG-Neuro-PlayGround-NP/>`_
+        
+        - Visit the `Web Interface <https://upsidedownlabs.github.io/Focion/>`_ to visualize in real time.
 
 .. card:: 5. Cuboid
 
@@ -291,12 +291,36 @@ Each of these projects runs on the ``BLE firmware``, which you can flash using t
     maintaining mental focus. With multiple difficulty levels, live EEG streaming, and visual feedback, 
     Cuboid transforms concentration into an immersive, brain-controlled experience.
     
+    .. Note::
+        
+        - Visit the `Web Interface <https://upsidedownlabs.github.io/Cuboid/>`_ to visualize in real time.
+
+.. card:: 6. Muscle Strength
+
+    Muscle Strength Game transforms your physical efforts into insightful data. Simply connect 
+    to any muscle group you want to focus on, and you'll instantly visualize the raw electrical 
+    activity your muscles generate. But it's more than just raw data; the game also processes this 
+    information to display your real-time muscle strength. This allows you to track your progress, 
+    identify areas for improvement, and engage with your workouts in a whole new, data-driven way. 
+    Whether you're an athlete, rehabilitating an injury, or just curious about your body, this project 
+    offers a unique window into your muscular capabilities.
+    
 
     .. Note::
 
-        To learn about this project, visit our Instructables page for detailed guide: `Pop Bubbles With Your Mind (EEG) | Neuro PlayGround (NPG) Lite <https://www.instructables.com/Pop-Bubbles-With-Your-Mind-EEG-Neuro-PlayGround-NP/>`_
+        - Visit the `Web Interface <https://chords.upsidedownlabs.tech/muscle-strength>`_  to visualize in real time.
 
+.. card:: 7. CortEX
 
+    CortEX is an open-source neurofeedback meditation platform that combines EEG and ECG signals
+    to provide real-time feedback on your mental and emotional state. Designed to enhance mindfulness, 
+    it visualizes brainwave activity, heart rate, and hemisphere balance to help you meditate more 
+    effectively - all from your browser, using the NPG Lite device.
+    
+
+    .. Note::
+
+        - Visit the `Web Interface <https://upsidedownlabs.github.io/CortEX/>`_  to visualize in real time.
  
 
 .. dropdown:: Neuro-Playground Lite C3 (Obsolete)
