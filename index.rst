@@ -45,6 +45,16 @@ that you can use with our hardware.
             :img-alt:
 
             Neuro Playground Lite
+    
+    .. grid-item::
+        
+        .. card:: 
+            :link: bioamp-exg-pill
+            :link-type: ref
+            :img-top: media/bioamp-exg-pill.*
+            :img-alt:
+
+            BioAmp EXG Pill
 
     .. grid-item::
         
@@ -86,10 +96,6 @@ that you can use with our hardware.
 
             Muscle BioAmp Blip 
 
-.. grid:: 1 1 3 3
-    :margin: 4 4 0 0 
-    :gutter: 2
-
     .. grid-item::
         
         .. card:: 
@@ -108,17 +114,7 @@ that you can use with our hardware.
             :img-top: media/muscle-bioamp-shield.*
             :img-alt:
 
-            Muscle BioAmp Shield 
-
-    .. grid-item::
-        
-        .. card:: 
-            :link: bioamp-exg-pill
-            :link-type: ref
-            :img-top: media/bioamp-exg-pill.*
-            :img-alt:
-
-            BioAmp EXG Pill 
+            Muscle BioAmp Shield  
 
 .. toctree::
    :hidden:

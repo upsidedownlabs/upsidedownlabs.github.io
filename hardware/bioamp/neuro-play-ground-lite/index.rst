@@ -231,7 +231,7 @@ Each of these projects runs on the ``BLE firmware``, which you can flash using t
     left hand, right hand, and chest to control virtual musical instruments. When muscles contract, each channel 
     triggers a distinct sound effect, transforming your body into an organic orchestra.
 
-    .. youtube:: zUwIHk5culs
+    .. youtube:: O36z_YhaDqg
         :align: center
 
     .. Note::
@@ -275,7 +275,7 @@ Each of these projects runs on the ``BLE firmware``, which you can flash using t
     indicating concentration and attention levels. Bubbles appear and pop as the user maintains focus, but they cease to
     pop when concentration wanes.
     
-    .. youtube:: EjJBlU8QiEI
+    .. youtube:: MGTNjFtikZE
         :align: center
 
     .. Note::
