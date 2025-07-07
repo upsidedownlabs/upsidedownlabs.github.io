@@ -39,6 +39,16 @@ that you can use with our hardware.
     .. grid-item::
         
         .. card:: 
+            :link: neuro-play-ground-lite
+            :link-type: ref
+            :img-top: media/neuro-playground-lite.*
+            :img-alt:
+
+            Neuro Playground Lite
+
+    .. grid-item::
+        
+        .. card:: 
             :link: muscle-bioamp-biscute
             :link-type: ref
             :img-top: media/muscle-bioamp-biscute.*
