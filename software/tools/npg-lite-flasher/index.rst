@@ -132,7 +132,7 @@ Installation
   npm i
   cargo tauri build
 
-
+.. _npg-lite-flasher-uploading-firmware:
 
 Uploading the Firmware
 ************************

@@ -220,6 +220,10 @@ NPG Lite, with its multi-channel BioAmp, wireless connectivity, battery operatio
 users to create HCI and BCI applications with ease. We’ve created projects leveraging ECG, EMG, EOG, and EEG signals to 
 inspire you, but the possibilities cover so many more use cases.
 
+Each of these projects runs on the ``BLE firmware``, which you can flash using the following flasher tools: 
+
+- We recommend using :ref:`NPG Lite Flasher <npg-lite-flasher-uploading-firmware>` for flashing BLE Firmware.
+- Alternatively, you can use `Arduino IDE <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ to manually upload the firmware.
 
 .. card:: 1. Make Muscular Music
 
@@ -232,7 +236,9 @@ inspire you, but the possibilities cover so many more use cases.
 
     .. Note::
 
-        To learn about this project, visit our Instructables page for detailed guide: `Muscle Melody: Create Music With Your Muscle Movements (EMG) <https://www.instructables.com/Muscle-Melody-Play-Music-With-Your-Muscle-Movement/>`_
+        - To learn about this project, visit our Instructables page for detailed guide: `Muscle Melody: Create Music With Your Muscle Movements (EMG) <https://www.instructables.com/Muscle-Melody-Play-Music-With-Your-Muscle-Movement/>`_
+        
+        - You can find the complete source code and updates on the `GitHub repository <https://amanmahe.github.io/Muscle_game/>`_
 
 .. card:: 2. Track Your Ticker
 
@@ -245,7 +251,10 @@ inspire you, but the possibilities cover so many more use cases.
 
     .. Note::
 
-        To learn about this project, visit our Instructables page for detailed guide: `Monitor ECG and Heartrate on Your Mobile Phone <https://www.instructables.com/Monitor-ECG-and-Heartrate-on-Your-Mobile-Phone/>`_
+        - To learn about this project, visit our Instructables page for detailed guide: `Monitor ECG and Heartrate on Your Mobile Phone <https://www.instructables.com/Monitor-ECG-and-Heartrate-on-Your-Mobile-Phone/>`_
+
+        - You can find the complete source code and updates on the `GitHub repository <https://amanmahe.github.io/Muscle_game/>`_
+
 
 .. card:: 3. Jump In the Blink of an Eye
 
@@ -259,6 +268,7 @@ inspire you, but the possibilities cover so many more use cases.
     .. Note::
 
         To learn about this project, visit our Instructables page for detailed guide: `Controlling Keyboard With Eye Blinks Using Neuro PlayGround Lite <https://www.instructables.com/Controlling-Keyboard-With-Eye-Blinks-Using-Neuro-P/>`_
+        To 
 
 .. card:: 4. Pop Bubbles With Your Mind
 
@@ -274,6 +284,20 @@ inspire you, but the possibilities cover so many more use cases.
 
         To learn about this project, visit our Instructables page for detailed guide: `Pop Bubbles With Your Mind (EEG) | Neuro PlayGround (NPG) Lite <https://www.instructables.com/Pop-Bubbles-With-Your-Mind-EEG-Neuro-PlayGround-NP/>`_
 
+.. card:: 5. Cuboid
+
+    Cuboid is a neurofeedback-powered game that turns your focus into action. Using real-time brainwave
+    data from the NPG Lite device, the game challenges you to move a geometric cuboid upward by
+    maintaining mental focus. With multiple difficulty levels, live EEG streaming, and visual feedback, 
+    Cuboid transforms concentration into an immersive, brain-controlled experience.
+    
+
+    .. Note::
+
+        To learn about this project, visit our Instructables page for detailed guide: `Pop Bubbles With Your Mind (EEG) | Neuro PlayGround (NPG) Lite <https://www.instructables.com/Pop-Bubbles-With-Your-Mind-EEG-Neuro-PlayGround-NP/>`_
+
+
+ 
 
 .. dropdown:: Neuro-Playground Lite C3 (Obsolete)
 
