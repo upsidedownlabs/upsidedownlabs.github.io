@@ -17,7 +17,7 @@ Step 2: Connecting BioAmp Cables to the Hardware
 ================================================
 Connect the BioAmp cables to the appropriate input channels of your EEG device. Make sure the ground and reference electrodes are securely connected to the body.
 
-.. figure:: media/bioamp_connection.jpg
+.. figure:: ../media/connections.*
     :align: center
     :alt: BioAmp hardware connection
 
@@ -25,13 +25,18 @@ Step 3: Attaching Gel Electrodes on Targeted Areas
 ==================================================
 Place the gel-based electrodes firmly on the targeted scalp regions—typically the frontal (e.g., Fp1, Fp2) or occipital (e.g., O1, O2) lobes—depending on your signal of interest. Ensure that the electrodes have good skin contact and are not loose.
 
-.. figure:: media/electrode_placement.jpg
+.. figure:: ../media/eeg_place.*
     :align: center
     :alt: EEG gel electrode placement
 
 Step 4: Open Chords Software to Visualize Signals
 =================================================
-Launch the **Chords Software** and open **Chords-Visualizer**. Connect your EEG device (via Serial or Bluetooth), and begin real-time visualization of EEG signals.
+
+1. Open a Chromium-based browser such as **Google Chrome**, **Microsoft Edge**, **Opera**, or **Brave**.
+2. Go to: `https://chords.upsidedownlabs.tech <https://chords.upsidedownlabs.tech>`_
+3. Click on **Chords-Visualizer**.
+4. Connect your device via **Serial** by selecting your device's port.
+5. Begin real-time visualization of your EEG signals.
 
 Step 5: How to Check Whether the Signals Are Correct
 ====================================================
@@ -40,14 +45,14 @@ To verify correct electrode placement and good signal quality, try the following
 - **Eye Blinks**  
 Expect sharp deflections or spikes when you blink.
 
-.. figure:: guides/troubleshoot/media/eye_blink.jpg
+.. figure:: ../media/eye_blink.*
     :align: center
     :alt: Eye blink waveform
 
 - **Jaw Clench**  
 A strong jaw clench produces high-amplitude artifacts in the EEG signal due to facial muscle activity.
 
-.. figure:: guides/troubleshoot/media/jaw_clench.jpg
+.. figure:: ../media/jaw_clench.*
     :align: center
     :alt: Jaw clench waveform
 
@@ -57,7 +62,7 @@ A strong jaw clench produces high-amplitude artifacts in the EEG signal due to f
 
 Close your eyes and stay relaxed. Look for rhythmic waveforms in the 8–12 Hz range, typically more visible in occipital channels.
 
-.. figure:: guides/troubleshoot/media/alpha_waves.jpg
+.. figure:: ../media/alpha_waves.*
     :align: center
     :alt: Alpha waves EEG
 
@@ -69,7 +74,7 @@ To try this:
 Open **Chords Software** → **Chords Visualizer** → **FFT Visualizer** → Connect your device (Serial/Bluetooth).  
 Then, activate the **Beta Candle** feature. Focus deeply on the candle. As your focus increases, the candle’s brightness and numerical value should increase. When you defocus, the value drops and the candle dims or blows out.
 
-.. figure:: guides/troubleshoot/media/beta_candle.jpg
+.. figure:: ../media/beta_candle.*
     :align: center
     :alt: Beta candle test
 
