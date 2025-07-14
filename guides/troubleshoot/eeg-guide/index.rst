@@ -3,7 +3,7 @@
 EEG Guide
 ##########
 
-This guide will help you set up and verify your EEG signal recording using the BioAmp Hardware and Chords software.
+This guide will help you set up and verify your EEG signals using the BioAmp Hardware and Chords software.
 
 Step 1: Skin Preparation
 ========================
