@@ -82,6 +82,7 @@ Welcome to the **Guides** section, where you'll find comprehensive resources tha
    troubleshoot/tips/index
    troubleshoot/fix-hardware-setup/index
    troubleshoot/resolve-software-issues/index
+   troubleshoot/eeg-guide/index
 
 .. toctree::
    :hidden:
