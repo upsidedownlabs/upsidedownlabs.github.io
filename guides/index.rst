@@ -49,6 +49,11 @@ Welcome to the **Guides** section, where you'll find comprehensive resources tha
          :link: resolve-software-issues
          :link-type: ref
 
+      .. grid-item-card:: EEG-Guide
+         :text-align: center
+         :link: eeg-guide
+         :link-type: ref   
+
    **Contribution Guide**
 
    .. grid:: 1 1 1 1
