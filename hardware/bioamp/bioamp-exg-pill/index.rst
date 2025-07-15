@@ -430,7 +430,7 @@ We have 2 options to measure the EEG signals, either using the gel electrodes or
 
 - **Using gel electrodes to record from prefrontal cortex part of brain:**
 
-.. figure:: media/eeg.*
+.. figure:: media/eeg_placement.*
     :align: center
 
 1. Connect the BioAmp cable to gel electrodes.
@@ -483,6 +483,10 @@ For visualizing the EEG signals, use `Chords Web <https://chords.upsidedownlabs.
 The signals that you can see on the screen right now are originating from prefrontal cortex part of your brain and propagating through all the layers to the surface of your skin.
 
 You have placed the electrodes on the forehead (Fp1 & Fp2), the BioAmp EXG Pill is amplifying those signals so that we can detect it and finally sending it to the ADC (Analog to Digital Convertor) of your Arduino Uno and the signals are being visualized in Chords Web.
+
+.. tip::
+
+   To ensure you're recording a high-quality signal, refer to the detailed guide here: :ref:`Troubleshooting EEG Signal Quality <recording_quality_eeg>`.
 
 We hope everything is clear now and you understand how the signals are propagating from your brain to the screen of the laptop.
 

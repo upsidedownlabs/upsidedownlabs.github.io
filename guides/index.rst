@@ -49,6 +49,11 @@ Welcome to the **Guides** section, where you'll find comprehensive resources tha
          :link: resolve-software-issues
          :link-type: ref
 
+      .. grid-item-card:: Recording Quality EEG
+         :text-align: center
+         :link: recording_quality_eeg
+         :link-type: ref   
+
    **Contribution Guide**
 
    .. grid:: 1 1 1 1
@@ -77,6 +82,7 @@ Welcome to the **Guides** section, where you'll find comprehensive resources tha
    troubleshoot/tips/index
    troubleshoot/fix-hardware-setup/index
    troubleshoot/resolve-software-issues/index
+   troubleshoot/recording_quality_eeg/index
 
 .. toctree::
    :hidden:
