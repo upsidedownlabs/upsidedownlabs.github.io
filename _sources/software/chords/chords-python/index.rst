@@ -367,6 +367,10 @@ A GUI window will appear, displaying the real-time EEG signal along with the cal
 
    EEG with FFT
 
+.. tip::
+
+   To ensure you're recording a high-quality signal, refer to the detailed guide here: :ref:`Troubleshooting EEG Signal Quality <recording_quality_eeg>`.
+
 5. `EEG Tug of War Game`
 ========================
 

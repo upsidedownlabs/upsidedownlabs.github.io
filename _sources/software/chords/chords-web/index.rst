@@ -199,6 +199,10 @@ EEG records the electrical activity of the brain and is commonly used for diagno
   
    EEG Signal Example
 
+.. tip::
+
+   To ensure you're recording a high-quality signal, refer to the detailed guide here: :ref:`Troubleshooting EEG Signal Quality <recording_quality_eeg>`.
+
 Visualizing EOG (Electrooculography) signals
 ---------------------------------------------
 
