@@ -181,6 +181,7 @@ you plan to use the NPG Lite - including Bluetooth Low Energy (BLE), Serial or W
 
     6. Use the built-in buttons
     
+    - `Chords LSL Visualizer <https://github.com/upsidedownlabs/Chords-LSL-Visualizer/>`_
     - `Brain Vision LSL Viewer <https://www.brainproducts.com/downloads/more-software/>`_
     - `Open EEG GUI <https://open-ephys.org/gui>`_
     - `LabRecorder <https://github.com/labstreaminglayer/App-LabRecorder>`_
@@ -217,6 +218,7 @@ you plan to use the NPG Lite - including Bluetooth Low Energy (BLE), Serial or W
 
     6. Use the built-in buttons
     
+    - `Chords LSL Visualizer <https://github.com/upsidedownlabs/Chords-LSL-Visualizer/>`_
     - `Brain Vision LSL Viewer <https://www.brainproducts.com/downloads/more-software/>`_
     - `Open EEG GUI <https://open-ephys.org/gui>`_
     - `LabRecorder <https://github.com/labstreaminglayer/App-LabRecorder>`_
@@ -252,6 +254,7 @@ you plan to use the NPG Lite - including Bluetooth Low Energy (BLE), Serial or W
 
     6. Use the built-in buttons
     
+    - `Chords LSL Visualizer <https://github.com/upsidedownlabs/Chords-LSL-Visualizer/>`_
     - `Brain Vision LSL Viewer <https://www.brainproducts.com/downloads/more-software/>`_
     - `Open EEG GUI <https://open-ephys.org/gui>`_
     - `LabRecorder <https://github.com/labstreaminglayer/App-LabRecorder>`_

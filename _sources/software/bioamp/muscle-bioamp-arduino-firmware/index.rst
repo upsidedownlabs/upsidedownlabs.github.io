@@ -108,7 +108,6 @@ There are two ways use Gel Electrods or Muscle BioAmp Band.
    
 
 .. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-emg.png
-
     :align: center
     :alt: EMG Placement
 
@@ -121,7 +120,6 @@ There are two ways use Gel Electrods or Muscle BioAmp Band.
 2. Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results
 
 .. figure:: ../../../guides/usage-guides/skin-preparation/media/step-5c.png
-
     :align: center
     :alt: Muscle BioAmp Band Placement
 

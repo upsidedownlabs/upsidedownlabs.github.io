@@ -168,7 +168,8 @@ Now that you have the tools installed, let's set up your workspace. Follow these
          :icon: alert
     
          You may get an execution policy error if scripts are restricted. 
-         To fix this;
+         To fix this:
+
             1. Close your current Command Prompt.
             2. Run Windows PowerShell or Command Prompt as "Run as Administrator".
             3. Run this command:
@@ -176,6 +177,7 @@ Now that you have the tools installed, let's set up your workspace. Follow these
                .. code-block:: bash
                   
                   Set-ExecutionPolicy Unrestricted -Scope Process
+
             4. Then type **Y** and hit Enter.
             5. Navigate back to project folder (docs.upsidedownlabs.tech) and paste the folder file path:
                
@@ -336,7 +338,9 @@ Once you're happy with your changes, here's how to submit them to UpsideDown Lab
       - Type a message in the box at the top that says **"Message"** (press ``Ctrl+Enter`` to commit on 'main'). It's mandatory to write a message.  
          
       Example:
-      ::
+
+      .. code-block:: bash
+
          Update README and fix typos
 
       **Step 4: Commit your changes**

@@ -17,6 +17,34 @@ Join us in unraveling the brain, one kit at a time!
 
 You can check the complete documentation on all the kits by clicking the links below.
 
+
+Neuro PlayGround (NPG) Lite Kits
+**********************************
+
+.. only:: html
+
+   .. grid:: 2 2 2 2
+      :margin: 4 4 0 0 
+      :gutter: 2
+
+      .. grid-item-card:: NPG Lite - Explorer Pack 
+         :text-align: center
+         :link: npg-lite-explorer
+         :link-type: ref
+
+      .. grid-item-card:: NPG Lite - Ninja Pack 
+         :text-align: center
+         :link: npg-lite-ninja
+         :link-type: ref
+
+      .. grid-item-card:: NPG Lite - Beast Pack 
+         :text-align: center
+         :link: npg-lite-beast
+         :link-type: ref
+
+BioAmp EXG Pill DIY Kits
+*************************
+
 .. only:: html
 
    .. grid:: 2 2 2 2
@@ -36,6 +64,18 @@ You can check the complete documentation on all the kits by clicking the links b
 .. toctree::
    :hidden:
    :maxdepth: 1
+   :caption: NPG Lite Kits
+
+   npg-lite-kits/npg-lite-explorer/index
+   npg-lite-kits/npg-lite-ninja/index
+   npg-lite-kits/npg-lite-beast/index
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: BioAmp EXG Pill DIY Kits
+
 
    diy-neuroscience/basic/index
    diy-neuroscience/pro/index
+

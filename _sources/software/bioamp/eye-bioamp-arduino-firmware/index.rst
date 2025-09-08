@@ -106,7 +106,6 @@ Step 4: Skin Preparation and Electrodes Placement
    - ``REF`` (reference): Attach on the bony area near the cheek or behind the ear (as in the diagram).
   
 .. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-eog.png
-
     :align: center
     :alt: EOG Placement
 

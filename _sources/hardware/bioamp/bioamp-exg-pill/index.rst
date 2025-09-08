@@ -81,7 +81,7 @@ Software requirements
 
     Arduino IDE v1.8.19 (legacy IDE) 
 
-- Visit Upside Down Labs `Chords Web <https://chords.upsidedownlabs.tech>`_ to visualize your biosignals directly in the browser.
+- Visit Upside Down Labs `Chords Web <https://chords.upsidedownlabs.tech>`__ to visualize your biosignals directly in the browser.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_landing_page.*
     :align: center
@@ -242,7 +242,7 @@ After opening the serial plotter make sure to select the baud rate to 115200.
 Visualizing the EMG signals
 ----------------------------
 
-For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`_ for quick and hassle free real-time biosignal visualization right from your browser, without installing any software.
+For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle free real-time biosignal visualization right from your browser, without installing any software.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_emg_signal.*
     :align: center
@@ -317,7 +317,7 @@ After opening the serial plotter make sure to select the baud rate to 115200.
 Visualizing the ECG signals
 -----------------------------
 
-For visualizing the ECG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`_ for quick and hassle free real-time biosignal visualization right from your browser, without installing any software.
+For visualizing the ECG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle free real-time biosignal visualization right from your browser, without installing any software.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_ecg_signal.*
     :align: center
@@ -391,7 +391,7 @@ After opening the serial plotter make sure to select the baud rate to 115200.
 Visualizing the EOG signals
 ------------------------------
 
-For visualizing the EOG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`_ for quick and hassle free real-time biosignal visualization right from your browser, without installing any software.
+For visualizing the EOG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle free real-time biosignal visualization right from your browser, without installing any software.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_eog_signal.*
     :align: center
@@ -493,7 +493,7 @@ right COM port. Now upload the code.
 Visualizing the EEG signals
 -------------------------------
 
-For visualizing the EEG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`_ for quick and hassle free real-time biosignal visualization right from your browser, without installing any software.
+For visualizing the EEG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle free real-time biosignal visualization right from your browser, without installing any software.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_eeg_signal.*
     :align: center

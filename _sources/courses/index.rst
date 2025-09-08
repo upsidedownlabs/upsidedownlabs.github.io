@@ -3,12 +3,6 @@
 Courses
 ########
 
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-   :caption: Extracellular Electrophysiology Acquisition
-
-   open-ephys/index
 
 .. toctree::
    :hidden:
@@ -17,3 +11,9 @@ Courses
 
    basics-of-neuroscience/index
    
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Extracellular Electrophysiology Acquisition
+
+   open-ephys/index

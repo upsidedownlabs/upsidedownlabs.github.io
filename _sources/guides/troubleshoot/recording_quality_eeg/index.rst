@@ -55,6 +55,7 @@ Step 5: How to Check Whether the Signals Are Correct
 To verify correct electrode placement and good signal quality, try the following actions and observe their expected EEG responses.
 
 - **Eye Blinks**  
+
 Blinking creates sharp spikes in the EEG signal - these are EOG artifacts caused by eye movements.
 
 .. figure:: ../media/eye_blink.*
@@ -64,6 +65,7 @@ Blinking creates sharp spikes in the EEG signal - these are EOG artifacts caused
     Eye blink waveform
 
 - **Jaw Clench**  
+
 A strong jaw clench produces EMG artifacts in the EEG signal - these are due to facial muscle activity.
 
 .. figure:: ../media/jaw_clench.*

@@ -103,7 +103,6 @@ Step 4: Skin Preparation and Electrodes Placement
    - ``REF`` (reference): Right side of chest, far from the heart (over the ribs)
 
 .. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-ecg.png
-
     :align: center
     :alt: ECG Placement
 
