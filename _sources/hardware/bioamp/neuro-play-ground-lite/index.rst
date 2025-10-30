@@ -144,11 +144,25 @@ Usage Guide
 ************
 
 To help you get started quickly, we’ve prepared a step-by-step video tutorial.  
-This guide walks you through setup, connections, and running your experiments with the Neuro PlayGround Lite .  
+This guide walks you through setup, connections, and running your experiments with the Neuro PlayGround Lite.  
 
 .. youtube:: hBrbw9vF-m4
     :align: center
 
+.. admonition:: Troubleshooting
+
+   Having trouble connecting your **NPG Device** with :ref:`Chords Web <chords>`?
+
+   If you try to connect the device and the pop-up window for **Bluetooth Connection** doesn't appear, make sure your chromium based browser has
+   following feature Enabled:
+
+   1. Open a new tab and go to ``chrome://flags``
+   2. Find and enable the following flags:
+    
+   - **Web Bluetooth**
+   - **Use the new permissions backend for Web Bluetooth**
+   - **Web Bluetooth confirm pairing support**
+   - **Experimental Web Platform features**
 
 Compatible Software
 ************************
@@ -168,7 +182,6 @@ NPG Lite Flasher
 
 .. youtube:: NDk-P3nob_0
     :align: center
-    :width: 100%
 
 Chords Web
 =============
@@ -185,7 +198,6 @@ Chords Web
 
 .. youtube:: Tqor4mo2Ji8
     :align: center
-    :width: 100%
 
 Chords Python
 ================
@@ -202,7 +214,6 @@ Chords Python
 
 .. youtube:: TiDwSQEY2eY
     :align: center
-    :width: 100%
 
 Chords LSL Connector
 =====================
@@ -219,7 +230,6 @@ Chords LSL Connector
 
 .. youtube:: 94lPImB0eRo
     :align: center
-    :width: 100%
 
 Chords LSL Visualizer
 =====================
@@ -339,6 +349,8 @@ Each of these projects runs on the ``BLE firmware``, which you can flash using t
     it visualizes brainwave activity, heart rate, and hemisphere balance to help you meditate more 
     effectively - all from your browser, using the NPG Lite device.
     
+    .. youtube:: O3F-0UWxNfA
+        :align: center
 
     .. Note::
         
@@ -356,12 +368,25 @@ Each of these projects runs on the ``BLE firmware``, which you can flash using t
     This project offers a hands-on glimpse into the future of human–machine interaction, 
     where thoughts and movements seamlessly command machines.
 
+    .. youtube:: US_cDCRjV6c
+        :align: center
+
     .. Note::
         
         - To learn about this project, visit our Instructables page for detailed guide: `Brain-Controlled Car :EEG + EMG Robotic Control <https://www.instructables.com/Brain-Controlled-Car-EEG-EMG-Robotic-Control/>`_
  
+.. card:: 7. Playing GTA V with Your Focus & Muscles
 
-.. card:: 7. Cuboid
+    Control GTA V using your mind! The Brain-Controlled Gaming system uses the 
+    wireless Neuro PlayGround Lite to translate your brainwaves (EEG) and muscle contractions (EMG) 
+    into game controls. Focus to accelerate, and flex your left or right arm to steer. This BCI project 
+    delivers a mind-bending glimpse into the future of gaming, letting you command your car with 
+    nothing but your body signals.
+
+    .. youtube:: LhvBo8MP7iQ
+        :align: center
+
+.. card:: 8. Cuboid
 
     Cuboid is a neurofeedback-powered game that turns your focus into action. Using real-time brainwave
     data from the NPG Lite device, the game challenges you to move a geometric cuboid upward by
@@ -372,7 +397,7 @@ Each of these projects runs on the ``BLE firmware``, which you can flash using t
         
         - Visit the `Web Interface <https://upsidedownlabs.github.io/Cuboid/>`__ to visualize in real time.
 
-.. card:: 8. Muscle Strength
+.. card:: 9. Muscle Strength
 
     Muscle Strength Game transforms your physical efforts into insightful data. Simply connect 
     to any muscle group you want to focus on, and you'll instantly visualize the raw electrical 
@@ -387,8 +412,23 @@ Each of these projects runs on the ``BLE firmware``, which you can flash using t
 
         - Visit the `Web Interface <https://chords.upsidedownlabs.tech/muscle-strength>`__  to visualize in real time.
 
+.. card:: 10. Mind-to-Words Using EEG
 
-.. dropdown:: Neuro-Playground Lite C3 (Obsolete)
+    Mind-to-Words (M2W) application is an innovative Assistive Communication tool that enables users to 
+    control a menu interface solely through eye blinks. It utilizes the EOG artifacts present in a single 
+    channel EEG signal, which is captured by the NPG Lite device. The core functionality relies on a novel 
+    algorithm that separates and recognizes distinct control signals: a double blink is used to activate or 
+    switch between options, while a triple blink is used to confirm and make a selection.
+
+    .. youtube:: UyXsqCrVxh4
+        :align: center
+
+    .. Note::
+
+        - M2W Web Application: `Web Interface <https://upsidedownlabs.github.io/M2W/>`__ 
+
+
+.. dropdown:: Neuro-PlayGround Lite C3 (Obsolete)
 
     .. rubric:: Overview
 
