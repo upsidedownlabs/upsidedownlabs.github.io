@@ -105,6 +105,48 @@ Board Layout & Pinout Diagram
 
     Neuro PlayGround (NPG) Lite Pinout
 
+Components
+************
+
+.. figure:: media/npg-lite-components.*
+    :align: center
+    :width: 80%
+    :alt: Neuro PlayGround (NPG) Lite Components
+
+    Neuro PlayGround (NPG) Lite Components
+
++--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Number | Components                 | Description                                                                                                                                                       |
++========+============================+===================================================================================================================================================================+
+| 1      | **ESP32-C6**               | The ESP32-C6 is a Wi-Fi 6 and Bluetooth 5 (LE) enabled microcontroller developed by Espressif Systems.                                                            |
++--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2      | **Antenna**                | The onboard PCB antenna is tuned for 2.4GHz, ensuring strong, stable Wi-Fi and Bluetooth connectivity with low power use.                                         |
++--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 3      | **6 Addressable RGB LEDs** | Enables visualization of device states, signal strength, or neural feedback using dynamic color indicators.                                                       |
++--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 4      | **User ESD Protection**    | ESD protection components, ensuring durability and reliability when connecting electrodes.                                                                        |
++--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 5      | **BioAmp**                 | The onboard BioAmp is a low-noise, high-gain biopotential amplifier that captures and amplifies EMG, ECG, and EEG signals for digital processing by the ESP32-C6. |
++--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 6      | **Boot/User Button**       | The Boot/User button enables bootloader mode for firmware flashing and serves as a programmable user input.                                                       |
++--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 7      | **600mA LDO**              | The voltage regulator converts higher input voltages (USB or battery) into a stable 3.3V output.                                                                  |
++--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 8      | **Battery Connector**      | It offers a safe, port for battery power, allowing portable operation of the board. **Note:** There is no polarity protection.                                    |
++--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 9      | **LiPo Charging**          | The integrated LiPo charging controller safely manages charging cycles, supporting automatic termination and trickle charging for optimal battery health.         |
++--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 10     | **USB ESD Protection**     | USB ESD protection shields the interface from electrostatic and voltage spikes, ensuring reliable data transfer and preventing component damage.                  |
++--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 11     | **Reset Button**           | The reset button restarts the microcontroller and running program without power loss, aiding debugging and firmware testing.                                      |
++--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 12     | **Charging LED**           | The Charging LED indicates battery charging status, lighting during charging and turning off when fully charged for immediate feedback.                           |
++--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 13     | **USB C**                  | USB C port for data transfer and power input.                                                                                                                     |
++--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 14     | **User LED**               | A programmable LED on a GPIO pin used to show board activity, connection status, or custom signals during development.                                            |
++--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
 Playmates
 **********
 
@@ -116,25 +158,25 @@ Playmates are modular expansion boards designed to enhance the functionality of 
 
     Neuro PlayGround (NPG) Lite Playmates
 
-NPG Proto Playmate
-===================
+1. NPG Proto Playmate
+======================
 
-Proto Playmate offers a flexible prototyping space with a dedicated area for adding your own components or 
+**Proto Playmate** offers a flexible prototyping space with a dedicated area for adding your own components or 
 circuits. It includes a QWIIC port for quick sensor integration, 2.54 mm electrode header pins, 
 an ON/OFF slide switch, and a connector interface for electrodes. By combining electrodes with custom electronics, 
 users can rapidly prototype biosignal-driven experiments, build add-on circuits, or test new designs without needing a separate breadboard.
 
-NPG VibZ Playmate
-===================
+2. NPG VibZ Playmate
+=====================
 
-VibZ Playmate introduces a vibration motor for haptic feedback, a buzzer for auditory feedback, a QWIIC port for easy I2C sensor integration, an ON/OFF slide switch, 2.54 mm electrode header pins
+**VibZ Playmate** introduces a vibration motor for haptic feedback, a buzzer for auditory feedback, a QWIIC port for easy I2C sensor integration, an ON/OFF slide switch, 2.54 mm electrode header pins
 and common negative electrode option. With these Playmates, users can customize their setup for specific applications, whether in research, education, or 
 interactive biofeedback experiments. This modular approach ensures flexibility, scalability, and better user experience.
 
-NPG VibZ+ Playmate
-===================
+3. NPG VibZ+ Playmate
+======================
 
-VibZ+ Playmate builds on the VibZ by including an additional 3-channel BioAmp, making it possible to record 
+**VibZ+ Playmate** builds on the VibZ by including an additional 3-channel BioAmp, making it possible to record 
 and visualize up to 6 Biosignal channels simultaneously. It retains the vibration motor for haptic feedback, 
 buzzer for auditory cues, ON/OFF slide switch, QWIIC port, and electrode connector interface. 
 This makes VibZ+ ideal for experiments where higher-resolution input or greater spatial coverage is essential, 
@@ -163,6 +205,32 @@ This guide walks you through setup, connections, and running your experiments wi
    - **Use the new permissions backend for Web Bluetooth**
    - **Web Bluetooth confirm pairing support**
    - **Experimental Web Platform features**
+  
+Select Your Kit
+*******************
+
+**Identify your kit from the three options below, then let’s walk through the setup and kit usage guide:**
+
+.. only:: html
+
+   .. grid:: 1 2 2 1
+      :margin: 4 4 0 0 
+      :gutter: 2
+
+      .. grid-item-card:: NPG Lite - Explorer Pack 
+         :text-align: center
+         :link: npg-lite-explorer
+         :link-type: ref
+
+      .. grid-item-card:: NPG Lite - Ninja Pack 
+         :text-align: center
+         :link: npg-lite-ninja
+         :link-type: ref
+
+      .. grid-item-card:: NPG Lite - Beast Pack 
+         :text-align: center
+         :link: npg-lite-beast
+         :link-type: ref
 
 Compatible Software
 ************************
@@ -241,33 +309,6 @@ Chords LSL Visualizer
     :alt: Chords LSL Visualizer Landing Page 
 
     Chords LSL Visualizer Landing Page 
-
-Select Your Kit
-*******************
-
-**Identify your kit from the three options below, then let’s walk through the setup:**
-
-.. only:: html
-
-   .. grid:: 1 2 2 1
-      :margin: 4 4 0 0 
-      :gutter: 2
-
-      .. grid-item-card:: NPG Lite - Explorer Pack 
-         :text-align: center
-         :link: npg-lite-explorer
-         :link-type: ref
-
-      .. grid-item-card:: NPG Lite - Ninja Pack 
-         :text-align: center
-         :link: npg-lite-ninja
-         :link-type: ref
-
-      .. grid-item-card:: NPG Lite - Beast Pack 
-         :text-align: center
-         :link: npg-lite-beast
-         :link-type: ref
-
 
 .. _neuro-play-ground-lite-project-tutorials:
 
