@@ -15,7 +15,6 @@ This kit is perfect for users who want a smoother, plug-and-play experience with
     
     Neuro PlayGround Lite Ninja Pack
 
-
 Contents of the kit
 ********************
 
@@ -122,7 +121,7 @@ To configure a channel to use the Common Negative, follow these steps:
 3. **Make it Common:** You must solder this bridge closed. This physically connects that channel's negative input to the main Common Negative line.
 4. **Connect the Shared Electrode:** Connect your single, common negative electrode jumper cable to the dedicated CN pin.
 5. **Simplify Wiring:** For any channel configured this way, you no longer need to connect an electrode to the corresponding negative input pin (e.g., A0N, A1N, or A2N).
- 
+
 
 Step 3: Place Gel Electrodes
 ===============================
