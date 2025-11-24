@@ -1,0 +1,1073 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 5 : The Synapse &#8212; upsidedownlabs.github.io  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'courses/neuroscience-basics-for-biopotential-signals/module-5/index';</script>
+    <link rel="canonical" href="docs.upsidedownlabs.tech/courses/neuroscience-basics-for-biopotential-signals/module-5/index.html" />
+    <link rel="icon" href="../../../_static/logo_sqr_bgw.svg"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Course Curriculum" href="../../open-ephys/index.html" />
+    <link rel="prev" title="Module 4 : The Action Potential and its Propagation" href="../module-4/index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+    <meta name="docbuild:last-update" content="Nov 24, 2025"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Welcome to Upside Down Labs docs site!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo_black_hr_nbg.svg" class="logo__image only-light" alt="upsidedownlabs.github.io  documentation - Home"/>
+    <img src="../../../_static/logo_white_hr_nbg.svg" class="logo__image only-dark pst-js-only" alt="upsidedownlabs.github.io  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="ms-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../hardware/index.html">
+    Hardware
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../software/index.html">
+    Software
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../research/index.html">
+    Research
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../kits/index.html">
+    DIY Kits
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../guides/index.html">
+    Guides
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../index.html">
+    Courses
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+    DigiKey
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
+    Mouser
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://www.tindie.com/stores/upsidedownlabs/">
+    Tindie
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355">
+    Amazon India
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://store.upsidedownlabs.tech/">
+    Store India
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://t.ly/ExlaF">
+    GeM India
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instructables.com/member/Upside%20Down%20Labs/instructables/" title="Instructables" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/instructables.svg" class="icon-link-image" alt="Instructables"/></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../hardware/index.html">
+    Hardware
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../software/index.html">
+    Software
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../research/index.html">
+    Research
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../kits/index.html">
+    DIY Kits
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../guides/index.html">
+    Guides
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../index.html">
+    Courses
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+    DigiKey
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
+    Mouser
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.tindie.com/stores/upsidedownlabs/">
+    Tindie
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355">
+    Amazon India
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://store.upsidedownlabs.tech/">
+    Store India
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://t.ly/ExlaF">
+    GeM India
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instructables.com/member/Upside%20Down%20Labs/instructables/" title="Instructables" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/instructables.svg" class="icon-link-image" alt="Instructables"/></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Neuroscience Basics For Biopotential Signals</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Course Curriculum</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../module-1/index.html">Module 1: Human Nervous System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module-2/index.html">Module 2: Understanding the resting potential</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module-3/index.html">Module 3 : Passive Membrane Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module-4/index.html">Module 4 : The Action Potential and its Propagation</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Module 5 : The Synapse</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Extracellular Electrophysiology Acquisition</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../open-ephys/index.html">Course Curriculum</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/theory-day-1/index.html">Theory Day 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/theory-day-2/index.html">Theory Day 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/theory-day-3/index.html">Theory Day 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/theory-day-4/index.html">Theory Day 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/exday1-nokit.html">Exercises Day 1: No Hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/exday2-nokit.html">Exercises Day 2: No Hardware</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Courses</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Course Curriculum</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Module 5 : The Synapse</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-5-the-synapse">
+<span id="neuroscience-basics-for-biopotential-signals-module-5"></span><h1>Module 5 : The Synapse<a class="headerlink" href="#module-5-the-synapse" title="Link to this heading">#</a></h1>
+<p>A synapse is a junction between two neurons(nerve cells) or between a neuron and another cell, such as muscle or gland cell that allows them to communicate. It is the site where electrical or chemical signals are transmitted from one cell to another.</p>
+<section id="types-of-synapse">
+<h2>5.1 Types of synapse<a class="headerlink" href="#types-of-synapse" title="Link to this heading">#</a></h2>
+<p>There are generally 2 main types of synapses : Electrical and Chemical Synapse</p>
+<section id="electrical-synapse-1">
+<h3>1. Electrical synapse <a class="footnote-reference brackets" href="#id10" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#electrical-synapse-1" title="Link to this heading">#</a></h3>
+<section id="a-structure">
+<h4>a. Structure<a class="headerlink" href="#a-structure" title="Link to this heading">#</a></h4>
+<p>Formed by gap junctions (channels that connect the cytoplasm of two adjacent neurons) that have pores to allow direct ion flow between the adjacent neurons.</p>
+</section>
+<section id="b-mechanism">
+<h4>b. Mechanism<a class="headerlink" href="#b-mechanism" title="Link to this heading">#</a></h4>
+<p>Fast and bidirectional, facilitating rapid signaling and coordination.</p>
+</section>
+</section>
+<section id="chemical-synapse-1">
+<h3>2. Chemical synapse <a class="footnote-reference brackets" href="#id10" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#chemical-synapse-1" title="Link to this heading">#</a></h3>
+<section id="id6">
+<h4>a. Structure<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
+<p>Consist of a presynaptic neuron (which sends signal) and a postsynaptic neuron (which receives signal), separated by a synaptic cleft.</p>
+</section>
+<section id="id7">
+<h4>b. Mechanism<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>When an action potential(electric signal) reaches the axon terminal, it triggers the release of neurotransmitters(chemical signal) from vesicles into the synaptic cleft. (Synaptic cleft is a very small space between the two neurons which is 20 to 40 nm wide in size)</p></li>
+<li><p>These neurotransmitters bind to specific receptors on the postsynaptic membrane, leading to changes in the postsynaptic neuron (either excitatory or inhibitory).</p></li>
+<li><p>Slow in comparison to electrical synapse and unidirectional .</p></li>
+</ul>
+<div class="admonition-note admonition">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>For a very long time, scientists believed that electrical synapse is present in whole nervous system (DEVELOPED) but in reality it was chemical synapse which is more common.</p></li>
+<li><p>As the axon of the presynaptic neuron gets closer to the synapse, it balloons out a little bit and this region is known as presynaptic terminal.</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="key-differences">
+<h3>5.1.1 Key differences<a class="headerlink" href="#key-differences" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Feature</strong></p></th>
+<th class="head"><p><strong>Electrical Synapse</strong></p></th>
+<th class="head"><p><strong>Chemical Synapse</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Mechanism</p></td>
+<td><p>Direct ion flow through gap junctions</p></td>
+<td><p>Release of neurotransmitters across a synaptic cleft</p></td>
+</tr>
+<tr class="row-odd"><td><p>Speed</p></td>
+<td><p>Fast (nearly instantaneous)</p></td>
+<td><p>Slower (due to chemical transmission)</p></td>
+</tr>
+<tr class="row-even"><td><p>Directionality</p></td>
+<td><p>Bidirectional</p></td>
+<td><p>Unidirectional</p></td>
+</tr>
+<tr class="row-odd"><td><p>Signal Type</p></td>
+<td><p>Electrical signal</p></td>
+<td><p>Electrical + Chemical signal</p></td>
+</tr>
+<tr class="row-even"><td><p>Examples</p></td>
+<td><p>Retina, heart, certain brain regions</p></td>
+<td><p>Most brain synapses, neuromuscular junctions</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>There are 2 major types of receptors : <strong>Ionotropic</strong> and <strong>Metabotropic</strong> receptors. When a neurotransmitter binds to an ionotropic receptor, it causes the receptor to change shape, allowing ions to flow through the channel. This process leads to rapid changes in the postsynaptic membrane potential, resulting in either excitation or inhibition of the neuron. Metabotropic receptors work through chemical signaling pathways inside the cell. These signals can reach the nucleus and switch certain genes on or off. Because of this, metabotropic receptors can change which proteins the cell produces and influence long-term cellular functions.</p>
+<div class="admonition-important-fact admonition">
+<p class="admonition-title">Important fact</p>
+<ul class="simple">
+<li><p>In developing nervous system, electrical synapse is more common.</p></li>
+<li><p>In developed nervous system, chemical synapse is more common.</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="epsps-and-ipsps-2">
+<h2>5.2 EPSPs and IPSPs <a class="footnote-reference brackets" href="#id11" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a><a class="headerlink" href="#epsps-and-ipsps-2" title="Link to this heading">#</a></h2>
+<p>When a chemical synapse releases neurotransmitters, they attach to receptors on the postsynaptic membrane. This changes the flow of ions into or out of the neuron, creating small electrical changes called postsynaptic potentials. These shifts slightly raise or lower the membrane potential from its usual resting level of about –70 mV. There are two main types: EPSPs and IPSPs.</p>
+<section id="excitatory-postsynaptic-potentials-epsps">
+<h3>Excitatory Postsynaptic Potentials (EPSPs)<a class="headerlink" href="#excitatory-postsynaptic-potentials-epsps" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>EPSPs occur when excitatory neurotransmitters-most commonly glutamate - open Na⁺ or Ca²⁺ channels.</p></li>
+<li><p>Positive ions enter the neuron, causing depolarization (the membrane becomes less negative).</p></li>
+<li><p>This brings the neuron closer to the threshold needed to fire an action potential.</p></li>
+<li><p>The size of an EPSP depends on how much neurotransmitter is released, how many receptors are activated, how far the signal is from the axon hillock, and how much it decays along the membrane.</p></li>
+<li><p>If enough EPSPs arrive together and push the membrane to about -55 mV at the axon hillock, an action potential is triggered.</p></li>
+</ul>
+</section>
+<section id="inhibitory-postsynaptic-potentials-ipsps">
+<h3>Inhibitory Postsynaptic Potentials (IPSPs)<a class="headerlink" href="#inhibitory-postsynaptic-potentials-ipsps" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>IPSPs occur when inhibitory neurotransmitters-mainly GABA-open Cl⁻ channels (letting Cl⁻ in) or K⁺ channels (letting K⁺ out).</p></li>
+<li><p>This adds more negative charge inside the neuron, causing hyperpolarization, which makes the neuron less likely to fire.</p></li>
+<li><p>Like EPSPs, IPSPs are graded (Their size is not fixed - it depends on the strength of the input.) and weaken as they travel toward the axon hillock.</p></li>
+</ul>
+<section id="important-points">
+<h4>Important Points<a class="headerlink" href="#important-points" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>EPSPs and IPSPs are small changes from the –70 mV resting potential caused by shifts in ion permeability and basic electrical forces. <a class="reference internal" href="../module-2/index.html#neuroscience-basics-for-biopotential-signals-module-2"><span class="std std-ref">(Module 2)</span></a></p></li>
+<li><p>How far and how strongly they spread depends on membrane resistance (Rm), internal resistance (Ri), capacitance (Cm), the length constant (λ), and the time constant (τ). <a class="reference internal" href="../module-3/index.html#neuroscience-basics-for-biopotential-signals-module-3"><span class="std std-ref">(Module 3)</span></a></p></li>
+<li><p>When many EPSPs combine and reach threshold, the neuron fires an action potential. IPSPs work against this process, preventing the membrane from reaching threshold and reducing the chance of firing. <a class="reference internal" href="../module-4/index.html#neuroscience-basics-for-biopotential-signals-module-4"><span class="std std-ref">(Module 4)</span></a></p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="bernard-katz-experiment">
+<h2>5.3 Bernard katz experiment<a class="headerlink" href="#bernard-katz-experiment" title="Link to this heading">#</a></h2>
+<p>The Bernard Katz experiment, conducted in the mid-20th century by physiologist Bernard Katz and his colleagues, was pivotal in understanding synaptic transmission, particularly at the neuromuscular junction. Here’s a detailed overview of the experiment and its significance:</p>
+<section id="overview-of-the-experiment">
+<h3>5.3.1 Overview of the Experiment<a class="headerlink" href="#overview-of-the-experiment" title="Link to this heading">#</a></h3>
+<section id="context">
+<h4>1. Context<a class="headerlink" href="#context" title="Link to this heading">#</a></h4>
+<p>Katz studied the neuromuscular junction in frogs, the place where motor neurons connect with muscle fibers. His goal was to figure out how a nerve signal triggers a muscle to contract.</p>
+</section>
+<section id="method">
+<h4>2. Method<a class="headerlink" href="#method" title="Link to this heading">#</a></h4>
+<p>Katz used electrophysiology to study how muscle cells respond electrically when a motor neuron activates them. He measured the postsynaptic potentials in the muscle fibers after stimulating the motor neuron and also observed how changing the calcium ion concentration affected these responses.</p>
+</section>
+<section id="findings">
+<h4>3. Findings<a class="headerlink" href="#findings" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Katz observed that when the presynaptic neuron releases neurotransmitters (mainly acetylcholine), the muscle fiber produces end-plate potentials (EPPs). End-plate potentials are the small electrical changes produced in muscle fiber when a motor neuron releases neurotransmitters at the neuromuscular junction.</p></li>
+<li><p>He noticed that the strength of an EPP changes depending on how many neurotransmitter molecules are released.</p></li>
+<li><p>When he lowered the calcium concentration in the surrounding solution, the EPPs became smaller, showing that calcium is essential for neurotransmitter release.</p></li>
+</ul>
+</section>
+<section id="quantal-release">
+<h4>4. Quantal Release<a class="headerlink" href="#quantal-release" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>One of Katz’s major discoveries was the idea of quantal release, meaning neurotransmitters are released in small, fixed packets instead of continuously.</p></li>
+<li><p>He confirmed this by studying miniature end-plate potentials (MEPPs), which occur even without any stimulation. Miniature end-plate potentials are tiny, spontaneous electrical signals seen in muscle fibers even when the motor neuron is not firing.</p></li>
+</ul>
+</section>
+</section>
+<section id="significance">
+<h3>5.3.2 Significance :<a class="headerlink" href="#significance" title="Link to this heading">#</a></h3>
+<p>Bernard Katz studied the frog neuromuscular junction and discovered that neurotransmitters are released in discrete packets (quanta). Using electrophysiology, he showed that Calcium is essential for neurotransmitter release-lower calcium → smaller EPPs. His findings proved that synaptic transmission is quantized, not continuous, and earned him the Nobel Prize (1970).</p>
+</section>
+</section>
+<section id="snare-proteins-3">
+<h2>5.4 Snare Proteins <a class="footnote-reference brackets" href="#id12" id="id9" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a><a class="headerlink" href="#snare-proteins-3" title="Link to this heading">#</a></h2>
+<p>Snare proteins are special proteins that help a neuron in releasing neurotransmitters. It is of 2 types</p>
+<ul class="simple">
+<li><p><strong>v-SNAREs (vesicle SNAREs)</strong>: These proteins are located on the synaptic vesicle membrane. The most common v-SNARE is synaptobrevin (also known as VAMP).</p></li>
+<li><p><strong>t-SNAREs (target SNAREs)</strong>: These are found on the presynaptic membrane and interact with v-SNAREs to facilitate vesicle fusion. The main t-SNAREs include syntaxin and SNAP-25.</p></li>
+</ul>
+<section id="mechanism-of-action">
+<h3>Mechanism of Action<a class="headerlink" href="#mechanism-of-action" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Vesicle Docking</strong>: v-SNAREs and t-SNAREs form a complex, bringing the vesicle close to the presynaptic membrane.</p></li>
+<li><p><strong>Fusion</strong>: Upon the arrival of an action potential, calcium ions enter the presynaptic terminal, triggering the conformational change in the SNARE complex that leads to the fusion of the vesicle with the membrane.</p></li>
+<li><p><strong>Neurotransmitter Release</strong>: Once the vesicle fuses with the membrane, neurotransmitters are released into the synaptic cleft.</p></li>
+</ol>
+</section>
+</section>
+<section id="synaptic-summation">
+<h2>5.5 Synaptic summation<a class="headerlink" href="#synaptic-summation" title="Link to this heading">#</a></h2>
+<p>Synaptic summation is the way a neuron adds up all the EPSPs and IPSPs it receives from thousands of synapses to decide whether it should fire an action potential. Since each EPSP or IPSP is very small (around 0.2–1 mV), a single synapse is never enough to make the neuron fire. Instead, the neuron relies on the combined effect of many inputs.</p>
+<section id="types-of-synaptic-summation">
+<h3>5.5.1 Types of synaptic summation<a class="headerlink" href="#types-of-synaptic-summation" title="Link to this heading">#</a></h3>
+<p>There are two main types of summation:</p>
+<section id="temporal-summation">
+<h4>1. Temporal Summation<a class="headerlink" href="#temporal-summation" title="Link to this heading">#</a></h4>
+<p>Temporal summation happens when several EPSPs or IPSPs arrive one after another in quick succession at the same synapse.</p>
+<ul>
+<li><p>If they occur close together in time, they add up because the membrane hasn’t returned fully to its resting level.</p></li>
+<li><p>This process depends heavily on the time constant (τ):</p>
+<p><strong>a. A longer τ means EPSPs last longer → easier to add up</strong></p>
+<p><strong>b. A shorter τ means EPSPs fade quickly → harder to summate</strong></p>
+</li>
+</ul>
+</section>
+<section id="spatial-summation">
+<h4>2. Spatial Summation<a class="headerlink" href="#spatial-summation" title="Link to this heading">#</a></h4>
+<p>Spatial summation occurs when EPSPs or IPSPs arrive at the same time from different synapses located on different parts of the dendrites.</p>
+<ul>
+<li><p>The inputs from many presynaptic neurons meet at the axon hillock and combine there.</p></li>
+<li><p>It depends on the length constant (λ):</p>
+<p><strong>a. A larger λ allows EPSPs to travel farther with less decay</strong></p>
+<p><strong>b. A smaller λ causes EPSPs to die out before reaching the hillock</strong></p>
+</li>
+</ul>
+</section>
+</section>
+<section id="interaction-of-epsps-and-ipsps">
+<h3>5.5.2 Interaction of EPSPs and IPSPs<a class="headerlink" href="#interaction-of-epsps-and-ipsps" title="Link to this heading">#</a></h3>
+<ul>
+<li><p>Neurons constantly receive both excitatory and inhibitory signals.</p></li>
+<li><p>EPSPs make the cell more positive → increase chance of firing</p></li>
+<li><p>IPSPs make the cell more negative → reduce chance of firing</p></li>
+<li><p>At the axon hillock, the neuron effectively performs a calculation:</p>
+<p><strong>Net input = total EPSPs - total IPSPs</strong></p>
+</li>
+<li><p>If this net depolarization reaches about -55 mV → the neuron fires an action potential.</p></li>
+<li><p>If inhibition outweighs excitation → no action potential occurs.
+This is the basic way neurons compute information.</p></li>
+</ul>
+</section>
+<section id="how-synaptic-summation-generates-biopotential-signals-eeg-ecg-emg-eog">
+<h3>5.5.3 How Synaptic Summation Generates Biopotential Signals (EEG, ECG, EMG, EOG)<a class="headerlink" href="#how-synaptic-summation-generates-biopotential-signals-eeg-ecg-emg-eog" title="Link to this heading">#</a></h3>
+<p>Biopotential signals measured from the body—like EEG, ECG, EMG, and EOG—are not recordings of single neurons or single action potentials.
+Instead, these signals come from the summed postsynaptic potentials (EPSPs + IPSPs) of thousands to millions of cells firing together. This combined electrical activity creates voltage changes large enough to be detected by electrodes on the skin or scalp.</p>
+</section>
+</section>
+<section id="additional-info-toxins-and-their-effects">
+<h2>5.6 Additional info (Toxins and Their Effects)<a class="headerlink" href="#additional-info-toxins-and-their-effects" title="Link to this heading">#</a></h2>
+<section id="botulinum-toxin-botox">
+<h3>5.6.1 Botulinum Toxin (Botox)<a class="headerlink" href="#botulinum-toxin-botox" title="Link to this heading">#</a></h3>
+<p><strong>Mechanism</strong>: Botox is produced by the bacterium Clostridium botulinum and works by cleaving specific SNARE proteins (primarily SNAP-25).</p>
+<p><strong>Effects</strong>: This prevents vesicle fusion and neurotransmitter release, leading to muscle paralysis. Botox is used therapeutically for conditions like muscle spasms and cosmetics procedures by temporarily paralyzing muscles and by reducing the wrinkles and fine lines on skin.</p>
+</section>
+<section id="tetanus-toxin">
+<h3>5.6.2 Tetanus Toxin<a class="headerlink" href="#tetanus-toxin" title="Link to this heading">#</a></h3>
+<p><strong>Mechanism</strong>: Produced by Clostridium tetani, tetanus toxin also targets SNARE proteins, specifically synaptobrevin.</p>
+<p><strong>Effects</strong>: This toxin inhibits the release of neurotransmitters that mediate inhibitory signals in the nervous system, leading to excessive muscle contraction and spasms (tetanus). It causes a severe and potentially life-threatening condition.</p>
+<div class="admonition-bonus-info admonition">
+<p class="admonition-title">Bonus info</p>
+<p><strong>Do rusty nails actually cause tetanus?</strong></p>
+<p>Rusty nails themselves do not directly cause tetanus. The bacteria that lead to tetanus, Clostridium tetani, are commonly found in soil, animal feces, and dust. While rusty nails can create deep puncture wounds that allow these bacteria to enter the body, it’s the bacteria, not the rust, that poses the risk. If a wound becomes contaminated with C. tetani, tetanus can develop, which is why it’s important to keep wounds clean and up to date on vaccinations.</p>
+</div>
+</section>
+</section>
+<section id="summary">
+<h2>5.7 Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<p>In module 5, we explored how synapses enable communication between neurons, the difference between electrical and chemical synapses, how neurotransmitters create EPSPs and IPSPs, and how neurons add these signals through synaptic summation. We also learned about quantal release, the role of SNARE proteins, and how toxins affect synaptic function. All of this gives us the foundation to understand how large groups of neurons generate measurable electrical activity. In the next module, we will build on this knowledge and study biopotential signals such as EEG, EMG, ECG, and EOG—how they are produced, how we record them, and what they tell us about the body.</p>
+</section>
+<section id="references">
+<h2>5.8 References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id10" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id2">1</a>,<a role="doc-backlink" href="#id4">2</a>)</span>
+<p><a class="reference external" href="https://openbooks.lib.msu.edu/neuroscience/chapter/synapse-structure/">Henley, C. (2021, January 1). Synapse Structure. Pressbooks.</a></p>
+</aside>
+<aside class="footnote brackets" id="id11" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id8">2</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://www.kenhub.com/en/library/physiology/postsynaptic-potentials">Postsynaptic potentials</a></p>
+</aside>
+<aside class="footnote brackets" id="id12" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">3</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://doi.org/10.1146/annurev.cellbio.19.110701.155609">Ungar, D., &amp; Hughson, F. M. (2003). SNARE protein structure and function. Annual Review of Cell and Developmental Biology, 19(1), 493–517.</a></p>
+</aside>
+</aside>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../module-4/index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Module 4 : The Action Potential and its Propagation</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../open-ephys/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Course Curriculum</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-synapse">5.1 Types of synapse</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electrical-synapse-1">1. Electrical synapse </a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-structure">a. Structure</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-mechanism">b. Mechanism</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chemical-synapse-1">2. Chemical synapse </a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">a. Structure</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">b. Mechanism</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-differences">5.1.1 Key differences</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#epsps-and-ipsps-2">5.2 EPSPs and IPSPs </a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#excitatory-postsynaptic-potentials-epsps">Excitatory Postsynaptic Potentials (EPSPs)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inhibitory-postsynaptic-potentials-ipsps">Inhibitory Postsynaptic Potentials (IPSPs)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#important-points">Important Points</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bernard-katz-experiment">5.3 Bernard katz experiment</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-the-experiment">5.3.1 Overview of the Experiment</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#context">1. Context</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#method">2. Method</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#findings">3. Findings</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quantal-release">4. Quantal Release</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#significance">5.3.2 Significance :</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#snare-proteins-3">5.4 Snare Proteins </a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mechanism-of-action">Mechanism of Action</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#synaptic-summation">5.5 Synaptic summation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-synaptic-summation">5.5.1 Types of synaptic summation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#temporal-summation">1. Temporal Summation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-summation">2. Spatial Summation</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interaction-of-epsps-and-ipsps">5.5.2 Interaction of EPSPs and IPSPs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-synaptic-summation-generates-biopotential-signals-eeg-ecg-emg-eog">5.5.3 How Synaptic Summation Generates Biopotential Signals (EEG, ECG, EMG, EOG)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-info-toxins-and-their-effects">5.6 Additional info (Toxins and Their Effects)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#botulinum-toxin-botox">5.6.1 Botulinum Toxin (Botox)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tetanus-toxin">5.6.2 Tetanus Toxin</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">5.7 Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">5.8 References</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/upsidedownlabs/upsidedownlabs.github.io/edit/maincourses/neuroscience-basics-for-biopotential-signals/module-5/index.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../../_sources/courses/neuroscience-basics-for-biopotential-signals/module-5/index.rst">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, Upside Down Labs.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="last-updated">
+  Last updated on Nov 24, 2025.
+  <br/>
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
