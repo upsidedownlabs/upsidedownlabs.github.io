@@ -94,7 +94,7 @@ Wipe away excess gel with alcohol swabs or wet wipes.
 .. figure:: media/step-4.*
     :align: center
 
-    Wipe away access gel
+    Wipe away excess gel
 
 .. warning:: - Using alcohol swabs can dry out the skin, so don't use them if your skin is already dry.
     

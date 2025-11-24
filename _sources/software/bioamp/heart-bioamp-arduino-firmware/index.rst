@@ -78,7 +78,6 @@ Step 3: Connect Your Hardware
    
    - :ref:`Bioamp EXG Pill <bioamp-exg-pill>`
    - :ref:`Heart BioAmp Candy <heart-bioamp-candy>`
-   - :ref:`Muscle BioAmp Shield <muscle-bioamp-shield>`
 
 It’s just like putting together a puzzle!
 
