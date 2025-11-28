@@ -36,7 +36,7 @@ Welcome to the **Guides** section, where you'll find comprehensive resources tha
 
       .. grid-item-card:: Tips for better signal acquisition
          :text-align: center
-         :link: tips
+         :link: tips-for-best-signal-acquisition
          :link-type: ref
 
       .. grid-item-card:: Fixing hardware setup

@@ -48,6 +48,21 @@ hands-on way.
          :text-align: center
          :link: neuroscience-basics-for-biopotential-signals-module-5
          :link-type: ref
+      
+      .. grid-item-card:: Module 6: Biopotential Signals
+         :text-align: center
+         :link: neuroscience-basics-for-biopotential-signals-module-6
+         :link-type: ref
+
+      .. grid-item-card:: Module 7: EMG
+         :text-align: center
+         :link: neuroscience-basics-for-biopotential-signals-module-7
+         :link-type: ref
+
+      .. grid-item-card:: Module 8: ECG/EKG
+         :text-align: center
+         :link: neuroscience-basics-for-biopotential-signals-module-8
+         :link-type: ref
 
    Extracellular Electrophysiology Acquisition
    =================================================

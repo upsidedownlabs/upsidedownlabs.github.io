@@ -1,4 +1,4 @@
-.. _tips:
+.. _tips-for-best-signal-acquisition:
 
 Tips for best signal acquisition
 #################################

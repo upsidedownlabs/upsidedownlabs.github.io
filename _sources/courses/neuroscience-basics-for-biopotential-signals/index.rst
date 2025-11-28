@@ -32,3 +32,27 @@ Course Curriculum
    :maxdepth: 1
 
    module-5/index
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+   module-6/index
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+   module-7/index 
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+   module-8/index 
+
+
+
+
+
+   

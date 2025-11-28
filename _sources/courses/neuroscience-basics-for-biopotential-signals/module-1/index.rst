@@ -26,6 +26,7 @@ It is divided into two major parts:
     :alt: nervous system flowchart
 
     An overview of the nervous system
+    
 **This overview is a simplified representation and does not show the full nervous system. You may refer to advanced textbook for further explanation.**
 
 1.2 Central Nervous System (CNS)

@@ -135,7 +135,7 @@ slide switch for instant configuration.
 To configure the board to use the Common Negative, follow these steps:
 
 1. **Connect the Shared Electrode:** Connect your single, common negative electrode jumper cable to the dedicated CN pin header.
-2. **Locate the Switch:** Find the ``COMMON NEGATIVE`` slide switchs on the bottom of the board. The silkscreen text says ``FLIP THE SWITCH FOR COMMON NEGATIVE " and points directly to it.
+2. **Locate the Switch:** Find the ``COMMON NEGATIVE`` slide switchs on the bottom of the board. The silkscreen text says ``FLIP THE SWITCH FOR COMMON NEGATIVE`` and points directly to it.
 3. **Enable CN mode:** Flip the switch according to the negative channels input pins (A0N, A1N, A2N, A3N, A4N, and A5N). You now only need to connect your positive electrodes (e.g., A0P, A1P, etc.) and the single Common Negative electrode. You can leave all the individual negative pins (A0N-A5N) empty.
 
 Step 3: Place Gel Electrodes

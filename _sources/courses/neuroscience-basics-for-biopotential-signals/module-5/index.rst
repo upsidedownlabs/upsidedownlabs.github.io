@@ -27,7 +27,7 @@ b. Mechanism
 Fast and bidirectional, facilitating rapid signaling and coordination. 
 
 2. Chemical synapse [1]_
-=====================
+==========================
 
 .. todo:: Add diagram
 
@@ -72,7 +72,7 @@ There are 2 major types of receptors : **Ionotropic** and **Metabotropic** recep
     - In developed nervous system, chemical synapse is more common.  
 
 5.2 EPSPs and IPSPs [2]_
-**********************
+**************************
 
 When a chemical synapse releases neurotransmitters, they attach to receptors on the postsynaptic membrane. This changes the flow of ions into or out of the neuron, creating small electrical changes called postsynaptic potentials. These shifts slightly raise or lower the membrane potential from its usual resting level of about –70 mV. There are two main types: EPSPs and IPSPs.
 
