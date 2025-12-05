@@ -182,7 +182,7 @@ The inability to generate action potentials prevents nerves from communicating w
 
 Tetrodotoxin is produced by certain bacteria, not directly by the animals that carry it. These animals accumulate TTX through their diet, usually from consuming TTX-producing microorganisms like certain Vibrio species.
 
-.. admonition:: Note 
+.. note:: 
 
    Despite its toxicity, many animals that carry TTX are not harmed by it due to adaptations in their sodium channels, which prevent TTX from binding effectively.
    Tetrodotoxin is extremely potent. As little as 2–3 mg of TTX is enough to kill a human. The mechanism by which it causes death is primarily through respiratory paralysis due to the blocking of nerve transmission.

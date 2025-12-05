@@ -61,7 +61,7 @@ Cerebrum is the largest part of the brain  which can be divided into 2 hemispher
 
     The 2 hemispheres of the brain
 
-.. admonition:: Fun fact
+.. admonition:: Fun Fact
     
     - The right hemisphere controls the left side of the body, and the left hemisphere controls the right side of the body.
     - The two halves communicate with one another through a large C shaped structure called corpus callosum which is the center part of the cerebrum.
@@ -108,7 +108,7 @@ c. **Medulla oblongata:** At the bottom of the brainstem, the medulla is where t
 
     Overview of the brainstem
 
-.. admonition:: Blood brain barrier (BBB) 
+.. admonition:: Blood Brain Barrier (BBB) 
 
  - It is a highly selective, protective barrier that separates the circulating blood from the brain and fluid in the central nervous system (CNS).
  - It protects the brain from toxins, pathogens, and fluctuations in blood composition (e.g., hormones, neurotransmitters, potassium).
@@ -190,7 +190,7 @@ Based on Function
 - **Myelin sheath:** Myelin sheath is a fatty layer that insulates the axon, speeding up signal transmission. 
 - **Synapse:** Neurons do not touch each other, but where one neuron comes close to another neuron, a synapse is formed between the two which acts as a junction between two neurons where neurotransmitters are released to transmit signals to the next neuron.
 
-.. admonition:: Fun fact
+.. admonition:: Fun Fact
     
     There are axon-less neurons too, where the signal is transmitted and received both by the dendrites.
 

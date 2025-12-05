@@ -42,7 +42,7 @@ b. Mechanism
 - These neurotransmitters bind to specific receptors on the postsynaptic membrane, leading to changes in the postsynaptic neuron (either excitatory or inhibitory).
 - Slow in comparison to electrical synapse and unidirectional .
 
-.. admonition:: Note
+.. note:: 
    
    - For a very long time, scientists believed that electrical synapse is present in whole nervous system (DEVELOPED) but in reality it was chemical synapse which is more common.  
    - As the axon of the presynaptic neuron gets closer to the synapse, it balloons out a little bit and this region is known as presynaptic terminal.
@@ -66,7 +66,7 @@ b. Mechanism
 
 There are 2 major types of receptors : **Ionotropic** and **Metabotropic** receptors. When a neurotransmitter binds to an ionotropic receptor, it causes the receptor to change shape, allowing ions to flow through the channel. This process leads to rapid changes in the postsynaptic membrane potential, resulting in either excitation or inhibition of the neuron. Metabotropic receptors work through chemical signaling pathways inside the cell. These signals can reach the nucleus and switch certain genes on or off. Because of this, metabotropic receptors can change which proteins the cell produces and influence long-term cellular functions.
 
-.. admonition:: Important fact 
+.. admonition:: Important Fact 
 
     - In developing nervous system, electrical synapse is more common. 
     - In developed nervous system, chemical synapse is more common.  
@@ -216,7 +216,7 @@ Instead, these signals come from the summed postsynaptic potentials (EPSPs + IPS
 
 **Effects**: This toxin inhibits the release of neurotransmitters that mediate inhibitory signals in the nervous system, leading to excessive muscle contraction and spasms (tetanus). It causes a severe and potentially life-threatening condition.
 
-.. admonition:: Bonus info
+.. admonition:: Bonus Info
 
     **Do rusty nails actually cause tetanus?**
 
