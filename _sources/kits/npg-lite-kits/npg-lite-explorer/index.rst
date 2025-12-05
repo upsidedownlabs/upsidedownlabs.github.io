@@ -111,11 +111,16 @@ recordings like EEG, as it simplifies electrode placement and wiring.
 To configure a channel to use the Common Negative, follow these steps:
 
 1. **Choose Your Channels**: Decide which BioAmp channels (A0, A1, A2) you want to share a negative electrode.
-2. **Solder the Bridge**: Look for the small solder bridge labeled 'CN' next to the channel's negative pin (A0N, A1N, etc.).
+2. **Solder the Bridge**: Look for the small solder bridge labeled 'CN' next to the channel's negative pin (A0N, A1N, A2N).
 3. **Make it Common:** You must solder this bridge closed. This physically connects that channel's negative input to the main Common Negative line.
 4. **Connect the Shared Electrode:** Connect your single, common negative electrode jumper cable to the dedicated CN pin.
 5. **Simplify Wiring:** For any channel configured this way, you no longer need to connect an electrode to the corresponding negative input pin (e.g., A0N, A1N, or A2N).
- 
+
+.. figure:: media/npg-lite-proto-cn.*
+    :align: center
+    :alt: NPG Lite Proto Playmate Common Negative
+
+    NPG Lite Proto Playmate Common Negative 
 
 Step 3: Place Gel Electrodes
 ===============================
@@ -213,3 +218,71 @@ For the detailed guide, visit: :ref:`Chords Web Documentation<chords>`
 Explore features like play/pause data stream, apply filters,
 increase channel count, enable features for recording and
 downloading data in CSV format.
+
+Battery Connection Guide
+*************************
+
+.. important::
+    
+    The battery connectors are polarity-sensitive and requires correct connection for safe operation. Incorrect connections will damage the device. Always verify connector polarity before connecting.
+
+Option 1: Battery with 1.25mm PicoBlade Connector
+==================================================
+
+If you have purchased your battery from Upside Down Labs, or if have the same ``1.25 mm PicoBlade connector``, you can plug it directly into the battery connector on the NPG Lite.
+
+While connecting the battery:
+
+- Make sure the :bdg-danger:`Red Wire` is connected to the ``Positive (+) terminal``.
+- Make sure the :bdg-black:`Black Wire` is connected to the ``Negative (−) terminal``.
+
+This ensures the battery is connected with the correct polarity and prevents damage to the device.
+
+.. figure:: ../../npg-lite-kits/media/npg-battery-guide-picoblade-connector.*
+    :align: center
+    :width: 60%
+    :alt: Using Battery with 1.25mm PicoBlade Connector
+    
+    Using Battery with 1.25mm PicoBlade Connector
+
+Option 2: Using a Battery with a JST-PH 2.0 mm Connector
+=========================================================
+
+If your battery has a ``JST-PH 2.0 mm`` connector, you will need to use the adapter cable included in the NPG Lite kit to connect it.
+
+Follow these steps:
+
+1. Connect the battery to the adapter cable with JST connector: Match the wire colors - ``Red to Red`` and ``Black to Black``.
+2. Connect the adapter cable to NPG Lite using the PicoBlade connector:
+
+- Make sure the :bdg-danger:`Red Wire` lines up with the ``Positive (+) terminal``.
+- Make sure the :bdg-black:`Black Wire` lines up with the ``Negative (−) terminal`` on the NPG Lite connector.
+
+This ensures the battery is connected with the correct polarity and prevents damage to the device.
+
+.. figure:: ../../npg-lite-kits/media/npg-battery-guide-jst-connector.*
+    :align: center
+    :width: 60%
+    :alt: Using Battery with JST-PH 2.0mm Connector
+    
+    Using Battery with JST-PH 2.0mm Connector
+
+Verifying Battery Polarity with a Multimeter
+=============================================
+
+If you are unsure about your battery's polarity, verify it before connection:
+
+- Set your multimeter to measure DC Voltage (V⎓) and select 20V or higher range if it has manual dial.
+
+- Touch the :bdg-danger:`red probe` to the metal terminal of the connector where the :bdg-danger:`red wire` is attached.
+
+- Touch the :bdg-black:`black probe` to the metal terminal where the :bdg-black:`black wire` is attached.
+
+Read the display:
+
+- Positive voltage (e.g., +3.6V to +4.2V): Polarity is correct. ✅
+- Negative voltage (e.g., -4.2V): Polarity is reversed. ❌
+
+.. danger:: 
+    
+    **Safety Reminder:** Double-check all connections before powering ON the device. Wrong battery connection will damage the device.

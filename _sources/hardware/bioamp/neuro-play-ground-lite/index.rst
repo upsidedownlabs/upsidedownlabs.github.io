@@ -10,7 +10,6 @@ Neuro PlayGround (NPG) Lite
     :align: center
     :alt: NPG Lite Crowd Supply Banner
 
-
 Overview
 *********
 
@@ -35,7 +34,6 @@ to create awesome Human-Computer Interface (HCI) and Brain-Computer Interface (B
 Its extensive compatibility lets you equip your device with features like a vibration motor for 
 haptic feedback, a buzzer for audio feedback, and I2C connectivity, making it highly versatile for a 
 wide range of applications. 
-
 
 It leverages our powerful open source, cross-platform **Chords software suite**
 (:ref:`Chords-Web<chords>`, :ref:`Chords-Python<chords-pythons>`, :ref:`Chords LSL Connector<chords-lsl-connector>` and :ref:`Chords LSL Visualizer<chords-lsl-visualizer>`), 
@@ -147,6 +145,38 @@ Components
 | 14     | **User LED**               | A programmable LED on a GPIO pin used to show board activity, connection status, or custom signals during development.                                            |
 +--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+Select Your Kit
+*******************
+
+**Identify your kit from the three options below, then let’s walk through the setup and kit usage guide:**
+
+.. only:: html
+
+   .. grid:: 1 1 3 3
+      :margin: 3 3 3 3 
+      :gutter: 2
+
+      .. grid-item-card:: NPG Lite - Explorer Pack 
+         :text-align: center
+         :link: npg-lite-explorer
+         :img-top: ../../../kits/npg-lite-kits/npg-lite-explorer/media/npg-lite-explorer-box.*
+         :img-alt: NPG Lite Explorer Box
+         :link-type: ref
+
+      .. grid-item-card:: NPG Lite - Ninja Pack 
+         :text-align: center
+         :link: npg-lite-ninja
+         :img-top: ../../../kits/npg-lite-kits/npg-lite-ninja/media/npg-lite-ninja-box.*
+         :img-alt: NPG Lite Ninja Box
+         :link-type: ref
+
+      .. grid-item-card:: NPG Lite - Beast Pack 
+         :text-align: center
+         :link: npg-lite-beast
+         :img-top: ../../../kits/npg-lite-kits/npg-lite-beast/media/npg-lite-beast-box.*
+         :img-alt: NPG Lite Beast Box
+         :link-type: ref
+
 Playmates
 **********
 
@@ -206,32 +236,6 @@ This guide walks you through setup, connections, and running your experiments wi
    - **Web Bluetooth confirm pairing support**
    - **Experimental Web Platform features**
   
-Select Your Kit
-*******************
-
-**Identify your kit from the three options below, then let’s walk through the setup and kit usage guide:**
-
-.. only:: html
-
-   .. grid:: 1 2 2 1
-      :margin: 4 4 0 0 
-      :gutter: 2
-
-      .. grid-item-card:: NPG Lite - Explorer Pack 
-         :text-align: center
-         :link: npg-lite-explorer
-         :link-type: ref
-
-      .. grid-item-card:: NPG Lite - Ninja Pack 
-         :text-align: center
-         :link: npg-lite-ninja
-         :link-type: ref
-
-      .. grid-item-card:: NPG Lite - Beast Pack 
-         :text-align: center
-         :link: npg-lite-beast
-         :link-type: ref
-
 Compatible Software
 ************************
 
