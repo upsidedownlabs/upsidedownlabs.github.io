@@ -114,7 +114,7 @@ Resting potential refers to the electrical potential difference across the neuro
 
    Resting potential
 
-.. Note::
+.. note::
 
    - Membrane potential is the voltage across the membrane at any given moment, whereas resting potential is the membrane potential when a neuron is at rest (i.e., neither sending nor receiving any signal).
    - The voltage across a membrane is a comparative measurement. Neuroscientists consistently use the outside of the cell as the reference point for measuring the voltage across the membrane. For instance, if the inside of the cell is 70 mV more negative than the outside, we would express the voltage as -70 mV. [1]_

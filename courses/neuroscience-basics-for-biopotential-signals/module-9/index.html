@@ -1,0 +1,1074 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 9 : EEG &#8212; upsidedownlabs.github.io  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'courses/neuroscience-basics-for-biopotential-signals/module-9/index';</script>
+    <link rel="canonical" href="docs.upsidedownlabs.tech/courses/neuroscience-basics-for-biopotential-signals/module-9/index.html" />
+    <link rel="icon" href="../../../_static/logo_sqr_bgw.svg"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Course Curriculum" href="../../open-ephys/index.html" />
+    <link rel="prev" title="Module 8: ECG/EKG" href="../module-8/index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+    <meta name="docbuild:last-update" content="Dec 12, 2025"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Welcome to Upside Down Labs docs site!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo_black_hr_nbg.svg" class="logo__image only-light" alt="upsidedownlabs.github.io  documentation - Home"/>
+    <img src="../../../_static/logo_white_hr_nbg.svg" class="logo__image only-dark pst-js-only" alt="upsidedownlabs.github.io  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="ms-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../hardware/index.html">
+    Hardware
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../software/index.html">
+    Software
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../research/index.html">
+    Research
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../kits/index.html">
+    DIY Kits
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../guides/index.html">
+    Guides
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../index.html">
+    Courses
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+    DigiKey
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
+    Mouser
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://www.tindie.com/stores/upsidedownlabs/">
+    Tindie
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355">
+    Amazon India
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://store.upsidedownlabs.tech/">
+    Store India
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://t.ly/ExlaF">
+    GeM India
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instructables.com/member/Upside%20Down%20Labs/instructables/" title="Instructables" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/instructables.svg" class="icon-link-image" alt="Instructables"/></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../hardware/index.html">
+    Hardware
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../software/index.html">
+    Software
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../research/index.html">
+    Research
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../kits/index.html">
+    DIY Kits
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../guides/index.html">
+    Guides
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../index.html">
+    Courses
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.digikey.com/en/supplier-centers/myupsidedownlab">
+    DigiKey
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.mouser.com/manufacturer/upside-down-labs/">
+    Mouser
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.tindie.com/stores/upsidedownlabs/">
+    Tindie
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.amazon.in/stores/UpsideDownLabs/Homepage/page/476F15A3-A296-4D5F-A91A-D266CB247355">
+    Amazon India
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://store.upsidedownlabs.tech/">
+    Store India
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://t.ly/ExlaF">
+    GeM India
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/upsidedownlabs/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://docs.upsidedownlabs.tech" title="Docs" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-book fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Docs</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/SzYRVz8xRw" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instructables.com/member/Upside%20Down%20Labs/instructables/" title="Instructables" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/instructables.svg" class="icon-link-image" alt="Instructables"/></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://upsidedownlabs.tech/" title="Upside Down Labs" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../../_static/logo/logo_sqr_bgw.svg" class="icon-link-image" alt="Upside Down Labs"/></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Neuroscience Basics For Biopotential Signals</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../module-1/index.html">Module 1: Human Nervous System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module-2/index.html">Module 2: Understanding the resting potential</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module-3/index.html">Module 3 : Passive Membrane Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module-4/index.html">Module 4 : The Action Potential and its Propagation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module-5/index.html">Module 5 : The Synapse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module-6/index.html">Module 6: Biopotential signals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module-7/index.html">Module 7: EMG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module-8/index.html">Module 8: ECG/EKG</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Module 9 : EEG</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Extracellular Electrophysiology Acquisition</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../open-ephys/index.html">Course Curriculum</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/theory-day-1/index.html">Theory Day 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/theory-day-2/index.html">Theory Day 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/theory-day-3/index.html">Theory Day 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/theory-day-4/index.html">Theory Day 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/exday1-nokit.html">Exercises Day 1: No Hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../open-ephys/exday2-nokit.html">Exercises Day 2: No Hardware</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Courses</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">&lt;no title&gt;</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Module 9 : EEG</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-9-eeg">
+<span id="neuroscience-basics-for-biopotential-signals-module-9"></span><h1>Module 9 : EEG<a class="headerlink" href="#module-9-eeg" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>Basic Terminologies</strong></p>
+<ol class="arabic simple">
+<li><p><strong>Electroencephalography</strong> : Technique to measure the electrical activity of the brain</p></li>
+<li><p><strong>Electroencephalograph</strong> : Device used to measure the electrical activity of the brain</p></li>
+<li><p><strong>Electroencephalogram</strong> : Graphical representation of the electrical activity of the brain</p></li>
+</ol>
+</li>
+<li><p><strong>If you want to know detailed history of EEG, you can refer to this section:</strong> <a class="reference external" href="https://www.neuroelectrics.com/blog/the-evolution-of-eeg-a-journey-through-time">History of EEG</a></p></li>
+</ul>
+<section id="introduction">
+<h2>9.1 Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>EEG is a non-invasive medical test that records the electrical activity of the brain using small electrodes placed on the scalp. It helps detect abnormal brain wave patterns and is commonly used to diagnose epilepsy, sleep disorders, brain injury and to study psychiatric conditions such as bipolar disorder and schizophrenia.</p>
+<p><strong>Normal EEG frequency range :</strong>  <a class="footnote-reference brackets" href="#id9" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<ol class="arabic simple">
+<li><p>Delta waves : 0.5-4 Hz</p></li>
+<li><p>Theta waves : 4-7 Hz</p></li>
+<li><p>Alpha waves : 8-12 Hz</p></li>
+<li><p>Beta waves : 13-30 Hz</p></li>
+<li><p>Gamma waves : 30-80 Hz</p></li>
+</ol>
+</section>
+<section id="basic-principle">
+<h2>9.2 Basic principle<a class="headerlink" href="#basic-principle" title="Link to this heading">#</a></h2>
+<p>EEG measures the tiny electrical voltages (in microvolts) generated on the scalp when large groups of brain neurons fire together synchronously. It mainly records the summed postsynaptic potentials from cortical pyramidal neurons, which get amplified and displayed as brain waves over time.</p>
+</section>
+<section id="how-it-works">
+<h2>9.3 How it works<a class="headerlink" href="#how-it-works" title="Link to this heading">#</a></h2>
+<section id="electrode-placement">
+<h3>9.3.1 Electrode Placement<a class="headerlink" href="#electrode-placement" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>In <strong>surface EEG</strong>, small sensors called electrodes are placed on the scalp according to standardized systems like the 10-20 system, which ensures consistent positioning over brain regions.</p></li>
+<li><p><strong>Electrode Cap</strong>: A wearable cap that holds multiple electrodes in place. This ensures consistent electrode placement and is used for convenience during longer recordings.</p></li>
+</ol>
+</section>
+<section id="signal-detection">
+<h3>9.3.2 Signal Detection<a class="headerlink" href="#signal-detection" title="Link to this heading">#</a></h3>
+<p>When groups of neurons in the brain fire synchronously, they generate tiny electrical fields that propagate to the scalp. The electrodes detect these voltage fluctuations, known as brain waves , which represent summed postsynaptic potentials from cortical neurons.</p>
+</section>
+<section id="signal-amplification-and-filtering">
+<h3>9.3.3 Signal Amplification and Filtering<a class="headerlink" href="#signal-amplification-and-filtering" title="Link to this heading">#</a></h3>
+<p>Since these signals are extremely weak (measured in microvolts), they are first amplified to make them readable. Then, unwanted noise-like eye blinks, muscle artifacts, or 50/60 Hz power line interference-is filtered out to ensure the recorded data is clean and accurate.</p>
+<p><strong>Upside Down Labs Hardware compatible with EEG signal acquisition and processing:</strong></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../../../hardware/bioamp/neuro-play-ground-lite/index.html#neuro-play-ground-lite"><span class="std std-ref">Neuro PlayGround Lite</span></a></p></li>
+<li><p><a class="reference internal" href="../../../hardware/bioamp/bioamp-exg-pill/index.html#bioamp-exg-pill"><span class="std std-ref">Bioamp EXG Pill</span></a></p></li>
+</ul>
+<p>We offer our own <strong>open source</strong> <a class="reference internal" href="../../../software/index.html#upsidedownlabs-software-home"><span class="std std-ref">Chords</span></a> software suite, featuring tools for signal visualization, data recording (with easy save and download options), time-based plotting, and a host of other benefits-such as analyzing signal frequencies and bandpower.</p>
+</section>
+</section>
+<section id="key-components-of-eeg">
+<h2>9.4 Key components of EEG<a class="headerlink" href="#key-components-of-eeg" title="Link to this heading">#</a></h2>
+<section id="electrode-placement-system">
+<h3>9.4.1 Electrode placement system<a class="headerlink" href="#electrode-placement-system" title="Link to this heading">#</a></h3>
+<section id="system">
+<h4>1. 10-20 system<a class="headerlink" href="#system" title="Link to this heading">#</a></h4>
+<p>This is the standard system used for placing electrodes on the scalp. It divides the scalp into regions and assigns electrode positions based on specific anatomical landmarks (e.g., nasion, inion, and ear lobes). This system helps in the consistent placement of electrodes.</p>
+<p>If you want to know the 10-20 system in detail , kindly refer to this section : <a class="reference external" href="https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)">10-20 system wikipedia</a></p>
+</section>
+<section id="high-density-eeg">
+<h4>2. High-Density EEG<a class="headerlink" href="#high-density-eeg" title="Link to this heading">#</a></h4>
+<p>In some advanced setups, additional electrodes are placed for more detailed spatial information. This can involve 64, 128, or even 256 electrodes.</p>
+</section>
+</section>
+<section id="characteristics-of-different-eeg-waves-types">
+<h3>9.4.2 Characteristics of different EEG waves types<a class="headerlink" href="#characteristics-of-different-eeg-waves-types" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Delta waves</strong></p>
+<ul class="simple">
+<li><p>Low frequency, high amplitude waves</p></li>
+<li><p>Frequency range : 0.5 - 4 Hz</p></li>
+<li><p>Associated with deep sleep (Non Rapid Eye Movement) stage 3 &amp; 4 in adults</p></li>
+</ul>
+</li>
+<li><p><strong>Theta waves</strong></p>
+<ul class="simple">
+<li><p>Frequency range : 4-7 Hz</p></li>
+<li><p>Associated with drowsiness and early sleep stages</p></li>
+</ul>
+</li>
+<li><p><strong>Alpha waves</strong></p>
+<ul class="simple">
+<li><p>Frequency range : 8-12 Hz</p></li>
+<li><p>Associated with relaxed wakefulness, particularly when a person is awake but calm and not focused on specific tasks.</p></li>
+<li><p>Alpha waves are most prominent when the eyes are closed.</p></li>
+</ul>
+</li>
+<li><p><strong>Beta waves</strong></p>
+<ul class="simple">
+<li><p>Frequency range : 13-30 Hz</p></li>
+<li><p>Most common EEG pattern seen in awake, alert adults and children</p></li>
+<li><p>Abnormal beta patterns can indicate neurological dysfunction such as in Parkinson’s disease.</p></li>
+</ul>
+</li>
+<li><p><strong>Gamma waves</strong></p>
+<ul class="simple">
+<li><p>Frequency range : 30-80 Hz</p></li>
+<li><p>Associated with higher mental activity, cognitive processing, and information integration.</p></li>
+<li><p>They are often seen in tasks requiring concentration and problem-solving.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+<section id="applications-of-eeg">
+<h2>9.5 Applications of EEG<a class="headerlink" href="#applications-of-eeg" title="Link to this heading">#</a></h2>
+<section id="clinical-applications">
+<h3>1. Clinical applications<a class="headerlink" href="#clinical-applications" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Diagnosis of Epilepsy</strong> : EEG is a key tool for diagnosing epilepsy. It can detect abnormal brain wave patterns, such as spikes or sharp waves, which indicate epileptic seizures. <a class="footnote-reference brackets" href="#id10" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p></li>
+<li><p><strong>Sleep Disorders</strong> : EEG is used in sleep studies (polysomnography) to monitor sleep stages and identify disorders such as sleep apnea, insomnia, or narcolepsy. <a class="footnote-reference brackets" href="#id11" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></p></li>
+<li><p><strong>Monitoring of Brain Activity</strong> : EEG is used in critical care settings to monitor patients who are in coma, vegetative states, or under anesthesia. It can help assess brain function and guide treatment decisions.</p></li>
+<li><p><strong>Brain Death Diagnosis</strong> : EEG can be used to confirm brain death, which is characterized by the absence of electrical activity in the brain. <a class="footnote-reference brackets" href="#id12" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a></p></li>
+<li><p><strong>Neurocognitive Disorders</strong>: EEG can help assess conditions such as dementia, Alzheimer’s disease, or encephalitis, as abnormal patterns of brain activity may be observed. <a class="footnote-reference brackets" href="#id13" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a></p></li>
+</ul>
+</section>
+<section id="research-applications">
+<h3>2. Research Applications<a class="headerlink" href="#research-applications" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Brain-Computer Interfaces (BCIs)</strong> : EEG helps in BCIs by converting brain signals into commands that can control devices like artificial limbs or computers. This allows people who have difficulty moving to communicate or operate machines by using only their brain activity. <a class="footnote-reference brackets" href="#id14" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>6<span class="fn-bracket">]</span></a></p></li>
+<li><p><strong>Cognitive Neuroscience</strong> : EEG is widely used to study brain function during various cognitive tasks. Researchers use EEG to explore attention, memory, perception, and language processing. <a class="footnote-reference brackets" href="#id15" id="id7" role="doc-noteref"><span class="fn-bracket">[</span>7<span class="fn-bracket">]</span></a></p></li>
+</ul>
+</section>
+<section id="neurofeedback">
+<h3>3. Neurofeedback<a class="headerlink" href="#neurofeedback" title="Link to this heading">#</a></h3>
+<p>EEG is also used in neurofeedback therapy, where individuals are trained to control their brain activity. This can be applied to treat conditions like ADHD, anxiety, depression, and even help with performance enhancement in athletes and musicians. <a class="footnote-reference brackets" href="#id16" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>8<span class="fn-bracket">]</span></a></p>
+</section>
+<section id="projects-using-eeg">
+<h3>Projects Using EEG<a class="headerlink" href="#projects-using-eeg" title="Link to this heading">#</a></h3>
+<p>You can utilize our BioAmp Hardware to create various applications. We’ve successfully developed multiple applications, so there’s nothing holding you back from creating something innovative and outstanding. A few applications of our devices
+are highlighted below:</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-4 sd-mb-4 sd-ml-0 sd-mr-0 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Recording EEG From Pre Frontal Cortex of Brain Using BioAmp EXG Pill</div>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Recording-EEG-From-Pre-Frontal-Cortex-of-Brain-Usi/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Recording EEG From Visual Cortex of Brain Using BioAmp EXG Pill</div>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Recording-EEG-From-Visual-Cortex-of-Brain-Using-Bi/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Controlling Video Game Using Brainwaves</div>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Controlling-Video-Game-Using-Brainwaves-EEG/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Play Tug of War Game With Your Mind Using EEG</div>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Play-Tug-of-War-Game-With-Your-Mind-Using-EEG-1/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Control the Flame of a Candle Using Your Focus</div>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Control-the-Flame-of-a-Candle-Using-Your-Focus-EEG/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Controlling LEDs of Arduino Uno R4 With Your Mind</div>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Controlling-LEDs-of-Arduino-Uno-R4-With-Your-Mind-/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Brain-Controlled Car: EEG + EMG Robotic Control</div>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Brain-Controlled-Car-EEG-EMG-Robotic-Control/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+A Neurofeedback Meditation Journey</div>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/A-Neurofeedback-Meditation-Journey/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Pop Bubbles With Your Mind (EEG) | Neuro PlayGround (NPG) Lite</div>
+</div>
+<a class="sd-stretched-link reference external" href="https://www.instructables.com/Pop-Bubbles-With-Your-Mind-EEG-Neuro-PlayGround-NP/"></a></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="advantages-of-eeg">
+<h2>9.6 Advantages of EEG<a class="headerlink" href="#advantages-of-eeg" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Non-invasive &amp; safe</p></li>
+<li><p>Cost-effective</p></li>
+<li><p>Useful for diagnosing neurological disorders</p></li>
+<li><p>Real-time monitoring</p></li>
+<li><p>Suitable for long-duration monitoring</p></li>
+<li><p>Can be used in cognitive and psychophysiological research</p></li>
+<li><p>Portable &amp; accessible</p></li>
+</ul>
+</section>
+<section id="limitations-of-eeg">
+<h2>9.7 Limitations of EEG<a class="headerlink" href="#limitations-of-eeg" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Poor Spatial Resolution</strong> : EEG cannot provide detailed spatial information about the precise location of brain activity, as it measures only the electrical activity at the scalp surface.</p></li>
+<li><p><strong>Requires expert analysis</strong> : Interpretation can be complex and subjective.</p></li>
+<li><p><strong>Sensitivity to External Noise</strong> : EEG signals can be distorted by artifacts caused by muscle movements (such as eye blinks or facial contractions) and external electrical interference, which may mask the brain’s actual electrical activity.</p></li>
+<li><p><strong>Limited Depth Information</strong> : EEG is primarily sensitive to the activity of cortical neurons, and it is not as effective in detecting activity from deeper structures of the brain, such as the brainstem or subcortical areas.</p></li>
+</ol>
+</section>
+<section id="summary">
+<h2>9.8 Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<p>EEG is a non-invasive technique that records the brain’s electrical activity using scalp electrodes. It helps diagnose conditions such as epilepsy, sleep disorders, and psychiatric illnesses, and is also used in cognitive research and brain computer interfaces. Although it has limitations like poor spatial resolution and susceptibility to noise, EEG remains highly valuable due to its real-time monitoring capability and excellent temporal precision.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>This content is provided solely for learning purposes only. Always seek medical advice from a healthcare expert for clinical application.</strong></p>
+</div>
+</section>
+<section id="references">
+<h2>9.9 References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id9" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/books/NBK539805/">Nayak CS, Anilkumar AC. EEG Normal Waveforms. [Updated 2025 Aug 3]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2025 Jan-.</a></p>
+</aside>
+<aside class="footnote brackets" id="id10" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/books/NBK390347/">Britton JW, Frey LC, Hopp JLet al., authors; St. Louis EK, Frey LC, editors. Electroencephalography (EEG): An Introductory Text and Atlas of Normal and Abnormal Findings in Adults, Children, and Infants [Internet]. Chicago: American Epilepsy Society; 2016. EEG in the Epilepsies.</a></p>
+</aside>
+<aside class="footnote brackets" id="id11" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/books/NBK537023/">Nayak CS, Anilkumar AC. EEG Normal Sleep. [Updated 2023 May 23]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2025 Jan-.</a></p>
+</aside>
+<aside class="footnote brackets" id="id12" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/27303609/">Szurhaj W, Lamblin MD, Kaminska A, Sediri H; Société de Neurophysiologie Clinique de Langue Française. EEG guidelines in the diagnosis of brain death. Neurophysiol Clin. 2015 Mar;45(1):97-104. doi: 10.1016/j.neucli.2014.11.005. Epub 2015 Jan 14. PMID: 25687591.</a></p>
+</aside>
+<aside class="footnote brackets" id="id13" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">5</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/29213628/">Kanda PAM, Anghinah R, Smidth MT, Silva JM. The clinical use of quantitative EEG in cognitive disorders. Dement Neuropsychol. 2009;3(3):195-203. doi:10.1590/S1980-57642009DN30300004</a></p>
+</aside>
+<aside class="footnote brackets" id="id14" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">6</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/35591021/">Värbu K, Muhammad N, Muhammad Y. Past, Present, and Future of EEG-Based BCI Applications. Sensors (Basel). 2022;22(9):3331. Published 2022 Apr 26. doi:10.3390/s22093331</a></p>
+</aside>
+<aside class="footnote brackets" id="id15" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">7</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/33921596/">Höller Y. Quantitative EEG in Cognitive Neuroscience. Brain Sci. 2021;11(4):517. Published 2021 Apr 19. doi:10.3390/brainsci11040517</a></p>
+</aside>
+<aside class="footnote brackets" id="id16" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id8">8</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4892319/">Marzbani H, Marateb HR, Mansourian M. Neurofeedback: A Comprehensive Review on System Design, Methodology and Clinical Applications. Basic Clin Neurosci. 2016;7(2):143-158. doi:10.15412/J.BCN.03070208</a></p>
+</aside>
+</aside>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../module-8/index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Module 8: ECG/EKG</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../open-ephys/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Course Curriculum</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">9.1 Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-principle">9.2 Basic principle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works">9.3 How it works</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electrode-placement">9.3.1 Electrode Placement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signal-detection">9.3.2 Signal Detection</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signal-amplification-and-filtering">9.3.3 Signal Amplification and Filtering</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-components-of-eeg">9.4 Key components of EEG</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electrode-placement-system">9.4.1 Electrode placement system</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#system">1. 10-20 system</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#high-density-eeg">2. High-Density EEG</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-different-eeg-waves-types">9.4.2 Characteristics of different EEG waves types</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-eeg">9.5 Applications of EEG</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clinical-applications">1. Clinical applications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#research-applications">2. Research Applications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neurofeedback">3. Neurofeedback</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#projects-using-eeg">Projects Using EEG</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advantages-of-eeg">9.6 Advantages of EEG</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-of-eeg">9.7 Limitations of EEG</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">9.8 Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">9.9 References</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/upsidedownlabs/upsidedownlabs.github.io/edit/maincourses/neuroscience-basics-for-biopotential-signals/module-9/index.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../../_sources/courses/neuroscience-basics-for-biopotential-signals/module-9/index.rst">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, Upside Down Labs.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="last-updated">
+  Last updated on Dec 12, 2025.
+  <br/>
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
