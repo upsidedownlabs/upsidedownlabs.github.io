@@ -54,6 +54,12 @@
 
    module-9/index 
 
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+   module-10/index 
+
    
 
 

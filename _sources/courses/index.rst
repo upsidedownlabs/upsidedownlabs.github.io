@@ -67,6 +67,11 @@ hands-on way.
       .. grid-item-card:: Module 9: EEG
          :text-align: center
          :link: neuroscience-basics-for-biopotential-signals-module-9
+         :link-type: ref 
+
+      .. grid-item-card:: Module 10: EOG
+         :text-align: center
+         :link: neuroscience-basics-for-biopotential-signals-module-10
          :link-type: ref
 
    Extracellular Electrophysiology Acquisition
