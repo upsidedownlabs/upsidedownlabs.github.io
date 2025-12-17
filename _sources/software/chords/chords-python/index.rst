@@ -633,6 +633,141 @@ A small pop-up will appear, providing options to load the file, select the chann
 
    CSV Plotter
 
+10. `EOG Morse Decoder`
+=======================
+
+Overview
+--------
+
+The **EOG Morse Decoder** is a Python-based application that enables users to input Morse code using eye movements detected via Electrooculography (EOG) signals. By moving your eyes left or right, you can generate dots and dashes, and by performing double or triple blinks, you can send characters or backspace. This application is ideal for hands-free communication and accessibility research.
+
+.. figure:: ./media/morse_decoder.png
+   :align: center
+   :alt: Morse Decoder
+
+   Morse Decoder
+
+Features
+========
+
++-----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| Features                                                              | Description                                                                                                               |
++=======================================================================+===========================================================================================================================+
+| 1. Real-Time EOG Signal Processing                                    | - Connects to an LSL stream to acquire real-time EOG data.                                                                |
+|                                                                       | - Applies notch and bandpass filters to remove noise and isolate eye movement signals.                                    |
++-----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| 2. Eye Movement Detection                                             | - Detects left and right eye movements by analyzing deviations from a dynamically calculated baseline.                    |
+|                                                                       | - Uses adjustable thresholds with interactive GUI sliders for real-time sensitivity adjustment.                           |
++-----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| 3. Morse Code Input                                                   | - Left eye movement generates a dot (.)                                                                                   |
+|                                                                       | - Right eye movement generates a dash (-)                                                                                 |
+|                                                                       | - Double blink sends the current Morse sequence as a letter.                                                              |
+|                                                                       | - Triple blink acts as backspace to delete the last character.                                                            |
++-----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| 4. Interactive GUI with Real-Time Visualization                       | - Displays the decoded message in a large, clear font using a Tkinter GUI.                                                |
+|                                                                       | - Real-time bar graphs showing blink envelope and eye movement deviation.                                                 |
+|                                                                       | - Click-and-drag threshold adjustment on visual indicators.                                                               |
+|                                                                       | - Shows current buffer contents and detection status.                                                                     |
++-----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| 5. Adjustable Parameters                                              | - Interactive threshold adjustment via clickable/draggable markers on visualization bars.                                 |
+|                                                                       | - Separate thresholds for blink detection and eye movement detection.                                                     |
+|                                                                       | - Configurable debounce times for preventing false detections.                                                            |
++-----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+
+A GUI window will appear that allows you to input Morse code using eye movements and displays the decoded text in real-time.
+
+Electrode Placement
+-------------------
+
+Proper electrode placement is crucial for accurate EOG signal detection. The table below shows the recommended electrode configuration:
+
++---------------+------------------------+-----------------------------------+
+| Electrode Pin | Description            | Placement                         |
++===============+========================+===================================+
+| A0P           | Channel 1 Positive     | Below eye                         |
++---------------+------------------------+-----------------------------------+
+| A0N           | Channel 1 Negative     | Above eye                         |
++---------------+------------------------+-----------------------------------+
+| A1P           | Channel 2 Positive     | On the left of left eye           |
++---------------+------------------------+-----------------------------------+
+| A1N           | Channel 2 Negative     | On the right of right eye         |
++---------------+------------------------+-----------------------------------+
+| REF           | Reference              | Bony part behind the ear          |
++---------------+------------------------+-----------------------------------+
+
+.. note::
+   - Channel 1 (A0P/A0N) detects vertical eye movements for blink detection
+   - Channel 2 (A1P/A1N) detects horizontal eye movements for left/right detection
+   - Proper skin preparation and electrode contact quality are essential for optimal performance
+
+.. figure:: ./media/morse-Code_electrode_placement.jpg
+   :align: center
+   :alt: Electrode Placement Diagram
+
+   Electrode Placement Diagram
+
+How It Works
+------------
+
+- **Signal Acquisition**: The application connects to an LSL stream and continuously reads vertical and horizontal EOG data from two channels.
+- **Filtering**: Notch filters (50Hz), high-pass filters (1Hz), and low-pass filters (10Hz) are applied to remove powerline interference and isolate relevant frequencies.
+- **Baseline Tracking**: A rolling baseline is maintained for horizontal EOG to adapt to individual signal characteristics.
+- **Envelope Detection**: Vertical EOG signal envelope is computed for reliable blink detection.
+- **Movement Detection**: Horizontal EOG deviations from baseline are analyzed to classify left and right eye movements.
+- **Morse Code Input**: 
+
+  - Left eye movement → Dot (.)
+  - Right eye movement → Dash (-)
+  - Double blink → Sends the current Morse sequence as a letter
+  - Triple blink → Backspace (deletes last character)
+
+- **GUI Display**: Real-time visualization shows detection thresholds, signal levels, buffer contents, and decoded message.
+
+Adjusting Detection for Your Neural Signals
+-------------------------------------------
+
+The application provides an intuitive GUI for adjusting detection sensitivity in real-time:
+
+**Interactive Threshold Adjustment:**
+
+- **Blink Detection Threshold**: Click or drag the orange marker on the blink detection bar to adjust the threshold (range: 40-260). Higher values require stronger blinks.
+- **Eye Movement Threshold**: Click or drag the orange marker on the eye movement bar to adjust the threshold (range: 40-260). Higher values require larger eye movements.
+
+**Visual Feedback:**
+
+- The blink detection bar shows the current envelope value (green when below threshold, red when above)
+- The eye movement bar shows deviation from baseline (blue when below threshold, purple for left movement, red for right movement)
+- Threshold markers display the current threshold value and can be dragged for adjustment
+
+**Timing Parameters** (adjustable in code if needed):
+
+- ``BLINK_DEBOUNCE_MS`` (default: 200ms): Minimum time between detecting separate blinks
+- ``DOUBLE_BLINK_MS`` (default: 1000ms): Time window for double blink detection
+- ``TRIPLE_BLINK_MS`` (default: 1500ms): Time window for triple blink detection
+- ``EYE_MOVEMENT_DEBOUNCE_MS`` (default: 750ms): Minimum time between detecting separate eye movements
+
+**Tips for Optimal Performance:**
+
+- Make sure NPG Lite is charged and not connected to a charging laptop or an AC powered device 
+- Sit away from AC powered appliances
+- Ensure proper skin preparation and electrode contact quality. Read the :ref:`Skin Preparation Guide <skin-preparation>` for detailed instructions.
+- Start with default threshold values and adjust using the GUI sliders based on your signal strength
+- Ensure proper electrode placement for clean vertical and horizontal EOG signals
+- Maintain a neutral gaze position during baseline calculation at startup
+- Use the real-time visualization bars to monitor signal quality and adjust thresholds accordingly
+
+
+Troubleshooting
+---------------
+
+- If movements are not detected reliably, use the GUI to adjust thresholds in real-time by clicking/dragging the orange markers
+- Ensure electrodes are placed correctly: vertical EOG above/below one eye, horizontal EOG at outer corners of both eyes
+- Remain relaxed and maintain a neutral gaze position during the initial baseline calculation
+- Check the real-time visualization bars to ensure signals are being detected properly
+- If blinks or movements are too sensitive, increase the respective threshold using the GUI sliders
+- If blinks or movements are not sensitive enough, decrease the threshold using the GUI sliders
+
+
 Create Custom application
 **************************
 
