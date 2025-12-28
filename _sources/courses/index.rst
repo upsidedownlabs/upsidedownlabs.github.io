@@ -74,6 +74,11 @@ hands-on way.
          :link: neuroscience-basics-for-biopotential-signals-module-10
          :link-type: ref
 
+      .. grid-item-card:: Module 11: Conclusion
+         :text-align: center
+         :link: neuroscience-basics-for-biopotential-signals-module-11
+         :link-type: ref
+
    Extracellular Electrophysiology Acquisition
    =================================================
 
