@@ -391,7 +391,7 @@ After opening the serial plotter make sure to select the baud rate to 115200.
 Visualizing the EOG signals
 ------------------------------
 
-For visualizing the EOG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle free real-time biopotential signal visualization right from your browser, without installing any software.
+For visualizing the EOG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signal visualization right from your browser, without installing any software.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_eog_signal.*
     :align: center
