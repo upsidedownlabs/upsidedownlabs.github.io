@@ -440,7 +440,7 @@ Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 th
 
 :fab:`github;pst-color-primary` `EMG Envelope <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino>`_
 
-For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle free real-time biopotential signals visualization right from your browser, without installing any software.
+For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signals visualization right from your browser, without installing any software.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_emg_signal.*
     :align: center
