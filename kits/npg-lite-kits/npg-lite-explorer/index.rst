@@ -4,7 +4,7 @@ NPG Lite - Explorer Pack
 #####################################
 
 The Explorer Pack is the entry-level kit designed to get you started with the NPG Lite ecosystem.  
-It provides everything you need for biopotential signal acquisition and experimentation, including the Proto Playmate for custom prototyping.  
+It provides everything you need for bio-potential signal acquisition and experimentation, including the Proto Playmate for custom prototyping.  
 Whether you are a beginner, educator, or enthusiast, this pack allows you to quickly set up and begin exploring EEG, EMG, ECG, and more.  
 
 👉🏻 **Get yours on CrowdSupply**: `Neuro PlayGround Lite <https://www.crowdsupply.com/upside-down-labs/neuro-playground-lite>`__
