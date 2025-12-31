@@ -493,7 +493,7 @@ right COM port. Now upload the code.
 Visualizing the EEG signals
 -------------------------------
 
-For visualizing the EEG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle free real-time biopotential signal visualization right from your browser, without installing any software.
+For visualizing the EEG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signal visualization right from your browser, without installing any software.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_eeg_signal.*
     :align: center
