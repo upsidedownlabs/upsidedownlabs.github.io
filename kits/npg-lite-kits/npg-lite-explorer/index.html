@@ -57,7 +57,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="Dec 28, 2025"/>
+    <meta name="docbuild:last-update" content="Dec 31, 2025"/>
   </head>
   
   
@@ -628,7 +628,7 @@
   <section id="npg-lite-explorer-pack">
 <span id="npg-lite-explorer"></span><h1>NPG Lite - Explorer Pack<a class="headerlink" href="#npg-lite-explorer-pack" title="Link to this heading">#</a></h1>
 <p>The Explorer Pack is the entry-level kit designed to get you started with the NPG Lite ecosystem.
-It provides everything you need for biosignal acquisition and experimentation, including the Proto Playmate for custom prototyping.
+It provides everything you need for bio-potential signal acquisition and experimentation, including the Proto Playmate for custom prototyping.
 Whether you are a beginner, educator, or enthusiast, this pack allows you to quickly set up and begin exploring EEG, EMG, ECG, and more.</p>
 <p>👉🏻 <strong>Get yours on CrowdSupply</strong>: <a class="reference external" href="https://www.crowdsupply.com/upside-down-labs/neuro-playground-lite">Neuro PlayGround Lite</a></p>
 <figure class="align-center" id="id3">
@@ -679,7 +679,7 @@ Whether you are a beginner, educator, or enthusiast, this pack allows you to qui
 <p>Proto Playmate offers a flexible prototyping space with a dedicated area for adding your
 own components or circuits. It includes a QWIIC port for quick sensor integration,
 2.54 mm electrode header pins, an ON/OFF slide switch, and a connector interface for electrodes.
-By combining electrodes with custom electronics, users can rapidly prototype biosignal-driven experiments,
+By combining electrodes with custom electronics, users can rapidly prototype bio-potential signal-driven experiments,
 build add-on circuits, or test new designs without needing a separate breadboard.</p>
 </section>
 <section id="using-the-kit">
@@ -694,8 +694,7 @@ Electrodes will be placed → Rub in circular motion → Clean with an alcohol s
 </section>
 <section id="step-2-connect-bioamp-cables">
 <h3>Step 2: Connect BioAmp Cables<a class="headerlink" href="#step-2-connect-bioamp-cables" title="Link to this heading">#</a></h3>
-<p>Using Proto you can record 3-channel biopotential signals, connect the jumper
-wires according to the number of channels required:</p>
+<p>Using Proto you can record 3-channel biopotential signals, connect the snap cable according to the number of channels required:</p>
 <figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../../_images/npg-lite-proto-back.png"><img alt="NPG Lite Proto Playmate Back" src="../../../_images/npg-lite-proto-back.png" style="width: 70%;" /></a>
 <figcaption>
@@ -760,7 +759,7 @@ recordings like EEG, as it simplifies electrode placement and wiring.</p>
 <li><p><strong>Choose Your Channels</strong>: Decide which BioAmp channels (A0, A1, A2) you want to share a negative electrode.</p></li>
 <li><p><strong>Solder the Bridge</strong>: Look for the small solder bridge labeled ‘CN’ next to the channel’s negative pin (A0N, A1N, A2N).</p></li>
 <li><p><strong>Make it Common:</strong> You must solder this bridge closed. This physically connects that channel’s negative input to the main Common Negative line.</p></li>
-<li><p><strong>Connect the Shared Electrode:</strong> Connect your single, common negative electrode jumper cable to the dedicated CN pin.</p></li>
+<li><p><strong>Connect the Shared Electrode:</strong> Connect your single, common negative electrode snap cable to the dedicated CN pin.</p></li>
 <li><p><strong>Simplify Wiring:</strong> For any channel configured this way, you no longer need to connect an electrode to the corresponding negative input pin (e.g., A0N, A1N, or A2N).</p></li>
 </ol>
 <figure class="align-center" id="id7">
@@ -787,8 +786,8 @@ recordings like EEG, as it simplifies electrode placement and wiring.</p>
 </figcaption>
 </figure>
 </section>
-<section id="ecg-electrocardiogram">
-<h4>ECG (Electrocardiogram)<a class="headerlink" href="#ecg-electrocardiogram" title="Link to this heading">#</a></h4>
+<section id="ecg-electrocardiography">
+<h4>ECG (Electrocardiography)<a class="headerlink" href="#ecg-electrocardiography" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p><strong>1-CH Setup</strong>: Place -ve cable of Channel 0 on the left side of the chest, +ve cable just to its right, and REF cable on the right side of chest.</p></li>
 </ul>
@@ -799,8 +798,8 @@ recordings like EEG, as it simplifies electrode placement and wiring.</p>
 </figcaption>
 </figure>
 </section>
-<section id="eog-electroculography">
-<h4>EOG (Electroculography)<a class="headerlink" href="#eog-electroculography" title="Link to this heading">#</a></h4>
+<section id="eog-electrooculography">
+<h4>EOG (Electrooculography)<a class="headerlink" href="#eog-electrooculography" title="Link to this heading">#</a></h4>
 <p><strong>Horizontal Movement Recording</strong></p>
 <ul class="simple">
 <li><p><strong>1-CH Setup</strong>: Place -ve cable of Channel 0 on the right side of your right eye, +ve cable on the left side of the left eye, and REF cable on the bony part at the back side of your earlobe.</p></li>
@@ -823,8 +822,8 @@ recordings like EEG, as it simplifies electrode placement and wiring.</p>
 </figcaption>
 </figure>
 </section>
-<section id="eeg-electroencephalogram">
-<h4>EEG (Electroencephalogram)<a class="headerlink" href="#eeg-electroencephalogram" title="Link to this heading">#</a></h4>
+<section id="eeg-electroencephalography">
+<h4>EEG (Electroencephalography)<a class="headerlink" href="#eeg-electroencephalography" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p><strong>1-CH Setup</strong>: Place +ve cable of Channel 0 on the targeted area, REF and -ve cable on the bony part at the back of each earlobe. (refer to the <a class="reference external" href="https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)">International 10-20 system for recording EEG</a>)</p></li>
 <li><p><strong>2-CH Setup</strong>: Place +ve cables of Channel 0 and 1 on the targeted area (refer to the <a class="reference external" href="https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)">International 10-20 system for recording EEG</a>), 1 REF and 1 CN (Common Negative) cable on the bony parts at the back of each earlobe. Make sure the common negative solder joint is done for the respective channels accordingly, as per the information provided above.</p></li>
@@ -984,9 +983,9 @@ downloading data in CSV format.</p>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-place-gel-electrodes">Step 3: Place Gel Electrodes</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#emg-electromyography">EMG (Electromyography)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ecg-electrocardiogram">ECG (Electrocardiogram)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#eog-electroculography">EOG (Electroculography)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#eeg-electroencephalogram">EEG (Electroencephalogram)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ecg-electrocardiography">ECG (Electrocardiography)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#eog-electrooculography">EOG (Electrooculography)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#eeg-electroencephalography">EEG (Electroencephalography)</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-upload-firmware">Step 4: Upload Firmware</a></li>
@@ -1065,7 +1064,7 @@ downloading data in CSV format.</p>
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Dec 28, 2025.
+  Last updated on Dec 31, 2025.
   <br/>
 </p></div>
       

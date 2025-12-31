@@ -53,7 +53,7 @@ Hardware Requirements
 Setting up the hardware
 ***********************
 
-Ensure the NPG Lite or ESP32 based development board is properly connected to your laptop via USB or the appropriate interface.
+Let's get started by getting your NPG Lite or ESP32 development board ready.
 
 Installation
 ******************
@@ -137,9 +137,7 @@ Installation
 Uploading the Firmware
 ************************
 
-Once your device is connected, you can choose from multiple firmware options depending on how 
-you plan to use the NPG Lite - including Bluetooth Low Energy (BLE), Serial, Wi-Fi, 
-or even upload your own custom firmware.
+You can choose from multiple firmware options depending on how you plan to use the NPG Lite - including Bluetooth Low Energy (BLE), Serial, Wi-Fi, or even upload your own custom firmware.
 
 .. tab-set:: 
 

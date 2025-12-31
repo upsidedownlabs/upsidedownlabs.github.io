@@ -4,8 +4,8 @@ NPG Lite - Beast Pack
 ###################################
 
 The Beast Pack is the most powerful kit in the lineup, designed for advanced users and researchers.  
-With the VibZ+ Playmate, it enables full 6-channel biosignal acquisition along with haptic and auditory feedback.  
-Pre-assembled in a sturdy 3D-printed case, this kit provides maximum capability for neuroscience experiments, HCI/BCI applications, and biosignal research.  
+With the VibZ+ Playmate, it enables full 6-channel bio-potential signal acquisition along with haptic and auditory feedback.  
+Pre-assembled in a sturdy 3D-printed case, this kit provides maximum capability for neuroscience experiments, HCI/BCI applications, and biopotential signal research.  
 
 👉🏻 **Get yours on CrowdSupply**: `Neuro PlayGround Lite <https://www.crowdsupply.com/upside-down-labs/neuro-playground-lite>`__
 
@@ -48,7 +48,7 @@ VibZ+ Playmate
 *******************
 
 VibZ+ Playmate builds on the VibZ by including an additional 3-channel BioAmp, making it possible to record 
-and visualize up to 6 Biosignal channels simultaneously. It retains the vibration motor for haptic feedback, 
+and visualize up to 6 Bio-potential signal channels simultaneously. It retains the vibration motor for haptic feedback, 
 buzzer for auditory cues, ON/OFF slide switch, QWIIC port, and electrode connector interface. 
 This makes VibZ+ ideal for experiments where higher-resolution input or greater spatial coverage is essential, 
 such as multi-channel EEG, EMG, or complex biofeedback applications.
@@ -56,10 +56,10 @@ such as multi-channel EEG, EMG, or complex biofeedback applications.
 Using the Kit
 ********************
 
-This kit is designed for advanced biosignal research, enabling users to quickly start recording and visualizing
+This kit is designed for advanced bio-potential signal research, enabling users to quickly start recording and visualizing
 multi-channel data for high-resolution HCI/BCI experiments.
 The VibZ+ Playmate significantly enhances acquisition by including an additional 3-channel BioAmp, allowing 
-simultaneous recording of up to six biosignal channels. It retains the vibration motor, buzzer, and QWIIC port, 
+simultaneous recording of up to six bio-potential signal channels. It retains the vibration motor, buzzer, and QWIIC port, 
 making it ideal for multi-channel EEG, EMG, or complex biofeedback applications.
 
 Step 1: Skin Preparation
@@ -73,8 +73,7 @@ For more information, please check out detailed step by step :ref:`Skin Preparat
 Step 2: Connect BioAmp Cables
 ===============================
 
-Using VibZ+, you can record up to 6-channel biopotential signals, just connect the jumper
-wires according to the number of channels required:
+Using VibZ+, you can record up to 6-channel biopotential signals, just connect the snap cables according to the number of channels required:
 
 .. figure:: ./media/npg-lite-vibz+-back.*
     :align: center
@@ -133,7 +132,7 @@ slide switch for instant configuration.
 
 To configure the board to use the Common Negative, follow these steps:
 
-1. **Connect the Shared Electrode:** Connect your single, common negative electrode jumper cable to the dedicated CN pin header.
+1. **Connect the Shared Electrode:** Connect your single, common negative electrode snap cable to the dedicated CN pin header.
 2. **Locate the Switch:** Find the ``COMMON NEGATIVE`` slide switchs on the bottom of the board. The silkscreen text says ``FLIP THE SWITCH FOR COMMON NEGATIVE`` and points directly to it.
 3. **Enable CN mode:** Flip the switch according to the negative channels input pins (A0N, A1N, A2N, A3N, A4N, and A5N). You now only need to connect your positive electrodes (e.g., A0P, A1P, etc.) and the single Common Negative electrode. You can leave all the individual negative pins (A0N-A5N) empty.
 
@@ -163,7 +162,7 @@ EMG (Electromyography)
     
     Connection for EMG
 
-ECG (Electrocardiogram)
+ECG (Electrocardiography)
 -------------------------
 
 - **1-CH Setup**: Place -ve cable of Channel 0 on the left side of the chest, +ve cable just to its right, and REF cable on the right side of chest.
@@ -174,7 +173,7 @@ ECG (Electrocardiogram)
     
     Connection for ECG
 
-EOG (Electroculography)
+EOG (Electrooculography)
 -------------------------
 
 **Horizontal Movement Recording**
@@ -199,8 +198,8 @@ EOG (Electroculography)
     
     Connection for EOG Vertical
 
-EEG (Electroencephalogram)
-----------------------------
+EEG (Electroencephalography)
+-----------------------------
 
 - **1-CH Setup**: Place +ve cable of Channel 0 on the targeted area, REF and -ve cable on the bony part at the back of each earlobe. (refer to the `International 10-20 system for recording EEG <https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)>`_)
 

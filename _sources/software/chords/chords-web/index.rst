@@ -117,7 +117,7 @@ Features
    * - **Filter Options**
      - Enhance biopotential signals using the **notch filter** and **bandpass filters**. Apply them individually per channel or collectively via the **master filter**.
    * - **Channel Support**
-     - Supports **real-time multi-channel plotting** with color-coded streams. Accommodates **up to 16 channels**, depending on the connected device, for flexible biosignal applications.
+     - Supports **real-time multi-channel plotting** with color-coded streams. Accommodates **up to 16 channels**, depending on the connected device, for flexible bio-potential signal applications.
    * - **One-Click Disconnect**
      - Easily disconnect from the development board with a single click, ensuring a hassle-free disconnection process after data collection or visualization.
 

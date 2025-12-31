@@ -145,10 +145,10 @@ Components
 | 14     | **User LED**               | A programmable LED on a GPIO pin used to show board activity, connection status, or custom signals during development.                                            |
 +--------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Select Your Kit
-*******************
+Explorer, Ninja, and Beast!
+********************************
 
-**Identify your kit from the three options below, then let’s walk through the setup and kit usage guide:**
+If you’re comfortable with soldering and only need a 3-channel wireless BioAmp, the **Explorer Kit** is a great choice. For the most complete NPG Lite experience right out of the box, go with **Ninja Pack**. If you require additional channels for full-body signal acquisition or advanced experimentation, the **Beast Pack** offers the most comprehensive configuration.
 
 .. only:: html
 
@@ -177,6 +177,31 @@ Select Your Kit
          :img-alt: NPG Lite Beast Box
          :link-type: ref
 
+
++------------------+--------------+------------+------------+
+| Pack Options     | Explorer     | Ninja      | Beast      |
++==================+==============+============+============+
+| NPG Lite         | Included     | Included   | Included   |
++------------------+--------------+------------+------------+
+| Playmate Type    | Proto        | VibZ       | VibZ+      |
++------------------+--------------+------------+------------+
+| Channel Count    | 3 Channels   | 3 Channels | 6 Channels |
++------------------+--------------+------------+------------+
+| Gel Electrodes   | 12 Pieces    | 24 Pieces  | 24 Pieces  |
++------------------+--------------+------------+------------+
+| Snap Cables      | 7 Pieces     | 7 Pieces   | 13 Pieces  |
++------------------+--------------+------------+------------+
+| Alligator Cables | 5 Pieces     | 5 Pieces   | 8 Pieces   |
++------------------+--------------+------------+------------+
+| Battery Cable    | Included     | Included   | Included   |
++------------------+--------------+------------+------------+
+| LiPo Battery     | Not Included | Included   | Included   |
++------------------+--------------+------------+------------+
+| 3D Printed Case  | Not Included | Included   | Included   |
++------------------+--------------+------------+------------+
+| USB Cable        | Not Included | Included   | Included   |
++------------------+--------------+------------+------------+
+
 Playmates
 **********
 
@@ -194,7 +219,7 @@ Playmates are modular expansion boards designed to enhance the functionality of 
 **Proto Playmate** offers a flexible prototyping space with a dedicated area for adding your own components or 
 circuits. It includes a QWIIC port for quick sensor integration, 2.54 mm electrode header pins, 
 an ON/OFF slide switch, and a connector interface for electrodes. By combining electrodes with custom electronics, 
-users can rapidly prototype biosignal-driven experiments, build add-on circuits, or test new designs without needing a separate breadboard.
+users can rapidly prototype bio-potential signal-driven experiments, build add-on circuits, or test new designs without needing a separate breadboard.
 
 2. NPG VibZ Playmate
 =====================
@@ -207,7 +232,7 @@ interactive biofeedback experiments. This modular approach ensures flexibility, 
 ======================
 
 **VibZ+ Playmate** builds on the VibZ by including an additional 3-channel BioAmp, making it possible to record 
-and visualize up to 6 Biosignal channels simultaneously. It retains the vibration motor for haptic feedback, 
+and visualize up to 6 Bio-potential signal channels simultaneously. It retains the vibration motor for haptic feedback, 
 buzzer for auditory cues, ON/OFF slide switch, QWIIC port, and electrode connector interface. 
 This makes VibZ+ ideal for experiments where higher-resolution input or greater spatial coverage is essential, 
 such as multi-channel EEG, EMG, or complex biofeedback applications.
