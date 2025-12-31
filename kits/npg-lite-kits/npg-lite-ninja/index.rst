@@ -72,8 +72,7 @@ For more information, please check out detailed step by step :ref:`Skin Preparat
 Step 2: Connect BioAmp Cables
 ===============================
 
-Using VibZ you can record 3-channel biopotential signals, connect the jumper
-wires according to the number of channels required:
+Using VibZ you can record 3-channel biopotential signals, connect the snap cables according to the number of channels required:
 
 .. figure:: ./media/npg-lite-vibz-back.*
     :align: center
@@ -119,7 +118,7 @@ To configure a channel to use the Common Negative, follow these steps:
 1. **Choose Your Channels**: Decide which BioAmp channels (A0, A1, A2) you want to share a negative electrode.
 2. **Solder the Bridge**: Look for the small solder bridge labeled 'CN' next to the channel's negative pin (A0N, A1N, A2N).
 3. **Make it Common:** You must solder this bridge closed. This physically connects that channel's negative input to the main Common Negative line.
-4. **Connect the Shared Electrode:** Connect your single, common negative electrode jumper cable to the dedicated CN pin.
+4. **Connect the Shared Electrode:** Connect your single, common negative electrode snap cable to the dedicated CN pin.
 5. **Simplify Wiring:** For any channel configured this way, you no longer need to connect an electrode to the corresponding negative input pin (e.g., A0N, A1N, or A2N).
 
 .. figure:: media/npg-lite-vibz-cn.*
@@ -146,8 +145,8 @@ EMG (Electromyography)
     
     Connection for EMG
 
-ECG (Electrocardiogram)
--------------------------
+ECG (Electrocardiography)
+---------------------------
 
 - **1-CH Setup**: Place -ve cable of Channel 0 on the left side of the chest, +ve cable just to its right, and REF cable on the right side of chest.
 
@@ -157,7 +156,7 @@ ECG (Electrocardiogram)
     
     Connection for ECG
 
-EOG (Electroculography)
+EOG (Electrooculography)
 -------------------------
 
 **Horizontal Movement Recording**
@@ -182,8 +181,8 @@ EOG (Electroculography)
     
     Connection for EOG Vertical
 
-EEG (Electroencephalogram)
-----------------------------
+EEG (Electroencephalography)
+-----------------------------
 
 - **1-CH Setup**: Place +ve cable of Channel 0 on the targeted area, REF and -ve cable on the bony part at the back of each earlobe. (refer to the `International 10-20 system for recording EEG <https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)>`_)
 
