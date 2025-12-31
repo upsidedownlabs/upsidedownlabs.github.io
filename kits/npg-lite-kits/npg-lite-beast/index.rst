@@ -48,7 +48,7 @@ VibZ+ Playmate
 *******************
 
 VibZ+ Playmate builds on the VibZ by including an additional 3-channel BioAmp, making it possible to record 
-and visualize up to 6 Biopotential signal channels simultaneously. It retains the vibration motor for haptic feedback, 
+and visualize up to 6 Bio-potential signal channels simultaneously. It retains the vibration motor for haptic feedback, 
 buzzer for auditory cues, ON/OFF slide switch, QWIIC port, and electrode connector interface. 
 This makes VibZ+ ideal for experiments where higher-resolution input or greater spatial coverage is essential, 
 such as multi-channel EEG, EMG, or complex biofeedback applications.
