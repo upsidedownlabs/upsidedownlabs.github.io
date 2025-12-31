@@ -46,7 +46,7 @@ Proto Playmate
 Proto Playmate offers a flexible prototyping space with a dedicated area for adding your 
 own components or circuits. It includes a QWIIC port for quick sensor integration, 
 2.54 mm electrode header pins, an ON/OFF slide switch, and a connector interface for electrodes. 
-By combining electrodes with custom electronics, users can rapidly prototype biopotential signal-driven experiments, 
+By combining electrodes with custom electronics, users can rapidly prototype bio-potential signal-driven experiments, 
 build add-on circuits, or test new designs without needing a separate breadboard.
 
 Using the Kit
