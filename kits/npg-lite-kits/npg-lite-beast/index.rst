@@ -4,7 +4,7 @@ NPG Lite - Beast Pack
 ###################################
 
 The Beast Pack is the most powerful kit in the lineup, designed for advanced users and researchers.  
-With the VibZ+ Playmate, it enables full 6-channel biopotential signal acquisition along with haptic and auditory feedback.  
+With the VibZ+ Playmate, it enables full 6-channel bio-potential signal acquisition along with haptic and auditory feedback.  
 Pre-assembled in a sturdy 3D-printed case, this kit provides maximum capability for neuroscience experiments, HCI/BCI applications, and biopotential signal research.  
 
 👉🏻 **Get yours on CrowdSupply**: `Neuro PlayGround Lite <https://www.crowdsupply.com/upside-down-labs/neuro-playground-lite>`__
