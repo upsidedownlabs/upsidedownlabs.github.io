@@ -145,7 +145,7 @@ Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE
     Arduino IDE v1.8.19 (legacy IDE) 
 
 
-Visit Upside Down Labs `Chords Web <https://chords.upsidedownlabs.tech>`__ to visualize your biopotential signals directly in the browser.
+Visit Upside Down Labs `Chords Web <https://chords.upsidedownlabs.tech>`__ to visualize your bio-potential signals directly in the browser.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_landing_page.*
     :align: center
