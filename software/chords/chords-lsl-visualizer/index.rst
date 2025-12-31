@@ -140,7 +140,7 @@ Flashing the Firmware
 Visualization of LSL
 ************************
 
-Once installed, follow these steps to start visualizing your biopotential signals:
+Once installed, follow these steps to start visualizing your bio-potential signals:
 
 1. **Start Chords-LSL-Visualizer** and click **Scan LSL Stream**.  
    This scans for active LSL streams broadcasted by your :ref:`Chords LSL Connector<chords-lsl-connector>` or compatible firmware.  
