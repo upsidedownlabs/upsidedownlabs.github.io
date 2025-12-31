@@ -56,7 +56,7 @@ such as multi-channel EEG, EMG, or complex biofeedback applications.
 Using the Kit
 ********************
 
-This kit is designed for advanced biopotential signal research, enabling users to quickly start recording and visualizing
+This kit is designed for advanced bio-potential signal research, enabling users to quickly start recording and visualizing
 multi-channel data for high-resolution HCI/BCI experiments.
 The VibZ+ Playmate significantly enhances acquisition by including an additional 3-channel BioAmp, allowing 
 simultaneous recording of up to six bio-potential signal channels. It retains the vibration motor, buzzer, and QWIIC port, 
