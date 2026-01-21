@@ -84,17 +84,17 @@ Using Proto you can record 3-channel biopotential signals, connect the snap cabl
 +---------------+---------+------------------------+
 | Channel       | Pin     | Channel Connection     |
 +===============+=========+========================+
-| **Channel 0** | **A0P** | +ve of Channel 0       |
+| **Channel 1** | **A0P** | +ve of Channel 1       |
 +---------------+---------+------------------------+
-|               | **A0N** | -ve of Channel 0       |
+|               | **A0N** | -ve of Channel 1       |
 +---------------+---------+------------------------+
-| **Channel 1** | **A1P** | +ve of Channel 1       |
+| **Channel 2** | **A1P** | +ve of Channel 2       |
 +---------------+---------+------------------------+
-|               | **A1N** | -ve of Channel 1       |
+|               | **A1N** | -ve of Channel 2       |
 +---------------+---------+------------------------+
-| **Channel 2** | **A2P** | +ve of Channel 2       |
+| **Channel 3** | **A2P** | +ve of Channel 3       |
 +---------------+---------+------------------------+
-|               | **A2N** | -ve of Channel 2       |
+|               | **A2N** | -ve of Channel 3       |
 +---------------+---------+------------------------+
 |               | **REF** | Reference cable to REF |
 +---------------+---------+------------------------+

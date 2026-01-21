@@ -53,7 +53,7 @@ Hardware Requirements
 Setting up the hardware
 ***********************
 
-Let's get started by getting your NPG Lite or ESP32 development board ready.
+Let's get started by getting your NPG Lite or ESP32 development board ready. Turn ON the NPG Lite using the power switch located on the side of the board.  
 
 Installation
 ******************
@@ -178,7 +178,7 @@ You can choose from multiple firmware options depending on how you plan to use t
       :width: 400 px
       :alt: NPG Lite Flasher BLE Flash Complete
     
-    7. Restart your device, Unplug the USB cable, toggle the NPG Lite’s power switch off and then on, and your board will now boot into the new Bluetooth LE firmware.
+    7. Restart your device : Unplug the USB cable, toggle the NPG Lite’s power switch OFF and then ON, and your board will now boot into the new Bluetooth LE firmware.
 
 
   .. tab-item:: Serial
@@ -214,7 +214,7 @@ You can choose from multiple firmware options depending on how you plan to use t
     :width: 400 px
     :alt: NPG Lite Flasher Serial Flash Complete
 
-   7. Restart your device, Unplug the USB cable, toggle the NPG Lite’s power switch off and then on, and your board will now boot into the new Serial firmware.
+   7. Restart your device : Unplug the USB cable, toggle the NPG Lite’s power switch OFF and then ON, and your board will now boot into the new Serial firmware.
 
 
   .. tab-item:: WiFi
@@ -250,7 +250,7 @@ You can choose from multiple firmware options depending on how you plan to use t
     :width: 400 px
     :alt: NPG Lite Flasher WiFi Flash Complete
 
-   7. Restart your device, Unplug the USB cable, toggle the NPG Lite’s power switch off and then on, and your board will now boot into the new WiFi firmware.
+   7. Restart your device : Unplug the USB cable, toggle the NPG Lite’s power switch OFF and then ON, and your board will now boot into the new WiFi firmware.
   
   .. tab-item:: + Add Custom
 
@@ -288,7 +288,7 @@ You can choose from multiple firmware options depending on how you plan to use t
     :width: 400 px
     :alt: NPG Lite Flasher Custom Flash Complete
 
-   9. Restart your device, Unplug the USB cable, toggle the NPG Lite’s power switch off and then on, and your board will now boot into the new Custom firmware.
+   9. Restart your device : Unplug the USB cable, toggle the NPG Lite’s power switch OFF and then ON, and your board will now boot into the new Custom firmware.
 
    10. Click ``Add``, this will add the firmware in the +Add Custom list for future flashes - so you can skip the file-selection step next time.
 
@@ -332,7 +332,7 @@ You can choose from multiple firmware options depending on how you plan to use t
     :width: 400 px
     :alt: NPG Lite Flasher Get from GitHub Flash Completed
 
-   6. Restart your device, Unplug the USB cable, toggle the NPG Lite’s power switch off and then on, and your board will now boot into the new firmware.
+   6. Restart your device : Unplug the USB cable, toggle the NPG Lite’s power switch OFF and then ON, and your board will now boot into the new firmware.
 
    7. Check the ``Custom Firmwares`` tab for future flashes; this saves you from downloading the same firmware file again.
    

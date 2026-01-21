@@ -348,10 +348,12 @@ NPG Lite, with its multi-channel BioAmp, wireless connectivity, battery operatio
 users to create HCI and BCI applications with ease. We’ve created projects leveraging ECG, EMG, EOG, and EEG signals to 
 inspire you, but the possibilities cover so many more use cases.
 
-Each of these projects runs on the ``BLE firmware``, which you can flash using the following flasher tools: 
+.. note::
 
-- We recommend using :ref:`NPG Lite Flasher <npg-lite-flasher-uploading-firmware>` for flashing BLE Firmware.
-- Alternatively, you can use `Arduino IDE <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ to manually upload the firmware.
+   Each of these projects runs on the ``BLE firmware``, which you can flash using the following flasher tools: 
+   
+   - We recommend using :ref:`NPG Lite Flasher <npg-lite-flasher-uploading-firmware>` for flashing BLE Firmware.
+   - Alternatively, you can use `Arduino IDE <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ to manually upload the firmware.
 
 .. card:: 1. Make Muscular Music
 
