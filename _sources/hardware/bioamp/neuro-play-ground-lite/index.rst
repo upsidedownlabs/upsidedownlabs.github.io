@@ -203,7 +203,7 @@ If you’re comfortable with soldering and only need a 3-channel wireless BioAmp
 +------------------+--------------+------------+------------+
 
 Playmates
-**********
+*************
 
 Playmates are modular expansion boards designed to enhance the functionality of Neuro PlayGround (NPG) Lite. These add-ons seamlessly integrate with the core system, allowing users to extend their capabilities to create awesome Human-Computer Interface (HCI) & Brain-Computer Interface (BCI).
 
@@ -213,29 +213,79 @@ Playmates are modular expansion boards designed to enhance the functionality of 
 
     Neuro PlayGround (NPG) Lite Playmates
 
-1. NPG Proto Playmate
-======================
+Need of Playmate 
+==========================
 
-**Proto Playmate** offers a flexible prototyping space with a dedicated area for adding your own components or 
-circuits. It includes a QWIIC port for quick sensor integration, 2.54 mm electrode header pins, 
-an ON/OFF slide switch, and a connector interface for electrodes. By combining electrodes with custom electronics, 
-users can rapidly prototype bio-potential signal-driven experiments, build add-on circuits, or test new designs without needing a separate breadboard.
+Playmate offer a convenient way to expand the functionality of your NPG Lite setup without complex wiring or modifications. It easily plug into NPG Lite's Feather compatible headers, providing additional features such as 
 
-2. NPG VibZ Playmate
-=====================
+1. Proto Playmate 
+-----------------------
 
-**VibZ Playmate** introduces a vibration motor for haptic feedback, a buzzer for auditory feedback, a QWIIC port for easy I2C sensor integration, an ON/OFF slide switch, 2.54 mm electrode header pins
-and common negative electrode option. With these Playmates, users can customize their setup for specific applications, whether in research, education, or 
-interactive biofeedback experiments. This modular approach ensures flexibility, scalability, and better user experience.
+.. figure:: ./media/npg-proto-playmate.*
+    :align: center
+    :alt:   Neuro PlayGround (NPG) Lite Proto Playmate
 
-3. NPG VibZ+ Playmate
-======================
+    Neuro PlayGround (NPG) Lite Proto Playmate
 
-**VibZ+ Playmate** builds on the VibZ by including an additional 3-channel BioAmp, making it possible to record 
-and visualize up to 6 Bio-potential signal channels simultaneously. It retains the vibration motor for haptic feedback, 
-buzzer for auditory cues, ON/OFF slide switch, QWIIC port, and electrode connector interface. 
-This makes VibZ+ ideal for experiments where higher-resolution input or greater spatial coverage is essential, 
-such as multi-channel EEG, EMG, or complex biofeedback applications.
+a. ON/OFF switch for power control
+b. QWIIC/Stemma QT port
+c. Electrodes connector
+d. Large prototyping area for custom circuits
+
+2. VibZ Playmate
+--------------------------
+
+.. figure:: ./media/npg-vibz-playmate.*
+    :align: center
+    :alt:   Neuro PlayGround (NPG) Lite VibZ Playmate
+
+    Neuro PlayGround (NPG) Lite VibZ Playmate
+
+a. ON/OFF switch for power control
+b. QWIIC/Stemma QT port
+c. Electrodes connector
+d. Vibration motor for haptic feedback
+e. Buzzer for audio feedback
+
+3. VibZ+ Playmate
+------------------------------
+
+.. figure:: ./media/npg-vibz+-playmate.*
+    :align: center
+    :alt:   Neuro PlayGround (NPG) Lite VibZ+ Playmate
+
+    Neuro PlayGround (NPG) Lite VibZ+ Playmate
+
+a. ON/OFF switch for power control
+b. QWIIC/Stemma QT port
+c. Electrodes connector
+d. Vibration motor for haptic feedback
+e. Buzzer for audio feedback
+
+Comparison of Playmates
+=================================
+
++----------------------+-------------------+--------------------+--------------------+
+| **Feature**          | **Proto**         | **VibZ**           | **VibZ+**          |
++======================+===================+====================+====================+
+| **Bio Channels**     | 3                 | 3                  | 6                  |
++----------------------+-------------------+--------------------+--------------------+
+| **Prototyping Area** | Yes(Large)        | No                 | No                 |
++----------------------+-------------------+--------------------+--------------------+
+| **Haptic Feedback**  | No                | Yes (Vibration)    | Yes (Vibration)    |
++----------------------+-------------------+--------------------+--------------------+
+| **Audio Feedback**   | No                | Yes (Buzzer)       | Yes (Buzzer)       |
++----------------------+-------------------+--------------------+--------------------+
+| **QWIIC Port**       | Yes               | Yes                | Yes                |
++----------------------+-------------------+--------------------+--------------------+
+| **Power Switch**     | Yes               | Yes                | Yes                |
++----------------------+-------------------+--------------------+--------------------+
+| **Electrode Headers**| Dupont 2.54 mm    | Dupont 2.54 mm     | Dupont 2.54 mm     |
++----------------------+-------------------+--------------------+--------------------+
+| **Common Negative**  | Solder option     | Solder option      | Switch             |
++----------------------+-------------------+--------------------+--------------------+
+| **Best For**         | Development       | Complete Projects  | Research           |
++----------------------+-------------------+--------------------+--------------------+
 
 Usage Guide
 ************
@@ -350,10 +400,11 @@ inspire you, but the possibilities cover so many more use cases.
 
 .. note::
 
-   Each of these projects runs on the ``BLE firmware``, which you can flash using the following flasher tools: 
-   
-   - We recommend using :ref:`NPG Lite Flasher <npg-lite-flasher-uploading-firmware>` for flashing BLE Firmware.
-   - Alternatively, you can use `Arduino IDE <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ to manually upload the firmware.
+    Each of these projects runs on the ``BLE firmware``, which you can flash using the following flasher tools: 
+    
+    - We recommend using :ref:`NPG Lite Flasher <npg-lite-flasher-uploading-firmware>` for flashing BLE Firmware.
+    - Alternatively, you can use `Arduino IDE <https://github.com/upsidedownlabs/Chords-Arduino-Firmware>`_ to manually upload the firmware.
+    - It is recommended to use ESP32 version ``3.2.0`` to ensure error free operations. 
 
 .. card:: 1. Make Muscular Music
 

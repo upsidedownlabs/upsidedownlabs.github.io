@@ -21,13 +21,13 @@ Welcome to Upside Down Labs' Docs Site!
 We're thrilled to have you here exploring the fascinating world of neuroscience. Our platform is dedicated to providing you with 
 comprehensive resources on our open-source BioAmp hardware. So whether you're a seasoned researcher, a curious hobbyist, or 
 an aspiring innovator, you've come to the right place. Within these pages, you'll discover detailed information, guides, and 
-insights to help you understand and utilize bioamp hardware effectively thus enabling you to make Human-Computer Interface (HCI) 
+insights to help you understand and utilize BioAmp hardware effectively thus enabling you to make Human-Computer Interface (HCI) 
 or Brain-Computer Interface (BCI) projects with ease.
 
 Overview of BioAmp Hardware
 ******************************
 
-Discover our open-source bioamp hardware, designed to help you easily record biopotential signals 
+Discover our open-source BioAmp hardware, designed to help you easily record biopotential signals 
 from the body making it accessible to explore the field of neuroscience & electrophysiology. 
 We offer easy to follow guides that walk you through the setup process step by step, making it 
 simple for beginners to get started. You can also find software examples on our github profile 
