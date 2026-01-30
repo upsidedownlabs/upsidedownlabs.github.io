@@ -261,6 +261,7 @@ b. QWIIC/Stemma QT port
 c. Electrodes connector
 d. Vibration motor for haptic feedback
 e. Buzzer for audio feedback
+f. Additional 3 channel BioAmp (total 6 channels)
 
 Comparison of Playmates
 =================================
