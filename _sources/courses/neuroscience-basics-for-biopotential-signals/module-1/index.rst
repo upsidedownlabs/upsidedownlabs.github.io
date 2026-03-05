@@ -7,11 +7,9 @@ Module 1: Human Nervous System
 ******************
 
 The Human nervous system consists of a brain, spinal cord, nerves and is one of the most complex and vital systems 
-in the body, responsible for receiving, transmitting, and processing information. It acts as the body's command & control 
-in the body, responsible for receiving, transmitting, and processing information. It acts as the body's command & control 
-center and enables communication between different parts of the body, allowing organisms to interact with their environment.
+in the body, responsible for receiving, transmitting, and processing information. It acts as the body’s command & control center and 
+enables communication between different parts of the body, allowing organisms to interact with their environment.
 
-It is divided into two major parts based on structure (anatomy):
 It is divided into two major parts based on structure (anatomy):
 
 - Central Nervous System (CNS)
@@ -72,23 +70,6 @@ The brain is the most complex organ which communicates with the body by sending 
     .. figure:: ../media/module-1-fun-fact-4.*
         :align: center
         :alt: Human nervous system fun fact#4
-The brain is the most complex organ which communicates with the body by sending and receiving chemical and electrical signals. Some signals remain within the brain, while others are transmitted through the spinal cord and across a network of nerves to distant parts of the body. This communication relies on billions of neurons that form the central nervous system.
-
-.. admonition:: Fun Fact #3
-
-    **The human brain weighs about 3 pounds(1.3-1.4 KG) in the average adult. Out of which around 75% weight is just of water only.**
-
-    .. figure:: ../media/module-1-fun-fact-3.*
-        :align: center
-        :alt: Human nervous system fun fact#3
-
-.. admonition:: Fun Fact #4
-
-    **Our brain has no pain receptors that's why neurosurgeons can operate on brain tissue while the patients are awake. Still, headaches can occur because of the surrounding blood vessels,nerves and muscles which have pain receptors in it.**
-
-    .. figure:: ../media/module-1-fun-fact-4.*
-        :align: center
-        :alt: Human nervous system fun fact#4
 
 .. figure:: ../media/parts-of-human-brain.*
     :align: center
@@ -123,13 +104,38 @@ d. **Occipital lobe:** Found at the back of the brain, the occipital lobe is pri
 Cerebellum
 -------------------
 
-The cerebellum (little brain) is a fist-sized portion of the brain located at the back of the head and above the brainstem. Its function is to coordinate voluntary muscle movements and to maintain posture, balance and equilibrium. The 2 hemispheres of cerebellum are connected by the vermis.
+The cerebellum (little brain) is a fist-sized portion of the brain located at the back of the head and above the brainstem. Its 
+function is to coordinate voluntary muscle movements and to maintain posture, balance and equilibrium. The 2 hemispheres of cerebellum are connected by the vermis.
 
 .. figure:: ../media/parts-of-human-brain-1.*
     :align: center
     :alt: Remaining parts of the brain
 
     The cerebellum and brainstem
+
++----------------------+---------------------------+------------------------------+
+|**Division**          | **Alternative name**      | **Function**                 |    
++======================+===========================+==============================+
+| Vestibulo cerebellum | Flocculo-nodular lobe     | Balance + eye movement       |            
++----------------------+---------------------------+------------------------------+
+| Spino cerebellum     | Vermis + Intermediate     | Body posture + limb movements| 
++----------------------+---------------------------+------------------------------+
+| Cerebro cerebellum   | Lateral hemispheres       | Planning + fine movements    | 
++----------------------+---------------------------+------------------------------+
+
+Functions of cerebellum 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. The cerebellum receives input from nearly all types of sensory systems.
+2. It receives proprioceptive information from the spinal cord and special sensory inputs from the eyes (visual), ears (auditory), and vestibular organs responsible for balance.
+3. It sends signals to most areas of the brain that are responsible for controlling movement.
+4. Because of these extensive connections, the cerebellum integrates sensory information with motor signals to help coordinate movements.
+5. It helps regulate every aspect of movement: its speed, distance, strength, and direction, as well as how smoothly it begins and ends.
+6. As a result, damage to the cerebellum leads to poor coordination and imprecise movements.
+7. The cerebellum also sends signals to brainstem nuclei that give rise to major descending motor pathways.
+8. Therefore, injury to the cerebellum often results in abnormal posture and problems with balance.
+
+.. todo:: Add 2 fun facts about cerebellum with images
 
 Brainstem
 --------------
@@ -138,7 +144,7 @@ The brainstem (middle of brain) connects the cerebrum to the spinal cord. The br
 
 a. **Midbrain:** Involved in motor control and auditory/visual processing.
 b. **Pons:** It is a connection between midbrain and medulla. It controls sleep, respiration, and some motor functions.
-c. **Medulla oblongata:** At the bottom of the brainstem, the medulla is where the brain meets the spinal cord. The medulla is crucial for survival, as it regulates vital bodily functions, including heart rate, breathing, blood circulation, and the balance of oxygen and carbon dioxide levels. It also controls reflexive actions such as sneezing, vomiting, coughing, and swallowing.
+c. **Medulla oblongata:** At the bottom of the brainstem, the medulla is where the brain meets the spinal cord. The medulla is crucial for survival, as it regulates vital bodily functions, including heart rate, breathing, blood circulation, and the balance of oxygen and carbon dioxide levels. It also controls reflexive actions such as sneezing, vomiting, coughing, and swallowing. Additionally, most cranial nerves (III-XII) originate from the brainstem, highlighting its importance in sensory and motor functions of the head and neck.
 
 .. figure:: ../media/brainstem.*
     :align: center
@@ -154,29 +160,10 @@ c. **Medulla oblongata:** At the bottom of the brainstem, the medulla is where t
         :align: center
         :alt: Human nervous system fun fact#5
 
-.. admonition:: Fun Fact #5
-
-    **Despite the brain complexity, it just consumes a power of 20 watt which is roughly less than a typical bulb.**
-    
-    .. figure:: ../media/module-1-fun-fact-5.*
-        :align: center
-        :alt: Human nervous system fun fact#5
-
 .. admonition:: Blood Brain Barrier (BBB) 
 
  - It is a highly selective, protective barrier that separates the circulating blood from the brain and fluid in the central nervous system (CNS).
  - It protects the brain from toxins, pathogens, and fluctuations in blood composition (e.g., hormones, neurotransmitters, potassium).
- - **Clinical importance**: Many drugs can’t treat brain diseases because they can’t cross the BBB therefore, special methods are used such as lipid-soluble drugs, nanoparticles, or direct brain injections.
-
-.. admonition:: Fun Fact #6
-
-    **The right hemisphere of the brain controls the left side of the body, and the left hemisphere of the brain controls the right side of the body.**
-    
-    .. figure:: ../media/module-1-fun-fact-6.*
-        :align: center
-        :alt: Human nervous system fun fact#6
-
-        The two halves communicate with one another through a large C-shaped structure called the **corpus callosum**, which connects the cerebral hemispheres.
  - **Clinical importance**: Many drugs can’t treat brain diseases because they can’t cross the BBB therefore, special methods are used such as lipid-soluble drugs, nanoparticles, or direct brain injections.
 
 .. admonition:: Fun Fact #6
@@ -227,9 +214,13 @@ The autonomic nervous system controls involuntary physiological processes, such 
 a. **Sympathetic Nervous System:** Known as the "fight or flight" system, it prepares the body for stress or emergency situations by increasing heart rate, dilating pupils, releasing adrenaline, and redirecting blood flow to muscles.
 b. **Parasympathetic Nervous System:** It does the opposite of the sympathetic nervous system. Often referred to as the "rest and digest" system, it promotes relaxation by slowing the heart rate, promoting digestion, and conserving energy after a stressful event.
 
-.. note:: 
+.. admonition:: Enteric Nervous System (ENS)
 
-    There are two types of cells in the nervous system: **Neurons (nerve cells)** and **Neuroglia (glial cells)**
+    - It is considered mostly a part of the autonomic nervous system along with sympathetic and parasympathetic systems, but in some cases, it is also considered as a separate division of the nervous system.
+    - It is a complex network of neurons that governs the function of the gastrointestinal system, thats why it is often called the **gut brain** or **second brain**. It can operate independently of the brain and spinal cord, but it also communicates with the CNS through the sympathetic and parasympathetic nervous systems.  
+    - It controls various functions of the digestive system, including motility (movement of food through the digestive tract), secretion of digestive enzymes, blood flow to the gut, and immune responses in the gastrointestinal tract.
+    - The ENS contains around 100 million neurons, which is more than the spinal cord, and it can function autonomously, meaning it can regulate digestive processes without input from the brain.
+    - **Clinical importance**: The ENS is involved in various gastrointestinal disorders, such as irritable bowel syndrome (IBS) and inflammatory bowel disease (IBD), and it is also being studied for its potential role in mental health conditions like anxiety and depression due to the gut-brain connection.
 
 .. note:: 
 
@@ -256,23 +247,7 @@ Neurons are the building blocks of the nervous system and are responsible for re
         :align: center
         :alt: Human nervous system fun fact#8
 
-1.4.1 Types of neurons
-=========================
-
-Based on Function
-------------------------
- 
-1. **Sensory Neurons:** Transmit sensory information (e.g., pain, temperature, pressure) from receptors to the CNS.
-2. **Motor Neurons:** Carry commands from the CNS to muscles and glands, enabling actions like muscle contraction or hormone release.
-3. **Interneurons:** These neurons are found in the CNS and act as connectors between sensory and motor neurons. They help process and integrate information. It is the most common type of neuron.
-
-.. figure:: ../media/types-of-neurons.*
-    :align: center
-    :alt: types of neurons
-
-    Types of neurons based on function
-
-1.4.2 Structure of neuron
+1.4.1 Structure of neuron
 ============================
 
 .. figure:: ../media/parts-of-a-neuron.*
@@ -290,14 +265,43 @@ Based on Function
 
 .. note:: There are axon-less neurons too, where the signal is transmitted and received both by the dendrites.
 
-.. admonition:: Fun Fact #9
+1.4.2 Types of neurons
+=========================
 
-    **The longest cells in the human body are neurons (nerve cells). Some neurons (motor neurons) can reach up to 1-1.5 metres extending from lower spinal cord to toes.**
+Based on Function
+------------------------
+ 
+1. **Sensory Neurons:** Transmit sensory information (e.g., pain, temperature, pressure) from receptors to the CNS.
+2. **Motor Neurons:** Carry commands from the CNS to muscles and glands, enabling actions like muscle contraction or hormone release.
+3. **Interneurons:** These neurons are found in the CNS and act as connectors between sensory and motor neurons. They help process and integrate information. It is the most common type of neuron.
 
-    .. figure:: ../media/module-1-fun-fact-9.*
-        :align: center
-        :alt: Human nervous system fun fact#9
-.. note:: There are axon-less neurons too, where the signal is transmitted and received both by the dendrites.
+.. figure:: ../media/types-of-neurons.*
+    :align: center
+    :alt: types of neurons
+
+    Types of neurons based on function
+
+Based on number of processes    
+----------------------------------
+
+1. **Unipolar Neurons:** These neurons possess a single process that extends from the cell body. They are commonly found in invertebrates, while in vertebrates they occur in certain regions of the autonomic nervous system.
+2. **Pseudounipolar Neurons:** These neurons originate with a single process that later divides into two branches: a central branch and a peripheral branch. A typical example is the neuron in the dorsal root ganglion, which transmits sensory signals to the spinal cord.
+3. **Bipolar Neurons:** These neurons have two processes: one axon and one dendrite, and are typically located in specialized sensory regions, such as the retina of the eye.
+4. **Multipolar Neurons:** These are the most common neurons in the human nervous system. They have multiple processes extending from the cell body, and a typical example is the motor neuron found in the spinal cord.
+
+.. todo:: Add images for different types of neurons based on number of processes
+
+Based on the length of axon
+----------------------------------
+
+1. **Golgi Type I Neurons:** These neurons have long axons that can extend over a meter in length.
+2. **Golgi Type II Neurons:** These neurons have short axons that do not extend far from the cell body.
+
+Based on dendritic pattern
+----------------------------------
+
+1. **Pyramidal cells:** Dendrites of these cells spread like a pyramid. They are found in the cerebral cortex and hippocampus and are involved in cognitive functions such as learning and memory.
+2. **Stellate cells:** Dendrites of these cells spread in all directions like a star. They are found in the cerebral cortex and are involved in processing sensory information.
 
 .. admonition:: Fun Fact #9
 
@@ -312,30 +316,7 @@ Based on Function
 
 Glial cells (or neuroglia) are non-neuronal cells of the nervous system which provide structural support, nourishment and protection to the neurons. 
 
-1.5.1 Difference between neurons and glial cells
-====================================================
-
-+-------------------------------+-------------------------------------------------+-----------------------------------------------------+
-| Features                      | Neurons                                         | Glial Cells                                         |   
-+===============================+=================================================+=====================================================+
-| **Primary role**              | Communication via electrical & chemical signals | Support, protection, nourishment to neurons         |
-+-------------------------------+-------------------------------------------------+-----------------------------------------------------+
-| **Generate action potential** | Yes                                             | No                                                  |
-+-------------------------------+-------------------------------------------------+-----------------------------------------------------+
-| **Structure**                 | Dendrites, axon, synapses                       | No axon/dendrites                                   |
-+-------------------------------+-------------------------------------------------+-----------------------------------------------------+
-| **Division**                  | Divides rarely                                  | Can divide                                          |
-+-------------------------------+-------------------------------------------------+-----------------------------------------------------+
-| **Number**                    | Less                                            | More                                                |
-+-------------------------------+-------------------------------------------------+-----------------------------------------------------+
-| **Myelination**               | Receive myelin                                  | Produce myelin                                      |
-+-------------------------------+-------------------------------------------------+-----------------------------------------------------+
-| **Role in repair**            | Limited                                         | Active in repair (especially PNS)                   |
-+-------------------------------+-------------------------------------------------+-----------------------------------------------------+
-| **Examples**                  | Motor neuron, sensory neuron, interneuron       | Astrocyte, oligodendrocyte, Schwann cell, microglia |
-+-------------------------------+-------------------------------------------------+-----------------------------------------------------+
-
-1.5.2 Types of glial cells
+1.5.1 Types of glial cells
 ===============================
 
 .. figure:: ../media/types-of-neuroglia.*
@@ -344,7 +325,7 @@ Glial cells (or neuroglia) are non-neuronal cells of the nervous system which pr
 
     Types of glial cells based on location
 
-1.5.2.1 In Central nervous system
+1.5.1.1 In Central nervous system
 -----------------------------------------
 
 1. Microglia
@@ -385,7 +366,7 @@ c. EPENDYMAL CELLS
 - Produce and circulate cerebrospinal fluid (CSF)
 - Part of the choroid plexus
 
-1.5.2.2 In Peripheral nervous system
+1.5.1.2 In Peripheral nervous system
 ----------------------------------------
 
 1. SCHWANN CELLS
@@ -399,6 +380,30 @@ c. EPENDYMAL CELLS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Satellite cells in the PNS are glial cells that surround neuronal cell bodies in ganglia and regulate their chemical environment, providing support, protection, and metabolic assistance.
+
+1.5.2 Difference between neurons and glial cells
+====================================================
+
++-------------------------------+-------------------------------------------------+-----------------------------------------------------+
+| Features                      | Neurons                                         | Glial Cells                                         |   
++===============================+=================================================+=====================================================+
+| **Primary role**              | Communication via electrical & chemical signals | Support, protection, nourishment to neurons         |
++-------------------------------+-------------------------------------------------+-----------------------------------------------------+
+| **Generate action potential** | Yes                                             | No                                                  |
++-------------------------------+-------------------------------------------------+-----------------------------------------------------+
+| **Structure**                 | Dendrites, axon, synapses                       | No axon/dendrites                                   |
++-------------------------------+-------------------------------------------------+-----------------------------------------------------+
+| **Division**                  | Divides rarely                                  | Can divide                                          |
++-------------------------------+-------------------------------------------------+-----------------------------------------------------+
+| **Number**                    | Less                                            | More                                                |
++-------------------------------+-------------------------------------------------+-----------------------------------------------------+
+| **Myelination**               | Receive myelin                                  | Produce myelin                                      |
++-------------------------------+-------------------------------------------------+-----------------------------------------------------+
+| **Role in repair**            | Limited                                         | Active in repair (especially PNS)                   |
++-------------------------------+-------------------------------------------------+-----------------------------------------------------+
+| **Examples**                  | Motor neuron, sensory neuron, interneuron       | Astrocyte, oligodendrocyte, Schwann cell, microglia |
++-------------------------------+-------------------------------------------------+-----------------------------------------------------+
+
 
 1.6 Summary
 ******************
