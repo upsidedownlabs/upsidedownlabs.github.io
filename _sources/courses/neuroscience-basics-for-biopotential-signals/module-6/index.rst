@@ -225,6 +225,3 @@ friendly BioAmp hardwares and open source softwares.
 ***************
 
 .. [1] `Chapter 10: Biopotential Signals. <https://alanmacy.com/books/the-handbook-of-human-physiological-recording/chapter-10-biopotential-signals/>`_
-
-
-

@@ -29,21 +29,21 @@ It is divided into two major parts based on structure (anatomy):
 
 **This overview (above) is a simplified representation and does not show the full nervous system. You may refer to advanced textbook for further explanation.**
 
-.. admonition:: Fun Fact #1
+.. admonition:: Fun Fact 
 
     **The human nervous system (primarily the brain) consumes about 20% of the body’s total resting state energy despite the fact that brain weight is just 2% of whole body weight (in adults).**
 
-    .. figure:: ../media/module-1-fun-fact-1.*
+    .. figure:: ../media/mod-1-ff-brain-energy-consumption.*
         :align: center
-        :alt: Human nervous system fun fact#1
+        :alt: Human nervous system fun fact
 
-.. admonition:: Fun Fact #2
+.. admonition:: Fun Fact 
 
     **The human nervous system can transmit signals at speeds over 120m/s (about 431 km/h), faster than a Formula 1 race car.**
 
-    .. figure:: ../media/module-1-fun-fact-2.*
+    .. figure:: ../media/mod-1-ff-brain-signal-speed.*
         :align: center
-        :alt: Human nervous system fun fact#2
+        :alt: Human nervous system fun fact
 
 1.2 Central Nervous System (CNS)
 ********************************
@@ -55,21 +55,21 @@ The central nervous system (CNS) is the body’s command center and is made up o
 
 The brain is the most complex organ which communicates with the body by sending and receiving chemical and electrical signals. Some signals remain within the brain, while others are transmitted through the spinal cord and across a network of nerves to distant parts of the body. This communication relies on billions of neurons that form the central nervous system.
 
-.. admonition:: Fun Fact #3
+.. admonition:: Fun Fact 
 
     **The human brain weighs about 3 pounds(1.3-1.4 KG) in the average adult. Out of which around 75% weight is just of water only.**
 
-    .. figure:: ../media/module-1-fun-fact-3.*
+    .. figure:: ../media/mod-1-ff-brain-water-composition.*
         :align: center
-        :alt: Human nervous system fun fact#3
+        :alt: Human nervous system fun fact
 
-.. admonition:: Fun Fact #4
+.. admonition:: Fun Fact 
 
     **Our brain has no pain receptors that's why neurosurgeons can operate on brain tissue while the patients are awake. Still, headaches can occur because of the surrounding blood vessels,nerves and muscles which have pain receptors in it.**
 
-    .. figure:: ../media/module-1-fun-fact-4.*
+    .. figure:: ../media/mod-1-ff-no-pain-brain-surgery.*
         :align: center
-        :alt: Human nervous system fun fact#4
+        :alt: Human nervous system fun fact
 
 .. figure:: ../media/parts-of-human-brain.*
     :align: center
@@ -123,6 +123,14 @@ function is to coordinate voluntary muscle movements and to maintain posture, ba
 | Cerebro cerebellum   | Lateral hemispheres       | Planning + fine movements    | 
 +----------------------+---------------------------+------------------------------+
 
+.. admonition:: Fun Fact 
+
+    **The cerebellum contains more neurons than the rest of the brain combined, despite being only about 10% of the brain's volume.**
+
+    .. figure:: ../media/mod-1-ff-cerebellum-neuron-density.*
+        :align: center
+        :alt: Human nervous system fun fact 
+
 Functions of cerebellum 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -135,7 +143,14 @@ Functions of cerebellum
 7. The cerebellum also sends signals to brainstem nuclei that give rise to major descending motor pathways.
 8. Therefore, injury to the cerebellum often results in abnormal posture and problems with balance.
 
-.. todo:: Add 2 fun facts about cerebellum with images
+.. admonition:: Fun Fact
+
+    **Our cerebellum acts like a tiny future predictor: Using past experience, it predicts the sensory results of our movements milliseconds before feedback arrives, allowing our brain to adjust instantly so our actions stay smooth, precise, and jerk-free.**
+
+    .. figure:: ../media/mod-1-ff-cerebellum-predictor.*
+        :align: center
+        :alt: Human nervous system fun fact 
+      
 
 Brainstem
 --------------
@@ -152,13 +167,13 @@ c. **Medulla oblongata:** At the bottom of the brainstem, the medulla is where t
 
     Overview of the brainstem
 
-.. admonition:: Fun Fact #5
+.. admonition:: Fun Fact 
 
     **Despite the brain complexity, it just consumes a power of 20 watt which is roughly less than a typical bulb.**
     
-    .. figure:: ../media/module-1-fun-fact-5.*
+    .. figure:: ../media/mod-1-ff-brain-vs-bulb-power.*
         :align: center
-        :alt: Human nervous system fun fact#5
+        :alt: Human nervous system fun fact
 
 .. admonition:: Blood Brain Barrier (BBB) 
 
@@ -166,13 +181,13 @@ c. **Medulla oblongata:** At the bottom of the brainstem, the medulla is where t
  - It protects the brain from toxins, pathogens, and fluctuations in blood composition (e.g., hormones, neurotransmitters, potassium).
  - **Clinical importance**: Many drugs can’t treat brain diseases because they can’t cross the BBB therefore, special methods are used such as lipid-soluble drugs, nanoparticles, or direct brain injections.
 
-.. admonition:: Fun Fact #6
+.. admonition:: Fun Fact 
 
     **The right hemisphere of the brain controls the left side of the body, and the left hemisphere of the brain controls the right side of the body.**
     
-    .. figure:: ../media/module-1-fun-fact-6.*
+    .. figure:: ../media/mod-1-ff-brain-hemisphere-control.*
         :align: center
-        :alt: Human nervous system fun fact#6
+        :alt: Human nervous system fun fact
 
         The two halves communicate with one another through a large C-shaped structure called the **corpus callosum**, which connects the cerebral hemispheres.
 
@@ -186,6 +201,13 @@ The spinal cord begins at the base of the medulla and passes through a large ope
     :alt: Spinal cord
 
     Spinal cord and vertebrae
+
+.. admonition:: Cerebrospinal Fluid (CSF)
+
+ - **Protection and buoyancy:** CSF is a clear, colorless fluid which acts as a shock absorber, protecting the brain and spinal cord from injury by providing a cushioning effect. It also reduces the effective weight of the brain (from 1400g to about 50g), preventing it from pressing down on the base of the skull.
+ - **Maintains stable microenvironment:** Neurons require a stable environment to function properly. CSF helps maintain the chemical balance of the brain by removing waste products, distributing nutrients, and regulating ion concentrations.
+ - **Homeostasis:** CSF helps regulate intracranial pressure and provides a pathway for the exchange of substances between the blood and the brain, contributing to overall homeostasis.
+ - **Clinical importance:** CSF can be sampled through a lumbar puncture (spinal tap) to diagnose infections, bleeding, or neurological disorders. Abnormalities in CSF composition can indicate conditions such as meningitis, multiple sclerosis, or brain tumors.
 
 1.3 Peripheral Nervous System (PNS)
 **************************************
@@ -231,21 +253,21 @@ b. **Parasympathetic Nervous System:** It does the opposite of the sympathetic n
 
 Neurons are the building blocks of the nervous system and are responsible for receiving and transmitting electrochemical signals throughout the body.
 
-.. admonition:: Fun Fact #7
+.. admonition:: Fun Fact 
 
     **Our brain is made up of about 86 billion neurons (100 trillion synaptic connections).**
 
-    .. figure:: ../media/module-1-fun-fact-7.*
+    .. figure:: ../media/mod-1-ff-86-billion-neurons.*
         :align: center
-        :alt: Human nervous system fun fact#7
+        :alt: Human nervous system fun fact
 
-.. admonition:: Fun Fact #8
+.. admonition:: Fun Fact 
 
     **Most mature neurons can't divide after birth, but they can still form new connections throughout life. That's why learning new skills keeps your brain "young"**
 
-    .. figure:: ../media/module-1-fun-fact-8.*
+    .. figure:: ../media/mod-1-ff-brain-young.*
         :align: center
-        :alt: Human nervous system fun fact#8
+        :alt: Human nervous system fun fact
 
 1.4.1 Structure of neuron
 ============================
@@ -275,7 +297,7 @@ Based on Function
 2. **Motor Neurons:** Carry commands from the CNS to muscles and glands, enabling actions like muscle contraction or hormone release.
 3. **Interneurons:** These neurons are found in the CNS and act as connectors between sensory and motor neurons. They help process and integrate information. It is the most common type of neuron.
 
-.. figure:: ../media/types-of-neurons.*
+.. figure:: ../media/types-of-neurons-function-based.*
     :align: center
     :alt: types of neurons
 
@@ -289,7 +311,11 @@ Based on number of processes
 3. **Bipolar Neurons:** These neurons have two processes: one axon and one dendrite, and are typically located in specialized sensory regions, such as the retina of the eye.
 4. **Multipolar Neurons:** These are the most common neurons in the human nervous system. They have multiple processes extending from the cell body, and a typical example is the motor neuron found in the spinal cord.
 
-.. todo:: Add images for different types of neurons based on number of processes
+.. figure:: ../media/types-of-neurons-number-of-processes.*
+    :align: center
+    :alt: Neurons types based on number of processes
+
+    Types of neurons based on number of processes
 
 Based on the length of axon
 ----------------------------------
@@ -303,13 +329,13 @@ Based on dendritic pattern
 1. **Pyramidal cells:** Dendrites of these cells spread like a pyramid. They are found in the cerebral cortex and hippocampus and are involved in cognitive functions such as learning and memory.
 2. **Stellate cells:** Dendrites of these cells spread in all directions like a star. They are found in the cerebral cortex and are involved in processing sensory information.
 
-.. admonition:: Fun Fact #9
+.. admonition:: Fun Fact
 
     **The longest cells in the human body are neurons (nerve cells). Some neurons (motor neurons) can reach up to 1-1.5 metres extending from lower spinal cord to toes.**
 
-    .. figure:: ../media/module-1-fun-fact-9.*
+    .. figure:: ../media/mod-1-ff-longest-neuron.*
         :align: center
-        :alt: Human nervous system fun fact#9
+        :alt: Human nervous system fun fact
 
 1.5 Glial cells
 ******************
@@ -420,4 +446,3 @@ This module builds the foundation needed to understand how neurons create electr
 1. https://www.hopkinsmedicine.org/health/conditions-and-diseases/anatomy-of-the-brain
 2. https://my.clevelandclinic.org/health/body/24931-blood-brain-barrier-bbb
 3. https://qbi.uq.edu.au/brain-basics/brain/brain-physiology/types-glia 
-

@@ -58,7 +58,7 @@ This course would not have been possible without **Upside Down Labs**.
 
 Upside Down Labs is committed to :
 
-- Open-source biomedical hardware and software
+- Open-source research graded hardware and software
 - Affordable neuroscience tools
 - Education-first innovation
 - Enabling hands-on learning through real devices
