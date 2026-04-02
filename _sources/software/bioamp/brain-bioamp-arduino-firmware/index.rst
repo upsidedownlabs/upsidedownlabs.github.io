@@ -123,7 +123,7 @@ Step 4: Skin Preparation and Electrodes Placement
 
 Make sure the sticky side of electrodes touches your skin firmly.
 
-.. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-eeg.png
+.. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-eeg.*
     :align: center
     :alt: EEG Placement
 

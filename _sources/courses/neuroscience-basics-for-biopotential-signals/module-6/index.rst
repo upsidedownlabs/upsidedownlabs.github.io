@@ -1,19 +1,48 @@
 .. _neuroscience-basics-for-biopotential-signals-module-6:
 
-Module 6: Biopotential signals 
-#############################################
+Module 6: Biopotential Signals  [1]_
+#####################################
 
-Biopotentials are the electrical signals produced inside the body. They come from excitable cells found in the nervous system,
+Biopotential signals are electrical signals generated within the body. They come from excitable cells found in the nervous system,
 muscles, and glands. When one of these cells gets stimulated, it triggers either an action potential or a graded potential. 
-These electrical potentials are the basic building blocks of all biopotentials in the body. [1]_ 
+These electrical potentials form the basis of all measurable biopotential signals in the body.
 
 **Upside Down Labs** has engineered multiple open-source :ref:`BioAmp Hardware <upsidedownlabs_hardware_home>` and :ref:`BioAmp Software <upsidedownlabs_software_home>` to measure and 
 visualize the body's biopotential signals. These signals include:
 
-- **Electrocardiogram (ECG)**: Measures the electrical activity of the heart.
-- **Electromyogram (EMG)**: Records the electrical activity produced by skeletal muscles.
-- **Electrooculogram (EOG)**: Measures the electrical potential of the eyes.
-- **Electroencephalogram (EEG)**: Captures the electrical activity of the brain.
+.. figure:: ../media/course-biopotential-signals.*
+    :align: center
+    :alt: Biopotential signals
+
+    Biopotential signals
+    
+- **Electrocardiography (ECG)**: 
+  
+  Electrocardiography (ECG) is a non-invasive diagnostic technique used to record the electrical activity of the heart over 
+  time. The heart generates electrical impulses that coordinate the contraction and relaxation of cardiac muscles, allowing 
+  blood to be pumped throughout the body. ECG electrodes placed on the skin detect these electrical signals and display them as 
+  waveforms (P wave, QRS complex, and T wave). This method is widely used to evaluate heart rhythm, detect arrhythmias, 
+  myocardial infarction, and other cardiac abnormalities.
+
+- **Electromyography (EMG)**: 
+
+  Electromyography (EMG) is a technique used to measure and record the electrical activity produced by skeletal muscles during rest and contraction. When a motor neuron
+  stimulates a muscle fiber, an electrical signal called a motor unit action potential is generated. EMG detects these signals using surface electrodes or needle electrodes
+  inserted into the muscle. It is commonly used to assess neuromuscular disorders, muscle dysfunction, nerve damage, and diseases affecting motor control.
+
+- **Electrooculography (EOG)**: 
+
+  Electrooculography (EOG) is a technique used to measure the electrical potential difference between the front (cornea) and back (retina) of the eye. As the eyes move, this
+  potential difference changes and can be detected by electrodes placed around the eyes. EOG is commonly used to track eye movements, study visual behavior, and assess
+  retinal function. It is also used in sleep research to identify rapid eye movement (REM) during sleep.
+
+- **Electroencephalography (EEG)**:
+
+  Electroencephalography (EEG) is a method used to record the electrical activity of the brain produced by the synchronized activity of neurons, primarily in the cerebral cortex.
+  Electrodes placed on the scalp detect small voltage fluctuations resulting from neuronal activity. EEG signals appear as brain waves (such as alpha, beta, theta, and delta waves).
+  This technique is widely used in neuroscience and clinical settings to study brain function, diagnose neurological disorders such as epilepsy, monitor sleep stages, and investigate
+  cognitive processes.
+
 
 BioAmp devices serve as a catalyst for the development of innovative **Human-Computer Interface (HCI)** and **Brain-Computer 
 Interface (BCI) projects**, enabling people to explore the field of neuroscience.
@@ -34,19 +63,19 @@ Interface (BCI) projects**, enabling people to explore the field of neuroscience
 6.2.1 Why is skin preparation important?
 ==============================================
 
-Proper skin preparation is crucial before recording any biopotential signal be it Electrocardiography (ECG), Electromyography (EMG), Electroencephalography (EEG), or Electrooculography (EOG).
+Proper skin preparation is crucial before recording any biopotential signal whether it is Electrocardiography (ECG), Electromyography (EMG), Electroencephalography (EEG), or Electrooculography (EOG).
 
 - **Clean skin surface**: Removes dead skin cells, oils, & other substances that increase skin impedance.
-- **Improve impedance**: Improves the conduction of electrical signals from the body to the recording equipment and minimizes impedance.
+- **Reduce skin impedance**: Improves the conduction of electrical signals from the body to the recording equipment and reduces impedance.
 - **Electrode-skin contact**: Ensures optimal contact between the electrodes and the skin surface.
 - **Signal quality**: Enhances the overall quality of recorded signals, providing clear & reliable data for analysis & improves the ability to capture subtle variations in biopotential signals.
-- **Consistency in recordings**: Reduces variability in signal quality, making it easier to make any Human-Computer Interface (HCI), Brain-Computer Interface (BCI) project or a real-world application.
+- **Consistency in recordings**: Reduces variability in signal quality, making it easier to make any Human-Computer Interface (HCI) and Brain-Computer Interface (BCI) projects or a real-world application.
 - **Long term adhesion**: Facilitates long-term adhesion & stable placement of electrodes to the skin during extended signal monitoring. 
 
 6.2.2 Steps to follow
 ============================
 
-You can follow the steps given below to do the skin preparation properly :
+You can follow the steps given below to perform proper skin preparation:
 
 Step 1: Identify the targeted area
 --------------------------------------------------
@@ -55,47 +84,47 @@ Identify the target area where the gel electrodes or BioAmp Bands will be placed
 Electrooculography (EOG)
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-eog.*
+.. figure:: ../media/course-skin-prep-eog.*
     :align: center
     :alt: Target area to record EOG 
 
-    Target area to record EOG
+    Target area to record EOG(single channel)
 
 Electromyography (EMG)
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-emg.*
+.. figure:: ../media/course-skin-prep-emg.*
     :align: center
     :alt: Target area to record EMG
 
-    Target area to record EMG
+    Target area to record EMG(single channel)
 
 
 Electrocardiography (ECG)
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-ecg.*
+.. figure:: ../media/course-skin-prep-ecg.*
     :align: center
     :alt: Target area to record ECG
 
-    Target area to record ECG
+    Target area to record ECG(single channel)
 
 
 Electroencephalography (EEG)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-eeg.*
+.. figure:: ../media/course-skin-prep-eeg.*
     :align: center
     :alt: Target area to record EEG
 
-    Target area to record EEG
+    Target area to record EEG(single channel)
 
 Step 2: Apply NuPrep gel
 ------------------------------
-Take a small amount of NuPrep gel using a cotton swab and apply it on your targeted area.
+Take a small amount of NuPrep gel using a cotton swab and apply it to the targeted area.
 
 
-.. figure:: ../../../guides/usage-guides/skin-preparation/media/step-2.*
+.. figure:: ../media/course-apply-nuprep-gel.*
     :align: center
     :alt: Applying NuPrep Gel
 
@@ -106,7 +135,7 @@ Step 3: Clean the skin surface
 ----------------------------------
 Use gentle, circular motions to rub the gel on the skin surface. This removes all the dead skin cells & improves conductivity.
 
-.. figure:: ../../../guides/usage-guides/skin-preparation/media/step-3.*
+.. figure:: ../media/course-clean-skin.*
     :align: center
     :alt: Rubbing the gel
 
@@ -121,7 +150,7 @@ Step 4: Wipe off the gel
 --------------------------------
 Wipe away excess gel with alcohol swabs or wet wipes.
 
-.. figure:: ../../../guides/usage-guides/skin-preparation/media/step-4.*
+.. figure:: ../media/course-wipe-off-gel.*
     :align: center
     :alt: Wipe away excess gel
 
@@ -138,10 +167,10 @@ Now you can either use gel electrodes or BioAmp bands for the signal recording.
 
 **Using gel electrodes**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Connect the BioAmp cable to gel electrodes, peel the plastic backing from electrodes and place the IN+, IN-, REF cables
+Connect the BioAmp cable to gel electrodes, peel the plastic backing from electrodes and place the IN+, IN- and REF cables
 according to your specific biopotential recording.
 
-.. figure:: ../../../guides/usage-guides/skin-preparation/media/step-5a.*
+.. figure:: ../media/course-place-gel-electrodes.*
     :align: center
     :alt: Placing gel electrodes on skin surface
 
@@ -160,13 +189,14 @@ Connect the BioAmp cable to your BioAmp band. Now apply a small amount of electr
 electrodes between the skin and metallic part of BioAmp cable. This improves the signal conductivity, enhancing overall signal
 quality.
 
-.. figure:: ../../../guides/usage-guides/skin-preparation/media/step-5b.*
+.. figure:: ../media/course-using-electrode-gel.*
     :align: center
-    :alt: Using Electrode gel
+    :alt: Using gel for BioAmp bands
 
-    Method 1: Using Electrode gel
+    Method 1: Using gel for BioAmp bands
 
-.. figure:: ../../../guides/usage-guides/skin-preparation/media/step-5c.*
+
+.. figure:: ../media/course-using-ten20-paste.*
     :align: center
     :alt: Using Ten20 paste
 
@@ -176,8 +206,6 @@ quality.
 
 6.3 Basic electrode configuration
 ********************************************
-
-
 
 6.3.1 What do IN+, IN-, and REF mean?
 =======================================
@@ -191,6 +219,7 @@ IN+ (Non-inverting input)
 - Positive input of the instrumentation amplifier
 - Placed directly on or very close to the tissue that generates the signal (muscle, heart, forehead, eye, etc.)
 - If the voltage here increases, the amplifier output increases.
+- This is the main signal input that captures the biopotential signal of interest.
 
 IN- (Inverting input) 
 -------------------------
@@ -198,6 +227,7 @@ IN- (Inverting input)
 - Negative input of the instrumentation amplifier
 - Placed 2-10 cm away from IN+ (same muscle, same general area) OR on the opposite side (e.g., for EOG/ECG)
 - If the voltage here increases, the amplifier output decreases (it is inverted).
+- Output of the amplifier is proportional to the difference between IN+ and IN- {Output = Gain × (IN+ − IN−)}.
 
 REF (Mid-supply or DRL)
 ----------------------------------------
@@ -218,10 +248,10 @@ skin preparation and electrode placement. We also studied how instrumentation am
 clean, noise-free signals. In the next module you are going to learn how to record EMG signals at home by using our budget 
 friendly BioAmp hardwares and open source softwares. 
 
-.. warning:: **These recordings are for educational use only - not for medical diagnosis.**
+.. warning:: **These recordings are for educational purposes only and are not intended for medical diagnosis.**
 
 
 6.5 References
-***************
+*****************
 
 .. [1] `Chapter 10: Biopotential Signals. <https://alanmacy.com/books/the-handbook-of-human-physiological-recording/chapter-10-biopotential-signals/>`_

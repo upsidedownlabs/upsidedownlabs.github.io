@@ -107,7 +107,7 @@ There are two ways use Gel Electrods or Muscle BioAmp Band.
    - Make sure the **sticky side makes firm contact** with the skin for best performance.
    
 
-.. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-emg.png
+.. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-emg.*
     :align: center
     :alt: EMG Placement
 
@@ -119,7 +119,7 @@ There are two ways use Gel Electrods or Muscle BioAmp Band.
 1. Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve & REF (reference) on the far side of the band.
 2. Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results
 
-.. figure:: ../../../guides/usage-guides/skin-preparation/media/step-5c.png
+.. figure:: ../../../guides/usage-guides/skin-preparation/media/step-5c.*
     :align: center
     :alt: Muscle BioAmp Band Placement
 

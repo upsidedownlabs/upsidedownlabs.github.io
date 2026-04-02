@@ -3,16 +3,20 @@
 Course Curriculum
 ##########################
 
-Introduction 
-***********************
+What This Course Will Cover
+*******************************************
 
-This course is designed to provide a comprehensive and practical foundation in neuroscience and biopotential signal acquisition, 
-guiding learners from essential theoretical concepts to real world skills in recording brain, muscle, heart and eye electrical 
-activity. Through structured modules, clear explanations, illustrative diagrams, and hands-on demonstrations, participants will 
-gain an intuitive understanding of nervous system function and electrophysiology, while also building the confidence to work with 
-biopotential signal hardware and interpretation techniques. Whether you are new to the field or seeking to strengthen your practical 
-expertise, this course offers an engaging, step-by-step learning experience that makes complex topics accessible and directly 
-applicable.
+Across Modules 1 to 10, this course systematically guide you through:
+
+- Fundamental neuroscience concepts relevant to biopotential signals
+- Neural signaling, action potentials, and synaptic transmission
+- Signal characteristics, frequency ranges, and noise sources
+- Practical perspectives on EEG, EMG, ECG and EOG
+- Real-world clinical, research and human-computer interaction applications
+
+  At the end of this course, you will not just be familiar with terminology, you understand where these signals come from, why they matter, and how they can be acquired and used responsibly.
+
+**This knowledge forms the backbone for innovation in biomedical engineering, neuroscience research, assistive technology, and open-source health solutions.**
 
 Course Content 
 **********************

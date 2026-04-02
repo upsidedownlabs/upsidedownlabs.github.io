@@ -1,6 +1,6 @@
 .. _neuroscience-basics-for-biopotential-signals-module-2:
 
-Module 2: Understanding the resting potential
+Module 2: Understanding the Resting Potential
 ###############################################
 
 .. |Na+| replace:: Na\ :sup:`+`\
@@ -16,12 +16,15 @@ Module 2: Understanding the resting potential
 .. |Xout| replace:: X\ :sub:`out`\
 .. |Pi| replace:: P\ :sub:`i`\
 
-The resting potential of a neuron is the electrical potential difference/voltage across the plasma 
-membrane at which the neuron is in a non-excited state (i.e., neither sending nor receiving any signal). [1]_ 
-Understanding the resting potential is crucial for grasping how neurons remain ready to fire an action 
-potential and how they process and transmit information. However, before delving into this topic, it is 
-important to first explore the electrical properties of neurons, as electricity is the primary means by 
-which neurons communicate.
+The resting membrane potential of a neuron is the electrical potential difference (voltage) across the neuron's plasma 
+membrane at which the neuron is in a non-excited state. [1]_  Another way to define it is as the electrical potential difference across a neuron's plasma membrane when the neuron is not actively sending signals.
+It represents the "ready state" of the neuron, where it is stable, polarized, and prepared to fire an action potential when stimulated.
+
+.. todo:: Add a resting potential banner
+
+Understanding the resting potential is essential because it forms the electrical basis of neuronal excitability. Before studying the resting potential
+in detail, it is indeed important to understand the electrical properties of neurons, since neurons primarily communicate through 
+electrical signals (changes in membrane potential) and chemical synapses.
 
 2.1 Fundamentals of electricity
 *********************************
@@ -31,7 +34,7 @@ Let's review some fundamental concepts of electricity that will help us explore 
 2.1.1 Current
 ==============
 
-It is defined as the rate of flow of charge. In neurons, it is the movement of ions like sodium (|Na+|), potassium (|K+|), Chloride (|Cl-|), and Calcium (|Ca2+|)  across the membrane, which is essential for generating electrical signals.
+Current is defined as the rate of flow of electrical charge. In metals, it is due to the movement of free electrons, while in neurons, it is due to the movement of ions like sodium (|Na+|), potassium (|K+|), Chloride (|Cl-|), and Calcium (|Ca2+|)  across the membrane, which is essential for generating electrical signals.
 
 .. figure:: ../media/current.*
    :align: center
@@ -39,16 +42,20 @@ It is defined as the rate of flow of charge. In neurons, it is the movement of i
 
    Current: The movement of ions across the membrane
 
+.. todo:: Add a current graphic (hand designed)
+
 2.1.2 Voltage
 ==============
 
-It is the electrical potential that drives the flow of charge which was discovered by Alessandro Volta in 1778. In the context of neurons, voltage refers to the electric potential difference across the neuron's membrane, which is critical for generating and transmitting electrical signals.
+It is the electrical potential that drives the flow of charge. In the context of neurons, voltage refers to the electric potential difference across the neuron's membrane, which is critical for generating and transmitting electrical signals.
 
 .. figure:: ../media/voltage.*
    :align: center
    :alt: voltage in neurons
 
    Voltage: electric potential difference across the neuron's membrane
+
+.. todo:: Add a voltage graphic (hand designed)
 
 To better understand electric potential, it's essential to define electrostatic force.
 
@@ -64,6 +71,8 @@ are part of the fundamental forces of nature and are described by Coulomb's law.
 
    Electrostatic force
 
+.. todo:: Add a similar graphic hand designed
+
 2.1.4 Coulomb's law
 ====================
 
@@ -77,8 +86,10 @@ Equation 1:
 
 - F = Electrostatic force
 - k = Coulomb constant (8.99×10*9 Nm*2/C*2)
-- q1,q2 = charges
+- q1,q2 = magnitudes of charges
 - r = distance between the centers of the two charges
+
+.. todo:: Add a graphic of coulomb law (hand designed)
 
 .. admonition:: Additional Info
 
@@ -103,10 +114,15 @@ Equation 1:
 
    Repulsive force
 
-2.2 Resting Potential
-**********************
+.. todo:: Add 2 graphics hand designed, each of repulsive and attractive forces
 
-Resting potential refers to the electrical potential difference across the neuron's membrane when a neuron is at rest. It is primarily determined by the unequal distribution of ions, particularly potassium (|K+|) and sodium (|Na+|), across the neuron's membrane. [1]_
+2.2 Resting Membrane Potential
+**********************************
+
+All living cells have an electrical potential difference across their cell membrane. The inside of the cell is negative compared 
+to the outside. This electrical difference is called the membrane potential, created because ions line up on both sides of the 
+membrane. When a cell is not active, its membrane potential is called the resting membrane potential (RMP) or transmembrane 
+potential.
 
 .. figure:: ../media/resting-potential.*
    :align: center
@@ -114,25 +130,54 @@ Resting potential refers to the electrical potential difference across the neuro
 
    Resting potential
 
-.. note::
+.. todo:: Add a similar graphic hand designed
 
-   - Membrane potential is the voltage across the membrane at any given moment, whereas resting potential is the membrane potential when a neuron is at rest (i.e., neither sending nor receiving any signal).
-   - The voltage across a membrane is a comparative measurement. Neuroscientists consistently use the outside of the cell as the reference point for measuring the voltage across the membrane. For instance, if the inside of the cell is 70 mV more negative than the outside, we would express the voltage as -70 mV. [1]_
-      - Voltage range of membrane potential : -60 mV TO +90 mV
-      - Voltage of resting potential: Approx -70 mV
+2.2.1 Key features of Resting Membrane Potential (RMP)
+==========================================================
 
-The resting potential of a neuron is primarily influenced by two key factors: diffusion and electrostatic forces. Let's understand them individually. [1]_
+1. Different tissues have different RMP values. For example, neurons typically have an RMP of around -70 mV.
 
-2.2.1 Diffusion [1]_
-=====================
++------------------+----------------------+
+| **Tissue**       | **Typical RMP** (mV) |
++==================+======================+
+| Neuron           | -70                  |
++------------------+----------------------+
+| Skeletal muscle  | -90                  |
++------------------+----------------------+
+| Cardiac muscle   | -90                  |
++------------------+----------------------+
+| Smooth muscle    | Variable             |
++------------------+----------------------+
+
+2. When a neuron receives a stimulus, its membrane potential changes. The interior of the cell becomes positive due to depolarization, and this rapid shift in voltage is known as an action potential.
+3. The RMP is crucial because it sets the starting point for depolarization and helps determine the strength and duration of the action potential.
+4. The RMP mainly arises from unequal distribution of ions across the membrane.
+
+.. note:: The RMP is influenced by 2 main factors:
+   
+   1. Selective permeability of the membrane to different ions
+   2. Forces that drive ion movement across the membrane (diffusion and electrostatic forces).
+
+2.2.2. Selective permeability of the membrane
+================================================
+
+- |k+| permeability is higher than |Na+| permeability at rest, which means that more |K+| ions can move across the membrane compared to |Na+| ions. This contributes to the negative resting potential because |K+| ions tend to diffuse out of the cell, leaving behind a net negative charge inside the cell.
+- The membrane is also permeable to other ions like chloride (|Cl-|) and organic anions (A⁻), which also contribute to the resting potential.
+- The membrane is impermeable to proteins and other large organic molecules.
+
+2.2.3 Forces that drive ion movement
+=========================================
+
+1. Diffusion [1]_
+-----------------------------
 
 Ion Concentration Gradients
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Neurons maintain specific concentrations of ions, particularly sodium (|Na+|), potassium (|K+|), chloride (|Cl-|), and organic anions (A⁻), across their membrane. Typically, there is a higher concentration of |K+| inside the neuron and a higher concentration of |Na+| outside.
 
 Movement of Ions
------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Due to the concentration gradient, ions tend to move from areas of higher concentration to lower concentration through channels in the neuron's membrane. For example, |K+| ions diffuse out of the neuron, while |Na+| ions tend to diffuse into the neuron.
 
@@ -142,10 +187,27 @@ Due to the concentration gradient, ions tend to move from areas of higher concen
 
    Diffusion of ions
 
-2.2.2 Electrostatic forces [1]_
-================================
+.. todo:: Add 2 graphics here, one is similar to above(hand designed) and other one is as per shared image
 
-Electrostatic forces are essential in creating the resting potential of neurons. It arises from the movement of ions like potassium and sodium, which are influenced by concentration gradients and the attractive/repulsive forces between charged particles. The unequal distribution of these ions across the membrane, combined with electrostatic forces, results in a negative charge inside the neuron relative to the outside, leading to a typical resting potential of around -70mV, which is crucial for the neuron's ability to generate action potentials and communicate with other neurons.
+2. Electrostatic forces [1]_
+-----------------------------------
+
+Electrostatic forces are essential in creating the resting potential of neurons. It arises from the movement of ions like 
+potassium and sodium, which are influenced by concentration gradients and the attractive/repulsive forces between charged 
+particles. The unequal distribution of these ions across the membrane, combined with electrostatic forces, results in a negative 
+charge inside the neuron relative to the outside, leading to a typical resting potential of around -70 mV, which is crucial for the
+neuron's ability to generate action potentials and communicate with other neurons.
+
+Electrostatic force help determine how ions arrange on both sides of the membrane and together with selective permeability, it plays a 
+major role in establishing the resting membrane potential.
+
+.. note::
+
+   - The voltage across a membrane is a comparative measurement. Neuroscientists consistently use the outside of the cell as the reference point for measuring the voltage across the membrane. For instance, if the inside of the cell is 70 mV more negative than the outside, we would express the voltage as -70 mV. [1]_
+      - Voltage range of membrane potential : -90 mV to +60 mV
+      - Voltage of neuron RMP : Approx -70 mV
+
+
 
 2.3 Equilibrium potential
 ***************************
@@ -157,6 +219,8 @@ The equilibrium potential (also known as the Nernst potential) for a specific io
    :alt: Equilibrium potential
 
    Equilibrium potential
+
+.. todo:: Add a similar graphic hand designed
 
 **Nernst Equation:** The equilibrium potential for a specific ion can be calculated using the Nernst equation: [2]_
 
@@ -173,13 +237,15 @@ Where:
 - F is Faraday's constant.
 - |Iout| and |Iin| are the concentrations of the ion outside and inside the cell, respectively.
 
+.. todo:: Add a graphic that includes formula and above data
+
 Equilibrium Potentials for major ions: [1]_
 
 - |K+|: Approximately -90 mV (when |K+| has an intracellular concentration of 120 mM and an extracellular concentration of 4 mM)
 - |Na+|: Approximately +60 mV (when |Na+| has an intracellular concentration of 14 mM and an extracellular concentration of 140 mM)
 
-2.4 Goldman Equation [3]_
-**************************
+2.4 Goldman-Hodgkin-Katz Equation [3]_
+********************************************
 
 The Goldman equation, often referred to as the GHK equation, calculates the resting potential of a cell based on the permeability and concentrations of multiple ions. It accounts for the relative contributions of different ions to the resting potential. The equation is as follows:
 
@@ -190,62 +256,89 @@ The Goldman equation, often referred to as the GHK equation, calculates the rest
 where:
 
 - |Vm| is the membrane potential
-- R is Universal gas constant
+- R is the universal gas constant
 - T is absolute temperature in Kelvin
 - F is Faraday's constant
 - |PX| is permeability of ion X
 - |Xin| is concentration of ion X inside the cell
 - |Xout| is concentration of ion X outside the cell
 
+.. todo:: Add a graphic that includes above formula and info written above
+
 .. note:: The Nernst potential (or equilibrium potential) indicates the voltage for a specific ion, but since the resting potential is affected by multiple ions, we use the Goldman equation to calculate the overall resting potential of the cell. [1]_
 
 2.5 Ion channels
 *****************
 
-Ion channels (also called ion filters or ion-selective channels) are special proteins in nerve cells (neurons) that control the movement of ions across the cell membrane. [4]_ These channels help certain ions - like sodium (|Na+|), potassium (|K+|), calcium (|Ca2+|), or chloride (|Cl-|) - move quickly across the membrane based on concentration gradient (i.e. from high to low concentration). [5]_
+Ion channels (also called ion filters or ion-selective channels) are special proteins that control the movement of ions across the cell membrane. [4]_ These channels help certain ions - like sodium (|Na+|), potassium (|K+|), calcium (|Ca2+|), or chloride (|Cl-|) - move quickly across the membrane based on concentration gradient (i.e. from high to low concentration). [5]_
 
 There are majorly two types of ion channels:
 
-Leak Channels
-=============
-
-These are mostly open, letting ions flow freely based on their concentration gradient.
-
-Voltage-Gated Channels
-======================
-
-These channels open and close in response to changes in the cell membrane potential. They are important for generating and transmitting electrical signals, like action potentials.
+1. **Leak Channels:** These are mostly open, letting ions flow freely based on their concentration gradient.
+2. **Voltage-Gated Channels:** These channels open and close in response to changes in the cell membrane potential. They are important for generating and transmitting electrical signals, like action potentials.
 
 .. todo:: Add graphic for both the channels
 
-Ion channels are very selective, which means they only let certain ions pass through while blocking others. For instance, potassium channels allow only potassium ions (|K+|) to pass through while blocking all other ions. Similarly, sodium channels allow only sodium ions to pass through while blocking all other ions.
+Ion channels are highly selective proteins, meaning they allow only certain ions to pass through while blocking others. For 
+example, potassium channels primarily allow potassium ions (K⁺) to pass, while sodium channels primarily allow sodium ions (Na⁺).
+This selectivity is essential for maintaining proper electrical signaling in cells.
 
-How does this work?
-====================
+**How does this selectivity work?**
 
-You might think that an ion channel could block all positive ions by adding a positive charge to its opening, but this wouldn't work because both |K+| and |Na+| are positively charged. Instead, these ion channels select ions based on their size. Sodium ions are smaller (116 picometers), while potassium ions are a bit larger (152 picometers).
-Still, sodium can pass through sodium ion channels and not potassium channels.
+One might assume that an ion channel could block all positive ions by placing a positive charge at its opening. However, this 
+would not work because many ions that need to pass through the membrane, such as sodium (Na⁺) and potassium (K⁺), are both 
+positively charged. Therefore, ion channels cannot rely solely on charge to distinguish between ions.
 
-What could be the reason? Let's see.
+Another possible explanation could be ion size. The bare sodium ion has a radius of approximately 116 picometers, while the bare potassium
+ion is larger at about 152 picometers. However, in biological fluids ions are not present as bare ions; they are surrounded by 
+water molecules that form a hydration shell due to electrostatic interactions.
 
-In neurons, sodium (|Na+|) and potassium (|K+|) ions are surrounded by a "hydration shell," which refers to the structure of water molecules organized around each ion due to electrostatic interactions. The hydration shell for sodium ions is stronger than potassium ions due to their high charge density (i.e., charge per unit area).
+Sodium ions have a higher charge density than potassium ions, which means they attract water molecules more strongly and hold a 
+tighter hydration shell. As a result, hydrated sodium ions are effectively larger and more tightly bound to water molecules than 
+hydrated potassium ions.
 
-**What happens when both ions try to pass through the sodium ion channel?** [6]_
+Passage through ion channels
+====================================
 
-The arrangement of amino acids in the sodium ion channel favors sodium ions passage but not potassium ions . When both ions come to pass the ion channel along with their hydration shell, the arrangement of amino acids in the sodium ion channel repels and removes the sodium ion from its hydration shell but is unable to remove the potassium ion from its hydration shell. That's why sodium ions only pass through sodium ion channels.
+When an ion approaches an ion channel, it cannot pass through the pore while fully surrounded by its hydration shell. The ion must
+first partially shed these water molecules, a process that requires energy. Ion channels contain a narrow region called the 
+selectivity filter, formed by a specific arrangement of amino acids. The atoms in this region are positioned in such a way that 
+they can replace the water molecules around a particular ion, stabilizing it as it moves through the channel.
 
-Similarly potassium ions only pass through potassium ion channels.
+In sodium channels, the arrangement of amino acids stabilizes sodium ions after they lose part of their hydration shell, allowing 
+Na⁺ to pass efficiently. Potassium ions do not interact with this filter as effectively, making their passage energetically 
+unfavorable.
 
-.. todo:: Add graphic for sodium ion channel
+In contrast, potassium channels have a selectivity filter whose oxygen atoms are spaced at distances that perfectly coordinate 
+potassium ions. This arrangement stabilizes dehydrated K⁺ ions, while sodium ions are too small to interact properly with the 
+filter and therefore cannot pass through efficiently.
 
-.. todo:: Add graphic for potassium ion channel
+Thus, ion channels achieve selectivity not simply by charge or size alone, but through a precise interaction between the ion, its 
+hydration shell, and the amino acids forming the channel’s selectivity filter.
 
-2.6 Sodium potassium pump
+2.6 Sodium-Potassium pump
 **************************
 
-The sodium-potassium pump (|Na+|/|K+| ATPase) is a crucial membrane protein that helps maintain the proper balance of sodium (|Na+|) and potassium (|K+|) ions across the cell membrane, particularly in neurons. [7]_
+The Na⁺/K⁺-ATPase is an antiport pump present in all eukaryotic cells. It transports three Na⁺ ions out of the cell and two K⁺ 
+ions into the cell against their concentration gradients, helping maintain high intracellular K⁺ and low intracellular Na⁺ levels.
 
-It is responsible for the active transport of |Na+| and |K+| ions, which are vital for maintaining the resting potential. This is an energy-dependent process, and the sodium-potassium pump uses energy generated by the hydrolysis of ATP into ADP + Pi to move |Na+| and |K+| ions against their natural concentration gradients (i.e., from high to low concentration). [8]_
+**Structure of the Pump**
+
+The Na⁺/K⁺-ATPase is a heterodimer consisting of a large α subunit (the catalytic unit) and a smaller β subunit. The α subunit 
+contains intracellular binding sites for three Na⁺ ions, ATP, and phosphate, and extracellular binding sites for two K⁺ ions and 
+ouabain. 
+
+**Mechanism of Action**
+
+When three Na⁺ ions and ATP bind on the cytoplasmic side of the α subunit, ATP is hydrolysed to ADP and Pi. The phosphate attaches 
+to an aspartate residue on the α subunit, activating the pump and causing a conformational change. This results in the outward 
+transport of Na⁺ and inward movement of K⁺.
+
+**Electrogenic Nature**
+
+Because the pump moves more positive charges out of the cell (three Na⁺) than it brings in (two K⁺), it is electrogenic, 
+contributing to the negative resting membrane potential. The pump has a coupling ratio of 3:2, meaning that for every three Na⁺ 
+ions pumped out, two K⁺ ions are pumped in.
 
 .. math::
 
@@ -257,14 +350,44 @@ where:
 - ADP is Adenosine diphosphate
 - |Pi| is the phosphate ion 
 
-.. note:: Active Transport is a process that involves the movement of molecules from a region of lower concentration to an area of higher concentration against their natural concentration gradient. [9]_
+.. note:: Active Transport is a process that involves the movement of molecules from a region of lower concentration to an area of higher concentration against their natural concentration gradient. [6]_
 
-Function of the Sodium-Potassium Pump
-======================================
+2.6.1 Functions of the Na⁺/K⁺ ATPase
+==========================================
 
-Typically there is a higher concentration of sodium outside the cell and higher concentration of potassium ions inside the cell.
+1. Cytosolic Ion Concentration
+----------------------------------
 
-With every cycle, the sodium-potassium pump moves 3 |Na+| ions out of the neuron and 2 |K+| ions into the neuron. This results in a net export of positive charge from the neuron, contributing to the negative resting membrane potential. [7]_
+The Na⁺/K⁺ pump prevents sodium ions from accumulating inside the cell and stops potassium ions from leaking out along their 
+concentration gradients. By pumping three Na⁺ out and two K⁺ in, it maintains a high intracellular K⁺ concentration and a low
+intracellular Na⁺ concentration, which is essential for normal cellular function.
+
+2. Regulation of Cell Volume
+----------------------------------
+
+By maintaining the correct ionic balance across the membrane, the pump indirectly controls the movement of water into and out of 
+the cell. This helps preserve the intracellular water content and maintains normal cell volume. When pump activity fails, ions 
+accumulate inside the cell, water follows osmotically, and the cell may swell and eventually rupture.
+
+3. Protein Synthesis
+------------------------------
+
+A high level of intracellular potassium is required for proper ribosomal function and protein synthesis. The Na⁺/K⁺ pump 
+maintains this high K⁺ concentration, making it essential for the initiation and continuation of protein synthesis within the cell.
+
+4. Resting Membrane Potential
+------------------------------------
+
+The Na⁺/K⁺ ATPase contributes to the resting membrane potential by continuously maintaining the ion gradients across the membrane. 
+Additionally, because it pumps out more positive charges (three Na⁺) than it brings in (two K⁺), it creates a slight electrical
+imbalance that helps keep the inside of the cell more negative, thereby supporting the resting membrane potential.
+
+5. Hormone Actions
+--------------------------------
+
+Several hormones exert part of their effects through the Na⁺/K⁺ pump. Hormones such as insulin, thyroid hormones, and aldosterone 
+can increase pump activity. Through this regulation, the pump plays a role in hormonal control of metabolism, ion balance, and
+overall cellular homeostasis.
 
 .. figure:: ../media/sodium-potassium-pump.*
    :align: center
@@ -272,23 +395,63 @@ With every cycle, the sodium-potassium pump moves 3 |Na+| ions out of the neuron
 
    Sodium-Potassium Pump
 
+.. todo:: Add a hand designed sodium potassium pump graphic here
+
 .. note::
-   1. The pump helps maintain the electrochemical gradient essential for the resting potential, typically around -70 mV in neurons. This gradient is crucial for the generation of action potentials. [10]_
+   1. The pump helps maintain the electrochemical gradient essential for the resting potential, typically around -70 mV in neurons. This gradient is crucial for the generation of action potentials. [7]_
    2. The action potential is a rapid, transient change in the electrical potential across a neuron's membrane that allows it to transmit signals along its axon. It is the fundamental mechanism by which neurons communicate with one another and other cells.
 
 .. admonition:: Fun Fact
 
-   The sodium-potassium pump consumes approximately 70% (2/3rd) energy of the nerve cell. [11]_ 
+   The sodium-potassium pump consumes approximately 70% (2/3rd) energy of the nerve cell. [8]_ 
+
+2.6.2 Gibbs-Donnan Effect
+================================
+
+The Gibbs-Donnan effect describes how ions distribute themselves across a semipermeable membrane when some charged particles 
+cannot cross the membrane. It explains why cells develop small electrical differences and osmotic pressure changes. 
+
+1. **Charge Difference:** The cytoplasm contains large negatively charged proteins and phosphates that cannot diffuse out of the
+cell. Because of these trapped negative ions:
+
+a. Positively charged ions (like K⁺) are drawn into the cell to balance the negative charge.
+b. Negatively charged ions (like Cl⁻) are repelled from the cell,
+c. This creates a charge difference across the membrane, contributing to the small negative resting potential.
+
+2. **Osmotic Pressure:** 
+
+a. The intracellular concentration of ions is higher than the extracellular concentration due to the trapped negative ions and the influx of K⁺.
+b. This creates an osmotic gradient that causes water to move into the cell, increasing the cell's volume.
+c. This would normally cause the cell to swell and potentially burst.
+
+Role of sodium-potassium pump
+----------------------------------------
+
+The sodium-potassium pump helps counteract the Gibbs-Donnan effect by actively transporting Na⁺ out of the cell and K⁺ into 
+the cell. This helps maintain the ionic balance and prevents excessive swelling of the cell due to osmotic pressure. By 
+maintaining the proper ion gradients, the pump ensures that the cell remains stable and functional despite the presence of 
+impermeable charged particles.
+
+1. Prevent excessive swelling
+2. Maintain ionic balance
+3. Ensure cell stability and function
 
 2.7 Summary 
 **************
-In this module, we learned how neurons maintain a stable electrical state called the resting potential (about ~70 mV). We reviewed essential electrical concepts-current, voltage, electrostatic forces, and Coulomb’s law-to understand how ions drive membrane voltage. We explored how diffusion and electrostatic forces together establish the membrane potential, and learned how individual ions have their own equilibrium potentials (via the Nernst equation). We also studied the Goldman (GHK) equation, which calculates the overall resting potential based on ion permeabilities.
-We examined ion channels, their selectivity, and how leak channels maintain resting potential, along with the essential role of the sodium-potassium pump, which uses ATP to preserve ionic gradients by pumping 3 Na⁺ out and 2 K⁺ in.
-This module forms the electrical foundation needed to understand:
 
-- Passive membrane properties (Module 3), which determine how signals spread along neurons, and
+This module explains the **resting membrane potential (RMP)**, the stable electrical voltage across a neuron’s membrane when the 
+cell is not actively transmitting signals. The resting potential arises from the **unequal distribution of ions** across the 
+membrane and the **selective permeability of ion channels**, particularly the higher permeability of potassium (K⁺) compared to 
+sodium (Na⁺). Fundamental electrical concepts such as **current, voltage, electrostatic forces, and Coulomb’s law** were reviewed 
+in this module to understand how ions move and generate membrane voltage. This module also introduced the **Nernst equation** for calculating 
+the equilibrium potential of individual ions and the **Goldman-Hodgkin-Katz (GHK) equation**, which explains how multiple ions contribute to 
+the overall membrane potential. Additionally, we examined the roles of **ion channels** and the **sodium-potassium pump**, which 
+maintains ionic gradients essential for neuronal electrical stability.
 
-- Action potentials (Module 4), which are rapid spikes used for long-distance communication.
+Building on this foundation, **Module 3 will explore passive membrane properties**, such as resistance, capacitance, and time 
+constants, which determine how electrical signals spread within neurons. After understanding how signals propagate locally, 
+**Module 4 will introduce the action potential**, the rapid electrical signal that allows neurons to communicate over long 
+distances.
 
 2.8 References
 *********************
@@ -298,9 +461,6 @@ This module forms the electrical foundation needed to understand:
 .. [3] `Hille, Bertil. (2011). Ionic Basis of Resting and Action Potentials <https://www.researchgate.net/publication/229720102_Ionic_Basis_of_Resting_and_Action_Potentials>`_
 .. [4] `Mourot, A., Tochitsky, I., & Kramer, R. H. (2013). Light at the end of the channel: Optical manipulation of intrinsic neuronal excitability with chemical photoswitches. <https://doi.org/10.3389/fnmol.2013.00005>`_
 .. [5] `Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002. Ion Channels and the Electrical Properties of Membranes <https://www.ncbi.nlm.nih.gov/books/NBK26910/>`_
-.. [6] `Kühlbrandt W. Three in a row-how sodium ions cross the channel. EMBO J. 2016 Apr 15;35(8):793-5. doi: 10.15252/embj.201694094. Epub 2016 Mar 21. PMID: 27002160; PMCID: PMC4972134 <https://pmc.ncbi.nlm.nih.gov/articles/PMC4972134/>`_
-.. [7] `Pirahanchi Y, Jessu R, Aeddula NR. Physiology, Sodium Potassium Pump. [Updated 2023 Mar 13]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2024 Jan <https://www.ncbi.nlm.nih.gov/books/NBK537088/>`_
-.. [8] `Glynn, I.M. (1985). The Na+, K+-Transporting Adenosine Triphosphatase. In: Martonosi, A.N. (eds) The Enzymes of Biological Membranes. Springer, Boston, MA <https://doi.org/10.1007/978-1-4684-4601-2_2>`_
-.. [9] `Skou, J.C. (1989). Sodium-Potassium Pump. In: Tosteson, D.C. (eds) Membrane Transport. People and Ideas. Springer, New York, NY <https://doi.org/10.1007/978-1-4614-7516-3_5>`_
-.. [10] `Morth, J., Pedersen, B., Toustrup-Jensen, M. et al. Crystal structure of the sodium-potassium pump. Nature 450, 1043–1049 (2007) <https://doi.org/10.1038/nature06419>`_
-.. [11] `Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002. Carrier Proteins and Active Membrane Transport <https://www.ncbi.nlm.nih.gov/books/NBK26896/>`_
+.. [6] `Skou, J.C. (1989). Sodium-Potassium Pump. In: Tosteson, D.C. (eds) Membrane Transport. People and Ideas. Springer, New York, NY <https://doi.org/10.1007/978-1-4614-7516-3_5>`_
+.. [7] `Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002. Carrier Proteins and Active Membrane Transport <https://www.ncbi.nlm.nih.gov/books/NBK26896/>`_
+.. [8] `Morth, J., Pedersen, B., Toustrup-Jensen, M. et al. Crystal structure of the sodium-potassium pump. Nature 450, 1043–1049 (2007) <https://doi.org/10.1038/nature06419>`_

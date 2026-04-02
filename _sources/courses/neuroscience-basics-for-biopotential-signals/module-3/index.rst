@@ -1,13 +1,13 @@
 .. _neuroscience-basics-for-biopotential-signals-module-3:
 
-Module 3 : Passive Membrane Properties
+Module 3: Passive Membrane Properties
 ########################################
 
-Studying passive membrane properties before understanding action potential is necessary as they influence how signals 
+Studying passive membrane properties before understanding action potentials is important as they influence how signals 
 propagate and decay along neurons, determining how far signals can travel before requiring regeneration. 
 
 3.1 Resistance and Capacitance in membrane  
-*******************************************
+***********************************************
 
 There are two significant electrical properties of neurons that significantly influence how neurons generate and 
 transmit signals. Let us understand each of them one by one.
@@ -15,21 +15,27 @@ transmit signals. Let us understand each of them one by one.
 3.1.1 Resistance
 =================
 
-Resistance is the measure of how much a material opposes the flow of electric current. In the context of neurons, 
+Resistance is a measure of how much a material opposes the flow of electric current. In the context of neurons, 
 it refers to how difficult it is for ions to flow across the membrane.
 
-Types of Resistance in Neurons :
+Types of Resistance in Neurons:
 --------------------------------
 
 1. Membrane Resistance (Rm)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Membrane resistance refers to resistance to the flow of ions across the neuronal membrane. It determines how easily ions can cross the membrane when ion channels open.
 
-**Factors affecting membrane resistance:**
+Factors affecting membrane resistance
+""""""""""""""""""""""""""""""""""""""""""
 
-- Ion Channels: The presence and density of ion channels directly affect membrane resistance. More channels result in lower resistance because they provide additional pathways for ions to flow.
-- Membrane Composition: The lipid bilayer structure and the types of proteins embedded in the membrane influence its overall resistance. A thicker membrane will have higher resistance.
+- **Ion Channels:** The presence and density of ion channels directly affect membrane resistance. More channels result in lower resistance because they provide additional pathways for ions to flow.
+- **Membrane Composition:** The lipid bilayer structure and the types of proteins embedded in the membrane influence its overall resistance. A thicker membrane will have higher resistance.
+- **Membrane surface area:** A larger membrane surface area decreases membrane resistance because it provides more ion channels and pathways for current flow. 
+- **Myelination:** Myelin increases membrane resistance by preventing ion leakage across the membrane.
+- **Temperature:** Higher temperatures can increase ion mobility, which may decrease membrane resistance.
+
+.. todo:: Add a membrane resistance graphic here showing factors affecting
 
 .. note:: A high membrane resistance helps maintain the membrane's resting potential by minimizing the flow of ions across it. 
 
@@ -37,31 +43,35 @@ Membrane resistance refers to resistance to the flow of ions across the neuronal
    :alt: Membrane Resistance
 
 2. Axial Resistance (Ri)
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Axial resistance refers to resistance to the flow of electrical current along the length of the neuron's axon or dendrites. It is influenced by the internal properties of the cytoplasm and the dimensions of the neuron’s axon or dendrites.
 
-**Factors affecting axial resistance:**
+Factors affecting axial resistance
+""""""""""""""""""""""""""""""""""""""""""""""
 
-- Cytoplasmic Conductivity: The concentration of ions and other conductive materials in the cytoplasm affects axial resistance. A higher concentration of conductive ions leads to low axial resistance.
-- Diameter of the Neuron: Larger diameter axons have lower axial resistance because a greater cross-sectional area allows for easier ion flow. This is why larger axons can conduct signals more rapidly.
+- **Cytoplasmic Conductivity:** The concentration of ions and other conductive materials in the cytoplasm affects axial resistance. A higher concentration of conductive ions leads to low axial resistance.
+- **Diameter of the Neuron:** Larger diameter axons have lower axial resistance because a greater cross-sectional area allows for easier ion flow. This is why larger axons can conduct signals more rapidly.
+- **Length of the neuronal process:** Longer axons or dendrites have higher axial resistance because the current has to travel a greater distance, leading to more potential for signal decay.
 
 .. figure:: ../media/axial-resistance.*
    :alt: Axial Resistance
 
+.. todo:: Add a axial resistance graphic here showing factor affecting
+
 .. note:: Axial resistance affects how far a signal can travel along an axon without significant potential loss. Lower axial resistance allows signals to travel farther and faster.
 
-.. todo:: ADD RESISTANCE FORMULA
+.. todo:: Add resistance formula
 
-.. admonition:: CONDUCTANCE: (Additional info section)
+.. admonition:: Conductance
 
    It is the ease with which electric current can flow through a membrane. In the context of neurons, it refers to the ease with which ions can move across the neuronal membrane, meaning a higher conductance indicates a lower resistance, allowing for easier passage of electrical signals through the neuron. 
 
-.. todo:: ADD CONDUCTANCE FORMULA
+.. todo:: Add capacitance formula
 
 
-3.1.2 Capacitance:
-==================
+3.1.2 Capacitance
+=====================
 
 Capacitance is the ability of a system to store electric charge. [1]_
 
@@ -71,10 +81,14 @@ creating and maintaining the membrane potential.
 Factors Affecting Membrane Capacitance:
 ----------------------------------------
 
-- Surface Area: A larger surface area increases capacitance, allowing the membrane to store more charge.
-- Thickness of the Membrane: Thinner membranes generally have higher capacitance because the distance between charges is less.
+- **Surface Area:** A larger surface area increases capacitance, allowing the membrane to store more charge.
+- **Thickness of the Membrane:** Thinner membranes generally have higher capacitance because the distance between charges is less.
+- **Dielectric Properties of the Membrane:** The lipid bilayer of the neuronal membrane acts as a dielectric (insulating layer) between two conductive solutions (inside and outside of the cell). The properties of this dielectric layer influence the capacitance. A higher dielectric constant increases capacitance by allowing the membrane to store more charge.
+- **Myelination:** Myelin sheaths increase the effective thickness of the membrane, which can decrease capacitance and allow for faster signal transmission.
 
 .. todo:: CAPACITOR FORMULA
+
+.. todo:: Add a capacitance graphic here showing factors affecting it
 
 Role in Membrane Potential
 ---------------------------
@@ -122,3 +136,5 @@ Together, these passive properties explain why some signals weaken over distance
 *****************
 
 .. [1] `Bretschneider, F., & De Weille, J. R. (2006). Electricity. In Elsevier eBooks (pp. 1–33). <https://doi.org/10.1016/b978-012370588-4/50060-9>`_
+
+2. https://dl.icdst.org/pdfs/files3/4eefe1a7a1ce94cf7ffb9e98f7ca5084.pdf

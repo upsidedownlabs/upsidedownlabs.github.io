@@ -105,7 +105,7 @@ Step 4: Skin Preparation and Electrodes Placement
    - ``IN–`` (negative): Place on the left temple, just outside the left eyebrow.
    - ``REF`` (reference): Attach on the bony area near the cheek or behind the ear (as in the diagram).
   
-.. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-eog.png
+.. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-eog.*
     :align: center
     :alt: EOG Placement
 

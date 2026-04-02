@@ -101,7 +101,7 @@ Step 4: Skin Preparation and Electrodes Placement
    - ``IN–`` (negative): Left side of the chest , just under the collarbone, near to positive electrode.
    - ``REF`` (reference): Right side of chest, far from the heart (over the ribs)
 
-.. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-ecg.png
+.. figure:: ../../../guides/usage-guides/skin-preparation/media/skin-prep-ecg.*
     :align: center
     :alt: ECG Placement
 

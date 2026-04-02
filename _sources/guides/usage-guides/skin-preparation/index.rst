@@ -105,7 +105,7 @@ Step 5: Measuring the signals
 
 Now you can either use gel electrodes or BioAmp bands for the signal recording.
 
-Using gel electrodes
+Using gel electrodes 
 ----------------------
 
 Connect the BioAmp cable to gel electrodes, peel the plastic backing from electrodes and place the IN+, IN-, REF cables according to your specific biopotential recording.

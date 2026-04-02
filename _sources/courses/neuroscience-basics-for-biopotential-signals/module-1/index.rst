@@ -1,12 +1,12 @@
 .. _neuroscience-basics-for-biopotential-signals-module-1:
 
 Module 1: Human Nervous System
-###############################
+######################################
 
 1.1 Introduction
 ******************
 
-The Human nervous system consists of a brain, spinal cord, nerves and is one of the most complex and vital systems 
+The Human Nervous System consists of a brain, spinal cord, nerves and is one of the most complex and vital systems 
 in the body, responsible for receiving, transmitting, and processing information. It acts as the body’s command & control center and 
 enables communication between different parts of the body, allowing organisms to interact with their environment.
 
@@ -27,7 +27,7 @@ It is divided into two major parts based on structure (anatomy):
 
     An overview of the nervous system
 
-**This overview (above) is a simplified representation and does not show the full nervous system. You may refer to advanced textbook for further explanation.**
+**This overview (above) is a simplified representation and does not show the full nervous system. You may refer to advanced textbooks for further explanation.**
 
 .. admonition:: Fun Fact 
 
@@ -48,7 +48,7 @@ It is divided into two major parts based on structure (anatomy):
 1.2 Central Nervous System (CNS)
 ********************************
 
-The central nervous system (CNS) is the body’s command center and is made up of your brain and spinal cord. The brain is protected by the cranium (also known as skull) while your vertebrae protects your spinal cord.
+The Central Nervous System (CNS) is the body’s command center and is made up of your brain and spinal cord. The brain is protected by the cranium (also known as skull) while your vertebrae protect your spinal cord.
 
 1.2.1 The Brain(Encephalon)
 ===============================
@@ -65,7 +65,7 @@ The brain is the most complex organ which communicates with the body by sending 
 
 .. admonition:: Fun Fact 
 
-    **Our brain has no pain receptors that's why neurosurgeons can operate on brain tissue while the patients are awake. Still, headaches can occur because of the surrounding blood vessels,nerves and muscles which have pain receptors in it.**
+    **Our brain has no pain receptors that's why neurosurgeons can operate on brain tissue while the patients are awake. Still, headaches can occur because of the surrounding blood vessels, nerves and muscles which have pain receptors in it.**
 
     .. figure:: ../media/mod-1-ff-no-pain-brain-surgery.*
         :align: center
@@ -175,7 +175,7 @@ c. **Medulla oblongata:** At the bottom of the brainstem, the medulla is where t
         :align: center
         :alt: Human nervous system fun fact
 
-.. admonition:: Blood Brain Barrier (BBB) 
+.. admonition:: Blood-Brain Barrier (BBB) 
 
  - It is a highly selective, protective barrier that separates the circulating blood from the brain and fluid in the central nervous system (CNS).
  - It protects the brain from toxins, pathogens, and fluctuations in blood composition (e.g., hormones, neurotransmitters, potassium).
@@ -194,7 +194,7 @@ c. **Medulla oblongata:** At the bottom of the brainstem, the medulla is where t
 1.2.2 The Spinal Cord
 ======================
 
-The spinal cord begins at the base of the medulla and passes through a large opening(foramen magnum) at the bottom of the skull. Supported by the vertebrae, it serves as a communication highway between the brain and the rest of the body. This long, tubular structure transmits sensory information from the body to the brain and sends motor commands from the brain to the body. Additionally, it is responsible for reflex actions, which are quick and involuntary responses to stimuli.
+The spinal cord begins at the base of the medulla and passes through a large opening (foramen magnum) at the bottom of the skull. Supported by the vertebrae, it serves as a communication highway between the brain and the rest of the body. This long, tubular structure transmits sensory information from the body to the brain and sends motor commands from the brain to the body. Additionally, it is responsible for reflex actions, which are quick and involuntary responses to stimuli.
 
 .. figure:: ../media/spinal-cord.*
     :align: center
@@ -217,7 +217,7 @@ The Peripheral Nervous System connects the Central Nervous System to the rest of
 1.3.1 Somatic Nervous System (SNS)
 =====================================
 
-The somatic nervous system controls voluntary movements and transmits sensory information to and from the central nervous system. It consists:
+The Somatic Nervous System controls voluntary movements and transmits sensory information to and from the central nervous system. It consists of:
 
 a. **Sensory Neurons (Afferent Neurons):** These neurons carry signals from sensory receptors (skin, muscles, joints) to the CNS, allowing us to perceive sensations like pain, temperature, and touch.
 b. **Motor Neurons (Efferent Neurons):** These neurons transmit commands from the CNS to the skeletal muscles, enabling voluntary movement such as walking, talking, and picking up objects.
@@ -231,7 +231,7 @@ b. **Motor Neurons (Efferent Neurons):** These neurons transmit commands from th
 1.3.2 Autonomic Nervous System (ANS)
 ======================================
 
-The autonomic nervous system controls involuntary physiological processes, such as heart rate, digestion, and respiratory rate. It operates without conscious control and is divided into two main parts:
+The Autonomic Nervous System controls involuntary physiological processes, such as heart rate, digestion, and respiratory rate. It operates without conscious control and is divided into two main parts:
 
 a. **Sympathetic Nervous System:** Known as the "fight or flight" system, it prepares the body for stress or emergency situations by increasing heart rate, dilating pupils, releasing adrenaline, and redirecting blood flow to muscles.
 b. **Parasympathetic Nervous System:** It does the opposite of the sympathetic nervous system. Often referred to as the "rest and digest" system, it promotes relaxation by slowing the heart rate, promoting digestion, and conserving energy after a stressful event.
@@ -239,7 +239,7 @@ b. **Parasympathetic Nervous System:** It does the opposite of the sympathetic n
 .. admonition:: Enteric Nervous System (ENS)
 
     - It is considered mostly a part of the autonomic nervous system along with sympathetic and parasympathetic systems, but in some cases, it is also considered as a separate division of the nervous system.
-    - It is a complex network of neurons that governs the function of the gastrointestinal system, thats why it is often called the **gut brain** or **second brain**. It can operate independently of the brain and spinal cord, but it also communicates with the CNS through the sympathetic and parasympathetic nervous systems.  
+    - It is a complex network of neurons that governs the function of the gastrointestinal system, that's why it is often called the **gut brain** or **second brain**. It can operate independently of the brain and spinal cord, but it also communicates with the CNS through the sympathetic and parasympathetic nervous systems.  
     - It controls various functions of the digestive system, including motility (movement of food through the digestive tract), secretion of digestive enzymes, blood flow to the gut, and immune responses in the gastrointestinal tract.
     - The ENS contains around 100 million neurons, which is more than the spinal cord, and it can function autonomously, meaning it can regulate digestive processes without input from the brain.
     - **Clinical importance**: The ENS is involved in various gastrointestinal disorders, such as irritable bowel syndrome (IBS) and inflammatory bowel disease (IBD), and it is also being studied for its potential role in mental health conditions like anxiety and depression due to the gut-brain connection.
@@ -269,7 +269,7 @@ Neurons are the building blocks of the nervous system and are responsible for re
         :align: center
         :alt: Human nervous system fun fact
 
-1.4.1 Structure of neuron
+1.4.1 Structure of Neuron
 ============================
 
 .. figure:: ../media/parts-of-a-neuron.*
@@ -278,16 +278,16 @@ Neurons are the building blocks of the nervous system and are responsible for re
 
     Structure of a neuron
 
-- **Cell Body (Soma):** The soma, or cell body, is the core of the neuron which maintains the cell and to keep the neuron functioning efficiently. It is enclosed by a membrane that protects it and allows it to interact with its immediate surroundings
+- **Cell Body (Soma):** The soma, or cell body, is the core of the neuron which maintains the cell and keeps the neuron functioning efficiently. It is enclosed by a membrane that protects it and allows it to interact with its immediate surroundings.
 - **Nucleus:** Nucleus contains the genetic material (chromosomes) of the neuron cell.
 - **Dendrites:** Dendrites are the tree root shaped part of the neuron which is responsible for receiving information from other neurons and to transmit electrical signals to the cell body.
 - **Axons:** Axons are the tail-like structure of the neuron which are responsible for transmitting electrical impulses (action potentials) away from the cell body toward other neurons.
 - **Myelin sheath:** Myelin sheath is a fatty layer that insulates the axon, speeding up signal transmission. 
 - **Synapse:** Neurons do not touch each other, but where one neuron comes close to another neuron, a synapse is formed between the two which acts as a junction between two neurons where neurotransmitters are released to transmit signals to the next neuron.
 
-.. note:: There are axon-less neurons too, where the signal is transmitted and received both by the dendrites.
+.. note:: There are axonless neurons too, where the signal is transmitted and received both by the dendrites.
 
-1.4.2 Types of neurons
+1.4.2 Types of Neurons
 =========================
 
 Based on Function
@@ -351,7 +351,7 @@ Glial cells (or neuroglia) are non-neuronal cells of the nervous system which pr
 
     Types of glial cells based on location
 
-1.5.1.1 In Central nervous system
+1.5.1.1 In Central Nervous System
 -----------------------------------------
 
 1. Microglia
@@ -385,24 +385,24 @@ b. Oligodendrocytes
 - One oligodendrocyte can myelinate many axons
 - Increase speed of action potential conduction (saltatory conduction)
 
-c. EPENDYMAL CELLS
+c. Ependymal cells
 """"""""""""""""""""""""""
 
 - Line the ventricles of the brain and central canal of spinal cord
 - Produce and circulate cerebrospinal fluid (CSF)
 - Part of the choroid plexus
 
-1.5.1.2 In Peripheral nervous system
+1.5.1.2 In Peripheral Nervous System
 ----------------------------------------
 
-1. SCHWANN CELLS
+1. Schwann cells
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Similar to oligodendrocyte
 - Produce myelin in the peripheral nervous system 
 - One Schwann cell myelinates only one segment of a single axon 
 
-2. SATELLITE CELLS
+2. Satellite cells
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Satellite cells in the PNS are glial cells that surround neuronal cell bodies in ganglia and regulate their chemical environment, providing support, protection, and metabolic assistance.
@@ -434,11 +434,14 @@ c. EPENDYMAL CELLS
 1.6 Summary
 ******************
 
-In this module, we learned the basic structure and organization of the human nervous system. We studied the CNS (brain and spinal cord) and PNS (somatic and autonomic divisions) and how they work together to control the body.
-We explored neurons - their types (sensory, motor, interneurons) and structure (dendrites, soma, axon, myelin, synapse) - as the primary cells that transmit electrical signals.
+This module introduces the basic structure and components of the human nervous system. It explains how the nervous system is 
+divided into the **Central Nervous System (CNS)**, which includes the brain and spinal cord, and the **Peripheral Nervous System 
+(PNS)**, which connects the CNS to the rest of the body. The module also describes **neurons**, the specialized cells responsible 
+for transmitting electrical signals, and **glial cells**, which support and maintain neuronal function.
 
-We also learned about glial cells, the supporting cells of the nervous system, including astrocytes, oligodendrocytes, Schwann cells, microglia, ependymal cells, and satellite cells, and their essential roles in support, protection, and myelination.
-This module builds the foundation needed to understand how neurons create electrical signals, which will be covered in the next module on Resting Potential.
+Understanding the structure and roles of these cells provides the foundation for exploring how neurons generate electrical 
+signals. In the next module, we examine the **resting membrane potential**, a fundamental electrical property of neurons that 
+enables them to produce and transmit signals throughout the nervous system.
 
 1.7 References 
 *******************
