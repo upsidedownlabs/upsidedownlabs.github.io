@@ -8,8 +8,8 @@ membrane, which is critical for transmitting signals down an axon. It is the fun
 neurons communicate with one another and other cells. Another word used for the action potential is **spike**. 
 In this module, we will study the phases, mechanisms, and factors influencing the propagation of the action potential. [1]_
 
-4.1 Voltage-Gated Ion Channels 
-*******************************
+4.1 Voltage-Gated Ion Channels [1]_
+*****************************************
 
 .. todo:: Add a graphic for voltage gated ion channel showing all 3 states(inactivated,closed and open)
 
@@ -65,14 +65,14 @@ The latent period is the short time interval between the application of a stimul
 
 The action potential consists of several distinct phases, each characterized by specific changes in membrane potential and ion movement : 
 
-Resting Phase 
-===============
+Resting Phase [1]_
+=======================
 
 At the resting phase, the neuron has a resting potential of around -70 mV, and the voltage-gated sodium and 
 potassium channels are closed.
 
 
-Depolarization Phase (Rising Phase) 
+Depolarization Phase (Rising Phase) [1]_
 ===========================================
 
 1. Depolarization occurs due to opening of voltage-gated Na⁺ channels, which causes rapid influx of Na⁺ ions into the neuron.
@@ -94,7 +94,7 @@ Depolarization Phase (Rising Phase)
   3. After the membrane potential crosses 0 mV, the inside of the cell becomes positive, which reduces further Na⁺ entry due to electrical repulsion.
   4. During one action potential, approximately 20,000 Na⁺ ions enter the neuron.
 
-Repolarization Phase (Falling Phase) 
+Repolarization Phase (Falling Phase) [1]_
 =============================================
 
 - Repolarization occurs due to opening of voltage-gated K⁺ channels, which causes efflux of potassium ions (K⁺ ) from the neuron.
@@ -208,7 +208,7 @@ b. **Smaller Diameter:** Axons with smaller diameters have higher internal resis
 =================================
 
 1. Action potentials propagate in one direction, from the axon hillock toward the axon terminal.
-2. In sensory neurons, action potentials can also propagate from the peripheral sensory endings toward the cell body and then down the axon to the central nervous system. This is called anterograde conduction.
+2. In sensory neurons, action potentials can also propagate from the peripheral sensory endings toward the cell body and then down the axon to the central nervous system. This is called orthodromic conduction.
 3. In motor neurons, action potentials can propagate from the cell body toward the axon terminal.
 4. The refractory period (discussed in the next section) ensures that action potentials do not reverse direction and that the signal travels efficiently along the axon.
 5. In some cases, such as in certain types of neurons or under pathological conditions, action potentials can propagate in the reverse direction (antidromic conduction), but this is not the normal mode of signal transmission.
@@ -262,8 +262,8 @@ action potential, but only if the stimulus is stronger than normal.
 4.6 Additional Info Section 
 *********************************
 
-4.6.1 Tetrodotoxin (TTX) and its Effect on Action Potential
-==============================================================
+4.6.1 Tetrodotoxin (TTX) and its Effect on Action Potential [2]_
+=======================================================================
 
 Tetrodotoxin (TTX) is a potent neurotoxin known for blocking nerve function, leading to paralysis and potentially 
 death. It is found in certain animals, particularly pufferfish (fugu), but also in some other marine organisms, 
@@ -292,7 +292,7 @@ nerve signaling.
 
 .. admonition:: Important Fact
 
-    Pufferfish is eaten for its subtle flavor and the tingling, numbing sensation that the TTX causes when eaten in small doses. It is considered as a delicacy in some cultures. [2]_
+    Pufferfish is eaten for its subtle flavor and the tingling, numbing sensation that the TTX causes when eaten in small doses. It is considered as a delicacy in some cultures.
 
 4.6.2 Local Anesthetics
 ===============================
@@ -318,17 +318,18 @@ cell function.
 4.7 Summary
 ****************
 
-This module explains how neurons generate **action potentials**, the rapid electrical signals that allow long-distance 
-communication in the nervous system. Action potentials arise from the coordinated opening and closing of **voltage-gated 
-sodium (Na⁺) and potassium (K⁺) channels**, producing distinct phases including depolarization, repolarization, and 
-hyperpolarization. The module also describes how these signals propagate along axons without losing strength, including 
-**continuous conduction in unmyelinated axons** and **saltatory conduction in myelinated axons**, which greatly increases 
-conduction speed. In addition, the **absolute and relative refractory periods** ensure that signals travel in one direction 
-and regulate the timing of neuronal firing.
+Module 4 describes the action potential, a rapid, all-or-none electrical change in membrane potential (about –70 mV to +35 
+mV) generated by the coordinated activity of voltage-gated Na⁺ and K⁺ channels. It begins when a stimulus reaches the 
+threshold (~–55 mV), triggering massive Na⁺ influx (depolarization), followed by Na⁺ channel inactivation and K⁺ efflux 
+(repolarization), and a brief hyperpolarization due to prolonged K⁺ channel opening before returning to resting potential 
+via the Na⁺/K⁺ pump. The action potential is initiated at the axon hillock and propagates along the axon by continuous 
+regeneration, maintaining constant amplitude; conduction is faster in myelinated fibers due to saltatory conduction between
+nodes of Ranvier and is influenced by axon diameter and myelination. The refractory periods (absolute and relative) prevent
+backward propagation and regulate firing frequency.
 
-While action potentials allow signals to travel along a neuron, communication between neurons occurs at specialized junctions 
-called **synapses**. In **Module 5**, we will study how electrical signals arriving at the axon terminal trigger the release 
-of **neurotransmitters**, enabling neurons to transmit information to other neurons, muscles, or glands.
+This links to Module 5 (synapse), where the arriving action potential at the axon terminal opens Ca²⁺ channels, leading to 
+neurotransmitter release and transmission of the signal to the next neuron, thus connecting electrical conduction within a 
+neuron to chemical communication between neurons.
 
 4.8 References 
 ***************

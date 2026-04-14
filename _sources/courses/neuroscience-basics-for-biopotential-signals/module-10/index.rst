@@ -149,6 +149,9 @@ We offer our own **open source** :ref:`Chords <upsidedownlabs_software_home>` so
 
    Calibration is required to relate EOG voltage changes to eye movement angles. During calibration, subjects are asked to look at targets positioned at known angles (e.g., ±10° or ±20°). The recorded voltage changes are then mapped to eye movement direction and magnitude. This allows for accurate interpretation of EOG signals in terms of eye position and movement.
 
+10.4 Applications of EOG
+*******************************
+
 10.4.1 Clinical applications 
 ======================================
 
@@ -281,10 +284,10 @@ Electrooculography is a valuable non invasive technique for recording eye moveme
 
 .. [1] `Heckenlively JR & Arden GB – Principles and Practice of Clinical Electrophysiology of Vision, Adler’s Physiology of the Eye (11th / 12th Edition), Yanoff & Duker – Ophthalmology`
 .. [2] `Banerjee A., Datta S., Pal M., Konar A., Tibarewala D. N., Janarthanan R. "Classifying electrooculogram to detect directional eye movements." Procedia Technology, Vol. 10 (2013), pp. 67–75. <https://doi.org/10.1016/j.protcy.2013.12.338>`_
-.. [3] `The short wavelength electro-oculogram (SW-EOG) in best disease: preliminary results <https://pubmed.ncbi.nlm.nih.gov/41629643/>`_
+.. [3] `Padhy SK, Constable PA. The short wavelength electro-oculogram (SW-EOG) in best disease: preliminary results. Doc Ophthalmol. 2026 Feb 2. doi: 10.1007/s10633-026-10081-2. Epub ahead of print. PMID: 41629643. <https://pubmed.ncbi.nlm.nih.gov/41629643/>`_
 .. [4] `A quantitative assessment of EOG eye tracking during free viewing in sighted and in congenitally blind <https://www.sciencedirect.com/science/article/pii/S0006899325003555>`_
-.. [5] `Electro-oculography-based detection of sleep-wake in sleep apnea patients <https://pubmed.ncbi.nlm.nih.gov/25269754/>`_
-.. [6] `Feasibility of Using Electrooculography-Based Eye-Trackers for Neuromarketing Applications <https://ieeexplore.ieee.org/abstract/document/9931738>`_
-.. [7] `Electrooculugram based Communication System for People with Locked-in-Syndrome <https://ieeexplore.ieee.org/abstract/document/9179323>`_
-.. [8] `Design and Development of an EOG-based System to Control Electric Wheelchair for People Suffering from Quadriplegia or Quadriparesis <https://ieeexplore.ieee.org/abstract/document/8644378>`_
-.. [9] `Development of vehicle driver drowsiness detection system using electrooculogram (EOG) <https://ieeexplore.ieee.org/abstract/document/4977181>`_
+.. [5] `Virkkala J, Toppila J, Maasilta P, Bachour A. Electro-oculography-based detection of sleep-wake in sleep apnea patients. Sleep Breath. 2015 Sep;19(3):785-9. doi: 10.1007/s11325-014-1060-3. Epub 2014 Oct 1. PMID: 25269754. <https://pubmed.ncbi.nlm.nih.gov/25269754/>`_
+.. [6] `J. Ha, K. -M. Choi and C. -H. Im, "Feasibility of Using Electrooculography-Based Eye-Trackers for Neuromarketing Applications," in IEEE Transactions on Instrumentation and Measurement, vol. 71, pp. 1-10, 2022, Art no. 6503310, doi: 10.1109/TIM.2022.3217849. <https://ieeexplore.ieee.org/abstract/document/9931738>`_
+.. [7] `S. Aziz, S. Ibraheem, A. Malik, F. Aamir, M. U. Khan and U. Shehzad, "Electrooculugram based Communication System for People with Locked-in-Syndrome," 2020 International Conference on Electrical, Communication, and Computer Engineering (ICECCE), Istanbul, Turkey, 2020, pp. 1-6, doi: 10.1109/ICECCE49384.2020.9179323. <https://ieeexplore.ieee.org/abstract/document/9179323>`_
+.. [8] `M. F. Bhuyain, M. A. -U. Kabir Shawon, N. Sakib, T. Faruk, M. K. Islam and K. M. Salim, "Design and Development of an EOG-based System to Control Electric Wheelchair for People Suffering from Quadriplegia or Quadriparesis," 2019 International Conference on Robotics,Electrical and Signal Processing Techniques (ICREST), Dhaka, Bangladesh, 2019, pp. 460-465, doi: 10.1109/ICREST.2019.8644378. <https://ieeexplore.ieee.org/abstract/document/8644378>`_
+.. [9] `Thum Chia Chieh, M. M. Mustafa, A. Hussain, S. F. Hendi and B. Y. Majlis, "Development of vehicle driver drowsiness detection system using electrooculogram (EOG)," 2005 1st International Conference on Computers, Communications, & Signal Processing with Special Track on Biomedical Engineering, Kuala Lumpur, Malaysia, 2005, pp. 165-168, doi: 10.1109/CCSP.2005.4977181. <https://ieeexplore.ieee.org/abstract/document/4977181>`_

@@ -244,7 +244,7 @@ Equilibrium Potentials for major ions: [1]_
 - |K+|: Approximately -90 mV (when |K+| has an intracellular concentration of 120 mM and an extracellular concentration of 4 mM)
 - |Na+|: Approximately +60 mV (when |Na+| has an intracellular concentration of 14 mM and an extracellular concentration of 140 mM)
 
-2.4 Goldman-Hodgkin-Katz Equation [3]_
+2.4 Goldman-Hodgkin-Katz Equation [2]_
 ********************************************
 
 The Goldman equation, often referred to as the GHK equation, calculates the resting potential of a cell based on the permeability and concentrations of multiple ions. It accounts for the relative contributions of different ions to the resting potential. The equation is as follows:
@@ -274,7 +274,7 @@ Ion channels (also called ion filters or ion-selective channels) are special pro
 
 There are majorly two types of ion channels:
 
-1. **Leak Channels:** These are mostly open, letting ions flow freely based on their concentration gradient.
+1. **Leak Channels:** These are always open, letting ions flow freely based on their concentration gradient.
 2. **Voltage-Gated Channels:** These channels open and close in response to changes in the cell membrane potential. They are important for generating and transmitting electrical signals, like action potentials.
 
 .. todo:: Add graphic for both the channels
@@ -283,7 +283,7 @@ Ion channels are highly selective proteins, meaning they allow only certain ions
 example, potassium channels primarily allow potassium ions (K⁺) to pass, while sodium channels primarily allow sodium ions (Na⁺).
 This selectivity is essential for maintaining proper electrical signaling in cells.
 
-**How does this selectivity work?**
+**How does this selectivity work?** [3]_
 
 One might assume that an ion channel could block all positive ions by placing a positive charge at its opening. However, this 
 would not work because many ions that need to pass through the membrane, such as sodium (Na⁺) and potassium (K⁺), are both 
@@ -316,8 +316,8 @@ filter and therefore cannot pass through efficiently.
 Thus, ion channels achieve selectivity not simply by charge or size alone, but through a precise interaction between the ion, its 
 hydration shell, and the amino acids forming the channel’s selectivity filter.
 
-2.6 Sodium-Potassium pump
-**************************
+2.6 Sodium-Potassium pump [9]_
+**************************************
 
 The Na⁺/K⁺-ATPase is an antiport pump present in all eukaryotic cells. It transports three Na⁺ ions out of the cell and two K⁺ 
 ions into the cell against their concentration gradients, helping maintain high intracellular K⁺ and low intracellular Na⁺ levels.
@@ -405,8 +405,8 @@ overall cellular homeostasis.
 
    The sodium-potassium pump consumes approximately 70% (2/3rd) energy of the nerve cell. [8]_ 
 
-2.6.2 Gibbs-Donnan Effect
-================================
+2.6.2 Gibbs-Donnan Effect [10]_
+====================================
 
 The Gibbs-Donnan effect describes how ions distribute themselves across a semipermeable membrane when some charged particles 
 cannot cross the membrane. It explains why cells develop small electrical differences and osmotic pressure changes. 
@@ -457,10 +457,13 @@ distances.
 *********************
 
 .. [1] `Chrysafides SM, Bordes SJ, Sharma S. Physiology, Resting Potential. In: StatPearls. StatPearls Publishing, Treasure Island (FL); 2023. PMID: 30855922 <https://europepmc.org/article/NBK/nbk538338#article-28427.r1>`_
-.. [2] `Veech RL, Kashiwaya Y, King MT. The resting membrane potential of cells are measures of electrical work, not of ionic currents. Integr Physiol Behav Sci. 1995 Sep-Dec;30(4):283-307 <https://pubmed.ncbi.nlm.nih.gov/8788226>`_
-.. [3] `Hille, Bertil. (2011). Ionic Basis of Resting and Action Potentials <https://www.researchgate.net/publication/229720102_Ionic_Basis_of_Resting_and_Action_Potentials>`_
+.. [2] https://ghk.academic.csusb.edu/the-ghk-equation-eqauilibrium-potentials-and-membrane-potentials/
+
+.. [3] `Roux B. Ion channels and ion selectivity. Essays Biochem. 2017;61(2):201-209. Published 2017 May 9. <https://doi.org/10.1042/EBC20160074>`_
 .. [4] `Mourot, A., Tochitsky, I., & Kramer, R. H. (2013). Light at the end of the channel: Optical manipulation of intrinsic neuronal excitability with chemical photoswitches. <https://doi.org/10.3389/fnmol.2013.00005>`_
 .. [5] `Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002. Ion Channels and the Electrical Properties of Membranes <https://www.ncbi.nlm.nih.gov/books/NBK26910/>`_
 .. [6] `Skou, J.C. (1989). Sodium-Potassium Pump. In: Tosteson, D.C. (eds) Membrane Transport. People and Ideas. Springer, New York, NY <https://doi.org/10.1007/978-1-4614-7516-3_5>`_
 .. [7] `Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002. Carrier Proteins and Active Membrane Transport <https://www.ncbi.nlm.nih.gov/books/NBK26896/>`_
 .. [8] `Morth, J., Pedersen, B., Toustrup-Jensen, M. et al. Crystal structure of the sodium-potassium pump. Nature 450, 1043–1049 (2007) <https://doi.org/10.1038/nature06419>`_
+.. [9] `Pirahanchi Y, Jessu R, Aeddula NR. Physiology, Sodium Potassium Pump. [Updated 2023 Mar 13]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. <https://www.ncbi.nlm.nih.gov/books/NBK537088/>`_
+.. [10] https://derangedphysiology.com/main/cicm-primary-exam/cellular-physiology/Chapter-121/gibbs-donnan-effect

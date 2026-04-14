@@ -89,7 +89,7 @@ If you want to know the 10-20 system in detail , kindly refer to this section : 
 
 In some advanced setups, additional electrodes are placed for more detailed spatial information. This can involve 64, 128, or even 256 electrodes.
 
-9.4.2 Characteristics of Different EEG Waves Types [11]_
+9.4.2 Characteristics of Different EEG Waves Types [1]_
 ============================================================
 
 1. **Delta waves**
@@ -286,7 +286,7 @@ EEG is a non-invasive technique that records the brain’s electrical activity u
 9.9 References
 ************************
 
-.. [1] `Nayak CS, Anilkumar AC. EEG Normal Waveforms. [Updated 2025 Aug 3]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2025 Jan-. <https://www.ncbi.nlm.nih.gov/books/NBK539805/>`_
+.. [1] `Nayak CS, Anilkumar AC. Normal EEG Waveforms. [Updated 2025 Aug 3]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. <https://www.ncbi.nlm.nih.gov/books/NBK539805/>`_
 .. [2] `Britton JW, Frey LC, Hopp JLet al., authors; St. Louis EK, Frey LC, editors. Electroencephalography (EEG): An Introductory Text and Atlas of Normal and Abnormal Findings in Adults, Children, and Infants [Internet]. Chicago: American Epilepsy Society; 2016. EEG in the Epilepsies. <https://www.ncbi.nlm.nih.gov/books/NBK390347/>`_    
 .. [3] `Nayak CS, Anilkumar AC. EEG Normal Sleep. [Updated 2023 May 23]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2025 Jan-. <https://www.ncbi.nlm.nih.gov/books/NBK537023/>`_ 
 .. [4] `Szurhaj W, Lamblin MD, Kaminska A, Sediri H; Société de Neurophysiologie Clinique de Langue Française. EEG guidelines in the diagnosis of brain death. Neurophysiol Clin. 2015 Mar;45(1):97-104. doi: 10.1016/j.neucli.2014.11.005. Epub 2015 Jan 14. PMID: 25687591. <https://pubmed.ncbi.nlm.nih.gov/27303609/>`_  
@@ -296,4 +296,3 @@ EEG is a non-invasive technique that records the brain’s electrical activity u
 .. [8] `Marzbani H, Marateb HR, Mansourian M. Neurofeedback: A Comprehensive Review on System Design, Methodology and Clinical Applications. Basic Clin Neurosci. 2016;7(2):143-158. doi:10.15412/J.BCN.03070208 <https://pmc.ncbi.nlm.nih.gov/articles/PMC4892319/>`_
 .. [9] https://www.researchgate.net/publication/41387051_Feature_Selection_Methods_on_Distributed_Linear_Inverse_Solutions_for_a_Non-Invasive_Brain-Machine_Interface
 .. [10] `Brain development and aging timeline <https://stories.uq.edu.au/the-brain/2022/timeline-of-brain-development/index.html>`_
-.. [11] `Normal EEG Waveforms <https://www.ncbi.nlm.nih.gov/books/NBK539805/>`_

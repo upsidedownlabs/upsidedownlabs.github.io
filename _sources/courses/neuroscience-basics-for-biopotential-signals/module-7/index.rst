@@ -37,7 +37,7 @@ about the function of the **neuromuscular junction (NMJ)**, the site where nerve
 does not directly measure the activity at the NMJ, it can provide indirect insights into the functioning of this critical site
 through the electrical activity it detects in muscles. 
 
-**EMG frequency range**: The EMG signal ranges from **10 to 500 Hz** in frequency, but most of its useful energy is concentrated 
+**EMG frequency range**: The EMG signal ranges from **0 to 500 Hz** in frequency, but most of its useful energy is concentrated 
 between **50 and 150 Hz** [1]_
 
 7.2 Basic principle 
@@ -128,7 +128,7 @@ only with 5 V so you should use Arduino UNO.
 7.4.4 Software for Signal Processing
 ==========================================
 
-We offer our own **open source** :ref:`Chords <upsidedownlabs_software_home>` software suite, featuring tools for signal visualization, data recording (with easy save and download options), time-based plotting, and a host of other benefits—such as analyzing signal frequencies and bandpower.
+We offer our own **open source** :ref:`Chords <upsidedownlabs_software_home>` software suite, featuring tools for signal visualization, data recording (with easy save and download options), time-based plotting, and a host of other benefits such as analyzing signal frequencies and bandpower.
 
 7.5 Applications of sEMG
 ************************************
@@ -319,10 +319,10 @@ In this module, we studied the basics of EMG, its terminology, and focused on Su
 
 .. [1] https://www.delsys.com/downloads/TUTORIAL/semg-detection-and-recording.pdf
 .. [2] `Recent progress in the diagnostic use of surface EMG for neurological diseases <https://www.sciencedirect.com/science/article/abs/pii/S1050641100000201>`_
-.. [3] `Assessment of Muscles Fatigue Based on Surface EMG Signals Using Machine Learning and Statistical Approaches: A Review <https://iopscience.iop.org/article/10.1088/1757-899X/705/1/012010/meta>`_
-.. [4] `EMG biofeedback for the recovery of motor function after stroke <https://pmc.ncbi.nlm.nih.gov/articles/PMC6464966/>`_
-.. [5] `Sport Biomechanics Applications Using Inertial, Force, and EMG Sensors: A Literature Overview <https://pmc.ncbi.nlm.nih.gov/articles/PMC7330631/>`_
-.. [6] `Functional evaluation of a real-time EMG controlled prosthetic hand <https://pmc.ncbi.nlm.nih.gov/articles/PMC12034578/>`_
-.. [7] `An EMG-driven exoskeleton hand robotic training device on chronic stroke subjects: task training system for stroke rehabilitation <https://pubmed.ncbi.nlm.nih.gov/22275545/>`_ 
-.. [8] `Evaluating the Feasibility of EMG-Based Human–Machine Interfaces for Driving <https://pmc.ncbi.nlm.nih.gov/articles/PMC12698871/>`_
+.. [3] `Hayder A. Yousif et al 2019 IOP Conf. Ser.: Mater. Sci. Eng. 705 012010 DOI 10.1088/1757-899X/705/1/012010 <https://iopscience.iop.org/article/10.1088/1757-899X/705/1/012010/meta>`_
+.. [4] `Woodford H, Price C. EMG biofeedback for the recovery of motor function after stroke. Cochrane Database Syst Rev. 2007;2007(2):CD004585. Published 2007 Apr 18. doi:10.1002/14651858.CD004585.pub2 <https://pmc.ncbi.nlm.nih.gov/articles/PMC6464966/>`_
+.. [5] `Taborri J, Keogh J, Kos A, et al. Sport Biomechanics Applications Using Inertial, Force, and EMG Sensors: A Literature Overview. Appl Bionics Biomech. 2020;2020:2041549. Published 2020 Jun 23. doi:10.1155/2020/2041549 <https://pmc.ncbi.nlm.nih.gov/articles/PMC7330631/>`_
+.. [6] `Kalita AJ, Chanu MP, Kakoty NM, Vinjamuri RK, Borah S. Functional evaluation of a real-time EMG controlled prosthetic hand. Wearable Technol. 2025;6:e18. Published 2025 Apr 7. doi:10.1017/wtc.2025.7 <https://pmc.ncbi.nlm.nih.gov/articles/PMC12034578/>`_
+.. [7] `Ho NS, Tong KY, Hu XL, Fung KL, Wei XJ, Rong W, Susanto EA. An EMG-driven exoskeleton hand robotic training device on chronic stroke subjects: task training system for stroke rehabilitation. IEEE Int Conf Rehabil Robot. 2011;2011:5975340. doi: 10.1109/ICORR.2011.5975340. PMID: 22275545. <https://pubmed.ncbi.nlm.nih.gov/22275545/>`_ 
+.. [8] `Basnet N, Allahvirdi S, Nadri C, Park J, Zahabi M. Evaluating the Feasibility of EMG-Based Human-Machine Interfaces for Driving. Hum Factors. 2026;68(1):123-141. doi:10.1177/00187208251367179 <https://pmc.ncbi.nlm.nih.gov/articles/PMC12698871/>`_
 .. [9] `Surface EMG in Ergonomics and Occupational Medicine <https://www.researchgate.net/publication/301336856_Surface_EMG_in_Ergonomics_and_Occupational_Medicine>`_

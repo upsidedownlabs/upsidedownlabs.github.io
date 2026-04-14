@@ -51,7 +51,7 @@ The process of performing an ECG includes the following steps:
 - :ref:`Bioamp EXG Pill <bioamp-exg-pill>`
 - :ref:`Heart Bioamp Candy <heart-bioamp-candy>`
 
-We offer our own **open source** :ref:`Chords <upsidedownlabs_software_home>` software suite, featuring tools for signal visualization, data recording (with easy save and download options), time-based plotting, and a host of other benefits—such as analyzing signal frequencies and bandpower.
+We offer our own **open source** :ref:`Chords <upsidedownlabs_software_home>` software suite, featuring tools for signal visualization, data recording (with easy save and download options), time-based plotting, and a host of other benefits such as analyzing signal frequencies and bandpower.
 
 8.4 Components of the ECG 
 *******************************

@@ -16,6 +16,8 @@ hands-on demonstrations, and simple project-based learning that makes even compl
 Each module includes clear diagrams, step-by-step explanations, and practical insights that help you understand both the 
 science behind biopotential signals and the hardware used to record them. 
 
+**This course is introductory and practical, designed to give you a strong foundation in neuroscience concepts but advanced topics will require further study and practice.**
+
 Why Neuroscience Matters Today
 *****************************************
 

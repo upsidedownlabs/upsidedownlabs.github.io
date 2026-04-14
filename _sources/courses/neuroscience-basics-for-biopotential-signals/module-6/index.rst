@@ -22,26 +22,27 @@ visualize the body's biopotential signals. These signals include:
   time. The heart generates electrical impulses that coordinate the contraction and relaxation of cardiac muscles, allowing 
   blood to be pumped throughout the body. ECG electrodes placed on the skin detect these electrical signals and display them as 
   waveforms (P wave, QRS complex, and T wave). This method is widely used to evaluate heart rhythm, detect arrhythmias, 
-  myocardial infarction, and other cardiac abnormalities.
+  myocardial infarction, and other cardiac abnormalities. Amplitude ranges from 10µV to 5mV and frequency ranges from 0.05 to 100 Hz in normal ECG [2]_.
 
 - **Electromyography (EMG)**: 
 
   Electromyography (EMG) is a technique used to measure and record the electrical activity produced by skeletal muscles during rest and contraction. When a motor neuron
   stimulates a muscle fiber, an electrical signal called a motor unit action potential is generated. EMG detects these signals using surface electrodes or needle electrodes
-  inserted into the muscle. It is commonly used to assess neuromuscular disorders, muscle dysfunction, nerve damage, and diseases affecting motor control.
+  inserted into the muscle. It is commonly used to assess neuromuscular disorders, muscle dysfunction, nerve damage, and diseases affecting motor control. Amplitude ranges 
+  from 0 to 10 mV (peak-to-peak) or 0 to 1.5mV (rms) and frequency ranges from 0 to 500 Hz in normal EMG [3]_.
 
 - **Electrooculography (EOG)**: 
 
   Electrooculography (EOG) is a technique used to measure the electrical potential difference between the front (cornea) and back (retina) of the eye. As the eyes move, this
   potential difference changes and can be detected by electrodes placed around the eyes. EOG is commonly used to track eye movements, study visual behavior, and assess
-  retinal function. It is also used in sleep research to identify rapid eye movement (REM) during sleep.
+  retinal function. It is also used in sleep research to identify rapid eye movement (REM) during sleep. Amplitude ranges from 100 to 3500 µV and frequency ranges from 0.1 to 20 Hz in normal EOG [4]_.
 
 - **Electroencephalography (EEG)**:
 
   Electroencephalography (EEG) is a method used to record the electrical activity of the brain produced by the synchronized activity of neurons, primarily in the cerebral cortex.
   Electrodes placed on the scalp detect small voltage fluctuations resulting from neuronal activity. EEG signals appear as brain waves (such as alpha, beta, theta, and delta waves).
   This technique is widely used in neuroscience and clinical settings to study brain function, diagnose neurological disorders such as epilepsy, monitor sleep stages, and investigate
-  cognitive processes.
+  cognitive processes. Amplitude ranges from 10 to 100 µV and frequency ranges from 0.5 to 100 Hz in normal EEG [5]_.
 
 
 BioAmp devices serve as a catalyst for the development of innovative **Human-Computer Interface (HCI)** and **Brain-Computer 
@@ -229,6 +230,8 @@ IN- (Inverting input)
 - If the voltage here increases, the amplifier output decreases (it is inverted).
 - Output of the amplifier is proportional to the difference between IN+ and IN- {Output = Gain × (IN+ − IN−)}.
 
+.. note:: **By amplifying only the differential voltage (the difference between inputs) and rejecting common voltages, the instrumentation amplifier effectively suppresses electromagnetic interference (EMI) and noise.**
+
 REF (Mid-supply or DRL)
 ----------------------------------------
 
@@ -255,3 +258,7 @@ friendly BioAmp hardwares and open source softwares.
 *****************
 
 .. [1] `Chapter 10: Biopotential Signals. <https://alanmacy.com/books/the-handbook-of-human-physiological-recording/chapter-10-biopotential-signals/>`_
+.. [2] `Xie L, Li Z, Zhou Y, He Y, Zhu J. Computational Diagnostic Techniques for Electrocardiogram Signal Analysis. Sensors (Basel). 2020;20(21):6318. Published 2020 Nov 5. <https://doi.org/10.3390/s20216318>`_
+.. [3]  https://www.delsys.com/downloads/TUTORIAL/semg-detection-and-recording.pdf
+.. [4] `Banerjee A., Datta S., Pal M., Konar A., Tibarewala D. N., Janarthanan R. "Classifying electrooculogram to detect directional eye movements." Procedia Technology, Vol. 10 (2013), pp. 67–75. <https://doi.org/10.1016/j.protcy.2013.12.338>`_
+.. [5] `Nayak CS, Anilkumar AC. Normal EEG Waveforms. [Updated 2025 Aug 3]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. <https://www.ncbi.nlm.nih.gov/books/NBK539805/>`_

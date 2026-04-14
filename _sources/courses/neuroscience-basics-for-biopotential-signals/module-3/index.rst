@@ -1,7 +1,7 @@
 .. _neuroscience-basics-for-biopotential-signals-module-3:
 
-Module 3: Passive Membrane Properties
-########################################
+Module 3: Passive Membrane Properties [1]_
+####################################################
 
 Studying passive membrane properties before understanding action potentials is important as they influence how signals 
 propagate and decay along neurons, determining how far signals can travel before requiring regeneration. 
@@ -73,13 +73,13 @@ Factors affecting axial resistance
 3.1.2 Capacitance
 =====================
 
-Capacitance is the ability of a system to store electric charge. [1]_
+Capacitance is the ability of a system to store electric charge.
 
 In neurons, the Membrane capacitance (Cm) can be described as the capacity of a neuronal membrane to store charge, which is crucial for 
 creating and maintaining the membrane potential.
 
 Factors Affecting Membrane Capacitance:
-----------------------------------------
+------------------------------------------------
 
 - **Surface Area:** A larger surface area increases capacitance, allowing the membrane to store more charge.
 - **Thickness of the Membrane:** Thinner membranes generally have higher capacitance because the distance between charges is less.
@@ -135,6 +135,4 @@ Together, these passive properties explain why some signals weaken over distance
 3.4 References
 *****************
 
-.. [1] `Bretschneider, F., & De Weille, J. R. (2006). Electricity. In Elsevier eBooks (pp. 1–33). <https://doi.org/10.1016/b978-012370588-4/50060-9>`_
-
-2. https://dl.icdst.org/pdfs/files3/4eefe1a7a1ce94cf7ffb9e98f7ca5084.pdf
+.. [1] `A guide to Passive Membrane Properties <https://www.scientifica.uk.com/learning-zone/passive-membrane-properties>`_
