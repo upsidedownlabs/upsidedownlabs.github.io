@@ -82,29 +82,31 @@ We have made a complete unboxing video of the kit. Please find the link below:
 Software requirements
 **********************
 
-Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the arduino sketches on your development board and visualise the data on your laptop.
-    
+1. **Arduino IDE**
+   
+   - Latest Version (v2.3.8+): `Arduino IDE Latest Version Download <https://www.arduino.cc/en/software>`_ `(Recommended for faster compilation and enhanced support for the latest Arduino UNO Development Boards)`
+   
+   - Legacy Version (v1.8.19): `Arduino IDE v1.8.19 (legacy IDE) Download <https://www.arduino.cc/en/software>`_  `(For Real-time signal visualization using a better built-in Serial Plotter)`
+
 .. figure:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.*
     :align: center
     :alt: Arduino IDE v1.8.19 (legacy IDE)
 
-    Arduino IDE v1.8.19 (legacy IDE) 
-
-
-Visit Upside Down Labs `Chords Web <https://chords.upsidedownlabs.tech>`__ to visualize your bio-potential signals directly in the browser.
-
-.. figure:: ../../../software/chords/chords-web/media/chords_landing_page.*
+2. **Chords Web Visualizer**
+   
+   Use `Chords Web <https://chords.upsidedownlabs.tech>`_, our custom web interface designed to visualize biopotential signals data directly in your browser. `(Plug-and-play signal visualization directly in any modern web browser.)`
+   
+   .. figure:: ../../../software/chords/chords-web/media/chords_landing_page.*
     :align: center
-    :alt: Chords Web Landing Page 
+    :alt: Chords Web Landing Page
 
     Chords Web Landing Page
 
-**Getting started with Chords Web**
+   .. note:: For detailed instructions and visualization tips, check the :ref:`Chords Web Documentation <chords>`.
 
-.. youtube:: IVIPnk9z75g
-    :align: center
-    :width: 100%
-
+    .. youtube:: IVIPnk9z75g
+        :align: center
+        :width: 90%
 
 Using the kit
 ****************
@@ -158,29 +160,30 @@ Connect ``VCC`` to ``5V``, ``GND`` to ``GND``, and ``OUT`` to ``Analog pin A0`` 
 Step 6: Upload the code
 ===========================
 
-Connect your Arduino UNO to your laptop using the USB cable (Type A to Type B). Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:
-    
-:fab:`github;pst-color-primary` `EMG Filter <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino>`_
+- Connect your **Arduino UNO Development Board** to your laptop using the USB cable. 
 
-:fab:`github;pst-color-primary` `EMG Envelope <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino>`_
+- Copy paste any one of the arduino sketches given below in ``Arduino IDE latest version (v2.3.8+)``:
+    
+:fab:`github;pst-color-primary` `EMG Filter <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/02_EMG_Filter/02_EMG_Filter.ino>`_
+
+:fab:`github;pst-color-primary` `EMG Envelope <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/03_EMG_Envelope/03_EMG_Envelope.ino>`_
 
 .. figure:: media/setup.*
     :align: center
 
-Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
-select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
-disconnect your board and reopen the menu. The entry that disappears should be the 
-right COM port. Now upload the code, & open the serial plotter from the ``tools`` menu to visualize 
-the EMG signals. 
+- Go to ``Tools`` menu, navigate to ``Board``, and select **Arduino UNO Development Board** (UNO R3/ R4/ Minima/ WiFi or any other board). 
+- In the same menu, select the ``Port`` to which your Arduino Uno is connected. 
+- **Tip:** To find the correct **COM Port**, disconnect your board and reopen the menu. The entry that disappears should be the right COM port. 
+- ``Upload`` the code.
 
-After opening the serial plotter make sure to select the baud rate to 115200.
-
-.. warning:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
+.. warning:: For the best signal acquisition, ensure your laptop is not connected to a charger and maintain a distance of at least 5m from any AC appliances, read more about :ref:`Tips for better signal acquisition <tips-for-best-signal-acquisition>`.
 
 Step 7: Visualizing the EMG signals
 ======================================
 
-For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signals visualization right from your browser, without installing any software.
+1. **Using Chords Web**
+   
+   For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signals visualization right from your browser, without installing any software.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_emg_signal.*
     :align: center
@@ -190,13 +193,25 @@ For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.
 
 Now flex your arm to visualize the muscle signals in real-time on your laptop.
 
+2. **Using Arduino legacy v1.8.19** 
+   
+   To visualize the signal on Arduino v1.8.19 we will use inbuilt Serial Plotter:
+
+- Navigate to (``Tools`` > ``Board``) and select your Development board or Arduino UNO Board (if not detected automatically).
+- Open the Serial Plotter (``Tools`` > ``Serial Plotter`` or ``Ctrl+Shift+L``) to visualize the EMG signals.
+- Once the Serial Plotter is open, ensure the baud rate is set to ``115200``.
+- Now flex your arm to visualize the muscle signals in real time on your laptop.
+
 .. figure:: media/patchy-emg.*
     :align: center
     :alt: Visualizing EMG signals on Arduino IDE v1.8.x
 
     Visualizing EMG signals on Arduino IDE v1.8.x
 
-**Video tutorial:**
+Video Tutorial
+===============
+
+If you prefer a visual walkthrough, check out our video tutorial:
 
 .. youtube:: 4dnCX3U7LS8
     :align: center

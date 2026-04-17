@@ -32,7 +32,7 @@ Features & Specifications
 **************************
 
 +----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Operating Voltage    | 5 V                                                                                                                                                                                  |
+| Operating Voltage    | 3.3 V / 5 V                                                                                                                                                                          |
 +----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Input Impedance      | 10^12 ohm                                                                                                                                                                            |
 +----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -70,32 +70,34 @@ BioAmp EXG Pill is fully configurable
 1. Increase the gain of the instrumentation amplifier by using a 0603 resistor at ``R6``. Decrease gain and configure the bandpass filter by using 0603 parts at ``R12`` and ``C5``. Band limiting is very useful for EOG and EEG recording. Also, the signal sometimes clips while recording an ECG with electrodes very close to the heart. Creating a solder jumper for a band-pass filter helps with that. By default, BioAmp EXG Pill is configured to record EEG and EOG but you can bridge the pads (below bandpass) with solder to make it configurable for EMG and ECG.
 2. The normal method of operation for best-quality signal amplification is to use 3 electrodes by default but you can bridge the pads (below electrodes) to make it configurable for 2 electrodes. The 2-electrode mode is specifically included for projects like heart (ECG) patches for HRV. It’s only supposed to be used with a battery-operated setup and is quite prone to high interference noise due to a lack of proper reference on the body (This option is not recommended for most operations)
 
-Software requirements
+Software Requirements
 **********************
 
-- Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE) <https://www.arduino.cc/en/software>`_. Using this you'll be able to upload the arduino sketches in your development board and visualise the data on your laptop.
-    
+1. **Arduino IDE**
+   
+   - Latest Version (v2.3.8+): `Arduino IDE Latest Version Download <https://www.arduino.cc/en/software>`_ `(Recommended for faster compilation and enhanced support for the latest Arduino UNO Development Boards)`
+   
+   - Legacy Version (v1.8.19): `Arduino IDE v1.8.19 (legacy IDE) Download <https://www.arduino.cc/en/software>`_  `(For Real-time signal visualization using a better built-in Serial Plotter)`
+
 .. figure:: ../../../kits/diy-neuroscience/basic/media/arduino-ide.*
     :align: center
     :alt: Arduino IDE v1.8.19 (legacy IDE)
 
-    Arduino IDE v1.8.19 (legacy IDE) 
-
-- Visit Upside Down Labs `Chords Web <https://chords.upsidedownlabs.tech>`__ to visualize your bio-potential signals directly in the browser.
-
-.. figure:: ../../../software/chords/chords-web/media/chords_landing_page.*
+2. **Chords Web Visualizer**
+   
+   Use `Chords Web <https://chords.upsidedownlabs.tech>`_, our custom web interface designed to visualize biopotential signals data directly in your browser. `(Plug-and-play signal visualization directly in any modern web browser.)`
+   
+   .. figure:: ../../../software/chords/chords-web/media/chords_landing_page.*
     :align: center
-    :alt: Chords Web Landing Page 
+    :alt: Chords Web Landing Page
 
     Chords Web Landing Page
 
-**Getting started with Chords Web**
+   .. note:: For detailed instructions and visualization tips, check the :ref:`Chords Web Documentation <chords>`.
 
-.. youtube:: IVIPnk9z75g
-    :align: center
-    :width: 100%
-
-.. tip:: To know more about Chords Web :ref:`click here<chords>`.
+    .. youtube:: IVIPnk9z75g
+        :align: center
+        :width: 90%
 
 Using the Hardware
 *********************
@@ -136,23 +138,29 @@ Connect your BioAmp EXG Pill to your MCU/ADC as per the connection table shown b
 
 .. table:: BioAmp to MCU/ADC connection
 
-    +--------+-----------+
-    | BioAmp | MCU/ADC   |
-    +========+===========+
-    | VCC    | 5V        |
-    +--------+-----------+
-    | GND    | GND       |
-    +--------+-----------+
-    | OUT    | ADC Input |
-    +--------+-----------+
+    +---------------------+-----------------------+-------------------+
+    | **BioAmp EXG Pill** | **MCU/ADC**           | **Function**      |
+    +=====================+=======================+===================+
+    | VCC                 | 5V / 3.3V             | Power Supply      |
+    +---------------------+-----------------------+-------------------+
+    | GND                 | GND                   | Ground            |
+    +---------------------+-----------------------+-------------------+
+    | OUT                 | ADC Input             | Signal            |
+    +---------------------+-----------------------+-------------------+
 
 For all the examples provided, we are using the A0 pin of Arduino UNO R3. Connect your BioAmp to your MCU/ADC via jumper cables provided in the kit. If you are connecting ``OUT`` pin of BioAmp to any other analog pin (A0-A5) of Arduino UNO board, then you will have to change the INPUT PIN in the Arduino sketch accordingly.
 
-.. figure:: media/connections-with-arduino.*
+.. figure:: media/connections-with-arduino-1.*
     :align: center
-    :alt: Connections with Arduino UNO R3
+    :alt: Wiring diagram for VCC, GND, and OUT Connections with Arduino UNO
 
-    Connections with Arduino UNO R3
+    Wiring diagram for VCC, GND, and OUT Connections with Arduino UNO
+
+.. figure:: media/connections-with-arduino-2.*
+    :align: center
+    :alt: Connections with Arduino UNO Development Boards
+
+    Connections with Arduino UNO Development Boards
 
 .. warning:: Take precautions while connecting to power, if power pins are to be swapped, your BioAmp EXG Pill will be fried and it’ll become unusable (DIE).
 
@@ -161,11 +169,17 @@ Step 4: Connecting electrode cable
 
 Connect the BioAmp cable to BioAmp EXG Pill by inserting the cable end in the JST PH connector as shown in the graphic below.
 
-.. figure:: media/connection-with-cable.*
+.. figure:: media/connection-with-cable-1.*
     :align: center
-    :alt: Connections with BioAmp Cable v3
+    :alt: Connecting the BioAmp Cable v3 to the BioAmp EXG Pill
 
-    Connections with BioAmp Cable v3
+    Connecting the BioAmp Cable v3 to the BioAmp EXG Pill
+
+.. figure:: media/connection-with-cable-2.*
+    :align: center
+    :alt: Complete assembly of BioAmp EXG Pill, Arduino, and BioAmp Cable v3 
+
+    Complete assembly of BioAmp EXG Pill, Arduino, and BioAmp Cable v3
 
 Step 5: Skin Preparation
 ===========================
@@ -179,9 +193,9 @@ Step 6: Measuring ElectroMyoGraphy (EMG)
 
 .. note::
 
-   Electromyography (EMG) is a technique for evaluating and recording the electrical activity produced by skeletal muscles. 
-   EMG is also used as a diagnostic procedure to assess the health of muscles and the nerve cells that control them (motor 
-   neurons). EMG results can reveal nerve dysfunction, muscle dysfunction, or problems with nerve-to-muscle signal transmission. 
+   - Electromyography (EMG) is a technique for evaluating and recording the electrical activity produced by skeletal muscles. 
+   - EMG is also used as a diagnostic procedure to assess the health of muscles and the nerve cells that control them (motor neurons). 
+   - EMG results can reveal nerve dysfunction, muscle dysfunction, or problems with nerve-to-muscle signal transmission. 
 
 ..    .. figure:: media/EMGEnvelop.*
 ..        :align: center
@@ -194,7 +208,7 @@ Electrodes placement
 
 We have 2 options to measure the EMG signals, either using the gel electrodes or using dry electrode based Muscle BioAmp Band. You can try both of them one by one.
 
-- **Using gel electrodes:**
+- **Using Gel electrodes:**
 
 1. Connect the BioAmp cable to gel electrodes,
 2. Peel the plastic backing from electrodes
@@ -205,7 +219,6 @@ We have 2 options to measure the EMG signals, either using the gel electrodes or
 - **Using Muscle BioAmp Band:**
 
 1. Connect the BioAmp cable to Muscle BioAmp Band in a way such that IN+ and IN- are placed on the arm near the ulnar nerve & REF (reference) on the far side of the band.
-
 2. Now put a small drop of electrode gel between the skin and metallic part of BioAmp cable to get the best results.
 
 .. tip:: Visit the complete documentation on how to :ref:`assemble and use the BioAmp Bands <using-bioamp-bands>` or follow the youtube video given below.
@@ -214,35 +227,35 @@ We have 2 options to measure the EMG signals, either using the gel electrodes or
 
    .. youtube:: xYZdw0aesa0
        :align: center
-       :width: 100%
+       :width: 90%
 
 .. note:: In this demonstration we are recording EMG signals from the ulnar nerve, but you can record EMG from other areas as well (biceps, triceps, legs, jaw etc) as per your project requirements. Just make sure to place the IN+, IN- electrodes on the targeted muscle and REF on a bony part.
 
 Uploading the code
 ---------------------------
 
-Connect the Arduino Uno to your laptop using the USB cable (Type A to Type B). Copy paste any one of the Arduino Sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:
-    
-:fab:`github;pst-color-primary` `EMG Filter <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino>`_
+- Connect the Arduino UNO Development Board to your laptop using the USB cable. To upload the code use Arduino IDE latest version (v2.3.8+).
+- Choose and copy one of the following Arduino sketches based on your requirements:
 
-:fab:`github;pst-color-primary` `EMG Envelope <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino>`_
+:fab:`github;pst-color-primary` `EMG Filter <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/02_EMG_Filter/02_EMG_Filter.ino>`_
 
-Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
-select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
-disconnect your board and reopen the menu. The entry that disappears should be the 
-right COM port. Now upload the code, & open the serial plotter from the tools menu to visualize 
-the EMG signals. 
+:fab:`github;pst-color-primary` `EMG Envelope <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/03_EMG_Envelope/03_EMG_Envelope.ino>`_
 
-After opening the serial plotter make sure to select the baud rate to 115200.
+- Go to ``Tools`` menu, navigate to ``Board``, and select **Arduino UNO Development Board** (UNO R3/ R4/ Minima/ WiFi or any other board). 
+- In the same menu, select the ``Port`` to which your Arduino Uno is connected. 
+- **Tip:** To find the correct **COM Port**, disconnect your board and reopen the menu. The entry that disappears should be the right COM port. 
+- ``Upload`` the code.
 
-.. tip:: Visit the complete documentation on how to :ref:`How to upload the code <muscle-bioamp-arduino-firmware-code-upload>`.
+.. tip:: Check our complete documentation on :ref:`How to upload the code <muscle-bioamp-arduino-firmware-code-upload>`.
 
-.. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
+.. warning:: For the best signal acquisition, ensure your laptop is not connected to a charger and maintain a distance of at least 5m from any AC appliances, read more about :ref:`Tips for better signal acquisition <tips-for-best-signal-acquisition>`.
 
 Visualizing the EMG signals
 ----------------------------
 
-For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signal visualization right from your browser, without installing any software.
+1. **Using Chords Web**
+   
+   For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signals visualization right from your browser, without installing any software.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_emg_signal.*
     :align: center
@@ -251,6 +264,15 @@ For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.
     Visualizing EMG signals on Chords Web
 
 Now flex your arm to visualize the muscle signals in real time on your laptop.
+
+1. **Using Arduino legacy v1.8.19** 
+   
+   To visualize the signal on Arduino v1.8.19 we will use inbuilt Serial Plotter:
+
+- Navigate to (``Tools`` > ``Board``) and select your Development board or Arduino UNO Board (if not detected automatically).
+- Open the Serial Plotter (``Tools`` > ``Serial Plotter`` or ``Ctrl+Shift+L``) to visualize the EMG signals.
+- Once the Serial Plotter is open, ensure the baud rate is set to ``115200``.
+- Now flex your arm to visualize the muscle signals in real time on your laptop.
 
 .. figure:: media/EMGEnvelop.*
     :align: center
@@ -263,16 +285,16 @@ Step 6: Measuring ElectroCardioGraphy (ECG)
 
 .. note::
 
-   Electrocardiography (ECG) is the process of producing an electrocardiogram (ECG or EKG). It is a graph of voltage versus time 
-   of the electrical activity of the heart using electrodes placed on the skin. These electrodes detect the small electrical changes 
-   that are a consequence of cardiac muscle depolarization followed by repolarization during each cardiac cycle (heartbeat).
+   - Electrocardiography (ECG) is the process of producing an electrocardiogram (ECG or EKG). 
+   - It is a graph of voltage versus time of the electrical activity of the heart using electrodes placed on the skin. 
+   - These electrodes detect the small electrical changes that are a consequence of cardiac muscle depolarization followed by repolarization during each cardiac cycle (heartbeat).
 
 Electrodes placement
 ----------------------
 
 We have 2 options to measure the ECG signals, either using the gel electrodes or using dry electrode based Heart BioAmp Band. You can try both of them one by one.
 
-- **Using gel electrodes:**
+- **Using Gel electrodes:**
 
 1. Connect the BioAmp cable to gel electrodes
 2. Peel the plastic backing from electrodes
@@ -298,26 +320,26 @@ We have 2 options to measure the ECG signals, either using the gel electrodes or
 Uploading the code
 ---------------------
 
-Connect Arduino Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:
-    
+- Connect the Arduino UNO Development Board to your laptop using the USB cable. To upload the code use Arduino IDE latest version (v2.3.8+).
+- Choose and copy one of the following Arduino sketches based on your requirements:
+
 :fab:`github;pst-color-primary` `ECG Filter <https://github.com/upsidedownlabs/Heart-BioAmp-Arduino-Firmware/blob/main/2_ECGFilter/2_ECGFilter.ino>`_
 
-Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
-select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
-disconnect your board and reopen the menu. The entry that disappears should be the 
-right COM port. Now upload the code, & open the serial plotter from the tools menu to visualize 
-the signals. 
+- Go to ``Tools`` menu, navigate to ``Board``, and select **Arduino UNO Development Board** (UNO R3/ R4/ Minima/ WiFi or any other board). 
+- In the same menu, select the ``Port`` to which your Arduino Uno is connected. 
+- **Tip:** To find the correct **COM Port**, disconnect your board and reopen the menu. The entry that disappears should be the right COM port. 
+- ``Upload`` the code.
 
-After opening the serial plotter make sure to select the baud rate to 115200.
+.. tip:: Check our complete documentation on :ref:`How to upload the code <heart-bioamp-arduino-firmware-code-upload>`.
 
-.. tip:: Visit the complete documentation on how to :ref:`How to upload the code <heart-bioamp-arduino-firmware-code-upload>`.
-
-.. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
+.. warning:: For the best signal acquisition, ensure your laptop is not connected to a charger and maintain a distance of at least 5m from any AC appliances, read more about :ref:`Tips for better signal acquisition <tips-for-best-signal-acquisition>`.
 
 Visualizing the ECG signals
 -----------------------------
 
-For visualizing the ECG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signal visualization right from your browser, without installing any software.
+1. **Using Chords Web**
+   
+   For visualizing the ECG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signals visualization right from your browser, without installing any software.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_ecg_signal.*
     :align: center
@@ -325,8 +347,16 @@ For visualizing the ECG signals, use `Chords Web <https://chords.upsidedownlabs.
 
     Visualizing ECG signals on Chords Web
 
-
 Sit back, relax and see your ECG signals in real time on your laptop.
+
+2. **Using Arduino legacy v1.8.19** 
+   
+   To visualize the signal on Arduino v1.8.19 we will use inbuilt Serial Plotter:
+
+- Navigate to (``Tools`` > ``Board``) and select your Development board or Arduino UNO Board (if not detected automatically).
+- Open the Serial Plotter (``Tools`` > ``Serial Plotter`` or ``Ctrl+Shift+L``) to visualize the EMG signals.
+- Once the Serial Plotter is open, ensure the baud rate is set to ``115200``.
+- Now sit back, relax and see your ECG signals in real time on your laptop.
 
 .. figure:: media/bioamp-Exg-Pill-ECG.*
     :align: center
@@ -339,12 +369,10 @@ Step 7: Measuring Electrooculography (EOG)
 
 .. note::
 
-   Electrooculography (EOG) is a technique for measuring the corneo-retinal standing potential that exists between the front and 
-   the back of the human eye. The resulting signal is called EOG. To measure eye movement, pairs of electrodes are typically placed 
-   either above and below the eye or to the left and right of the eye. If the eye moves from the center position toward one of the two 
-   electrodes, this electrode "sees" the positive side of the retina, and the opposite electrode "sees" the negative side of the retina. 
-   Consequently, a potential difference occurs between the electrodes. Assuming the resting potential is constant, the recorded potential 
-   is a measure of the eye’s position.
+   - Electrooculography (EOG) is a technique for measuring the corneo-retinal standing potential that exists between the front and the back of the human eye. The resulting signal is called EOG. 
+   - To measure eye movement, pairs of electrodes are typically placed either above and below the eye or to the left and right of the eye. 
+   - If the eye moves from the center position toward one of the two electrodes, this electrode "sees" the positive side of the retina, and the opposite electrode "sees" the negative side of the retina. 
+   - Consequently, a potential difference occurs between the electrodes. Assuming the resting potential is constant, the recorded potential is a measure of the eye’s position.
 
 Electrodes placement
 ----------------------
@@ -355,6 +383,9 @@ We have 2 ways to measure the EOG signals, either record the horizontal eye move
 
 .. figure:: media/eog-horizontal.*
     :align: center
+    :alt: Horizontal EOG Placement
+
+    Horizontal EOG Placement
 
 1. Connect the BioAmp cable to gel electrodes.
 2. Peel the plastic backing from electrodes.
@@ -364,6 +395,9 @@ We have 2 ways to measure the EOG signals, either record the horizontal eye move
 
 .. figure:: media/eog-vertical.*
     :align: center
+    :alt: Vertical EOG Placement
+
+    Vertical EOG Placement
 
 1. Connect the BioAmp cable to gel electrodes.
 2. Peel the plastic backing from electrodes.
@@ -372,26 +406,26 @@ We have 2 ways to measure the EOG signals, either record the horizontal eye move
 Uploading the code
 ---------------------
 
-Connect Arduino Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:
-    
+- Connect the Arduino UNO Development Board to your laptop using the USB cable. To upload the code use Arduino IDE latest version (v2.3.8+).
+- Choose and copy one of the following Arduino sketches based on your requirements:
+
 :fab:`github;pst-color-primary` `EOG Filter <https://github.com/upsidedownlabs/Eye-BioAmp-Arduino-Firmware/blob/main/2_EOGFilter/2_EOGFilter.ino>`_
 
-Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
-select the COM port on which your Arduino Uno is connected. To find out the right COM port, 
-disconnect your board and reopen the menu. The entry that disappears should be the 
-right COM port. Now upload the code, & open the serial plotter from the tools menu to visualize 
-the signals. 
+- Go to ``Tools`` menu, navigate to ``Board``, and select **Arduino UNO Development Board** (UNO R3/ R4/ Minima/ WiFi or any other board). 
+- In the same menu, select the ``Port`` to which your Arduino Uno is connected. 
+- **Tip:** To find the correct **COM Port**, disconnect your board and reopen the menu. The entry that disappears should be the right COM port. 
+- ``Upload`` the code.
 
-After opening the serial plotter make sure to select the baud rate to 115200.
+.. tip:: Check our complete documentation on :ref:`How to upload the code <eye-bioamp-arduino-firmware-code-upload>`.
 
-.. tip:: Visit the complete documentation on how to :ref:`How to upload the code <eye-bioamp-arduino-firmware-code-upload>`.
-
-.. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
+.. warning:: For the best signal acquisition, ensure your laptop is not connected to a charger and maintain a distance of at least 5m from any AC appliances, read more about :ref:`Tips for better signal acquisition <tips-for-best-signal-acquisition>`.
 
 Visualizing the EOG signals
 ------------------------------
 
-For visualizing the EOG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signal visualization right from your browser, without installing any software.
+1. **Using Chords Web**
+   
+   For visualizing the EOG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signals visualization right from your browser, without installing any software.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_eog_signal.*
     :align: center
@@ -399,8 +433,16 @@ For visualizing the EOG signals, use `Chords Web <https://chords.upsidedownlabs.
 
     Visualizing EOG signals on Chords Web
 
-
 Move your eyes up-down or left-right to see your EOG signals in real time on your laptop.
+
+2. **Using Arduino legacy v1.8.19** 
+   
+   To visualize the signal on Arduino v1.8.19 we will use inbuilt Serial Plotter:
+
+- Navigate to (``Tools`` > ``Board``) and select your Development board or Arduino UNO Board (if not detected automatically).
+- Open the Serial Plotter (``Tools`` > ``Serial Plotter`` or ``Ctrl+Shift+L``) to visualize the EMG signals.
+- Once the Serial Plotter is open, ensure the baud rate is set to ``115200``.
+- Now move your eyes up-down or left-right to see your EOG signals in real time on your laptop.
 
 .. figure:: media/bioamp-exg-pill-eog.*
     :align: center
@@ -430,8 +472,11 @@ We have 2 options to measure the EEG signals, either using the gel electrodes or
 
 - **Using gel electrodes to record from prefrontal cortex part of brain:**
 
-.. figure:: media/eeg_placement.*
+.. figure:: media/eeg.*
     :align: center
+    :alt: EEG Placement
+
+    EEG Placement
 
 1. Connect the BioAmp cable to gel electrodes.
 2. Peel the plastic backing from electrodes.
@@ -456,19 +501,27 @@ We have 2 options to measure the EEG signals, either using the gel electrodes or
 2-Channel EEG data 
 ----------------------
 
-To record 2-channel Electroencephalography (EEG) data using two BioAmp EXG Pills in conjunction with an Arduino Uno R4 Minima, meticulous hardware setup is essential.
+To record 2-channel Electroencephalography (EEG) data using two BioAmp EXG Pills in conjunction with an Arduino Uno R4 Minima, following hardware setup is essential.
 
 **Required Components**
 
-1. Two BioAmp EXG Pill
-2. Arduino Uno R4 minima
-3. Breadboard
-4. Jumper wires
-5. Gel electrodes
+* 2 x BioAmp EXG Pill
+* 1 x Arduino Uno R4 Minima
+* 1 x Breadboard
+* Jumper wires
+* Gel Electrodes
 
 **Hardware setup**
 
-To set up the hardware for 2-channel EEG recording using two BioAmp EXG Pill modules and an Arduino Uno R4 Minima, begun by connecting the Arduino's 5V and GND pins to the power rails of a breadboard, then supply VCC and GND from the breadboard to both BioAmp EXG Pills. Connect the OUT pin of the first EXG pill to Arduino's analog pin A0 (channel 1) and the second EXG Pill's OUT to anolog pin A1 (channel 2). For electrodes placement, connect the IN+ of each module (red wires) to different EEG recording sites on the forehead (eg. Fp1 and Fp2), and connect IN- (black wires) and both REF pins (yellow wires) from the EXG Pills to a common reference electrode placed on a neutral location like the mastoid or earlobe to ensure clean and synchonized signal acquisition.
+To set up the hardware for 2-channel EEG recording, follow the connection steps below:
+
+1. **Powering the Modules:** Connect the Arduino's ``5V`` and ``GND`` pins to the power rails of the breadboard. Supply ``VCC`` and ``GND`` from the breadboard rails to both BioAmp EXG Pills.
+2. **Signal Connections:** Connect the ``OUT`` pin of the first EXG Pill to the Arduino's analog pin ``A0`` (Channel 1). Connect the ``OUT`` pin of the second EXG Pill to analog pin ``A1`` (Channel 2).
+3. **Electrode Placement:**
+    * **Active Sites:** Connect the ``IN+`` (red wires) of each module to different EEG recording sites on the forehead (e.g., **Fp1** and **Fp2**).
+    * **Reference & Ground:** Connect the ``IN-`` (black wires) and both ``REF`` (yellow wires) from both EXG Pills to a common reference electrode placed on a neutral location, such as the mastoid or earlobe.
+
+This common reference configuration ensures clean and synchronized signal acquisition across both channels.
 
 .. figure:: media/channel-2-eeg-connection.*
     :align: center
@@ -477,23 +530,26 @@ To set up the hardware for 2-channel EEG recording using two BioAmp EXG Pill mod
 Uploading the code
 -----------------------
 
-Connect Arduino Uno to your laptop using the USB cable (Type A to Type B). Copy paste the Arduino Sketch given below in Arduino IDE v1.8.19 that you downloaded earlier:
-    
+- Connect the Arduino UNO Development Board to your laptop using the USB cable. To upload the code use Arduino IDE latest version (v2.3.8+).
+- Choose and copy one of the following Arduino sketches based on your requirements:
+
 :fab:`github;pst-color-primary` `EEG Filter Code <https://github.com/upsidedownlabs/Brain-BioAmp-Arduino-Firmware/blob/main/02-eeg-filter/02-eeg-filter.ino>`_
 
-Go to ``tools`` from the menu bar, select ``board`` option then select Arduino UNO. In the same menu, 
-select the COM port on which your development board is connected. To find out the right COM port, screen
-disconnect your board and reopen the menu. The entry that disappears should be the 
-right COM port. Now upload the code.
+- Go to ``Tools`` menu, navigate to ``Board``, and select **Arduino UNO Development Board** (UNO R3/ R4/ Minima/ WiFi or any other board). 
+- In the same menu, select the ``Port`` to which your Arduino Uno is connected. 
+- **Tip:** To find the correct **COM Port**, disconnect your board and reopen the menu. The entry that disappears should be the right COM port. 
+- ``Upload`` the code.
 
-.. tip:: Visit the complete documentation on how to :ref:`How to upload the code <brain-bioamp-arduino-firmware-code-upload>`.
+.. tip:: Check our complete documentation on :ref:`How to upload the code <brain-bioamp-arduino-firmware-code-upload>`.
 
-.. important:: Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.
- 
+.. warning:: For the best signal acquisition, ensure your laptop is not connected to a charger and maintain a distance of at least 5m from any AC appliances, read more about :ref:`Tips for better signal acquisition <tips-for-best-signal-acquisition>`.
+
 Visualizing the EEG signals
 -------------------------------
 
-For visualizing the EEG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signal visualization right from your browser, without installing any software.
+**Using Chords Web**
+   
+For visualizing the EEG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signals visualization right from your browser, without installing any software.
 
 .. figure:: ../../../software/chords/chords-web/media/chords_eeg_signal.*
     :align: center

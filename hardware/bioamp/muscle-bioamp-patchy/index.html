@@ -57,7 +57,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="Apr 14, 2026"/>
+    <meta name="docbuild:last-update" content="Apr 17, 2026"/>
   </head>
   
   
@@ -713,24 +713,35 @@ based Human-Computer Interface (HCI) easily.</p>
 </iframe></div></section>
 <section id="software-requirements">
 <h2>Software requirements<a class="headerlink" href="#software-requirements" title="Link to this heading">#</a></h2>
-<p>Before you start using the kit, please download <a class="reference external" href="https://www.arduino.cc/en/software">Arduino IDE v1.8.19 (legacy IDE)</a>. Using this you’ll be able to upload the arduino sketches on your development board and visualise the data on your laptop.</p>
-<figure class="align-center" id="id5">
+<ol class="arabic simple">
+<li><p><strong>Arduino IDE</strong></p>
+<ul class="simple">
+<li><p>Latest Version (v2.3.8+): <a class="reference external" href="https://www.arduino.cc/en/software">Arduino IDE Latest Version Download</a> <cite>(Recommended for faster compilation and enhanced support for the latest Arduino UNO Development Boards)</cite></p></li>
+<li><p>Legacy Version (v1.8.19): <a class="reference external" href="https://www.arduino.cc/en/software">Arduino IDE v1.8.19 (legacy IDE) Download</a>  <cite>(For Real-time signal visualization using a better built-in Serial Plotter)</cite></p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-center">
 <img alt="Arduino IDE v1.8.19 (legacy IDE)" src="../../../_images/arduino-ide.png" />
-<figcaption>
-<p><span class="caption-text">Arduino IDE v1.8.19 (legacy IDE)</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
-</figcaption>
 </figure>
-<p>Visit Upside Down Labs <a class="reference external" href="https://chords.upsidedownlabs.tech">Chords Web</a> to visualize your bio-potential signals directly in the browser.</p>
-<figure class="align-center" id="id6">
+<ol class="arabic" start="2">
+<li><p><strong>Chords Web Visualizer</strong></p>
+<p>Use <a class="reference external" href="https://chords.upsidedownlabs.tech">Chords Web</a>, our custom web interface designed to visualize biopotential signals data directly in your browser. <cite>(Plug-and-play signal visualization directly in any modern web browser.)</cite></p>
+<figure class="align-center" id="id5">
 <img alt="Chords Web Landing Page" src="../../../_images/chords_landing_page.png" />
 <figcaption>
-<p><span class="caption-text">Chords Web Landing Page</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-text">Chords Web Landing Page</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p><strong>Getting started with Chords Web</strong></p>
-<div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For detailed instructions and visualization tips, check the <a class="reference internal" href="../../../software/chords/chords-web/index.html#chords"><span class="std std-ref">Chords Web Documentation</span></a>.</p>
+<div class="video_wrapper align-center" style="padding-bottom: 50.625000%; padding-top: 30px; position: relative; text-align: center; width: 90%">
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/IVIPnk9z75g" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
-</iframe></div></section>
+</iframe></div></div>
+</li>
+</ol>
+</section>
 <section id="using-the-kit">
 <h2>Using the kit<a class="headerlink" href="#using-the-kit" title="Link to this heading">#</a></h2>
 <section id="step-1-connect-reference-cable">
@@ -766,10 +777,10 @@ based Human-Computer Interface (HCI) easily.</p>
 <section id="step-5-connect-arduino-uno-r3">
 <h3>Step 5: Connect Arduino UNO R3<a class="headerlink" href="#step-5-connect-arduino-uno-r3" title="Link to this heading">#</a></h3>
 <p>Connect <code class="docutils literal notranslate"><span class="pre">VCC</span></code> to <code class="docutils literal notranslate"><span class="pre">5V</span></code>, <code class="docutils literal notranslate"><span class="pre">GND</span></code> to <code class="docutils literal notranslate"><span class="pre">GND</span></code>, and <code class="docutils literal notranslate"><span class="pre">OUT</span></code> to <code class="docutils literal notranslate"><span class="pre">Analog</span> <span class="pre">pin</span> <span class="pre">A0</span></code> of your Arduino UNO via jumper cables provided by us. If you are connecting <code class="docutils literal notranslate"><span class="pre">OUT</span></code> to any other analog pin, then you will have to change the INPUT PIN in the arduino sketch accordingly.</p>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id6">
 <img alt="../../../_images/pathcy-arduino-connections.png" src="../../../_images/pathcy-arduino-connections.png" />
 <figcaption>
-<p><span class="caption-text">Connections with Arduino UNO R3</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-text">Connections with Arduino UNO R3</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -779,40 +790,61 @@ based Human-Computer Interface (HCI) easily.</p>
 </section>
 <section id="step-6-upload-the-code">
 <h3>Step 6: Upload the code<a class="headerlink" href="#step-6-upload-the-code" title="Link to this heading">#</a></h3>
-<p>Connect your Arduino UNO to your laptop using the USB cable (Type A to Type B). Copy paste any one of the arduino sketches given below in Arduino IDE v1.8.19 that you downloaded earlier:</p>
-<p><span class="fab fa-github pst-color-primary"></span> <a class="reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/2_EMGFilter/2_EMGFilter.ino">EMG Filter</a></p>
-<p><span class="fab fa-github pst-color-primary"></span> <a class="reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/3_EMGEnvelope/3_EMGEnvelope.ino">EMG Envelope</a></p>
+<ul class="simple">
+<li><p>Connect your <strong>Arduino UNO Development Board</strong> to your laptop using the USB cable.</p></li>
+<li><p>Copy paste any one of the arduino sketches given below in <code class="docutils literal notranslate"><span class="pre">Arduino</span> <span class="pre">IDE</span> <span class="pre">latest</span> <span class="pre">version</span> <span class="pre">(v2.3.8+)</span></code>:</p></li>
+</ul>
+<p><span class="fab fa-github pst-color-primary"></span> <a class="reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/02_EMG_Filter/02_EMG_Filter.ino">EMG Filter</a></p>
+<p><span class="fab fa-github pst-color-primary"></span> <a class="reference external" href="https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/03_EMG_Envelope/03_EMG_Envelope.ino">EMG Envelope</a></p>
 <figure class="align-center">
 <img alt="../../../_images/setup.png" src="../../../_images/setup.png" />
 </figure>
-<p>Go to <code class="docutils literal notranslate"><span class="pre">tools</span></code> from the menu bar, select <code class="docutils literal notranslate"><span class="pre">board</span></code> option then select Arduino UNO. In the same menu,
-select the COM port on which your Arduino Uno is connected. To find out the right COM port,
-disconnect your board and reopen the menu. The entry that disappears should be the
-right COM port. Now upload the code, &amp; open the serial plotter from the <code class="docutils literal notranslate"><span class="pre">tools</span></code> menu to visualize
-the EMG signals.</p>
-<p>After opening the serial plotter make sure to select the baud rate to 115200.</p>
+<ul class="simple">
+<li><p>Go to <code class="docutils literal notranslate"><span class="pre">Tools</span></code> menu, navigate to <code class="docutils literal notranslate"><span class="pre">Board</span></code>, and select <strong>Arduino UNO Development Board</strong> (UNO R3/ R4/ Minima/ WiFi or any other board).</p></li>
+<li><p>In the same menu, select the <code class="docutils literal notranslate"><span class="pre">Port</span></code> to which your Arduino Uno is connected.</p></li>
+<li><p><strong>Tip:</strong> To find the correct <strong>COM Port</strong>, disconnect your board and reopen the menu. The entry that disappears should be the right COM port.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Upload</span></code> the code.</p></li>
+</ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Make sure your laptop is not connected to a charger and sit 5m away from any AC appliances for best signal acquisition.</p>
+<p>For the best signal acquisition, ensure your laptop is not connected to a charger and maintain a distance of at least 5m from any AC appliances, read more about <a class="reference internal" href="../../../guides/troubleshoot/tips/index.html#tips-for-best-signal-acquisition"><span class="std std-ref">Tips for better signal acquisition</span></a>.</p>
 </div>
 </section>
 <section id="step-7-visualizing-the-emg-signals">
 <h3>Step 7: Visualizing the EMG signals<a class="headerlink" href="#step-7-visualizing-the-emg-signals" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p><strong>Using Chords Web</strong></p>
 <p>For visualizing the EMG signals, use <a class="reference external" href="https://chords.upsidedownlabs.tech/">Chords Web</a> for quick and hassle-free real-time bio-potential signals visualization right from your browser, without installing any software.</p>
-<figure class="align-center" id="id8">
+</li>
+</ol>
+<figure class="align-center" id="id7">
 <img alt="Visualizing EMG signals on Chords Web" src="../../../_images/chords_emg_signal.png" />
 <figcaption>
-<p><span class="caption-text">Visualizing EMG signals on Chords Web</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">Visualizing EMG signals on Chords Web</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Now flex your arm to visualize the muscle signals in real-time on your laptop.</p>
-<figure class="align-center" id="id9">
+<ol class="arabic" start="2">
+<li><p><strong>Using Arduino legacy v1.8.19</strong></p>
+<p>To visualize the signal on Arduino v1.8.19 we will use inbuilt Serial Plotter:</p>
+</li>
+</ol>
+<ul class="simple">
+<li><p>Navigate to (<code class="docutils literal notranslate"><span class="pre">Tools</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Board</span></code>) and select your Development board or Arduino UNO Board (if not detected automatically).</p></li>
+<li><p>Open the Serial Plotter (<code class="docutils literal notranslate"><span class="pre">Tools</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Serial</span> <span class="pre">Plotter</span></code> or <code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+L</span></code>) to visualize the EMG signals.</p></li>
+<li><p>Once the Serial Plotter is open, ensure the baud rate is set to <code class="docutils literal notranslate"><span class="pre">115200</span></code>.</p></li>
+<li><p>Now flex your arm to visualize the muscle signals in real time on your laptop.</p></li>
+</ul>
+<figure class="align-center" id="id8">
 <img alt="Visualizing EMG signals on Arduino IDE v1.8.x" src="../../../_images/patchy-emg.png" />
 <figcaption>
-<p><span class="caption-text">Visualizing EMG signals on Arduino IDE v1.8.x</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">Visualizing EMG signals on Arduino IDE v1.8.x</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p><strong>Video tutorial:</strong></p>
+</section>
+<section id="video-tutorial">
+<h3>Video Tutorial<a class="headerlink" href="#video-tutorial" title="Link to this heading">#</a></h3>
+<p>If you prefer a visual walkthrough, check out our video tutorial:</p>
 <div class="video_wrapper align-center" style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; text-align: center; width: 100%">
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/4dnCX3U7LS8" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
 </iframe></div></section>
@@ -879,6 +911,7 @@ the EMG signals.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-connect-arduino-uno-r3">Step 5: Connect Arduino UNO R3</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-upload-the-code">Step 6: Upload the code</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-visualizing-the-emg-signals">Step 7: Visualizing the EMG signals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#video-tutorial">Video Tutorial</a></li>
 </ul>
 </li>
 </ul>
@@ -971,7 +1004,7 @@ the EMG signals.</p>
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Apr 14, 2026.
+  Last updated on Apr 17, 2026.
   <br/>
 </p></div>
       
