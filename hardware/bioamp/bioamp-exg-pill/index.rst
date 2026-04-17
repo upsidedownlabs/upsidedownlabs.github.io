@@ -85,7 +85,7 @@ Software Requirements
 
 2. **Chords Web Visualizer**
    
-   Use `Chords Web <https://chords.upsidedownlabs.tech>`_, our custom web interface designed to visualize biopotential signals data directly in your browse. `(Plug-and-play signal visualization directly in any modern web browser.)`
+   Use `Chords Web <https://chords.upsidedownlabs.tech>`_, our custom web interface designed to visualize biopotential signals data directly in your browser. `(Plug-and-play signal visualization directly in any modern web browser.)`
    
    .. figure:: ../../../software/chords/chords-web/media/chords_landing_page.*
     :align: center
@@ -234,7 +234,7 @@ We have 2 options to measure the EMG signals, either using the gel electrodes or
 Uploading the code
 ---------------------------
 
-- Connect the Arduino UNO Development Board to your laptop using the USB cable. To upload the code use Arduino IDE latest verison (v2.3.8+).
+- Connect the Arduino UNO Development Board to your laptop using the USB cable. To upload the code use Arduino IDE latest version (v2.3.8+).
 - Choose and copy one of the following Arduino sketches based on your requirements:
 
 :fab:`github;pst-color-primary` `EMG Filter <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/02_EMG_Filter/02_EMG_Filter.ino>`_
@@ -320,7 +320,7 @@ We have 2 options to measure the ECG signals, either using the gel electrodes or
 Uploading the code
 ---------------------
 
-- Connect the Arduino UNO Development Board to your laptop using the USB cable. To upload the code use Arduino IDE latest verison (v2.3.8+).
+- Connect the Arduino UNO Development Board to your laptop using the USB cable. To upload the code use Arduino IDE latest version (v2.3.8+).
 - Choose and copy one of the following Arduino sketches based on your requirements:
 
 :fab:`github;pst-color-primary` `ECG Filter <https://github.com/upsidedownlabs/Heart-BioAmp-Arduino-Firmware/blob/main/2_ECGFilter/2_ECGFilter.ino>`_
@@ -406,7 +406,7 @@ We have 2 ways to measure the EOG signals, either record the horizontal eye move
 Uploading the code
 ---------------------
 
-- Connect the Arduino UNO Development Board to your laptop using the USB cable. To upload the code use Arduino IDE latest verison (v2.3.8+).
+- Connect the Arduino UNO Development Board to your laptop using the USB cable. To upload the code use Arduino IDE latest version (v2.3.8+).
 - Choose and copy one of the following Arduino sketches based on your requirements:
 
 :fab:`github;pst-color-primary` `EOG Filter <https://github.com/upsidedownlabs/Eye-BioAmp-Arduino-Firmware/blob/main/2_EOGFilter/2_EOGFilter.ino>`_
@@ -530,7 +530,7 @@ This common reference configuration ensures clean and synchronized signal acquis
 Uploading the code
 -----------------------
 
-- Connect the Arduino UNO Development Board to your laptop using the USB cable. To upload the code use Arduino IDE latest verison (v2.3.8+).
+- Connect the Arduino UNO Development Board to your laptop using the USB cable. To upload the code use Arduino IDE latest version (v2.3.8+).
 - Choose and copy one of the following Arduino sketches based on your requirements:
 
 :fab:`github;pst-color-primary` `EEG Filter Code <https://github.com/upsidedownlabs/Brain-BioAmp-Arduino-Firmware/blob/main/02-eeg-filter/02-eeg-filter.ino>`_

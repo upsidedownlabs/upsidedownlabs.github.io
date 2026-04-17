@@ -94,7 +94,7 @@ Software requirements
 
 2. **Chords Web Visualizer**
    
-   Use `Chords Web <https://chords.upsidedownlabs.tech>`_, our custom web interface designed to visualize biopotential signals data directly in your browse. `(Plug-and-play signal visualization directly in any modern web browser.)`
+   Use `Chords Web <https://chords.upsidedownlabs.tech>`_, our custom web interface designed to visualize biopotential signals data directly in your browser. `(Plug-and-play signal visualization directly in any modern web browser.)`
    
    .. figure:: ../../../software/chords/chords-web/media/chords_landing_page.*
     :align: center
@@ -162,7 +162,7 @@ Step 6: Upload the code
 
 - Connect your **Arduino UNO Development Board** to your laptop using the USB cable. 
 
-- Copy paste any one of the arduino sketches given below in ``Arduino IDE latest verison (v2.3.8+)``:
+- Copy paste any one of the arduino sketches given below in ``Arduino IDE latest version (v2.3.8+)``:
     
 :fab:`github;pst-color-primary` `EMG Filter <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/02_EMG_Filter/02_EMG_Filter.ino>`_
 

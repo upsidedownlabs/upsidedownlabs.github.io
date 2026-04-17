@@ -148,7 +148,7 @@ Software requirements
 
 2. **Chords Web Visualizer**
    
-   Use `Chords Web <https://chords.upsidedownlabs.tech>`_, our custom web interface designed to visualize biopotential signals data directly in your browse. `(Plug-and-play signal visualization directly in any modern web browser.)`
+   Use `Chords Web <https://chords.upsidedownlabs.tech>`_, our custom web interface designed to visualize biopotential signals data directly in your browser. `(Plug-and-play signal visualization directly in any modern web browser.)`
    
    .. figure:: ../../../software/chords/chords-web/media/chords_landing_page.*
     :align: center
@@ -438,7 +438,7 @@ Step 5: Uploding the Code
 
 :fab:`github;pst-color-primary` `EMG Envelope <https://github.com/upsidedownlabs/Muscle-BioAmp-Arduino-Firmware/blob/main/03_EMG_Envelope/03_EMG_Envelope.ino>`_
 
-To upload the code use Arduino IDE latest verison (v2.3.8+):
+To upload the code use Arduino IDE latest version (v2.3.8+):
 
 - Go to ``Tools`` menu, navigate to ``Board``, and select **Arduino UNO Development Board** (UNO R3/ R4/ Minima/ WiFi or any other board). 
 - In the same menu, select the ``Port`` to which your Arduino Uno is connected. 
