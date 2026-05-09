@@ -1,11 +1,11 @@
 .. _neuroscience-basics-for-biopotential-signals-module-10:
 
+.. figure:: ../media/module-10-banner.*
+   :align: center
+   :alt: Module 10 Banner
+
 Module 10 : EOG
 #############################################
-
-.. figure:: ../media/course-eog-banner.*
-   :align: center
-   :alt: EOG Banner
 
 Basic Terminology
 ****************************
@@ -15,6 +15,10 @@ Basic Terminology
 - **Electrooculograph** : An electrooculograph is the instrument or device used to record electrical signals produced by eye movements. It consists of surface electrodes placed around the eyes, an amplifier to strengthen the electrical signals, and a recording system or computer interface that captures and stores the data. The electrooculograph converts small bioelectrical signals from the eye into measurable signals that can be analyzed for research or clinical purposes.
 
 - **Electrooculogram** : An electrooculogram is the graphical recording or output produced by electrooculography. It represents the changes in electrical potential associated with eye movements over time. The electrooculogram typically appears as a waveform or trace on a computer screen or recording system, allowing researchers or clinicians to study patterns of eye movement, and blinking activity.
+
+.. figure:: ../media/course-eog-banner.*
+   :align: center
+   :alt: EOG Banner
 
 History of EOG [1]_
 *******************************

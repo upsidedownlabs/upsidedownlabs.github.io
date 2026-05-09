@@ -1,11 +1,11 @@
 .. _neuroscience-basics-for-biopotential-signals-module-7:
 
+.. figure:: ../media/module-7-banner.*
+   :align: center
+   :alt: Module 7 Banner
+
 Module 7: EMG
 ##########################
-
-.. figure:: ../media/course-emg-banner.*
-   :align: center
-   :alt: EMG Banner 
 
 Basic Terminology
 *********************************
@@ -15,6 +15,10 @@ Basic Terminology
 - **Electromyograph:** An electromyograph is the specialized electronic instrument used to detect, amplify, and record the electrical signals produced by muscle fibers. The device typically consists of electrodes (surface or needle), amplifiers, filters, and recording systems that capture and process muscle electrical activity for analysis.
 
 - **Electromyogram:** An electromyogram refers to the graphical or recorded representation of the electrical activity of a muscle obtained during electromyography. It displays the amplitude and frequency characteristics of muscle electrical signals over time, allowing interpretation of muscle activation patterns and neuromuscular function.
+
+.. figure:: ../media/course-emg-banner.*
+   :align: center
+   :alt: EMG Banner 
 
 .. note::  **If you want to know detailed history of EMG, you can refer to this section:** `History of EMG <https://www.jalimedical.com/CC01132024>`_
 

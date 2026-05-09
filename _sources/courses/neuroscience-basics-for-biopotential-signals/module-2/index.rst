@@ -1,5 +1,9 @@
 .. _neuroscience-basics-for-biopotential-signals-module-2:
 
+.. figure:: ../media/module-2-banner.*
+    :align: center
+    :alt: Module 2 banner
+
 Module 2: Understanding the Resting Potential
 ###############################################
 
@@ -20,8 +24,6 @@ The resting membrane potential of a neuron is the electrical potential differenc
 membrane at which the neuron is in a non-excited state. [1]_  Another way to define it is as the electrical potential difference across a neuron's plasma membrane when the neuron is not actively sending signals.
 It represents the "ready state" of the neuron, where it is stable, polarized, and prepared to fire an action potential when stimulated.
 
-.. todo:: Add a resting potential banner
-
 Understanding the resting potential is essential because it forms the electrical basis of neuronal excitability. Before studying the resting potential
 in detail, it is indeed important to understand the electrical properties of neurons, since neurons primarily communicate through 
 electrical signals (changes in membrane potential) and chemical synapses.
@@ -38,11 +40,9 @@ Current is defined as the rate of flow of electrical charge. In metals, it is du
 
 .. figure:: ../media/current.*
    :align: center
-   :alt: current in neurons
+   :alt: Current in neurons
 
    Current: The movement of ions across the membrane
-
-.. todo:: Add a current graphic (hand designed)
 
 2.1.2 Voltage
 ==============
@@ -51,11 +51,9 @@ It is the electrical potential that drives the flow of charge. In the context of
 
 .. figure:: ../media/voltage.*
    :align: center
-   :alt: voltage in neurons
+   :alt: Voltage in neurons
 
-   Voltage: electric potential difference across the neuron's membrane
-
-.. todo:: Add a voltage graphic (hand designed)
+   Voltage: Electric potential difference across the neuron's membrane
 
 To better understand electric potential, it's essential to define electrostatic force.
 
@@ -67,29 +65,16 @@ are part of the fundamental forces of nature and are described by Coulomb's law.
 
 .. figure:: ../media/electrostatic-force.*
    :align: center
-   :alt: electrostatic force
-
-   Electrostatic force
-
-.. todo:: Add a similar graphic hand designed
+   :alt: Electrostatic force
 
 2.1.4 Coulomb's law
 ====================
 
 The electrostatic force (F) between two point charges (q1​ and q2) is given by:
 
-.. math::
-   
-   F= F1= F2= k\frac{q1q2}{r^2}
-
-Equation 1:
-
-- F = Electrostatic force
-- k = Coulomb constant (8.99×10*9 Nm*2/C*2)
-- q1,q2 = magnitudes of charges
-- r = distance between the centers of the two charges
-
-.. todo:: Add a graphic of coulomb law (hand designed)
+.. figure:: ../media/coulombs-law.*
+   :align: center
+   :alt: Coulomb's law
 
 .. admonition:: Additional Info
 
@@ -100,21 +85,15 @@ Equation 1:
 
 **Attractive force:** If the charges are of opposite signs (positive and negative), the force is attractive in nature.
 
-.. figure:: ../media/attractive-forces.*
+.. figure:: ../media/attractive-force.*
    :align: center
    :alt: Attractive force
 
-   Attractive force
-
 **Repulsive Force:** If the charges are of the same signs (both positive or both negative), the force is repulsive in nature.
 
-.. figure:: ../media/repulsive-forces.*
+.. figure:: ../media/repulsive-force.*
    :align: center
    :alt: Repulsive force
-
-   Repulsive force
-
-.. todo:: Add 2 graphics hand designed, each of repulsive and attractive forces
 
 2.2 Resting Membrane Potential
 **********************************
@@ -127,10 +106,6 @@ potential.
 .. figure:: ../media/resting-potential.*
    :align: center
    :alt: Resting potential
-
-   Resting potential
-
-.. todo:: Add a similar graphic hand designed
 
 2.2.1 Key features of Resting Membrane Potential (RMP)
 ==========================================================
@@ -181,13 +156,35 @@ Movement of Ions
 
 Due to the concentration gradient, ions tend to move from areas of higher concentration to lower concentration through channels in the neuron's membrane. For example, |K+| ions diffuse out of the neuron, while |Na+| ions tend to diffuse into the neuron.
 
-.. figure:: ../media/diffusion.*
+Types of diffusion 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: ../media/diffusion-types.*
    :align: center
-   :alt: Diffusion of ions
+   :alt: Types of diffusion
 
-   Diffusion of ions
+A. Simple diffusion
+^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: Add 2 graphics here, one is similar to above(hand designed) and other one is as per shared image
+This is the passive movement of ions through the lipid bilayer without the assistance of any proteins. However, this is not common for ions due to their charge and the hydrophobic nature of the membrane.
+
+B. Facilitated diffusion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This is the passive movement of ions through specific protein channels or carriers embedded in the membrane. Ion channels allow ions to move down their concentration gradient, while carrier proteins can assist in moving ions across the membrane. Facilitated diffusion is of two types:
+
+- **Channel mediated diffusion:** Ions move through specific ion channels that are selective for certain ions (e.g., potassium channels, sodium channels). 
+
+i. **Leak channels:** These channels are always open and allow ions to move freely based on their concentration gradient.
+ii. **Gated channels:** These channels open or close in response to specific stimuli (e.g., voltage changes, ligand binding), allowing ions to move across the membrane when activated. Examples include voltage-gated channels, ligand-gated ion channels and mechanically gated channels.
+  
+- **Carrier mediated diffusion:** Carrier proteins bind to specific ions and undergo a conformational change to transport the ion across the membrane. This process is still passive, as it does not require energy input, but it allows for the movement of ions that cannot pass through channels. They are highly selective and become saturated at high ion concentrations. Examples include glucose transporters and amino acid transporters.
+
+.. figure:: ../media/diffusion-graph.*
+   :align: center
+   :alt: Diffusion graph
+
+.. note:: **Active transport, which requires energy input (usually from ATP), is a different process and is not considered a type of diffusion.**
 
 2. Electrostatic forces [1]_
 -----------------------------------
@@ -207,8 +204,6 @@ major role in establishing the resting membrane potential.
       - Voltage range of membrane potential : -90 mV to +60 mV
       - Voltage of neuron RMP : Approx -70 mV
 
-
-
 2.3 Equilibrium potential
 ***************************
 
@@ -218,26 +213,11 @@ The equilibrium potential (also known as the Nernst potential) for a specific io
    :align: center
    :alt: Equilibrium potential
 
-   Equilibrium potential
-
-.. todo:: Add a similar graphic hand designed
-
 **Nernst Equation:** The equilibrium potential for a specific ion can be calculated using the Nernst equation: [2]_
 
-.. math::
-
-   E_{ion} = \frac{RT}{zF} ln \frac{I_{out}}{I_{in}} 
-
-Where:
-
-- |Eion| is the equilibrium potential for the ion.
-- R is the universal gas constant.
-- T is the absolute temperature in Kelvin.
-- z is the valence (charge) of the ion.
-- F is Faraday's constant.
-- |Iout| and |Iin| are the concentrations of the ion outside and inside the cell, respectively.
-
-.. todo:: Add a graphic that includes formula and above data
+.. figure:: ../media/nernst-equation.*
+   :align: center
+   :alt: Nernst equation
 
 Equilibrium Potentials for major ions: [1]_
 
@@ -249,21 +229,9 @@ Equilibrium Potentials for major ions: [1]_
 
 The Goldman equation, often referred to as the GHK equation, calculates the resting potential of a cell based on the permeability and concentrations of multiple ions. It accounts for the relative contributions of different ions to the resting potential. The equation is as follows:
 
-.. math::
-
-   V_m = \frac{RT}{F} \ln \left( \frac{P_{K^+}[K^+]_{out} + P_{Na^+}[Na^+]_{out} + P_{Cl^-}[Cl^-]_{in}}{P_{K^+}[K^+]_{in} + P_{Na^+}[Na^+]_{in} + P_{Cl^-}[Cl^-]_{out}} \right)
-
-where:
-
-- |Vm| is the membrane potential
-- R is the universal gas constant
-- T is absolute temperature in Kelvin
-- F is Faraday's constant
-- |PX| is permeability of ion X
-- |Xin| is concentration of ion X inside the cell
-- |Xout| is concentration of ion X outside the cell
-
-.. todo:: Add a graphic that includes above formula and info written above
+.. figure:: ../media/goldman-equation.*
+   :align: center
+   :alt: Goldman-Hodgkin-Katz equation
 
 .. note:: The Nernst potential (or equilibrium potential) indicates the voltage for a specific ion, but since the resting potential is affected by multiple ions, we use the Goldman equation to calculate the overall resting potential of the cell. [1]_
 
@@ -276,8 +244,6 @@ There are majorly two types of ion channels:
 
 1. **Leak Channels:** These are always open, letting ions flow freely based on their concentration gradient.
 2. **Voltage-Gated Channels:** These channels open and close in response to changes in the cell membrane potential. They are important for generating and transmitting electrical signals, like action potentials.
-
-.. todo:: Add graphic for both the channels
 
 Ion channels are highly selective proteins, meaning they allow only certain ions to pass through while blocking others. For 
 example, potassium channels primarily allow potassium ions (K⁺) to pass, while sodium channels primarily allow sodium ions (Na⁺).
@@ -322,6 +288,10 @@ hydration shell, and the amino acids forming the channel’s selectivity filter.
 The Na⁺/K⁺-ATPase is an antiport pump present in all eukaryotic cells. It transports three Na⁺ ions out of the cell and two K⁺ 
 ions into the cell against their concentration gradients, helping maintain high intracellular K⁺ and low intracellular Na⁺ levels.
 
+.. figure:: ../media/sodium-potassium-pump.*
+   :align: center
+   :alt: Sodium-Potassium pump
+
 **Structure of the Pump**
 
 The Na⁺/K⁺-ATPase is a heterodimer consisting of a large α subunit (the catalytic unit) and a smaller β subunit. The α subunit 
@@ -351,6 +321,12 @@ where:
 - |Pi| is the phosphate ion 
 
 .. note:: Active Transport is a process that involves the movement of molecules from a region of lower concentration to an area of higher concentration against their natural concentration gradient. [6]_
+
+.. figure:: ../media/sodium-potassium-pump-cycle.*
+   :align: center
+   :alt: Sodium-Potassium pump cycle 
+
+   Sodium-Potassium pump cycle [12]_
 
 2.6.1 Functions of the Na⁺/K⁺ ATPase
 ==========================================
@@ -388,14 +364,6 @@ imbalance that helps keep the inside of the cell more negative, thereby supporti
 Several hormones exert part of their effects through the Na⁺/K⁺ pump. Hormones such as insulin, thyroid hormones, and aldosterone 
 can increase pump activity. Through this regulation, the pump plays a role in hormonal control of metabolism, ion balance, and
 overall cellular homeostasis.
-
-.. figure:: ../media/sodium-potassium-pump.*
-   :align: center
-   :alt: Sodium-Potassium pump
-
-   Sodium-Potassium Pump
-
-.. todo:: Add a hand designed sodium potassium pump graphic here
 
 .. note::
    1. The pump helps maintain the electrochemical gradient essential for the resting potential, typically around -70 mV in neurons. This gradient is crucial for the generation of action potentials. [7]_
@@ -467,3 +435,7 @@ distances.
 .. [8] `Morth, J., Pedersen, B., Toustrup-Jensen, M. et al. Crystal structure of the sodium-potassium pump. Nature 450, 1043–1049 (2007) <https://doi.org/10.1038/nature06419>`_
 .. [9] `Pirahanchi Y, Jessu R, Aeddula NR. Physiology, Sodium Potassium Pump. [Updated 2023 Mar 13]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. <https://www.ncbi.nlm.nih.gov/books/NBK537088/>`_
 .. [10] https://derangedphysiology.com/main/cicm-primary-exam/cellular-physiology/Chapter-121/gibbs-donnan-effect
+
+11. Pal, G. (2019). Comprehensive Textbook of Medical Physiology: Two Volume Set (2nd ed.). JP Medical.
+
+.. [12] https://microbenotes.com/sodium-potassium-na-k-pump/
