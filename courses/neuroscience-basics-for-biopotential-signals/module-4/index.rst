@@ -1,5 +1,9 @@
 .. _neuroscience-basics-for-biopotential-signals-module-4:
 
+.. figure:: ../media/module-4-banner.*
+   :align: center
+   :alt: Module 4 Banner
+
 Module 4: The Action Potential and its Propagation 
 #####################################################
 
@@ -11,7 +15,11 @@ In this module, we will study the phases, mechanisms, and factors influencing th
 4.1 Voltage-Gated Ion Channels [1]_
 *****************************************
 
-.. todo:: Add a graphic for voltage gated ion channel showing all 3 states(inactivated,closed and open)
+.. figure:: ../media/voltage-gated-ion-channels.*
+   :align: center
+   :alt: Voltage-Gated Ion Channels
+
+   Functional states of voltage-gated ion channels [5]_ 
 
 In the previous lessons, we have studied about the passive leak ion channels which are unable to generate rapid 
 changes in the membrane potential of a neuron, therefore neurons require another type of ion channel called Voltage Gated 
@@ -20,9 +28,6 @@ Ion Channels.
 Voltage-gated channels are specialized membrane proteins that open or close in response to changes in the membrane potential. Their coordinated opening and closing 
 allow neurons to transmit signals rapidly and effectively throughout the nervous system. The action potential arises from the activity of two primary voltage-gated ion 
 channels: voltage-gated Na⁺ channels and K⁺ channels. These channels open and close at specific moments, generating ion flow, which leads to an action potential. 
-
-.. figure:: ../media/voltage-gated-on-Ion-channels.*
-   :alt: Voltage-Gated Ion Channels
 
 .. note:: Voltage Gated Ion Channels open when the neuron’s membrane potential reaches a certain value called threshold potential. [1]_
 
@@ -58,10 +63,9 @@ The latent period is the short time interval between the application of a stimul
 4.3 Phases of the Action Potential 
 ***********************************
 
-.. figure:: ../media/phases-of-the-action-potential.*
-   :alt: phases-of-the-action-potential
-
-.. todo:: Image uploaded to be redesigned (hand made)   
+.. figure:: ../media/action-potential-phases.*
+   :align: center
+   :alt: Phases of the Action Potential
 
 The action potential consists of several distinct phases, each characterized by specific changes in membrane potential and ion movement : 
 
@@ -144,14 +148,16 @@ Return to Resting Phase [1]_
 4.4.1 Propagation of the Action Potential
 =================================================
 
+.. figure:: ../media/propagation-action-potential.*
+   :align: center
+   :alt: Propagation of Action Potential
+
 1. Once initiated, the action potential is regenerated along the axon until it reaches the axon terminal. This transmission is called propagation of action potential.
 2. Myelinated fibers conduct impulses faster than unmyelinated fibers.
 3. Larger diameter fibers conduct impulses faster because they have lower cytoplasmic resistance, allowing easier ion flow.
 
 4.4.2 Propagation in Unmyelinated axons
 ==============================================
-
-.. todo:: Add a graphic for propagation through unmyelinated axon as shared
 
 1. At the site of action potential generation, Na⁺ influx produces accumulation of positive charges, called a current sink.
 2. These positive charges spread to adjacent resting membrane regions.
@@ -171,7 +177,9 @@ Return to Resting Phase [1]_
 4.4.3 Propagation in Myelinated axons (Saltatory Conduction)
 ==================================================================
 
-.. todo:: Add a graphic for propagation through myelinated axon as shared
+.. figure:: ../media/propagation-myelinated-axon.*
+   :align: center
+   :alt: Propagation in Myelinated Axon
 
 1. Myelin sheath acts as an electrical insulator, preventing free ion movement across the membrane.
 2. Few voltage-gated Na⁺ channels are present in the myelinated segments. Therefore, action potentials cannot be generated in the myelinated regions.
@@ -182,6 +190,10 @@ Return to Resting Phase [1]_
 7. When the node reaches threshold potential, a new action potential is generated.
 8. Thus, the impulse jumps from one node of Ranvier to the next.
 9. This mode of conduction is called saltatory conduction (“saltare” = to jump)
+
+.. figure:: ../media/saltatory-conduction.*
+   :align: center
+   :alt: Saltatory Conduction
 
 .. admonition:: Advantages of myelination
 
@@ -223,11 +235,9 @@ to fire another action potential, or requires a stronger-than-normal stimulus to
 action potentials propagate in one direction (without reversing course) and that the cell has enough time to 
 reset its membrane potential to its resting state.
 
-.. todo:: Graphic to be redesigned (hand made)
-
 .. figure:: ../media/refractory-period.*
+   :align: center
    :alt: Refractory Period
-
 
 Types of Refractory Periods
 ======================================
@@ -336,3 +346,8 @@ neuron to chemical communication between neurons.
 
 .. [1] `Henley, C. (2021, January 1). Action Potentials. Pressbooks. <https://openbooks.lib.msu.edu/neuroscience/chapter/action-potentials/>`_
 .. [2] `Toshio NARAHASHI, Tetrodotoxin, Proceedings of the Japan Academy, Series B, 2008, Volume 84, Issue 5, Pages 147-154, Released on J-STAGE May 15, 2008, Online ISSN 1349-2896, Print ISSN 0386-2208, https://doi.org/10.2183/pjab.84.147 <https://www.jstage.jst.go.jp/article/pjab/84/5/84_5_147/_article/-char/en>`_
+
+3. Pal, G. (2019). Comprehensive Textbook of Medical Physiology: Two Volume Set (2nd ed.). JP Medical.
+4. Hall, J. E., & Hall, M. E. (2025). Guyton and Hall textbook of medical physiology (15th ed.). Elsevier.
+
+.. [5] https://www.kenhub.com/en/library/physiology/voltage-gated-ion-channels

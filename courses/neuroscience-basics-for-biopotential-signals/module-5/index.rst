@@ -1,11 +1,19 @@
 .. _neuroscience-basics-for-biopotential-signals-module-5:
 
+.. figure:: ../media/module-5-banner.*
+    :align: center
+    :alt: Module 5 Banner 
+
 Module 5: The Synapse
 #####################################################
 
 A synapse is a junction between two neurons (nerve cells) or between a neuron and another cell, such as muscle or a gland cell that allows them to communicate. It is the site where electrical or chemical signals are transmitted from one cell to another.
 
-.. todo:: Add a synaptic transmission graphic here
+.. figure:: ../media/synaptic-transmission.*
+    :align: center
+    :alt: Synaptic Transmission
+
+    Schematic of synaptic transmission at a chemical synapse [9]_  
 
 5.1 Types of synapse
 *************************
@@ -23,11 +31,15 @@ Electrical synapses allow direct communication between adjacent cells through sp
 Structure of Electrical Synapse
 -----------------------------------
 
-.. todo:: Add graphic of electrical synapse structure
+.. figure:: ../media/electrical-synapse-structure.*
+    :align: center
+    :alt: Electrical Synapse Structure
+
+    Structure of an electrical synapse (gap junction) [10]_ 
 
 - Electrical synapses are formed by gap junction channels that connect the cytoplasm of two neighboring cells.
 - Each gap junction channel is composed of two connexons, one from each cell.
-- Each connexon consists of six connexin proteins arranged in a circular pattern.
+- Each connexon consists of six connexin proteins arranged in a circular pattern. 
 
 Mechanism of Electrical Synapse
 -----------------------------------
@@ -50,7 +62,11 @@ Mechanism of Chemical Synapse
 1. Arrival of Action Potential
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: Add graphic of this step as shared
+.. figure:: ../media/chemical-synapse-step-1.*
+    :align: center
+    :alt: Chemical Synapse Mechanism Step 1
+
+    Arrival of action potential at the presynaptic terminal [11]_
 
 When an action potential reaches the presynaptic terminal, it causes depolarization of the presynaptic membrane. This electrical signal initiates the movement of synaptic vesicles
 toward the presynaptic membrane near the synaptic cleft. These vesicles contain neurotransmitters, which function as chemical messenger molecules that transmit signals
@@ -59,7 +75,11 @@ between neurons.
 2. Opening of Voltage-Gated Calcium Channels
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: Add graphic of this step as shared
+.. figure:: ../media/chemical-synapse-step-2.*
+    :align: center
+    :alt: Chemical Synapse Mechanism Step 2
+
+    Opening of voltage-gated calcium channels and influx of calcium ions [12]_
 
 The depolarization of the presynaptic membrane causes the opening of voltage-gated calcium (Ca²⁺) channels. As a result, calcium ions enter the presynaptic terminal from
 the extracellular fluid. The increase in intracellular calcium concentration triggers conformational changes in the proteins associated with synaptic vesicles. These changes
@@ -68,7 +88,11 @@ prepare the vesicles for fusion with the presynaptic membrane.
 3. Exocytosis of Neurotransmitters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: Add graphic of this step as shared
+.. figure:: ../media/chemical-synapse-step-3.*
+    :align: center
+    :alt: Chemical Synapse Mechanism Step 3
+
+    Exocytosis of neurotransmitters into the synaptic cleft [13]_
 
 The influx of calcium ions causes the synaptic vesicles to fuse with the presynaptic membrane. This process is known as exocytosis. During exocytosis, the membrane of
 the vesicle merges with the plasma membrane and releases the stored neurotransmitters into the synaptic cleft.
@@ -107,7 +131,11 @@ secondary messengers. This process produces slower but more prolonged cellular r
     protein stimulates adenylyl cyclase and increases cyclic AMP (cAMP) levels. The Gi protein inhibits adenylyl cyclase and decreases cAMP levels, while the Gq protein activates
     phospholipase C (PLC) leading to the production of IP₃ and DAG, which further mediate cellular responses.
 
-.. todo:: Add a graphic for metabotropic and ionotropic receptors as shared
+.. figure:: ../media/postsynaptic-receptors.*
+    :align: center
+    :alt: Postsynaptic Receptors
+
+    Types of postsynaptic receptors: Ionotropic (ligand-gated ion channels) and Metabotropic (G-protein-coupled receptors) [14]_
 
 .. note:: 
    
@@ -131,6 +159,12 @@ secondary messengers. This process produces slower but more prolonged cellular r
 | Examples       | Retina, heart, certain brain regions  | Most brain synapses, neuromuscular junctions         |
 +----------------+---------------------------------------+------------------------------------------------------+
 
+.. Figure:: ../media/synapse-types.*
+    :align: center
+    :alt: Synapse Types
+
+    Comparison of electrical and chemical synapses [15]_
+
 .. admonition:: Important Fact 
 
     - In the developing nervous system, electrical synapse is more common. 
@@ -140,8 +174,6 @@ secondary messengers. This process produces slower but more prolonged cellular r
 *******************************
 
 After neurotransmitters are released into the synaptic cleft, they do not remain there for long. Neurotransmitters present in the synaptic cleft generally follow three main pathways:
-
-.. todo:: Add a graphic for fate of neurotransmitters as shared
 
 1. Reuptake
 ==================
@@ -190,7 +222,11 @@ Important Points
 * How far and how strongly they spread depends on membrane resistance (Rm), internal resistance (Ri), capacitance (Cm), the length constant (λ), and the time constant (τ). :ref:`(Module 3) <neuroscience-basics-for-biopotential-signals-module-3>`
 * When many EPSPs combine and reach threshold, the neuron fires an action potential. IPSPs work against this process, preventing the membrane from reaching threshold and reducing the chance of firing. :ref:`(Module 4) <neuroscience-basics-for-biopotential-signals-module-4>`
 
-.. todo:: Add a graphic of overview of synaptic transmission at neuromuscular junction as shared
+.. figure:: ../media/synaptic-transmission-nmj.*
+    :align: center
+    :alt: Synaptic Transmission at Neuromuscular Junction
+
+    Synaptic transmission at the neuromuscular junction (NMJ) [16]_
 
 5.4 Bernard Katz experiment [5]_
 ************************************
@@ -369,3 +405,14 @@ In module 5, we explored how synapses enable communication between neurons, the 
 .. [5] `Purves D, Augustine GJ, Fitzpatrick D, et al., editors. Neuroscience. 2nd edition. Sunderland (MA): Sinauer Associates; 2001. Quantal Transmission at Neuromuscular Synapses. <https://www.ncbi.nlm.nih.gov/books/NBK11028/>`_
 .. [6] https://courses.lumenlearning.com/wm-biology2/chapter/chemical-and-electrical-synapses/
 .. [7] `Purves D, Augustine GJ, Fitzpatrick D, et al., editors. Neuroscience. 2nd edition. Sunderland (MA): Sinauer Associates; 2001. Two Families of Postsynaptic Receptors. <https://www.ncbi.nlm.nih.gov/books/NBK10855/>`_
+
+8. Pal, G. (2019). Comprehensive Textbook of Medical Physiology: Two Volume Set (2nd ed.). JP Medical.
+
+.. [9]  https://www.simplypsychology.org/synaptic-transmission-a-level-psychology.html
+.. [10] https://www.researchgate.net/publication/342130217_Gap_junction-mediated_cell-to-cell_communication_in_oral_development_and_oral_diseases_a_concise_review_of_research_progress
+.. [11] https://www.britannica.com/science/neuron
+.. [12] https://benthamopen.com/FULLTEXT/TONEUJ-10-99/FIGURE/F1/
+.. [13] https://www.thoughtco.com/what-is-exocytosis-4114427
+.. [14] https://www.researchgate.net/figure/onotropic-and-metabotropic-neurotransmitter-receptors-14_fig9_308369018
+.. [15] https://colorado.pressbooks.pub/neuroscience/chapter/electrical-synapses/
+.. [16] https://antranik.org/synaptic-transmission-by-somatic-motorneurons/

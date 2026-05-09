@@ -1,5 +1,9 @@
 .. _neuroscience-basics-for-biopotential-signals-module-1:
 
+.. figure:: ../media/module-1-banner.*
+    :align: center
+    :alt: Module 1 banner
+
 Module 1: Human Nervous System
 ######################################
 
@@ -464,3 +468,4 @@ enables them to produce and transmit signals throughout the nervous system.
 .. [15] `Lobes of the Brain <https://qbi.uq.edu.au/brain/brain-anatomy/lobes-brain>`_
 .. [16] `Brainstem Overview <https://www.physio-pedia.com/Brainstem>`_
 
+17. Pal, G. (2019). Comprehensive Textbook of Medical Physiology: Two Volume Set (2nd ed.). JP Medical.

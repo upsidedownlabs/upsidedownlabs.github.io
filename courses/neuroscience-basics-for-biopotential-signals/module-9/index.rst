@@ -1,11 +1,11 @@
 .. _neuroscience-basics-for-biopotential-signals-module-9:
 
+.. figure:: ../media/module-9-banner.*
+   :align: center
+   :alt: Module 9 Banner
+
 Module 9 : EEG
 #############################################
-
-.. figure:: ../media/course-eeg-banner.*
-   :align: center
-   :alt: EEG Banner 
 
 Basic Terminology
 *********************************
@@ -15,6 +15,10 @@ Basic Terminology
 - **Electroencephalograph:** An electroencephalograph is the instrument used to record and amplify the brain’s electrical signals detected by scalp electrodes during electroencephalography.
 
 - **Electroencephalogram:** An electroencephalogram is the visual recording or waveform produced by the electroencephalograph, which represents the brain’s electrical activity over time.
+
+.. figure:: ../media/course-eeg-banner.*
+   :align: center
+   :alt: EEG Banner 
 
 .. note::  **If you want to know detailed history of EEG, you can refer to this section:** `History of EEG <https://www.neuroelectrics.com/blog/the-evolution-of-eeg-a-journey-through-time>`_
   
@@ -52,8 +56,12 @@ EEG measures the tiny electrical voltages (in microvolts) generated on the scalp
 
 2. **Electrode Cap**: A wearable cap that holds multiple electrodes in place. This ensures consistent electrode placement and is used for convenience during longer recordings.
 
-.. todo:: Electrode cap EEG image required 
+.. figure:: ../media/course-eeg-electrode-placement.*
+   :align: center
+   :alt: EEG Electrode Placement 
 
+   EEG electrode placement (Electrode cap)  
+   
 9.3.2 Signal Detection
 =================================
 
@@ -100,7 +108,9 @@ In some advanced setups, additional electrodes are placed for more detailed spat
    - Amplitude is usually high (>75 microvolts) and can reach up to 200 microvolts in infants.
    - Delta waves are normally present during deep sleep and are also observed in infants, but they can be abnormal in awake adults, indicating brain injury or dysfunction.
 
-.. todo:: Graphics required for associated with 
+.. figure:: ../media/course-eeg-delta-waves.*
+   :align: center
+   :alt: EEG Delta Waves 
 
 2. **Theta waves**
 
@@ -109,7 +119,9 @@ In some advanced setups, additional electrodes are placed for more detailed spat
    - Common during NREM stage 1 and 2 sleep, as well as during deep meditation or relaxation.
    - Also associated with creativity, memory processing and hippocampal activity, but excessive theta activity in awake adults can indicate neurological disorders or cognitive impairment.
 
-.. todo:: Graphics required for associated with 
+.. figure:: ../media/course-eeg-theta-waves.*
+   :align: center
+   :alt: EEG Theta Waves
 
 3. **Alpha waves**
 
@@ -118,7 +130,9 @@ In some advanced setups, additional electrodes are placed for more detailed spat
    - Alpha waves are most prominent when the eyes are closed.
    - Alpha waves decreases or disappears when a person opens their eyes, focuses attention, or engages in mental activity. This phenomenon is known as alpha blocking or alpha attenuation.
 
-.. todo:: Graphics required for associated with 
+.. figure:: ../media/course-eeg-alpha-waves.*
+   :align: center
+   :alt: EEG Alpha Waves
 
 4. **Beta waves**
 
@@ -127,7 +141,9 @@ In some advanced setups, additional electrodes are placed for more detailed spat
    - Abnormal beta patterns can indicate neurological dysfunction such as in Parkinson’s disease.
    - These waves have relatively low amplitude and high frequency, and are associated with active thinking, problem-solving, and focused mental activity. They are also observed during REM sleep and in certain psychiatric conditions such as anxiety or schizophrenia.
 
-.. todo:: Graphics required for associated with
+.. figure:: ../media/course-eeg-beta-waves.*
+   :align: center
+   :alt: EEG Beta Waves
 
 5. **Gamma waves** 
 
@@ -138,7 +154,9 @@ In some advanced setups, additional electrodes are placed for more detailed spat
    - They are thought to play a role in consciousness, attention, and memory formation. Abnormal gamma activity has been linked to conditions such as autism and schizophrenia.
    - Gamma waves are typically of low amplitude and can be difficult to detect with standard EEG equipment, often requiring specialized techniques for accurate measurement.
 
-.. todo:: Graphics required for associated with 
+.. figure:: ../media/course-eeg-gamma-waves.*
+   :align: center
+   :alt: EEG Gamma Waves 
 
 9.5 Applications of EEG 
 ********************************

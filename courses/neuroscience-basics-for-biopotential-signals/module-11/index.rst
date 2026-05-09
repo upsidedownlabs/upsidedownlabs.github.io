@@ -1,11 +1,11 @@
 .. _neuroscience-basics-for-biopotential-signals-module-11:
 
+.. figure:: ../media/module-11-banner.*
+   :align: center
+   :alt: Module 11 Banner
+
 Module 11 : Conclusion
 #############################################
-
-.. figure:: ../media/course-conclusion.*
-   :align: center
-   :alt: Course Conclusion
 
 11.1 Summary of Key Concepts
 ***************************************
@@ -21,6 +21,10 @@ In this course, we have covered a wide range of topics related to neuroscience a
 - This course also connects concepts from resting membrane potential and action potential to larger signals like EEG and EMG, showing how neural activity becomes measurable signals.
 
 **As you continue your journey in neuroscience, remember that the field is constantly evolving, and there are always new discoveries and innovations on the horizon. Stay curious, stay ethical, and keep pushing the boundaries of what is possible with biopotential signals.**
+
+.. figure:: ../media/course-conclusion.*
+   :align: center
+   :alt: Course Conclusion
 
 11.2 Role of Upside Down Labs
 **********************************

@@ -1,5 +1,9 @@
 .. _neuroscience-basics-for-biopotential-signals-module-3:
 
+.. figure:: ../media/module-3-banner.*
+   :align: center
+   :alt: Module 3 Banner 
+
 Module 3: Passive Membrane Properties [1]_
 ####################################################
 
@@ -18,6 +22,10 @@ transmit signals. Let us understand each of them one by one.
 Resistance is a measure of how much a material opposes the flow of electric current. In the context of neurons, 
 it refers to how difficult it is for ions to flow across the membrane.
 
+.. figure:: ../media/resistance-formula.*
+   :align: center
+   :alt: Resistance formula
+
 Types of Resistance in Neurons:
 --------------------------------
 
@@ -35,12 +43,7 @@ Factors affecting membrane resistance
 - **Myelination:** Myelin increases membrane resistance by preventing ion leakage across the membrane.
 - **Temperature:** Higher temperatures can increase ion mobility, which may decrease membrane resistance.
 
-.. todo:: Add a membrane resistance graphic here showing factors affecting
-
 .. note:: A high membrane resistance helps maintain the membrane's resting potential by minimizing the flow of ions across it. 
-
-.. figure:: ../media/membrane-resistance.*
-   :alt: Membrane Resistance
 
 2. Axial Resistance (Ri)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -54,21 +57,15 @@ Factors affecting axial resistance
 - **Diameter of the Neuron:** Larger diameter axons have lower axial resistance because a greater cross-sectional area allows for easier ion flow. This is why larger axons can conduct signals more rapidly.
 - **Length of the neuronal process:** Longer axons or dendrites have higher axial resistance because the current has to travel a greater distance, leading to more potential for signal decay.
 
-.. figure:: ../media/axial-resistance.*
-   :alt: Axial Resistance
-
-.. todo:: Add a axial resistance graphic here showing factor affecting
-
 .. note:: Axial resistance affects how far a signal can travel along an axon without significant potential loss. Lower axial resistance allows signals to travel farther and faster.
-
-.. todo:: Add resistance formula
 
 .. admonition:: Conductance
 
    It is the ease with which electric current can flow through a membrane. In the context of neurons, it refers to the ease with which ions can move across the neuronal membrane, meaning a higher conductance indicates a lower resistance, allowing for easier passage of electrical signals through the neuron. 
 
-.. todo:: Add capacitance formula
-
+   .. figure:: ../media/conductance-formula.*
+      :align: center
+      :alt: Conductance formula
 
 3.1.2 Capacitance
 =====================
@@ -78,6 +75,10 @@ Capacitance is the ability of a system to store electric charge.
 In neurons, the Membrane capacitance (Cm) can be described as the capacity of a neuronal membrane to store charge, which is crucial for 
 creating and maintaining the membrane potential.
 
+.. figure:: ../media/capacitance-formula.*
+   :align: center
+   :alt: Capacitance formula
+
 Factors Affecting Membrane Capacitance:
 ------------------------------------------------
 
@@ -85,10 +86,6 @@ Factors Affecting Membrane Capacitance:
 - **Thickness of the Membrane:** Thinner membranes generally have higher capacitance because the distance between charges is less.
 - **Dielectric Properties of the Membrane:** The lipid bilayer of the neuronal membrane acts as a dielectric (insulating layer) between two conductive solutions (inside and outside of the cell). The properties of this dielectric layer influence the capacitance. A higher dielectric constant increases capacitance by allowing the membrane to store more charge.
 - **Myelination:** Myelin sheaths increase the effective thickness of the membrane, which can decrease capacitance and allow for faster signal transmission.
-
-.. todo:: CAPACITOR FORMULA
-
-.. todo:: Add a capacitance graphic here showing factors affecting it
 
 Role in Membrane Potential
 ---------------------------
@@ -109,14 +106,18 @@ The time constant is defined as the product of resistance and capacitance. It in
 how quickly the membrane potential can change in response to a stimulus. A longer time constant means the neuron 
 takes longer to respond, while a shorter time constant allows for rapid changes.
 
-.. todo:: ADD TIME CONSTANT FORMULA
+.. figure:: ../media/time-constant.*
+   :align: center
+   :alt: Time Constant
 
 Length Constant (λ)
 ============================
 
 This measures how far an electrical signal can travel along the axon before it decays significantly. It is influenced by both axial resistance and membrane resistance. A higher length constant allows the signal to travel farther.
 
-.. todo:: ADD LENGTH CONSTANT FORMULA 
+.. figure:: ../media/length-constant.*
+   :align: center
+   :alt: Length Constant 
 
 3.3 Summary
 **************

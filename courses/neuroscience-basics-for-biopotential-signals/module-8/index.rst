@@ -1,11 +1,11 @@
 .. _neuroscience-basics-for-biopotential-signals-module-8:
 
+.. figure:: ../media/module-8-banner.*
+   :align: center
+   :alt: Module 8 Banner
+
 Module 8: ECG/EKG
 #############################################
-
-.. figure:: ../media/course-ecg-banner.*
-   :align: center
-   :alt: ECG Banner
 
 Basic Terminology
 *******************************
@@ -15,6 +15,10 @@ Basic Terminology
 - **Electrocardiograph:** An electrocardiograph is the electronic device used to record the electrical activity of the heart. It detects electrical signals from electrodes placed on the skin, amplifies these signals, and converts them into a visible recording that can be displayed on a monitor or printed on ECG paper.
 
 - **Electrocardiogram:** An electrocardiogram is the graphical recording produced by the electrocardiograph that represents the electrical activity of the heart over time. 
+
+.. figure:: ../media/course-ecg-banner.*
+   :align: center
+   :alt: ECG Banner
 
 .. note:: **If you want to know detailed history of ECG, you can refer to this section:** `History of ECG <https://litfl.com/history-of-the-electrocardiogram/>`_
 
@@ -116,7 +120,11 @@ An ECG is composed of several waves, intervals, and segments, each corresponding
 
     In an electrocardiogram (ECG), a **lead** refers to a specific electrical connection between two electrodes on the body, which allows the recording of the heart's electrical activity from a particular angle or perspective, essentially providing a "view" of the heart's electrical signals from different directions. **A standard 12-lead ECG uses 10 electrodes to create 12 different leads, giving a comprehensive picture of the heart's electrical activity.**
 
-.. todo:: Add a graphic for 12 lead placement for ecg
+.. figure:: ../media/course-ecg-leads-placement.*
+   :align: center
+   :alt: ECG Leads Placement
+
+   12-lead ECG Electrode Placement
 
 **Bipolar Leads (I, II, III)**: These leads record the electrical activity between two points.
 
@@ -132,7 +140,11 @@ An ECG is composed of several waves, intervals, and segments, each corresponding
 
 **Precordial/Chest Leads (V1 to V6)**: These are placed directly on the chest and provide a more localized view of the heart's electrical activity. 
 
-.. todo:: Add a einthoven triangle graphic here
+.. figure:: ../media/course-ecg-hexaxial-system.*
+    :align: center
+    :alt: ECG Hexaxial System 
+
+    Hexaxial Reference System for Limb Leads
 
 8.4.3 Cardiac Axis [5]_
 ===========================

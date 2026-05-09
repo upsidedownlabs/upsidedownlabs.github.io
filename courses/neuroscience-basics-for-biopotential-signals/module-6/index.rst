@@ -1,5 +1,9 @@
 .. _neuroscience-basics-for-biopotential-signals-module-6:
 
+.. figure:: ../media/module-6-banner.*
+    :align: center
+    :alt: Module 6 Banner
+
 Module 6: Biopotential Signals  [1]_
 #####################################
 
