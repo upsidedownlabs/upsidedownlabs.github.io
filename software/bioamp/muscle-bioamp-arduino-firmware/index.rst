@@ -341,15 +341,16 @@ Let's explore all the experiments step by step
 
     3. Envelope detection:
         
-       - Calculate moving average of rectified signal values to smooth out rapid fluctuations and get a stable envelope:
+       - Calculate moving average of rectified signal values to smooth out rapid fluctuations and get a stable envelope.
+       - The * 2 at the end is just to scale the envelope to a more visible range for visualization.
 
     ::
 
         sum -= circular_buffer[data_index];
-	sum += abs_emg;
-	circular_buffer[data_index] = abs_emg;
-	data_index = (data_index + 1) % BUFFER_SIZE;   
-	return (sum/BUFFER_SIZE) * 2; 
+        sum += abs_emg;
+        circular_buffer[data_index] = abs_emg;
+        data_index = (data_index + 1) % BUFFER_SIZE;
+        return (sum/BUFFER_SIZE) * 2;
     4. Print Envelope
 
        - Send the smoothed envelope value via Serial.
@@ -405,7 +406,7 @@ Let's explore all the experiments step by step
         
     ::
         
-        for(int i = 0; i<=total_leds; i++){
+        for(int i = 0; i<total_leds; i++){
           if(i>(envelope/EMG_ENVELOPE_DIVIDER - EMG_ENVELOPE_BASELINE)){
               digitalWrite(led_bar[i], LOW);
           } else {
@@ -554,7 +555,7 @@ Let's explore all the experiments step by step
   
     ::
 
-        for(int i = 0; i<=total_leds; i++){
+        for(int i = 0; i<total_leds; i++){
           if(i>(envelope/EMG_ENVELOPE_DIVIDER - EMG_ENVELOPE_BASELINE)){
               digitalWrite(led_bar[i], LOW);
           } else {
