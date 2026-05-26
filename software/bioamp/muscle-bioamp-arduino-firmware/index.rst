@@ -332,26 +332,24 @@ Let's explore all the experiments step by step
 
     2. Full‐Wave Rectification
 
-       - Convert the filtered sample to its absolute value:
+       - Convert the filtered sample to its absolute value, i.e. the negative part of the signal is inverted about x-axis and becomes positive.
+       - abs() converts negative values to positive, creating a rectified signal.
     
     ::
         
-        float rectified = abs(filteredValue);
+        abs(signal);  
 
-    3. Low‐Pass (Smoothing) Filter
+    3. Envelope detection:
         
-       - Apply a simple moving average or exponential moving average to rectified to generate a smooth envelope:
+       - Calculate moving average of rectified signal values to smooth out rapid fluctuations and get a stable envelope:
 
     ::
 
-        static float prevEnvelope = 0;
-
-        float alpha = 0.1;
-        
-        float envelope = alpha * rectified + (1 - alpha) * prevEnvelope;
-        
-        prevEnvelope = envelope;
-
+        sum -= circular_buffer[data_index];
+	sum += abs_emg;
+	circular_buffer[data_index] = abs_emg;
+	data_index = (data_index + 1) % BUFFER_SIZE;   
+	return (sum/BUFFER_SIZE) * 2; 
     4. Print Envelope
 
        - Send the smoothed envelope value via Serial.
@@ -385,7 +383,7 @@ Let's explore all the experiments step by step
         For a detailed guide, visit our Instructables page: `Recording Publication Grade Muscle Signals Using BioAmp EXG Pill <https://www.instructables.com/Recording-Publication-Grade-Muscle-Signals-Using-B/>`_
 .. Experiment 4
 
-.. dropdown:: 4. Claw Controller
+.. dropdown:: 4. Claw Controller (For Muscle BioAmp Shield)
  
         
     **1. Program Purpose & Overview**
@@ -401,28 +399,47 @@ Let's explore all the experiments step by step
 
     2. Compute Envelope (as in EMG_Envelope) by rectifying and smoothing the filtered sign
 
-    3. Map Envelope to Servo Angle
+    3. Display bar graph on LEDs
         
-       - Adjust scaling constants so that typical muscle contractions map to 0–180°.
+       - Adjust EMG_ENVELOPE_DIVIDER and EMG_ENVELOPE_BASELINE to increase or decrease sensitivity of the LED bar graph.
         
     ::
         
-        int angle = map(envelope * 1000, 0, 100, 0, 180);
+        for(int i = 0; i<=total_leds; i++){
+          if(i>(envelope/EMG_ENVELOPE_DIVIDER - EMG_ENVELOPE_BASELINE)){
+              digitalWrite(led_bar[i], LOW);
+          } else {
+              digitalWrite(led_bar[i], HIGH);
+          }
+        }
 
     4. Servo Control
    
+       - Adjust EMG_THRESHOLD value to set the minimum envelope level required to trigger the servo action.
+       - lastGestureTime and gestureDelay are used to prevent the servo from rapidly toggling if the envelope hovers around the threshold, ensuring smoother operation.
+        
     ::
+        
+        if(envelope > EMG_THRESHOLD) {
+          if((millis() - lastGestureTime) > gestureDelay){
+          if(flag == 1){
+            servo.write(SERVO_OPEN);
+            flag = 0;
+            lastGestureTime = millis();
+          }
+          else {
+            servo.write(SERVO_CLOSE);
+            flag = 1;
+            lastGestureTime = millis();
+          }
+          }
+        } 
 
-        #include <Servo.h>
-        Servo clawServo;
-        ...
-        clawServo.attach(9);  // PWM pin 9
-        clawServo.write(angle);
 
 
     5. Loop Forever
 
-       - The ``loop()`` repeats indefinitely: read → filter → envelope → map → write to servo → delay.
+       - The ``loop()`` repeats indefinitely: read → filter → envelope → check threshold → write to servo → delay.
        
 
     **3. Perform the Hardware**
@@ -470,28 +487,18 @@ Let's explore all the experiments step by step
 
     2. Compute Envelope by rectifying and smoothing the filtered value.
 
-    3. Map Envelope to Servo Angle
+    3. Move servo
         
-       - Tweak constants so typical contractions cover the desired servo range.
+       - Adjust EMG_THRESHOLD to set the envelope level required to trigger the servo action.
         
     ::
         
-        int angle = map(envelope * 1000, 0, 100, 0, 180);
+        if(envelope > EMG_THRESHOLD) servo.write(SERVO_CLOSE);
+        else servo.write(SERVO_OPEN);
 
-    4. Servo Control
-   
-    ::
+    4. Loop Forever
 
-        #include <Servo.h>
-        Servo myServo;
-        ...
-        myServo.attach(9);
-        myServo.write(angle);
-
-
-    5. Loop Forever
-
-       - The ``loop()`` repeats indefinitely: read → filter → envelope → map → write → delay.
+       - The ``loop()`` repeats indefinitely: read → filter → envelope → check threshold → write to servo → delay.
        
 
     **3. Perform the Hardware**
@@ -520,7 +527,7 @@ Let's explore all the experiments step by step
     - Relax → Servo returns to open angle. Adjust mapping if directions are inverted.
 
 
-.. dropdown:: 6. LED BarGraph
+.. dropdown:: 6. LED BarGraph (For Muscle BioAmp Shield)
  
     **1. Program Purpose & Overview**
 
@@ -535,12 +542,11 @@ Let's explore all the experiments step by step
     2. Compute Envelope by rectifying and applying a moving average.
 
     3. Scale Envelope to LED Count
+         - Define arrays with pin numbers of LEDs and 
     
     ::
         
-        const int NUM_LEDS = 8;
-
-        int numLit = map(envelope * 1000, 0, 100, 0, NUM_LEDS);
+        int led_bar[] = {8, 9, 10, 11, 12, 13};
 
     4. Update LEDs
     
@@ -548,12 +554,17 @@ Let's explore all the experiments step by step
   
     ::
 
-        if (i < numLit) digitalWrite(ledPins[i], HIGH);
-        else digitalWrite(ledPins[i], LOW);
+        for(int i = 0; i<=total_leds; i++){
+          if(i>(envelope/EMG_ENVELOPE_DIVIDER - EMG_ENVELOPE_BASELINE)){
+              digitalWrite(led_bar[i], LOW);
+          } else {
+              digitalWrite(led_bar[i], HIGH);
+          }
+        }
 
     1. Loop Forever
 
-       - The ``loop()`` repeats indefinitely: read → filter → envelope → map → set LEDs → delay (e.g., 10 ms).
+       - The ``loop()`` repeats indefinitely: read → filter → envelope → set LEDs → delay (e.g., 10 ms).
        
 
     **3. Perform the Hardware**
