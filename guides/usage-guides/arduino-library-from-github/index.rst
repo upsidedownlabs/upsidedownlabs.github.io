@@ -3,6 +3,9 @@
 Adding an Arduino Library from GitHub
 ######################################
 
+Overview
+**********
+
 Some Arduino libraries are not published in the official Arduino Library Manager and are only available on GitHub. This guide walks you through downloading such a library from a GitHub repository and installing it in Arduino IDE using the "Add .ZIP Library" method.
 
 This method is straightforward and works for any library that is available as a ZIP file on GitHub. It does not require you to clone the repository or use Git commands, making it accessible for beginners.
