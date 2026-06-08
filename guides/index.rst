@@ -28,6 +28,11 @@ Welcome to the **Guides** section, where you'll find comprehensive resources tha
          :link: using-gel-electrodes
          :link-type: ref
 
+      .. grid-item-card:: Adding an Arduino library from GitHub
+         :text-align: center
+         :link: arduino-library-from-github
+         :link-type: ref
+
    **Troubleshooting**
 
    .. grid:: 2 2 2 2
@@ -73,6 +78,7 @@ Welcome to the **Guides** section, where you'll find comprehensive resources tha
    usage-guides/skin-preparation/index
    usage-guides/using-bioamp-bands/index
    usage-guides/using-gel-electrodes/index
+   usage-guides/arduino-library-from-github/index
 
 .. toctree::
    :hidden:
