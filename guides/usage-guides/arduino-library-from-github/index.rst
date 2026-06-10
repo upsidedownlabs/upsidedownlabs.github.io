@@ -233,7 +233,7 @@ Arduino IDE will install the library. You should see a success message at the bo
 Step 8: Verify the Installation
 ==================================
 
-To confirm the library was installed correctly, click **Sketch** > **Include Library** in the menu bar. Scroll down till the end, under the contributed library, look for **ESP32 BLE Combo Keyboard Mouse**.
+To confirm the library was installed correctly, click **Sketch** > **Include Library** in the menu bar. Scroll down till the end, under the contributed libraries, look for **ESP32 BLE Combo Keyboard Mouse**.
 
 .. figure:: media/step10.jpg
    :align: center
@@ -241,7 +241,7 @@ To confirm the library was installed correctly, click **Sketch** > **Include Lib
 
    The installed library appears at the bottom of the Include Library list
 
-Now that you have followed all the steps, your ESP32 BLE Combo Keyboard Mouse library is included in your Arduino globally, and you can use it in any of your sketches by including it at the top of your code:
+Now that you have followed all the steps, the ESP32 BLE Combo Keyboard Mouse library is installed globally in your Arduino IDE, and you can use it in any of your sketches by including it at the top of your code:
 
 .. code-block:: cpp
 
@@ -254,7 +254,7 @@ Troubleshooting
    Close and reopen Arduino IDE, then check the list again. If it is still missing, repeat the Add .ZIP Library step.
 
 **"No valid library found in the ZIP" error**
-   This usually means the ZIP was extracted and re-compressed before installation. Download the ZIP fresh from GitHub without unzipping it first, then try to include it again. This issue may or may not happen on your system. This is because some operating systems automatically extract ZIP files when you download them, and if you then re-zip the extracted folder, it may not have the correct structure that Arduino IDE expects.
+   This usually means the ZIP was extracted and re-compressed before installation, which can break the folder structure that Arduino IDE expects. Download the ZIP fresh from GitHub without unzipping it first, then try to include it again. Note: some operating systems automatically extract ZIP files on download, so if you re-zip the folder yourself it may not match the expected structure.
 
 **The ZIP failed to download**
    Try refreshing the GitHub page and clicking Download ZIP again. If the repository is private, make sure you are logged into GitHub and have access.

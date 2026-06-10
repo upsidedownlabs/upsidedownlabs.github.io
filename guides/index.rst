@@ -28,7 +28,7 @@ Welcome to the **Guides** section, where you'll find comprehensive resources tha
          :link: using-gel-electrodes
          :link-type: ref
 
-      .. grid-item-card:: Adding an Arduino library from GitHub
+      .. grid-item-card:: Installing Arduino Library
          :text-align: center
          :link: arduino-library-from-github
          :link-type: ref
