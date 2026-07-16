@@ -120,6 +120,12 @@ Peel of the plastic backing and place the electrodes on your targeted skin surfa
 
     Gel electrodes placement for ECG signal recording
 
+.. figure:: media/electrode-placement-ecg-2.*
+    :align: center
+    :alt: ECG Placement for Breathe Monitor
+    
+    Alternate Gel electrodes placement for ECG signal for applications like `Breathe Monitor`
+
 .. figure:: media/electrode-placement-eeg-new.*
     :align: center
     :alt: Electrode placement for EEG
